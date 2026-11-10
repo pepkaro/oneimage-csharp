@@ -38,7 +38,7 @@ internal sealed partial class CanvasDevice
 
         /// <summary>For a non-isolated group painted on a copy of its backdrop: what the group's own objects cover (their union alpha).</summary>
         public Canvas? Shape { get; set; }
-        public DrawingPath? CompositeArea { get; init; }
+        public ImageRect? CompositeRegion { get; init; }
     }
 
     private void CheckNesting()
@@ -63,44 +63,49 @@ internal sealed partial class CanvasDevice
 
         CheckNesting();
         var layer = new Canvas(_w, _h, PixelFormat.Rgba8);
-        DrawingPath area = GroupArea(group.Bounds, state.Ctm.Then(_view));
+        ImageRect region = GroupRegion(group.Bounds, state.Ctm.Then(_view));
         Canvas? shape = null;
         if (!group.Isolated && !group.Knockout)
         {
             // 11.4.5: a non-isolated group starts from its backdrop, so blend modes inside it see the page. The group's own coverage is
             // tracked apart, and at the end only that part of the result is composited, so the backdrop is not counted twice (11.4.8).
             // An opaque backdrop is assumed; a translucent one is approximated.
-            CopyBackdrop(layer, _target, area);
+            CopyBackdrop(layer, _target, region);
             shape = new Canvas(_w, _h, PixelFormat.Rgba8);
         }
 
-        _frames.Add(new Frame(FrameKind.Group, layer, _target, state.FillAlpha, blend, maskKnown ? state.SoftMaskId : 0) { Knockout = group.Knockout, Shape = shape, CompositeArea = area });
+        _frames.Add(new Frame(FrameKind.Group, layer, _target, state.FillAlpha, blend, maskKnown ? state.SoftMaskId : 0) { Knockout = group.Knockout, Shape = shape, CompositeRegion = region });
         _target = layer;
     }
 
-    private DrawingPath GroupArea(in PdfBounds bounds, in PdfMatrix matrix)
+    private ImageRect GroupRegion(in PdfBounds bounds, in PdfMatrix matrix)
     {
         PdfBounds device = matrix.TransformBounds(bounds);
-        if (!device.IsFinite) return DrawingPath.Rectangle(0, 0, _w, _h);
-        float x0 = (float)Math.Clamp(Math.Floor(device.Left) - 1, 0, _w);
-        float y0 = (float)Math.Clamp(Math.Floor(device.Bottom) - 1, 0, _h);
-        float x1 = (float)Math.Clamp(Math.Ceiling(device.Right) + 1, 0, _w);
-        float y1 = (float)Math.Clamp(Math.Ceiling(device.Top) + 1, 0, _h);
-        return x1 <= x0 || y1 <= y0 ? DrawingPath.Empty : DrawingPath.Rectangle(x0, y0, x1 - x0, y1 - y0);
+        if (!device.IsFinite) return new ImageRect(0, 0, _w, _h);
+        // The form clip already applies fractional coverage. Round outward with one pixel of rasterizer slack.
+        int x0 = (int)Math.Clamp(Math.Floor(device.Left) - 1, 0, _w);
+        int y0 = (int)Math.Clamp(Math.Floor(device.Bottom) - 1, 0, _h);
+        int x1 = (int)Math.Clamp(Math.Ceiling(device.Right) + 1, 0, _w);
+        int y1 = (int)Math.Clamp(Math.Ceiling(device.Top) + 1, 0, _h);
+        return new ImageRect(x0, y0, Math.Max(0, x1 - x0), Math.Max(0, y1 - y0));
     }
-    private static void CopyBackdrop(Canvas layer, Canvas source, DrawingPath area)
+    internal static void CopyBackdrop(Canvas layer, Canvas source, ImageRect region)
     {
-        var brush = new ImageBrush(source.View(), null, 0, 0, null, tile: false, pooled: true);
-        try
+        if (region.IsEmpty) return;
+        using PixelLock<Rgba32> input = source.Lock<Rgba32>(region, LockAccess.Read);
+        using PixelLock<Rgba32> output = layer.Lock<Rgba32>(region, LockAccess.Write);
+        for (int y = 0; y < region.Height; y++)
         {
-            layer.Fill(brush, area, antialias: false, opacity: 1f, blend: BlendMode.Normal, composition: AlphaComposition.Src);
-        }
-        finally
-        {
-            brush.Release();
+            ReadOnlySpan<Rgba32> from = input.ReadRow(y);
+            Span<Rgba32> to = output.GetRow(y);
+            for (int x = 0; x < from.Length; x++)
+            {
+                Rgba32 pixel = from[x];
+                // Src painting clears hidden RGB at alpha zero through premultiplied conversion.
+                to[x] = pixel.A == 0 ? default : pixel;
+            }
         }
     }
-
     /// <summary>The coverage canvas of the non-isolated group being painted directly into the current target, if any.</summary>
     private Canvas? ShapeShadow => _frames.Count > 0 && _frames[^1] is { Kind: FrameKind.Group, Shape: { } s } f && ReferenceEquals(f.Layer, _target) ? s : null;
 
@@ -137,39 +142,31 @@ internal sealed partial class CanvasDevice
         _target = f.Parent;
         Canvas layer = f.Layer!;
         f.Layer = null;
-        CompositeLayer(layer, f.Opacity, f.Blend, f.MaskId, f.Shape, f.CompositeArea);
+        CompositeLayer(layer, f.Opacity, f.Blend, f.MaskId, f.Shape, f.CompositeRegion);
     }
 
     /// <summary>Composites a finished layer onto the current target with an opacity, blend mode and (known) soft mask, and releases it.</summary>
-    private void CompositeLayer(Canvas layer, double opacity, BlendMode blend, int maskId, Canvas? shape = null, DrawingPath? area = null)
+    private void CompositeLayer(Canvas layer, double opacity, BlendMode blend, int maskId, Canvas? shape = null, ImageRect? region = null)
     {
-        ImageBrush? brush = null;
+        CanvasLayerBrush? brush = null;
         try
         {
-            Image content = layer.View();
-            if (shape is not null)
-            {
-                content = content.ApplyMask(shape.View(), MaskChannel.Alpha);
-            }
-
-            if (maskId != 0 && _masks.TryGetValue(maskId, out Canvas? mask))
-            {
-                content = content.ApplyMask(mask.View(), MaskChannel.Alpha);
-            }
-
-            brush = new ImageBrush(content, null, 0, 0, null, tile: false, pooled: true);
-            area ??= DrawingPath.Rectangle(0, 0, _w, _h);
+            ImageRect rect = region ?? new ImageRect(0, 0, _w, _h);
+            if (rect.IsEmpty) return;
+            Canvas? mask = null;
+            if (maskId != 0) _masks.TryGetValue(maskId, out mask);
+            brush = new CanvasLayerBrush(layer, shape, mask, rect);
+            DrawingPath area = DrawingPath.Rectangle(rect.X, rect.Y, rect.Width, rect.Height);
             _target.Fill(brush, area, antialias: false, opacity: (float)Math.Clamp(opacity, 0, 1), blend: blend, composition: AlphaComposition.SrcOver);
             ShapeShadow?.Fill(brush, area, antialias: false, opacity: (float)Math.Clamp(opacity, 0, 1), blend: BlendMode.Normal, composition: AlphaComposition.SrcOver);
         }
         finally
         {
-            brush?.Release();
+            brush?.Dispose();
             shape?.Dispose();
             layer.Dispose();
         }
     }
-
     // ---- soft masks ----
 
     public void BeginSoftMask(in PdfSoftMaskInfo mask, in PdfGraphicsState state)

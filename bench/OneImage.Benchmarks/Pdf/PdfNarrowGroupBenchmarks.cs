@@ -8,6 +8,7 @@ namespace OneImage.Benchmarks.Pdf;
 [MemoryDiagnoser]
 public class PdfNarrowGroupBenchmarks
 {
+    private Image _retained = null!;
     private byte[] _bytes = null!;
     private LoadOptions _options = null!;
     private Rgba32[] _pixels = null!;
@@ -23,11 +24,20 @@ public class PdfNarrowGroupBenchmarks
         _width = image.Width;
         _height = image.Height;
         _pixels = new Rgba32[_width * _height];
+        _retained = image;
+        _retained.CopyPixelsTo<Rgba32>(_pixels, new ImageRect(0, 0, _width, _height), maxDegree: Degree);
     }
     [Benchmark(Description = "PDF narrow translucent groups: load + render")]
     public Rgba32 Render()
     {
         Image.Load(_bytes, _options).CopyPixelsTo<Rgba32>(_pixels, new ImageRect(0, 0, _width, _height), maxDegree: Degree);
+        return _pixels[_pixels.Length / 2];
+    }
+    [Benchmark(Description = "PDF narrow translucent groups: retained document, uncached raster")]
+    public Rgba32 Rerender()
+    {
+        _retained.ReleaseDecodedPixels();
+        _retained.CopyPixelsTo<Rgba32>(_pixels, new ImageRect(0, 0, _width, _height), maxDegree: Degree);
         return _pixels[_pixels.Length / 2];
     }
     private static byte[] Document(int groups)
