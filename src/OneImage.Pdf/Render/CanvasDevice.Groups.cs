@@ -38,6 +38,7 @@ internal sealed partial class CanvasDevice
 
         /// <summary>For a non-isolated group painted on a copy of its backdrop: what the group's own objects cover (their union alpha).</summary>
         public Canvas? Shape { get; set; }
+        public DrawingPath? CompositeArea { get; init; }
     }
 
     private void CheckNesting()
@@ -62,26 +63,37 @@ internal sealed partial class CanvasDevice
 
         CheckNesting();
         var layer = new Canvas(_w, _h, PixelFormat.Rgba8);
+        DrawingPath area = GroupArea(group.Bounds, state.Ctm.Then(_view));
         Canvas? shape = null;
         if (!group.Isolated && !group.Knockout)
         {
             // 11.4.5: a non-isolated group starts from its backdrop, so blend modes inside it see the page. The group's own coverage is
             // tracked apart, and at the end only that part of the result is composited, so the backdrop is not counted twice (11.4.8).
             // An opaque backdrop is assumed; a translucent one is approximated.
-            CopyBackdrop(layer, _target);
+            CopyBackdrop(layer, _target, area);
             shape = new Canvas(_w, _h, PixelFormat.Rgba8);
         }
 
-        _frames.Add(new Frame(FrameKind.Group, layer, _target, state.FillAlpha, blend, maskKnown ? state.SoftMaskId : 0) { Knockout = group.Knockout, Shape = shape });
+        _frames.Add(new Frame(FrameKind.Group, layer, _target, state.FillAlpha, blend, maskKnown ? state.SoftMaskId : 0) { Knockout = group.Knockout, Shape = shape, CompositeArea = area });
         _target = layer;
     }
 
-    private void CopyBackdrop(Canvas layer, Canvas source)
+    private DrawingPath GroupArea(in PdfBounds bounds, in PdfMatrix matrix)
+    {
+        PdfBounds device = matrix.TransformBounds(bounds);
+        if (!device.IsFinite) return DrawingPath.Rectangle(0, 0, _w, _h);
+        float x0 = (float)Math.Clamp(Math.Floor(device.Left) - 1, 0, _w);
+        float y0 = (float)Math.Clamp(Math.Floor(device.Bottom) - 1, 0, _h);
+        float x1 = (float)Math.Clamp(Math.Ceiling(device.Right) + 1, 0, _w);
+        float y1 = (float)Math.Clamp(Math.Ceiling(device.Top) + 1, 0, _h);
+        return x1 <= x0 || y1 <= y0 ? DrawingPath.Empty : DrawingPath.Rectangle(x0, y0, x1 - x0, y1 - y0);
+    }
+    private static void CopyBackdrop(Canvas layer, Canvas source, DrawingPath area)
     {
         var brush = new ImageBrush(source.View(), null, 0, 0, null, tile: false, pooled: true);
         try
         {
-            layer.Fill(brush, DrawingPath.Rectangle(0, 0, _w, _h), antialias: false, opacity: 1f, blend: BlendMode.Normal, composition: AlphaComposition.Src);
+            layer.Fill(brush, area, antialias: false, opacity: 1f, blend: BlendMode.Normal, composition: AlphaComposition.Src);
         }
         finally
         {
@@ -125,11 +137,11 @@ internal sealed partial class CanvasDevice
         _target = f.Parent;
         Canvas layer = f.Layer!;
         f.Layer = null;
-        CompositeLayer(layer, f.Opacity, f.Blend, f.MaskId, f.Shape);
+        CompositeLayer(layer, f.Opacity, f.Blend, f.MaskId, f.Shape, f.CompositeArea);
     }
 
     /// <summary>Composites a finished layer onto the current target with an opacity, blend mode and (known) soft mask, and releases it.</summary>
-    private void CompositeLayer(Canvas layer, double opacity, BlendMode blend, int maskId, Canvas? shape = null)
+    private void CompositeLayer(Canvas layer, double opacity, BlendMode blend, int maskId, Canvas? shape = null, DrawingPath? area = null)
     {
         ImageBrush? brush = null;
         try
@@ -146,8 +158,9 @@ internal sealed partial class CanvasDevice
             }
 
             brush = new ImageBrush(content, null, 0, 0, null, tile: false, pooled: true);
-            _target.Fill(brush, DrawingPath.Rectangle(0, 0, _w, _h), antialias: false, opacity: (float)Math.Clamp(opacity, 0, 1), blend: blend, composition: AlphaComposition.SrcOver);
-            ShapeShadow?.Fill(brush, DrawingPath.Rectangle(0, 0, _w, _h), antialias: false, opacity: (float)Math.Clamp(opacity, 0, 1), blend: BlendMode.Normal, composition: AlphaComposition.SrcOver);
+            area ??= DrawingPath.Rectangle(0, 0, _w, _h);
+            _target.Fill(brush, area, antialias: false, opacity: (float)Math.Clamp(opacity, 0, 1), blend: blend, composition: AlphaComposition.SrcOver);
+            ShapeShadow?.Fill(brush, area, antialias: false, opacity: (float)Math.Clamp(opacity, 0, 1), blend: BlendMode.Normal, composition: AlphaComposition.SrcOver);
         }
         finally
         {
