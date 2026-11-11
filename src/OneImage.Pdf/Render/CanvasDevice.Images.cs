@@ -41,8 +41,10 @@ internal sealed partial class CanvasDevice
         }
 
         // 8.9.5.3: interpolation is off by default, so a picture shown larger than its samples keeps square pixels unless it sets
-        // /Interpolate true. A reduced picture was already area-averaged to the device size and is sampled bilinearly.
-        bool magnified = (devW > raster.Width || devH > raster.Height) && !data.Interpolate;
+        // /Interpolate true or the caller opts into smoothing. Stencil masks still honor their document flag.
+        // A reduced picture was already area-averaged to the device size and is sampled bilinearly.
+        bool nearest = (devW > raster.Width || devH > raster.Height) && !data.Interpolate &&
+            (raster.Stencil || !_page.Options.SmoothMagnifiedImages);
 
         // Picture pixel (column, row) to the unit square: x = column / width, and row 0 is the top, at y = 1.
         var toUnit = new PdfMatrix(1.0 / raster.Width, 0, 0, -1.0 / raster.Height, 0, 1);
@@ -57,7 +59,7 @@ internal sealed partial class CanvasDevice
             else if (state.FillColor.Space.Kind == PdfColorSpaceKind.Pattern)
             {
                 // A stencil painted with a pattern: the pattern's own paint is used through the coverage.
-                PaintStencilWithPattern(raster, placement, m, state, magnified);
+                PaintStencilWithPattern(raster, placement, m, state, nearest);
                 return;
             }
             else
@@ -72,7 +74,7 @@ internal sealed partial class CanvasDevice
             return;
         }
 
-        var brush = new PixelBrush(raster, placement, nearest: magnified, stencil);
+        var brush = new PixelBrush(raster, placement, nearest: nearest, stencil);
         PaintBrush(brush, quad, IntersectionRule.NonZero, state.FillAlpha, state);
     }
 
