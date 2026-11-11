@@ -63,7 +63,6 @@ A pattern that paints with itself is bounded by the nesting limit. The tests bui
 
 ### Known limitations
 
-- **Soft-mask `/TR` is treated as identity.** OnePDF does not expose function evaluation to devices. Needed from OnePDF: either a public `PdfFunction.Create(PdfObject)`/`Evaluate(ReadOnlySpan<double>, Span<double>)`, or a 256-entry transfer table on `PdfSoftMaskInfo` (null for identity).
 - **Text in a non-embedded CJK font draws blank.** The package carries only the standard Latin fonts; there is no CJK fallback font yet.
 - **Check boxes, radio buttons and push buttons under `/NeedAppearances true` keep their stored appearance.** OnePDF regenerates text and choice fields only.
 
