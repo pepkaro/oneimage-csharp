@@ -182,8 +182,9 @@ internal sealed partial class CanvasDevice : IPdfDevice, IDisposable
 
     private static DrawingPath? ZeroLengthDiscs(in PdfPath path, in PdfGraphicsState state, in PdfMatrix m, double scale)
     {
-        double width = Math.Max(state.LineWidth, 1.0 / scale);
-        if (!double.IsFinite(width) || width * scale > 1e7)
+        bool hairline = state.LineWidth == 0;
+        double width = hairline ? 1 : Math.Max(state.LineWidth, 1.0 / scale);
+        if (!double.IsFinite(width) || (!hairline && width * scale > 1e7))
         {
             return null;
         }
@@ -191,6 +192,7 @@ internal sealed partial class CanvasDevice : IPdfDevice, IDisposable
         ReadOnlySpan<byte> verbs = path.VerbBytes.Span;
         ReadOnlySpan<double> pts = path.Points.Span;
         PathBuilder? b = null;
+        PdfMatrix discMap = m;
         int p = 0;
         double sx = 0, sy = 0;
         bool inSub = false, moved = false, drawn = false;
@@ -199,7 +201,14 @@ internal sealed partial class CanvasDevice : IPdfDevice, IDisposable
             if (inSub && drawn && !moved)
             {
                 b ??= new PathBuilder();
-                b.AddPath(DrawingPath.Circle((float)sx, (float)sy, (float)(width / 2)));
+                double x = sx, y = sy;
+                if (hairline)
+                {
+                    x = (sx * discMap.A) + (sy * discMap.C) + discMap.E;
+                    y = (sx * discMap.B) + (sy * discMap.D) + discMap.F;
+                }
+
+                b.AddPath(DrawingPath.Circle((float)x, (float)y, (float)(width / 2)));
             }
         }
 
@@ -209,16 +218,16 @@ internal sealed partial class CanvasDevice : IPdfDevice, IDisposable
             {
                 case PdfPathVerb.Move:
                     Flush();
-                    if (p + 2 > pts.Length) { return Finish(b, m); }
+                    if (p + 2 > pts.Length) { return Finish(b, hairline ? PdfMatrix.Identity : m); }
                     sx = pts[p]; sy = pts[p + 1]; p += 2;
                     inSub = true; moved = false; drawn = false;
                     break;
                 case PdfPathVerb.Line:
-                    if (p + 2 > pts.Length) { return Finish(b, m); }
+                    if (p + 2 > pts.Length) { return Finish(b, hairline ? PdfMatrix.Identity : m); }
                     moved |= pts[p] != sx || pts[p + 1] != sy; drawn = true; p += 2;
                     break;
                 case PdfPathVerb.Curve:
-                    if (p + 6 > pts.Length) { return Finish(b, m); }
+                    if (p + 6 > pts.Length) { return Finish(b, hairline ? PdfMatrix.Identity : m); }
                     for (int k = 0; k < 6; k += 2) { moved |= pts[p + k] != sx || pts[p + k + 1] != sy; }
                     drawn = true; p += 6;
                     break;
@@ -231,7 +240,7 @@ internal sealed partial class CanvasDevice : IPdfDevice, IDisposable
         }
 
         Flush();
-        return Finish(b, m);
+        return Finish(b, hairline ? PdfMatrix.Identity : m);
 
         static DrawingPath? Finish(PathBuilder? builder, in PdfMatrix map)
         {
@@ -247,7 +256,8 @@ internal sealed partial class CanvasDevice : IPdfDevice, IDisposable
 
     private static DrawingPath? StrokeUserPath(DrawingPath user, in PdfGraphicsState state, in PdfMatrix m, double scale)
     {
-        // A line thinner than a pixel is drawn one pixel wide (width 0 means exactly that: the thinnest line the device can draw).
+        // Keep the existing minimum-width policy for positive widths. Explicit zero-width hairlines are instead
+        // one device pixel, independent of the CTM's anisotropy; user-space dash placement must still be preserved.
         double minWidth = 1.0 / scale;
         double width = state.LineWidth >= minWidth ? state.LineWidth : minWidth;
         if (!double.IsFinite(width) || width * scale > 1e7)
@@ -259,6 +269,13 @@ internal sealed partial class CanvasDevice : IPdfDevice, IDisposable
         StrokeJoin join = state.LineJoin switch { 1 => StrokeJoin.Round, 2 => StrokeJoin.Bevel, _ => StrokeJoin.Miter };
         StrokeCap cap = state.LineCap switch { 1 => StrokeCap.Round, 2 => StrokeCap.Square, _ => StrokeCap.Butt };
         double miter = double.IsFinite(state.MiterLimit) && state.MiterLimit >= 1 ? state.MiterLimit : 10;
+        if (state.LineWidth == 0)
+        {
+            DrawingPath hairline = StrokeBuilder.Build(user, 1, join, cap, miter, dash, state.DashPhase,
+                DrawingPath.DefaultTolerance, PathConvert.ToMatrix(m));
+            return hairline.IsEmpty ? null : hairline;
+        }
+
         double tolerance = DrawingPath.DefaultTolerance / scale;
         DrawingPath outline = StrokeBuilder.Build(user, width, join, cap, miter, dash, state.DashPhase, tolerance);
         if (outline.IsEmpty)

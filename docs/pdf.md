@@ -39,6 +39,12 @@ var config = new ImageConfiguration().Add(new PdfFormat(new PdfRenderOptions
 - Shadings (types 1–7), tiling patterns (colored and uncolored), soft masks (alpha and luminosity), transparency groups, blend modes and constant alpha are supported.
 - **Forms and markup.** A widget or markup annotation with an appearance stream draws it. One without, and every field of a form that sets `/NeedAppearances true`, draws the appearance OnePDF generates (text and choice values, check marks, radio buttons, highlights, lines and so on) unless `GenerateAppearances` is false. Under `NeedAppearances` OnePDF 1.1 regenerates text and choice fields; stale appearance streams of check boxes, radio buttons and push buttons are drawn as they are stored.
 
+## Stroke rasterization
+
+An explicit zero line width (`0 w`) is drawn one device pixel wide. The centerline follows the current transformation matrix, but its width, caps and joins do not become anisotropic. Dash lengths and phase remain in user space and are split before the centerline is transformed. Existing safeguards still replace extremely short or excessively complex dash patterns with a solid stroke. Curve-flattening tolerance is selected in device space, subject to the existing segment-count and coordinate-precision limits.
+
+Positive widths retain the existing minimum-width policy: the user-space width is at least `1 / sqrt(abs(CTM determinant))`, including the page-to-pixel transform. This improves visibility at small sizes but is not orientation-aware stroke adjustment. It can differ from an area-only rasterizer on subpixel rules. OnePDF 1.18.0 does not retain `/SA`, so `/SA true` and `/SA false` currently have the same result. Pixel snapping and an alternative positive-width policy are not enabled by this correction.
+
 ## Image codecs
 
 - **DCT** is OneImage's own JPEG decoder, returning the components as stored (no Adobe inversion; OnePDF applies `/Decode`).

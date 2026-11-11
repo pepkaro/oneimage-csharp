@@ -91,6 +91,7 @@ public class NonSolidRgbaBlendTests
         byte[] expected = Reference(back, brush, coverage, opacity);
         RasterScratch scratch = RasterScratch.Rent();
         coverage.CopyTo(scratch.Coverage, 0);
+        scratch.SpanStart[0] = 0;
         scratch.SpanEnd[0] = width;
         FillSettings settings = FillSettings.Check(true, IntersectionRule.NonZero, opacity,
             BlendMode.Normal, AlphaComposition.SrcOver, false, null, PixelFormat.Rgba8);

@@ -38,6 +38,8 @@ internal sealed class StrokeBuilder : IDashSink
     private readonly StrokeCap _cap;
     private readonly double _miterLimitSq;
     private readonly double _flatSagitta;
+    private readonly Matrix3x2? _centerlineTransform;
+    private double[] _mapped = [];
 
     private byte[] _verbs = new byte[64];
     private float[] _coords = new float[256];
@@ -49,25 +51,41 @@ internal sealed class StrokeBuilder : IDashSink
     private double[] _ux = new double[32], _uy = new double[32], _len = new double[32];
     private double[] _rev = new double[64];
 
-    private StrokeBuilder(double width, StrokeJoin join, StrokeCap cap, double miterLimit, double tolerance)
+    private StrokeBuilder(double width, StrokeJoin join, StrokeCap cap, double miterLimit, double tolerance, Matrix3x2? centerlineTransform)
     {
         _r = width / 2;
         _join = join;
         _cap = cap;
         _miterLimitSq = miterLimit * miterLimit;
         _flatSagitta = tolerance * 0.1;
+        _centerlineTransform = centerlineTransform;
     }
 
-    /// <summary>Builds the outline. <paramref name="width"/> 0 gives an empty path.</summary>
-    public static Path Build(Path path, double width, StrokeJoin join, StrokeCap cap, double miterLimit, ReadOnlySpan<float> dash, double dashOffset, double tolerance)
+    /// <summary>Builds the outline. <paramref name="width"/> 0 gives an empty path. An optional centerline transform maps the
+    /// path after user-space dash splitting; the width, caps, joins and tolerance then use the transformed space.</summary>
+    public static Path Build(Path path, double width, StrokeJoin join, StrokeCap cap, double miterLimit, ReadOnlySpan<float> dash, double dashOffset, double tolerance, Matrix3x2? centerlineTransform = null)
     {
         if (!(width > 0) || path.IsEmpty)
         {
             return Path.Empty;
         }
 
-        var b = new StrokeBuilder(width, join, cap, miterLimit, tolerance);
-        FlatPath flat = Flattener.Flatten(path, Matrix3x2.Identity, tolerance, null);
+        var b = new StrokeBuilder(width, join, cap, miterLimit, tolerance, centerlineTransform);
+        double flatTolerance = tolerance;
+        if (centerlineTransform is Matrix3x2 map)
+        {
+            // The Frobenius norm bounds the largest directional scale, including shear.
+            double norm = Math.Sqrt(((double)map.M11 * map.M11) + ((double)map.M12 * map.M12)
+                + ((double)map.M21 * map.M21) + ((double)map.M22 * map.M22));
+            if (!double.IsFinite(norm) || !float.IsFinite(map.M31) || !float.IsFinite(map.M32))
+            {
+                throw new ImageOperationException("The transform moves a path coordinate out of the finite range.");
+            }
+
+            flatTolerance /= Math.Max(norm, 1e-9);
+        }
+
+        FlatPath flat = Flattener.Flatten(path, Matrix3x2.Identity, flatTolerance, null);
         DashSplitter? dasher = dash.Length > 0 ? new DashSplitter(dash, dashOffset) : null;
         int begin = 0;
         for (int f = 0; f < flat.FigureCount; f++)
@@ -80,6 +98,18 @@ internal sealed class StrokeBuilder : IDashSink
             }
 
             begin = end;
+        }
+
+        if (centerlineTransform.HasValue)
+        {
+            // Unlike the ordinary outline, this result will not pass through Path.Transform's finite-coordinate guard.
+            foreach (float coordinate in b._coords.AsSpan(0, b._cn))
+            {
+                if (!float.IsFinite(coordinate))
+                {
+                    throw new ImageOperationException("The transform moves a path coordinate out of the finite range.");
+                }
+            }
         }
 
         var outline = new Path(b._verbs.AsSpan(0, b._vn).ToArray(), b._coords.AsSpan(0, b._cn).ToArray());
@@ -112,7 +142,7 @@ internal sealed class StrokeBuilder : IDashSink
             // M p L p Z is a dot; a lone M p draws nothing (the flattener cannot tell M p L p from M p, so open ones draw nothing).
             if (closed && dasher == null)
             {
-                Dot(p[0], p[1], 1, 0);
+                Contour(p, n, false, true, 1, 0);
             }
 
             return;
@@ -158,6 +188,44 @@ internal sealed class StrokeBuilder : IDashSink
     /// <summary>Strokes one polyline (already free of repeats unless <paramref name="piece"/>, which dashes may produce).</summary>
     private void Contour(double[] p, int n, bool closed, bool piece, double dirX, double dirY)
     {
+        if (_centerlineTransform is Matrix3x2 map)
+        {
+            double[] mapped = Grow(ref _mapped, 2 * n);
+            for (int i = 0; i < n; i++)
+            {
+                double x = p[2 * i], y = p[(2 * i) + 1];
+                double mappedX = (x * map.M11) + (y * map.M21) + map.M31;
+                double mappedY = (x * map.M12) + (y * map.M22) + map.M32;
+                if (!float.IsFinite((float)mappedX) || !float.IsFinite((float)mappedY))
+                {
+                    throw new ImageOperationException("The transform moves a path coordinate out of the finite range.");
+                }
+
+                mapped[2 * i] = mappedX;
+                mapped[(2 * i) + 1] = mappedY;
+            }
+
+            p = mapped;
+            // A non-singular double CTM can become singular when rounded to Matrix3x2. Remove segments that collapsed
+            // before Directions divides by their length, including solid and closed figures (not just dash pieces).
+            n = Dedupe(p, n, closed);
+            if (n == 1 && (!piece || closed))
+            {
+                if (_cap == StrokeCap.Round)
+                {
+                    Dot(p[0], p[1], 1, 0);
+                }
+
+                return;
+            }
+
+            double dx = (dirX * map.M11) + (dirY * map.M21);
+            double dy = (dirX * map.M12) + (dirY * map.M22);
+            double length = Math.Sqrt((dx * dx) + (dy * dy));
+            dirX = length > Eps ? dx / length : 1;
+            dirY = length > Eps ? dy / length : 0;
+        }
+
         if (piece && !closed)
         {
             n = Dedupe(p, n, false);
