@@ -117,19 +117,35 @@ internal sealed class Raster
 /// <summary>Resampling of RGBA pictures: area averaging for reduction, bilinear for enlargement. Color is weighted by alpha, so transparent pixels do not tint their neighbors.</summary>
 internal static class Resize
 {
-    /// <summary>Area average to a smaller (or equal) size, streaming over the source rows in memory proportional to the destination row.</summary>
+    /// <summary>Area average to a smaller (or equal) size, streaming over source rows with a bounded horizontal-weight cache.</summary>
     public static Rgba32[] Area(Rgba32[] src, int sw, int sh, int dw, int dh, bool stencil, CancellationToken ct)
     {
         var dst = new Rgba32[(long)dw * dh];
         float[] rowAcc = Pools<float>.Pool.Rent(dw * 4);
         float[] acc0 = Pools<float>.Pool.Rent(dw * 4);
         float[] acc1 = Pools<float>.Pool.Rent(dw * 4);
+        HorizontalWeight[]? weights = null;
         try
         {
             Array.Clear(acc0, 0, dw * 4);
             Array.Clear(acc1, 0, dw * 4);
             double yScale = (double)dh / sh;
             double xScale = (double)dw / sw;
+
+            // The horizontal mapping is identical for every source row. Keep its exact weights and operation order,
+            // but calculate them once. Bound the extra scratch storage to 256 KiB even for extremely wide images.
+            if (sh > 1 && sw <= 16_384)
+            {
+                weights = Pools<HorizontalWeight>.Pool.Rent(sw);
+                for (int x = 0; x < sw; x++)
+                {
+                    double left = x * xScale, right = (x + 1) * xScale;
+                    int d0 = Math.Min((int)left, dw - 1);
+                    int d1 = Math.Min((int)(right - 1e-9), dw - 1);
+                    weights[x] = new HorizontalWeight(d0 * 4, d1 * 4, (float)(d0 == d1 ? right - left : (d0 + 1) - left), (float)(right - d1));
+                }
+            }
+
             int curDst = 0;
             for (int y = 0; y < sh; y++)
             {
@@ -138,7 +154,15 @@ internal static class Resize
                     ct.ThrowIfCancellationRequested();
                 }
 
-                HorizontalRow(src.AsSpan(y * sw, sw), rowAcc, dw, xScale);
+                if (weights is null)
+                {
+                    HorizontalRow(src.AsSpan(y * sw, sw), rowAcc, dw, xScale);
+                }
+                else
+                {
+                    HorizontalRow(src.AsSpan(y * sw, sw), rowAcc, dw, weights.AsSpan(0, sw));
+                }
+
                 double top = y * yScale, bottom = (y + 1) * yScale;
                 int d0 = Math.Min((int)top, dh - 1);
                 int d1 = Math.Min((int)(bottom - 1e-9), dh - 1);
@@ -171,9 +195,42 @@ internal static class Resize
             Pools<float>.Pool.Return(rowAcc);
             Pools<float>.Pool.Return(acc0);
             Pools<float>.Pool.Return(acc1);
+            if (weights is not null)
+            {
+                Pools<HorizontalWeight>.Pool.Return(weights);
+            }
         }
 
         return dst;
+    }
+
+    private readonly record struct HorizontalWeight(int First, int Second, float FirstWeight, float SecondWeight);
+
+    private static void HorizontalRow(ReadOnlySpan<Rgba32> row, float[] acc, int dw, ReadOnlySpan<HorizontalWeight> weights)
+    {
+        Array.Clear(acc, 0, dw * 4);
+        for (int x = 0; x < row.Length; x++)
+        {
+            HorizontalWeight weight = weights[x];
+            Rgba32 p = row[x];
+            float a = p.A * (1f / 255f);
+            float pr = p.R * a, pg = p.G * a, pb = p.B * a;
+            float fa = weight.FirstWeight;
+            int o = weight.First;
+            acc[o] += pr * fa;
+            acc[o + 1] += pg * fa;
+            acc[o + 2] += pb * fa;
+            acc[o + 3] += a * fa;
+            if (weight.Second != weight.First)
+            {
+                float fb = weight.SecondWeight;
+                o = weight.Second;
+                acc[o] += pr * fb;
+                acc[o + 1] += pg * fb;
+                acc[o + 2] += pb * fb;
+                acc[o + 3] += a * fb;
+            }
+        }
     }
 
     private static void HorizontalRow(ReadOnlySpan<Rgba32> row, float[] acc, int dw, double xScale)
