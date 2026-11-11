@@ -68,8 +68,7 @@ internal sealed partial class CanvasDevice
         if (!group.Isolated && !group.Knockout)
         {
             // 11.4.5: a non-isolated group starts from its backdrop, so blend modes inside it see the page. The group's own coverage is
-            // tracked apart, and at the end only that part of the result is composited, so the backdrop is not counted twice (11.4.8).
-            // An opaque backdrop is assumed; a translucent one is approximated.
+            // tracked apart. At the end the initial backdrop is removed (11.4.8), including its alpha.
             CopyBackdrop(layer, _target, region);
             shape = new Canvas(_w, _h, PixelFormat.Rgba8);
         }
@@ -107,7 +106,20 @@ internal sealed partial class CanvasDevice
         }
     }
     /// <summary>The coverage canvas of the non-isolated group being painted directly into the current target, if any.</summary>
-    private Canvas? ShapeShadow => _frames.Count > 0 && _frames[^1] is { Kind: FrameKind.Group, Shape: { } s } f && ReferenceEquals(f.Layer, _target) ? s : null;
+    private Canvas? ShapeShadow
+    {
+        get
+        {
+            for (int i = _frames.Count - 1; i >= 0; i--)
+            {
+                Frame frame = _frames[i];
+                if (frame.Kind == FrameKind.Passthrough) continue;
+                // A passthrough form shares its owner's target. Never cross a mask or another layer.
+                return frame.Kind == FrameKind.Group && ReferenceEquals(frame.Layer, _target) ? frame.Shape : null;
+            }
+            return null;
+        }
+    }
 
     /// <summary>Opens a knockout layer composited with the state's blend mode and soft mask (not its opacity: objects carry their own).</summary>
     private void BeginKnockoutLayer(in PdfGraphicsState state)
@@ -148,21 +160,38 @@ internal sealed partial class CanvasDevice
     /// <summary>Composites a finished layer onto the current target with an opacity, blend mode and (known) soft mask, and releases it.</summary>
     private void CompositeLayer(Canvas layer, double opacity, BlendMode blend, int maskId, Canvas? shape = null, ImageRect? region = null)
     {
-        CanvasLayerBrush? brush = null;
         try
         {
             ImageRect rect = region ?? new ImageRect(0, 0, _w, _h);
             if (rect.IsEmpty) return;
             Canvas? mask = null;
             if (maskId != 0) _masks.TryGetValue(maskId, out mask);
-            brush = new CanvasLayerBrush(layer, shape, mask, rect);
             DrawingPath area = DrawingPath.Rectangle(rect.X, rect.Y, rect.Width, rect.Height);
-            _target.Fill(brush, area, antialias: false, opacity: (float)Math.Clamp(opacity, 0, 1), blend: blend, composition: AlphaComposition.SrcOver);
-            ShapeShadow?.Fill(brush, area, antialias: false, opacity: (float)Math.Clamp(opacity, 0, 1), blend: BlendMode.Normal, composition: AlphaComposition.SrcOver);
+            float amount = (float)Math.Clamp(opacity, 0, 1);
+            if (shape is not null)
+            {
+                bool interpolate = blend == BlendMode.Normal;
+                using (var groupBrush = new NonIsolatedGroupBrush(layer, shape, mask, rect, amount, interpolate))
+                {
+                    _target.Fill(groupBrush, area, antialias: false, blend: blend,
+                        composition: interpolate ? AlphaComposition.Src : AlphaComposition.SrcOver);
+                }
+                // Group alpha excludes the copied backdrop, even when it was translucent.
+                if (ShapeShadow is { } parentShape)
+                {
+                    using var coverage = new CanvasLayerBrush(shape, null, mask, rect);
+                    parentShape.Fill(coverage, area, antialias: false, opacity: amount);
+                }
+            }
+            else
+            {
+                using var layerBrush = new CanvasLayerBrush(layer, null, mask, rect);
+                _target.Fill(layerBrush, area, antialias: false, opacity: amount, blend: blend, composition: AlphaComposition.SrcOver);
+                ShapeShadow?.Fill(layerBrush, area, antialias: false, opacity: amount, blend: BlendMode.Normal, composition: AlphaComposition.SrcOver);
+            }
         }
         finally
         {
-            brush?.Dispose();
             shape?.Dispose();
             layer.Dispose();
         }

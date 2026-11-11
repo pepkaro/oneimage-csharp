@@ -101,7 +101,14 @@ internal sealed partial class CanvasDevice
         {
             Canvas? layer = BeginMasked(state);
             Canvas target = layer ?? _target;
-            target.Fill(brush, DrawingPath.Rectangle(0, 0, _w, _h), false, IntersectionRule.NonZero, (float)Math.Min(state.FillAlpha, 1), layer is null ? ParseBlend(state.BlendMode) : BlendMode.Normal, AlphaComposition.SrcOver);
+            DrawingPath area = DrawingPath.Rectangle(0, 0, _w, _h);
+            float opacity = (float)Math.Min(state.FillAlpha, 1);
+            target.Fill(brush, area, false, IntersectionRule.NonZero, opacity, layer is null ? ParseBlend(state.BlendMode) : BlendMode.Normal, AlphaComposition.SrcOver);
+            if (layer is null)
+            {
+                // The brush already includes pattern alpha, the stencil, and the current clip.
+                ShapeShadow?.Fill(brush, area, false, IntersectionRule.NonZero, opacity, BlendMode.Normal, AlphaComposition.SrcOver);
+            }
             if (layer is not null)
             {
                 CompositeLayer(layer, 1, ParseBlend(state.BlendMode), state.SoftMaskId);

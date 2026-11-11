@@ -6,6 +6,7 @@ All notable changes are listed here. The format follows [Keep a Changelog](https
 
 ### Fixed
 
+- `RecursiveAI.OneImage.Pdf`: non-isolated transparency groups now remove their initial backdrop before applying group opacity, masks, and external blend modes. Nested passthrough forms and patterned stencil images retain their owning group's alpha coverage.
 - `RecursiveAI.OneImage.Pdf`: apply soft-mask transfer functions to alpha and luminosity values, including unpainted backdrop pixels. Inverting masks no longer render as identity.
 - Non-solid normal source-over fills on RGBA8 canvases now combine conversion and blending in one pass, preserving the existing float operation order and byte rounding.
 - `RecursiveAI.OneImage.Pdf`: narrow transparency groups now copy and composite only the pixels covered by their form bounds, rather than the whole render cell. This avoids repeated full-cell work on pages containing many small translucent objects while preserving edge coverage.
