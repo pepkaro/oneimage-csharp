@@ -31,7 +31,11 @@ Measure these cases separately:
 4. **First render at a new scale:** open a new document, render one smaller size, then time the first render at the target size. Do not visit the target size beforehand. This models an interactive scale change with document resources retained.
 5. **Cached output copy/display:** retain output pixels and read or display them again. Label this separately from rerasterization.
 
+A natural smaller-size prime in a fresh host is not equivalent to several full runtime warmups. Report the first target-scale render after that prime separately from a fully warmed runtime.
+
 Use multiple warmups and measured samples, retain every sample, and report a median and range. Do not run builds or competing benchmarks simultaneously. Rebuild after source changes and verify the source and assembly used, especially when transferring files with preserved timestamps. Hash the complete RGBA output outside the timed interval and compare with the original implementation. Regression tests should also cover masks, transforms, fractional bounds, partial alpha, cell boundaries, and parallel rendering.
+
+Evaluate ReadyToRun and tiering choices in both process-cold and post-prime or warm scenarios before changing a host default. A startup improvement can reverse after the initial page has been shown; retain the same output checks and measurement boundaries for every configuration.
 
 ## Browser and WebView comparisons
 
@@ -40,6 +44,8 @@ Use an actual browser PDF viewer or WebView host, not a standalone PDFium call l
 Time from a documented action to a verified, settled page image. Navigation-completed alone is not proof that the target page is painted. Verify the page identity and geometry and compare the completed image with an independently captured reference from that renderer. Different renderers need not have byte-identical antialiasing; unchanged OneImage pixels are a separate correctness check.
 
 Report browser/WebView initialization, navigation, polling, screenshot/capture, image encoding, and physical presentation boundaries explicitly. A captured UI frame includes work not present in an in-memory RGBA renderer, while the viewer may retain caches not exposed to the benchmark. Do not subtract guessed overhead and call the remainder pure rendering time.
+
+For a matched viewer endpoint, present the OneImage result through the same WebView host and include output conversion, PNG encoding, bridge or IPC transfer, image decoding, presentation, and capture. Report raw RGBA rendering separately. A minimal image presentation surface still differs from a full PDF viewer, so matching the host and capture endpoint does not make their UI work identical.
 
 For a stronger first-scale comparison, start each browser trial in a new process/profile, open directly at a smaller zoom, wait for that page to settle, then time the first transition to a never-before-visited target scale. Returning to a previously visited scale can reuse a final raster and must be labeled as potentially cached. Even the first-scale protocol retains document resources and remains a broader UI/capture measurement, not an isolated rasterizer benchmark.
 
