@@ -75,8 +75,13 @@ internal sealed partial class CanvasDevice
         }
 
         var brush = new PixelBrush(raster, placement, nearest: nearest, stencil);
-        PaintBrush(brush, quad, IntersectionRule.NonZero, state.FillAlpha, state);
+        PaintBrush(brush, quad, IntersectionRule.NonZero, state.FillAlpha, state, ImageClipPath(quad));
     }
+
+    // Canvas.Fill intentionally multiplies independent shape/clip coverage. A PDF clip containing the image is geometry,
+    // not another opacity mask: applying it again would square AA coverage at shared edges. Leave all other clips alone.
+    private DrawingPath? ImageClipPath(DrawingPath quad) =>
+        _clip.Path is { } clip && ImageClip.Contains(clip, quad) ? null : _clip.Path;
 
     private static readonly PdfPath UnitSquare = new(
         new[] { (byte)PdfPathVerb.Move, (byte)PdfPathVerb.Line, (byte)PdfPathVerb.Line, (byte)PdfPathVerb.Line, (byte)PdfPathVerb.Close },
@@ -93,7 +98,7 @@ internal sealed partial class CanvasDevice
         }
 
         using var patternLayer = new Canvas(_w, _h, PixelFormat.Rgba8);
-        patternLayer.Fill(paint, quad, true, IntersectionRule.NonZero, 1f, BlendMode.Normal, AlphaComposition.SrcOver, false, null, _clip.Path, _clip.Rule);
+        patternLayer.Fill(paint, quad, true, IntersectionRule.NonZero, 1f, BlendMode.Normal, AlphaComposition.SrcOver, false, null, ImageClipPath(quad), _clip.Rule);
         using var coverage = new Canvas(_w, _h, PixelFormat.Rgba8);
         var cover = new PixelBrush(stencil, placement, nearest: nearest, new Rgba32(255, 255, 255, 255));
         coverage.Fill(cover, quad, true, IntersectionRule.NonZero, 1f, BlendMode.Normal, AlphaComposition.SrcOver);

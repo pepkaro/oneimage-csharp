@@ -336,7 +336,10 @@ internal sealed partial class CanvasDevice : IPdfDevice, IDisposable
         PaintBrush(brush, shape, rule, alpha, state);
     }
 
-    private void PaintBrush(Brush brush, DrawingPath shape, IntersectionRule rule, double alpha, in PdfGraphicsState state)
+    private void PaintBrush(Brush brush, DrawingPath shape, IntersectionRule rule, double alpha, in PdfGraphicsState state) =>
+        PaintBrush(brush, shape, rule, alpha, state, _clip.Path);
+
+    private void PaintBrush(Brush brush, DrawingPath shape, IntersectionRule rule, double alpha, in PdfGraphicsState state, DrawingPath? clip)
     {
         if (!(alpha > 0))
         {
@@ -352,10 +355,10 @@ internal sealed partial class CanvasDevice : IPdfDevice, IDisposable
         bool knock = layer is null && InKnockoutGroup;
         try
         {
-            canvas.Fill(brush, shape, true, rule, (float)Math.Min(alpha, 1), knock ? BlendMode.Normal : blend, knock ? AlphaComposition.Src : AlphaComposition.SrcOver, false, null, _clip.Path, _clip.Rule);
+            canvas.Fill(brush, shape, true, rule, (float)Math.Min(alpha, 1), knock ? BlendMode.Normal : blend, knock ? AlphaComposition.Src : AlphaComposition.SrcOver, false, null, clip, _clip.Rule);
             if (layer is null)
             {
-                ShapeShadow?.Fill(brush, shape, true, rule, (float)Math.Min(alpha, 1), BlendMode.Normal, AlphaComposition.SrcOver, false, null, _clip.Path, _clip.Rule);
+                ShapeShadow?.Fill(brush, shape, true, rule, (float)Math.Min(alpha, 1), BlendMode.Normal, AlphaComposition.SrcOver, false, null, clip, _clip.Rule);
             }
         }
         catch
