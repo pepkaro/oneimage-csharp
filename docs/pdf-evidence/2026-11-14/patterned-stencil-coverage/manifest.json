@@ -1,0 +1,282 @@
+{
+  "license": "MIT",
+  "authorship": "New numerical shapes, tiny raster arrays, polygon outline font, and generator; no external artwork/font/PDF/test stream or expected image is an input.",
+  "settings": {
+    "dpi": 144,
+    "page": 0,
+    "MediaBox": [
+      0,
+      0,
+      192,
+      128
+    ],
+    "CropBox": [
+      0,
+      0,
+      192,
+      128
+    ],
+    "rotation": 0,
+    "background": "opaque white",
+    "OneImageDegree": 1,
+    "OneImageAA": "renderer default exact-area coverage",
+    "MuPDFGraphicsAA": 8,
+    "MuPDFTextAA": 8,
+    "PDFiumAA": "default; no no_smooth flags",
+    "PDFjsAA": "Node Canvas backend default",
+    "PNG": "raw full-page, never cropped/resampled/retouched"
+  },
+  "engines": {
+    "pypdfium2": "5.13.0",
+    "pdfium": "153.0.7999.0",
+    "pymupdf": "1.26.6",
+    "mupdf": "1.26.11"
+  },
+  "fontTools": "4.61.1",
+  "fixture": "patterned-stencil-coverage",
+  "inputSha256": "43aa590b0f72731694886ef12d4771e1417c58c22ecbc0ba802df0f0ec1cf573",
+  "renders": {
+    "before": {
+      "file": "renders/patterned-stencil-coverage-before.png",
+      "sha256": "91255926a930111124be7d5405d3ec7f8982347941ccc874141ec56b8b5abd8c",
+      "width": 384,
+      "height": 256,
+      "details": {
+        "metadata": {
+          "runtime": ".NET 10.0.15",
+          "os": "Debian GNU/Linux 13 (trixie)",
+          "architecture": "X64",
+          "processorCount": 2,
+          "environment": {
+            "DOTNET_PROCESSOR_COUNT": "2",
+            "DOTNET_TieredCompilation": null,
+            "DOTNET_TieredPGO": null,
+            "DOTNET_GCHeapHardLimit": null,
+            "COMPlus_TieredCompilation": null,
+            "COMPlus_TieredPGO": null
+          },
+          "dpi": 144,
+          "degree": 1,
+          "smoothMagnifiedImages": false,
+          "page": 0,
+          "background": "opaque white",
+          "box": "CropBox (falls back to MediaBox)",
+          "rotation": 0,
+          "inputSha256": "43aa590b0f72731694886ef12d4771e1417c58c22ecbc0ba802df0f0ec1cf573",
+          "assemblies": [
+            {
+              "file": "OneImage.dll",
+              "name": "OneImage",
+              "version": "1.11.1.0",
+              "sha256": "b5fa6b975497bf16cc8469643adbf3c62eb6aeb74151ef7cb97a29ac551a6ab2"
+            },
+            {
+              "file": "OneImage.Pdf.dll",
+              "name": "OneImage.Pdf",
+              "version": "1.11.1.0",
+              "sha256": "a69408b9ccf69dc432155ea3be551fb8c6f524033598182988bd1fef7b4526c2"
+            },
+            {
+              "file": "OnePdf.dll",
+              "name": "OnePdf",
+              "version": "1.18.0.0",
+              "sha256": "f5a18b3a3b16fa3e1d39f4ab1fdba9454b449c675e54fbd411362d9165693fce"
+            }
+          ]
+        },
+        "width": 384,
+        "height": 256,
+        "rgbaSha256": "3fdff3a3b1365c7f7fbbea15bee02d3528ae20aefdb8b582b26d194f88142368",
+        "pngSha256": "91255926a930111124be7d5405d3ec7f8982347941ccc874141ec56b8b5abd8c"
+      }
+    },
+    "after": {
+      "file": "renders/patterned-stencil-coverage-after.png",
+      "sha256": "035ebf072cf70c496035e57a9cb0b34ed439827841636a1062687fb0a30e1cc8",
+      "width": 384,
+      "height": 256,
+      "details": {
+        "metadata": {
+          "runtime": ".NET 10.0.15",
+          "os": "Debian GNU/Linux 13 (trixie)",
+          "architecture": "X64",
+          "processorCount": 2,
+          "environment": {
+            "DOTNET_PROCESSOR_COUNT": "2",
+            "DOTNET_TieredCompilation": null,
+            "DOTNET_TieredPGO": null,
+            "DOTNET_GCHeapHardLimit": null,
+            "COMPlus_TieredCompilation": null,
+            "COMPlus_TieredPGO": null
+          },
+          "dpi": 144,
+          "degree": 1,
+          "smoothMagnifiedImages": false,
+          "page": 0,
+          "background": "opaque white",
+          "box": "CropBox (falls back to MediaBox)",
+          "rotation": 0,
+          "inputSha256": "43aa590b0f72731694886ef12d4771e1417c58c22ecbc0ba802df0f0ec1cf573",
+          "assemblies": [
+            {
+              "file": "OneImage.dll",
+              "name": "OneImage",
+              "version": "1.11.1.0",
+              "sha256": "0056cb3ed366675a8ca00a9961446f3c492c5ff2474dba32861a28ab32d03bc8"
+            },
+            {
+              "file": "OneImage.Pdf.dll",
+              "name": "OneImage.Pdf",
+              "version": "1.11.1.0",
+              "sha256": "beaad8d1007630321a8aa609f17f9e7d883ce7cddf88cd9d421d1adec5fa5ca6"
+            },
+            {
+              "file": "OnePdf.dll",
+              "name": "OnePdf",
+              "version": "1.18.0.0",
+              "sha256": "f5a18b3a3b16fa3e1d39f4ab1fdba9454b449c675e54fbd411362d9165693fce"
+            }
+          ]
+        },
+        "width": 384,
+        "height": 256,
+        "rgbaSha256": "74a0edcac30df7c0530f04265588293d7c2cd7907d45cac524b7f1c3056dab5c",
+        "pngSha256": "035ebf072cf70c496035e57a9cb0b34ed439827841636a1062687fb0a30e1cc8"
+      }
+    },
+    "mupdf": {
+      "file": "references/patterned-stencil-coverage-mupdf.png",
+      "sha256": "928deb70920ef795ae2d12240d65f506fdabd4951a0edc41fad2961b1e8e3a18",
+      "width": 384,
+      "height": 256
+    },
+    "pdfium": {
+      "file": "references/patterned-stencil-coverage-pdfium.png",
+      "sha256": "ea051fc16006266d6b55af6182f6fb86ed091978f08b7d7e120f0c0b1e8e9229",
+      "width": 384,
+      "height": 256
+    },
+    "pdfjs": {
+      "file": "references/patterned-stencil-coverage-pdfjs.png",
+      "sha256": "35d893067759a36a6bfb6bb7dba02eb229c56b4f95c104adbb220323f2764c73",
+      "width": 384,
+      "height": 256
+    }
+  },
+  "beforeTree": "fc149eb1be9923afcc557575f93df5a576998eef",
+  "headTree": "8380fd86955698953ee4aa7b7f2f0da22dd9a39b",
+  "beforeStage": "07-passthrough-coverage",
+  "headStage": "08-patterned-stencil-coverage",
+  "pdfjs": {
+    "pdfjs": "6.5.438",
+    "build": "0a4153349",
+    "backend": "@napi-rs/canvas (Node Canvas; NOT browser Canvas)",
+    "canvasVersion": "1.1.1",
+    "node": "v24.22.1",
+    "width": 384,
+    "height": 256,
+    "dpi": 144,
+    "annotations": "ENABLE static appearances",
+    "background": "rgb(255,255,255)",
+    "useSystemFonts": false,
+    "isEvalSupported": false,
+    "xfa": false,
+    "useWorkerFetch": false,
+    "icc": false,
+    "iccReason": "PDF.js Node worker-fetch gate disables ICC WASM; ICC-based inputs would fall back",
+    "deviceCmyk": "Polynomial fallback, not ICC-managed CMYK",
+    "diagnostics": []
+  },
+  "reviewChecks": {
+    "inputSha256": "43aa590b0f72731694886ef12d4771e1417c58c22ecbc0ba802df0f0ec1cf573",
+    "annotations": "absent",
+    "sourceTreesVerified": true,
+    "renders": {
+      "before": {
+        "sha256": "91255926a930111124be7d5405d3ec7f8982347941ccc874141ec56b8b5abd8c",
+        "width": 384,
+        "height": 256,
+        "bytes": 179,
+        "opaque": true,
+        "stage": "07-passthrough-coverage",
+        "rgbaSha256": "3fdff3a3b1365c7f7fbbea15bee02d3528ae20aefdb8b582b26d194f88142368",
+        "assemblies": [
+          {
+            "file": "OneImage.dll",
+            "sha256": "b5fa6b975497bf16cc8469643adbf3c62eb6aeb74151ef7cb97a29ac551a6ab2",
+            "matchingBuildArtifacts": [
+              "renderer-review-split-20261114/artifacts/07-passthrough-coverage/bin/OneImage.Pdf.Tests/release/OneImage.dll"
+            ]
+          },
+          {
+            "file": "OneImage.Pdf.dll",
+            "sha256": "a69408b9ccf69dc432155ea3be551fb8c6f524033598182988bd1fef7b4526c2",
+            "matchingBuildArtifacts": [
+              "renderer-review-split-20261114/artifacts/07-passthrough-coverage/bin/OneImage.Pdf.Tests/release/OneImage.Pdf.dll"
+            ]
+          },
+          {
+            "file": "OnePdf.dll",
+            "sha256": "f5a18b3a3b16fa3e1d39f4ab1fdba9454b449c675e54fbd411362d9165693fce",
+            "matchingBuildArtifacts": [
+              "renderer-review-split-20261114/artifacts/07-passthrough-coverage/bin/OneImage.Pdf.Tests/release/OnePdf.dll"
+            ]
+          }
+        ]
+      },
+      "after": {
+        "sha256": "035ebf072cf70c496035e57a9cb0b34ed439827841636a1062687fb0a30e1cc8",
+        "width": 384,
+        "height": 256,
+        "bytes": 261,
+        "opaque": true,
+        "stage": "08-patterned-stencil-coverage",
+        "rgbaSha256": "74a0edcac30df7c0530f04265588293d7c2cd7907d45cac524b7f1c3056dab5c",
+        "assemblies": [
+          {
+            "file": "OneImage.dll",
+            "sha256": "0056cb3ed366675a8ca00a9961446f3c492c5ff2474dba32861a28ab32d03bc8",
+            "matchingBuildArtifacts": [
+              "renderer-review-split-20261114/artifacts/08-patterned-stencil-coverage/bin/OneImage.Pdf.Tests/release/OneImage.dll"
+            ]
+          },
+          {
+            "file": "OneImage.Pdf.dll",
+            "sha256": "beaad8d1007630321a8aa609f17f9e7d883ce7cddf88cd9d421d1adec5fa5ca6",
+            "matchingBuildArtifacts": [
+              "renderer-review-split-20261114/artifacts/08-patterned-stencil-coverage/bin/OneImage.Pdf.Tests/release/OneImage.Pdf.dll"
+            ]
+          },
+          {
+            "file": "OnePdf.dll",
+            "sha256": "f5a18b3a3b16fa3e1d39f4ab1fdba9454b449c675e54fbd411362d9165693fce",
+            "matchingBuildArtifacts": [
+              "renderer-review-split-20261114/artifacts/08-patterned-stencil-coverage/bin/OneImage.Pdf.Tests/release/OnePdf.dll"
+            ]
+          }
+        ]
+      },
+      "mupdf": {
+        "sha256": "928deb70920ef795ae2d12240d65f506fdabd4951a0edc41fad2961b1e8e3a18",
+        "width": 384,
+        "height": 256,
+        "bytes": 2469,
+        "opaque": true
+      },
+      "pdfium": {
+        "sha256": "ea051fc16006266d6b55af6182f6fb86ed091978f08b7d7e120f0c0b1e8e9229",
+        "width": 384,
+        "height": 256,
+        "bytes": 1009,
+        "opaque": true
+      },
+      "pdfjs": {
+        "sha256": "35d893067759a36a6bfb6bb7dba02eb229c56b4f95c104adbb220323f2764c73",
+        "width": 384,
+        "height": 256,
+        "bytes": 1189,
+        "opaque": true
+      }
+    }
+  }
+}

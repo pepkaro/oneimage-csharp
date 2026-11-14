@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "runtime": ".NET 10.0.15",
+    "os": "Debian GNU/Linux 13 (trixie)",
+    "architecture": "X64",
+    "processorCount": 2,
+    "environment": {
+      "DOTNET_PROCESSOR_COUNT": "2",
+      "DOTNET_TieredCompilation": null,
+      "DOTNET_TieredPGO": null,
+      "DOTNET_GCHeapHardLimit": null,
+      "COMPlus_TieredCompilation": null,
+      "COMPlus_TieredPGO": null
+    },
+    "dpi": 144,
+    "degree": 1,
+    "smoothMagnifiedImages": false,
+    "page": 0,
+    "background": "opaque white",
+    "box": "CropBox (falls back to MediaBox)",
+    "rotation": 0,
+    "inputSha256": "9fd24ab5a39aef02dd77ed8a02bf64d71bff7c392bfdf9eddf9e8271ed9f541c",
+    "assemblies": [
+      {
+        "file": "OneImage.dll",
+        "name": "OneImage",
+        "version": "1.11.1.0",
+        "sha256": "5fe3d0ee1f0e56ce66c111dfb6a474efa5cd9ca079a470bee4da41ff873e46c2"
+      },
+      {
+        "file": "OneImage.Pdf.dll",
+        "name": "OneImage.Pdf",
+        "version": "1.11.1.0",
+        "sha256": "c9d755d535a7dbc9081821248b282bb6e05b253485df04ac3c44c1b1ab51883d"
+      },
+      {
+        "file": "OnePdf.dll",
+        "name": "OnePdf",
+        "version": "1.18.0.0",
+        "sha256": "f5a18b3a3b16fa3e1d39f4ab1fdba9454b449c675e54fbd411362d9165693fce"
+      }
+    ]
+  },
+  "width": 384,
+  "height": 256,
+  "rgbaSha256": "bfff0d3c52b0e2bd7afee01e5d3e7a1da6e019587d8f3b7bafb35a35a0e75adc",
+  "pngSha256": "e61c41cdc1c9a73ef4fba3037324dcaf93ca2c1012b912fdb379209e5e3f369e"
+}

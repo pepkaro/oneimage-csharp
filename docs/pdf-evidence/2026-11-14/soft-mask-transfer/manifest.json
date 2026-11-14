@@ -1,0 +1,282 @@
+{
+  "license": "MIT",
+  "authorship": "New numerical shapes, tiny raster arrays, polygon outline font, and generator; no external artwork/font/PDF/test stream or expected image is an input.",
+  "settings": {
+    "dpi": 144,
+    "page": 0,
+    "MediaBox": [
+      0,
+      0,
+      192,
+      128
+    ],
+    "CropBox": [
+      0,
+      0,
+      192,
+      128
+    ],
+    "rotation": 0,
+    "background": "opaque white",
+    "OneImageDegree": 1,
+    "OneImageAA": "renderer default exact-area coverage",
+    "MuPDFGraphicsAA": 8,
+    "MuPDFTextAA": 8,
+    "PDFiumAA": "default; no no_smooth flags",
+    "PDFjsAA": "Node Canvas backend default",
+    "PNG": "raw full-page, never cropped/resampled/retouched"
+  },
+  "engines": {
+    "pypdfium2": "5.13.0",
+    "pdfium": "153.0.7999.0",
+    "pymupdf": "1.26.6",
+    "mupdf": "1.26.11"
+  },
+  "fontTools": "4.61.1",
+  "fixture": "soft-mask-transfer",
+  "inputSha256": "c1bf81ea715a0e1f0efd9d865a7d7a22852e35c57f4d5333a72751a6736f2c4c",
+  "renders": {
+    "before": {
+      "file": "renders/soft-mask-transfer-before.png",
+      "sha256": "80fa63d91b88c229d6411f901e2d455bc5fbe72dc1a02626a59113f2ec8f4b24",
+      "width": 384,
+      "height": 256,
+      "details": {
+        "metadata": {
+          "runtime": ".NET 10.0.15",
+          "os": "Debian GNU/Linux 13 (trixie)",
+          "architecture": "X64",
+          "processorCount": 2,
+          "environment": {
+            "DOTNET_PROCESSOR_COUNT": "2",
+            "DOTNET_TieredCompilation": null,
+            "DOTNET_TieredPGO": null,
+            "DOTNET_GCHeapHardLimit": null,
+            "COMPlus_TieredCompilation": null,
+            "COMPlus_TieredPGO": null
+          },
+          "dpi": 144,
+          "degree": 1,
+          "smoothMagnifiedImages": false,
+          "page": 0,
+          "background": "opaque white",
+          "box": "CropBox (falls back to MediaBox)",
+          "rotation": 0,
+          "inputSha256": "c1bf81ea715a0e1f0efd9d865a7d7a22852e35c57f4d5333a72751a6736f2c4c",
+          "assemblies": [
+            {
+              "file": "OneImage.dll",
+              "name": "OneImage",
+              "version": "1.11.1.0",
+              "sha256": "2ccb4a32c2f6cb8f8cededfda58236f4dd00904ea81f41e00f0e93d4da3b9746"
+            },
+            {
+              "file": "OneImage.Pdf.dll",
+              "name": "OneImage.Pdf",
+              "version": "1.11.1.0",
+              "sha256": "a6cb4cd41535e44030c227d63541d8e376ce22f8d7c67ba514277bfa44441491"
+            },
+            {
+              "file": "OnePdf.dll",
+              "name": "OnePdf",
+              "version": "1.18.0.0",
+              "sha256": "f5a18b3a3b16fa3e1d39f4ab1fdba9454b449c675e54fbd411362d9165693fce"
+            }
+          ]
+        },
+        "width": 384,
+        "height": 256,
+        "rgbaSha256": "4b5907472048321664810bd5513f699c9424b6eb22dcfa7bcb46efdc23342f0d",
+        "pngSha256": "80fa63d91b88c229d6411f901e2d455bc5fbe72dc1a02626a59113f2ec8f4b24"
+      }
+    },
+    "after": {
+      "file": "renders/soft-mask-transfer-after.png",
+      "sha256": "d8ddef3118e1a5b321ecbfe5859361b4ea96ffe77d11d146bee97850c6293635",
+      "width": 384,
+      "height": 256,
+      "details": {
+        "metadata": {
+          "runtime": ".NET 10.0.15",
+          "os": "Debian GNU/Linux 13 (trixie)",
+          "architecture": "X64",
+          "processorCount": 2,
+          "environment": {
+            "DOTNET_PROCESSOR_COUNT": "2",
+            "DOTNET_TieredCompilation": null,
+            "DOTNET_TieredPGO": null,
+            "DOTNET_GCHeapHardLimit": null,
+            "COMPlus_TieredCompilation": null,
+            "COMPlus_TieredPGO": null
+          },
+          "dpi": 144,
+          "degree": 1,
+          "smoothMagnifiedImages": false,
+          "page": 0,
+          "background": "opaque white",
+          "box": "CropBox (falls back to MediaBox)",
+          "rotation": 0,
+          "inputSha256": "c1bf81ea715a0e1f0efd9d865a7d7a22852e35c57f4d5333a72751a6736f2c4c",
+          "assemblies": [
+            {
+              "file": "OneImage.dll",
+              "name": "OneImage",
+              "version": "1.11.1.0",
+              "sha256": "c8d63eb4258af747fc7f19ec0a4048382786a8a589c2b1601859076b895fef8c"
+            },
+            {
+              "file": "OneImage.Pdf.dll",
+              "name": "OneImage.Pdf",
+              "version": "1.11.1.0",
+              "sha256": "ddd6b9dd5d37255d9ef71a8972a34c5c39de963c9b1e03bd27e96361d03dbfa7"
+            },
+            {
+              "file": "OnePdf.dll",
+              "name": "OnePdf",
+              "version": "1.18.0.0",
+              "sha256": "f5a18b3a3b16fa3e1d39f4ab1fdba9454b449c675e54fbd411362d9165693fce"
+            }
+          ]
+        },
+        "width": 384,
+        "height": 256,
+        "rgbaSha256": "8a65e41fa202f70a9cb5698742bdc9b84e07877eb639abbcea40f92edd0007e8",
+        "pngSha256": "d8ddef3118e1a5b321ecbfe5859361b4ea96ffe77d11d146bee97850c6293635"
+      }
+    },
+    "mupdf": {
+      "file": "references/soft-mask-transfer-mupdf.png",
+      "sha256": "475ab632f0436c3fb7dd6512a0448c33b4ed93c63fdf9f786baa2d2675921471",
+      "width": 384,
+      "height": 256
+    },
+    "pdfium": {
+      "file": "references/soft-mask-transfer-pdfium.png",
+      "sha256": "fb6a5fac167da8059a4f06d919983bdf756e47e2408fb31ce361608f93ab41f6",
+      "width": 384,
+      "height": 256
+    },
+    "pdfjs": {
+      "file": "references/soft-mask-transfer-pdfjs.png",
+      "sha256": "a38637c2e5980ecc0bc6b72d591222d5a6ebdd4b390c3c843ae1139cf5856692",
+      "width": 384,
+      "height": 256
+    }
+  },
+  "beforeTree": "07e76061f147a058c60ffe7fd10c750fab56bfd3",
+  "headTree": "75688da17ae247c75a5d98467c737b87c3e40242",
+  "beforeStage": "04-fused-rgba-blend",
+  "headStage": "05-soft-mask-transfer",
+  "pdfjs": {
+    "pdfjs": "6.5.438",
+    "build": "0a4153349",
+    "backend": "@napi-rs/canvas (Node Canvas; NOT browser Canvas)",
+    "canvasVersion": "1.1.1",
+    "node": "v24.22.1",
+    "width": 384,
+    "height": 256,
+    "dpi": 144,
+    "annotations": "ENABLE static appearances",
+    "background": "rgb(255,255,255)",
+    "useSystemFonts": false,
+    "isEvalSupported": false,
+    "xfa": false,
+    "useWorkerFetch": false,
+    "icc": false,
+    "iccReason": "PDF.js Node worker-fetch gate disables ICC WASM; ICC-based inputs would fall back",
+    "deviceCmyk": "Polynomial fallback, not ICC-managed CMYK",
+    "diagnostics": []
+  },
+  "reviewChecks": {
+    "inputSha256": "c1bf81ea715a0e1f0efd9d865a7d7a22852e35c57f4d5333a72751a6736f2c4c",
+    "annotations": "absent",
+    "sourceTreesVerified": true,
+    "renders": {
+      "before": {
+        "sha256": "80fa63d91b88c229d6411f901e2d455bc5fbe72dc1a02626a59113f2ec8f4b24",
+        "width": 384,
+        "height": 256,
+        "bytes": 776,
+        "opaque": true,
+        "stage": "04-fused-rgba-blend",
+        "rgbaSha256": "4b5907472048321664810bd5513f699c9424b6eb22dcfa7bcb46efdc23342f0d",
+        "assemblies": [
+          {
+            "file": "OneImage.dll",
+            "sha256": "2ccb4a32c2f6cb8f8cededfda58236f4dd00904ea81f41e00f0e93d4da3b9746",
+            "matchingBuildArtifacts": [
+              "renderer-review-split-20261114/artifacts/04-fused-rgba-blend/bin/OneImage.Pdf.Tests/release/OneImage.dll"
+            ]
+          },
+          {
+            "file": "OneImage.Pdf.dll",
+            "sha256": "a6cb4cd41535e44030c227d63541d8e376ce22f8d7c67ba514277bfa44441491",
+            "matchingBuildArtifacts": [
+              "renderer-review-split-20261114/artifacts/04-fused-rgba-blend/bin/OneImage.Pdf.Tests/release/OneImage.Pdf.dll"
+            ]
+          },
+          {
+            "file": "OnePdf.dll",
+            "sha256": "f5a18b3a3b16fa3e1d39f4ab1fdba9454b449c675e54fbd411362d9165693fce",
+            "matchingBuildArtifacts": [
+              "renderer-review-split-20261114/artifacts/04-fused-rgba-blend/bin/OneImage.Pdf.Tests/release/OnePdf.dll"
+            ]
+          }
+        ]
+      },
+      "after": {
+        "sha256": "d8ddef3118e1a5b321ecbfe5859361b4ea96ffe77d11d146bee97850c6293635",
+        "width": 384,
+        "height": 256,
+        "bytes": 464,
+        "opaque": true,
+        "stage": "05-soft-mask-transfer",
+        "rgbaSha256": "8a65e41fa202f70a9cb5698742bdc9b84e07877eb639abbcea40f92edd0007e8",
+        "assemblies": [
+          {
+            "file": "OneImage.dll",
+            "sha256": "c8d63eb4258af747fc7f19ec0a4048382786a8a589c2b1601859076b895fef8c",
+            "matchingBuildArtifacts": [
+              "renderer-review-split-20261114/artifacts/05-soft-mask-transfer/bin/OneImage.Pdf.Tests/release/OneImage.dll"
+            ]
+          },
+          {
+            "file": "OneImage.Pdf.dll",
+            "sha256": "ddd6b9dd5d37255d9ef71a8972a34c5c39de963c9b1e03bd27e96361d03dbfa7",
+            "matchingBuildArtifacts": [
+              "renderer-review-split-20261114/artifacts/05-soft-mask-transfer/bin/OneImage.Pdf.Tests/release/OneImage.Pdf.dll"
+            ]
+          },
+          {
+            "file": "OnePdf.dll",
+            "sha256": "f5a18b3a3b16fa3e1d39f4ab1fdba9454b449c675e54fbd411362d9165693fce",
+            "matchingBuildArtifacts": [
+              "renderer-review-split-20261114/artifacts/05-soft-mask-transfer/bin/OneImage.Pdf.Tests/release/OnePdf.dll"
+            ]
+          }
+        ]
+      },
+      "mupdf": {
+        "sha256": "475ab632f0436c3fb7dd6512a0448c33b4ed93c63fdf9f786baa2d2675921471",
+        "width": 384,
+        "height": 256,
+        "bytes": 2074,
+        "opaque": true
+      },
+      "pdfium": {
+        "sha256": "fb6a5fac167da8059a4f06d919983bdf756e47e2408fb31ce361608f93ab41f6",
+        "width": 384,
+        "height": 256,
+        "bytes": 1090,
+        "opaque": true
+      },
+      "pdfjs": {
+        "sha256": "a38637c2e5980ecc0bc6b72d591222d5a6ebdd4b390c3c843ae1139cf5856692",
+        "width": 384,
+        "height": 256,
+        "bytes": 1227,
+        "opaque": true
+      }
+    }
+  }
+}

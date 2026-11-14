@@ -1,0 +1,282 @@
+{
+  "license": "MIT",
+  "authorship": "New numerical shapes, tiny raster arrays, polygon outline font, and generator; no external artwork/font/PDF/test stream or expected image is an input.",
+  "settings": {
+    "dpi": 144,
+    "page": 0,
+    "MediaBox": [
+      0,
+      0,
+      192,
+      128
+    ],
+    "CropBox": [
+      0,
+      0,
+      192,
+      128
+    ],
+    "rotation": 0,
+    "background": "opaque white",
+    "OneImageDegree": 1,
+    "OneImageAA": "renderer default exact-area coverage",
+    "MuPDFGraphicsAA": 8,
+    "MuPDFTextAA": 8,
+    "PDFiumAA": "default; no no_smooth flags",
+    "PDFjsAA": "Node Canvas backend default",
+    "PNG": "raw full-page, never cropped/resampled/retouched"
+  },
+  "engines": {
+    "pypdfium2": "5.13.0",
+    "pdfium": "153.0.7999.0",
+    "pymupdf": "1.26.6",
+    "mupdf": "1.26.11"
+  },
+  "fontTools": "4.61.1",
+  "fixture": "group-backdrop-alpha",
+  "inputSha256": "d04994e559452937c3d521063d0a624e36fe5acd55666b84e73248323098cc9d",
+  "renders": {
+    "before": {
+      "file": "renders/group-backdrop-alpha-before.png",
+      "sha256": "4c92cbc3273e8385d80f03c69841a127f64521d1b8ed9f6a7f16b36191423e22",
+      "width": 384,
+      "height": 256,
+      "details": {
+        "metadata": {
+          "runtime": ".NET 10.0.15",
+          "os": "Debian GNU/Linux 13 (trixie)",
+          "architecture": "X64",
+          "processorCount": 2,
+          "environment": {
+            "DOTNET_PROCESSOR_COUNT": "2",
+            "DOTNET_TieredCompilation": null,
+            "DOTNET_TieredPGO": null,
+            "DOTNET_GCHeapHardLimit": null,
+            "COMPlus_TieredCompilation": null,
+            "COMPlus_TieredPGO": null
+          },
+          "dpi": 144,
+          "degree": 1,
+          "smoothMagnifiedImages": false,
+          "page": 0,
+          "background": "opaque white",
+          "box": "CropBox (falls back to MediaBox)",
+          "rotation": 0,
+          "inputSha256": "d04994e559452937c3d521063d0a624e36fe5acd55666b84e73248323098cc9d",
+          "assemblies": [
+            {
+              "file": "OneImage.dll",
+              "name": "OneImage",
+              "version": "1.11.1.0",
+              "sha256": "c8d63eb4258af747fc7f19ec0a4048382786a8a589c2b1601859076b895fef8c"
+            },
+            {
+              "file": "OneImage.Pdf.dll",
+              "name": "OneImage.Pdf",
+              "version": "1.11.1.0",
+              "sha256": "ddd6b9dd5d37255d9ef71a8972a34c5c39de963c9b1e03bd27e96361d03dbfa7"
+            },
+            {
+              "file": "OnePdf.dll",
+              "name": "OnePdf",
+              "version": "1.18.0.0",
+              "sha256": "f5a18b3a3b16fa3e1d39f4ab1fdba9454b449c675e54fbd411362d9165693fce"
+            }
+          ]
+        },
+        "width": 384,
+        "height": 256,
+        "rgbaSha256": "2c1b7942b70539e228b966ce7a96f19ee750a468ee4a211d570ab949d432cdb5",
+        "pngSha256": "4c92cbc3273e8385d80f03c69841a127f64521d1b8ed9f6a7f16b36191423e22"
+      }
+    },
+    "after": {
+      "file": "renders/group-backdrop-alpha-after.png",
+      "sha256": "f80da0bd52622b1abc285e71d6167b87bc181e7e71eaf162f4ddd100b7f7eff8",
+      "width": 384,
+      "height": 256,
+      "details": {
+        "metadata": {
+          "runtime": ".NET 10.0.15",
+          "os": "Debian GNU/Linux 13 (trixie)",
+          "architecture": "X64",
+          "processorCount": 2,
+          "environment": {
+            "DOTNET_PROCESSOR_COUNT": "2",
+            "DOTNET_TieredCompilation": null,
+            "DOTNET_TieredPGO": null,
+            "DOTNET_GCHeapHardLimit": null,
+            "COMPlus_TieredCompilation": null,
+            "COMPlus_TieredPGO": null
+          },
+          "dpi": 144,
+          "degree": 1,
+          "smoothMagnifiedImages": false,
+          "page": 0,
+          "background": "opaque white",
+          "box": "CropBox (falls back to MediaBox)",
+          "rotation": 0,
+          "inputSha256": "d04994e559452937c3d521063d0a624e36fe5acd55666b84e73248323098cc9d",
+          "assemblies": [
+            {
+              "file": "OneImage.dll",
+              "name": "OneImage",
+              "version": "1.11.1.0",
+              "sha256": "6689437bf194f293c72ba7da1622033b8d388e0f2d6b270d5fe544ea71648ad2"
+            },
+            {
+              "file": "OneImage.Pdf.dll",
+              "name": "OneImage.Pdf",
+              "version": "1.11.1.0",
+              "sha256": "2022d50df5ad4ff268a0e6d24acac4243a706308fcb8f02d3539c7b80673113a"
+            },
+            {
+              "file": "OnePdf.dll",
+              "name": "OnePdf",
+              "version": "1.18.0.0",
+              "sha256": "f5a18b3a3b16fa3e1d39f4ab1fdba9454b449c675e54fbd411362d9165693fce"
+            }
+          ]
+        },
+        "width": 384,
+        "height": 256,
+        "rgbaSha256": "9454877ffbbf52bb44b29a1ef4bf2691b6ec2a3e3a1aebbbae6895a808197c00",
+        "pngSha256": "f80da0bd52622b1abc285e71d6167b87bc181e7e71eaf162f4ddd100b7f7eff8"
+      }
+    },
+    "mupdf": {
+      "file": "references/group-backdrop-alpha-mupdf.png",
+      "sha256": "36dc3e4d7af232329d4d77b7df656357967e6969348f962e4cf511c7c9c59517",
+      "width": 384,
+      "height": 256
+    },
+    "pdfium": {
+      "file": "references/group-backdrop-alpha-pdfium.png",
+      "sha256": "f8eb18df54cba77bc321a6a3c4fbcc449a08a6b092e8d41503619354e734ddb9",
+      "width": 384,
+      "height": 256
+    },
+    "pdfjs": {
+      "file": "references/group-backdrop-alpha-pdfjs.png",
+      "sha256": "7f951dfd007408591a2efd8268e98f5f88967d32a9dfc221400ff4701b78efc3",
+      "width": 384,
+      "height": 256
+    }
+  },
+  "beforeTree": "75688da17ae247c75a5d98467c737b87c3e40242",
+  "headTree": "c0a5566f3aeaa219615bf8f7df149a051623d51a",
+  "beforeStage": "05-soft-mask-transfer",
+  "headStage": "06-group-backdrop-alpha",
+  "pdfjs": {
+    "pdfjs": "6.5.438",
+    "build": "0a4153349",
+    "backend": "@napi-rs/canvas (Node Canvas; NOT browser Canvas)",
+    "canvasVersion": "1.1.1",
+    "node": "v24.22.1",
+    "width": 384,
+    "height": 256,
+    "dpi": 144,
+    "annotations": "ENABLE static appearances",
+    "background": "rgb(255,255,255)",
+    "useSystemFonts": false,
+    "isEvalSupported": false,
+    "xfa": false,
+    "useWorkerFetch": false,
+    "icc": false,
+    "iccReason": "PDF.js Node worker-fetch gate disables ICC WASM; ICC-based inputs would fall back",
+    "deviceCmyk": "Polynomial fallback, not ICC-managed CMYK",
+    "diagnostics": []
+  },
+  "reviewChecks": {
+    "inputSha256": "d04994e559452937c3d521063d0a624e36fe5acd55666b84e73248323098cc9d",
+    "annotations": "absent",
+    "sourceTreesVerified": true,
+    "renders": {
+      "before": {
+        "sha256": "4c92cbc3273e8385d80f03c69841a127f64521d1b8ed9f6a7f16b36191423e22",
+        "width": 384,
+        "height": 256,
+        "bytes": 596,
+        "opaque": true,
+        "stage": "05-soft-mask-transfer",
+        "rgbaSha256": "2c1b7942b70539e228b966ce7a96f19ee750a468ee4a211d570ab949d432cdb5",
+        "assemblies": [
+          {
+            "file": "OneImage.dll",
+            "sha256": "c8d63eb4258af747fc7f19ec0a4048382786a8a589c2b1601859076b895fef8c",
+            "matchingBuildArtifacts": [
+              "renderer-review-split-20261114/artifacts/05-soft-mask-transfer/bin/OneImage.Pdf.Tests/release/OneImage.dll"
+            ]
+          },
+          {
+            "file": "OneImage.Pdf.dll",
+            "sha256": "ddd6b9dd5d37255d9ef71a8972a34c5c39de963c9b1e03bd27e96361d03dbfa7",
+            "matchingBuildArtifacts": [
+              "renderer-review-split-20261114/artifacts/05-soft-mask-transfer/bin/OneImage.Pdf.Tests/release/OneImage.Pdf.dll"
+            ]
+          },
+          {
+            "file": "OnePdf.dll",
+            "sha256": "f5a18b3a3b16fa3e1d39f4ab1fdba9454b449c675e54fbd411362d9165693fce",
+            "matchingBuildArtifacts": [
+              "renderer-review-split-20261114/artifacts/05-soft-mask-transfer/bin/OneImage.Pdf.Tests/release/OnePdf.dll"
+            ]
+          }
+        ]
+      },
+      "after": {
+        "sha256": "f80da0bd52622b1abc285e71d6167b87bc181e7e71eaf162f4ddd100b7f7eff8",
+        "width": 384,
+        "height": 256,
+        "bytes": 596,
+        "opaque": true,
+        "stage": "06-group-backdrop-alpha",
+        "rgbaSha256": "9454877ffbbf52bb44b29a1ef4bf2691b6ec2a3e3a1aebbbae6895a808197c00",
+        "assemblies": [
+          {
+            "file": "OneImage.dll",
+            "sha256": "6689437bf194f293c72ba7da1622033b8d388e0f2d6b270d5fe544ea71648ad2",
+            "matchingBuildArtifacts": [
+              "renderer-review-split-20261114/artifacts/06-group-backdrop-alpha/bin/OneImage.Pdf.Tests/release/OneImage.dll"
+            ]
+          },
+          {
+            "file": "OneImage.Pdf.dll",
+            "sha256": "2022d50df5ad4ff268a0e6d24acac4243a706308fcb8f02d3539c7b80673113a",
+            "matchingBuildArtifacts": [
+              "renderer-review-split-20261114/artifacts/06-group-backdrop-alpha/bin/OneImage.Pdf.Tests/release/OneImage.Pdf.dll"
+            ]
+          },
+          {
+            "file": "OnePdf.dll",
+            "sha256": "f5a18b3a3b16fa3e1d39f4ab1fdba9454b449c675e54fbd411362d9165693fce",
+            "matchingBuildArtifacts": [
+              "renderer-review-split-20261114/artifacts/06-group-backdrop-alpha/bin/OneImage.Pdf.Tests/release/OnePdf.dll"
+            ]
+          }
+        ]
+      },
+      "mupdf": {
+        "sha256": "36dc3e4d7af232329d4d77b7df656357967e6969348f962e4cf511c7c9c59517",
+        "width": 384,
+        "height": 256,
+        "bytes": 2573,
+        "opaque": true
+      },
+      "pdfium": {
+        "sha256": "f8eb18df54cba77bc321a6a3c4fbcc449a08a6b092e8d41503619354e734ddb9",
+        "width": 384,
+        "height": 256,
+        "bytes": 1106,
+        "opaque": true
+      },
+      "pdfjs": {
+        "sha256": "7f951dfd007408591a2efd8268e98f5f88967d32a9dfc221400ff4701b78efc3",
+        "width": 384,
+        "height": 256,
+        "bytes": 1244,
+        "opaque": true
+      }
+    }
+  }
+}

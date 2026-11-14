@@ -1,0 +1,384 @@
+{
+  "samples": [
+    {
+      "mode": "Normal",
+      "region": "red only",
+      "pdfPoint": [
+        22,
+        40
+      ],
+      "idealContinuousRGB": [
+        195.808125,
+        95.59312499999999,
+        60.11625
+      ],
+      "observed": {
+        "before": [
+          193.0,
+          111.0,
+          56.0
+        ],
+        "after": [
+          196.0,
+          96.0,
+          60.0
+        ],
+        "pdfium": [
+          195.0,
+          96.0,
+          60.0
+        ],
+        "mupdf": [
+          195.0,
+          94.0,
+          59.0
+        ],
+        "pdfjs": [
+          196.0,
+          96.0,
+          60.0
+        ]
+      },
+      "beforeMaxChannelError": 15.406875000000014,
+      "afterMaxChannelError": 0.40687500000001364
+    },
+    {
+      "mode": "Normal",
+      "region": "overlap",
+      "pdfPoint": [
+        35,
+        70
+      ],
+      "idealContinuousRGB": [
+        134.04553124999998,
+        126.81628124999999,
+        77.89293749999999
+      ],
+      "observed": {
+        "before": [
+          145.0,
+          127.0,
+          73.0
+        ],
+        "after": [
+          134.0,
+          127.0,
+          78.0
+        ],
+        "pdfium": [
+          134.0,
+          126.0,
+          77.0
+        ],
+        "mupdf": [
+          134.0,
+          126.0,
+          77.0
+        ],
+        "pdfjs": [
+          134.0,
+          127.0,
+          78.0
+        ]
+      },
+      "beforeMaxChannelError": 10.954468750000018,
+      "afterMaxChannelError": 0.18371875000001125
+    },
+    {
+      "mode": "Normal",
+      "region": "green only",
+      "pdfPoint": [
+        50,
+        80
+      ],
+      "idealContinuousRGB": [
+        131.994375,
+        141.174375,
+        73.790625
+      ],
+      "observed": {
+        "before": [
+          159.0,
+          135.0,
+          63.0
+        ],
+        "after": [
+          132.0,
+          142.0,
+          74.0
+        ],
+        "pdfium": [
+          132.0,
+          141.0,
+          73.0
+        ],
+        "mupdf": [
+          131.0,
+          140.0,
+          73.0
+        ],
+        "pdfjs": [
+          132.0,
+          141.0,
+          73.0
+        ]
+      },
+      "beforeMaxChannelError": 27.00562500000001,
+      "afterMaxChannelError": 0.8256250000000023
+    },
+    {
+      "mode": "Multiply",
+      "region": "red only",
+      "pdfPoint": [
+        86,
+        40
+      ],
+      "idealContinuousRGB": [
+        177.575625,
+        88.7559375,
+        38.23725
+      ],
+      "observed": {
+        "before": [
+          176.0,
+          96.0,
+          37.0
+        ],
+        "after": [
+          177.0,
+          89.0,
+          38.0
+        ],
+        "pdfium": [
+          177.0,
+          89.0,
+          38.0
+        ],
+        "mupdf": [
+          177.0,
+          88.0,
+          38.0
+        ],
+        "pdfjs": [
+          177.0,
+          89.0,
+          39.0
+        ]
+      },
+      "beforeMaxChannelError": 7.244062499999998,
+      "afterMaxChannelError": 0.5756250000000023
+    },
+    {
+      "mode": "Multiply",
+      "region": "overlap",
+      "pdfPoint": [
+        99,
+        70
+      ],
+      "idealContinuousRGB": [
+        123.56184375,
+        94.11173437499998,
+        35.228887500000006
+      ],
+      "observed": {
+        "before": [
+          132.0,
+          95.0,
+          34.0
+        ],
+        "after": [
+          123.0,
+          95.0,
+          35.0
+        ],
+        "pdfium": [
+          123.0,
+          93.0,
+          34.0
+        ],
+        "mupdf": [
+          123.0,
+          94.0,
+          35.0
+        ],
+        "pdfjs": [
+          124.0,
+          94.0,
+          36.0
+        ]
+      },
+      "beforeMaxChannelError": 8.438156250000006,
+      "afterMaxChannelError": 0.8882656250000167
+    },
+    {
+      "mode": "Multiply",
+      "region": "green only",
+      "pdfPoint": [
+        114,
+        80
+      ],
+      "idealContinuousRGB": [
+        129.71531249999998,
+        111.5465625,
+        40.972125000000005
+      ],
+      "observed": {
+        "before": [
+          150.0,
+          109.0,
+          39.0
+        ],
+        "after": [
+          130.0,
+          112.0,
+          41.0
+        ],
+        "pdfium": [
+          130.0,
+          112.0,
+          41.0
+        ],
+        "mupdf": [
+          129.0,
+          111.0,
+          41.0
+        ],
+        "pdfjs": [
+          130.0,
+          112.0,
+          41.0
+        ]
+      },
+      "beforeMaxChannelError": 20.284687500000018,
+      "afterMaxChannelError": 0.4534375000000068
+    },
+    {
+      "mode": "Screen",
+      "region": "red only",
+      "pdfPoint": [
+        150,
+        40
+      ],
+      "idealContinuousRGB": [
+        209.4825,
+        134.3371875,
+        72.87900000000002
+      ],
+      "observed": {
+        "before": [
+          209.0,
+          142.0,
+          70.0
+        ],
+        "after": [
+          209.0,
+          135.0,
+          73.0
+        ],
+        "pdfium": [
+          209.0,
+          134.0,
+          72.0
+        ],
+        "mupdf": [
+          209.0,
+          134.0,
+          72.0
+        ],
+        "pdfjs": [
+          209.0,
+          135.0,
+          73.0
+        ]
+      },
+      "beforeMaxChannelError": 7.662812500000001,
+      "afterMaxChannelError": 0.6628125000000011
+    },
+    {
+      "mode": "Screen",
+      "region": "overlap",
+      "pdfPoint": [
+        163,
+        70
+      ],
+      "idealContinuousRGB": [
+        201.73368750000003,
+        160.204546875,
+        93.66405
+      ],
+      "observed": {
+        "before": [
+          204.0,
+          161.0,
+          89.0
+        ],
+        "after": [
+          201.0,
+          161.0,
+          94.0
+        ],
+        "pdfium": [
+          201.0,
+          160.0,
+          93.0
+        ],
+        "mupdf": [
+          201.0,
+          159.0,
+          93.0
+        ],
+        "pdfjs": [
+          202.0,
+          160.0,
+          94.0
+        ]
+      },
+      "beforeMaxChannelError": 4.664050000000003,
+      "afterMaxChannelError": 0.7954531249999945
+    },
+    {
+      "mode": "Screen",
+      "region": "green only",
+      "pdfPoint": [
+        178,
+        80
+      ],
+      "idealContinuousRGB": [
+        193.5290625,
+        157.1278125,
+        83.8185
+      ],
+      "observed": {
+        "before": [
+          200.0,
+          154.0,
+          76.0
+        ],
+        "after": [
+          193.0,
+          158.0,
+          84.0
+        ],
+        "pdfium": [
+          193.0,
+          157.0,
+          83.0
+        ],
+        "mupdf": [
+          193.0,
+          157.0,
+          83.0
+        ],
+        "pdfjs": [
+          194.0,
+          158.0,
+          84.0
+        ]
+      },
+      "beforeMaxChannelError": 7.8185,
+      "afterMaxChannelError": 0.8721874999999955
+    }
+  ],
+  "maxBeforeError": 27.00562500000001,
+  "maxAfterError": 0.8882656250000167
+}

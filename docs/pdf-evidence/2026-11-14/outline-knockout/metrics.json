@@ -1,0 +1,59 @@
+{
+  "beforeAfter": {
+    "changedPixels": 7728,
+    "totalPixels": 98304,
+    "meanAbsoluteRGBError": 4.415303548177083,
+    "maxChannelDifference": 99,
+    "changedBounds": [
+      18,
+      68,
+      337,
+      189
+    ]
+  },
+  "references": {
+    "pdfium": {
+      "before": {
+        "meanAbsoluteRGBError": 4.460062662760417,
+        "pixelsAbove8": 7516,
+        "flatInteriorMeanAbsoluteRGBError": 1.943258529465426,
+        "flatInteriorPixelsAbove8": 2474
+      },
+      "after": {
+        "meanAbsoluteRGBError": 0.18730333116319445,
+        "pixelsAbove8": 622,
+        "flatInteriorMeanAbsoluteRGBError": 0.1083109239031278,
+        "flatInteriorPixelsAbove8": 0
+      }
+    },
+    "mupdf": {
+      "before": {
+        "meanAbsoluteRGBError": 4.812221950954861,
+        "pixelsAbove8": 8344,
+        "flatInteriorMeanAbsoluteRGBError": 2.105724915320118,
+        "flatInteriorPixelsAbove8": 2474
+      },
+      "after": {
+        "meanAbsoluteRGBError": 0.4525824652777778,
+        "pixelsAbove8": 1420,
+        "flatInteriorMeanAbsoluteRGBError": 0.2707773097578195,
+        "flatInteriorPixelsAbove8": 0
+      }
+    },
+    "pdfjs": {
+      "before": {
+        "meanAbsoluteRGBError": 7.394036187065972,
+        "pixelsAbove8": 15456,
+        "flatInteriorMeanAbsoluteRGBError": 3.172294804978463,
+        "flatInteriorPixelsAbove8": 5344
+      },
+      "after": {
+        "meanAbsoluteRGBError": 9.76577419704861,
+        "pixelsAbove8": 15486,
+        "flatInteriorMeanAbsoluteRGBError": 4.143737654982033,
+        "flatInteriorPixelsAbove8": 5344
+      }
+    }
+  },
+  "flatInteriorPixelCount": 84042
+}

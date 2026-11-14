@@ -1,0 +1,34 @@
+{
+  "image-edge-clip": {
+    "before": {
+      "topVsBottomTranslated124px": {
+        "changedPixels": 1345,
+        "maxChannelDifference": 57
+      }
+    },
+    "after": {
+      "topVsBottomTranslated124px": {
+        "changedPixels": 0,
+        "maxChannelDifference": 0
+      }
+    },
+    "pdfium": {
+      "topVsBottomTranslated124px": {
+        "changedPixels": 1745,
+        "maxChannelDifference": 229
+      }
+    },
+    "mupdf": {
+      "topVsBottomTranslated124px": {
+        "changedPixels": 677,
+        "maxChannelDifference": 176
+      }
+    },
+    "pdfjs": {
+      "topVsBottomTranslated124px": {
+        "changedPixels": 1311,
+        "maxChannelDifference": 60
+      }
+    }
+  }
+}

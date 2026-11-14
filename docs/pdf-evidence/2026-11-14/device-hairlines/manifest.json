@@ -1,0 +1,282 @@
+{
+  "license": "MIT",
+  "authorship": "New numerical shapes, tiny raster arrays, polygon outline font, and generator; no external artwork/font/PDF/test stream or expected image is an input.",
+  "settings": {
+    "dpi": 144,
+    "page": 0,
+    "MediaBox": [
+      0,
+      0,
+      192,
+      128
+    ],
+    "CropBox": [
+      0,
+      0,
+      192,
+      128
+    ],
+    "rotation": 0,
+    "background": "opaque white",
+    "OneImageDegree": 1,
+    "OneImageAA": "renderer default exact-area coverage",
+    "MuPDFGraphicsAA": 8,
+    "MuPDFTextAA": 8,
+    "PDFiumAA": "default; no no_smooth flags",
+    "PDFjsAA": "Node Canvas backend default",
+    "PNG": "raw full-page, never cropped/resampled/retouched"
+  },
+  "engines": {
+    "pypdfium2": "5.13.0",
+    "pdfium": "153.0.7999.0",
+    "pymupdf": "1.26.6",
+    "mupdf": "1.26.11"
+  },
+  "fontTools": "4.61.1",
+  "fixture": "device-hairlines",
+  "inputSha256": "7699c4737ca96db1d68639560fd6471c136ec547399bb03e9815808ec53d525f",
+  "renders": {
+    "before": {
+      "file": "renders/device-hairlines-before.png",
+      "sha256": "af9f6e84dc967495d9e12830b84487c1b41bda6dbabab5cc39d3f4e315c5d9e3",
+      "width": 384,
+      "height": 256,
+      "details": {
+        "metadata": {
+          "runtime": ".NET 10.0.15",
+          "os": "Debian GNU/Linux 13 (trixie)",
+          "architecture": "X64",
+          "processorCount": 2,
+          "environment": {
+            "DOTNET_PROCESSOR_COUNT": "2",
+            "DOTNET_TieredCompilation": null,
+            "DOTNET_TieredPGO": null,
+            "DOTNET_GCHeapHardLimit": null,
+            "COMPlus_TieredCompilation": null,
+            "COMPlus_TieredPGO": null
+          },
+          "dpi": 144,
+          "degree": 1,
+          "smoothMagnifiedImages": false,
+          "page": 0,
+          "background": "opaque white",
+          "box": "CropBox (falls back to MediaBox)",
+          "rotation": 0,
+          "inputSha256": "7699c4737ca96db1d68639560fd6471c136ec547399bb03e9815808ec53d525f",
+          "assemblies": [
+            {
+              "file": "OneImage.dll",
+              "name": "OneImage",
+              "version": "1.11.1.0",
+              "sha256": "610a61500facd48b793ea51abe854061d1fc4d364efdf4f0796a94bdd0fffa54"
+            },
+            {
+              "file": "OneImage.Pdf.dll",
+              "name": "OneImage.Pdf",
+              "version": "1.11.1.0",
+              "sha256": "c56cf7096c86f56ab8e5a74400503474e9bc0601f5d8f1fea4da4c9be2118e54"
+            },
+            {
+              "file": "OnePdf.dll",
+              "name": "OnePdf",
+              "version": "1.18.0.0",
+              "sha256": "f5a18b3a3b16fa3e1d39f4ab1fdba9454b449c675e54fbd411362d9165693fce"
+            }
+          ]
+        },
+        "width": 384,
+        "height": 256,
+        "rgbaSha256": "616dd0b5c3754b197c4591c887aabdd9244ed0577886f281244826805b629662",
+        "pngSha256": "af9f6e84dc967495d9e12830b84487c1b41bda6dbabab5cc39d3f4e315c5d9e3"
+      }
+    },
+    "after": {
+      "file": "renders/device-hairlines-after.png",
+      "sha256": "31576bfce2592bd2fd36005ce506472bd330061cb35189bdd62e616d7dddb65c",
+      "width": 384,
+      "height": 256,
+      "details": {
+        "metadata": {
+          "runtime": ".NET 10.0.15",
+          "os": "Debian GNU/Linux 13 (trixie)",
+          "architecture": "X64",
+          "processorCount": 2,
+          "environment": {
+            "DOTNET_PROCESSOR_COUNT": "2",
+            "DOTNET_TieredCompilation": null,
+            "DOTNET_TieredPGO": null,
+            "DOTNET_GCHeapHardLimit": null,
+            "COMPlus_TieredCompilation": null,
+            "COMPlus_TieredPGO": null
+          },
+          "dpi": 144,
+          "degree": 1,
+          "smoothMagnifiedImages": false,
+          "page": 0,
+          "background": "opaque white",
+          "box": "CropBox (falls back to MediaBox)",
+          "rotation": 0,
+          "inputSha256": "7699c4737ca96db1d68639560fd6471c136ec547399bb03e9815808ec53d525f",
+          "assemblies": [
+            {
+              "file": "OneImage.dll",
+              "name": "OneImage",
+              "version": "1.11.1.0",
+              "sha256": "5fe3d0ee1f0e56ce66c111dfb6a474efa5cd9ca079a470bee4da41ff873e46c2"
+            },
+            {
+              "file": "OneImage.Pdf.dll",
+              "name": "OneImage.Pdf",
+              "version": "1.11.1.0",
+              "sha256": "c9d755d535a7dbc9081821248b282bb6e05b253485df04ac3c44c1b1ab51883d"
+            },
+            {
+              "file": "OnePdf.dll",
+              "name": "OnePdf",
+              "version": "1.18.0.0",
+              "sha256": "f5a18b3a3b16fa3e1d39f4ab1fdba9454b449c675e54fbd411362d9165693fce"
+            }
+          ]
+        },
+        "width": 384,
+        "height": 256,
+        "rgbaSha256": "82da483272950463cc0f0802a22d238d927ca323b8e6611217a688f8029f4f13",
+        "pngSha256": "31576bfce2592bd2fd36005ce506472bd330061cb35189bdd62e616d7dddb65c"
+      }
+    },
+    "mupdf": {
+      "file": "references/device-hairlines-mupdf.png",
+      "sha256": "aa2746eb482c1df4bbdb15d88e4ef94e27ff26f42aa5e8ee534f498930902571",
+      "width": 384,
+      "height": 256
+    },
+    "pdfium": {
+      "file": "references/device-hairlines-pdfium.png",
+      "sha256": "b496351b5991eb58267dca4e28edb468631eb4c9811180f634da58f935e490d8",
+      "width": 384,
+      "height": 256
+    },
+    "pdfjs": {
+      "file": "references/device-hairlines-pdfjs.png",
+      "sha256": "2ad50a0698c40ccb1cbae7f67769b2198f1e55b6e4ae87c89b943421f533ebc0",
+      "width": 384,
+      "height": 256
+    }
+  },
+  "beforeTree": "a3895db911a64996ce997e6274703a4b6a15d737",
+  "headTree": "7ebd2700f295e2fad543a71492640725cb632fed",
+  "beforeStage": "10-reduction-weights",
+  "headStage": "11-device-hairlines",
+  "pdfjs": {
+    "pdfjs": "6.5.438",
+    "build": "0a4153349",
+    "backend": "@napi-rs/canvas (Node Canvas; NOT browser Canvas)",
+    "canvasVersion": "1.1.1",
+    "node": "v24.22.1",
+    "width": 384,
+    "height": 256,
+    "dpi": 144,
+    "annotations": "ENABLE static appearances",
+    "background": "rgb(255,255,255)",
+    "useSystemFonts": false,
+    "isEvalSupported": false,
+    "xfa": false,
+    "useWorkerFetch": false,
+    "icc": false,
+    "iccReason": "PDF.js Node worker-fetch gate disables ICC WASM; ICC-based inputs would fall back",
+    "deviceCmyk": "Polynomial fallback, not ICC-managed CMYK",
+    "diagnostics": []
+  },
+  "reviewChecks": {
+    "inputSha256": "7699c4737ca96db1d68639560fd6471c136ec547399bb03e9815808ec53d525f",
+    "annotations": "absent",
+    "sourceTreesVerified": true,
+    "renders": {
+      "before": {
+        "sha256": "af9f6e84dc967495d9e12830b84487c1b41bda6dbabab5cc39d3f4e315c5d9e3",
+        "width": 384,
+        "height": 256,
+        "bytes": 5467,
+        "opaque": true,
+        "stage": "10-reduction-weights",
+        "rgbaSha256": "616dd0b5c3754b197c4591c887aabdd9244ed0577886f281244826805b629662",
+        "assemblies": [
+          {
+            "file": "OneImage.dll",
+            "sha256": "610a61500facd48b793ea51abe854061d1fc4d364efdf4f0796a94bdd0fffa54",
+            "matchingBuildArtifacts": [
+              "renderer-review-split-20261114/artifacts/10-reduction-weights/bin/OneImage.Pdf.Tests/release/OneImage.dll"
+            ]
+          },
+          {
+            "file": "OneImage.Pdf.dll",
+            "sha256": "c56cf7096c86f56ab8e5a74400503474e9bc0601f5d8f1fea4da4c9be2118e54",
+            "matchingBuildArtifacts": [
+              "renderer-review-split-20261114/artifacts/10-reduction-weights/bin/OneImage.Pdf.Tests/release/OneImage.Pdf.dll"
+            ]
+          },
+          {
+            "file": "OnePdf.dll",
+            "sha256": "f5a18b3a3b16fa3e1d39f4ab1fdba9454b449c675e54fbd411362d9165693fce",
+            "matchingBuildArtifacts": [
+              "renderer-review-split-20261114/artifacts/10-reduction-weights/bin/OneImage.Pdf.Tests/release/OnePdf.dll"
+            ]
+          }
+        ]
+      },
+      "after": {
+        "sha256": "31576bfce2592bd2fd36005ce506472bd330061cb35189bdd62e616d7dddb65c",
+        "width": 384,
+        "height": 256,
+        "bytes": 1317,
+        "opaque": true,
+        "stage": "11-device-hairlines",
+        "rgbaSha256": "82da483272950463cc0f0802a22d238d927ca323b8e6611217a688f8029f4f13",
+        "assemblies": [
+          {
+            "file": "OneImage.dll",
+            "sha256": "5fe3d0ee1f0e56ce66c111dfb6a474efa5cd9ca079a470bee4da41ff873e46c2",
+            "matchingBuildArtifacts": [
+              "renderer-review-split-20261114/artifacts/11-device-hairlines/bin/OneImage.Pdf.Tests/release/OneImage.dll"
+            ]
+          },
+          {
+            "file": "OneImage.Pdf.dll",
+            "sha256": "c9d755d535a7dbc9081821248b282bb6e05b253485df04ac3c44c1b1ab51883d",
+            "matchingBuildArtifacts": [
+              "renderer-review-split-20261114/artifacts/11-device-hairlines/bin/OneImage.Pdf.Tests/release/OneImage.Pdf.dll"
+            ]
+          },
+          {
+            "file": "OnePdf.dll",
+            "sha256": "f5a18b3a3b16fa3e1d39f4ab1fdba9454b449c675e54fbd411362d9165693fce",
+            "matchingBuildArtifacts": [
+              "renderer-review-split-20261114/artifacts/11-device-hairlines/bin/OneImage.Pdf.Tests/release/OnePdf.dll"
+            ]
+          }
+        ]
+      },
+      "mupdf": {
+        "sha256": "aa2746eb482c1df4bbdb15d88e4ef94e27ff26f42aa5e8ee534f498930902571",
+        "width": 384,
+        "height": 256,
+        "bytes": 3298,
+        "opaque": true
+      },
+      "pdfium": {
+        "sha256": "b496351b5991eb58267dca4e28edb468631eb4c9811180f634da58f935e490d8",
+        "width": 384,
+        "height": 256,
+        "bytes": 4284,
+        "opaque": true
+      },
+      "pdfjs": {
+        "sha256": "2ad50a0698c40ccb1cbae7f67769b2198f1e55b6e4ae87c89b943421f533ebc0",
+        "width": 384,
+        "height": 256,
+        "bytes": 4071,
+        "opaque": true
+      }
+    }
+  }
+}
