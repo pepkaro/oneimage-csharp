@@ -254,8 +254,46 @@ public class TransparencyTests
         Check(pdf, new Expected(20, 20).Rect(13, 5, 20, 15, Rgb(1, 0, 0), 0.5), Tol.One);
     }
 
-    // 11.6.5.2 /TR: a transfer function applied to the mask values (here inverting). Luminosity 0.25 becomes 0.75.
-    [Fact(Skip = "Known gap: soft-mask /TR is treated as identity (docs/pdf.md, Known approximations)")]
+    // /TR follows alpha or luminosity extraction, including unpainted pixels outside the form BBox.
+    [Theory]
+    [InlineData(false, "", 0.2, 0.0)]
+    [InlineData(false, "/TR /Identity", 0.2, 0.0)]
+    [InlineData(false, "/TR << /FunctionType 2 /Domain [0 1] /C0 [1] /C1 [0] /N 1 >>", 0.8, 1.0)]
+    [InlineData(true, "", 0.2, 0.6)]
+    [InlineData(true, "/TR /Identity", 0.2, 0.6)]
+    [InlineData(true, "/TR << /FunctionType 2 /Domain [0 1] /C0 [1] /C1 [0] /N 1 >>", 0.8, 0.4)]
+    [Trait("Section", "11.6.5.2")]
+    public void SoftMaskTransferWithBackdrop(bool luminosity, string transfer, double inside, double outside)
+    {
+        string content = luminosity ? "0.2 g 5 5 10 10 re f" : "/A gs 0 g 5 5 10 10 re f";
+        string form = Stream("/Type /XObject /Subtype /Form /BBox [3 3 17 17] /Group << /S /Transparency /CS /DeviceGray >> /Resources << /ExtGState << /A << /ca 0.2 >> >> >>", content);
+        string subtype = luminosity ? "Luminosity" : "Alpha";
+        byte[] pdf = Page("/GS0 gs 1 0 0 rg 0 0 20 20 re f",
+            $"/ExtGState << /GS0 << /SMask << /Type /Mask /S /{subtype} /BC [0.6] /G 5 0 R {transfer} >> >> >>", extra: [form]);
+        var expected = new Expected(20, 20).Rect(0, 0, 20, 20, Rgb(1, 0, 0), outside)
+            .Rect(5, 5, 15, 15, Gray(1)).Rect(5, 5, 15, 15, Rgb(1, 0, 0), inside);
+        Check(pdf, expected, Tol.One);
+    }
+
+    [Theory]
+    [InlineData(false)]
+    [InlineData(true)]
+    [Trait("Section", "11.6.5.2")]
+    public void SoftMaskCalculatorTransferFunction(bool luminosity)
+    {
+        string content = luminosity ? "0.2 g 5 5 10 10 re f" : "/A gs 0 g 5 5 10 10 re f";
+        string form = Stream($"{MaskForm} /Group << /S /Transparency /CS /DeviceGray >> /Resources << /ExtGState << /A << /ca 0.2 >> >> >>", content);
+        string function = Stream("/FunctionType 4 /Domain [0 1] /Range [0 1]", "{ 1 exch sub }");
+        string subtype = luminosity ? "Luminosity" : "Alpha";
+        byte[] pdf = Page("/GS0 gs 1 0 0 rg 0 0 20 20 re f",
+            $"/ExtGState << /GS0 << /SMask << /Type /Mask /S /{subtype} /G 5 0 R /TR 6 0 R >> >> >>", extra: [form, function]);
+        var expected = new Expected(20, 20).Rect(0, 0, 20, 20, Rgb(1, 0, 0))
+            .Rect(5, 5, 15, 15, Gray(1)).Rect(5, 5, 15, 15, Rgb(1, 0, 0), 0.8);
+        Check(pdf, expected, Tol.One);
+    }
+
+    // 11.6.5.2 /TR: a transfer function applied to the mask values (here inverting). Luminosity 0.2 becomes 0.8.
+    [Fact]
     [Trait("Section", "11.6.5.2")]
     public void SoftMaskTransferFunction()
     {

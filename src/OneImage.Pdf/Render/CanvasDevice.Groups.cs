@@ -226,12 +226,13 @@ internal sealed partial class CanvasDevice
     {
         var pixels = new Rgba32[_w * _h];
         layer.CopyTo<Rgba32>(pixels, new ImageRect(0, 0, _w, _h));
-        // The soft mask's transfer function (/TR) is not applied: OnePDF 1.0 does not expose functions to devices.
+        // OnePDF evaluates /TR into a byte lookup; null means identity.
+        byte[]? transfer = info.TransferTable;
         for (int i = 0; i < pixels.Length; i++)
         {
             Rgba32 p = pixels[i];
             int v = info.Luminosity ? PdfColors.Luma(p) : p.A;
-            pixels[i] = new Rgba32(255, 255, 255, (byte)v);
+            pixels[i] = new Rgba32(255, 255, 255, transfer is null ? (byte)v : transfer[v]);
         }
 
         var mask = new Canvas(_w, _h, PixelFormat.Rgba8);
