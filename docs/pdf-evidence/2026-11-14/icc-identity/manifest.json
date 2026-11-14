@@ -160,10 +160,20 @@
   "candidate_commit": "454e154d7cc0a2f2dd99a0f40f3ec52294bab681",
   "candidate_tree": "af1e66b593e911679ea84ffa68e3032f4f372ac0",
   "pdfjs_gate": {
-    "status": "pending ICC-enabled control",
-    "attempted_version": "6.5.438",
+    "status": "ICC-enabled custom Node diagnostic passed; native browser not validated",
+    "version": "6.5.438",
     "build": "0a4153349",
-    "backend": "@napi-rs/canvas 1.1.1, Node 24.22.1; not browser Canvas",
-    "limitation": "useWorkerFetch=false disables ICC/WASM; fallback outputs excluded from color evidence"
+    "backend": "@napi-rs/canvas 1.1.1, Node24.22.1 with original read-only local qcms WASM host adapter",
+    "engine_source_modified": false,
+    "qcms_loaded_bytes": 96589,
+    "diagnostics": [],
+    "metrics": {
+      "rename_changed_pixels": 0,
+      "candidate_changed_pixels": 16200,
+      "candidate_max_channel_difference": 2,
+      "candidate_mean_absolute_channel_difference": 0.21875
+    },
+    "provenance": "pdfjs-node-icc/provenance.json",
+    "excluded_attempt": "useWorkerFetch=false disabled ICC/WASM; fallback outputs are not published"
   }
 }

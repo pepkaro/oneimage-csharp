@@ -31,7 +31,13 @@ The small renderer harness's `render INPUT.pdf OUTPUT.png` mode renders one full
 
 ## Reference limitations
 
-Mozilla PDF.js 6.5.438 (build 0a4153349) was also attempted with Node 24.22.1 and @napi-rs/canvas 1.1.1. That adapter set `useWorkerFetch=false`, which disables PDF.js ICC/WASM color management. It produced unconverted DeviceRGB fallback pixels. Those outputs are **not valid ICC correctness evidence** and are deliberately excluded from this bundle. An ICC-enabled PDF.js control remains pending. No native browser Canvas, Odin WebView2 or three-engine color parity is claimed.
+Fresh Mozilla PDF.js 6.5.438 (build 0a4153349) references are now included under `pdfjs-node-icc/`, using Node 24.22.1, @napi-rs/canvas 1.1.1 and an original MIT read-only local WASM host adapter. This is **custom Node Canvas diagnostic execution, not native browser Canvas**. The adapter leaves PDF.js engine source unchanged and only supplies bytes from the pinned qcms WASM file. Both runs loaded its 96,589 bytes without diagnostics. The reference images remain raw full-page outputs at 96 DPI.
+
+The description-only pair is byte-identical. Actual conversion is separately checked: the ICC-enabled output changes 39,600 pixels, by up to 80 levels, relative to the earlier ICC-disabled DeviceRGB fallback. The earlier adapter had set `useWorkerFetch=false`, disabling ICC/WASM; its fallback outputs remain excluded from this evidence. PDF.js versus fixed OneImage differs in 16,200 pixels by at most 2 RGB levels (full-image mean absolute channel difference 0.21875), so this is not exact cross-engine pixel parity. Native browser and Odin WebView2 validation remain pending.
+
+<table><tr><th>PDF.js ICC-enabled Node diagnostic: original description</th><th>Same profile renamed: identical</th></tr><tr><td><img src="pdfjs-node-icc/wide-original.png" width="480" height="120" alt="ICC-enabled PDF.js Node output with original description"></td><td><img src="pdfjs-node-icc/wide-renamed.png" width="480" height="120" alt="ICC-enabled PDF.js Node output with renamed description, identical"></td></tr></table>
+
+The adapter, exact options, runtime/package/WASM hashes and reproduction commands are included in that subdirectory. Runtime modules, fonts, CMaps and WASM payloads remain external under their own licenses.
 
 ## Checks and limits
 

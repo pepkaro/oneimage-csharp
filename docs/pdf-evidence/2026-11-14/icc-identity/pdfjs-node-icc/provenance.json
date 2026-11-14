@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "assetLicense": "MIT: original inputs independently authored by ICC fixture generator; fresh raw render images have no edits",
+  "runtimeLicenseBoundary": "PDF.js and qcms runtime code remains external under its own licenses. The new host adapter is MIT. No runtime modules/fonts/CMaps are included.",
+  "backend": "Custom Node Canvas host adapter, not native browser Canvas. Engine source unchanged.",
+  "adapterSha256": "2034b4c0186074531773441a639001bddd80126f4bffd288892ba7cc6a5c0da6",
+  "pdfjsVersion": "6.5.438",
+  "pdfjsBuild": "0a4153349",
+  "pdfjsPackageIntegrity": "sha512-vg8Pw1x+AFKy4AMDvhuWl5cOYV8d698UoEANoFFhc79hqXDnZQqnOXoxw3HG907WHOg1JYOvLhP756boddFxpA==",
+  "wasmSha256": "663d86126d5f5fcb1c61490f94353e2a8375660b8c5498ab3ebab5a34b08800e",
+  "wasmLoad": "Minimal XMLHttpRequest host adapter only allows synchronous GET of this exact local runtime qcms_bg.wasm file, returning its bytes. No network or arbitrary paths; no engine-internal patch.",
+  "limitations": "This adapter targets self-contained original ICC controls without external fonts/CMaps. It is not a browser implementation or proof of general Node/browser parity. DeviceCMYK still uses polynomial fallback when no explicit ICCBased profile is supplied.",
+  "transformControl": {
+    "renamedDescriptionPngEqual": true,
+    "pixelsChangedAgainstExcludedIccDisabledFallback": 39600,
+    "maxChannelDeltaAgainstFallback": 80,
+    "fallbackStatus": "Excluded: prior useWorkerFetch=false disabled ICC WASM. Never count that output as color-managed validation.",
+    "diagnostics": "No warnings from either corrected render. Each reports one 96589-byte qcms load."
+  },
+  "command": "node render-pdfjs-local-icc.mjs /external/node_modules/pdfjs-dist wide-original.pdf wide-original.png 96",
+  "files": [
+    {
+      "input": "wide-original.pdf",
+      "inputSha256": "22c61a9fd6d3fe71231b5a60d832873c71f7188289a8bc45991ee030e1f590f3",
+      "output": "wide-original.png",
+      "outputSha256": "a75f87d87367256076a93f68b6b38a8139d689b1eef5f7a6989aa8fb6b82db0a",
+      "settings": {
+        "pdfjs": "6.5.438",
+        "build": "0a4153349",
+        "backend": "@napi-rs/canvas (Node Canvas; NOT browser Canvas)",
+        "canvasVersion": "1.1.1",
+        "node": "v24.22.1",
+        "width": 480,
+        "height": 120,
+        "dpi": 96,
+        "annotations": "ENABLE static appearances",
+        "background": "rgb(255,255,255)",
+        "useSystemFonts": false,
+        "isEvalSupported": false,
+        "xfa": false,
+        "useWorkerFetch": true,
+        "useWasm": true,
+        "icc": "Requested via custom local read-only XMLHttpRequest host adapter; validate with transform control",
+        "runtimeReads": [
+          {
+            "file": "wasm/qcms_bg.wasm",
+            "bytes": 96589
+          }
+        ],
+        "deviceCmyk": "Polynomial fallback unless explicit ICCBased; no default CMYK ICC URL supplied",
+        "diagnostics": []
+      }
+    },
+    {
+      "input": "wide-renamed.pdf",
+      "inputSha256": "92c14b74bd693382a20e98b714a267095592945e26d3b50b0356967ffe69ce8d",
+      "output": "wide-renamed.png",
+      "outputSha256": "a75f87d87367256076a93f68b6b38a8139d689b1eef5f7a6989aa8fb6b82db0a",
+      "settings": {
+        "pdfjs": "6.5.438",
+        "build": "0a4153349",
+        "backend": "@napi-rs/canvas (Node Canvas; NOT browser Canvas)",
+        "canvasVersion": "1.1.1",
+        "node": "v24.22.1",
+        "width": 480,
+        "height": 120,
+        "dpi": 96,
+        "annotations": "ENABLE static appearances",
+        "background": "rgb(255,255,255)",
+        "useSystemFonts": false,
+        "isEvalSupported": false,
+        "xfa": false,
+        "useWorkerFetch": true,
+        "useWasm": true,
+        "icc": "Requested via custom local read-only XMLHttpRequest host adapter; validate with transform control",
+        "runtimeReads": [
+          {
+            "file": "wasm/qcms_bg.wasm",
+            "bytes": 96589
+          }
+        ],
+        "deviceCmyk": "Polynomial fallback unless explicit ICCBased; no default CMYK ICC URL supplied",
+        "diagnostics": []
+      }
+    }
+  ]
+}
