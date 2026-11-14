@@ -6,6 +6,8 @@ All notable changes are listed here. The format follows [Keep a Changelog](https
 
 ### Added
 
+- Forty independently authored MIT PDF behavior fixtures, with offline geometry, semantic color/content, region and parallel-rendering tests. A separate pinned three-engine reference audit records disagreements rather than treating every pixel difference as a rendering defect.
+
 - `RecursiveAI.OneImage.Pdf`: opt-in `PdfRenderOptions.SmoothMagnifiedImages` uses smooth sampling for enlarged raster images even when `/Interpolate` is false or omitted, for a display closer to many PDF viewers. Defaults, image reduction and stencil masks are unchanged.
 
 ### Fixed
