@@ -148,34 +148,25 @@ internal sealed partial class CanvasDevice
     /// <summary>Composites a finished layer onto the current target with an opacity, blend mode and (known) soft mask, and releases it.</summary>
     private void CompositeLayer(Canvas layer, double opacity, BlendMode blend, int maskId, Canvas? shape = null, ImageRect? region = null)
     {
-        ImageBrush? brush = null;
+        CanvasLayerBrush? brush = null;
         try
         {
-            Image content = layer.View();
-            if (shape is not null)
-            {
-                content = content.ApplyMask(shape.View(), MaskChannel.Alpha);
-            }
-
-            if (maskId != 0 && _masks.TryGetValue(maskId, out Canvas? mask))
-            {
-                content = content.ApplyMask(mask.View(), MaskChannel.Alpha);
-            }
-
-            brush = new ImageBrush(content, null, 0, 0, null, tile: false, pooled: true);
             ImageRect rect = region ?? new ImageRect(0, 0, _w, _h);
+            if (rect.IsEmpty) return;
+            Canvas? mask = null;
+            if (maskId != 0) _masks.TryGetValue(maskId, out mask);
+            brush = new CanvasLayerBrush(layer, shape, mask, rect);
             DrawingPath area = DrawingPath.Rectangle(rect.X, rect.Y, rect.Width, rect.Height);
             _target.Fill(brush, area, antialias: false, opacity: (float)Math.Clamp(opacity, 0, 1), blend: blend, composition: AlphaComposition.SrcOver);
             ShapeShadow?.Fill(brush, area, antialias: false, opacity: (float)Math.Clamp(opacity, 0, 1), blend: BlendMode.Normal, composition: AlphaComposition.SrcOver);
         }
         finally
         {
-            brush?.Release();
+            brush?.Dispose();
             shape?.Dispose();
             layer.Dispose();
         }
     }
-
     // ---- soft masks ----
 
     public void BeginSoftMask(in PdfSoftMaskInfo mask, in PdfGraphicsState state)

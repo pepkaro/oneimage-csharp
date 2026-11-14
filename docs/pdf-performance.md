@@ -17,7 +17,7 @@ The two methods measure different boundaries:
 
 BenchmarkDotNet warms the runtime, so neither method measures process-cold startup. A `--job Dry` run is a build/execution smoke check, not evidence for a performance comparison.
 
-The renderer bounds transparency-group copying and compositing to outward-rounded form bounds with one pixel of rasterizer slack. It copies straight RGBA backdrops directly, normalizing zero-alpha pixels as the former Src paint did. General blend and coverage behavior remains in `Canvas.Fill`.
+The renderer bounds transparency-group copying and compositing to outward-rounded form bounds with one pixel of rasterizer slack. It copies straight RGBA backdrops directly, normalizing zero-alpha pixels as the former Src paint did. Finished layers are sampled directly, applying shape and soft-mask alpha in the same sequential 8-bit rounding order as the general image-mask pipeline. General blend and coverage behavior remains in `Canvas.Fill`.
 
 ## Real-document measurement
 
