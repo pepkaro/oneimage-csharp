@@ -1,0 +1,75 @@
+{
+  "sdk": "10.0.404",
+  "runtime": "10.0.15",
+  "checks": [
+    {
+      "commit": "eb47d5a0155bdb38f6fc7b08a5fa7279fd004a12",
+      "releaseBuild": "passed",
+      "warnings": 0,
+      "errors": 0,
+      "testSummary": {
+        "total": 344,
+        "errors": 0,
+        "failed": 0,
+        "skipped": 1,
+        "notRun": 0
+      },
+      "knownSkip": "SoftMaskTransferFunction: known /TR gap; fixed separately",
+      "command": "dotnet build tests/OneImage.Pdf.Tests/OneImage.Pdf.Tests.csproj -c Release --nologo -m:1; dotnet $ONEIMAGE_ARTIFACTS/bin/OneImage.Pdf.Tests/release/OneImage.Pdf.Tests.dll",
+      "packagePropsSha256": "de8dcd005a3a58aca517043a563f210adc0e3a2d199cfcb609053254a8c91c38",
+      "onePdfVersion": "1.18.0",
+      "onePdfFontsVersion": "1.18.0"
+    },
+    {
+      "commit": "c705783366878618d17e3d60f7d64c838d20f42f",
+      "releaseBuild": "passed",
+      "warnings": 0,
+      "errors": 0,
+      "testSummary": {
+        "total": 353,
+        "errors": 0,
+        "failed": 0,
+        "skipped": 1,
+        "notRun": 0
+      },
+      "knownSkip": "SoftMaskTransferFunction: known /TR gap; fixed separately",
+      "command": "dotnet build tests/OneImage.Pdf.Tests/OneImage.Pdf.Tests.csproj -c Release --nologo -m:1; dotnet $ONEIMAGE_ARTIFACTS/bin/OneImage.Pdf.Tests/release/OneImage.Pdf.Tests.dll",
+      "packagePropsSha256": "de8dcd005a3a58aca517043a563f210adc0e3a2d199cfcb609053254a8c91c38",
+      "onePdfVersion": "1.18.0",
+      "onePdfFontsVersion": "1.18.0"
+    }
+  ],
+  "comparisons": [
+    {
+      "groups": 40,
+      "equal": true,
+      "changedPixels": 0,
+      "totalPixels": 925463,
+      "rgbaSha256": "31b824f6a6085ccc388080f99c70dcd4e5f3c5cde04fbc49b0c6b604b31c6727"
+    },
+    {
+      "groups": 400,
+      "equal": true,
+      "changedPixels": 0,
+      "totalPixels": 925463,
+      "rgbaSha256": "d445d00e3314707c8736a7e9e4844621427073712aadb6fd1397baf88f9db17e"
+    }
+  ],
+  "timingStart": "2026-11-14T19:58:39Z",
+  "timingEnd": "2026-11-14T19:59:29Z",
+  "timingOrder": [
+    "before-a",
+    "after-a",
+    "after-b",
+    "before-b"
+  ],
+  "timingScope": "Generated 40-group PDF, 100 DPI, degree 1. No browser or WebView endpoint. Other worker builds/renders paused.",
+  "notRun": [
+    "full solution suite",
+    "cross-platform CI",
+    "AOT",
+    "WASM",
+    "Odin WebView2 endpoint",
+    "Mozilla PDF.js endpoint"
+  ]
+}

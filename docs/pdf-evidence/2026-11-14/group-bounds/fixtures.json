@@ -1,0 +1,40 @@
+[
+  {
+    "name": "group-performance-40",
+    "file": "fixtures/group-performance-40.pdf",
+    "sha256": "073c88ed41c948f5433b6e9ea90bbc79590f54969e9a0a42241393123d9fb3f4",
+    "dpi": 100,
+    "page": 0,
+    "box": "CropBox (falls back to MediaBox)",
+    "rotation": 0,
+    "background": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "maxDegree": 1,
+    "smoothMagnifiedImages": false,
+    "source": "bench/OneImage.Benchmarks/Pdf/PdfNarrowGroupBenchmarks.cs:Document",
+    "unit": 1
+  },
+  {
+    "name": "group-performance-400",
+    "file": "fixtures/group-performance-400.pdf",
+    "sha256": "4730a5d3cba6e5103c33b49f5afe71b4debfd25daff9f123e9947997b5a3fb02",
+    "dpi": 100,
+    "page": 0,
+    "box": "CropBox (falls back to MediaBox)",
+    "rotation": 0,
+    "background": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "maxDegree": 1,
+    "smoothMagnifiedImages": false,
+    "source": "bench/OneImage.Benchmarks/Pdf/PdfNarrowGroupBenchmarks.cs:Document",
+    "unit": 1
+  }
+]
