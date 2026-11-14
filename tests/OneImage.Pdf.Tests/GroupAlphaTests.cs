@@ -156,6 +156,24 @@ public class GroupAlphaTests
             }
         }
     }
+    [Theory]
+    [InlineData(1.0, false)]
+    [InlineData(0.5, false)]
+    [InlineData(1.0, true)]
+    [InlineData(0.5, true)]
+    public void PatternedStencilContributesItsAlphaToTheGroup(double patternAlpha, bool masked)
+    {
+        string maskEntry = masked ? "/SMask << /S /Alpha /G 7 0 R >>" : "";
+        string form = Form(false, "/H gs /Pattern cs /P scn q 16 0 0 16 8 8 cm BI /W 1 /H 1 /IM true /BPC 1 /F /AHx ID 00> EI Q",
+            $"/Pattern << /P 6 0 R >> /ExtGState << /H << /ca .5 {maskEntry} >> >>");
+        string pattern = RegionTests.Obj($"/Type /Pattern /PatternType 1 /PaintType 1 /TilingType 1 /BBox [0 0 2 2] /XStep 2 /YStep 2 /Resources << /ExtGState << /A << /ca {N(patternAlpha)} >> >> >>", "/A gs 1 0 0 rg 0 0 2 2 re f");
+        string mask = Form(true, "/H gs 1 g 0 0 32 32 re f", "/ExtGState << /H << /ca .5 >> >>");
+        byte[] pdf = TestPdf.Page("/G gs /F Do", "/XObject << /F 5 0 R >> /ExtGState << /G << /ca .5 >> >>", 32, 32, [form, pattern, mask]);
+        Rgba32[] pixels = Pixels(pdf, new Rgba32(255, 255, 255, 255));
+        double alpha = 0.25 * patternAlpha * (masked ? 0.5 : 1);
+        Near(pixels[(16 * 32) + 16], [255, 255 * (1 - alpha), 255 * (1 - alpha), 255], "patterned stencil");
+        Assert.Equal(new Rgba32(255, 255, 255, 255), pixels[0]);
+    }
     [Fact]
     public void MaskDefinitionDoesNotContributeToAncestorGroupAlpha()
     {
