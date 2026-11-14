@@ -6,6 +6,7 @@ All notable changes are listed here. The format follows [Keep a Changelog](https
 
 ### Fixed
 
+- Non-solid normal source-over fills on RGBA8 canvases now combine conversion and blending in one pass, preserving the existing float operation order and byte rounding.
 - `RecursiveAI.OneImage.Pdf`: narrow transparency groups now copy and composite only the pixels covered by their form bounds, rather than the whole render cell. This avoids repeated full-cell work on pages containing many small translucent objects while preserving edge coverage.
 - `RecursiveAI.OneImage.Pdf`: transparency groups copy RGBA backdrops and read finished layers and alpha masks directly, avoiding intermediate image graphs and repeated pixel conversions. Transparent-color normalization and the existing per-mask rounding order are preserved.
 
