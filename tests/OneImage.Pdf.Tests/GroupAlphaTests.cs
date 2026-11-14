@@ -75,6 +75,16 @@ public class GroupAlphaTests
         Near(pixels[(16 * 32) + 16], expected, "nested");
     }
 
+    [Theory]
+    [InlineData(false)]
+    [InlineData(true)]
+    public void PassthroughFormDoesNotHideAncestorCoverage(bool isolateChild)
+    {
+        string leaf = Form(isolateChild, "1 0 0 rg 8 8 16 16 re f");
+        string parent = Form(false, "/H gs /F Do", "/XObject << /F 5 0 R >> /ExtGState << /H << /CA .5 >> >>");
+        byte[] pdf = TestPdf.Page("1 g 0 0 32 32 re f /G gs /F Do", "/XObject << /F 6 0 R >> /ExtGState << /G << /ca .5 >> >>", 32, 32, [leaf, parent]);
+        Near(Pixels(pdf, default)[(16 * 32) + 16], [255, 127.5, 127.5, 255], "passthrough");
+    }
 
     [Theory]
     [InlineData("Normal")]
@@ -145,6 +155,18 @@ public class GroupAlphaTests
                 Assert.InRange(Math.Abs((channels[c] * pixel.A / 255.0) - expected), 0, 2);
             }
         }
+    }
+    [Fact]
+    public void MaskDefinitionDoesNotContributeToAncestorGroupAlpha()
+    {
+        string form = Form(false, "/M gs /N gs 1 0 0 rg 4 4 4 4 re f",
+            "/ExtGState << /M << /SMask << /S /Alpha /G 6 0 R >> >> /N << /SMask /None >> >>");
+        string mask = Form(false, "1 g 0 0 32 32 re f");
+        byte[] pdf = TestPdf.Page("/G gs /F Do", "/XObject << /F 5 0 R >> /ExtGState << /G << /ca .5 /BM /Multiply >> >>", 32, 32, [form, mask]);
+        var backdrop = new Rgba32(204, 102, 51, 128);
+        Rgba32[] pixels = Pixels(pdf, backdrop);
+        Assert.Equal(backdrop, pixels[(16 * 32) + 16]);
+        Assert.Equal(backdrop, pixels[0]);
     }
     private static string Form(bool isolated, string content, string resources = "") => RegionTests.Obj($"/Type /XObject /Subtype /Form /BBox [0 0 32 32] /Group << /S /Transparency /I {isolated.ToString().ToLowerInvariant()} >> /Resources << {resources} >>", content);
     private static Rgba32[] Pixels(byte[] pdf, Rgba32 background, int degree = 1) => RenderTests.Load(pdf, new PdfRenderOptions { Dpi = 72, Background = background }).ToArray<Rgba32>(maxDegree: degree);
