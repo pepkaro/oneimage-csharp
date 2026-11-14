@@ -1,0 +1,129 @@
+{
+  "metadata": {
+    "runtime": ".NET 10.0.15",
+    "os": "Debian GNU/Linux 13 (trixie)",
+    "architecture": "X64",
+    "processorCount": 2,
+    "environment": {
+      "DOTNET_PROCESSOR_COUNT": "2",
+      "DOTNET_TieredCompilation": null,
+      "DOTNET_TieredPGO": null,
+      "DOTNET_GCHeapHardLimit": null,
+      "COMPlus_TieredCompilation": null,
+      "COMPlus_TieredPGO": null
+    },
+    "dpi": 100,
+    "degree": 1,
+    "smoothMagnifiedImages": false,
+    "page": 0,
+    "background": "opaque white",
+    "box": "CropBox (falls back to MediaBox)",
+    "rotation": 0,
+    "inputSha256": "073c88ed41c948f5433b6e9ea90bbc79590f54969e9a0a42241393123d9fb3f4",
+    "assemblies": [
+      {
+        "file": "OneImage.dll",
+        "name": "OneImage",
+        "version": "1.11.1.0",
+        "sha256": "d18230e31b665e31bac52ba47b59bd1afe3940d5d6dd6e5b58f802caf58a0de8"
+      },
+      {
+        "file": "OneImage.Pdf.dll",
+        "name": "OneImage.Pdf",
+        "version": "1.11.1.0",
+        "sha256": "7198446ca67af53e19bc1728c8523504e43ab0f5e90cb9988517fcdba92b98dc"
+      },
+      {
+        "file": "OnePdf.dll",
+        "name": "OnePdf",
+        "version": "1.18.0.0",
+        "sha256": "f5a18b3a3b16fa3e1d39f4ab1fdba9454b449c675e54fbd411362d9165693fce"
+      }
+    ]
+  },
+  "width": 833,
+  "height": 1111,
+  "rgbaSha256": "31b824f6a6085ccc388080f99c70dcd4e5f3c5cde04fbc49b0c6b604b31c6727",
+  "records": [
+    {
+      "boundary": "load\u002Brender",
+      "warmups": 20,
+      "samples": 30,
+      "elapsedMs": [
+        28.4711,
+        27.3492,
+        26.7378,
+        27.1689,
+        27.0152,
+        26.7665,
+        31.2693,
+        33.2384,
+        41.5609,
+        24.967,
+        24.3625,
+        22.518,
+        21.8405,
+        21.8376,
+        21.7402,
+        21.3046,
+        20.8057,
+        22.1457,
+        21.6547,
+        21.0393,
+        20.8867,
+        22.1384,
+        21.5661,
+        20.553,
+        28.8207,
+        24.7053,
+        22.5951,
+        20.8277,
+        20.6184,
+        20.623
+      ],
+      "medianMs": 22.518,
+      "minMs": 20.553,
+      "maxMs": 41.5609
+    },
+    {
+      "boundary": "retained-uncached-raster",
+      "warmups": 20,
+      "samples": 30,
+      "elapsedMs": [
+        21.039,
+        20.238,
+        20.7701,
+        19.8428,
+        19.3151,
+        20.4962,
+        21.6305,
+        20.4581,
+        24.4949,
+        102.3527,
+        43.9935,
+        20.8819,
+        19.1724,
+        19.2582,
+        19.9622,
+        20.3216,
+        19.3424,
+        19.8144,
+        19.4696,
+        19.5177,
+        19.126,
+        19.5163,
+        20.0844,
+        19.6825,
+        19.8848,
+        19.7358,
+        19.6749,
+        19.5174,
+        19.281,
+        20.992
+      ],
+      "medianMs": 19.8848,
+      "minMs": 19.126,
+      "maxMs": 102.3527
+    }
+  ]
+}

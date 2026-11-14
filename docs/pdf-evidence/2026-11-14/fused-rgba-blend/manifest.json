@@ -1,0 +1,39 @@
+{
+  "base_commit": "d173137e576bc3f2cfad6aae409c3552a19e4a54",
+  "base_tree": "dcf44043532e7cef6c8f3d2d632cdbc802fd2b68",
+  "head_commit": "feaac99059a7373bc33e629224323b8f36932d77",
+  "head_tree": "07e76061f147a058c60ffe7fd10c750fab56bfd3",
+  "original_production_commit": "1730740b9827179c9614629af7810e463d3624e7",
+  "test_repair_origin": "7c413d8e37fcaad39ae86100ac0de5ab40bc08fb",
+  "mapping": "Same original fused implementation with scratch.SpanStart[0]=0 moved to its own regression harness. Original published history unchanged.",
+  "checks": {
+    "PDF": {
+      "passed": 365,
+      "failed": 0,
+      "known_softmask_skip": 1
+    },
+    "targeted_core_blend": "3/3 passed",
+    "full_Drawing": "335/335 passed",
+    "build": "0 warnings/errors"
+  },
+  "pixel_checks": [
+    {
+      "groups": 40,
+      "different_pixels": 0,
+      "width": 833,
+      "height": 1111,
+      "rgba_sha256": "31b824f6a6085ccc388080f99c70dcd4e5f3c5cde04fbc49b0c6b604b31c6727"
+    },
+    {
+      "groups": 400,
+      "different_pixels": 0,
+      "width": 833,
+      "height": 1111,
+      "rgba_sha256": "d445d00e3314707c8736a7e9e4844621427073712aadb6fd1397baf88f9db17e"
+    }
+  ],
+  "sdk": "10.0.404",
+  "runtime": "10.0.15",
+  "dependency": "OnePDF/Fonts1.18.0 unchanged",
+  "performance_status": "Exact reconstructed-head timing pending; production DLL hashes differ from earlier original173 build. Earlier short-run synthetic results are historical controls, not relabelled as this exact binary."
+}

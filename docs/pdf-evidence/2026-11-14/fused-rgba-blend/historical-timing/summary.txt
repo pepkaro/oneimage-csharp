@@ -1,0 +1,42 @@
+{
+  "scope": "Historical combined 950 and fused173 transitions only; direct-copy and direct-brush effects are not isolated here.",
+  "start": "2026-11-14T20:23:49.510449+00:00",
+  "end": "2026-11-14T20:24:05.512420+00:00",
+  "order": [
+    "bounds-A",
+    "direct-A",
+    "fused-A",
+    "fused-B",
+    "direct-B",
+    "bounds-B"
+  ],
+  "medians": {
+    "direct-A": {
+      "load+render": 13.3894,
+      "retained-uncached-raster": 8.5834
+    },
+    "direct-B": {
+      "load+render": 12.0374,
+      "retained-uncached-raster": 7.5634
+    },
+    "bounds-A": {
+      "load+render": 22.518,
+      "retained-uncached-raster": 19.8848
+    },
+    "bounds-B": {
+      "load+render": 23.7746,
+      "retained-uncached-raster": 20.7351
+    },
+    "fused-A": {
+      "load+render": 13.9845,
+      "retained-uncached-raster": 7.4516
+    },
+    "fused-B": {
+      "load+render": 13.3079,
+      "retained-uncached-raster": 7.4259
+    }
+  },
+  "same_hash": true,
+  "rgbaSha256": "31b824f6a6085ccc388080f99c70dcd4e5f3c5cde04fbc49b0c6b604b31c6727",
+  "limitations": "20 warmups/30 samples, short synthetic workload, large direct same-binary variation. No isolated component claims, fused fresh-load improvement not established."
+}
