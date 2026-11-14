@@ -1,0 +1,30 @@
+{
+  "license": "MIT",
+  "provenance": "Independently authored original source and mathematical ICC/PDF inputs. Reference PNGs originate solely from those MIT inputs. No upstream fixture/font/art/text/stream/test-source/expected-image inputs.",
+  "files": {
+    "LICENSE": "41495c00d3a26d637d5f10301671a6d9131a07125eaa22b350dfb5dc74d4d716",
+    "README.md": "fc2c70ad8c0c0925cfd04b43b7cfd6abdf461e065e4e33e6046c074dbc9a6c28",
+    "Repro/Program.cs": "83bb2108a3f6caaca84d95325b74feb0cff547491032c5f543d68a358ecf735a",
+    "Repro/Repro.csproj": "75a266efc29a9bc5084266ea227633887643ddec2ae989ec1bf30f39a572d122",
+    "Repro/global.json": "3d8b00074b0d3c97f6dd0862c3426d5e83ca6a796100cde5ddb097d75a8462d6",
+    "checks-and-source.json": "6b7ff955f8c30b994c7c7f58999857e77eb464a8d12b33380cdc74cc67392526",
+    "fixture-manifest.json": "6382984dd44cf9a0a0a29cd252f4fa98c3bb377a8766552342935d373be2d94c",
+    "fixtures/wide-original.pdf": "22c61a9fd6d3fe71231b5a60d832873c71f7188289a8bc45991ee030e1f590f3",
+    "fixtures/wide-renamed.pdf": "92c14b74bd693382a20e98b714a267095592945e26d3b50b0356967ffe69ce8d",
+    "generate.py": "f43e99939ae329aa4ba36687366607517c7ab29eded99f3ba1066d3e5152468f",
+    "index.html": "57a3ceb656f9034d57eeeb40554c3412ffd936516c8ceb3944cc162885e03bf7",
+    "manifest.json": "ba76d84159be1b79e6b880815bf7b6b03d3cc08e2db6727ee9dd2b12f6b650e6",
+    "profiles/wide-original.icc": "4c5ec3247bbb235b9214697389ef3c8fd69417a895681133e191765b80c66b31",
+    "profiles/wide-renamed.icc": "733711d08cc3870b692bd245d95b2dcaee3da725696576c264b3986e84e76baa",
+    "render.py": "6b317ebc9bc8efe3762d513ce87b0b36869dc45972202fc272b622157fe9bd0e",
+    "renders/wide-original-baseline.png": "837ecf3fc79001a0030050bfd9a3e98d019b205d273ac8173b483d0c06242d2c",
+    "renders/wide-original-candidate.png": "837ecf3fc79001a0030050bfd9a3e98d019b205d273ac8173b483d0c06242d2c",
+    "renders/wide-original-mupdf.png": "7e7cdf18552648c8fc3eed2c896fff9572999d62ffab525d983bed41d93ede2d",
+    "renders/wide-original-pdfium.png": "a34f334d03e69cb8438a42ed6ee6df8cb0534f43e90d667b67ae3e445fb474dd",
+    "renders/wide-renamed-baseline.png": "777243033407f6619e1c4f9cf1664d21eaf4c85c3a817911f577ea521906f2a9",
+    "renders/wide-renamed-candidate.png": "837ecf3fc79001a0030050bfd9a3e98d019b205d273ac8173b483d0c06242d2c",
+    "renders/wide-renamed-mupdf.png": "7e7cdf18552648c8fc3eed2c896fff9572999d62ffab525d983bed41d93ede2d",
+    "renders/wide-renamed-pdfium.png": "a34f334d03e69cb8438a42ed6ee6df8cb0534f43e90d667b67ae3e445fb474dd"
+  },
+  "existing_dependencies": "Excluded; their source and licenses are unchanged."
+}

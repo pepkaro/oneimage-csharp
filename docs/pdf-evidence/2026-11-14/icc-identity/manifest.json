@@ -1,0 +1,169 @@
+{
+  "render_options": {
+    "dpi": 96,
+    "page_index": 0,
+    "full_page": true,
+    "cropped": false,
+    "retouched": false,
+    "png_dimensions": {
+      "wide-original-baseline.png": [
+        480,
+        120
+      ],
+      "wide-original-candidate.png": [
+        480,
+        120
+      ],
+      "wide-original-mupdf.png": [
+        480,
+        120
+      ],
+      "wide-original-pdfium.png": [
+        480,
+        120
+      ],
+      "wide-renamed-baseline.png": [
+        480,
+        120
+      ],
+      "wide-renamed-candidate.png": [
+        480,
+        120
+      ],
+      "wide-renamed-mupdf.png": [
+        480,
+        120
+      ],
+      "wide-renamed-pdfium.png": [
+        480,
+        120
+      ]
+    },
+    "OneImage_DOTNET_PROCESSOR_COUNT": null
+  },
+  "versions": {
+    "pymupdf_wrapper": "1.26.6",
+    "mupdf_engine": "1.26.11",
+    "pypdfium2_wrapper": "5.13.0",
+    "pdfium_engine": "153.0.7999.0"
+  },
+  "metrics": {
+    "baseline": {
+      "max_channel_difference": 80,
+      "mean_absolute_channel_difference": 8.020833333333334,
+      "different_pixels": 39600
+    },
+    "candidate": {
+      "max_channel_difference": 0,
+      "mean_absolute_channel_difference": 0.0,
+      "different_pixels": 0
+    },
+    "pdfium": {
+      "max_channel_difference": 0,
+      "mean_absolute_channel_difference": 0.0,
+      "different_pixels": 0
+    },
+    "mupdf": {
+      "max_channel_difference": 0,
+      "mean_absolute_channel_difference": 0.0,
+      "different_pixels": 0
+    },
+    "original_baseline_vs_candidate": {
+      "max_channel_difference": 0,
+      "mean_absolute_channel_difference": 0.0,
+      "different_pixels": 0
+    },
+    "renamed_baseline_vs_candidate": {
+      "max_channel_difference": 80,
+      "mean_absolute_channel_difference": 8.020833333333334,
+      "different_pixels": 39600
+    }
+  },
+  "png_sha256": {
+    "wide-original-baseline.png": "837ecf3fc79001a0030050bfd9a3e98d019b205d273ac8173b483d0c06242d2c",
+    "wide-original-candidate.png": "837ecf3fc79001a0030050bfd9a3e98d019b205d273ac8173b483d0c06242d2c",
+    "wide-original-mupdf.png": "7e7cdf18552648c8fc3eed2c896fff9572999d62ffab525d983bed41d93ede2d",
+    "wide-original-pdfium.png": "a34f334d03e69cb8438a42ed6ee6df8cb0534f43e90d667b67ae3e445fb474dd",
+    "wide-renamed-baseline.png": "777243033407f6619e1c4f9cf1664d21eaf4c85c3a817911f577ea521906f2a9",
+    "wide-renamed-candidate.png": "837ecf3fc79001a0030050bfd9a3e98d019b205d273ac8173b483d0c06242d2c",
+    "wide-renamed-mupdf.png": "7e7cdf18552648c8fc3eed2c896fff9572999d62ffab525d983bed41d93ede2d",
+    "wide-renamed-pdfium.png": "a34f334d03e69cb8438a42ed6ee6df8cb0534f43e90d667b67ae3e445fb474dd"
+  },
+  "binary_sha256": {
+    "baseline": {
+      "OneImage.dll": "75e9eb7a9368343128e3c873a8c4ddc3c26a65d4bf0b5e33154957429ec28185",
+      "OneImage.Pdf.dll": "d942af5da083a03135c93b427128f1d12b12abe67a616dd230daef016dcd939d",
+      "OnePdf.dll": "f5a18b3a3b16fa3e1d39f4ab1fdba9454b449c675e54fbd411362d9165693fce"
+    },
+    "candidate": {
+      "OneImage.dll": "12f30774d0235f1c3c271b576dcbafc27a923852f6fe9201426ceaea874fa8cf",
+      "OneImage.Pdf.dll": "48f1cf02358f791c1bb19c4ee52b89b348909ba842af407089bd88ba5aceaedb",
+      "OnePdf.dll": "f5a18b3a3b16fa3e1d39f4ab1fdba9454b449c675e54fbd411362d9165693fce"
+    }
+  },
+  "license": "MIT",
+  "input_authorship": "Independently authored generator, shapes, sample values, PDF structure and mathematical ICC profiles; no upstream fixture, profile bytes, fonts, art, text or expected-image input.",
+  "numeric_basis": "RGB primaries(.64,.33),(.21,.71),(.15,.06), D65 white(.3127,.3290), gamma563/256; Bradford adaptation to ICC D50(.9642,1,.8249).",
+  "baseline_commit": "e43ee264954a177ff01a16584625a3dea79244fa",
+  "historical_logic_patch_sha256": "25dd4ec1985b239462128d854c0f9ab616765ab16d178308097057ba1dede996",
+  "runtime": ".NET 10.0.15",
+  "sdk": "10.0.404",
+  "source_profile_changes": {
+    "description_tag_range": [
+      240,
+      334
+    ],
+    "changed_profile_byte_offsets": [
+      269,
+      271,
+      273,
+      275,
+      277,
+      279,
+      281,
+      283,
+      285,
+      287,
+      289,
+      291,
+      293,
+      295,
+      297,
+      299,
+      301,
+      303,
+      305,
+      307,
+      309,
+      313,
+      315,
+      317,
+      319,
+      321,
+      323,
+      325,
+      327,
+      329,
+      331,
+      333
+    ],
+    "profile_equal_length": true
+  },
+  "source_asset_sha256": {
+    "profiles/wide-original.icc": "4c5ec3247bbb235b9214697389ef3c8fd69417a895681133e191765b80c66b31",
+    "profiles/wide-renamed.icc": "733711d08cc3870b692bd245d95b2dcaee3da725696576c264b3986e84e76baa",
+    "fixtures/wide-original.pdf": "22c61a9fd6d3fe71231b5a60d832873c71f7188289a8bc45991ee030e1f590f3",
+    "fixtures/wide-renamed.pdf": "92c14b74bd693382a20e98b714a267095592945e26d3b50b0356967ffe69ce8d"
+  },
+  "final_publishable_patch_sha256": "999b75c5a5c9aa32c0b382ad6ff47c2f171ab2cae7b122ae822ea649dcbac39d",
+  "final_patch_difference": "Only SPDX-License-Identifier: MIT comments added to the two newly authored test source files; production logic/binary hashes unchanged.",
+  "candidate_commit": "454e154d7cc0a2f2dd99a0f40f3ec52294bab681",
+  "candidate_tree": "af1e66b593e911679ea84ffa68e3032f4f372ac0",
+  "pdfjs_gate": {
+    "status": "pending ICC-enabled control",
+    "attempted_version": "6.5.438",
+    "build": "0a4153349",
+    "backend": "@napi-rs/canvas 1.1.1, Node 24.22.1; not browser Canvas",
+    "limitation": "useWorkerFetch=false disables ICC/WASM; fallback outputs excluded from color evidence"
+  }
+}

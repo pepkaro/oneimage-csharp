@@ -1,0 +1,49 @@
+{
+  "baseline_commit": "e43ee264954a177ff01a16584625a3dea79244fa",
+  "baseline_tree": "ecd4981ce26de36032c2f24f35424a80df3df864",
+  "patch_sha256": "999b75c5a5c9aa32c0b382ad6ff47c2f171ab2cae7b122ae822ea649dcbac39d",
+  "exact_historical_patch_recovered": true,
+  "files": {
+    "CHANGELOG.md": "9e4275328cd1f7ebddc6bb55785b879819ca00a1cee2b29f633d8e88fddb83ef",
+    "src/OneImage.Pdf/Render/PdfColors.cs": "f0404ab7b87bfcc523b8f82fd49bd69fcd4860ebf285972ff336035f2d595ec6",
+    "src/OneImage/Color/IccData.cs": "c322a3bea32cb23dd7b4e315ba9f7e18b5490ac9e72bc45e31c23650283d6e44",
+    "tests/OneImage.Pdf.Tests/IccIdentityTests.cs": "2221d1b5b0f94971c5ae625c05b6d7bc32092f6888cfeddb28524ae0198ed303",
+    "tests/OneImage.Tests/Color/IccMatrixIdentityTests.cs": "bddc38810e0d123c9e97dee13fab3132cb6fdd85366a7147c2e2344a91622709"
+  },
+  "engines": {
+    "baseline": {
+      "OneImage.dll": "75e9eb7a9368343128e3c873a8c4ddc3c26a65d4bf0b5e33154957429ec28185",
+      "OneImage.Pdf.dll": "d942af5da083a03135c93b427128f1d12b12abe67a616dd230daef016dcd939d",
+      "OnePdf.dll": "f5a18b3a3b16fa3e1d39f4ab1fdba9454b449c675e54fbd411362d9165693fce"
+    },
+    "candidate": {
+      "OneImage.dll": "12f30774d0235f1c3c271b576dcbafc27a923852f6fe9201426ceaea874fa8cf",
+      "OneImage.Pdf.dll": "48f1cf02358f791c1bb19c4ee52b89b348909ba842af407089bd88ba5aceaedb",
+      "OnePdf.dll": "f5a18b3a3b16fa3e1d39f4ab1fdba9454b449c675e54fbd411362d9165693fce"
+    }
+  },
+  "sdk": "10.0.404",
+  "runtime": "10.0.15",
+  "stock_global_json": "{\n  \"sdk\": {\n    \"version\": \"10.0.400\",\n    \"rollForward\": \"latestFeature\"\n  },\n  \"test\": {\n    \"runner\": \"Microsoft.Testing.Platform\"\n  }\n}\n",
+  "private_fixture_inclusion": false,
+  "historical_patch_sha256": "25dd4ec1985b239462128d854c0f9ab616765ab16d178308097057ba1dede996",
+  "historical_patch_difference": "Final patch adds SPDX MIT notices to two independently authored test source files; all production code and behavior are unchanged.",
+  "checks": {
+    "pdf_suite": "644/644 passed after final SPDX comments",
+    "core_color_suite": "268/268 passed after final SPDX comments",
+    "new_pdf_baseline": "6 failures among 9 new cases, expected",
+    "public_repro": "Built with 0 warnings/errors; exact candidate PNG SHA256 reproduced",
+    "diff_check": "passed",
+    "full_solution_aot_fuzz_private_corpus": "Not claimed in this current run"
+  },
+  "new_test_source_provenance": {
+    "license": "MIT",
+    "authorship": "Independently authored regression test expressions and PDF/profile mutations. Existing project helpers and built-in generated ColorProfile API are used as dependencies without copying or relicensing their implementation. No upstream fixture, font, art, text, content stream or expected-image input is committed.",
+    "paths": [
+      "tests/OneImage.Pdf.Tests/IccIdentityTests.cs",
+      "tests/OneImage.Tests/Color/IccMatrixIdentityTests.cs"
+    ]
+  },
+  "candidate_commit": "454e154d7cc0a2f2dd99a0f40f3ec52294bab681",
+  "candidate_tree": "af1e66b593e911679ea84ffa68e3032f4f372ac0"
+}

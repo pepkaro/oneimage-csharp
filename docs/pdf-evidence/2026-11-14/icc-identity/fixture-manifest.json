@@ -1,0 +1,134 @@
+{
+  "license": "MIT",
+  "authorship": "Independently authored generator, shapes, sample values, PDF structure and mathematical ICC profiles; no upstream fixture, profile bytes, fonts, art, text or expected-image input.",
+  "numeric_basis": "RGB primaries(.64,.33),(.21,.71),(.15,.06), D65 white(.3127,.3290), gamma563/256; Bradford adaptation to ICC D50(.9642,1,.8249).",
+  "pdf_version": "2.0",
+  "icc_version": "4.3",
+  "description_tag_range": [
+    240,
+    334
+  ],
+  "changed_profile_byte_offsets": [
+    269,
+    271,
+    273,
+    275,
+    277,
+    279,
+    281,
+    283,
+    285,
+    287,
+    289,
+    291,
+    293,
+    295,
+    297,
+    299,
+    301,
+    303,
+    305,
+    307,
+    309,
+    313,
+    315,
+    317,
+    319,
+    321,
+    323,
+    325,
+    327,
+    329,
+    331,
+    333
+  ],
+  "profile_equal_length": true,
+  "rgb_samples": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      255,
+      255,
+      255
+    ],
+    [
+      128,
+      128,
+      128
+    ],
+    [
+      32,
+      32,
+      32
+    ],
+    [
+      255,
+      0,
+      0
+    ],
+    [
+      0,
+      255,
+      0
+    ],
+    [
+      0,
+      0,
+      255
+    ],
+    [
+      200,
+      100,
+      50
+    ],
+    [
+      64,
+      128,
+      192
+    ],
+    [
+      192,
+      128,
+      64
+    ],
+    [
+      128,
+      200,
+      128
+    ],
+    [
+      220,
+      180,
+      200
+    ],
+    [
+      30,
+      90,
+      60
+    ],
+    [
+      180,
+      80,
+      120
+    ],
+    [
+      80,
+      160,
+      200
+    ],
+    [
+      100,
+      120,
+      140
+    ]
+  ],
+  "sha256": {
+    "profiles/wide-original.icc": "4c5ec3247bbb235b9214697389ef3c8fd69417a895681133e191765b80c66b31",
+    "profiles/wide-renamed.icc": "733711d08cc3870b692bd245d95b2dcaee3da725696576c264b3986e84e76baa",
+    "fixtures/wide-original.pdf": "22c61a9fd6d3fe71231b5a60d832873c71f7188289a8bc45991ee030e1f590f3",
+    "fixtures/wide-renamed.pdf": "92c14b74bd693382a20e98b714a267095592945e26d3b50b0356967ffe69ce8d"
+  }
+}
