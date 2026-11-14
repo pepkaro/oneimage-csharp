@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "license": "MIT original inputs and fresh raw outputs; reference runtimes remain external under their own licenses",
+  "imageProcessing": "None. Full-page native renderer PNGs, no crop, resampling or retouch.",
+  "dimensionPolicy": "Native100DPI extents ceil to834x1112 for600x800pt pages. OneImage rounds to833x1111; do not claim pixel-grid equality without documenting a matched viewport.",
+  "pdfjsBackend": "Custom read-only local WASM host adapter with Node Canvas. Not native-browser Canvas; engine internals unchanged. These controls contain no ICCBased input.",
+  "adapterSha256": "c13346070d6de14bbd9ca346a2e1250a63caf6b62b1159b4ffd8b61dfbda2b22",
+  "rows": [
+    {
+      "input": "group-performance-40.pdf",
+      "inputSha256": "073c88ed41c948f5433b6e9ea90bbc79590f54969e9a0a42241393123d9fb3f4",
+      "dpi": 100,
+      "settings": {
+        "mupdf": {
+          "engine": "1.26.11",
+          "wrapper": "1.26.6",
+          "alpha": false,
+          "annotations": true
+        },
+        "pdfium": {
+          "engine": "153.0.7999.0",
+          "wrapper": "5.13.0",
+          "annotations": true,
+          "xfa": false
+        },
+        "pdfjs": {
+          "pdfjs": "6.5.438",
+          "build": "0a4153349",
+          "backend": "@napi-rs/canvas (Node Canvas; NOT browser Canvas)",
+          "canvasVersion": "1.1.1",
+          "node": "v24.22.1",
+          "width": 834,
+          "height": 1112,
+          "dpi": 100,
+          "annotations": "ENABLE static appearances",
+          "background": "rgb(255,255,255)",
+          "useSystemFonts": false,
+          "isEvalSupported": false,
+          "xfa": false,
+          "useWorkerFetch": true,
+          "useWasm": true,
+          "icc": "Requested via custom local read-only XMLHttpRequest host adapter; validate with transform control",
+          "runtimeReads": [],
+          "deviceCmyk": "Polynomial fallback unless explicit ICCBased; no default CMYK ICC URL supplied",
+          "diagnostics": []
+        }
+      },
+      "outputs": {
+        "mupdf": {
+          "file": "group-performance-40-mupdf.png",
+          "sha256": "cddc7ce61390d0d0988b5e9c740638043dc17237b7fd0ef53d3d147fc35e0ce9",
+          "dimensions": [
+            834,
+            1112
+          ]
+        },
+        "pdfium": {
+          "file": "group-performance-40-pdfium.png",
+          "sha256": "8825f58b6d34f6fdb284ad1526723b9743bc3d02a4ea4d936726ee1d524cced2",
+          "dimensions": [
+            834,
+            1112
+          ]
+        },
+        "pdfjs": {
+          "file": "group-performance-40-pdfjs.png",
+          "sha256": "3aef0cf86c56193a7a0aab1f1545b749d04512bb1be516254cade185d70645cb",
+          "dimensions": [
+            834,
+            1112
+          ]
+        }
+      }
+    },
+    {
+      "input": "group-performance-400.pdf",
+      "inputSha256": "4730a5d3cba6e5103c33b49f5afe71b4debfd25daff9f123e9947997b5a3fb02",
+      "dpi": 100,
+      "settings": {
+        "mupdf": {
+          "engine": "1.26.11",
+          "wrapper": "1.26.6",
+          "alpha": false,
+          "annotations": true
+        },
+        "pdfium": {
+          "engine": "153.0.7999.0",
+          "wrapper": "5.13.0",
+          "annotations": true,
+          "xfa": false
+        },
+        "pdfjs": {
+          "pdfjs": "6.5.438",
+          "build": "0a4153349",
+          "backend": "@napi-rs/canvas (Node Canvas; NOT browser Canvas)",
+          "canvasVersion": "1.1.1",
+          "node": "v24.22.1",
+          "width": 834,
+          "height": 1112,
+          "dpi": 100,
+          "annotations": "ENABLE static appearances",
+          "background": "rgb(255,255,255)",
+          "useSystemFonts": false,
+          "isEvalSupported": false,
+          "xfa": false,
+          "useWorkerFetch": true,
+          "useWasm": true,
+          "icc": "Requested via custom local read-only XMLHttpRequest host adapter; validate with transform control",
+          "runtimeReads": [],
+          "deviceCmyk": "Polynomial fallback unless explicit ICCBased; no default CMYK ICC URL supplied",
+          "diagnostics": []
+        }
+      },
+      "outputs": {
+        "mupdf": {
+          "file": "group-performance-400-mupdf.png",
+          "sha256": "3f7cfbfb324acf88976c0d9788a83b86850b219bcabaf1fd462aa2656ab0416a",
+          "dimensions": [
+            834,
+            1112
+          ]
+        },
+        "pdfium": {
+          "file": "group-performance-400-pdfium.png",
+          "sha256": "fcaabe529000a3e1d1595a56569e9cf4287906d9c851a828d2683e322a656b9c",
+          "dimensions": [
+            834,
+            1112
+          ]
+        },
+        "pdfjs": {
+          "file": "group-performance-400-pdfjs.png",
+          "sha256": "edaa80cb700850c99b2208470fd98e98a190d1152a2891ac0cd8d5427e2170bc",
+          "dimensions": [
+            834,
+            1112
+          ]
+        }
+      }
+    }
+  ]
+}

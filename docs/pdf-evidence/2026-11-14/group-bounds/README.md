@@ -38,7 +38,7 @@ These are bounded synthetic measurements, not general renderer parity, cold-star
 - After Release PDF build: 0 warnings/errors. PDF tests: 352 passed, 0 failed, the same 1 known skip (353 total).
 - Added group-bounds coverage includes transformed/fractional forms, explicit-clip comparisons, cell-boundary regions and soft masks. The nine new cases run at the actual after commit.
 - Both snapshots retain `RecursiveAI.OnePdf` and `RecursiveAI.OnePdf.Fonts` 1.18.0. No new parser integration or dependency change is implied.
-- Fresh PDFium, Mozilla PDF.js and MuPDF reference images for these exact MIT fixtures are pending. The images above are the actual OneImage parent/head outputs, not independent-reference runs.
+- Fresh PDFium, MuPDF and PDF.js custom Node diagnostic reference images for these exact MIT inputs are included in references/. The images above remain the actual OneImage parent/head outputs. Reference engines use their native 834×1112 grid; OneImage uses 833×1111.
 - Full solution/cross-platform CI, AOT, WASM, Odin WebView2 and Mozilla PDF.js endpoint validation are not established by these checks. Standalone native renderer timing is not substituted for either endpoint.
 
 ## Reproduce and license
@@ -46,3 +46,7 @@ These are bounded synthetic measurements, not general renderer parity, cold-star
 See [REPRODUCTION.md](REPRODUCTION.md), [verification.json](verification.json), [fixtures.json](fixtures.json), the self-contained harness and `generate.py`. The generator is adapted from the original `PdfNarrowGroupBenchmarks.Document` builder in this exact fix. It creates all PDF bytes itself. No user documents, installed/private fonts, third-party PDF assets, or private derived pixels are read or included.
 
 All newly authored files in this evidence directory, including the generated PDF inputs and their rendered PNGs, are explicitly provided under the [MIT license](LICENSE). See [PROVENANCE.md](PROVENANCE.md) for the asset audit. This does not change the licenses of the existing project or its dependencies. `SHA256SUMS` records all published files except itself.
+
+## Fresh independent references
+
+The [reference bundle](references/README.md) now contains fresh full outputs from PDFium, MuPDF and PDF.js custom Node Canvas for both original MIT inputs. Native dimensions are 834×1112 versus OneImage 833×1111 at the same 100 DPI. No resampling, cross-engine exact-pixel claim or native-browser parity is implied. Exact versions, options, commands and hashes are included.

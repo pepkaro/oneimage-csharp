@@ -1,0 +1,36 @@
+{
+  "base_commit": "c705783366878618d17e3d60f7d64c838d20f42f",
+  "head_commit": "4d9bded53a962790aa72c49db9197dc716f6b93e",
+  "base_tree": "0dfd1b24b735ab761473bed61b4ee0cb8dd9a232",
+  "head_tree": "fb60b56c1408e1ad70a6b0432e50538196e4434b",
+  "original_implementation_commit": "950496738a57469bbbbd6fa25724429303a143a4",
+  "mapping": "Reconstructed review split. Original published commits/branch are unchanged. Direct-layer-brush head restores exact original950 tree.",
+  "options": "100 DPI, page0, degree1, white background, rotation0, CropBox fallback MediaBox; complete raw arrays compared",
+  "runtime": ".NET10.0.15 SDK10.0.404",
+  "OnePDF": "1.18.0",
+  "pixel_checks": [
+    {
+      "groups": 40,
+      "width": 833,
+      "height": 1111,
+      "different_pixels": 0,
+      "rgba_sha256": "31b824f6a6085ccc388080f99c70dcd4e5f3c5cde04fbc49b0c6b604b31c6727"
+    },
+    {
+      "groups": 400,
+      "width": 833,
+      "height": 1111,
+      "different_pixels": 0,
+      "rgba_sha256": "d445d00e3314707c8736a7e9e4844621427073712aadb6fd1397baf88f9db17e"
+    }
+  ],
+  "pdf_tests": {
+    "before_passed": 352,
+    "after_passed": 354,
+    "before_failed": 0,
+    "after_failed": 0,
+    "known_softmask_skip_each": 1,
+    "build_warnings_errors": 0
+  },
+  "performance": "Isolated timing pending. Original combined950 timings do not isolate either split unit and are not attributed to this fix. No universal performance or native-browser parity claim."
+}
