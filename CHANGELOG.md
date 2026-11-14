@@ -4,6 +4,10 @@ All notable changes are listed here. The format follows [Keep a Changelog](https
 
 ## [Unreleased]
 
+### Fixed
+
+- `RecursiveAI.OneImage.Pdf`: narrow transparency groups now copy and composite only the pixels covered by their form bounds, rather than the whole render cell. This avoids repeated full-cell work on pages containing many small translucent objects while preserving edge coverage.
+
 ## [1.11.1] - 2026-11-06
 
 ### Fixed
