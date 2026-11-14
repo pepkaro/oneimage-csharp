@@ -14,7 +14,19 @@ pdf.Frames[0].ToImage().Resize(width: 400).Save("thumb.webp");   // drawn at 400
 
 ## Options
 
-`PdfRenderOptions`: `Dpi` (150), `FirstPage`/`PageCount` (the selected pages are frames; the frame size is the page box, with rotation and user unit applied, times dpi/72, rounded to the nearest pixel), `Box` (crop box, limited to the media box), `Annotations` (view, print or none), `GenerateAppearances` (true), `Background` (opaque white; pass a transparent color for the page content alone), `Password`, `Limits` (`PdfRenderLimits`) and `DocumentLimits` (OnePDF's parsing and interpretation limits). Everything is documented on the types.
+`PdfRenderOptions`: `Dpi` (150), `FirstPage`/`PageCount` (the selected pages are frames; the frame size is the page box, with rotation and user unit applied, times dpi/72, rounded to the nearest pixel), `Box` (crop box, limited to the media box), `Annotations` (view, print or none), `GenerateAppearances` (true), `SmoothMagnifiedImages` (false), `Background` (opaque white; pass a transparent color for the page content alone), `Password`, `Limits` (`PdfRenderLimits`) and `DocumentLimits` (OnePDF's parsing and interpretation limits). Everything is documented on the types.
+
+Set `SmoothMagnifiedImages = true` in `PdfRenderOptions` to smooth enlarged raster images even when `/Interpolate` is false or omitted, as many native viewers do. The default keeps the document's interpolation choice. Enlargement along either image axis selects the existing bilinear sampler for the whole image and its decoded alpha, even if the other axis shrinks. The area-reduction step is unchanged. Images reduced along both axes, one-to-one images, stencil masks, vectors and outline text are unchanged. It can bring image appearance closer to a viewer, but does not promise pixel-identical rendering. Smoothing can increase rendering time for enlarged images.
+
+For example, a viewer-style image-smoothing configuration:
+
+```csharp
+var config = new ImageConfiguration().Add(new PdfFormat(new PdfRenderOptions
+{
+    Dpi = 144,
+    SmoothMagnifiedImages = true,
+}));
+```
 
 ## How a page is drawn
 
@@ -58,7 +70,7 @@ A pattern that paints with itself is bounded by the nesting limit. The tests bui
 
 - Transparency groups: a non-isolated group that needs compositing (opacity below 1, a blend mode or a soft mask) is painted on a copy of its backdrop with its own alpha tracked apart. The initial backdrop is removed in premultiplied form before group opacity, masks, and external blending are applied (11.4.5, 11.4.8), including transparent and translucent backdrops. Intermediate RGBA8 rounding can still differ from higher-precision renderers, especially in deep or low-alpha groups. A knockout group (11.4.6) replaces what is under each object instead of accumulating; blend modes of objects inside a knockout group are not applied. A non-isolated group with none of these needs is drawn straight onto its parent, which is exact. Overprint is ignored.
 - **Knockout of text and of fill-and-stroke.** `B`, `B*`, `b` and `b*` (11.7.4.4) arrive as one device call; with a translucent stroke the fill is painted without the stroke's area, so the stroke replaces it instead of compositing over it. Text knockout (9.3.8, `/TK`, true by default) is applied to the glyphs of Type 3 fonts, which are drawn as content: while translucent glyph procedures follow each other they share one knockout layer. Outline glyphs of one string are already one shape; overlapping translucent glyphs of *different* strings of a text object (separate `Tj`/`TJ` elements) still accumulate, because the device is not told where a text object begins and ends.
-- Image edges are anti-aliased rather than snapped to the pixel grid. A picture shown larger than its samples is drawn with square samples unless it sets `/Interpolate true` (8.9.5.3: interpolation is off by default); the references often smooth it anyway. A reduced picture is area-averaged, then sampled bilinearly.
+- Image edges are anti-aliased rather than snapped to the pixel grid. A picture shown larger than its samples is drawn with square samples unless it sets `/Interpolate true` or `SmoothMagnifiedImages` is enabled for a non-stencil image (8.9.5.3: interpolation is off by default); the references often smooth it anyway. A reduced picture is area-averaged, then sampled bilinearly.
 - Text is unhinted and drawn with exact-area coverage, which looks lighter than PDFium's and heavier than MuPDF's.
 
 ### Known limitations
