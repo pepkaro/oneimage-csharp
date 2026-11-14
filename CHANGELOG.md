@@ -4,6 +4,10 @@ All notable changes are listed here. The format follows [Keep a Changelog](https
 
 ## [Unreleased]
 
+### Added
+
+- `RecursiveAI.OneImage.Pdf`: opt-in `PdfRenderOptions.SmoothMagnifiedImages` uses smooth sampling for enlarged raster images even when `/Interpolate` is false or omitted, for a display closer to many PDF viewers. Defaults, image reduction and stencil masks are unchanged.
+
 ### Fixed
 
 - `RecursiveAI.OneImage.Pdf`: non-isolated transparency groups now remove their initial backdrop before applying group opacity, masks, and external blend modes. Nested passthrough forms and patterned stencil images retain their owning group's alpha coverage.
