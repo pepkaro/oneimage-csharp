@@ -228,8 +228,9 @@ internal static class PdfColors
                 return new IccEntry(null, true, n);
             }
 
-            // An sRGB profile (there are many byte-different ones) changes nothing: skipping the transform keeps the common case fast and exact.
-            if (n == 3 && profile.Description.Contains("sRGB", StringComparison.OrdinalIgnoreCase))
+            // Names are not color data (even "Linear sRGB" needs conversion). Keep the fast path only when the
+            // matrix profile's transform data exactly matches our destination, with no lookup-table overrides.
+            if (n == 3 && profile.Data.HasSameRgbMatrixShaper(ColorProfile.Srgb.Data))
             {
                 return new IccEntry(null, true, n);
             }

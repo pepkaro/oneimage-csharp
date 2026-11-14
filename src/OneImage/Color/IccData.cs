@@ -150,6 +150,57 @@ internal sealed class IccData
     public bool HasMatrixShaper() =>
         HasTag("rXYZ") && HasTag("gXYZ") && HasTag("bXYZ") && HasTag("rTRC") && HasTag("gTRC") && HasTag("bTRC");
 
+    /// <summary>
+    /// Sufficient, deliberately conservative equivalence for RGB matrix profiles. Only description and copyright tags may
+    /// differ; all other tag payloads must match exactly, independent of their order or storage offsets. This is not a
+    /// general color-equivalence test: other encodings of the same curves or colorants still need a transform.
+    /// </summary>
+    public bool HasSameRgbMatrixShaper(IccData other)
+    {
+        // Match the engine's header inputs, and conservatively reject unfamiliar header variants or duplicate tags.
+        // Profile IDs, dates, manufacturer and the header's default intent do not affect an explicitly requested
+        // transform. Media white is also compared as a tag. No new profile parsing is needed here.
+        if (Model != ColorModel.Rgb || other.Model != ColorModel.Rgb || PcsIsLab || other.PcsIsLab ||
+            DeviceClass != other.DeviceClass || !_data.AsSpan(8, 4).SequenceEqual(other._data.AsSpan(8, 4)) ||
+            !_data.AsSpan(44, 4).SequenceEqual(other._data.AsSpan(44, 4)) ||
+            !_data.AsSpan(56, 8).SequenceEqual(other._data.AsSpan(56, 8)) ||
+            !_data.AsSpan(68, 12).SequenceEqual(other._data.AsSpan(68, 12)) ||
+            !_data.AsSpan(100, 28).SequenceEqual(other._data.AsSpan(100, 28)) ||
+            U32(_data, 128) != _tags.Count || U32(other._data, 128) != other._tags.Count ||
+            !HasMatrixShaper() || !other.HasMatrixShaper())
+        {
+            return false;
+        }
+
+        return SameTags(this, other) && SameTags(other, this);
+
+        static bool SameTags(IccData a, IccData b)
+        {
+            foreach (uint sig in a._tags.Keys)
+            {
+                // Reject tables for every intent and direction, including newer types not currently interpreted.
+                uint prefix = sig >> 8;
+                if (prefix == Sig("A2B0") >> 8 || prefix == Sig("B2A0") >> 8 ||
+                    prefix == Sig("D2B0") >> 8 || prefix == Sig("B2D0") >> 8)
+                {
+                    return false;
+                }
+
+                if (sig == Sig("desc") || sig == Sig("cprt"))
+                {
+                    continue;
+                }
+
+                if (!b._tags.ContainsKey(sig) || !a.Tag(sig).SequenceEqual(b.Tag(sig)))
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+    }
+
     /// <summary>True when the profile converts through colorants and curves only (no lookup table) for this intent and direction.</summary>
     public bool IsMatrixShaper(RenderingIntent intent, bool output) =>
         Model switch
