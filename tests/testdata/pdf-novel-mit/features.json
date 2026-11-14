@@ -1,0 +1,130 @@
+{
+  "rgb-triptych": {
+    "feature": "DeviceRGB independent channels"
+  },
+  "gray-staircase": {
+    "feature": "DeviceGray levels"
+  },
+  "cmyk-corners": {
+    "feature": "DeviceCMYK channel order and chromatic geometry",
+    "policy": "DeviceCMYK profile/engine differences are not exact RGB parity claims."
+  },
+  "indexed-six-tiles": {
+    "feature": "Indexed lookup and sample order"
+  },
+  "decode-inverted-gray": {
+    "feature": "Image Decode inversion"
+  },
+  "rgb-nearest": {
+    "feature": "Magnified RGB image with Interpolate false"
+  },
+  "rgb-smoothed": {
+    "feature": "Magnified RGB image with Interpolate true"
+  },
+  "stencil-checks": {
+    "feature": "ImageMask polarity and current nonstroking color"
+  },
+  "inline-rgb-stripes": {
+    "feature": "Inline ASCIIHex RGB samples"
+  },
+  "inline-gray-stripes": {
+    "feature": "Inline Gray samples and BPC"
+  },
+  "clip-nonzero": {
+    "feature": "Nested rectangles with W clip rule"
+  },
+  "clip-evenodd": {
+    "feature": "Nested rectangles with W* clip rule"
+  },
+  "clip-crossed-transforms": {
+    "feature": "Intersecting clips with transformed fill"
+  },
+  "dash-round-cap": {
+    "feature": "Dashed stroke cap geometry"
+  },
+  "dash-square-cap": {
+    "feature": "Dashed stroke cap geometry"
+  },
+  "zero-length-dash-gap": {
+    "feature": "Zero-length round cap at off dash phase",
+    "expectedBlank": true,
+    "knownFailure": "Dash off-phase currently paints a disc."
+  },
+  "zero-length-dash-on": {
+    "feature": "Zero-length round cap at on dash phase",
+    "expectedBlank": false,
+    "knownFailure": null
+  },
+  "crop-rotation-0": {
+    "feature": "Translated CropBox and rotation 0"
+  },
+  "crop-rotation-90": {
+    "feature": "Translated CropBox and rotation 90"
+  },
+  "crop-rotation-180": {
+    "feature": "Translated CropBox and rotation 180"
+  },
+  "crop-rotation-270": {
+    "feature": "Translated CropBox and rotation 270"
+  },
+  "form-translated": {
+    "feature": "Form matrix plus BBox clips content outside its bounds"
+  },
+  "form-reflected": {
+    "feature": "Form matrix plus BBox clips content outside its bounds"
+  },
+  "form-skewed": {
+    "feature": "Form matrix plus BBox clips content outside its bounds"
+  },
+  "alpha-painted-backdrop": {
+    "feature": "Constant alpha over explicit colored background"
+  },
+  "blend-empty-backdrop": {
+    "feature": "Unpainted PDF backdrop is transparent before display background",
+    "knownFailure": "Page display background participates in blend before page compositing."
+  },
+  "multiply-painted-backdrop": {
+    "feature": "Multiply over an explicit RGB backdrop"
+  },
+  "isolated-group": {
+    "feature": "Isolated transparency group, knockout False"
+  },
+  "knockout-group": {
+    "feature": "Isolated transparency group, knockout True"
+  },
+  "luminosity-soft-mask": {
+    "feature": "Luminosity soft mask values"
+  },
+  "alpha-soft-mask": {
+    "feature": "Alpha soft mask values"
+  },
+  "axial-gradient": {
+    "feature": "Analytic Type2 function in axial-gradient"
+  },
+  "radial-gradient": {
+    "feature": "Analytic Type2 function in radial-gradient"
+  },
+  "colored-pattern": {
+    "feature": "Tiling pattern PaintType 1"
+  },
+  "uncolored-pattern": {
+    "feature": "Tiling pattern PaintType 2"
+  },
+  "type3-outlined-shapes": {
+    "feature": "Self-authored Type3 glyph procedures; uncolored d1",
+    "textContains": "ABBA"
+  },
+  "type3-colored-shapes": {
+    "feature": "Self-authored Type3 glyph procedures; colored d0",
+    "textContains": "ABBA"
+  },
+  "annotation-visible": {
+    "feature": "Static annotation appearance and Hidden flag"
+  },
+  "annotation-hidden": {
+    "feature": "Static annotation appearance and Hidden flag"
+  },
+  "button-explicit-appearance": {
+    "feature": "Static button field with explicit On appearance"
+  }
+}
