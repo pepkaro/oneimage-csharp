@@ -106,7 +106,20 @@ internal sealed partial class CanvasDevice
         }
     }
     /// <summary>The coverage canvas of the non-isolated group being painted directly into the current target, if any.</summary>
-    private Canvas? ShapeShadow => _frames.Count > 0 && _frames[^1] is { Kind: FrameKind.Group, Shape: { } s } f && ReferenceEquals(f.Layer, _target) ? s : null;
+    private Canvas? ShapeShadow
+    {
+        get
+        {
+            for (int i = _frames.Count - 1; i >= 0; i--)
+            {
+                Frame frame = _frames[i];
+                if (frame.Kind == FrameKind.Passthrough) continue;
+                // A passthrough form shares its owner's target. Never cross a mask or another layer.
+                return frame.Kind == FrameKind.Group && ReferenceEquals(frame.Layer, _target) ? frame.Shape : null;
+            }
+            return null;
+        }
+    }
 
     /// <summary>Opens a knockout layer composited with the state's blend mode and soft mask (not its opacity: objects carry their own).</summary>
     private void BeginKnockoutLayer(in PdfGraphicsState state)
