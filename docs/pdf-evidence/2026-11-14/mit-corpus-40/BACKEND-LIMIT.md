@@ -1,0 +1,3 @@
+# Direct Node Canvas backend limitation
+
+The initial corpus reference discrepancy for an on-phase zero-length round cap also occurs without PDF.js. The separately original MIT reduction in node-canvas-reduction uses direct @napi-rs/canvas1.1.1 Path2D and context APIs. All zero-length strokes are blank even without a dash; one-pixel-long solid/on-phase controls paint506 pixels. This is evidence of a Node Canvas limitation, not a PDF.js parser defect. Native-browser behavior remains pending. The two separate baseline OneImage defects remain off-phase unwanted discs and empty-backdrop blend loss; those are not attributed to this Node issue.
