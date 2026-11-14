@@ -156,6 +156,8 @@ Tools are in `tools/pdf-gate`: `make_manifest.py`, `render_oracles.py`, `classif
 
 ## Speed
 
+See [PDF performance measurement](pdf-performance.md) for the narrow-transparency-group benchmark and how to separate startup, new-document rendering, retained-document rerasterization, and cached viewer display when comparing with a browser or WebView.
+
 A whole page to `Rgba32` at 150 dpi from the file's bytes (parse, interpret, draw; BenchmarkDotNet `PdfPageBenchmarks`), against PDFium through pypdfium2 (`tools/pdf-gate/bench_pdfium.py`: open, render, copy to an array). One local run on a Ryzen 9 7950X3D (32 threads) with other work on the host (load 5–8), .NET 10.0.11, information only:
 
 | page | ours | allocated | PDFium |
