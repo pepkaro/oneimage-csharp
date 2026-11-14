@@ -433,6 +433,14 @@ internal sealed class FillPlan
 
                 return;
             }
+
+            if (!_lin8 && Format == PixelFormat.Rgba8
+                && Settings.Blend == BlendMode.Normal
+                && Settings.Composition == AlphaComposition.SrcOver)
+            {
+                BlendRgba8Normal(stored, rgba, cov.Slice(x0, n), Settings.Opacity);
+                return;
+            }
         }
 
         if (!decoded)
@@ -473,6 +481,42 @@ internal sealed class FillPlan
         if (_lin8)
         {
             EncodeStorage(pixels, stored, n);
+        }
+    }
+
+    // Fuse the generic straight RGBA8 -> premultiplied float -> source-over -> coverage -> straight RGBA8
+    // pipeline without changing its floating-point operation order or byte rounding.
+    private static void BlendRgba8Normal(Span<byte> pixels, ReadOnlySpan<float> rgba, ReadOnlySpan<float> coverage, float opacity)
+    {
+        ReadOnlySpan<float> table = ConvertFast.ByteToUnit;
+        for (int p = 0; p < coverage.Length; p++)
+        {
+            int i = p * 4;
+            float da = table[pixels[i + 3]];
+            float sourceAlpha = rgba[i + 3];
+            float sa = sourceAlpha * opacity;
+            float fb = 1f + (-1f * sa);
+            float alpha = sa + (da * fb);
+            float c = coverage[p];
+            if (c < 1f)
+            {
+                alpha = da + ((alpha - da) * c);
+            }
+
+            for (int k = 0; k < 3; k++)
+            {
+                float back = table[pixels[i + k]] * da;
+                float over = (rgba[i + k] * sourceAlpha) * opacity;
+                float result = over + (back * fb);
+                if (c < 1f)
+                {
+                    result = back + ((result - back) * c);
+                }
+
+                pixels[i + k] = ConvertFast.ToByte(alpha == 1f ? result : alpha > 0f ? result / alpha : 0f);
+            }
+
+            pixels[i + 3] = ConvertFast.ToByte(alpha);
         }
     }
 
