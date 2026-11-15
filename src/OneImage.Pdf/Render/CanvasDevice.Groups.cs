@@ -35,8 +35,13 @@ internal sealed partial class CanvasDevice
         public int SavedClipCount { get; init; }
 
         public bool Knockout { get; init; }
+        public bool AlphaIsShape { get; init; }
+        /// <summary>Borrowed initial backdrop, unchanged while this frame is active; null means transparent.</summary>
+        public Canvas? Backdrop { get; init; }
+        /// <summary>Union of geometric shapes, independent of opacity, when an ancestor needs knockout shape.</summary>
+        public Canvas? Geometry { get; set; }
 
-        /// <summary>For a non-isolated group painted on a copy of its backdrop: what the group's own objects cover (their union alpha).</summary>
+        /// <summary>For a non-isolated group: its own alpha, excluding the copied backdrop; knockout replaces alpha by shape.</summary>
         public Canvas? Shape { get; set; }
         public ImageRect? CompositeRegion { get; init; }
     }
@@ -55,7 +60,7 @@ internal sealed partial class CanvasDevice
         CloseTextKnockout();
         BlendMode blend = ParseBlend(state.BlendMode);
         bool maskKnown = state.SoftMaskId != 0 && _masks.ContainsKey(state.SoftMaskId);
-        if (!group.Isolated && !group.Knockout && state.FillAlpha >= 1 && blend == BlendMode.Normal && !maskKnown)
+        if (!group.Isolated && !group.Knockout && !InKnockoutGroup && state.FillAlpha >= 1 && blend == BlendMode.Normal && !maskKnown)
         {
             _frames.Add(new Frame(FrameKind.Passthrough, null, _target, 1, BlendMode.Normal, 0));
             return;
@@ -65,16 +70,29 @@ internal sealed partial class CanvasDevice
         var layer = new Canvas(_w, _h, PixelFormat.Rgba8);
         ImageRect region = GroupRegion(group.Bounds, state.Ctm.Then(_view));
         Canvas? shape = null;
-        if (!group.Isolated && !group.Knockout)
+        Canvas? backdrop = group.Isolated ? null : GroupBackdrop;
+        Canvas? geometry = null;
+        try
         {
-            // 11.4.5: a non-isolated group starts from its backdrop, so blend modes inside it see the page. The group's own coverage is
-            // tracked apart. At the end the initial backdrop is removed (11.4.8), including its alpha.
-            CopyBackdrop(layer, _target, region);
-            shape = new Canvas(_w, _h, PixelFormat.Rgba8);
+            geometry = InKnockoutGroup || GeometryShadow is not null ? new Canvas(_w, _h, PixelFormat.Rgba8) : null;
+            if (backdrop is not null)
+            {
+                // 11.4.5/11.4.6: copy the initial backdrop, which may differ from the immediate parent in a knockout.
+                CopyBackdrop(layer, backdrop, region);
+                shape = new Canvas(_w, _h, PixelFormat.Rgba8);
+            }
+            _frames.Add(new Frame(FrameKind.Group, layer, _target, state.FillAlpha, blend, maskKnown ? state.SoftMaskId : 0)
+                { Knockout = group.Knockout, Shape = shape, Geometry = geometry, Backdrop = backdrop,
+                  AlphaIsShape = state.AlphaIsShape, CompositeRegion = region });
+            _target = layer;
         }
-
-        _frames.Add(new Frame(FrameKind.Group, layer, _target, state.FillAlpha, blend, maskKnown ? state.SoftMaskId : 0) { Knockout = group.Knockout, Shape = shape, CompositeRegion = region });
-        _target = layer;
+        catch
+        {
+            geometry?.Dispose();
+            shape?.Dispose();
+            layer.Dispose();
+            throw;
+        }
     }
 
     private ImageRect GroupRegion(in PdfBounds bounds, in PdfMatrix matrix)
@@ -121,19 +139,90 @@ internal sealed partial class CanvasDevice
         }
     }
 
-    /// <summary>Opens a knockout layer composited with the state's blend mode and soft mask (not its opacity: objects carry their own).</summary>
-    private void BeginKnockoutLayer(in PdfGraphicsState state)
+    /// <summary>Opens the implicit non-isolated text knockout group; each glyph carries its own blend, opacity and mask.</summary>
+    private void BeginKnockoutLayer()
     {
-        BlendMode blend = ParseBlend(state.BlendMode);
-        bool maskKnown = state.SoftMaskId != 0 && _masks.ContainsKey(state.SoftMaskId);
         CheckNesting();
         var layer = new Canvas(_w, _h, PixelFormat.Rgba8);
-        _frames.Add(new Frame(FrameKind.Group, layer, _target, 1, blend, maskKnown ? state.SoftMaskId : 0) { Knockout = true });
-        _target = layer;
+        var region = new ImageRect(0, 0, _w, _h);
+        Canvas? backdrop = GroupBackdrop;
+        Canvas? alpha = null, geometry = null;
+        try
+        {
+            alpha = backdrop is null ? null : new Canvas(_w, _h, PixelFormat.Rgba8);
+            geometry = InKnockoutGroup || GeometryShadow is not null ? new Canvas(_w, _h, PixelFormat.Rgba8) : null;
+            if (backdrop is not null) CopyBackdrop(layer, backdrop, region);
+            _frames.Add(new Frame(FrameKind.Group, layer, _target, 1, BlendMode.Normal, 0)
+                { Knockout = true, Backdrop = backdrop, Shape = alpha, Geometry = geometry, CompositeRegion = region });
+            _target = layer;
+        }
+        catch
+        {
+            geometry?.Dispose();
+            alpha?.Dispose();
+            layer.Dispose();
+            throw;
+        }
     }
 
-    /// <summary>True while painting directly into the layer of a knockout group, where each object replaces what is under it.</summary>
-    private bool InKnockoutGroup => _frames.Count > 0 && _frames[^1] is { Kind: FrameKind.Group, Knockout: true } f && ReferenceEquals(f.Layer, _target);
+    /// <summary>The group that owns this target, ignoring passthrough forms but never crossing masks.</summary>
+    private Frame? TargetGroup
+    {
+        get
+        {
+            for (int i = _frames.Count - 1; i >= 0; i--)
+            {
+                Frame frame = _frames[i];
+                if (frame.Kind == FrameKind.Passthrough) continue;
+                return frame.Kind == FrameKind.Group && ReferenceEquals(frame.Layer, _target) ? frame : null;
+            }
+            return null;
+        }
+    }
+
+    private bool InKnockoutGroup => TargetGroup is { Knockout: true };
+    private Canvas? GroupBackdrop => TargetGroup is { Knockout: true } group ? group.Backdrop : _target;
+    private Canvas? GeometryShadow
+    {
+        get
+        {
+            for (int i = _frames.Count - 1; i >= 0; i--)
+            {
+                Frame frame = _frames[i];
+                if (frame.Kind == FrameKind.Passthrough) continue;
+                return frame.Kind == FrameKind.Group && ReferenceEquals(frame.Layer, _target) ? frame.Geometry : null;
+            }
+            return ReferenceEquals(_target, _root) ? _rootGeometry : null;
+        }
+    }
+
+    private void PaintKnockout(Brush source, Brush intrinsicShape, DrawingPath area, IntersectionRule rule, float opacity,
+        BlendMode blend, Canvas? mask, bool alphaIsShape, DrawingPath? clip, bool antialias, Canvas? stencil = null)
+    {
+        var rect = new ImageRect(0, 0, _w, _h);
+        using var initial = GroupBackdrop is { } backdrop ? new CanvasLayerBrush(backdrop, null, null, rect) : null;
+        using var maskBrush = mask is null ? null : new CanvasLayerBrush(mask, null, null, rect);
+        using var stencilBrush = stencil is null ? null : new CanvasLayerBrush(stencil, null, null, rect);
+        var color = new KnockoutBrush(source, intrinsicShape, initial, maskBrush, stencilBrush, opacity, alphaIsShape, blend, KnockoutChannel.Color);
+        _target.Fill(color, area, antialias, rule, 1, BlendMode.Normal, AlphaComposition.Src, false, null, clip, _clip.Rule);
+        if (ShapeShadow is { } alpha)
+        {
+            var coverage = new KnockoutBrush(source, intrinsicShape, initial, maskBrush, stencilBrush, opacity, alphaIsShape, blend, KnockoutChannel.Alpha);
+            alpha.Fill(coverage, area, antialias, rule, 1, BlendMode.Normal, AlphaComposition.Src, false, null, clip, _clip.Rule);
+        }
+        TrackGeometry(source, intrinsicShape, area, rule, opacity, mask, alphaIsShape, clip, antialias, stencil);
+    }
+
+    private void TrackGeometry(Brush source, Brush intrinsicShape, DrawingPath area, IntersectionRule rule, float opacity,
+        Canvas? mask, bool alphaIsShape, DrawingPath? clip, bool antialias, Canvas? stencil = null)
+    {
+        if (GeometryShadow is not { } geometry) return;
+        var rect = new ImageRect(0, 0, _w, _h);
+        using var maskBrush = mask is null ? null : new CanvasLayerBrush(mask, null, null, rect);
+        using var stencilBrush = stencil is null ? null : new CanvasLayerBrush(stencil, null, null, rect);
+        var brush = new KnockoutBrush(source, intrinsicShape, null, maskBrush, stencilBrush, opacity, alphaIsShape, BlendMode.Normal, KnockoutChannel.Shape);
+        geometry.Fill(brush, area, antialias, rule, 1, BlendMode.Normal, AlphaComposition.SrcOver, false, null, clip, _clip.Rule);
+    }
 
     public void EndGroup()
     {
@@ -154,11 +243,11 @@ internal sealed partial class CanvasDevice
         _target = f.Parent;
         Canvas layer = f.Layer!;
         f.Layer = null;
-        CompositeLayer(layer, f.Opacity, f.Blend, f.MaskId, f.Shape, f.CompositeRegion);
+        CompositeLayer(layer, f.Opacity, f.Blend, f.MaskId, f.Shape, f.CompositeRegion, f.Geometry, f.AlphaIsShape);
     }
 
     /// <summary>Composites a finished layer onto the current target with an opacity, blend mode and (known) soft mask, and releases it.</summary>
-    private void CompositeLayer(Canvas layer, double opacity, BlendMode blend, int maskId, Canvas? shape = null, ImageRect? region = null)
+    private void CompositeLayer(Canvas layer, double opacity, BlendMode blend, int maskId, Canvas? shape = null, ImageRect? region = null, Canvas? geometry = null, bool alphaIsShape = false)
     {
         try
         {
@@ -168,6 +257,26 @@ internal sealed partial class CanvasDevice
             if (maskId != 0) _masks.TryGetValue(maskId, out mask);
             DrawingPath area = DrawingPath.Rectangle(rect.X, rect.Y, rect.Width, rect.Height);
             float amount = (float)Math.Clamp(opacity, 0, 1);
+            if (InKnockoutGroup)
+            {
+                using var geometric = new CanvasLayerBrush(geometry!, null, null, rect);
+                if (shape is not null)
+                {
+                    using var source = new NonIsolatedGroupBrush(layer, shape, null, rect, 1, interpolate: false);
+                    PaintKnockout(source, geometric, area, IntersectionRule.NonZero, amount, blend, mask, alphaIsShape, null, false);
+                }
+                else
+                {
+                    using var source = new CanvasLayerBrush(layer, null, null, rect);
+                    PaintKnockout(source, geometric, area, IntersectionRule.NonZero, amount, blend, mask, alphaIsShape, null, false);
+                }
+                return;
+            }
+            if (geometry is not null)
+            {
+                using var geometric = new CanvasLayerBrush(geometry, null, null, rect);
+                TrackGeometry(geometric, geometric, area, IntersectionRule.NonZero, amount, mask, alphaIsShape, null, false);
+            }
             if (shape is not null)
             {
                 bool interpolate = blend == BlendMode.Normal;
@@ -192,6 +301,7 @@ internal sealed partial class CanvasDevice
         }
         finally
         {
+            geometry?.Dispose();
             shape?.Dispose();
             layer.Dispose();
         }
