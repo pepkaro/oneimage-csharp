@@ -39,8 +39,8 @@ public class PatternBackdropTests
         foreach (string outside in new[] { "Normal", "Multiply", "Screen" })
         {
             byte[] pdf = Pdf("/A gs " + Source, "/ExtGState << /A << /ca .5 /BM /Multiply >> >>", "/O gs " + Paint,
-                $"/ExtGState << /O << /ca .5 /BM /{outside} >> >>");
-            Rgba32 actual = At(Pixels(pdf, new Rgba32(51, 153, 204, (byte)backgroundAlpha)), 12, 12);
+                $"/ExtGState << /O << /ca .5 /BM /{outside} >> >>", backdrop: new Rgba32(51, 153, 204, (byte)backgroundAlpha));
+            Rgba32 actual = At(Pixels(pdf), 12, 12);
             const double a = .25;
             double ar = a + (ab * (1 - a));
             var expected = new double[4];
@@ -61,8 +61,8 @@ public class PatternBackdropTests
         // The overlapping right half is not equivalent to moving either internal blend to the outer paint.
         string cell = "/A gs .8 .4 .2 rg 0 0 24 24 re f /B gs .1 .8 .3 rg 12 0 12 24 re f";
         string resources = "/ExtGState << /A << /BM /Multiply /ca .5 >> /B << /BM /Screen /ca .5 >> >>";
-        byte[] pdf = Pdf(cell, resources, "/O gs " + Paint, "/ExtGState << /O << /ca .5 >> >>");
-        Rgba32[] pixels = Pixels(pdf, Backdrop);
+        byte[] pdf = Pdf(cell, resources, "/O gs " + Paint, "/ExtGState << /O << /ca .5 >> >>", backdrop: Backdrop);
+        Rgba32[] pixels = Pixels(pdf);
         double[] cb = [.2, .6, .8], a = [.8, .4, .2], b = [.1, .8, .3];
         foreach (int x in new[] { 6, 18, 30, 42 })
         {
@@ -86,8 +86,8 @@ public class PatternBackdropTests
         // operations commute, so the oracle does not depend on a particular tile order.
         string cell = "/A gs " + Source;
         byte[] pdf = Pdf(cell, "/ExtGState << /A << /BM /Multiply /ca .5 >> >>", "/O gs " + Paint,
-            "/ExtGState << /O << /ca .5 >> >>", xStep: 12);
-        Rgba32[] pixels = Pixels(pdf, Backdrop);
+            "/ExtGState << /O << /ca .5 >> >>", xStep: 12, backdrop: Backdrop);
+        Rgba32[] pixels = Pixels(pdf);
         double[] cb = [.2, .6, .8], cs = [.8, .4, .2];
         double[] expected = Enumerable.Range(0, 3).Select(c => 255 * cb[c] * (.5 + .5 * Math.Pow(.5 + .5 * cs[c], 2))).Append(255).ToArray();
         Near(At(pixels, 18, 12), expected);
@@ -103,8 +103,8 @@ public class PatternBackdropTests
         byte[] pdf = Pdf("/A gs " + Source, "/ExtGState << /A << /BM /Multiply >> >>",
             "8 8 80 80 re W n /O gs " + paint,
             "/ExtGState << /O << /ca .5 /SMask << /S /Alpha /G 6 0 R >> >> >>",
-            extra: [RegionTests.Obj(mask, "/H gs 1 g 0 0 96 48 re f")]);
-        Rgba32[] pixels = Pixels(pdf, Backdrop);
+            extra: [RegionTests.Obj(mask, "/H gs 1 g 0 0 96 48 re f")], backdrop: Backdrop);
+        Rgba32[] pixels = Pixels(pdf);
         Near(At(pixels, 12, 12), [48.45, 130.05, 163.2, 255]);
         Assert.Equal(Backdrop, At(pixels, 4, 12));
         Assert.Equal(Backdrop, At(pixels, 12, 72));
@@ -120,14 +120,14 @@ public class PatternBackdropTests
     {
         const string cell = "/A gs .8 .4 .2 rg 4 4 12 12 re f /B gs .2 .8 .3 rg 10 8 10 12 re f";
         const string resources = "/ExtGState << /A << /BM /Multiply /ca .5 >> /B << /BM /Screen /ca .5 >> >>";
-        byte[] pattern = Pdf(cell, resources, "/O gs " + Paint, "/ExtGState << /O << /ca .5 >> >>", matrix: matrix);
+        byte[] pattern = Pdf(cell, resources, "/O gs " + Paint, "/ExtGState << /O << /ca .5 >> >>", matrix: matrix, backdrop: Backdrop);
         var copies = new System.Text.StringBuilder();
         for (int y = -10; y <= 10; y++)
         for (int x = -10; x <= 10; x++)
             copies.Append(CultureInfo.InvariantCulture, $"q 1 0 0 1 {24 * x} {24 * y} cm {cell} Q ");
         string form = RegionTests.Obj($"/Type /XObject /Subtype /Form /BBox [-1000 -1000 1000 1000] /Group << /S /Transparency /I false >> /Resources << {resources} >>", copies.ToString());
-        byte[] direct = TestPdf.Page($"0 0 96 96 re W n /O gs {matrix} cm /F Do", "/XObject << /F 5 0 R >> /ExtGState << /O << /ca .5 >> >>", 96, 96, [form]);
-        Rgba32[] actual = Pixels(pattern, Backdrop), expected = Pixels(direct, Backdrop);
+        byte[] direct = Page($"0 0 96 96 re W n /O gs {matrix} cm /F Do", "/XObject << /F 5 0 R >> /ExtGState << /O << /ca .5 >> >>", [form], Backdrop);
+        Rgba32[] actual = Pixels(pattern), expected = Pixels(direct);
         Assert.Equal(expected, actual);
     }
 
@@ -136,17 +136,17 @@ public class PatternBackdropTests
     {
         string child = RegionTests.Obj("/Type /Pattern /PatternType 1 /PaintType 1 /TilingType 1 /BBox [0 0 24 24] /XStep 24 /YStep 24 /Resources << /ExtGState << /A << /BM /Multiply >> >> >>", "/A gs " + Source);
         byte[] pdf = Pdf("/Pattern cs /C scn 0 0 24 24 re f", "/Pattern << /C 6 0 R >>", "/G gs /F Do", "/XObject << /F 7 0 R >> /ExtGState << /G << /ca .5 >> >>",
-            extra: [child, RegionTests.Obj("/Type /XObject /Subtype /Form /BBox [0 0 96 96] /Group << /S /Transparency /I false >> /Resources << /Pattern << /P 5 0 R >> >>", Paint)]);
-        Near(At(Pixels(pdf, Backdrop), 12, 12), [45.9, 107.1, 122.4, 255]);
+            extra: [child, RegionTests.Obj("/Type /XObject /Subtype /Form /BBox [0 0 96 96] /Group << /S /Transparency /I false >> /Resources << /Pattern << /P 5 0 R >> >>", Paint)], backdrop: Backdrop);
+        Near(At(Pixels(pdf), 12, 12), [45.9, 107.1, 122.4, 255]);
     }
 
     [Fact]
     public void UncoloredPatternUsesTheCurrentTintWithItsInternalBlend()
     {
         string pattern = RegionTests.Obj("/Type /Pattern /PatternType 1 /PaintType 2 /TilingType 1 /BBox [0 0 24 24] /XStep 24 /YStep 24 /Resources << /ExtGState << /A << /BM /Multiply >> >> >>", "/A gs 0 0 24 24 re f");
-        byte[] pdf = TestPdf.Page("/Tint cs .8 .4 .2 /P scn 0 0 48 96 re f .4 .8 .6 /P scn 48 0 48 96 re f",
-            "/ColorSpace << /Tint [/Pattern /DeviceRGB] >> /Pattern << /P 5 0 R >>", 96, 96, [pattern]);
-        Rgba32[] pixels = Pixels(pdf, Backdrop);
+        byte[] pdf = Page("/Tint cs .8 .4 .2 /P scn 0 0 48 96 re f .4 .8 .6 /P scn 48 0 48 96 re f",
+            "/ColorSpace << /Tint [/Pattern /DeviceRGB] >> /Pattern << /P 5 0 R >>", [pattern], Backdrop);
+        Rgba32[] pixels = Pixels(pdf);
         Near(At(pixels, 12, 12), [40.8, 61.2, 40.8, 255]);
         Near(At(pixels, 60, 12), [20.4, 122.4, 122.4, 255]);
     }
@@ -154,15 +154,15 @@ public class PatternBackdropTests
     [Fact]
     public void RepeatedPaintingDoesNotReuseAStaleBackdrop()
     {
-        byte[] pdf = Pdf("/A gs " + Source, "/ExtGState << /A << /BM /Multiply >> >>", Paint + " " + Paint);
-        Near(At(Pixels(pdf, Backdrop), 12, 12), [32.64, 24.48, 8.16, 255]);
+        byte[] pdf = Pdf("/A gs " + Source, "/ExtGState << /A << /BM /Multiply >> >>", Paint + " " + Paint, backdrop: Backdrop);
+        Near(At(Pixels(pdf), 12, 12), [32.64, 24.48, 8.16, 255]);
     }
 
     [Fact]
     public void RegionsAndConcurrentReadsMatchAcrossRenderCells()
     {
-        byte[] pdf = Pdf("/A gs .8 .4 .2 rg 4 4 12 12 re f", "/ExtGState << /A << /BM /Multiply /ca .5 >> >>", matrix: "1 .25 .5 1 0 0");
-        var options = new PdfRenderOptions { Dpi = 216, Background = Backdrop };
+        byte[] pdf = Pdf("/A gs .8 .4 .2 rg 4 4 12 12 re f", "/ExtGState << /A << /BM /Multiply /ca .5 >> >>", matrix: "1 .25 .5 1 0 0", backdrop: Backdrop);
+        var options = new PdfRenderOptions { Dpi = 216, Background = default };
         Image image = RenderTests.Load(pdf, options);
         Rgba32[] whole = image.ToArray<Rgba32>(maxDegree: 1);
         Assert.Equal(whole, RenderTests.Load(pdf, options).ToArray<Rgba32>(maxDegree: 4));
@@ -187,18 +187,18 @@ public class PatternBackdropTests
     public void NegativeStepsProduceTheSameGrid()
     {
         const string resources = "/ExtGState << /A << /BM /Multiply >> >>";
-        byte[] positive = Pdf("/A gs " + Source, resources);
+        byte[] positive = Pdf("/A gs " + Source, resources, backdrop: Backdrop);
         string pattern = RegionTests.Obj("/Type /Pattern /PatternType 1 /PaintType 1 /TilingType 1 /BBox [0 0 24 24] /XStep -24 /YStep -24 /Resources << " + resources + " >>", "/A gs " + Source);
-        byte[] negative = TestPdf.Page(Paint, "/Pattern << /P 5 0 R >>", 96, 96, [pattern]);
-        Assert.Equal(Pixels(positive, Backdrop), Pixels(negative, Backdrop));
+        byte[] negative = Page(Paint, "/Pattern << /P 5 0 R >>", [pattern], Backdrop);
+        Assert.Equal(Pixels(positive), Pixels(negative));
     }
 
     [Fact]
     public void ArbitraryClipGeometryRestrictsTheFinalPatternObject()
     {
         byte[] pdf = Pdf("/A gs " + Source, "/ExtGState << /A << /BM /Multiply >> >>",
-            "8 8 m 88 8 l 8 88 l h W n " + Paint);
-        Rgba32[] pixels = Pixels(pdf, Backdrop);
+            "8 8 m 88 8 l 8 88 l h W n " + Paint, backdrop: Backdrop);
+        Rgba32[] pixels = Pixels(pdf);
         Near(At(pixels, 12, 12), [40.8, 61.2, 40.8, 255]);
         Assert.Equal(Backdrop, At(pixels, 72, 72));
         Assert.Equal(Backdrop, At(pixels, 4, 12));
@@ -223,10 +223,10 @@ public class PatternBackdropTests
         const string normalResources = "/ExtGState << /A << /ca .5 >> /B << /ca .75 >> >>";
         string parent = RegionTests.Obj($"/Type /XObject /Subtype /Form /BBox [0 0 96 96] /Group << /S /Transparency /K true /I {isolated.ToString().ToLowerInvariant()} >> /Resources << /Pattern << /P 5 0 R >> /ExtGState << /H << /ca .5 >> >> >>", "0 1 0 rg 0 0 96 96 re f /H gs " + Paint);
         const string pageResources = "/XObject << /F 6 0 R >> /ExtGState << /G << /ca .5 >> >>";
-        byte[] actualPdf = Pdf(body, resources, "/G gs /F Do", pageResources, extra: [parent]);
-        byte[] normalPdf = Pdf(equivalent, normalResources, "/G gs /F Do", pageResources, extra: [parent]);
         var backdrop = new Rgba32(51, 153, 204, (byte)backgroundAlpha);
-        Rgba32[] actual = Pixels(actualPdf, backdrop), expected = Pixels(normalPdf, backdrop);
+        byte[] actualPdf = Pdf(body, resources, "/G gs /F Do", pageResources, extra: [parent], backdrop: backdrop);
+        byte[] normalPdf = Pdf(equivalent, normalResources, "/G gs /F Do", pageResources, extra: [parent], backdrop: backdrop);
+        Rgba32[] actual = Pixels(actualPdf), expected = Pixels(normalPdf);
         for (int y = 0; y < 96; y++)
         for (int x = 0; x < 96; x++)
         {
@@ -239,15 +239,30 @@ public class PatternBackdropTests
     public void ConservativeIsolatedGroupDetectionDoesNotIntroduceBackdropDependence()
     {
         string form = RegionTests.Obj("/Type /XObject /Subtype /Form /BBox [0 0 24 24] /Group << /S /Transparency /I true >> /Resources << /ExtGState << /A << /BM /Multiply >> >> >>", "/A gs " + Source);
-        byte[] actual = Pdf("/F Do", "/XObject << /F 6 0 R >>", extra: [form]);
-        byte[] normal = Pdf(Source, "");
-        Assert.Equal(Pixels(normal, Backdrop), Pixels(actual, Backdrop));
+        byte[] actual = Pdf("/F Do", "/XObject << /F 6 0 R >>", extra: [form], backdrop: Backdrop);
+        byte[] normal = Pdf(Source, "", backdrop: Backdrop);
+        Assert.Equal(Pixels(normal), Pixels(actual));
     }
 
-    private static byte[] Pdf(string cell, string cellResources, string content = Paint, string pageResources = "", string matrix = "1 0 0 1 0 0", double xStep = 24, string[]? extra = null)
+    private static byte[] Page(string content, string resources, string[] extra, Rgba32? backdrop)
+    {
+        if (backdrop is Rgba32 color)
+        {
+            // A distinct resource plus q/Q keeps the authored backdrop alpha out of the pattern state.
+            string alpha = "/FixtureBackdropAlpha << /ca " + (color.A / 255.0).ToString("0.#################", CultureInfo.InvariantCulture) + " >> ";
+            resources = resources.Contains("/ExtGState <<", StringComparison.Ordinal)
+                ? resources.Replace("/ExtGState <<", "/ExtGState << " + alpha, StringComparison.Ordinal)
+                : resources + " /ExtGState << " + alpha + ">>";
+            string rgb = string.Join(" ", new[] { color.R, color.G, color.B }.Select(c => (c / 255.0).ToString("0.#################", CultureInfo.InvariantCulture)));
+            content = "q /FixtureBackdropAlpha gs " + rgb + " rg 0 0 96 96 re f Q " + content;
+        }
+        return TestPdf.Page(content, resources, 96, 96, extra);
+    }
+
+    private static byte[] Pdf(string cell, string cellResources, string content = Paint, string pageResources = "", string matrix = "1 0 0 1 0 0", double xStep = 24, string[]? extra = null, Rgba32? backdrop = null)
     {
         string pattern = RegionTests.Obj($"/Type /Pattern /PatternType 1 /PaintType 1 /TilingType 1 /BBox [0 0 24 24] /XStep {xStep.ToString("0.#################", CultureInfo.InvariantCulture)} /YStep 24 /Matrix [{matrix}] /Resources << {cellResources} >>", cell);
-        return TestPdf.Page(content, "/Pattern << /P 5 0 R >> " + pageResources, 96, 96, [pattern, ..extra ?? []]);
+        return Page(content, "/Pattern << /P 5 0 R >> " + pageResources, [pattern, ..extra ?? []], backdrop);
     }
     private static Rgba32[] Pixels(byte[] pdf, Rgba32 background = default) => RenderTests.Load(pdf, new PdfRenderOptions { Dpi = 72, Background = background }).ToArray<Rgba32>(maxDegree: 1);
     private static Rgba32 At(Rgba32[] pixels, int x, int y) => pixels[((95 - y) * 96) + x];
