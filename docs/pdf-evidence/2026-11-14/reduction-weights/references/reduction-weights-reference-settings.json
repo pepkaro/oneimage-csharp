@@ -1,0 +1,67 @@
+{
+  "pdfjs": {
+    "pdfjs": "6.5.438",
+    "build": "0a4153349",
+    "backend": "@napi-rs/canvas (Node Canvas; NOT browser Canvas)",
+    "canvasVersion": "1.1.1",
+    "node": "v24.22.1",
+    "width": 384,
+    "height": 256,
+    "dpi": 144,
+    "annotations": "ENABLE static appearances",
+    "background": "rgb(255,255,255)",
+    "useSystemFonts": false,
+    "isEvalSupported": false,
+    "xfa": false,
+    "useWorkerFetch": false,
+    "icc": false,
+    "iccReason": "PDF.js Node worker-fetch gate disables ICC WASM; ICC-based inputs would fall back",
+    "deviceCmyk": "Polynomial fallback, not ICC-managed CMYK",
+    "diagnostics": []
+  },
+  "versions": {
+    "pypdfium2": "5.13.0",
+    "pdfium": "153.0.7999.0",
+    "pymupdf": "1.26.6",
+    "mupdf": "1.26.11"
+  },
+  "mupdfImage": {
+    "sha256": "c3bb8d6dc9babffccf320b215bc77941916e18fdd6bec2d8575239d58a33434c",
+    "width": 384,
+    "height": 256
+  },
+  "pdfiumImage": {
+    "sha256": "35ebbb418cf02f7bc51c0a3ae74e634c2e8e77dcc0c1af1518f0b623cc5b5d17",
+    "width": 384,
+    "height": 256
+  },
+  "pdfjsImage": {
+    "sha256": "467b6b2757da4d4f9969a26b0dd41497b3ef71900eee6c40f9335e8b2d62046b",
+    "width": 384,
+    "height": 256
+  },
+  "settings": {
+    "dpi": 144,
+    "page": 0,
+    "rotation": 0,
+    "MediaBox": [
+      0,
+      0,
+      192,
+      128
+    ],
+    "CropBox": [
+      0,
+      0,
+      192,
+      128
+    ],
+    "background": "opaque white",
+    "annotations": "enabled (none in these fixtures)",
+    "MuPDFGraphicsAA": 8,
+    "MuPDFTextAA": 8,
+    "PDFiumAA": "default",
+    "PDFjsBackend": "Node Canvas; not browser Canvas",
+    "noPixelResizingOrEditing": true
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "rendererDllsUnchangedDuringHarnessRebuild": true,
+  "sourceSha256": {
+    "tools/Program.cs": "e7750810e4ebc88c83a04958770e5548541c7bca6451a881487cc09452d577cf",
+    "tools/Evidence.csproj": "d2fbff1bdf0e29192b52d531cd082f9e0f717ec1dd444dd7608d7078335318eb"
+  },
+  "harnessDllSha256": {
+    "before": "eb9589f9661404d8a74260cff3bd4e64036cc7245e849847c1a2c263aa71d26e",
+    "after": "2292c378182830186aeb151e4b5cd00827dd374fc2d1cdceaedd747208860da3"
+  },
+  "builds": {
+    "before": {
+      "warnings": 0,
+      "errors": 0,
+      "forcedRebuild": true
+    },
+    "after": {
+      "warnings": 0,
+      "errors": 0,
+      "forcedRebuild": true
+    }
+  },
+  "verification": "Final harness render output matches captured PNG, raw RGBA, and metadata byte-for-byte; see verification.json."
+}

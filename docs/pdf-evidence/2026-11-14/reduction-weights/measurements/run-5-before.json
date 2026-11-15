@@ -1,0 +1,669 @@
+{
+  "metadata": {
+    "runtime": ".NET 10.0.15",
+    "os": "Debian GNU/Linux 13 (trixie)",
+    "architecture": "X64",
+    "processorCount": 2,
+    "dpi": 144,
+    "degree": 1,
+    "background": "opaque white",
+    "rotation": 0,
+    "box": "CropBox=MediaBox=[0,0,192,128]",
+    "smooth": false,
+    "sourceWidth": 1009,
+    "sourceHeight": 751,
+    "targetWidth": 320,
+    "targetHeight": 192,
+    "rgbSha256": "538944d6ace0a005b215bc6cf92b87487db25bb196e88a309a76297dd8281ffd",
+    "inputSha256": "68c53202ec204cb1b28b19e39f23f9d168e60a959a6cd12e7ac12c45e6fab6f3",
+    "assemblies": [
+      {
+        "file": "OneImage.dll",
+        "version": "1.11.1.0",
+        "sha256": "dbedf6d0f45845ac837d05a4ef4bbd8d885a77cba5af94d8bcedf9149be26cb5"
+      },
+      {
+        "file": "OneImage.Pdf.dll",
+        "version": "1.11.1.0",
+        "sha256": "f87c80d41c1ac4cf4ea2b33def42d1a13bb5ca54fbafd6456e46388839571664"
+      },
+      {
+        "file": "OnePdf.dll",
+        "version": "1.18.0.0",
+        "sha256": "f5a18b3a3b16fa3e1d39f4ab1fdba9454b449c675e54fbd411362d9165693fce"
+      }
+    ],
+    "environment": {
+      "DOTNET_PROCESSOR_COUNT": "2",
+      "DOTNET_TieredCompilation": "0",
+      "DOTNET_TieredPGO": "0",
+      "COMPlus_TieredCompilation": null,
+      "COMPlus_TieredPGO": null,
+      "DOTNET_GCHeapHardLimit": null
+    }
+  },
+  "areaSha256": "737646b1833eea52c03b0e714988df80149770f0d5a968a205d7291817bf250d",
+  "rgbaSha256": "10c746d1fc254190a534195cb5c1358e5a9a2166477c168363ee32133d862445",
+  "records": [
+    {
+      "boundary": "production-area-only",
+      "warmups": 10,
+      "samples": 25,
+      "batch": 1,
+      "elapsedMsPerOperation": [
+        5.9407,
+        5.9191,
+        6.5957,
+        5.9339,
+        6.2868,
+        5.9367,
+        6.8524,
+        6.3115,
+        6.0801,
+        5.9101,
+        6.149,
+        6.0768,
+        5.918,
+        6.2883,
+        6.029,
+        5.926,
+        5.9958,
+        6.0999,
+        6.4205,
+        5.9134,
+        6.2732,
+        6.0413,
+        5.8641,
+        6.1158,
+        6.2362
+      ],
+      "medianMs": 6.0768,
+      "minMs": 5.8641,
+      "maxMs": 6.8524,
+      "currentThreadAllocatedBytesPerOperation": [
+        245824,
+        245824,
+        245824,
+        245824,
+        245824,
+        245824,
+        245824,
+        245824,
+        245824,
+        245824,
+        245824,
+        245824,
+        245824,
+        245824,
+        245824,
+        245824,
+        245824,
+        245824,
+        245824,
+        245824,
+        245824,
+        245824,
+        245824,
+        245824,
+        245824
+      ],
+      "allIterations": [
+        {
+          "phase": "warmup",
+          "index": 0,
+          "elapsedMsPerOperation": 6.4784,
+          "currentThreadAllocatedBytesPerOperation": 245824,
+          "rgbaSha256": "737646b1833eea52c03b0e714988df80149770f0d5a968a205d7291817bf250d"
+        },
+        {
+          "phase": "warmup",
+          "index": 1,
+          "elapsedMsPerOperation": 6.4519,
+          "currentThreadAllocatedBytesPerOperation": 245824,
+          "rgbaSha256": "737646b1833eea52c03b0e714988df80149770f0d5a968a205d7291817bf250d"
+        },
+        {
+          "phase": "warmup",
+          "index": 2,
+          "elapsedMsPerOperation": 6.6898,
+          "currentThreadAllocatedBytesPerOperation": 245824,
+          "rgbaSha256": "737646b1833eea52c03b0e714988df80149770f0d5a968a205d7291817bf250d"
+        },
+        {
+          "phase": "warmup",
+          "index": 3,
+          "elapsedMsPerOperation": 6.1442,
+          "currentThreadAllocatedBytesPerOperation": 245824,
+          "rgbaSha256": "737646b1833eea52c03b0e714988df80149770f0d5a968a205d7291817bf250d"
+        },
+        {
+          "phase": "warmup",
+          "index": 4,
+          "elapsedMsPerOperation": 6.2562,
+          "currentThreadAllocatedBytesPerOperation": 245824,
+          "rgbaSha256": "737646b1833eea52c03b0e714988df80149770f0d5a968a205d7291817bf250d"
+        },
+        {
+          "phase": "warmup",
+          "index": 5,
+          "elapsedMsPerOperation": 6.1164,
+          "currentThreadAllocatedBytesPerOperation": 245824,
+          "rgbaSha256": "737646b1833eea52c03b0e714988df80149770f0d5a968a205d7291817bf250d"
+        },
+        {
+          "phase": "warmup",
+          "index": 6,
+          "elapsedMsPerOperation": 6.0611,
+          "currentThreadAllocatedBytesPerOperation": 245824,
+          "rgbaSha256": "737646b1833eea52c03b0e714988df80149770f0d5a968a205d7291817bf250d"
+        },
+        {
+          "phase": "warmup",
+          "index": 7,
+          "elapsedMsPerOperation": 6.0017,
+          "currentThreadAllocatedBytesPerOperation": 245824,
+          "rgbaSha256": "737646b1833eea52c03b0e714988df80149770f0d5a968a205d7291817bf250d"
+        },
+        {
+          "phase": "warmup",
+          "index": 8,
+          "elapsedMsPerOperation": 5.998,
+          "currentThreadAllocatedBytesPerOperation": 245824,
+          "rgbaSha256": "737646b1833eea52c03b0e714988df80149770f0d5a968a205d7291817bf250d"
+        },
+        {
+          "phase": "warmup",
+          "index": 9,
+          "elapsedMsPerOperation": 7.7013,
+          "currentThreadAllocatedBytesPerOperation": 245824,
+          "rgbaSha256": "737646b1833eea52c03b0e714988df80149770f0d5a968a205d7291817bf250d"
+        },
+        {
+          "phase": "measured",
+          "index": 0,
+          "elapsedMsPerOperation": 5.9407,
+          "currentThreadAllocatedBytesPerOperation": 245824,
+          "rgbaSha256": "737646b1833eea52c03b0e714988df80149770f0d5a968a205d7291817bf250d"
+        },
+        {
+          "phase": "measured",
+          "index": 1,
+          "elapsedMsPerOperation": 5.9191,
+          "currentThreadAllocatedBytesPerOperation": 245824,
+          "rgbaSha256": "737646b1833eea52c03b0e714988df80149770f0d5a968a205d7291817bf250d"
+        },
+        {
+          "phase": "measured",
+          "index": 2,
+          "elapsedMsPerOperation": 6.5957,
+          "currentThreadAllocatedBytesPerOperation": 245824,
+          "rgbaSha256": "737646b1833eea52c03b0e714988df80149770f0d5a968a205d7291817bf250d"
+        },
+        {
+          "phase": "measured",
+          "index": 3,
+          "elapsedMsPerOperation": 5.9339,
+          "currentThreadAllocatedBytesPerOperation": 245824,
+          "rgbaSha256": "737646b1833eea52c03b0e714988df80149770f0d5a968a205d7291817bf250d"
+        },
+        {
+          "phase": "measured",
+          "index": 4,
+          "elapsedMsPerOperation": 6.2868,
+          "currentThreadAllocatedBytesPerOperation": 245824,
+          "rgbaSha256": "737646b1833eea52c03b0e714988df80149770f0d5a968a205d7291817bf250d"
+        },
+        {
+          "phase": "measured",
+          "index": 5,
+          "elapsedMsPerOperation": 5.9367,
+          "currentThreadAllocatedBytesPerOperation": 245824,
+          "rgbaSha256": "737646b1833eea52c03b0e714988df80149770f0d5a968a205d7291817bf250d"
+        },
+        {
+          "phase": "measured",
+          "index": 6,
+          "elapsedMsPerOperation": 6.8524,
+          "currentThreadAllocatedBytesPerOperation": 245824,
+          "rgbaSha256": "737646b1833eea52c03b0e714988df80149770f0d5a968a205d7291817bf250d"
+        },
+        {
+          "phase": "measured",
+          "index": 7,
+          "elapsedMsPerOperation": 6.3115,
+          "currentThreadAllocatedBytesPerOperation": 245824,
+          "rgbaSha256": "737646b1833eea52c03b0e714988df80149770f0d5a968a205d7291817bf250d"
+        },
+        {
+          "phase": "measured",
+          "index": 8,
+          "elapsedMsPerOperation": 6.0801,
+          "currentThreadAllocatedBytesPerOperation": 245824,
+          "rgbaSha256": "737646b1833eea52c03b0e714988df80149770f0d5a968a205d7291817bf250d"
+        },
+        {
+          "phase": "measured",
+          "index": 9,
+          "elapsedMsPerOperation": 5.9101,
+          "currentThreadAllocatedBytesPerOperation": 245824,
+          "rgbaSha256": "737646b1833eea52c03b0e714988df80149770f0d5a968a205d7291817bf250d"
+        },
+        {
+          "phase": "measured",
+          "index": 10,
+          "elapsedMsPerOperation": 6.149,
+          "currentThreadAllocatedBytesPerOperation": 245824,
+          "rgbaSha256": "737646b1833eea52c03b0e714988df80149770f0d5a968a205d7291817bf250d"
+        },
+        {
+          "phase": "measured",
+          "index": 11,
+          "elapsedMsPerOperation": 6.0768,
+          "currentThreadAllocatedBytesPerOperation": 245824,
+          "rgbaSha256": "737646b1833eea52c03b0e714988df80149770f0d5a968a205d7291817bf250d"
+        },
+        {
+          "phase": "measured",
+          "index": 12,
+          "elapsedMsPerOperation": 5.918,
+          "currentThreadAllocatedBytesPerOperation": 245824,
+          "rgbaSha256": "737646b1833eea52c03b0e714988df80149770f0d5a968a205d7291817bf250d"
+        },
+        {
+          "phase": "measured",
+          "index": 13,
+          "elapsedMsPerOperation": 6.2883,
+          "currentThreadAllocatedBytesPerOperation": 245824,
+          "rgbaSha256": "737646b1833eea52c03b0e714988df80149770f0d5a968a205d7291817bf250d"
+        },
+        {
+          "phase": "measured",
+          "index": 14,
+          "elapsedMsPerOperation": 6.029,
+          "currentThreadAllocatedBytesPerOperation": 245824,
+          "rgbaSha256": "737646b1833eea52c03b0e714988df80149770f0d5a968a205d7291817bf250d"
+        },
+        {
+          "phase": "measured",
+          "index": 15,
+          "elapsedMsPerOperation": 5.926,
+          "currentThreadAllocatedBytesPerOperation": 245824,
+          "rgbaSha256": "737646b1833eea52c03b0e714988df80149770f0d5a968a205d7291817bf250d"
+        },
+        {
+          "phase": "measured",
+          "index": 16,
+          "elapsedMsPerOperation": 5.9958,
+          "currentThreadAllocatedBytesPerOperation": 245824,
+          "rgbaSha256": "737646b1833eea52c03b0e714988df80149770f0d5a968a205d7291817bf250d"
+        },
+        {
+          "phase": "measured",
+          "index": 17,
+          "elapsedMsPerOperation": 6.0999,
+          "currentThreadAllocatedBytesPerOperation": 245824,
+          "rgbaSha256": "737646b1833eea52c03b0e714988df80149770f0d5a968a205d7291817bf250d"
+        },
+        {
+          "phase": "measured",
+          "index": 18,
+          "elapsedMsPerOperation": 6.4205,
+          "currentThreadAllocatedBytesPerOperation": 245824,
+          "rgbaSha256": "737646b1833eea52c03b0e714988df80149770f0d5a968a205d7291817bf250d"
+        },
+        {
+          "phase": "measured",
+          "index": 19,
+          "elapsedMsPerOperation": 5.9134,
+          "currentThreadAllocatedBytesPerOperation": 245824,
+          "rgbaSha256": "737646b1833eea52c03b0e714988df80149770f0d5a968a205d7291817bf250d"
+        },
+        {
+          "phase": "measured",
+          "index": 20,
+          "elapsedMsPerOperation": 6.2732,
+          "currentThreadAllocatedBytesPerOperation": 245824,
+          "rgbaSha256": "737646b1833eea52c03b0e714988df80149770f0d5a968a205d7291817bf250d"
+        },
+        {
+          "phase": "measured",
+          "index": 21,
+          "elapsedMsPerOperation": 6.0413,
+          "currentThreadAllocatedBytesPerOperation": 245824,
+          "rgbaSha256": "737646b1833eea52c03b0e714988df80149770f0d5a968a205d7291817bf250d"
+        },
+        {
+          "phase": "measured",
+          "index": 22,
+          "elapsedMsPerOperation": 5.8641,
+          "currentThreadAllocatedBytesPerOperation": 245824,
+          "rgbaSha256": "737646b1833eea52c03b0e714988df80149770f0d5a968a205d7291817bf250d"
+        },
+        {
+          "phase": "measured",
+          "index": 23,
+          "elapsedMsPerOperation": 6.1158,
+          "currentThreadAllocatedBytesPerOperation": 245824,
+          "rgbaSha256": "737646b1833eea52c03b0e714988df80149770f0d5a968a205d7291817bf250d"
+        },
+        {
+          "phase": "measured",
+          "index": 24,
+          "elapsedMsPerOperation": 6.2362,
+          "currentThreadAllocatedBytesPerOperation": 245824,
+          "rgbaSha256": "737646b1833eea52c03b0e714988df80149770f0d5a968a205d7291817bf250d"
+        }
+      ]
+    },
+    {
+      "boundary": "fresh-pdf-load-and-render",
+      "warmups": 10,
+      "samples": 25,
+      "batch": 1,
+      "elapsedMsPerOperation": [
+        19.2467,
+        21.4722,
+        21.1537,
+        20.5282,
+        20.7951,
+        20.7907,
+        19.8288,
+        18.9499,
+        20.369,
+        19.4927,
+        22.1921,
+        20.58,
+        21.9308,
+        21.5899,
+        21.1087,
+        19.4911,
+        19.2831,
+        19.1354,
+        20.4602,
+        20.3685,
+        20.6607,
+        19.8132,
+        21.013,
+        21.4823,
+        19.6037
+      ],
+      "medianMs": 20.5282,
+      "minMs": 18.9499,
+      "maxMs": 22.1921,
+      "currentThreadAllocatedBytesPerOperation": [
+        8624704,
+        8624704,
+        8631792,
+        8624728,
+        8624704,
+        8624704,
+        8624704,
+        8624704,
+        8624704,
+        8624704,
+        8624704,
+        8631792,
+        8631304,
+        8624704,
+        8624704,
+        8624704,
+        8624704,
+        8624704,
+        8624704,
+        8624704,
+        8631904,
+        8631680,
+        8624704,
+        8624704,
+        8624704
+      ],
+      "allIterations": [
+        {
+          "phase": "warmup",
+          "index": 0,
+          "elapsedMsPerOperation": 21.3482,
+          "currentThreadAllocatedBytesPerOperation": 8624704,
+          "rgbaSha256": "10c746d1fc254190a534195cb5c1358e5a9a2166477c168363ee32133d862445"
+        },
+        {
+          "phase": "warmup",
+          "index": 1,
+          "elapsedMsPerOperation": 21.3734,
+          "currentThreadAllocatedBytesPerOperation": 8624704,
+          "rgbaSha256": "10c746d1fc254190a534195cb5c1358e5a9a2166477c168363ee32133d862445"
+        },
+        {
+          "phase": "warmup",
+          "index": 2,
+          "elapsedMsPerOperation": 21.5511,
+          "currentThreadAllocatedBytesPerOperation": 8624704,
+          "rgbaSha256": "10c746d1fc254190a534195cb5c1358e5a9a2166477c168363ee32133d862445"
+        },
+        {
+          "phase": "warmup",
+          "index": 3,
+          "elapsedMsPerOperation": 21.4619,
+          "currentThreadAllocatedBytesPerOperation": 8624704,
+          "rgbaSha256": "10c746d1fc254190a534195cb5c1358e5a9a2166477c168363ee32133d862445"
+        },
+        {
+          "phase": "warmup",
+          "index": 4,
+          "elapsedMsPerOperation": 20.4696,
+          "currentThreadAllocatedBytesPerOperation": 8624704,
+          "rgbaSha256": "10c746d1fc254190a534195cb5c1358e5a9a2166477c168363ee32133d862445"
+        },
+        {
+          "phase": "warmup",
+          "index": 5,
+          "elapsedMsPerOperation": 18.4939,
+          "currentThreadAllocatedBytesPerOperation": 8624704,
+          "rgbaSha256": "10c746d1fc254190a534195cb5c1358e5a9a2166477c168363ee32133d862445"
+        },
+        {
+          "phase": "warmup",
+          "index": 6,
+          "elapsedMsPerOperation": 21.3739,
+          "currentThreadAllocatedBytesPerOperation": 8624704,
+          "rgbaSha256": "10c746d1fc254190a534195cb5c1358e5a9a2166477c168363ee32133d862445"
+        },
+        {
+          "phase": "warmup",
+          "index": 7,
+          "elapsedMsPerOperation": 21.3385,
+          "currentThreadAllocatedBytesPerOperation": 8624704,
+          "rgbaSha256": "10c746d1fc254190a534195cb5c1358e5a9a2166477c168363ee32133d862445"
+        },
+        {
+          "phase": "warmup",
+          "index": 8,
+          "elapsedMsPerOperation": 20.6202,
+          "currentThreadAllocatedBytesPerOperation": 8624704,
+          "rgbaSha256": "10c746d1fc254190a534195cb5c1358e5a9a2166477c168363ee32133d862445"
+        },
+        {
+          "phase": "warmup",
+          "index": 9,
+          "elapsedMsPerOperation": 21.346,
+          "currentThreadAllocatedBytesPerOperation": 8624704,
+          "rgbaSha256": "10c746d1fc254190a534195cb5c1358e5a9a2166477c168363ee32133d862445"
+        },
+        {
+          "phase": "measured",
+          "index": 0,
+          "elapsedMsPerOperation": 19.2467,
+          "currentThreadAllocatedBytesPerOperation": 8624704,
+          "rgbaSha256": "10c746d1fc254190a534195cb5c1358e5a9a2166477c168363ee32133d862445"
+        },
+        {
+          "phase": "measured",
+          "index": 1,
+          "elapsedMsPerOperation": 21.4722,
+          "currentThreadAllocatedBytesPerOperation": 8624704,
+          "rgbaSha256": "10c746d1fc254190a534195cb5c1358e5a9a2166477c168363ee32133d862445"
+        },
+        {
+          "phase": "measured",
+          "index": 2,
+          "elapsedMsPerOperation": 21.1537,
+          "currentThreadAllocatedBytesPerOperation": 8631792,
+          "rgbaSha256": "10c746d1fc254190a534195cb5c1358e5a9a2166477c168363ee32133d862445"
+        },
+        {
+          "phase": "measured",
+          "index": 3,
+          "elapsedMsPerOperation": 20.5282,
+          "currentThreadAllocatedBytesPerOperation": 8624728,
+          "rgbaSha256": "10c746d1fc254190a534195cb5c1358e5a9a2166477c168363ee32133d862445"
+        },
+        {
+          "phase": "measured",
+          "index": 4,
+          "elapsedMsPerOperation": 20.7951,
+          "currentThreadAllocatedBytesPerOperation": 8624704,
+          "rgbaSha256": "10c746d1fc254190a534195cb5c1358e5a9a2166477c168363ee32133d862445"
+        },
+        {
+          "phase": "measured",
+          "index": 5,
+          "elapsedMsPerOperation": 20.7907,
+          "currentThreadAllocatedBytesPerOperation": 8624704,
+          "rgbaSha256": "10c746d1fc254190a534195cb5c1358e5a9a2166477c168363ee32133d862445"
+        },
+        {
+          "phase": "measured",
+          "index": 6,
+          "elapsedMsPerOperation": 19.8288,
+          "currentThreadAllocatedBytesPerOperation": 8624704,
+          "rgbaSha256": "10c746d1fc254190a534195cb5c1358e5a9a2166477c168363ee32133d862445"
+        },
+        {
+          "phase": "measured",
+          "index": 7,
+          "elapsedMsPerOperation": 18.9499,
+          "currentThreadAllocatedBytesPerOperation": 8624704,
+          "rgbaSha256": "10c746d1fc254190a534195cb5c1358e5a9a2166477c168363ee32133d862445"
+        },
+        {
+          "phase": "measured",
+          "index": 8,
+          "elapsedMsPerOperation": 20.369,
+          "currentThreadAllocatedBytesPerOperation": 8624704,
+          "rgbaSha256": "10c746d1fc254190a534195cb5c1358e5a9a2166477c168363ee32133d862445"
+        },
+        {
+          "phase": "measured",
+          "index": 9,
+          "elapsedMsPerOperation": 19.4927,
+          "currentThreadAllocatedBytesPerOperation": 8624704,
+          "rgbaSha256": "10c746d1fc254190a534195cb5c1358e5a9a2166477c168363ee32133d862445"
+        },
+        {
+          "phase": "measured",
+          "index": 10,
+          "elapsedMsPerOperation": 22.1921,
+          "currentThreadAllocatedBytesPerOperation": 8624704,
+          "rgbaSha256": "10c746d1fc254190a534195cb5c1358e5a9a2166477c168363ee32133d862445"
+        },
+        {
+          "phase": "measured",
+          "index": 11,
+          "elapsedMsPerOperation": 20.58,
+          "currentThreadAllocatedBytesPerOperation": 8631792,
+          "rgbaSha256": "10c746d1fc254190a534195cb5c1358e5a9a2166477c168363ee32133d862445"
+        },
+        {
+          "phase": "measured",
+          "index": 12,
+          "elapsedMsPerOperation": 21.9308,
+          "currentThreadAllocatedBytesPerOperation": 8631304,
+          "rgbaSha256": "10c746d1fc254190a534195cb5c1358e5a9a2166477c168363ee32133d862445"
+        },
+        {
+          "phase": "measured",
+          "index": 13,
+          "elapsedMsPerOperation": 21.5899,
+          "currentThreadAllocatedBytesPerOperation": 8624704,
+          "rgbaSha256": "10c746d1fc254190a534195cb5c1358e5a9a2166477c168363ee32133d862445"
+        },
+        {
+          "phase": "measured",
+          "index": 14,
+          "elapsedMsPerOperation": 21.1087,
+          "currentThreadAllocatedBytesPerOperation": 8624704,
+          "rgbaSha256": "10c746d1fc254190a534195cb5c1358e5a9a2166477c168363ee32133d862445"
+        },
+        {
+          "phase": "measured",
+          "index": 15,
+          "elapsedMsPerOperation": 19.4911,
+          "currentThreadAllocatedBytesPerOperation": 8624704,
+          "rgbaSha256": "10c746d1fc254190a534195cb5c1358e5a9a2166477c168363ee32133d862445"
+        },
+        {
+          "phase": "measured",
+          "index": 16,
+          "elapsedMsPerOperation": 19.2831,
+          "currentThreadAllocatedBytesPerOperation": 8624704,
+          "rgbaSha256": "10c746d1fc254190a534195cb5c1358e5a9a2166477c168363ee32133d862445"
+        },
+        {
+          "phase": "measured",
+          "index": 17,
+          "elapsedMsPerOperation": 19.1354,
+          "currentThreadAllocatedBytesPerOperation": 8624704,
+          "rgbaSha256": "10c746d1fc254190a534195cb5c1358e5a9a2166477c168363ee32133d862445"
+        },
+        {
+          "phase": "measured",
+          "index": 18,
+          "elapsedMsPerOperation": 20.4602,
+          "currentThreadAllocatedBytesPerOperation": 8624704,
+          "rgbaSha256": "10c746d1fc254190a534195cb5c1358e5a9a2166477c168363ee32133d862445"
+        },
+        {
+          "phase": "measured",
+          "index": 19,
+          "elapsedMsPerOperation": 20.3685,
+          "currentThreadAllocatedBytesPerOperation": 8624704,
+          "rgbaSha256": "10c746d1fc254190a534195cb5c1358e5a9a2166477c168363ee32133d862445"
+        },
+        {
+          "phase": "measured",
+          "index": 20,
+          "elapsedMsPerOperation": 20.6607,
+          "currentThreadAllocatedBytesPerOperation": 8631904,
+          "rgbaSha256": "10c746d1fc254190a534195cb5c1358e5a9a2166477c168363ee32133d862445"
+        },
+        {
+          "phase": "measured",
+          "index": 21,
+          "elapsedMsPerOperation": 19.8132,
+          "currentThreadAllocatedBytesPerOperation": 8631680,
+          "rgbaSha256": "10c746d1fc254190a534195cb5c1358e5a9a2166477c168363ee32133d862445"
+        },
+        {
+          "phase": "measured",
+          "index": 22,
+          "elapsedMsPerOperation": 21.013,
+          "currentThreadAllocatedBytesPerOperation": 8624704,
+          "rgbaSha256": "10c746d1fc254190a534195cb5c1358e5a9a2166477c168363ee32133d862445"
+        },
+        {
+          "phase": "measured",
+          "index": 23,
+          "elapsedMsPerOperation": 21.4823,
+          "currentThreadAllocatedBytesPerOperation": 8624704,
+          "rgbaSha256": "10c746d1fc254190a534195cb5c1358e5a9a2166477c168363ee32133d862445"
+        },
+        {
+          "phase": "measured",
+          "index": 24,
+          "elapsedMsPerOperation": 19.6037,
+          "currentThreadAllocatedBytesPerOperation": 8624704,
+          "rgbaSha256": "10c746d1fc254190a534195cb5c1358e5a9a2166477c168363ee32133d862445"
+        }
+      ]
+    }
+  ]
+}

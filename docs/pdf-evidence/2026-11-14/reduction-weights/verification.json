@@ -1,0 +1,66 @@
+{
+  "generatorByteIdentical": {
+    "numeric-raster.rgb.zlib": true,
+    "reduction-weights.pdf": true,
+    "source.json": true
+  },
+  "rebuiltHarnessRenderByteIdentical": {
+    "reduction-weights-before.rgba": true,
+    "reduction-weights-after.rgba": true,
+    "reduction-weights-before.png": true,
+    "reduction-weights-before-area.rgba": true,
+    "reduction-weights-after.json": true,
+    "reduction-weights-before.json": true,
+    "reduction-weights-after-area.rgba": true,
+    "reduction-weights-after.png": true
+  },
+  "exactStageArtifactsVerified": true,
+  "sourceChangedFileHashesVerified": true,
+  "assemblies": {
+    "before": {
+      "stage": "09-image-smoothing",
+      "sourceTree": "e26ce6d8dd234a608c4bcf2d1a2f6f46d1f16b45",
+      "assemblySha256": {
+        "OnePdf.Fonts.dll": "7938dd1607de5866aa17791902a8764ab56be576640890eb25c0c6662bf32c17",
+        "OnePdf.dll": "f5a18b3a3b16fa3e1d39f4ab1fdba9454b449c675e54fbd411362d9165693fce",
+        "OneImage.dll": "dbedf6d0f45845ac837d05a4ef4bbd8d885a77cba5af94d8bcedf9149be26cb5",
+        "OneImage.Pdf.dll": "f87c80d41c1ac4cf4ea2b33def42d1a13bb5ca54fbafd6456e46388839571664"
+      },
+      "callPathSourceSha256": {
+        "src/OneImage.Pdf/Render/Raster.cs": "d6a6651db6e285856146fb063f3d788673b9f8a7ef76d5e3872acc577e9eeae5",
+        "src/OneImage.Pdf/Render/PageRender.cs": "75a8710800dde437967d3157e8845fe2d165644b8d5729aa8428273c5cf2d2ac",
+        "src/OneImage.Pdf/Render/CanvasDevice.Images.cs": "5fc7217d17e68959b1e4110e304d89dde48cf6309799fe0cad97fdfae54927de",
+        "src/OneImage/Core/Pools.cs": "1dbdbd62811add587e6089ba91c8f9bdeea142cf509a091206e5043bd03624c3"
+      }
+    },
+    "after": {
+      "stage": "10-reduction-weights",
+      "sourceTree": "a3895db911a64996ce997e6274703a4b6a15d737",
+      "assemblySha256": {
+        "OnePdf.Fonts.dll": "7938dd1607de5866aa17791902a8764ab56be576640890eb25c0c6662bf32c17",
+        "OnePdf.dll": "f5a18b3a3b16fa3e1d39f4ab1fdba9454b449c675e54fbd411362d9165693fce",
+        "OneImage.dll": "610a61500facd48b793ea51abe854061d1fc4d364efdf4f0796a94bdd0fffa54",
+        "OneImage.Pdf.dll": "c56cf7096c86f56ab8e5a74400503474e9bc0601f5d8f1fea4da4c9be2118e54"
+      },
+      "callPathSourceSha256": {
+        "src/OneImage.Pdf/Render/Raster.cs": "03a5900b26977e335852d580fdf8d6220203024e4695e80562ac39ba93135a48",
+        "src/OneImage.Pdf/Render/PageRender.cs": "75a8710800dde437967d3157e8845fe2d165644b8d5729aa8428273c5cf2d2ac",
+        "src/OneImage.Pdf/Render/CanvasDevice.Images.cs": "5fc7217d17e68959b1e4110e304d89dde48cf6309799fe0cad97fdfae54927de",
+        "src/OneImage/Core/Pools.cs": "1dbdbd62811add587e6089ba91c8f9bdeea142cf509a091206e5043bd03624c3"
+      }
+    }
+  },
+  "generatorTools": {
+    "python": "3.12.14",
+    "zlibRuntime": "1.3.2",
+    "zlibCompile": "1.3.2"
+  },
+  "analysisTools": {
+    "numpy": "2.3.5",
+    "Pillow": "13.0.0",
+    "pypdf": "6.21.4",
+    "pypdfium2": "5.13.0",
+    "PyMuPDF": "1.26.6"
+  },
+  "visualInspection": "All five full-page raw PNGs inspected. Before/head visually identical; all three references visible, with retained differences at tile edges. No image edits or rescaling."
+}

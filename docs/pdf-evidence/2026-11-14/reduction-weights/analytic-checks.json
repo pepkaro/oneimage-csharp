@@ -1,0 +1,106 @@
+{
+  "formula": "Each destination pixel is the weighted mean of source samples, using exact integer interval-overlap lengths on both axes and double precision for this independent expectation. Compare nearest rounded bytes; allow float accumulation difference of 1 byte.",
+  "sourceRawRgbSha256": "538944d6ace0a005b215bc6cf92b87487db25bb196e88a309a76297dd8281ffd",
+  "sourceInsidePdfMatches": true,
+  "cacheActivatedByParameters": true,
+  "weightCalculationCountBefore": 757759,
+  "weightCalculationCountAfter": 1009,
+  "fullAreaChangedPixels": 0,
+  "fullPageChangedPixels": 0,
+  "samples": {
+    "(46, 44)": {
+      "expected": [
+        25,
+        83,
+        141
+      ],
+      "before": [
+        25,
+        83,
+        141
+      ],
+      "after": [
+        25,
+        83,
+        141
+      ]
+    },
+    "(337, 44)": {
+      "expected": [
+        187,
+        49,
+        101
+      ],
+      "before": [
+        187,
+        49,
+        101
+      ],
+      "after": [
+        187,
+        49,
+        101
+      ]
+    },
+    "(192, 212)": {
+      "expected": [
+        43,
+        179,
+        89
+      ],
+      "before": [
+        43,
+        179,
+        89
+      ],
+      "after": [
+        43,
+        179,
+        89
+      ]
+    }
+  },
+  "references": {
+    "pdfium": {
+      "nativeDimensions": [
+        384,
+        256
+      ],
+      "meanAbsoluteRGBDifferenceFromBoth": 0.3016120062934028,
+      "pixelsAbove8": 0,
+      "maxChannelDifference": 2
+    },
+    "mupdf": {
+      "nativeDimensions": [
+        384,
+        256
+      ],
+      "meanAbsoluteRGBDifferenceFromBoth": 0.8533766004774306,
+      "pixelsAbove8": 10689,
+      "maxChannelDifference": 48
+    },
+    "pdfjs": {
+      "nativeDimensions": [
+        384,
+        256
+      ],
+      "meanAbsoluteRGBDifferenceFromBoth": 1.1871812608506944,
+      "pixelsAbove8": 8001,
+      "maxChannelDifference": 50
+    }
+  },
+  "before": {
+    "areaVsIndependentRoundedMaxChannelError": 0,
+    "areaVsIndependentRoundedMeanAbsoluteError": 0.0,
+    "areaPixelsAbove1Byte": 0,
+    "pdfInteriorExactlyMatchesAreaOutput": true,
+    "pngDecodesToStoredRgba": true
+  },
+  "after": {
+    "areaVsIndependentRoundedMaxChannelError": 0,
+    "areaVsIndependentRoundedMeanAbsoluteError": 0.0,
+    "areaPixelsAbove1Byte": 0,
+    "pdfInteriorExactlyMatchesAreaOutput": true,
+    "pngDecodesToStoredRgba": true
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "license": "MIT",
+  "method": "Median of three independent process medians per side, 25 measured operations per boundary/process after 10 retained warmup operations. No samples removed. Fixed sequence before,after,after,before,before,after.",
+  "windowStartUtc": "2026-11-14T23:27:18.254546928Z",
+  "windowEndUtc": "2026-11-14T23:27:27.595936089Z",
+  "windowExitStatus": 0,
+  "warmupRecords": 120,
+  "measuredRecords": 300,
+  "all420OutputHashesMatch": true,
+  "rows": [
+    {
+      "process": "run-1-before.json",
+      "side": "before",
+      "boundary": "production-area-only",
+      "medianMs": 6.1783,
+      "minMeasuredMs": 5.9113,
+      "maxMeasuredMs": 7.6294,
+      "minCurrentThreadAllocatedBytes": 245824,
+      "maxCurrentThreadAllocatedBytes": 245824
+    },
+    {
+      "process": "run-1-before.json",
+      "side": "before",
+      "boundary": "fresh-pdf-load-and-render",
+      "medianMs": 20.6525,
+      "minMeasuredMs": 19.0379,
+      "maxMeasuredMs": 30.42,
+      "minCurrentThreadAllocatedBytes": 8624704,
+      "maxCurrentThreadAllocatedBytes": 8631904
+    },
+    {
+      "process": "run-2-after.json",
+      "side": "after",
+      "boundary": "production-area-only",
+      "medianMs": 4.8312,
+      "minMeasuredMs": 4.4491,
+      "maxMeasuredMs": 5.9815,
+      "minCurrentThreadAllocatedBytes": 245824,
+      "maxCurrentThreadAllocatedBytes": 245824
+    },
+    {
+      "process": "run-2-after.json",
+      "side": "after",
+      "boundary": "fresh-pdf-load-and-render",
+      "medianMs": 20.1113,
+      "minMeasuredMs": 17.6356,
+      "maxMeasuredMs": 31.8196,
+      "minCurrentThreadAllocatedBytes": 8624704,
+      "maxCurrentThreadAllocatedBytes": 8631904
+    },
+    {
+      "process": "run-3-after.json",
+      "side": "after",
+      "boundary": "production-area-only",
+      "medianMs": 4.8277,
+      "minMeasuredMs": 4.4564,
+      "maxMeasuredMs": 6.8596,
+      "minCurrentThreadAllocatedBytes": 245824,
+      "maxCurrentThreadAllocatedBytes": 245824
+    },
+    {
+      "process": "run-3-after.json",
+      "side": "after",
+      "boundary": "fresh-pdf-load-and-render",
+      "medianMs": 20.8353,
+      "minMeasuredMs": 18.0486,
+      "maxMeasuredMs": 83.4506,
+      "minCurrentThreadAllocatedBytes": 8624704,
+      "maxCurrentThreadAllocatedBytes": 8631904
+    },
+    {
+      "process": "run-4-before.json",
+      "side": "before",
+      "boundary": "production-area-only",
+      "medianMs": 6.055,
+      "minMeasuredMs": 5.8701,
+      "maxMeasuredMs": 8.471,
+      "minCurrentThreadAllocatedBytes": 245824,
+      "maxCurrentThreadAllocatedBytes": 245824
+    },
+    {
+      "process": "run-4-before.json",
+      "side": "before",
+      "boundary": "fresh-pdf-load-and-render",
+      "medianMs": 20.8056,
+      "minMeasuredMs": 19.0321,
+      "maxMeasuredMs": 23.2067,
+      "minCurrentThreadAllocatedBytes": 8624704,
+      "maxCurrentThreadAllocatedBytes": 8631904
+    },
+    {
+      "process": "run-5-before.json",
+      "side": "before",
+      "boundary": "production-area-only",
+      "medianMs": 6.0768,
+      "minMeasuredMs": 5.8641,
+      "maxMeasuredMs": 6.8524,
+      "minCurrentThreadAllocatedBytes": 245824,
+      "maxCurrentThreadAllocatedBytes": 245824
+    },
+    {
+      "process": "run-5-before.json",
+      "side": "before",
+      "boundary": "fresh-pdf-load-and-render",
+      "medianMs": 20.5282,
+      "minMeasuredMs": 18.9499,
+      "maxMeasuredMs": 22.1921,
+      "minCurrentThreadAllocatedBytes": 8624704,
+      "maxCurrentThreadAllocatedBytes": 8631904
+    },
+    {
+      "process": "run-6-after.json",
+      "side": "after",
+      "boundary": "production-area-only",
+      "medianMs": 5.1059,
+      "minMeasuredMs": 4.4502,
+      "maxMeasuredMs": 19.2009,
+      "minCurrentThreadAllocatedBytes": 245824,
+      "maxCurrentThreadAllocatedBytes": 245824
+    },
+    {
+      "process": "run-6-after.json",
+      "side": "after",
+      "boundary": "fresh-pdf-load-and-render",
+      "medianMs": 19.3325,
+      "minMeasuredMs": 17.1251,
+      "maxMeasuredMs": 25.9893,
+      "minCurrentThreadAllocatedBytes": 8624704,
+      "maxCurrentThreadAllocatedBytes": 8631904
+    }
+  ],
+  "summary": {
+    "production-area-only": {
+      "processMedians": {
+        "before": [
+          6.1783,
+          6.055,
+          6.0768
+        ],
+        "after": [
+          4.8312,
+          4.8277,
+          5.1059
+        ]
+      },
+      "medianOfBeforeProcessMediansMs": 6.0768,
+      "medianOfAfterProcessMediansMs": 4.8312,
+      "percentLowerMedianOfMedians": 20.49763033175356,
+      "beforeOverAfterRatio": 1.2578241430700448,
+      "processMedianRangesOverlap": false
+    },
+    "fresh-pdf-load-and-render": {
+      "processMedians": {
+        "before": [
+          20.6525,
+          20.8056,
+          20.5282
+        ],
+        "after": [
+          20.1113,
+          20.8353,
+          19.3325
+        ]
+      },
+      "medianOfBeforeProcessMediansMs": 20.6525,
+      "medianOfAfterProcessMediansMs": 20.1113,
+      "percentLowerMedianOfMedians": 2.6205059920106466,
+      "beforeOverAfterRatio": 1.0269102444894165,
+      "processMedianRangesOverlap": true
+    }
+  },
+  "interpretation": "Controlled steady-state Area-only improvement on this input, not default-runtime or native-viewer performance. Fresh-PDF process median ranges overlap; do not claim a clear end-to-end gain. Current-thread allocation is not total allocation, pool capacity, or peak memory."
+}
