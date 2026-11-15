@@ -163,14 +163,16 @@ internal sealed partial class CanvasDevice : IPdfDevice, IDisposable
         }
 
         DrawingPath? user = PathConvert.ToPath(path, PdfMatrix.Identity, clamp: false);
-        DrawingPath? outline = user is null ? null : StrokeUserPath(user, state, m, scale);
-        if (state.LineCap != 1)
+        float[] dash = user is null && state.LineCap == 1 ? Dashes(state, null, scale) : [];
+        DrawingPath? outline = user is null ? null : StrokeUserPath(user, state, m, scale, out dash);
+        if (state.LineCap != 1 || !DashStartsOn(dash, state.DashPhase))
         {
             return outline;
         }
 
         // 8.5.3.2: a subpath that never leaves its first point, stroked with round caps, paints a disc of the line width. The
         // stroker has no direction to cap, so the discs are added here, as ellipses in user space (the CTM may be skewed).
+        // 8.4.3.6 still applies: each subpath restarts at the same dash phase, and a gap paints no cap.
         DrawingPath? discs = ZeroLengthDiscs(path, state, m, scale);
         if (discs is null)
         {
@@ -178,6 +180,42 @@ internal sealed partial class CanvasDevice : IPdfDevice, IDisposable
         }
 
         return outline is null ? discs : DrawingPath.Combine(outline, discs);
+    }
+
+    private static bool DashStartsOn(ReadOnlySpan<float> dash, double phase)
+    {
+        if (dash.IsEmpty)
+        {
+            return true;
+        }
+
+        // Dashes has already validated the pattern, applied the renderer's safety fallback and doubled odd arrays.
+        double period = 0;
+        foreach (float length in dash)
+        {
+            period += length;
+        }
+
+        double offset = phase % period;
+        if (offset < 0)
+        {
+            offset += period;
+        }
+
+        for (int i = 0; i < dash.Length; i++)
+        {
+            bool on = (i & 1) == 0;
+            if (offset < dash[i] || (offset == 0 && on))
+            {
+                // A zero-length on entry paints a round cap at exactly this phase. Do not skip it together with
+                // zero-length gaps; a positive dash ending here, however, has already been consumed by the phase.
+                return on;
+            }
+
+            offset -= dash[i];
+        }
+
+        return true;
     }
 
     private static DrawingPath? ZeroLengthDiscs(in PdfPath path, in PdfGraphicsState state, in PdfMatrix m, double scale)
@@ -254,8 +292,12 @@ internal sealed partial class CanvasDevice : IPdfDevice, IDisposable
         }
     }
 
-    private static DrawingPath? StrokeUserPath(DrawingPath user, in PdfGraphicsState state, in PdfMatrix m, double scale)
+    private static DrawingPath? StrokeUserPath(DrawingPath user, in PdfGraphicsState state, in PdfMatrix m, double scale) =>
+        StrokeUserPath(user, state, m, scale, out _);
+
+    private static DrawingPath? StrokeUserPath(DrawingPath user, in PdfGraphicsState state, in PdfMatrix m, double scale, out float[] dash)
     {
+        dash = [];
         // Keep the existing minimum-width policy for positive widths. Explicit zero-width hairlines are instead
         // one device pixel, independent of the CTM's anisotropy; user-space dash placement must still be preserved.
         double minWidth = 1.0 / scale;
@@ -265,7 +307,7 @@ internal sealed partial class CanvasDevice : IPdfDevice, IDisposable
             return null;
         }
 
-        float[] dash = Dashes(state, user, scale);
+        dash = Dashes(state, user, scale);
         StrokeJoin join = state.LineJoin switch { 1 => StrokeJoin.Round, 2 => StrokeJoin.Bevel, _ => StrokeJoin.Miter };
         StrokeCap cap = state.LineCap switch { 1 => StrokeCap.Round, 2 => StrokeCap.Square, _ => StrokeCap.Butt };
         double miter = double.IsFinite(state.MiterLimit) && state.MiterLimit >= 1 ? state.MiterLimit : 10;
@@ -287,7 +329,7 @@ internal sealed partial class CanvasDevice : IPdfDevice, IDisposable
         return dev.IsEmpty ? null : dev;
     }
 
-    private static float[] Dashes(in PdfGraphicsState state, DrawingPath user, double scale)
+    private static float[] Dashes(in PdfGraphicsState state, DrawingPath? user, double scale)
     {
         ReadOnlySpan<double> d = state.Dash.Span;
         if (d.IsEmpty || d.Length > 1024)
@@ -308,7 +350,7 @@ internal sealed partial class CanvasDevice : IPdfDevice, IDisposable
 
         // All-zero dashes, dashes far below a pixel and dash counts that would bury the rasterizer draw a solid line instead.
         double devPeriod = sum * scale;
-        if (!(sum > 0) || devPeriod < 0.05 || (user.Length * scale / devPeriod * d.Length) > 2_000_000)
+        if (!(sum > 0) || devPeriod < 0.05 || ((user?.Length ?? 0) * scale / devPeriod * d.Length) > 2_000_000)
         {
             return [];
         }
