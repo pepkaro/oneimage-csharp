@@ -1,0 +1,57 @@
+%PDF-1.7
+% Original MIT numerical mask precedence regression
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 320 160] /Contents 4 0 R /Resources << /XObject << /Main 5 0 R /Plain 8 0 R >> /ExtGState << /M << /SMask << /S /Luminosity /G 7 0 R >> >> /A << /ca 0.5 /BM /Normal >> >> >> >>
+endobj
+4 0 obj
+<<  /Length 176 >>
+stream
+0.2 0.4 0.6 rg 0 0 320 160 re f /M gs /A gs 0.901960784314 0.203921568627 0.298039215686 rg q 160 0 0 96 16 32 cm /Main Do Q q 48 0 0 96 192 32 cm /Plain Do Q 256 32 48 96 re f
+endstream
+endobj
+5 0 obj
+<< /Type /XObject /Subtype /Image /Width 4 /Height 1  /BitsPerComponent 1 /ImageMask true /Length 1 >>
+stream
+P
+endstream
+endobj
+6 0 obj
+<< /Type /XObject /Subtype /Image /Width 4 /Height 1 /ColorSpace /DeviceGray /BitsPerComponent 8 /Length 4 >>
+stream
+ÿÿÿÿ
+endstream
+endobj
+7 0 obj
+<< /Type /XObject /Subtype /Form /BBox [0 0 320 160] /Group << /S /Transparency /CS /DeviceGray /I true >> /Resources << /ExtGState << /Reset << /ca 1 /CA 1 /BM /Normal /SMask /None >> >> >> /Length 32 >>
+stream
+/Reset gs 0.5 g 0 0 320 160 re f
+endstream
+endobj
+8 0 obj
+<< /Type /XObject /Subtype /Image /Width 1 /Height 1 /ColorSpace /DeviceRGB /BitsPerComponent 8 /Length 3 >>
+stream
+æ4L
+endstream
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000061 00000 n 
+0000000110 00000 n 
+0000000167 00000 n 
+0000000403 00000 n 
+0000000631 00000 n 
+0000000768 00000 n 
+0000000915 00000 n 
+0000001185 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R >>
+startxref
+1330
+%%EOF

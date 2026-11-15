@@ -75,7 +75,27 @@ internal sealed partial class CanvasDevice
         }
 
         var brush = new PixelBrush(raster, placement, nearest: nearest, stencil);
-        PaintBrush(brush, quad, IntersectionRule.NonZero, state.FillAlpha, state, ImageClipPath(quad));
+        // ISO 32000-1 11.6.4.3: an image's SMask or explicit/color-key Mask replaces the current soft mask.
+        // The decoded alpha alone is not enough: stencil coverage and embedded JPX alpha are different inputs.
+        // Change only this paint's mask selection; constant alpha, blend, clip and subsequent objects retain their state.
+        bool ownMask = state.SoftMaskId != 0 && !data.IsStencil && data.Alpha is not null &&
+            (image.Dictionary.Get("SMask") is PdfStream || image.Dictionary.Get("Mask") is PdfStream or PdfArray);
+        if (ownMask)
+        {
+            PaintImageWithOwnMask(brush, quad, state);
+        }
+        else
+        {
+            PaintBrush(brush, quad, IntersectionRule.NonZero, state.FillAlpha, state, ImageClipPath(quad));
+        }
+    }
+
+    // Keep the large graphics-state copy and its stack frame off the ordinary image path.
+    [System.Runtime.CompilerServices.MethodImpl(System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
+    private void PaintImageWithOwnMask(PixelBrush brush, DrawingPath quad, in PdfGraphicsState state)
+    {
+        PdfGraphicsState paintState = state with { SoftMaskId = 0 };
+        PaintBrush(brush, quad, IntersectionRule.NonZero, state.FillAlpha, paintState, ImageClipPath(quad));
     }
 
     // Canvas.Fill intentionally multiplies independent shape/clip coverage. A PDF clip containing the image is geometry,

@@ -1,0 +1,2089 @@
+{
+  "license": "MIT",
+  "provenance": "Original numerical samples and PDF syntax authored for these regressions. Expectations computed from input alpha, source and backdrop, not rendered snapshots.",
+  "fixtures": [
+    {
+      "id": "smask-opaque-zero-state",
+      "file": "smask-opaque-zero-state.pdf",
+      "sha256": "7a79bb9a30834aadcafa26de7d84f3b1c38456302edc502073e9fe9467d41090",
+      "width": 320,
+      "height": 160,
+      "kind": "opaque-smask",
+      "stateMask": 0,
+      "constantAlpha": 0.5,
+      "blendMode": "Normal",
+      "clipped": false,
+      "expectedRegions": [
+        {
+          "rect": [
+            20,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            140.5,
+            77.0,
+            114.5
+          ],
+          "tolerance": 2,
+          "purpose": "image band 0"
+        },
+        {
+          "rect": [
+            60,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            140.5,
+            77.0,
+            114.5
+          ],
+          "tolerance": 2,
+          "purpose": "image band 1"
+        },
+        {
+          "rect": [
+            100,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            140.5,
+            77.0,
+            114.5
+          ],
+          "tolerance": 2,
+          "purpose": "image band 2"
+        },
+        {
+          "rect": [
+            140,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            140.5,
+            77.0,
+            114.5
+          ],
+          "tolerance": 2,
+          "purpose": "image band 3"
+        },
+        {
+          "rect": [
+            196,
+            40,
+            40,
+            80
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "following plain image"
+        },
+        {
+          "rect": [
+            260,
+            40,
+            40,
+            80
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "following path"
+        },
+        {
+          "rect": [
+            4,
+            4,
+            312,
+            20
+          ],
+          "rgb": [
+            51,
+            102,
+            153
+          ],
+          "tolerance": 0,
+          "purpose": "untouched backdrop"
+        }
+      ]
+    },
+    {
+      "id": "smask-partial-zero-state",
+      "file": "smask-partial-zero-state.pdf",
+      "sha256": "d8fa915a295dfbfa0703180fa311e30b27150ba8c012b1b9c3918e898aaa8732",
+      "width": 320,
+      "height": 160,
+      "kind": "smask",
+      "stateMask": 0,
+      "constantAlpha": 0.5,
+      "blendMode": "Normal",
+      "clipped": false,
+      "expectedRegions": [
+        {
+          "rect": [
+            20,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "image band 0"
+        },
+        {
+          "rect": [
+            60,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            73.46274509803922,
+            95.72549019607843,
+            143.3372549019608
+          ],
+          "tolerance": 2,
+          "purpose": "image band 1"
+        },
+        {
+          "rect": [
+            100,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            95.92549019607843,
+            89.45098039215686,
+            133.67450980392158
+          ],
+          "tolerance": 2,
+          "purpose": "image band 2"
+        },
+        {
+          "rect": [
+            140,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            140.5,
+            77.0,
+            114.5
+          ],
+          "tolerance": 2,
+          "purpose": "image band 3"
+        },
+        {
+          "rect": [
+            196,
+            40,
+            40,
+            80
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "following plain image"
+        },
+        {
+          "rect": [
+            260,
+            40,
+            40,
+            80
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "following path"
+        },
+        {
+          "rect": [
+            4,
+            4,
+            312,
+            20
+          ],
+          "rgb": [
+            51,
+            102,
+            153
+          ],
+          "tolerance": 0,
+          "purpose": "untouched backdrop"
+        }
+      ]
+    },
+    {
+      "id": "smask-partial-half-state-multiply-clip",
+      "file": "smask-partial-half-state-multiply-clip.pdf",
+      "sha256": "04e9739be48b835e1bd51a7477adb5ee01685dae714e46b9adf862dd1d51b2f9",
+      "width": 320,
+      "height": 160,
+      "kind": "smask",
+      "stateMask": 0.5,
+      "constantAlpha": 0.5,
+      "blendMode": "Multiply",
+      "clipped": true,
+      "expectedRegions": [
+        {
+          "rect": [
+            36,
+            52,
+            16,
+            56
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "image band 0"
+        },
+        {
+          "rect": [
+            60,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            50.372549019607845,
+            91.81019607843137,
+            139.52235294117648
+          ],
+          "tolerance": 2,
+          "purpose": "image band 1"
+        },
+        {
+          "rect": [
+            100,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            49.745098039215684,
+            81.62039215686275,
+            126.04470588235294
+          ],
+          "tolerance": 2,
+          "purpose": "image band 2"
+        },
+        {
+          "rect": [
+            140,
+            52,
+            16,
+            56
+          ],
+          "rgb": [
+            48.5,
+            61.4,
+            99.3
+          ],
+          "tolerance": 2,
+          "purpose": "image band 3"
+        },
+        {
+          "rect": [
+            196,
+            40,
+            40,
+            80
+          ],
+          "rgb": [
+            49.75,
+            81.7,
+            126.15
+          ],
+          "tolerance": 2,
+          "purpose": "following plain image"
+        },
+        {
+          "rect": [
+            260,
+            40,
+            40,
+            80
+          ],
+          "rgb": [
+            49.75,
+            81.7,
+            126.15
+          ],
+          "tolerance": 2,
+          "purpose": "following path"
+        },
+        {
+          "rect": [
+            4,
+            4,
+            312,
+            20
+          ],
+          "rgb": [
+            51,
+            102,
+            153
+          ],
+          "tolerance": 0,
+          "purpose": "untouched backdrop"
+        },
+        {
+          "rect": [
+            18,
+            48,
+            10,
+            64
+          ],
+          "rgb": [
+            51,
+            102,
+            153
+          ],
+          "tolerance": 0,
+          "purpose": "outside left clip"
+        },
+        {
+          "rect": [
+            164,
+            48,
+            10,
+            64
+          ],
+          "rgb": [
+            51,
+            102,
+            153
+          ],
+          "tolerance": 0,
+          "purpose": "outside right clip"
+        }
+      ]
+    },
+    {
+      "id": "smask-partial-half-state-screen",
+      "file": "smask-partial-half-state-screen.pdf",
+      "sha256": "a1721bc7399fae2912ecb55f4dc26795954bf7b1222a3dd182104797cf8e67a7",
+      "width": 320,
+      "height": 160,
+      "kind": "smask",
+      "stateMask": 0.5,
+      "constantAlpha": 0.5,
+      "blendMode": "Screen",
+      "clipped": false,
+      "expectedRegions": [
+        {
+          "rect": [
+            20,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "image band 0"
+        },
+        {
+          "rect": [
+            60,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            74.09019607843138,
+            105.91529411764705,
+            156.8149019607843
+          ],
+          "tolerance": 2,
+          "purpose": "image band 1"
+        },
+        {
+          "rect": [
+            100,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            97.18039215686275,
+            109.83058823529412,
+            160.62980392156862
+          ],
+          "tolerance": 2,
+          "purpose": "image band 2"
+        },
+        {
+          "rect": [
+            140,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            143.0,
+            117.6,
+            168.2
+          ],
+          "tolerance": 2,
+          "purpose": "image band 3"
+        },
+        {
+          "rect": [
+            196,
+            40,
+            40,
+            80
+          ],
+          "rgb": [
+            97.0,
+            109.8,
+            160.6
+          ],
+          "tolerance": 2,
+          "purpose": "following plain image"
+        },
+        {
+          "rect": [
+            260,
+            40,
+            40,
+            80
+          ],
+          "rgb": [
+            97.0,
+            109.8,
+            160.6
+          ],
+          "tolerance": 2,
+          "purpose": "following path"
+        },
+        {
+          "rect": [
+            4,
+            4,
+            312,
+            20
+          ],
+          "rgb": [
+            51,
+            102,
+            153
+          ],
+          "tolerance": 0,
+          "purpose": "untouched backdrop"
+        }
+      ]
+    },
+    {
+      "id": "smask-partial-no-state",
+      "file": "smask-partial-no-state.pdf",
+      "sha256": "3eb99cfba7d3e5f55e71babc6e916624add25235c730b9d2d2f04faf97facdfe",
+      "width": 320,
+      "height": 160,
+      "kind": "smask",
+      "stateMask": null,
+      "constantAlpha": 0.5,
+      "blendMode": "Normal",
+      "clipped": false,
+      "expectedRegions": [
+        {
+          "rect": [
+            20,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "image band 0"
+        },
+        {
+          "rect": [
+            60,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            73.46274509803922,
+            95.72549019607843,
+            143.3372549019608
+          ],
+          "tolerance": 2,
+          "purpose": "image band 1"
+        },
+        {
+          "rect": [
+            100,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            95.92549019607843,
+            89.45098039215686,
+            133.67450980392158
+          ],
+          "tolerance": 2,
+          "purpose": "image band 2"
+        },
+        {
+          "rect": [
+            140,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            140.5,
+            77.0,
+            114.5
+          ],
+          "tolerance": 2,
+          "purpose": "image band 3"
+        },
+        {
+          "rect": [
+            196,
+            40,
+            40,
+            80
+          ],
+          "rgb": [
+            140.5,
+            77.0,
+            114.5
+          ],
+          "tolerance": 2,
+          "purpose": "following plain image"
+        },
+        {
+          "rect": [
+            260,
+            40,
+            40,
+            80
+          ],
+          "rgb": [
+            140.5,
+            77.0,
+            114.5
+          ],
+          "tolerance": 2,
+          "purpose": "following path"
+        },
+        {
+          "rect": [
+            4,
+            4,
+            312,
+            20
+          ],
+          "rgb": [
+            51,
+            102,
+            153
+          ],
+          "tolerance": 0,
+          "purpose": "untouched backdrop"
+        }
+      ]
+    },
+    {
+      "id": "smask-partial-no-state-multiply",
+      "file": "smask-partial-no-state-multiply.pdf",
+      "sha256": "bc694243de44c52ecf5c37ae5d2c3b1962ef1a243a89b49d3870f1a4a4ffc28c",
+      "width": 320,
+      "height": 160,
+      "kind": "smask",
+      "stateMask": null,
+      "constantAlpha": 0.5,
+      "blendMode": "Multiply",
+      "clipped": true,
+      "expectedRegions": [
+        {
+          "rect": [
+            36,
+            52,
+            16,
+            56
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "image band 0"
+        },
+        {
+          "rect": [
+            60,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            50.372549019607845,
+            91.81019607843137,
+            139.52235294117648
+          ],
+          "tolerance": 2,
+          "purpose": "image band 1"
+        },
+        {
+          "rect": [
+            100,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            49.745098039215684,
+            81.62039215686275,
+            126.04470588235294
+          ],
+          "tolerance": 2,
+          "purpose": "image band 2"
+        },
+        {
+          "rect": [
+            140,
+            52,
+            16,
+            56
+          ],
+          "rgb": [
+            48.5,
+            61.4,
+            99.3
+          ],
+          "tolerance": 2,
+          "purpose": "image band 3"
+        },
+        {
+          "rect": [
+            196,
+            40,
+            40,
+            80
+          ],
+          "rgb": [
+            48.5,
+            61.4,
+            99.3
+          ],
+          "tolerance": 2,
+          "purpose": "following plain image"
+        },
+        {
+          "rect": [
+            260,
+            40,
+            40,
+            80
+          ],
+          "rgb": [
+            48.5,
+            61.4,
+            99.3
+          ],
+          "tolerance": 2,
+          "purpose": "following path"
+        },
+        {
+          "rect": [
+            4,
+            4,
+            312,
+            20
+          ],
+          "rgb": [
+            51,
+            102,
+            153
+          ],
+          "tolerance": 0,
+          "purpose": "untouched backdrop"
+        },
+        {
+          "rect": [
+            18,
+            48,
+            10,
+            64
+          ],
+          "rgb": [
+            51,
+            102,
+            153
+          ],
+          "tolerance": 0,
+          "purpose": "outside left clip"
+        },
+        {
+          "rect": [
+            164,
+            48,
+            10,
+            64
+          ],
+          "rgb": [
+            51,
+            102,
+            153
+          ],
+          "tolerance": 0,
+          "purpose": "outside right clip"
+        }
+      ]
+    },
+    {
+      "id": "smask-partial-no-state-screen",
+      "file": "smask-partial-no-state-screen.pdf",
+      "sha256": "546b5b9d2b5e819650f6a2a6aa551c6479de947f8a45fc0f4c5c9e7efc69f437",
+      "width": 320,
+      "height": 160,
+      "kind": "smask",
+      "stateMask": null,
+      "constantAlpha": 0.5,
+      "blendMode": "Screen",
+      "clipped": false,
+      "expectedRegions": [
+        {
+          "rect": [
+            20,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "image band 0"
+        },
+        {
+          "rect": [
+            60,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            74.09019607843138,
+            105.91529411764705,
+            156.8149019607843
+          ],
+          "tolerance": 2,
+          "purpose": "image band 1"
+        },
+        {
+          "rect": [
+            100,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            97.18039215686275,
+            109.83058823529412,
+            160.62980392156862
+          ],
+          "tolerance": 2,
+          "purpose": "image band 2"
+        },
+        {
+          "rect": [
+            140,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            143.0,
+            117.6,
+            168.2
+          ],
+          "tolerance": 2,
+          "purpose": "image band 3"
+        },
+        {
+          "rect": [
+            196,
+            40,
+            40,
+            80
+          ],
+          "rgb": [
+            143.0,
+            117.6,
+            168.2
+          ],
+          "tolerance": 2,
+          "purpose": "following plain image"
+        },
+        {
+          "rect": [
+            260,
+            40,
+            40,
+            80
+          ],
+          "rgb": [
+            143.0,
+            117.6,
+            168.2
+          ],
+          "tolerance": 2,
+          "purpose": "following path"
+        },
+        {
+          "rect": [
+            4,
+            4,
+            312,
+            20
+          ],
+          "rgb": [
+            51,
+            102,
+            153
+          ],
+          "tolerance": 0,
+          "purpose": "untouched backdrop"
+        }
+      ]
+    },
+    {
+      "id": "smask-zero-constant-alpha",
+      "file": "smask-zero-constant-alpha.pdf",
+      "sha256": "b6882c2990290777d18f4037d8699bb29205245810841db8e6e2106dfa4a5697",
+      "width": 320,
+      "height": 160,
+      "kind": "smask",
+      "stateMask": 0,
+      "constantAlpha": 0,
+      "blendMode": "Normal",
+      "clipped": false,
+      "expectedRegions": [
+        {
+          "rect": [
+            20,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "image band 0"
+        },
+        {
+          "rect": [
+            60,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "image band 1"
+        },
+        {
+          "rect": [
+            100,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "image band 2"
+        },
+        {
+          "rect": [
+            140,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "image band 3"
+        },
+        {
+          "rect": [
+            196,
+            40,
+            40,
+            80
+          ],
+          "rgb": [
+            51,
+            102,
+            153
+          ],
+          "tolerance": 2,
+          "purpose": "following plain image"
+        },
+        {
+          "rect": [
+            260,
+            40,
+            40,
+            80
+          ],
+          "rgb": [
+            51,
+            102,
+            153
+          ],
+          "tolerance": 2,
+          "purpose": "following path"
+        },
+        {
+          "rect": [
+            4,
+            4,
+            312,
+            20
+          ],
+          "rgb": [
+            51,
+            102,
+            153
+          ],
+          "tolerance": 0,
+          "purpose": "untouched backdrop"
+        }
+      ]
+    },
+    {
+      "id": "smask-over-key-zero-state",
+      "file": "smask-over-key-zero-state.pdf",
+      "sha256": "47ec3128f72663a3487792612bef857683a3cbf8773ac2cd1882a4c8721b04ce",
+      "width": 320,
+      "height": 160,
+      "kind": "smask-key",
+      "stateMask": 0,
+      "constantAlpha": 0.5,
+      "blendMode": "Normal",
+      "clipped": false,
+      "expectedRegions": [
+        {
+          "rect": [
+            20,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "image band 0"
+        },
+        {
+          "rect": [
+            60,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            73.46274509803922,
+            95.72549019607843,
+            143.3372549019608
+          ],
+          "tolerance": 2,
+          "purpose": "image band 1"
+        },
+        {
+          "rect": [
+            100,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            95.92549019607843,
+            89.45098039215686,
+            133.67450980392158
+          ],
+          "tolerance": 2,
+          "purpose": "image band 2"
+        },
+        {
+          "rect": [
+            140,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            140.5,
+            77.0,
+            114.5
+          ],
+          "tolerance": 2,
+          "purpose": "image band 3"
+        },
+        {
+          "rect": [
+            196,
+            40,
+            40,
+            80
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "following plain image"
+        },
+        {
+          "rect": [
+            260,
+            40,
+            40,
+            80
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "following path"
+        },
+        {
+          "rect": [
+            4,
+            4,
+            312,
+            20
+          ],
+          "rgb": [
+            51,
+            102,
+            153
+          ],
+          "tolerance": 0,
+          "purpose": "untouched backdrop"
+        }
+      ]
+    },
+    {
+      "id": "explicit-zero-state",
+      "file": "explicit-zero-state.pdf",
+      "sha256": "6472f4fa4d3a0399fefec501999a01d8417e870a2cb1ab6fbae6a80028fd3f4d",
+      "width": 320,
+      "height": 160,
+      "kind": "explicit",
+      "stateMask": 0,
+      "constantAlpha": 0.5,
+      "blendMode": "Normal",
+      "clipped": false,
+      "expectedRegions": [
+        {
+          "rect": [
+            20,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            140.5,
+            77.0,
+            114.5
+          ],
+          "tolerance": 2,
+          "purpose": "image band 0"
+        },
+        {
+          "rect": [
+            60,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "image band 1"
+        },
+        {
+          "rect": [
+            100,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            140.5,
+            77.0,
+            114.5
+          ],
+          "tolerance": 2,
+          "purpose": "image band 2"
+        },
+        {
+          "rect": [
+            140,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "image band 3"
+        },
+        {
+          "rect": [
+            196,
+            40,
+            40,
+            80
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "following plain image"
+        },
+        {
+          "rect": [
+            260,
+            40,
+            40,
+            80
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "following path"
+        },
+        {
+          "rect": [
+            4,
+            4,
+            312,
+            20
+          ],
+          "rgb": [
+            51,
+            102,
+            153
+          ],
+          "tolerance": 0,
+          "purpose": "untouched backdrop"
+        }
+      ]
+    },
+    {
+      "id": "key-zero-state",
+      "file": "key-zero-state.pdf",
+      "sha256": "d3d2ef32c0a4d0b7949f62cfa051a0188e8c360cb383af8146aa464390283c0c",
+      "width": 320,
+      "height": 160,
+      "kind": "key",
+      "stateMask": 0,
+      "constantAlpha": 0.5,
+      "blendMode": "Normal",
+      "clipped": false,
+      "expectedRegions": [
+        {
+          "rect": [
+            20,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "image band 0"
+        },
+        {
+          "rect": [
+            60,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            140.5,
+            77.0,
+            115.0
+          ],
+          "tolerance": 2,
+          "purpose": "image band 1"
+        },
+        {
+          "rect": [
+            100,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "image band 2"
+        },
+        {
+          "rect": [
+            140,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            140.5,
+            77.0,
+            115.0
+          ],
+          "tolerance": 2,
+          "purpose": "image band 3"
+        },
+        {
+          "rect": [
+            196,
+            40,
+            40,
+            80
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "following plain image"
+        },
+        {
+          "rect": [
+            260,
+            40,
+            40,
+            80
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "following path"
+        },
+        {
+          "rect": [
+            4,
+            4,
+            312,
+            20
+          ],
+          "rgb": [
+            51,
+            102,
+            153
+          ],
+          "tolerance": 0,
+          "purpose": "untouched backdrop"
+        }
+      ]
+    },
+    {
+      "id": "plain-zero-state",
+      "file": "plain-zero-state.pdf",
+      "sha256": "ecfb3441dacb5e0310c3356b805e815d6fd4b8fea1edd4ab20802344607e420c",
+      "width": 320,
+      "height": 160,
+      "kind": "plain",
+      "stateMask": 0,
+      "constantAlpha": 0.5,
+      "blendMode": "Normal",
+      "clipped": false,
+      "expectedRegions": [
+        {
+          "rect": [
+            20,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "image band 0"
+        },
+        {
+          "rect": [
+            60,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "image band 1"
+        },
+        {
+          "rect": [
+            100,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "image band 2"
+        },
+        {
+          "rect": [
+            140,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "image band 3"
+        },
+        {
+          "rect": [
+            196,
+            40,
+            40,
+            80
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "following plain image"
+        },
+        {
+          "rect": [
+            260,
+            40,
+            40,
+            80
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "following path"
+        },
+        {
+          "rect": [
+            4,
+            4,
+            312,
+            20
+          ],
+          "rgb": [
+            51,
+            102,
+            153
+          ],
+          "tolerance": 0,
+          "purpose": "untouched backdrop"
+        }
+      ]
+    },
+    {
+      "id": "plain-half-state",
+      "file": "plain-half-state.pdf",
+      "sha256": "8a5492bb89ca095ce0228c11d01ec392aecf3442c2f253da0f8f4aaf2f8ccd22",
+      "width": 320,
+      "height": 160,
+      "kind": "plain",
+      "stateMask": 0.5,
+      "constantAlpha": 0.5,
+      "blendMode": "Normal",
+      "clipped": false,
+      "expectedRegions": [
+        {
+          "rect": [
+            20,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            95.75,
+            89.5,
+            133.75
+          ],
+          "tolerance": 2,
+          "purpose": "image band 0"
+        },
+        {
+          "rect": [
+            60,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            95.75,
+            89.5,
+            133.75
+          ],
+          "tolerance": 2,
+          "purpose": "image band 1"
+        },
+        {
+          "rect": [
+            100,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            95.75,
+            89.5,
+            133.75
+          ],
+          "tolerance": 2,
+          "purpose": "image band 2"
+        },
+        {
+          "rect": [
+            140,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            95.75,
+            89.5,
+            133.75
+          ],
+          "tolerance": 2,
+          "purpose": "image band 3"
+        },
+        {
+          "rect": [
+            196,
+            40,
+            40,
+            80
+          ],
+          "rgb": [
+            95.75,
+            89.5,
+            133.75
+          ],
+          "tolerance": 2,
+          "purpose": "following plain image"
+        },
+        {
+          "rect": [
+            260,
+            40,
+            40,
+            80
+          ],
+          "rgb": [
+            95.75,
+            89.5,
+            133.75
+          ],
+          "tolerance": 2,
+          "purpose": "following path"
+        },
+        {
+          "rect": [
+            4,
+            4,
+            312,
+            20
+          ],
+          "rgb": [
+            51,
+            102,
+            153
+          ],
+          "tolerance": 0,
+          "purpose": "untouched backdrop"
+        }
+      ]
+    },
+    {
+      "id": "stencil-zero-state",
+      "file": "stencil-zero-state.pdf",
+      "sha256": "06d2f7e87fd6284478098e9f956b083d05cff8feb119a138366b464b62f14b36",
+      "width": 320,
+      "height": 160,
+      "kind": "stencil",
+      "stateMask": 0,
+      "constantAlpha": 0.5,
+      "blendMode": "Normal",
+      "clipped": false,
+      "expectedRegions": [
+        {
+          "rect": [
+            20,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "image band 0"
+        },
+        {
+          "rect": [
+            60,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "image band 1"
+        },
+        {
+          "rect": [
+            100,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "image band 2"
+        },
+        {
+          "rect": [
+            140,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "image band 3"
+        },
+        {
+          "rect": [
+            196,
+            40,
+            40,
+            80
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "following plain image"
+        },
+        {
+          "rect": [
+            260,
+            40,
+            40,
+            80
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "following path"
+        },
+        {
+          "rect": [
+            4,
+            4,
+            312,
+            20
+          ],
+          "rgb": [
+            51,
+            102,
+            153
+          ],
+          "tolerance": 0,
+          "purpose": "untouched backdrop"
+        }
+      ]
+    },
+    {
+      "id": "stencil-half-state",
+      "file": "stencil-half-state.pdf",
+      "sha256": "9f9bf5a885d2c5e95d1248980b48af95ac3bd290f61893fda3ee53f8d747f957",
+      "width": 320,
+      "height": 160,
+      "kind": "stencil",
+      "stateMask": 0.5,
+      "constantAlpha": 0.5,
+      "blendMode": "Normal",
+      "clipped": false,
+      "expectedRegions": [
+        {
+          "rect": [
+            20,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            95.75,
+            89.5,
+            133.75
+          ],
+          "tolerance": 2,
+          "purpose": "image band 0"
+        },
+        {
+          "rect": [
+            60,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "image band 1"
+        },
+        {
+          "rect": [
+            100,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            95.75,
+            89.5,
+            133.75
+          ],
+          "tolerance": 2,
+          "purpose": "image band 2"
+        },
+        {
+          "rect": [
+            140,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "image band 3"
+        },
+        {
+          "rect": [
+            196,
+            40,
+            40,
+            80
+          ],
+          "rgb": [
+            95.75,
+            89.5,
+            133.75
+          ],
+          "tolerance": 2,
+          "purpose": "following plain image"
+        },
+        {
+          "rect": [
+            260,
+            40,
+            40,
+            80
+          ],
+          "rgb": [
+            95.75,
+            89.5,
+            133.75
+          ],
+          "tolerance": 2,
+          "purpose": "following path"
+        },
+        {
+          "rect": [
+            4,
+            4,
+            312,
+            20
+          ],
+          "rgb": [
+            51,
+            102,
+            153
+          ],
+          "tolerance": 0,
+          "purpose": "untouched backdrop"
+        }
+      ]
+    },
+    {
+      "id": "jpx-alpha-no-state",
+      "file": "jpx-alpha-no-state.pdf",
+      "sha256": "7a892021277926a2f7b77ea353abbf3a160c403e0815d31077730af963878cd5",
+      "width": 320,
+      "height": 160,
+      "kind": "jpx",
+      "stateMask": null,
+      "constantAlpha": 0.5,
+      "blendMode": "Normal",
+      "clipped": false,
+      "expectedRegions": [
+        {
+          "rect": [
+            20,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "image band 0"
+        },
+        {
+          "rect": [
+            60,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            73.46274509803922,
+            95.72549019607843,
+            143.3372549019608
+          ],
+          "tolerance": 2,
+          "purpose": "image band 1"
+        },
+        {
+          "rect": [
+            100,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            95.92549019607843,
+            89.45098039215686,
+            133.67450980392158
+          ],
+          "tolerance": 2,
+          "purpose": "image band 2"
+        },
+        {
+          "rect": [
+            140,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            140.5,
+            77.0,
+            114.5
+          ],
+          "tolerance": 2,
+          "purpose": "image band 3"
+        },
+        {
+          "rect": [
+            196,
+            40,
+            40,
+            80
+          ],
+          "rgb": [
+            140.5,
+            77.0,
+            114.5
+          ],
+          "tolerance": 2,
+          "purpose": "following plain image"
+        },
+        {
+          "rect": [
+            260,
+            40,
+            40,
+            80
+          ],
+          "rgb": [
+            140.5,
+            77.0,
+            114.5
+          ],
+          "tolerance": 2,
+          "purpose": "following path"
+        },
+        {
+          "rect": [
+            4,
+            4,
+            312,
+            20
+          ],
+          "rgb": [
+            51,
+            102,
+            153
+          ],
+          "tolerance": 0,
+          "purpose": "untouched backdrop"
+        }
+      ]
+    },
+    {
+      "id": "jpx-ignored-alpha-zero-state",
+      "file": "jpx-ignored-alpha-zero-state.pdf",
+      "sha256": "d10ac32779a78ea4cdb9beddbae41767d891bd2b58897d9cff58820e2bfa44bb",
+      "width": 320,
+      "height": 160,
+      "kind": "jpx-ignored",
+      "stateMask": 0,
+      "constantAlpha": 0.5,
+      "blendMode": "Normal",
+      "clipped": false,
+      "expectedRegions": [
+        {
+          "rect": [
+            20,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "image band 0"
+        },
+        {
+          "rect": [
+            60,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "image band 1"
+        },
+        {
+          "rect": [
+            100,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "image band 2"
+        },
+        {
+          "rect": [
+            140,
+            52,
+            32,
+            56
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "image band 3"
+        },
+        {
+          "rect": [
+            196,
+            40,
+            40,
+            80
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "following plain image"
+        },
+        {
+          "rect": [
+            260,
+            40,
+            40,
+            80
+          ],
+          "rgb": [
+            51.0,
+            102.0,
+            153.0
+          ],
+          "tolerance": 2,
+          "purpose": "following path"
+        },
+        {
+          "rect": [
+            4,
+            4,
+            312,
+            20
+          ],
+          "rgb": [
+            51,
+            102,
+            153
+          ],
+          "tolerance": 0,
+          "purpose": "untouched backdrop"
+        }
+      ]
+    }
+  ]
+}
