@@ -162,7 +162,7 @@ internal sealed partial class CanvasDevice : IPdfDevice, IDisposable
             return null;
         }
 
-        DrawingPath? user = PathConvert.ToPath(path, PdfMatrix.Identity, clamp: false);
+        DrawingPath? user = PathConvert.ToPath(path, PdfMatrix.Identity, clamp: false, omitStationaryCloses: state.LineCap == 1);
         float[] dash = user is null && state.LineCap == 1 ? Dashes(state, null, scale) : [];
         DrawingPath? outline = user is null ? null : StrokeUserPath(user, state, m, scale, out dash);
         if (state.LineCap != 1 || !DashStartsOn(dash, state.DashPhase))

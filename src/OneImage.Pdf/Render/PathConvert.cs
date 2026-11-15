@@ -14,12 +14,17 @@ internal static class PathConvert
     private const double Limit = 1 << 24;
 
     /// <summary>Appends <paramref name="path"/> mapped through <paramref name="m"/> to <paramref name="b"/>. Returns false (and appends nothing useful) when a coordinate is not finite.</summary>
-    public static bool Append(PathBuilder b, in PdfPath path, in PdfMatrix m, bool clamp)
+    public static bool Append(PathBuilder b, in PdfPath path, in PdfMatrix m, bool clamp) =>
+        Append(b, path, m, clamp, false, out _);
+
+    private static bool Append(PathBuilder b, in PdfPath path, in PdfMatrix m, bool clamp, bool omitStationaryCloses, out bool truncatedSegment)
     {
+        truncatedSegment = false;
         ReadOnlySpan<byte> verbs = path.VerbBytes.Span;
         ReadOnlySpan<double> pts = path.Points.Span;
         int p = 0;
-        bool open = false;
+        bool open = false, stationary = false;
+        double sx = 0, sy = 0;
         for (int i = 0; i < verbs.Length; i++)
         {
             switch ((PdfPathVerb)verbs[i])
@@ -31,6 +36,8 @@ internal static class PathConvert
                             return true;
                         }
 
+                        sx = pts[p]; sy = pts[p + 1];
+                        stationary = omitStationaryCloses;
                         (float x, float y) = Map(pts[p], pts[p + 1], m, clamp);
                         p += 2;
                         if (!float.IsFinite(x + y))
@@ -47,9 +54,11 @@ internal static class PathConvert
                     {
                         if (p + 2 > pts.Length)
                         {
+                            truncatedSegment = true;
                             return true;
                         }
 
+                        stationary = stationary && pts[p] == sx && pts[p + 1] == sy;
                         (float x, float y) = Map(pts[p], pts[p + 1], m, clamp);
                         p += 2;
                         if (!float.IsFinite(x + y))
@@ -74,9 +83,12 @@ internal static class PathConvert
                     {
                         if (p + 6 > pts.Length)
                         {
+                            truncatedSegment = true;
                             return true;
                         }
 
+                        stationary = stationary && pts[p] == sx && pts[p + 1] == sy
+                            && pts[p + 2] == sx && pts[p + 3] == sy && pts[p + 4] == sx && pts[p + 5] == sy;
                         (float x1, float y1) = Map(pts[p], pts[p + 1], m, clamp);
                         (float x2, float y2) = Map(pts[p + 2], pts[p + 3], m, clamp);
                         (float x3, float y3) = Map(pts[p + 4], pts[p + 5], m, clamp);
@@ -97,7 +109,10 @@ internal static class PathConvert
                     }
 
                 case PdfPathVerb.Close:
-                    if (open)
+                    // The PDF round-cap pass owns exact stationary subpaths. Keeping them open here prevents
+                    // the core stroker from constructing a second disc. Compare doubles before float conversion:
+                    // a short segment rounded to one point is not an exact PDF degenerate subpath.
+                    if (open && !stationary)
                     {
                         b.Close();
                     }
@@ -111,8 +126,9 @@ internal static class PathConvert
         return true;
     }
 
-    /// <summary>Builds the path mapped through <paramref name="m"/>, or null when it is empty or has a coordinate that is not finite.</summary>
-    public static DrawingPath? ToPath(in PdfPath path, in PdfMatrix m, bool clamp = true)
+    /// <summary>Builds the path mapped through <paramref name="m"/>, or null when it is empty or has a coordinate that is not finite.
+    /// Omit stationary closes only when the caller supplies their zero-length round caps separately.</summary>
+    public static DrawingPath? ToPath(in PdfPath path, in PdfMatrix m, bool clamp = true, bool omitStationaryCloses = false)
     {
         if (path.IsEmpty)
         {
@@ -120,9 +136,17 @@ internal static class PathConvert
         }
 
         var b = new PathBuilder();
-        if (!Append(b, path, m, clamp))
+        if (!Append(b, path, m, clamp, omitStationaryCloses, out bool truncatedSegment))
         {
             return null;
+        }
+
+        // ZeroLengthDiscs does not flush the current subpath when a line or curve lacks operands. Preserve the
+        // original core outline for such malformed input rather than dropping its already completed closed geometry.
+        if (omitStationaryCloses && truncatedSegment)
+        {
+            b = new PathBuilder();
+            Append(b, path, m, clamp);
         }
 
         DrawingPath built = b.Build();

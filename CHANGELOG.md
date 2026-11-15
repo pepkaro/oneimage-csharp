@@ -10,6 +10,8 @@ All notable changes are listed here. The format follows [Keep a Changelog](https
 
 ### Fixed
 
+- `RecursiveAI.OneImage.Pdf`: construct exact zero-length round caps once for closed subpaths, preventing excess edge coverage while preserving dash phase, transforms and hairline sizing.
+
 - `RecursiveAI.OneImage.Pdf`: zero-length round-capped subpaths no longer paint dots during dash gaps. Dash phase, odd patterns, zero-length dashes and subpath resets are respected without changing solid strokes or hairline sizing.
 
 - `RecursiveAI.OneImage.Pdf`: avoid multiplying image-edge antialiasing twice when a single convex polygon clip with at most eight vertices provably contains the image quad. Other clips and core drawing clip-composition behavior are unchanged.
