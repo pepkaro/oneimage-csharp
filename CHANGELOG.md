@@ -10,6 +10,8 @@ All notable changes are listed here. The format follows [Keep a Changelog](https
 
 ### Fixed
 
+- `RecursiveAI.OneImage.Pdf`: explicit zero-width hairlines keep a one-device-pixel width under nonuniform scales, reflections and shear, including caps and joins. Dash lengths and phase stay in user space; positive-width enhancement is unchanged.
+
 - `RecursiveAI.OneImage.Pdf`: reuse horizontal area-resampling weights across image rows with bounded scratch storage, reducing repeated work when preparing reduced PDF image resources while preserving pixel rounding.
 - `RecursiveAI.OneImage.Pdf`: non-isolated transparency groups now remove their initial backdrop before applying group opacity, masks, and external blend modes. Nested passthrough forms and patterned stencil images retain their owning group's alpha coverage.
 - `RecursiveAI.OneImage.Pdf`: apply soft-mask transfer functions to alpha and luminosity values, including unpainted backdrop pixels. Inverting masks no longer render as identity.
