@@ -10,6 +10,7 @@ All notable changes are listed here. The format follows [Keep a Changelog](https
 
 ### Fixed
 
+- PDF: translucent strokes in combined text rendering modes 2 and 6 now knock out their own fills for single-glyph or conservatively pixel-disjoint runs. Text clipping keeps the original outlines; overlapping-run text-knockout limitations remain unchanged.
 - `RecursiveAI.OneImage.Pdf`: explicit zero-width hairlines keep a one-device-pixel width under nonuniform scales, reflections and shear, including caps and joins. Dash lengths and phase stay in user space; positive-width enhancement is unchanged.
 
 - `RecursiveAI.OneImage.Pdf`: reuse horizontal area-resampling weights across image rows with bounded scratch storage, reducing repeated work when preparing reduced PDF image resources while preserving pixel rounding.
