@@ -1,0 +1,440 @@
+{
+  "base": "e43ee264954a177ff01a16584625a3dea79244fa",
+  "sourcePatchSha256": "28485a13acb520c740262a5f32d728343d91da7f9e9c5377e4700995e020ab8f",
+  "referenceEngine": "PDFium 153.0.7999.0, pypdfium2 5.13.0",
+  "render": {
+    "dpi": 72,
+    "page": 0,
+    "background": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "maxDegree": 1
+  },
+  "baselineAssemblies": [
+    {
+      "name": "OneImage",
+      "informationalVersion": "1.11.1+e43ee264954a177ff01a16584625a3dea79244fa",
+      "sha256": "4125e25d02114496988dfb921801348857b6758f58ab98aa92f1584ee966747f"
+    },
+    {
+      "name": "OneImage.Pdf",
+      "informationalVersion": "1.11.1+e43ee264954a177ff01a16584625a3dea79244fa",
+      "sha256": "0d65a9977c504ae2ee8fcf591d810b2bea18e7aa80a2856f4505f5716cc1209d"
+    },
+    {
+      "name": "OnePdf",
+      "informationalVersion": "1.18.0+7dfb0e36ef830358c9d854328564e4e7cdd4a924",
+      "sha256": "f5a18b3a3b16fa3e1d39f4ab1fdba9454b449c675e54fbd411362d9165693fce"
+    }
+  ],
+  "fixedAssemblies": [
+    {
+      "name": "OneImage",
+      "informationalVersion": "1.11.1+e43ee264954a177ff01a16584625a3dea79244fa",
+      "sha256": "9335acff173fa6bc7af6f9599f474b77ab8cbf529a9a6dcbc8a3abaf63227ea7"
+    },
+    {
+      "name": "OneImage.Pdf",
+      "informationalVersion": "1.11.1+e43ee264954a177ff01a16584625a3dea79244fa",
+      "sha256": "5fdd56d89f134a77950a25df7f2671a0c4691ecb7177876f93f1c2584958d7e6"
+    },
+    {
+      "name": "OnePdf",
+      "informationalVersion": "1.18.0+7dfb0e36ef830358c9d854328564e4e7cdd4a924",
+      "sha256": "f5a18b3a3b16fa3e1d39f4ab1fdba9454b449c675e54fbd411362d9165693fce"
+    }
+  ],
+  "checks": {
+    "newTests": 17,
+    "baselineFailed": 7,
+    "fixedPassed": 17,
+    "fullPdfPassed": 652,
+    "fullPdfFailed": 0,
+    "fullPdfSkipped": 0,
+    "solutionBuildWarnings": 0,
+    "solutionBuildErrors": 0
+  },
+  "originalHandoffExactOracle": {
+    "checkerSha256": "92950a0383bed6c61cf025e9d086ff7842d43a891c661fd39049985b48af8886",
+    "rows": [
+      {
+        "mode": "baseline",
+        "id": "own-smask-overrides-zero-state",
+        "inputSha256": "a3e6bfa26708c1e4c73e5c8dbd55fbb527f79af828d9d5d4e8ec6a2fb85084e5",
+        "outputSha256": "6f02e738e81b9555ba84b0d06c8c7a02c58790c40bfc302fa230c04a34fe62da",
+        "status": "fail",
+        "checkedPixels": 69200,
+        "mismatchedPixels": 30800,
+        "maxError": 89,
+        "examples": [
+          {
+            "x": 50,
+            "y": 50,
+            "actual": [
+              51,
+              102,
+              153
+            ],
+            "expected": [
+              140,
+              77,
+              114
+            ]
+          },
+          {
+            "x": 51,
+            "y": 50,
+            "actual": [
+              51,
+              102,
+              153
+            ],
+            "expected": [
+              140,
+              77,
+              114
+            ]
+          },
+          {
+            "x": 52,
+            "y": 50,
+            "actual": [
+              51,
+              102,
+              153
+            ],
+            "expected": [
+              140,
+              77,
+              114
+            ]
+          },
+          {
+            "x": 53,
+            "y": 50,
+            "actual": [
+              51,
+              102,
+              153
+            ],
+            "expected": [
+              140,
+              77,
+              114
+            ]
+          },
+          {
+            "x": 54,
+            "y": 50,
+            "actual": [
+              51,
+              102,
+              153
+            ],
+            "expected": [
+              140,
+              77,
+              114
+            ]
+          },
+          {
+            "x": 55,
+            "y": 50,
+            "actual": [
+              51,
+              102,
+              153
+            ],
+            "expected": [
+              140,
+              77,
+              114
+            ]
+          },
+          {
+            "x": 56,
+            "y": 50,
+            "actual": [
+              51,
+              102,
+              153
+            ],
+            "expected": [
+              140,
+              77,
+              114
+            ]
+          },
+          {
+            "x": 57,
+            "y": 50,
+            "actual": [
+              51,
+              102,
+              153
+            ],
+            "expected": [
+              140,
+              77,
+              114
+            ]
+          }
+        ]
+      },
+      {
+        "mode": "baseline",
+        "id": "own-smask-no-state-control",
+        "inputSha256": "bb512fad955286031cd0be90cf34b384c60dea80197982078daaf329757c7ffb",
+        "outputSha256": "177be125c1aa8a51c84eddde1c2b3417323fff5e8afe9bb7be3f6b2f6d7f6b1f",
+        "status": "pass",
+        "checkedPixels": 69200,
+        "mismatchedPixels": 0,
+        "maxError": 1,
+        "examples": []
+      },
+      {
+        "mode": "baseline",
+        "id": "plain-image-zero-state-control",
+        "inputSha256": "53a050491c8e75e91b9a389c842f9f68c90535a1e89b5df5550d989db7c79ac0",
+        "outputSha256": "6f02e738e81b9555ba84b0d06c8c7a02c58790c40bfc302fa230c04a34fe62da",
+        "status": "pass",
+        "checkedPixels": 69200,
+        "mismatchedPixels": 0,
+        "maxError": 0,
+        "examples": []
+      },
+      {
+        "mode": "baseline",
+        "id": "smask-overrides-state-scoped",
+        "inputSha256": "52df1d5eaeb36488867386263a6e6d1389de6eba023e2c1a26a90bce527e8991",
+        "outputSha256": "6f02e738e81b9555ba84b0d06c8c7a02c58790c40bfc302fa230c04a34fe62da",
+        "status": "fail",
+        "checkedPixels": 57600,
+        "mismatchedPixels": 14400,
+        "maxError": 89,
+        "examples": [
+          {
+            "x": 110,
+            "y": 50,
+            "actual": [
+              51,
+              102,
+              153
+            ],
+            "expected": [
+              81,
+              94,
+              140
+            ]
+          },
+          {
+            "x": 111,
+            "y": 50,
+            "actual": [
+              51,
+              102,
+              153
+            ],
+            "expected": [
+              81,
+              94,
+              140
+            ]
+          },
+          {
+            "x": 112,
+            "y": 50,
+            "actual": [
+              51,
+              102,
+              153
+            ],
+            "expected": [
+              81,
+              94,
+              140
+            ]
+          },
+          {
+            "x": 113,
+            "y": 50,
+            "actual": [
+              51,
+              102,
+              153
+            ],
+            "expected": [
+              81,
+              94,
+              140
+            ]
+          },
+          {
+            "x": 114,
+            "y": 50,
+            "actual": [
+              51,
+              102,
+              153
+            ],
+            "expected": [
+              81,
+              94,
+              140
+            ]
+          },
+          {
+            "x": 115,
+            "y": 50,
+            "actual": [
+              51,
+              102,
+              153
+            ],
+            "expected": [
+              81,
+              94,
+              140
+            ]
+          },
+          {
+            "x": 116,
+            "y": 50,
+            "actual": [
+              51,
+              102,
+              153
+            ],
+            "expected": [
+              81,
+              94,
+              140
+            ]
+          },
+          {
+            "x": 117,
+            "y": 50,
+            "actual": [
+              51,
+              102,
+              153
+            ],
+            "expected": [
+              81,
+              94,
+              140
+            ]
+          }
+        ]
+      },
+      {
+        "mode": "fixed",
+        "id": "own-smask-overrides-zero-state",
+        "inputSha256": "a3e6bfa26708c1e4c73e5c8dbd55fbb527f79af828d9d5d4e8ec6a2fb85084e5",
+        "outputSha256": "177be125c1aa8a51c84eddde1c2b3417323fff5e8afe9bb7be3f6b2f6d7f6b1f",
+        "status": "pass",
+        "checkedPixels": 69200,
+        "mismatchedPixels": 0,
+        "maxError": 1,
+        "examples": []
+      },
+      {
+        "mode": "fixed",
+        "id": "own-smask-no-state-control",
+        "inputSha256": "bb512fad955286031cd0be90cf34b384c60dea80197982078daaf329757c7ffb",
+        "outputSha256": "177be125c1aa8a51c84eddde1c2b3417323fff5e8afe9bb7be3f6b2f6d7f6b1f",
+        "status": "pass",
+        "checkedPixels": 69200,
+        "mismatchedPixels": 0,
+        "maxError": 1,
+        "examples": []
+      },
+      {
+        "mode": "fixed",
+        "id": "plain-image-zero-state-control",
+        "inputSha256": "53a050491c8e75e91b9a389c842f9f68c90535a1e89b5df5550d989db7c79ac0",
+        "outputSha256": "6f02e738e81b9555ba84b0d06c8c7a02c58790c40bfc302fa230c04a34fe62da",
+        "status": "pass",
+        "checkedPixels": 69200,
+        "mismatchedPixels": 0,
+        "maxError": 0,
+        "examples": []
+      },
+      {
+        "mode": "fixed",
+        "id": "smask-overrides-state-scoped",
+        "inputSha256": "52df1d5eaeb36488867386263a6e6d1389de6eba023e2c1a26a90bce527e8991",
+        "outputSha256": "28c248b8fd156e09c1b14b0013f4da533a842072866858487a974a7f42ef4370",
+        "status": "pass",
+        "checkedPixels": 57600,
+        "mismatchedPixels": 0,
+        "maxError": 1,
+        "examples": []
+      }
+    ]
+  },
+  "referenceAudit": {
+    "renders": 51,
+    "passes": 37,
+    "failures": 14,
+    "claim": "No all-engine parity. Retained explicit/key, blend, stencil and JPX differences are separate from the illustrated SMask correction."
+  },
+  "provenance": "Original MIT numerical PDFs and newly rendered PNGs only. No private document, third-party fixture, font, artwork, or derived private image.",
+  "selection": [
+    {
+      "id": "opaque-smask",
+      "sourceId": "own-smask-overrides-zero-state",
+      "files": [
+        {
+          "file": "opaque-smask.pdf",
+          "sha256": "a3e6bfa26708c1e4c73e5c8dbd55fbb527f79af828d9d5d4e8ec6a2fb85084e5",
+          "bytes": 1193
+        },
+        {
+          "file": "opaque-smask-before.png",
+          "sha256": "6f02e738e81b9555ba84b0d06c8c7a02c58790c40bfc302fa230c04a34fe62da",
+          "bytes": 104
+        },
+        {
+          "file": "opaque-smask-after.png",
+          "sha256": "177be125c1aa8a51c84eddde1c2b3417323fff5e8afe9bb7be3f6b2f6d7f6b1f",
+          "bytes": 126
+        },
+        {
+          "file": "opaque-smask-pdfium.png",
+          "sha256": "606877cb8e097c18245de928d3ef871d72918c933af46298dc6c4a95005e79e8",
+          "bytes": 813
+        }
+      ]
+    },
+    {
+      "id": "partial-smask",
+      "sourceId": "smask-partial-zero-state",
+      "files": [
+        {
+          "file": "partial-smask.pdf",
+          "sha256": "d8fa915a295dfbfa0703180fa311e30b27150ba8c012b1b9c3918e898aaa8732",
+          "bytes": 1603
+        },
+        {
+          "file": "partial-smask-before.png",
+          "sha256": "5ebcf94648c22f309d858b6f1fbf6021180ced08660ea6fb0ac82a31dc83508b",
+          "bytes": 101
+        },
+        {
+          "file": "partial-smask-after.png",
+          "sha256": "d58e9863e9edd04df31ab64b1fde0c82639fb72f5b703bb772eb2ee684fbdf6f",
+          "bytes": 144
+        },
+        {
+          "file": "partial-smask-pdfium.png",
+          "sha256": "2cce12268b95085185f92f5a23482fb800251e79f16bf329be3426b7ab6e0c06",
+          "bytes": 604
+        }
+      ]
+    }
+  ]
+}
