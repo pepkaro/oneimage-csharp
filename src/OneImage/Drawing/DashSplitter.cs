@@ -120,9 +120,11 @@ internal sealed class DashSplitter
 
         if (on)
         {
-            if (closed && !everOff)
+            if (closed && startedOn && !everOff)
             {
-                sink.Dash(_cur, _curCount, true, dx, dy);
+                // This dash covers the whole figure. Use its original distinct vertices: _cur also contains the
+                // closing endpoint, which would create a zero-length edge when a closed contour is stroked.
+                sink.Dash(xy, n, true, dx, dy);
             }
             else if (closed && startedOn && _first != null)
             {
