@@ -136,7 +136,19 @@ internal sealed class PageRender
         int th = data.IsStencil && data.Alpha is { } sb ? sb.Height : data.Height;
         int rw = tw > deviceWidth * 1.25 ? Math.Max(1, deviceWidth) : tw;
         int rh = th > deviceHeight * 1.25 ? Math.Max(1, deviceHeight) : th;
-        var key = new RasterKey(data, rw, rh);
+        bool smooth = Options.SmoothMagnifiedImages && (deviceWidth > tw || deviceHeight > th);
+        PdfImageAlpha? alpha = data.Alpha;
+        bool separate = !data.IsStencil && alpha is not null &&
+            (alpha.Width != tw || alpha.Height != th || (!smooth && alpha.Interpolate != data.Interpolate));
+        int mw = separate ? alpha!.Width : 0, mh = separate ? alpha!.Height : 0;
+        if ((long)tw * th > Limits.MaxImagePixels || (long)mw * mh > Limits.MaxImagePixels)
+        {
+            return null;
+        }
+
+        int mrw = mw > deviceWidth * 1.25 ? Math.Max(1, deviceWidth) : mw;
+        int mrh = mh > deviceHeight * 1.25 ? Math.Max(1, deviceHeight) : mh;
+        var key = new RasterKey(data, rw, rh, mrw, mrh);
         if (_rasters.TryGetValue(key, out Lazy<Raster?>? hit))
         {
             return hit.Value;
@@ -144,23 +156,16 @@ internal sealed class PageRender
 
         Raster? Build()
         {
-            Raster? full = Raster.FromData(data, ct);
+            Raster? full = Raster.FromData(data, ct, smooth);
             if (full is null)
             {
                 return null;
             }
 
-            int w = full.Width > deviceWidth * 1.25 ? Math.Max(1, deviceWidth) : full.Width;
-            int h = full.Height > deviceHeight * 1.25 ? Math.Max(1, deviceHeight) : full.Height;
-            if (w == full.Width && h == full.Height)
-            {
-                return full;
-            }
-
-            return new Raster(w, h, Resize.Area(full.Pixels, full.Width, full.Height, w, h, full.Stencil, ct), full.Stencil);
+            return full.Reduce(deviceWidth, deviceHeight, ct);
         }
 
-        long cost = (long)rw * rh;
+        long cost = ((long)rw * rh) + ((long)mrw * mrh);
         if (Interlocked.Read(ref _cachedPixels) + cost > _options.Limits.MaxCachedPixels)
         {
             return Build();
@@ -203,7 +208,7 @@ internal sealed class PageRender
         return tile;
     }
 
-    internal readonly record struct RasterKey(PdfImageData Data, int Width, int Height);
+    internal readonly record struct RasterKey(PdfImageData Data, int Width, int Height, int MaskWidth, int MaskHeight);
 
     /// <summary>Records the page info while forwarding every call to the display list.</summary>
     private sealed class InfoProbe(PdfDisplayList list) : PdfDevice

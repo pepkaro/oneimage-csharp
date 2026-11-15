@@ -8,8 +8,8 @@ internal sealed partial class CanvasDevice
 {
     /// <summary>
     /// Draws an image into the unit square of the CTM. The picture is reduced by area averaging when the page shows it smaller than it
-    /// is (once per size, shared by all cells), then sampled bilinearly through the placement with its border pixels extended.
-    /// A stencil mask is painted in the fill color.
+    /// is (once per size, shared by all cells), then sampled through the placement with its border pixels extended. A separate opacity
+    /// plane keeps its own sample grid and interpolation policy. A stencil mask is painted in the fill color.
     /// </summary>
     public void DrawImage(in PdfImage image, in PdfGraphicsState state)
     {
@@ -74,7 +74,9 @@ internal sealed partial class CanvasDevice
             return;
         }
 
-        var brush = new PixelBrush(raster, placement, nearest: nearest, stencil);
+        bool maskNearest = raster.Mask is { } mask && (devW > mask.Width || devH > mask.Height) &&
+            !raster.MaskInterpolate && !_page.Options.SmoothMagnifiedImages;
+        var brush = new PixelBrush(raster, placement, nearest: nearest, stencil, maskNearest);
         PaintBrush(brush, quad, IntersectionRule.NonZero, state.FillAlpha, state, ImageClipPath(quad));
     }
 

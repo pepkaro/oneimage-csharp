@@ -14,16 +14,19 @@ internal sealed class PixelBrush : Brush
     private readonly double _a, _b, _c, _d, _e, _f; // inverse: device pixel -> picture pixel
     private readonly bool _nearest;
     private readonly Rgba32 _stencil;
+    private readonly bool _maskNearest;
 
     /// <param name="raster">The picture.</param>
     /// <param name="placement">Maps picture pixel coordinates to device pixel coordinates.</param>
     /// <param name="nearest">Take the nearest pixel instead of interpolating.</param>
     /// <param name="stencil">The color of a stencil raster.</param>
-    public PixelBrush(Raster raster, in PdfMatrix placement, bool nearest, Rgba32 stencil)
+    /// <param name="maskNearest">Sample the independent alpha plane without interpolation.</param>
+    public PixelBrush(Raster raster, in PdfMatrix placement, bool nearest, Rgba32 stencil, bool maskNearest = true)
     {
         _raster = raster;
         _nearest = nearest;
         _stencil = stencil;
+        _maskNearest = maskNearest;
         double det = placement.Determinant;
         if (!(Math.Abs(det) > 1e-18) || !double.IsFinite(det))
         {
@@ -43,6 +46,12 @@ internal sealed class PixelBrush : Brush
 
     public override void FillRow(int x, int y, Span<float> rgba)
     {
+        if (_raster.Mask is { } mask)
+        {
+            FillRowWithMask(mask, x, y, rgba);
+            return;
+        }
+
         Rgba32[] data = _raster.Pixels;
         int w = _raster.Width, h = _raster.Height;
         bool stencil = _raster.Stencil;
@@ -107,6 +116,96 @@ internal sealed class PixelBrush : Brush
                 ((pa.B * aa) + (pb.B * ab) + (pc.B * ac) + (pd.B * ad)) * inv,
                 alpha * k);
         }
+    }
+
+    private void FillRowWithMask(Raster mask, int x, int y, Span<float> rgba)
+    {
+        Rgba32[] data = _raster.Pixels;
+        int w = _raster.Width, h = _raster.Height;
+        bool stencil = _raster.Stencil;
+        double py = y + 0.5;
+        int n = rgba.Length / 4;
+        const float k = 1f / 255f;
+        for (int i = 0; i < n; i++)
+        {
+            double px = x + i + 0.5;
+            double u = (px * _a) + (py * _c) + _e;
+            double v = (px * _b) + (py * _d) + _f;
+            int o = i * 4;
+            if (!(Math.Abs(u) < 1e9 && Math.Abs(v) < 1e9))
+            {
+                rgba.Slice(o, 4).Clear();
+                continue;
+            }
+
+            float coverage = SampleMask(mask, u * mask.Width / w, v * mask.Height / h);
+            if (_nearest)
+            {
+                Rgba32 p = data[(Math.Clamp((int)Math.Floor(v), 0, h - 1) * w) + Math.Clamp((int)Math.Floor(u), 0, w - 1)];
+                if (stencil)
+                {
+                    Put(rgba, o, _stencil.R * k, _stencil.G * k, _stencil.B * k, p.A * k * coverage);
+                }
+                else
+                {
+                    Put(rgba, o, p.R * k, p.G * k, p.B * k, p.A * k * coverage);
+                }
+
+                continue;
+            }
+
+            double su = u - 0.5, sv = v - 0.5;
+            double fu0 = Math.Floor(su), fv0 = Math.Floor(sv);
+            float fx = (float)(su - fu0), fy = (float)(sv - fv0);
+            int x0 = Math.Clamp((int)fu0, 0, w - 1), x1 = Math.Clamp((int)fu0 + 1, 0, w - 1);
+            int y0 = Math.Clamp((int)fv0, 0, h - 1), y1 = Math.Clamp((int)fv0 + 1, 0, h - 1);
+            Rgba32 pa = data[(y0 * w) + x0], pb = data[(y0 * w) + x1], pc = data[(y1 * w) + x0], pd = data[(y1 * w) + x1];
+            float wa = (1 - fx) * (1 - fy), wb = fx * (1 - fy), wc = (1 - fx) * fy, wd = fx * fy;
+            float aa = pa.A * wa, ab = pb.A * wb, ac = pc.A * wc, ad = pd.A * wd;
+            float alpha = aa + ab + ac + ad;
+            if (alpha <= 0)
+            {
+                rgba.Slice(o, 4).Clear();
+                continue;
+            }
+
+            if (stencil)
+            {
+                Put(rgba, o, _stencil.R * k, _stencil.G * k, _stencil.B * k, alpha * k * coverage);
+                continue;
+            }
+
+            // Interpolate premultiplied so a transparent pixel's color does not bleed into its neighbors.
+            float inv = k / alpha;
+            Put(
+                rgba,
+                o,
+                ((pa.R * aa) + (pb.R * ab) + (pc.R * ac) + (pd.R * ad)) * inv,
+                ((pa.G * aa) + (pb.G * ab) + (pc.G * ac) + (pd.G * ad)) * inv,
+                ((pa.B * aa) + (pb.B * ab) + (pc.B * ac) + (pd.B * ad)) * inv,
+                alpha * k * coverage);
+        }
+    }
+
+    private float SampleMask(Raster mask, double u, double v)
+    {
+        int w = mask.Width, h = mask.Height;
+        Rgba32[] pixels = mask.Pixels;
+        const float k = 1f / 255f;
+        if (_maskNearest)
+        {
+            return pixels[Math.Clamp((int)Math.Floor(v), 0, h - 1) * w + Math.Clamp((int)Math.Floor(u), 0, w - 1)].A * k;
+        }
+
+        double su = u - .5, sv = v - .5;
+        double x = Math.Floor(su), y = Math.Floor(sv);
+        float fx = (float)(su - x), fy = (float)(sv - y);
+        int x0 = Math.Clamp((int)x, 0, w - 1), x1 = Math.Clamp((int)x + 1, 0, w - 1);
+        int y0 = Math.Clamp((int)y, 0, h - 1), y1 = Math.Clamp((int)y + 1, 0, h - 1);
+        float top = pixels[y0 * w + x0].A, bottom = pixels[y1 * w + x0].A;
+        top += (pixels[y0 * w + x1].A - top) * fx;
+        bottom += (pixels[y1 * w + x1].A - bottom) * fx;
+        return (top + (bottom - top) * fy) * k;
     }
 
     private static void Put(Span<float> rgba, int o, float r, float g, float b, float a)

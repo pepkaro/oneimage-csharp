@@ -9,12 +9,14 @@ namespace OneImage.Pdf.Render;
 /// </summary>
 internal sealed class Raster
 {
-    public Raster(int width, int height, Rgba32[] pixels, bool stencil)
+    public Raster(int width, int height, Rgba32[] pixels, bool stencil, Raster? mask = null, bool maskInterpolate = false)
     {
         Width = width;
         Height = height;
         Pixels = pixels;
         Stencil = stencil;
+        Mask = mask;
+        MaskInterpolate = maskInterpolate;
     }
 
     public int Width { get; }
@@ -25,13 +27,17 @@ internal sealed class Raster
 
     public bool Stencil { get; }
 
-    public long PixelCount => (long)Width * Height;
+    public Raster? Mask { get; }
+
+    public bool MaskInterpolate { get; }
+
+    public long PixelCount => ((long)Width * Height) + (Mask?.PixelCount ?? 0);
 
     /// <summary>
     /// Builds the raster of a decoded image. Returns null when the image has no pixels (not decoded, nothing to show). The size has been
     /// checked against the limit by the caller, so the allocation here is bounded.
     /// </summary>
-    public static Raster? FromData(PdfImageData data, CancellationToken ct)
+    public static Raster? FromData(PdfImageData data, CancellationToken ct, bool smooth = false)
     {
         if (!data.IsDecoded || data.Width < 1 || data.Height < 1)
         {
@@ -80,14 +86,14 @@ internal sealed class Raster
         var raster = new Raster(w, h, pixels, stencil: false);
         if (data.Alpha is { } alpha && alpha.Width > 0 && alpha.Height > 0)
         {
-            raster = raster.WithAlpha(alpha);
+            raster = raster.WithAlpha(alpha, data.Interpolate, smooth, ct);
         }
 
         return raster;
     }
 
-    /// <summary>Combines the color pixels with a soft mask that may have another size: both are brought to the larger of the two sizes.</summary>
-    private Raster WithAlpha(PdfImageAlpha alpha)
+    /// <summary>Keep independent sample grids until painting; resampling one grid into the other moves their boundaries.</summary>
+    private Raster WithAlpha(PdfImageAlpha alpha, bool interpolate, bool smooth, CancellationToken ct)
     {
         ReadOnlySpan<byte> av = alpha.Values.Span;
         if (av.Length < (long)alpha.Width * alpha.Height)
@@ -95,23 +101,53 @@ internal sealed class Raster
             return this;
         }
 
-        int tw = Math.Max(Width, alpha.Width), th = Math.Max(Height, alpha.Height);
-        Rgba32[] color = (tw == Width && th == Height) ? Pixels : Resize.Bilinear(Pixels, Width, Height, tw, th);
-        var result = new Rgba32[(long)tw * th];
-        for (int y = 0; y < th; y++)
+        if (alpha.Width == Width && alpha.Height == Height && (smooth || alpha.Interpolate == interpolate))
         {
-            // The mask is placed over the unit square just like the color: pixel centers map proportionally.
-            int ay = Math.Min(alpha.Height - 1, (int)(((long)y * alpha.Height) / th));
-            for (int x = 0; x < tw; x++)
+            // Coincident grids retain alpha-weighted filtering (also used by embedded alpha and un-matted colors).
+            for (int y = 0; y < Height; y++)
             {
-                int ax = Math.Min(alpha.Width - 1, (int)(((long)x * alpha.Width) / tw));
-                Rgba32 c = color[(y * tw) + x];
-                result[(y * tw) + x] = new Rgba32(c.R, c.G, c.B, av[(ay * alpha.Width) + ax]);
+                ct.ThrowIfCancellationRequested();
+                for (int x = 0; x < Width; x++)
+                {
+                    int i = y * Width + x;
+                    Rgba32 c = Pixels[i];
+                    Pixels[i] = new Rgba32(c.R, c.G, c.B, av[i]);
+                }
+            }
+
+            return this;
+        }
+
+        var mask = new Rgba32[(long)alpha.Width * alpha.Height];
+        for (int y = 0; y < alpha.Height; y++)
+        {
+            ct.ThrowIfCancellationRequested();
+            for (int x = 0; x < alpha.Width; x++)
+            {
+                int i = y * alpha.Width + x;
+                mask[i] = new Rgba32(0, 0, 0, av[i]);
             }
         }
 
-        return new Raster(tw, th, result, stencil: false);
+        return new Raster(Width, Height, Pixels, stencil: false,
+            new Raster(alpha.Width, alpha.Height, mask, stencil: true), alpha.Interpolate);
     }
+
+    /// <summary>Reduce each independent plane without changing the unit-square mapping of the other.</summary>
+    public Raster Reduce(int deviceWidth, int deviceHeight, CancellationToken ct)
+    {
+        int w = Width > deviceWidth * 1.25 ? Math.Max(1, deviceWidth) : Width;
+        int h = Height > deviceHeight * 1.25 ? Math.Max(1, deviceHeight) : Height;
+        Raster? mask = Mask?.Reduce(deviceWidth, deviceHeight, ct);
+        if (w == Width && h == Height && ReferenceEquals(mask, Mask))
+        {
+            return this;
+        }
+
+        Rgba32[] pixels = w == Width && h == Height ? Pixels : Resize.Area(Pixels, Width, Height, w, h, Stencil, ct);
+        return new Raster(w, h, pixels, Stencil, mask, MaskInterpolate);
+    }
+
 }
 
 /// <summary>Resampling of RGBA pictures: area averaging for reduction, bilinear for enlargement. Color is weighted by alpha, so transparent pixels do not tint their neighbors.</summary>
