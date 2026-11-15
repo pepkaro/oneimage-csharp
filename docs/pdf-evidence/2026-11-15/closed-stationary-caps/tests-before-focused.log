@@ -1,0 +1,215 @@
+xUnit.net v3 In-Process Runner v4.0.2+0c7aa4991f (64-bit .NET 10.0.15)
+  Discovering: OneImage.Pdf.Tests
+  Discovered:  OneImage.Pdf.Tests
+  Starting:    OneImage.Pdf.Tests
+    OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.Type3StrokeUsesTheSameCapOwnership(dash: "[] 0 d") [FAIL]
+      Assert.Equal() Failure: Collections differ
+                                                                                                                    ↓ (pos 19052)
+      Expected: [···, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 201, G = 201, B = 201, A = 255 }, Rgba32 { R = 99, G = 99, B = 99, A = 255 }, Rgba32 { R = 51, G = 51, B = 51, A = 255 }, ···]
+      Actual:   [···, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 147, G = 147, B = 147, A = 255 }, Rgba32 { R = 0, G = 0, B = 0, A = 255 }, Rgba32 { R = 0, G = 0, B = 0, A = 255 }, ···]
+                                                                                                                    ↑ (pos 19052)
+      Stack Trace:
+        solid-closed-cap-fix-20261115/tests/OneImage.Pdf.Tests/SpecTruth/SolidClosedCapTests.cs(92,0): at OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.Type3StrokeUsesTheSameCapOwnership(String dash)
+           at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+           at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+    OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.IncompleteAndMoveOnlyContentKeepsCompletedGeometry(path: "48 36 m 48 36 l h 2 l", expected: "48 36 m 48 36 l") [FAIL]
+      Assert.Equal() Failure: Collections differ
+                                                                                                                    ↓ (pos 19052)
+      Expected: [···, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 201, G = 201, B = 201, A = 255 }, Rgba32 { R = 99, G = 99, B = 99, A = 255 }, Rgba32 { R = 51, G = 51, B = 51, A = 255 }, ···]
+      Actual:   [···, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 147, G = 147, B = 147, A = 255 }, Rgba32 { R = 0, G = 0, B = 0, A = 255 }, Rgba32 { R = 0, G = 0, B = 0, A = 255 }, ···]
+                                                                                                                    ↑ (pos 19052)
+      Stack Trace:
+        solid-closed-cap-fix-20261115/tests/OneImage.Pdf.Tests/SpecTruth/SolidClosedCapTests.cs(111,0): at OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.IncompleteAndMoveOnlyContentKeepsCompletedGeometry(String path, String expected)
+           at InvokeStub_SolidClosedCapTests.IncompleteAndMoveOnlyContentKeepsCompletedGeometry(Object, Span`1)
+           at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+    OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.IncompleteAndMoveOnlyContentKeepsCompletedGeometry(path: "48 36 m 48 36 l h 48 36 48 c", expected: "48 36 m 48 36 l") [FAIL]
+      Assert.Equal() Failure: Collections differ
+                                                                                                                    ↓ (pos 19052)
+      Expected: [···, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 201, G = 201, B = 201, A = 255 }, Rgba32 { R = 99, G = 99, B = 99, A = 255 }, Rgba32 { R = 51, G = 51, B = 51, A = 255 }, ···]
+      Actual:   [···, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 147, G = 147, B = 147, A = 255 }, Rgba32 { R = 0, G = 0, B = 0, A = 255 }, Rgba32 { R = 0, G = 0, B = 0, A = 255 }, ···]
+                                                                                                                    ↑ (pos 19052)
+      Stack Trace:
+        solid-closed-cap-fix-20261115/tests/OneImage.Pdf.Tests/SpecTruth/SolidClosedCapTests.cs(111,0): at OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.IncompleteAndMoveOnlyContentKeepsCompletedGeometry(String path, String expected)
+           at InvokeStub_SolidClosedCapTests.IncompleteAndMoveOnlyContentKeepsCompletedGeometry(Object, Span`1)
+           at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+    OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.TruncatedRawPathsKeepAlreadyCompletedCoreGeometry(truncatedVerb: 0) [FAIL]
+      Assert.InRange() Failure: Value not in range
+      Range:  (248.46900494077323 - 255.46900494077323)
+      Actual: 263.0901960784314
+      Stack Trace:
+        solid-closed-cap-fix-20261115/tests/OneImage.Pdf.Tests/SpecTruth/SolidClosedCapTests.cs(150,0): at OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.TruncatedRawPathsKeepAlreadyCompletedCoreGeometry(Byte truncatedVerb)
+           at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+           at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+    OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.ClosingDoesNotChangeTransformOrWidth(transform: "", width: 18, dpi: 72) [FAIL]
+      Assert.Equal() Failure: Collections differ
+                                                                                                                    ↓ (pos 19052)
+      Expected: [···, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 201, G = 201, B = 201, A = 255 }, Rgba32 { R = 99, G = 99, B = 99, A = 255 }, Rgba32 { R = 51, G = 51, B = 51, A = 255 }, ···]
+      Actual:   [···, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 147, G = 147, B = 147, A = 255 }, Rgba32 { R = 0, G = 0, B = 0, A = 255 }, Rgba32 { R = 0, G = 0, B = 0, A = 255 }, ···]
+                                                                                                                    ↑ (pos 19052)
+      Stack Trace:
+        solid-closed-cap-fix-20261115/tests/OneImage.Pdf.Tests/SpecTruth/SolidClosedCapTests.cs(53,0): at OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.ClosingDoesNotChangeTransformOrWidth(String transform, Double width, Int32 dpi)
+           at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+           at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+    OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.ClosingDoesNotChangeTransformOrWidth(transform: "", width: 18, dpi: 144) [FAIL]
+      Assert.Equal() Failure: Collections differ
+                                                                                                                    ↓ (pos 76122)
+      Expected: [···, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 237, G = 237, B = 237, A = 255 }, Rgba32 { R = 162, G = 162, B = 162, A = 255 }, Rgba32 { R = 94, G = 94, B = 94, A = 255 }, ···]
+      Actual:   [···, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 219, G = 219, B = 219, A = 255 }, Rgba32 { R = 70, G = 70, B = 70, A = 255 }, Rgba32 { R = 0, G = 0, B = 0, A = 255 }, ···]
+                                                                                                                    ↑ (pos 76122)
+      Stack Trace:
+        solid-closed-cap-fix-20261115/tests/OneImage.Pdf.Tests/SpecTruth/SolidClosedCapTests.cs(53,0): at OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.ClosingDoesNotChangeTransformOrWidth(String transform, Double width, Int32 dpi)
+           at InvokeStub_SolidClosedCapTests.ClosingDoesNotChangeTransformOrWidth(Object, Span`1)
+           at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+    OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.ClosingDoesNotChangeTransformOrWidth(transform: "1.5 0.3 0.25 0.8 -33 -7.2 cm", width: 18, dpi: 144) [FAIL]
+      Assert.Equal() Failure: Collections differ
+                                                                                                                    ↓ (pos 76904)
+      Expected: [···, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 245, G = 245, B = 245, A = 255 }, Rgba32 { R = 220, G = 220, B = 220, A = 255 }, Rgba32 { R = 202, G = 202, B = 202, A = 255 }, ···]
+      Actual:   [···, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 234, G = 234, B = 234, A = 255 }, Rgba32 { R = 186, G = 186, B = 186, A = 255 }, Rgba32 { R = 149, G = 149, B = 149, A = 255 }, ···]
+                                                                                                                    ↑ (pos 76904)
+      Stack Trace:
+        solid-closed-cap-fix-20261115/tests/OneImage.Pdf.Tests/SpecTruth/SolidClosedCapTests.cs(53,0): at OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.ClosingDoesNotChangeTransformOrWidth(String transform, Double width, Int32 dpi)
+           at InvokeStub_SolidClosedCapTests.ClosingDoesNotChangeTransformOrWidth(Object, Span`1)
+           at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+    OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.ClosingDoesNotChangeTransformOrWidth(transform: "-1 0 0 1 96 0 cm", width: 18, dpi: 144) [FAIL]
+      Assert.Equal() Failure: Collections differ
+                                                                                                                    ↓ (pos 76122)
+      Expected: [···, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 237, G = 237, B = 237, A = 255 }, Rgba32 { R = 162, G = 162, B = 162, A = 255 }, Rgba32 { R = 94, G = 94, B = 94, A = 255 }, ···]
+      Actual:   [···, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 219, G = 219, B = 219, A = 255 }, Rgba32 { R = 70, G = 70, B = 70, A = 255 }, Rgba32 { R = 0, G = 0, B = 0, A = 255 }, ···]
+                                                                                                                    ↑ (pos 76122)
+      Stack Trace:
+        solid-closed-cap-fix-20261115/tests/OneImage.Pdf.Tests/SpecTruth/SolidClosedCapTests.cs(53,0): at OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.ClosingDoesNotChangeTransformOrWidth(String transform, Double width, Int32 dpi)
+           at InvokeStub_SolidClosedCapTests.ClosingDoesNotChangeTransformOrWidth(Object, Span`1)
+           at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+    OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.ClosingDoesNotChangeTransformOrWidth(transform: "", width: 0, dpi: 72) [FAIL]
+      Assert.Equal() Failure: Collections differ
+                                                                                                                    ↓ (pos 20591)
+      Expected: [···, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 210, G = 210, B = 210, A = 255 }, Rgba32 { R = 210, G = 210, B = 210, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, ···]
+      Actual:   [···, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 165, G = 165, B = 165, A = 255 }, Rgba32 { R = 165, G = 165, B = 165, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, ···]
+                                                                                                                    ↑ (pos 20591)
+      Stack Trace:
+        solid-closed-cap-fix-20261115/tests/OneImage.Pdf.Tests/SpecTruth/SolidClosedCapTests.cs(53,0): at OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.ClosingDoesNotChangeTransformOrWidth(String transform, Double width, Int32 dpi)
+           at InvokeStub_SolidClosedCapTests.ClosingDoesNotChangeTransformOrWidth(Object, Span`1)
+           at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+    OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.ClosingDoesNotChangeTransformOrWidth(transform: "", width: 0, dpi: 144) [FAIL]
+      Assert.Equal() Failure: Collections differ
+                                                                                                                    ↓ (pos 82655)
+      Expected: [···, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 210, G = 210, B = 210, A = 255 }, Rgba32 { R = 210, G = 210, B = 210, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, ···]
+      Actual:   [···, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 165, G = 165, B = 165, A = 255 }, Rgba32 { R = 165, G = 165, B = 165, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, ···]
+                                                                                                                    ↑ (pos 82655)
+      Stack Trace:
+        solid-closed-cap-fix-20261115/tests/OneImage.Pdf.Tests/SpecTruth/SolidClosedCapTests.cs(53,0): at OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.ClosingDoesNotChangeTransformOrWidth(String transform, Double width, Int32 dpi)
+           at InvokeStub_SolidClosedCapTests.ClosingDoesNotChangeTransformOrWidth(Object, Span`1)
+           at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+    OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.ClosingDoesNotChangeTransformOrWidth(transform: "1.5 0.3 0.25 0.8 -33 -7.2 cm", width: 0, dpi: 144) [FAIL]
+      Assert.Equal() Failure: Collections differ
+                                                                                                                    ↓ (pos 82655)
+      Expected: [···, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 210, G = 210, B = 210, A = 255 }, Rgba32 { R = 210, G = 210, B = 210, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, ···]
+      Actual:   [···, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 165, G = 165, B = 165, A = 255 }, Rgba32 { R = 165, G = 165, B = 165, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, ···]
+                                                                                                                    ↑ (pos 82655)
+      Stack Trace:
+        solid-closed-cap-fix-20261115/tests/OneImage.Pdf.Tests/SpecTruth/SolidClosedCapTests.cs(53,0): at OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.ClosingDoesNotChangeTransformOrWidth(String transform, Double width, Int32 dpi)
+           at InvokeStub_SolidClosedCapTests.ClosingDoesNotChangeTransformOrWidth(Object, Span`1)
+           at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+    OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.ClosingDoesNotChangeTransformOrWidth(transform: "-1 0 0 1 96 0 cm", width: 0, dpi: 144) [FAIL]
+      Assert.Equal() Failure: Collections differ
+                                                                                                                    ↓ (pos 82655)
+      Expected: [···, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 210, G = 210, B = 210, A = 255 }, Rgba32 { R = 210, G = 210, B = 210, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, ···]
+      Actual:   [···, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 165, G = 165, B = 165, A = 255 }, Rgba32 { R = 165, G = 165, B = 165, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, ···]
+                                                                                                                    ↑ (pos 82655)
+      Stack Trace:
+        solid-closed-cap-fix-20261115/tests/OneImage.Pdf.Tests/SpecTruth/SolidClosedCapTests.cs(53,0): at OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.ClosingDoesNotChangeTransformOrWidth(String transform, Double width, Int32 dpi)
+           at InvokeStub_SolidClosedCapTests.ClosingDoesNotChangeTransformOrWidth(Object, Span`1)
+           at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+    OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.ClosingDoesNotChangeTransformOrWidth(transform: "", width: 0.01, dpi: 144) [FAIL]
+      Assert.Equal() Failure: Collections differ
+                                                                                                                    ↓ (pos 82655)
+      Expected: [···, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 210, G = 210, B = 210, A = 255 }, Rgba32 { R = 210, G = 210, B = 210, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, ···]
+      Actual:   [···, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 165, G = 165, B = 165, A = 255 }, Rgba32 { R = 165, G = 165, B = 165, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, ···]
+                                                                                                                    ↑ (pos 82655)
+      Stack Trace:
+        solid-closed-cap-fix-20261115/tests/OneImage.Pdf.Tests/SpecTruth/SolidClosedCapTests.cs(53,0): at OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.ClosingDoesNotChangeTransformOrWidth(String transform, Double width, Int32 dpi)
+           at InvokeStub_SolidClosedCapTests.ClosingDoesNotChangeTransformOrWidth(Object, Span`1)
+           at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+    OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.MixedSubpathsAndTrailingMoveAreUnaffected [FAIL]
+      Assert.Equal() Failure: Collections differ
+                                                                                                                    ↓ (pos 20205)
+      Expected: [···, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 249, G = 249, B = 249, A = 255 }, Rgba32 { R = 119, G = 119, B = 119, A = 255 }, Rgba32 { R = 26, G = 26, B = 26, A = 255 }, ···]
+      Actual:   [···, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 242, G = 242, B = 242, A = 255 }, Rgba32 { R = 0, G = 0, B = 0, A = 255 }, Rgba32 { R = 0, G = 0, B = 0, A = 255 }, ···]
+                                                                                                                    ↑ (pos 20205)
+      Stack Trace:
+        solid-closed-cap-fix-20261115/tests/OneImage.Pdf.Tests/SpecTruth/SolidClosedCapTests.cs(63,0): at OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.MixedSubpathsAndTrailingMoveAreUnaffected()
+           at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+           at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+    OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.StationaryRoundCapsHaveOneOutline(path: "48 36 m 48 36 l h") [FAIL]
+      Assert.Equal() Failure: Collections differ
+                                                                                                                    ↓ (pos 19052)
+      Expected: [···, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 201, G = 201, B = 201, A = 255 }, Rgba32 { R = 99, G = 99, B = 99, A = 255 }, Rgba32 { R = 51, G = 51, B = 51, A = 255 }, ···]
+      Actual:   [···, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 147, G = 147, B = 147, A = 255 }, Rgba32 { R = 0, G = 0, B = 0, A = 255 }, Rgba32 { R = 0, G = 0, B = 0, A = 255 }, ···]
+                                                                                                                    ↑ (pos 19052)
+      Stack Trace:
+        solid-closed-cap-fix-20261115/tests/OneImage.Pdf.Tests/SpecTruth/SolidClosedCapTests.cs(30,0): at OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.StationaryRoundCapsHaveOneOutline(String path)
+           at InvokeStub_SolidClosedCapTests.StationaryRoundCapsHaveOneOutline(Object, Span`1)
+           at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+    OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.StationaryRoundCapsHaveOneOutline(path: "48 36 0 0 re") [FAIL]
+      Assert.Equal() Failure: Collections differ
+                                                                                                                    ↓ (pos 19052)
+      Expected: [···, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 201, G = 201, B = 201, A = 255 }, Rgba32 { R = 99, G = 99, B = 99, A = 255 }, Rgba32 { R = 51, G = 51, B = 51, A = 255 }, ···]
+      Actual:   [···, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 147, G = 147, B = 147, A = 255 }, Rgba32 { R = 0, G = 0, B = 0, A = 255 }, Rgba32 { R = 0, G = 0, B = 0, A = 255 }, ···]
+                                                                                                                    ↑ (pos 19052)
+      Stack Trace:
+        solid-closed-cap-fix-20261115/tests/OneImage.Pdf.Tests/SpecTruth/SolidClosedCapTests.cs(30,0): at OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.StationaryRoundCapsHaveOneOutline(String path)
+           at InvokeStub_SolidClosedCapTests.StationaryRoundCapsHaveOneOutline(Object, Span`1)
+           at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+    OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.StationaryRoundCapsHaveOneOutline(path: "48 36 m 48 36 l 48 36 l h") [FAIL]
+      Assert.Equal() Failure: Collections differ
+                                                                                                                    ↓ (pos 19052)
+      Expected: [···, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 201, G = 201, B = 201, A = 255 }, Rgba32 { R = 99, G = 99, B = 99, A = 255 }, Rgba32 { R = 51, G = 51, B = 51, A = 255 }, ···]
+      Actual:   [···, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 147, G = 147, B = 147, A = 255 }, Rgba32 { R = 0, G = 0, B = 0, A = 255 }, Rgba32 { R = 0, G = 0, B = 0, A = 255 }, ···]
+                                                                                                                    ↑ (pos 19052)
+      Stack Trace:
+        solid-closed-cap-fix-20261115/tests/OneImage.Pdf.Tests/SpecTruth/SolidClosedCapTests.cs(30,0): at OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.StationaryRoundCapsHaveOneOutline(String path)
+           at InvokeStub_SolidClosedCapTests.StationaryRoundCapsHaveOneOutline(Object, Span`1)
+           at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+    OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.StationaryRoundCapsHaveOneOutline(path: "48 36 m 48 36 48 36 48 36 c h") [FAIL]
+      Assert.Equal() Failure: Collections differ
+                                                                                                                    ↓ (pos 19052)
+      Expected: [···, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 201, G = 201, B = 201, A = 255 }, Rgba32 { R = 99, G = 99, B = 99, A = 255 }, Rgba32 { R = 51, G = 51, B = 51, A = 255 }, ···]
+      Actual:   [···, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 147, G = 147, B = 147, A = 255 }, Rgba32 { R = 0, G = 0, B = 0, A = 255 }, Rgba32 { R = 0, G = 0, B = 0, A = 255 }, ···]
+                                                                                                                    ↑ (pos 19052)
+      Stack Trace:
+        solid-closed-cap-fix-20261115/tests/OneImage.Pdf.Tests/SpecTruth/SolidClosedCapTests.cs(30,0): at OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.StationaryRoundCapsHaveOneOutline(String path)
+           at InvokeStub_SolidClosedCapTests.StationaryRoundCapsHaveOneOutline(Object, Span`1)
+           at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+    OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.StationaryRoundCapsHaveOneOutline(path: "48 36 m 48 36 l h h") [FAIL]
+      Assert.Equal() Failure: Collections differ
+                                                                                                                    ↓ (pos 19052)
+      Expected: [···, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 201, G = 201, B = 201, A = 255 }, Rgba32 { R = 99, G = 99, B = 99, A = 255 }, Rgba32 { R = 51, G = 51, B = 51, A = 255 }, ···]
+      Actual:   [···, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 147, G = 147, B = 147, A = 255 }, Rgba32 { R = 0, G = 0, B = 0, A = 255 }, Rgba32 { R = 0, G = 0, B = 0, A = 255 }, ···]
+                                                                                                                    ↑ (pos 19052)
+      Stack Trace:
+        solid-closed-cap-fix-20261115/tests/OneImage.Pdf.Tests/SpecTruth/SolidClosedCapTests.cs(30,0): at OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.StationaryRoundCapsHaveOneOutline(String path)
+           at InvokeStub_SolidClosedCapTests.StationaryRoundCapsHaveOneOutline(Object, Span`1)
+           at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+    OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.StationaryRoundCapsHaveOneOutline(path: "48 36 m 48 36 l h 48 36 l h") [FAIL]
+      Assert.Equal() Failure: Collections differ
+                                                                                                                    ↓ (pos 19052)
+      Expected: [···, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 201, G = 201, B = 201, A = 255 }, Rgba32 { R = 99, G = 99, B = 99, A = 255 }, Rgba32 { R = 51, G = 51, B = 51, A = 255 }, ···]
+      Actual:   [···, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 93, G = 93, B = 93, A = 255 }, Rgba32 { R = 0, G = 0, B = 0, A = 255 }, Rgba32 { R = 0, G = 0, B = 0, A = 255 }, ···]
+                                                                                                                    ↑ (pos 19052)
+      Stack Trace:
+        solid-closed-cap-fix-20261115/tests/OneImage.Pdf.Tests/SpecTruth/SolidClosedCapTests.cs(30,0): at OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.StationaryRoundCapsHaveOneOutline(String path)
+           at InvokeStub_SolidClosedCapTests.StationaryRoundCapsHaveOneOutline(Object, Span`1)
+           at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+    OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.StationaryRoundCapsHaveOneOutline(path: "48 36 m 48 36 48 36 48 36 c h 48 36 48 36 48 36 c "···) [FAIL]
+      Assert.Equal() Failure: Collections differ
+                                                                                                                    ↓ (pos 19052)
+      Expected: [···, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 201, G = 201, B = 201, A = 255 }, Rgba32 { R = 99, G = 99, B = 99, A = 255 }, Rgba32 { R = 51, G = 51, B = 51, A = 255 }, ···]
+      Actual:   [···, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 255, G = 255, B = 255, A = 255 }, Rgba32 { R = 93, G = 93, B = 93, A = 255 }, Rgba32 { R = 0, G = 0, B = 0, A = 255 }, Rgba32 { R = 0, G = 0, B = 0, A = 255 }, ···]
+                                                                                                                    ↑ (pos 19052)
+      Stack Trace:
+        solid-closed-cap-fix-20261115/tests/OneImage.Pdf.Tests/SpecTruth/SolidClosedCapTests.cs(30,0): at OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.StationaryRoundCapsHaveOneOutline(String path)
+           at InvokeStub_SolidClosedCapTests.StationaryRoundCapsHaveOneOutline(Object, Span`1)
+           at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Finished:    OneImage.Pdf.Tests (ID = 'a2cf7641894b8ef1f8913c2e6392c214997d061bd6d2f558f62bed72f50f3c99')
+=== TEST EXECUTION SUMMARY ===
+   OneImage.Pdf.Tests  Total: 36, Errors: 0, Failed: 21, Skipped: 0, Not Run: 0, Time: 1.156s

@@ -1,0 +1,30 @@
+[
+  {
+    "name": "tiny-on",
+    "dpi": 72,
+    "status": "same baseline and head exception",
+    "message": "ImageLimitException: Boolean operations accept coordinates within \u00b133554432 pixels.",
+    "source": "render-before/head logs; duration excluded from identity comparison"
+  },
+  {
+    "name": "moving-cubic-on",
+    "dpi": 72,
+    "status": "same baseline and head exception",
+    "message": "ImageLimitException: Boolean operations accept coordinates within \u00b133554432 pixels.",
+    "source": "render-before/head logs; duration excluded from identity comparison"
+  },
+  {
+    "name": "tiny-on",
+    "dpi": 144,
+    "status": "same baseline and head exception",
+    "message": "ImageLimitException: Boolean operations accept coordinates within \u00b133554432 pixels.",
+    "source": "render-before/head logs; duration excluded from identity comparison"
+  },
+  {
+    "name": "moving-cubic-on",
+    "dpi": 144,
+    "status": "same baseline and head exception",
+    "message": "ImageLimitException: Boolean operations accept coordinates within \u00b133554432 pixels.",
+    "source": "render-before/head logs; duration excluded from identity comparison"
+  }
+]

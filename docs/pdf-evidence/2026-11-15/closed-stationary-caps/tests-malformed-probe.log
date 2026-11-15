@@ -1,0 +1,23 @@
+xUnit.net v3 In-Process Runner v4.0.2+0c7aa4991f (64-bit .NET 10.0.15)
+  Discovering: OneImage.Pdf.Tests
+  Discovered:  OneImage.Pdf.Tests
+  Starting:    OneImage.Pdf.Tests
+    OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.TruncatedRawPathsKeepAlreadyCompletedCoreGeometry(truncatedVerb: 1) [FAIL]
+      Assert.InRange() Failure: Value not in range
+      Range:  (248.46900494077323 - 255.46900494077323)
+      Actual: 0
+      Stack Trace:
+        solid-closed-cap-fix-20261115/tests/OneImage.Pdf.Tests/SpecTruth/SolidClosedCapTests.cs(150,0): at OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.TruncatedRawPathsKeepAlreadyCompletedCoreGeometry(Byte truncatedVerb)
+           at InvokeStub_SolidClosedCapTests.TruncatedRawPathsKeepAlreadyCompletedCoreGeometry(Object, Span`1)
+           at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+    OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.TruncatedRawPathsKeepAlreadyCompletedCoreGeometry(truncatedVerb: 2) [FAIL]
+      Assert.InRange() Failure: Value not in range
+      Range:  (248.46900494077323 - 255.46900494077323)
+      Actual: 0
+      Stack Trace:
+        solid-closed-cap-fix-20261115/tests/OneImage.Pdf.Tests/SpecTruth/SolidClosedCapTests.cs(150,0): at OneImage.Pdf.Tests.SpecTruth.SolidClosedCapTests.TruncatedRawPathsKeepAlreadyCompletedCoreGeometry(Byte truncatedVerb)
+           at InvokeStub_SolidClosedCapTests.TruncatedRawPathsKeepAlreadyCompletedCoreGeometry(Object, Span`1)
+           at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+  Finished:    OneImage.Pdf.Tests (ID = '7611e3ad2f7eaf9a468edb4f86c915f948c243cc64761ece2a5ee3d016d13e49')
+=== TEST EXECUTION SUMMARY ===
+   OneImage.Pdf.Tests  Total: 3, Errors: 0, Failed: 2, Skipped: 0, Not Run: 0, Time: 0.265s

@@ -1,0 +1,435 @@
+diff --git a/CHANGELOG.md b/CHANGELOG.md
+--- a/CHANGELOG.md
++++ b/CHANGELOG.md
+@@ -9,6 +9,8 @@
+ - `RecursiveAI.OneImage.Pdf`: opt-in `PdfRenderOptions.SmoothMagnifiedImages` uses smooth sampling for enlarged raster images even when `/Interpolate` is false or omitted, for a display closer to many PDF viewers. Defaults, image reduction and stencil masks are unchanged.
+ 
+ ### Fixed
++
++- `RecursiveAI.OneImage.Pdf`: construct exact zero-length round caps once for closed subpaths, preventing excess edge coverage while preserving dash phase, transforms and hairline sizing.
+ 
+ - `RecursiveAI.OneImage.Pdf`: zero-length round-capped subpaths no longer paint dots during dash gaps. Dash phase, odd patterns, zero-length dashes and subpath resets are respected without changing solid strokes or hairline sizing.
+ 
+diff --git a/src/OneImage.Pdf/Render/CanvasDevice.cs b/src/OneImage.Pdf/Render/CanvasDevice.cs
+--- a/src/OneImage.Pdf/Render/CanvasDevice.cs
++++ b/src/OneImage.Pdf/Render/CanvasDevice.cs
+@@ -162,7 +162,7 @@
+             return null;
+         }
+ 
+-        DrawingPath? user = PathConvert.ToPath(path, PdfMatrix.Identity, clamp: false);
++        DrawingPath? user = PathConvert.ToPath(path, PdfMatrix.Identity, clamp: false, omitStationaryCloses: state.LineCap == 1);
+         float[] dash = user is null && state.LineCap == 1 ? Dashes(state, null, scale) : [];
+         DrawingPath? outline = user is null ? null : StrokeUserPath(user, state, m, scale, out dash);
+         if (state.LineCap != 1 || !DashStartsOn(dash, state.DashPhase))
+diff --git a/src/OneImage.Pdf/Render/PathConvert.cs b/src/OneImage.Pdf/Render/PathConvert.cs
+--- a/src/OneImage.Pdf/Render/PathConvert.cs
++++ b/src/OneImage.Pdf/Render/PathConvert.cs
+@@ -14,12 +14,17 @@
+     private const double Limit = 1 << 24;
+ 
+     /// <summary>Appends <paramref name="path"/> mapped through <paramref name="m"/> to <paramref name="b"/>. Returns false (and appends nothing useful) when a coordinate is not finite.</summary>
+-    public static bool Append(PathBuilder b, in PdfPath path, in PdfMatrix m, bool clamp)
++    public static bool Append(PathBuilder b, in PdfPath path, in PdfMatrix m, bool clamp) =>
++        Append(b, path, m, clamp, false, out _);
++
++    private static bool Append(PathBuilder b, in PdfPath path, in PdfMatrix m, bool clamp, bool omitStationaryCloses, out bool truncatedSegment)
+     {
++        truncatedSegment = false;
+         ReadOnlySpan<byte> verbs = path.VerbBytes.Span;
+         ReadOnlySpan<double> pts = path.Points.Span;
+         int p = 0;
+-        bool open = false;
++        bool open = false, stationary = false;
++        double sx = 0, sy = 0;
+         for (int i = 0; i < verbs.Length; i++)
+         {
+             switch ((PdfPathVerb)verbs[i])
+@@ -31,6 +36,8 @@
+                             return true;
+                         }
+ 
++                        sx = pts[p]; sy = pts[p + 1];
++                        stationary = omitStationaryCloses;
+                         (float x, float y) = Map(pts[p], pts[p + 1], m, clamp);
+                         p += 2;
+                         if (!float.IsFinite(x + y))
+@@ -47,9 +54,11 @@
+                     {
+                         if (p + 2 > pts.Length)
+                         {
++                            truncatedSegment = true;
+                             return true;
+                         }
+ 
++                        stationary = stationary && pts[p] == sx && pts[p + 1] == sy;
+                         (float x, float y) = Map(pts[p], pts[p + 1], m, clamp);
+                         p += 2;
+                         if (!float.IsFinite(x + y))
+@@ -74,9 +83,12 @@
+                     {
+                         if (p + 6 > pts.Length)
+                         {
++                            truncatedSegment = true;
+                             return true;
+                         }
+ 
++                        stationary = stationary && pts[p] == sx && pts[p + 1] == sy
++                            && pts[p + 2] == sx && pts[p + 3] == sy && pts[p + 4] == sx && pts[p + 5] == sy;
+                         (float x1, float y1) = Map(pts[p], pts[p + 1], m, clamp);
+                         (float x2, float y2) = Map(pts[p + 2], pts[p + 3], m, clamp);
+                         (float x3, float y3) = Map(pts[p + 4], pts[p + 5], m, clamp);
+@@ -97,7 +109,10 @@
+                     }
+ 
+                 case PdfPathVerb.Close:
+-                    if (open)
++                    // The PDF round-cap pass owns exact stationary subpaths. Keeping them open here prevents
++                    // the core stroker from constructing a second disc. Compare doubles before float conversion:
++                    // a short segment rounded to one point is not an exact PDF degenerate subpath.
++                    if (open && !stationary)
+                     {
+                         b.Close();
+                     }
+@@ -111,8 +126,9 @@
+         return true;
+     }
+ 
+-    /// <summary>Builds the path mapped through <paramref name="m"/>, or null when it is empty or has a coordinate that is not finite.</summary>
+-    public static DrawingPath? ToPath(in PdfPath path, in PdfMatrix m, bool clamp = true)
++    /// <summary>Builds the path mapped through <paramref name="m"/>, or null when it is empty or has a coordinate that is not finite.
++    /// Omit stationary closes only when the caller supplies their zero-length round caps separately.</summary>
++    public static DrawingPath? ToPath(in PdfPath path, in PdfMatrix m, bool clamp = true, bool omitStationaryCloses = false)
+     {
+         if (path.IsEmpty)
+         {
+@@ -120,9 +136,17 @@
+         }
+ 
+         var b = new PathBuilder();
+-        if (!Append(b, path, m, clamp))
++        if (!Append(b, path, m, clamp, omitStationaryCloses, out bool truncatedSegment))
+         {
+             return null;
++        }
++
++        // ZeroLengthDiscs does not flush the current subpath when a line or curve lacks operands. Preserve the
++        // original core outline for such malformed input rather than dropping its already completed closed geometry.
++        if (omitStationaryCloses && truncatedSegment)
++        {
++            b = new PathBuilder();
++            Append(b, path, m, clamp);
+         }
+ 
+         DrawingPath built = b.Build();
+diff --git a/tests/OneImage.Pdf.Tests/SpecTruth/SolidClosedCapTests.cs b/tests/OneImage.Pdf.Tests/SpecTruth/SolidClosedCapTests.cs
+new file mode 100644
+--- /dev/null
++++ b/tests/OneImage.Pdf.Tests/SpecTruth/SolidClosedCapTests.cs
+@@ -0,0 +1,154 @@
++// SPDX-License-Identifier: MIT
++// Copyright (c) 2026 OneImage contributors
++// Independently authored numeric geometry and Type 3 program; no external assets or reference pixels.
++using OneImage.Pdf.Render;
++using OnePdf;
++using static OneImage.Pdf.Tests.SpecTruth.Spec;
++
++namespace OneImage.Pdf.Tests.SpecTruth;
++
++public class SolidClosedCapTests
++{
++    public static TheoryData<string> StationaryPaths => new()
++    {
++        "48 36 m h", "48 36 m 48 36 l h", "48 36 0 0 re",
++        "48 36 m 48 36 l 48 36 l h", "48 36 m 48 36 48 36 48 36 c h",
++        "48 36 m h h", "48 36 m 48 36 l h h", "48 36 m 48 36 l h 48 36 l h",
++        "48 36 m 48 36 48 36 48 36 c h 48 36 48 36 48 36 c h",
++    };
++
++    [Theory]
++    [MemberData(nameof(StationaryPaths))]
++    [Trait("Section", "8.5.3.2")]
++    public void StationaryRoundCapsHaveOneOutline(string path)
++    {
++        Rgba32[] control = Pix(Page("0 G 18 w 1 J 48 36 m 48 36 l S", w: 192, h: 144));
++        double area = BlackArea(control, 192, 0, 0, 192, 144);
++        Assert.InRange(area, (Math.PI * 81) - 6, (Math.PI * 81) + 1);
++        foreach (string dash in new[] { "[] 0 d", "[11 17] 3 d", "[0 17] 0 d" })
++        {
++            Assert.Equal(control, Pix(Page($"0 G 18 w 1 J {dash} {path} S", w: 192, h: 144)));
++        }
++        Assert.Equal(0, BlackArea(Pix(Page($"0 G 18 w 1 J [11 17] 19 d {path} S", w: 192, h: 144)), 192, 0, 0, 192, 144));
++    }
++
++    [Theory]
++    [InlineData("", 18, 72)]
++    [InlineData("", 18, 144)]
++    [InlineData("1.5 0.3 0.25 0.8 -33 -7.2 cm", 18, 144)]
++    [InlineData("-1 0 0 1 96 0 cm", 18, 144)]
++    [InlineData("", 0, 72)]
++    [InlineData("", 0, 144)]
++    [InlineData("1.5 0.3 0.25 0.8 -33 -7.2 cm", 0, 144)]
++    [InlineData("-1 0 0 1 96 0 cm", 0, 144)]
++    [InlineData("", 0.01, 144)]
++    public void ClosingDoesNotChangeTransformOrWidth(string transform, double width, int dpi)
++    {
++        string setup = $"0 G {transform} {N(width)} w 1 J ";
++        var options = new PdfRenderOptions { Dpi = dpi };
++        Rgba32[] control = Pix(Page(setup + "48 36 m 48 36 l S", w: 192, h: 144), options);
++        Assert.Contains(control, p => p.R != 255);
++        foreach (string path in new[] { "48 36 m 48 36 l h", "48 36 0 0 re", "48 36 m h" })
++        {
++            Assert.Equal(control, Pix(Page(setup + path + " S", w: 192, h: 144), options));
++        }
++    }
++
++    [Fact]
++    public void MixedSubpathsAndTrailingMoveAreUnaffected()
++    {
++        const string setup = "0 G 6 w 1 J ";
++        const string ordinary = "9 12 m 29 12 l 29 22 l h";
++        const string tail = " 130 95 m";
++        Rgba32[] control = Pix(Page(setup + ordinary + " 48 36 m 48 36 l" + tail + " S", w: 192, h: 144));
++        Assert.Equal(control, Pix(Page(setup + ordinary + " 48 36 0 0 re" + tail + " S", w: 192, h: 144)));
++        Assert.Equal(control, Pix(Page(setup + ordinary + " S 48 36 0 0 re S" + tail + " S", w: 192, h: 144)));
++        // A stationary close followed by real geometry must not turn the real segment into a closed path.
++        Assert.Equal(Pix(Page(setup + "48 36 m 68 36 l S", w: 192, h: 144)),
++            Pix(Page(setup + "48 36 m 48 36 l h 68 36 l S", w: 192, h: 144)));
++    }
++
++    [Theory]
++    [InlineData(0)]
++    [InlineData(2)]
++    public void OtherCapStylesKeepTheirOpenControls(int cap)
++    {
++        foreach (string dash in new[] { "[] 0 d", "[11 17] 3 d", "[11 17] 19 d" })
++        {
++            Assert.Equal(0, BlackArea(Pix(Page($"0 G 18 w {cap} J {dash} 48 36 m 48 36 l S", w: 192, h: 144)), 192, 0, 0, 192, 144));
++        }
++    }
++
++    [Theory]
++    [InlineData("[] 0 d")]
++    [InlineData("[11 17] 3 d")]
++    [InlineData("[11 17] 19 d")]
++    public void Type3StrokeUsesTheSameCapOwnership(string dash)
++    {
++        byte[] Glyph(string path) => Page("BT /F 1 Tf 1 0 0 1 0 0 Tm (a) Tj ET", "/Font << /F 5 0 R >>", 192, 144,
++            ["<< /Type /Font /Subtype /Type3 /FontBBox [0 0 100 80] /FontMatrix [1 0 0 1 0 0] /CharProcs << /a 6 0 R >> /Encoding << /Type /Encoding /Differences [97 /a] >> /FirstChar 97 /LastChar 97 /Widths [100] /Resources << >> >>",
++             Stream("", "100 0 d0 0 G 18 w 1 J " + dash + " " + path + " S")]);
++        Rgba32[] control = Pix(Glyph("48 36 m 48 36 l"));
++        Assert.Equal(control, Pix(Glyph("48 36 m 48 36 l h")));
++        Assert.Equal(Pix(Page("0 G 18 w 1 J " + dash + " 48 36 m 48 36 l S", w: 192, h: 144)), control);
++    }
++    [Fact]
++    public void PositiveGeometryThatRoundsToOneFloatPointIsStillStroked()
++    {
++        Rgba32[] actual = Pix(Page("0 G 18 w 1 J 48 36 m 48.00000001 36 l h S", w: 192, h: 144));
++        Assert.InRange(BlackArea(actual, 192, 0, 0, 192, 144), (Math.PI * 81) - 6, (Math.PI * 81) + 1);
++    }
++
++    [Theory]
++    [InlineData("48 36 m", "")]
++    [InlineData("h h", "")]
++    [InlineData("48 36 l", "")]
++    [InlineData("48 36 m 48 36 l h 2 l", "48 36 m 48 36 l")]
++    [InlineData("48 36 m 48 36 l h 48 36 48 c", "48 36 m 48 36 l")]
++    public void IncompleteAndMoveOnlyContentKeepsCompletedGeometry(string path, string expected)
++    {
++        const string setup = "0 G 18 w 1 J ";
++        Assert.Equal(Pix(Page(setup + expected + " S", w: 192, h: 144)),
++            Pix(Page(setup + path + " S", w: 192, h: 144)));
++    }
++
++    [Theory]
++    [InlineData(1)]
++    [InlineData(4)]
++    [InlineData(16)]
++    public void ClosedCapsAreRegionAndThreadDeterministic(int degree)
++    {
++        byte[] pdf = Page("0 G 22 w 1 J 127 129 m 127 129 l h 257 257 0 0 re S", w: 384, h: 384);
++        Rgba32[] whole = RenderTests.Load(pdf, new PdfRenderOptions { Dpi = 72 }).ToArray<Rgba32>(maxDegree: 1);
++        Assert.Equal(whole, RenderTests.Load(pdf, new PdfRenderOptions { Dpi = 72 }).ToArray<Rgba32>(maxDegree: degree));
++        var region = new ImageRect(111, 111, 162, 162);
++        var part = new Rgba32[region.Width * region.Height];
++        RenderTests.Load(pdf, new PdfRenderOptions { Dpi = 72 }).CopyPixelsTo<Rgba32>(part, region, degree);
++        for (int y = 0; y < region.Height; y++)
++        {
++            Assert.True(part.AsSpan(y * region.Width, region.Width).SequenceEqual(whole.AsSpan(((y + region.Y) * 384) + region.X, region.Width)));
++        }
++    }
++
++    [Theory]
++    [InlineData((byte)PdfPathVerb.Move)]
++    [InlineData((byte)PdfPathVerb.Line)]
++    [InlineData((byte)PdfPathVerb.Curve)]
++    public void TruncatedRawPathsKeepAlreadyCompletedCoreGeometry(byte truncatedVerb)
++    {
++        byte[] verbs = [(byte)PdfPathVerb.Move, (byte)PdfPathVerb.Line, (byte)PdfPathVerb.Close, truncatedVerb];
++        double[] points = [48, 36, 48, 36];
++        using PdfDocument document = PdfDocument.Open(Page("", w: 192, h: 144));
++        var page = new PageRender(document.Pages[0], new PdfRenderOptions { Dpi = 72 });
++        using var canvas = new Canvas(192, 144, PixelFormat.Rgba8);
++        canvas.Clear(new Rgba32(255, 255, 255, 255));
++        using var device = new CanvasDevice(page, PdfMatrix.Identity, canvas, 0, null, CancellationToken.None);
++        var black = new PdfColor(PdfColorSpace.Gray, 0, 0, 0, 0, null);
++        var state = new PdfGraphicsState(PdfMatrix.Identity, black, black, 18, 1, 0, 10,
++            ReadOnlyMemory<double>.Empty, 0, 1, "RelativeColorimetric", 1, 1, "Normal", 0, false, false, false, 0);
++        device.StrokePath(new PdfPath(verbs, points), state);
++        Rgba32[] actual = canvas.Snapshot().ToArray<Rgba32>();
++        Assert.InRange(BlackArea(actual, 192, 0, 0, 192, 144), (Math.PI * 81) - 6, (Math.PI * 81) + 1);
++    }
++
++}
+diff --git a/tools/solid-closed-caps/generate.py b/tools/solid-closed-caps/generate.py
+new file mode 100644
+--- /dev/null
++++ b/tools/solid-closed-caps/generate.py
+@@ -0,0 +1,83 @@
++# SPDX-License-Identifier: MIT
++# Copyright (c) 2026 OneImage contributors
++# Original numeric geometry and Type 3 glyph program. No external fixture inputs.
++import argparse
++import hashlib
++import json
++from pathlib import Path
++
++
++def document(content, type3=False):
++    resources = '/Font << /F 5 0 R >>' if type3 else ''
++    glyph = content
++    if type3:
++        content = 'BT /F 1 Tf 1 0 0 1 0 0 Tm (a) Tj ET'
++    def stream(s):
++        data = s.encode('ascii')
++        return b'<< /Length ' + str(len(data)).encode() + b' >>\nstream\n' + data + b'\nendstream'
++    objects = [b'<< /Type /Catalog /Pages 2 0 R >>', b'<< /Type /Pages /Kids [3 0 R] /Count 1 >>',
++        ('<< /Type /Page /Parent 2 0 R /MediaBox [0 0 192 144] /CropBox [0 0 192 144] /Rotate 0 /Resources << ' + resources + ' >> /Contents 4 0 R >>').encode(), stream(content)]
++    if type3:
++        objects += [b'<< /Type /Font /Subtype /Type3 /FontBBox [0 0 100 80] /FontMatrix [1 0 0 1 0 0] /CharProcs << /a 6 0 R >> /Encoding << /Type /Encoding /Differences [97 /a] >> /FirstChar 97 /LastChar 97 /Widths [100] /Resources << >> >>', stream('100 0 d0 ' + glyph)]
++    data = b'%PDF-1.7\n'
++    offsets = []
++    for number, body in enumerate(objects, 1):
++        offsets.append(len(data))
++        data += f'{number} 0 obj\n'.encode() + body + b'\nendobj\n'
++    xref = len(data)
++    data += f'xref\n0 {len(objects)+1}\n0000000000 65535 f \n'.encode()
++    data += b''.join(f'{position:010d} 00000 n \n'.encode() for position in offsets)
++    return data + f'trailer\n<< /Size {len(objects)+1} /Root 1 0 R >>\nstartxref\n{xref}\n%%EOF\n'.encode()
++
++
++def cases():
++    result = []
++    def add(name, path, dash='[] 0 d', width=18, cap=1, transform='', type3=False, change=False):
++        result.append(dict(name=name, content=f'0 G {transform} {width} w {cap} J {dash} {path} S', type3=type3, expected_change=change))
++    paths = {'open':'48 36 m 48 36 l', 'closed':'48 36 m 48 36 l h', 'rectangle':'48 36 0 0 re',
++        'close-only':'48 36 m h', 'repeated':'48 36 m 48 36 l 48 36 l h',
++        'cubic':'48 36 m 48 36 48 36 48 36 c h', 'reclosed':'48 36 m 48 36 l h h',
++        'close-line-close':'48 36 m 48 36 l h 48 36 l h', 'move-only':'48 36 m'}
++    for shape,path in paths.items():
++        for label,dash in [('solid','[] 0 d'),('on','[11 17] 3 d'),('off','[11 17] 19 d'),('zero-on','[0 17] 0 d')]:
++            add(shape+'-'+label, path, dash, change=label=='solid' and shape not in ('open','close-only','move-only'))
++    for label,transform,width in [('skew','1.5 0.3 0.25 0.8 -33 -7.2 cm',18),('reflect','-1 0 0 1 96 0 cm',18),
++        ('hairline','',0),('skew-hairline','1.5 0.3 0.25 0.8 -33 -7.2 cm',0),('minimum','',0.01)]:
++        for shape in ('open','closed'):
++            add(label+'-'+shape,paths[shape],width=width,transform=transform,change=shape=='closed')
++    for cap in (0,2):
++        for shape in ('open','closed','close-only'):
++            add(f'cap-{cap}-'+shape,paths[shape],cap=cap)
++    for shape,path in [('positive','48 36 m 65 36 l'),('ordinary-closed','20 20 m 35 20 l 35 30 l h'),
++        ('tiny','48 36 m 48.125 36 l h'),('float-collapse','48 36 m 48.00000001 36 l h'),
++        ('moving-cubic','48 36 m 49 36 47 36 48 36 c h')]:
++        for label,dash in [('solid','[] 0 d'),('on','[11 17] 3 d'),('off','[11 17] 19 d')]:
++            add(shape+'-'+label,path,dash)
++    for label,dash in [('all-zero','[0 0] 0 d'),('tiny-fallback','[0.00001 0.00001] 0 d')]:
++        for shape in ('open','closed'):
++            add(label+'-'+shape,paths[shape],dash,change=shape=='closed')
++    for label,path in [('incomplete-line','48 36 m 48 36 l h 2 l'),('incomplete-curve','48 36 m 48 36 l h 48 36 48 c'),
++        ('prefix','48 36 m 48 36 l h 68 36 l'),('mixed','9 12 m 29 12 l 29 22 l h 48 36 0 0 re 130 95 m')]:
++        add(label,path,change=True)
++    for label,dash in [('solid','[] 0 d'),('on','[11 17] 3 d'),('off','[11 17] 19 d')]:
++        for shape in ('open','closed'):
++            add('type3-'+shape+'-'+label,paths[shape],dash,type3=True,change=shape=='closed' and label=='solid')
++    return result
++
++
++def main():
++    parser=argparse.ArgumentParser()
++    parser.add_argument('output',type=Path)
++    args=parser.parse_args()
++    args.output.mkdir(parents=True,exist_ok=True)
++    pdf=args.output/'pdf';pdf.mkdir(exist_ok=True)
++    rows=cases()
++    for row in rows:
++        data=document(row['content'],row['type3'])
++        (pdf/(row['name']+'.pdf')).write_bytes(data)
++        row['input_sha256']=hashlib.sha256(data).hexdigest()
++    (args.output/'cases.json').write_text(json.dumps(rows,indent=2)+'\n')
++    (args.output/'batch.txt').write_text(''.join(str((pdf/(row['name']+'.pdf')).resolve())+'\n' for row in rows))
++    print(f'Wrote {len(rows)} original MIT control PDFs.')
++
++if __name__=='__main__': main()
+diff --git a/tools/solid-closed-caps/README.md b/tools/solid-closed-caps/README.md
+new file mode 100644
+--- /dev/null
++++ b/tools/solid-closed-caps/README.md
+@@ -0,0 +1,33 @@
++# Closed stationary round caps
++
++These controls, their numeric geometry, the Type 3 glyph program, generator and new
++regression tests are original MIT work. No private PDF, external artwork, vendor
++fixture or existing font is an input. Run `python3 tools/solid-closed-caps/generate.py
++<output-directory>` to write the 81 small PDFs and their SHA-256 manifest.
++
++ISO 32000-1:2008 8.5.3.2 defines a degenerate round-capped subpath as one filled
++circle at its point. Closing a stationary path must not add a second outline to
++that circle. Section 8.4.3.6 continues to control whether the initial dash is on.
++The tests use numeric geometry, exact equivalence controls and analytical disc
++area bounds, not a reference renderer's antialiasing pixels.
++
++The PDF-specific conversion omits stationary closes only when its separate cap
++pass owns round caps. It compares original double coordinates before float
++conversion. Ordinary paths, other cap styles, fills, core stroke construction and
++non-Type3 glyph-outline conversion retain their existing behavior. Truncated raw
++line/curve operands retain the original core outline because the cap pass does
++not flush their unfinished subpath. No general antialiasing or width policy changes.
++
++This is a separate change on top of the zero-length dash-gap correction. Keep the
++two fixes in separate commits/PRs. The dash normalization and phase code is unchanged.
++
++Reference evidence must use matching full-page boxes, DPI, rotation, annotations
++and background, and retain raw images without crop, scaling, alignment or retouching.
++PDFium and MuPDF disagree on some degenerate shapes and their edge coverage. Their
++outputs are comparisons, not analytical oracles. Native PDF.js/WebView was not
++available; Node Canvas omits zero-length positive dots and cannot establish parity.
++
++Two additional positive-length ON-dash controls (`tiny-on` and `moving-cubic-on`)
++raise the same pre-existing Boolean-coordinate ImageLimitException before and
++after this change. Retain these as render errors, not successful pixel matches.
++They are a separate follow-up and are not fixed here.
+diff --git a/tools/solid-closed-caps/LICENSE b/tools/solid-closed-caps/LICENSE
+new file mode 100644
+--- /dev/null
++++ b/tools/solid-closed-caps/LICENSE
+@@ -0,0 +1,21 @@
++MIT License
++
++Copyright (c) 2026 OneImage contributors
++
++Permission is hereby granted, free of charge, to any person obtaining a copy
++of this software and associated documentation files (the "Software"), to deal
++in the Software without restriction, including without limitation the rights
++to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
++copies of the Software, and to permit persons to whom the Software is
++furnished to do so, subject to the following conditions:
++
++The above copyright notice and this permission notice shall be included in all
++copies or substantial portions of the Software.
++
++THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
++IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
++FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
++AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
++LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
++OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
++SOFTWARE.

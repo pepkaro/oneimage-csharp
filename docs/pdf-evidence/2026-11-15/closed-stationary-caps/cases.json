@@ -1,0 +1,569 @@
+[
+  {
+    "name": "open-solid",
+    "content": "0 G  18 w 1 J [] 0 d 48 36 m 48 36 l S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "16e90340661109b602ae2e7dd1ffb58767a2d50a597ed368c4360a93c39291e0"
+  },
+  {
+    "name": "open-on",
+    "content": "0 G  18 w 1 J [11 17] 3 d 48 36 m 48 36 l S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "896ffe1fd29195278670c6862634fa54f9df1831f875ea321fbaadaa6e8cb461"
+  },
+  {
+    "name": "open-off",
+    "content": "0 G  18 w 1 J [11 17] 19 d 48 36 m 48 36 l S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "56107fbb7d686812efc80f20df299ba237fd8af3f18bf23a0a63234c181a7ceb"
+  },
+  {
+    "name": "open-zero-on",
+    "content": "0 G  18 w 1 J [0 17] 0 d 48 36 m 48 36 l S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "fe274f8a18c3fda50b404bb4076ccfbf8d47c3244ab8f09f15542f51abc66fb5"
+  },
+  {
+    "name": "closed-solid",
+    "content": "0 G  18 w 1 J [] 0 d 48 36 m 48 36 l h S",
+    "type3": false,
+    "expected_change": true,
+    "input_sha256": "78d939812d0945dbf0ba84958465aeef029e4e83929785b07c8423505696fb86"
+  },
+  {
+    "name": "closed-on",
+    "content": "0 G  18 w 1 J [11 17] 3 d 48 36 m 48 36 l h S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "aa403fbb16ae13159b165845fbad744710efa89532b5d9367925c35c0386dab3"
+  },
+  {
+    "name": "closed-off",
+    "content": "0 G  18 w 1 J [11 17] 19 d 48 36 m 48 36 l h S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "50f7821e272ec0f071a0772a62d878d56b5cea044a95e2eef238622d775a3914"
+  },
+  {
+    "name": "closed-zero-on",
+    "content": "0 G  18 w 1 J [0 17] 0 d 48 36 m 48 36 l h S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "be989683e16401b4697832b4109271af2d69aa502b4712095502f4d635a74d66"
+  },
+  {
+    "name": "rectangle-solid",
+    "content": "0 G  18 w 1 J [] 0 d 48 36 0 0 re S",
+    "type3": false,
+    "expected_change": true,
+    "input_sha256": "b4e331d0f2b3fba83829f4d9a62de84f9f29d9bfc7ade134af4f929964be9eb2"
+  },
+  {
+    "name": "rectangle-on",
+    "content": "0 G  18 w 1 J [11 17] 3 d 48 36 0 0 re S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "af3152bba1fc7d36d2b89d91bacf8dcca80975164b57520d9239a398e3e64824"
+  },
+  {
+    "name": "rectangle-off",
+    "content": "0 G  18 w 1 J [11 17] 19 d 48 36 0 0 re S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "314066b2d265ddf9c7546a54debe18e9614fc382aa86a48a6561f44633072bf3"
+  },
+  {
+    "name": "rectangle-zero-on",
+    "content": "0 G  18 w 1 J [0 17] 0 d 48 36 0 0 re S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "5534b9275a8e48ec599dccd33c080a528a742602498eb446359042f4dfda78a0"
+  },
+  {
+    "name": "close-only-solid",
+    "content": "0 G  18 w 1 J [] 0 d 48 36 m h S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "3d0b700f8d25e8141706580a808ea05940c18e3ce01aac49bd694b4b862433de"
+  },
+  {
+    "name": "close-only-on",
+    "content": "0 G  18 w 1 J [11 17] 3 d 48 36 m h S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "430924f799d953e4c9258115aabf84fa0e4aff37b95d7939f543d187e12df28e"
+  },
+  {
+    "name": "close-only-off",
+    "content": "0 G  18 w 1 J [11 17] 19 d 48 36 m h S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "c1482ef1380ad3697fc25ea20ad57aede8ab81bc72d6a760045f43d7e8ba1d49"
+  },
+  {
+    "name": "close-only-zero-on",
+    "content": "0 G  18 w 1 J [0 17] 0 d 48 36 m h S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "41c87d5829b3b350fbf2a11db3020e717d12e4e1ba14dee8c7bcf67d09649fec"
+  },
+  {
+    "name": "repeated-solid",
+    "content": "0 G  18 w 1 J [] 0 d 48 36 m 48 36 l 48 36 l h S",
+    "type3": false,
+    "expected_change": true,
+    "input_sha256": "02cb780c94ebdd25d185444575146dc06212e4cc39e10fccf6b851e9432038bb"
+  },
+  {
+    "name": "repeated-on",
+    "content": "0 G  18 w 1 J [11 17] 3 d 48 36 m 48 36 l 48 36 l h S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "4bf930e1d0cec067d7b2bf951afc3ee1b1c9f5b86ab7badc9fe16a4409ddc390"
+  },
+  {
+    "name": "repeated-off",
+    "content": "0 G  18 w 1 J [11 17] 19 d 48 36 m 48 36 l 48 36 l h S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "14fb3373767b11aa17abd4fe8e3b479b3ec946181619b04782267bfdad4144b9"
+  },
+  {
+    "name": "repeated-zero-on",
+    "content": "0 G  18 w 1 J [0 17] 0 d 48 36 m 48 36 l 48 36 l h S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "d9821036fd849e20c1482d0718185bdea6e2292358b1198df17c61d3d785d68a"
+  },
+  {
+    "name": "cubic-solid",
+    "content": "0 G  18 w 1 J [] 0 d 48 36 m 48 36 48 36 48 36 c h S",
+    "type3": false,
+    "expected_change": true,
+    "input_sha256": "7765e8f5475aafef8938ce777eedb915c62b2fd15f2f8027da1866bd4074d9ee"
+  },
+  {
+    "name": "cubic-on",
+    "content": "0 G  18 w 1 J [11 17] 3 d 48 36 m 48 36 48 36 48 36 c h S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "d36ef65bfe29eb8dd312ae891418632dd6338cfa41583b477aea285b70381688"
+  },
+  {
+    "name": "cubic-off",
+    "content": "0 G  18 w 1 J [11 17] 19 d 48 36 m 48 36 48 36 48 36 c h S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "0ad7308b99ec3395ce2481a62278ec06db93e8d7248b2a418f6e1353882bb8ab"
+  },
+  {
+    "name": "cubic-zero-on",
+    "content": "0 G  18 w 1 J [0 17] 0 d 48 36 m 48 36 48 36 48 36 c h S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "7d6df35da4b935d566fc060ac4643f117b786089ee6779be8585d6a4b1addacb"
+  },
+  {
+    "name": "reclosed-solid",
+    "content": "0 G  18 w 1 J [] 0 d 48 36 m 48 36 l h h S",
+    "type3": false,
+    "expected_change": true,
+    "input_sha256": "f99224ba942d8294bd95e43781dde59aa13089a6f00cf2fe0ccd0759f2a8050d"
+  },
+  {
+    "name": "reclosed-on",
+    "content": "0 G  18 w 1 J [11 17] 3 d 48 36 m 48 36 l h h S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "edb326dade651df19146cf4e5abf3c2984f25f8d60883a71016dc9b5c18e605e"
+  },
+  {
+    "name": "reclosed-off",
+    "content": "0 G  18 w 1 J [11 17] 19 d 48 36 m 48 36 l h h S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "8ff5503fce127af4d957e064aef54c45e4c33d69153f0a55fb9671bc4da5e9b1"
+  },
+  {
+    "name": "reclosed-zero-on",
+    "content": "0 G  18 w 1 J [0 17] 0 d 48 36 m 48 36 l h h S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "392fe4fe366b6241f5826ef74351c981d746949315944be56f1b72b07edaf776"
+  },
+  {
+    "name": "close-line-close-solid",
+    "content": "0 G  18 w 1 J [] 0 d 48 36 m 48 36 l h 48 36 l h S",
+    "type3": false,
+    "expected_change": true,
+    "input_sha256": "3e3c6beb67457514e586823a61c53a6acb71da3ebedd6bf0f9cc514422be91bd"
+  },
+  {
+    "name": "close-line-close-on",
+    "content": "0 G  18 w 1 J [11 17] 3 d 48 36 m 48 36 l h 48 36 l h S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "0c8e0feb26a00012789f2ccde1dd90a575f1f18cf1f03a47707f403fd3125283"
+  },
+  {
+    "name": "close-line-close-off",
+    "content": "0 G  18 w 1 J [11 17] 19 d 48 36 m 48 36 l h 48 36 l h S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "1843669d6b3c839a708ca52e00fe32565c4e82080fcab590e006fdcb2ace7a10"
+  },
+  {
+    "name": "close-line-close-zero-on",
+    "content": "0 G  18 w 1 J [0 17] 0 d 48 36 m 48 36 l h 48 36 l h S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "e2e8639e094a8b3214ba5b592596636b7c12b79a0d8da4e32dea1299fd335784"
+  },
+  {
+    "name": "move-only-solid",
+    "content": "0 G  18 w 1 J [] 0 d 48 36 m S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "791e7044709c42ef486c6e54857f788a915343bd2846b786ca87b5d548d79b8a"
+  },
+  {
+    "name": "move-only-on",
+    "content": "0 G  18 w 1 J [11 17] 3 d 48 36 m S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "1d05844bf67a368f1673770ec4ac75a9fdb01ae692413d36c208569499aa9ae1"
+  },
+  {
+    "name": "move-only-off",
+    "content": "0 G  18 w 1 J [11 17] 19 d 48 36 m S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "440c0bf2cda7aa1cc45ef7caedb264cce656ab745fea0bf48e8ba7348721ecdc"
+  },
+  {
+    "name": "move-only-zero-on",
+    "content": "0 G  18 w 1 J [0 17] 0 d 48 36 m S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "1ac3b1f8455adca75b6df852c374267c30d7451aaeaf085dd87fb30c57d1a465"
+  },
+  {
+    "name": "skew-open",
+    "content": "0 G 1.5 0.3 0.25 0.8 -33 -7.2 cm 18 w 1 J [] 0 d 48 36 m 48 36 l S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "ec2eff69caac1f148de751835b06c036380d1a82f6dd92a2a7ab83f8ba82d579"
+  },
+  {
+    "name": "skew-closed",
+    "content": "0 G 1.5 0.3 0.25 0.8 -33 -7.2 cm 18 w 1 J [] 0 d 48 36 m 48 36 l h S",
+    "type3": false,
+    "expected_change": true,
+    "input_sha256": "3b763c5f15fc9875d0c931dc89712de22ee0639c68b419251148bd8f76b2c6bb"
+  },
+  {
+    "name": "reflect-open",
+    "content": "0 G -1 0 0 1 96 0 cm 18 w 1 J [] 0 d 48 36 m 48 36 l S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "0066af15e4729c6d599ced85ae06b22ffc4f1f462a7af927a9fc143b4abb197c"
+  },
+  {
+    "name": "reflect-closed",
+    "content": "0 G -1 0 0 1 96 0 cm 18 w 1 J [] 0 d 48 36 m 48 36 l h S",
+    "type3": false,
+    "expected_change": true,
+    "input_sha256": "e9acdaf9a0124516a3694739853e417323df878a54b00341afc093e7fdf66e07"
+  },
+  {
+    "name": "hairline-open",
+    "content": "0 G  0 w 1 J [] 0 d 48 36 m 48 36 l S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "3b0321bb0c2cf8f74d162814f2033871cb54900a6aed02767f0c691f6608e1a0"
+  },
+  {
+    "name": "hairline-closed",
+    "content": "0 G  0 w 1 J [] 0 d 48 36 m 48 36 l h S",
+    "type3": false,
+    "expected_change": true,
+    "input_sha256": "fe38fff49f5259b4f5c6b1db02712c5d74f4aba3a5d7ed4b8c2975bddfe7fc7e"
+  },
+  {
+    "name": "skew-hairline-open",
+    "content": "0 G 1.5 0.3 0.25 0.8 -33 -7.2 cm 0 w 1 J [] 0 d 48 36 m 48 36 l S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "6387d33a582e8f38d3c77a2a2175ec7033f07460e196df7d48bab9611d36af3a"
+  },
+  {
+    "name": "skew-hairline-closed",
+    "content": "0 G 1.5 0.3 0.25 0.8 -33 -7.2 cm 0 w 1 J [] 0 d 48 36 m 48 36 l h S",
+    "type3": false,
+    "expected_change": true,
+    "input_sha256": "0b198d13293e1b64ca1591deb619676429856012126b245a83642c075a3f6a8b"
+  },
+  {
+    "name": "minimum-open",
+    "content": "0 G  0.01 w 1 J [] 0 d 48 36 m 48 36 l S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "8c969f2c1cc5ebaa28822fba9380be9bf0aeb552acf3e2dace7f3fd2056a1bcf"
+  },
+  {
+    "name": "minimum-closed",
+    "content": "0 G  0.01 w 1 J [] 0 d 48 36 m 48 36 l h S",
+    "type3": false,
+    "expected_change": true,
+    "input_sha256": "f909e30ff3971821fbe7877118f8cc9c878e8414e8e3cf2e3c1f1e1b5c85bf9e"
+  },
+  {
+    "name": "cap-0-open",
+    "content": "0 G  18 w 0 J [] 0 d 48 36 m 48 36 l S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "c669ace3b77ede83a1653f170c19781a3d8c93807332e8b14e2ecb745edc1f41"
+  },
+  {
+    "name": "cap-0-closed",
+    "content": "0 G  18 w 0 J [] 0 d 48 36 m 48 36 l h S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "02e4c84de959134fcfa0ff3c3b8a92e1b357b3527170028cf5d0b65511d46d79"
+  },
+  {
+    "name": "cap-0-close-only",
+    "content": "0 G  18 w 0 J [] 0 d 48 36 m h S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "cb1b009146fe8b875af07b2b68f0be6c995a924f030bc40618c487f095600eb4"
+  },
+  {
+    "name": "cap-2-open",
+    "content": "0 G  18 w 2 J [] 0 d 48 36 m 48 36 l S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "81bd75c0989deb2fa0394255d3a5a96eb8641e32f450faaf729f8c79f64e2353"
+  },
+  {
+    "name": "cap-2-closed",
+    "content": "0 G  18 w 2 J [] 0 d 48 36 m 48 36 l h S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "34d3456c2032b5724fbb532bf513295503102d63f6798946fd20580817f7c2f1"
+  },
+  {
+    "name": "cap-2-close-only",
+    "content": "0 G  18 w 2 J [] 0 d 48 36 m h S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "f826b2d78c6e127933dd5dcf431cd9027b8bcaf8403b4a6ccc60bc222c8b4bd4"
+  },
+  {
+    "name": "positive-solid",
+    "content": "0 G  18 w 1 J [] 0 d 48 36 m 65 36 l S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "71c3e98c66b2d25868b1e884c062a38783c529996403bc786353e2a32bc37932"
+  },
+  {
+    "name": "positive-on",
+    "content": "0 G  18 w 1 J [11 17] 3 d 48 36 m 65 36 l S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "c395bd8a2105e3326b31e7bb86f0f7b4f9aa84d71582f573cc23a657b79da919"
+  },
+  {
+    "name": "positive-off",
+    "content": "0 G  18 w 1 J [11 17] 19 d 48 36 m 65 36 l S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "6619ad5a66ee83ab9c0fa3fc64da78f5150dcc6eb7f66005972eeff289c5cfc4"
+  },
+  {
+    "name": "ordinary-closed-solid",
+    "content": "0 G  18 w 1 J [] 0 d 20 20 m 35 20 l 35 30 l h S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "a2a267d7fa6addf2c3c1e12e666a8a86c6645678e07cf6b05910b11df8284303"
+  },
+  {
+    "name": "ordinary-closed-on",
+    "content": "0 G  18 w 1 J [11 17] 3 d 20 20 m 35 20 l 35 30 l h S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "99489ae1789d6f9684872ccaf750aa515282161f0bb32b2b3ecff675b6c113f5"
+  },
+  {
+    "name": "ordinary-closed-off",
+    "content": "0 G  18 w 1 J [11 17] 19 d 20 20 m 35 20 l 35 30 l h S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "e871893ef5fa3a5fc1fd64e536edec4bc05a12ed0707fcbb8d62ea8d868768ea"
+  },
+  {
+    "name": "tiny-solid",
+    "content": "0 G  18 w 1 J [] 0 d 48 36 m 48.125 36 l h S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "8ff409ed370a5537b40b4fdfaeaa65fdacff36c6b7d928f7efaba9b7758e062e"
+  },
+  {
+    "name": "tiny-on",
+    "content": "0 G  18 w 1 J [11 17] 3 d 48 36 m 48.125 36 l h S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "6ab78b577cef6bbf9e70ac24955a2b200fb3d4db30e7499311e648b50869ad70"
+  },
+  {
+    "name": "tiny-off",
+    "content": "0 G  18 w 1 J [11 17] 19 d 48 36 m 48.125 36 l h S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "a888b4ecaf9caf8e5f52425bc0c7ff0d29d9e26c60af0aef2a9b8a94ffba5b65"
+  },
+  {
+    "name": "float-collapse-solid",
+    "content": "0 G  18 w 1 J [] 0 d 48 36 m 48.00000001 36 l h S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "004419c5037846798dafe6509849e5eeaf5887da2b8cef0c9f46124f4aa6abc4"
+  },
+  {
+    "name": "float-collapse-on",
+    "content": "0 G  18 w 1 J [11 17] 3 d 48 36 m 48.00000001 36 l h S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "5e20ec74aa019c5a6dac202d55af0678903133eaeae38b71e4c3f1168aef8df9"
+  },
+  {
+    "name": "float-collapse-off",
+    "content": "0 G  18 w 1 J [11 17] 19 d 48 36 m 48.00000001 36 l h S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "97ed27b1380bae2947ea2f9f847d8054a8ee423d6ad2d673e37bde2631cd69bc"
+  },
+  {
+    "name": "moving-cubic-solid",
+    "content": "0 G  18 w 1 J [] 0 d 48 36 m 49 36 47 36 48 36 c h S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "d2362b0d9457c84ffc33dbb000a64ac0d6c14949659a83afd7c16d07ac7b748c"
+  },
+  {
+    "name": "moving-cubic-on",
+    "content": "0 G  18 w 1 J [11 17] 3 d 48 36 m 49 36 47 36 48 36 c h S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "6bb579ea334a3b5e82a9bec00ebcec9784ad2ef05d031c5b286367cc6bb1fe2e"
+  },
+  {
+    "name": "moving-cubic-off",
+    "content": "0 G  18 w 1 J [11 17] 19 d 48 36 m 49 36 47 36 48 36 c h S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "bb71fac99ed22a9e48c7e9d82f1d0c9bc8ab19b659be7f3fd295c584d5a4d9f6"
+  },
+  {
+    "name": "all-zero-open",
+    "content": "0 G  18 w 1 J [0 0] 0 d 48 36 m 48 36 l S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "521350945244ad60d06a409fcf1bf047e7534c2daf0775c58dbc3e315eab957e"
+  },
+  {
+    "name": "all-zero-closed",
+    "content": "0 G  18 w 1 J [0 0] 0 d 48 36 m 48 36 l h S",
+    "type3": false,
+    "expected_change": true,
+    "input_sha256": "0ae7e25a31c03772b581b413b681f31f948d1845f3a8284a489324bfa481615f"
+  },
+  {
+    "name": "tiny-fallback-open",
+    "content": "0 G  18 w 1 J [0.00001 0.00001] 0 d 48 36 m 48 36 l S",
+    "type3": false,
+    "expected_change": false,
+    "input_sha256": "3f673e0d02518b621a47c4f987fc1aca9cc3c5ec13f4c33b6b0c1a3d319adea2"
+  },
+  {
+    "name": "tiny-fallback-closed",
+    "content": "0 G  18 w 1 J [0.00001 0.00001] 0 d 48 36 m 48 36 l h S",
+    "type3": false,
+    "expected_change": true,
+    "input_sha256": "caa5685672fadcc272769ae5e908330408273b54fd3046b7273e7abbcc12c2f6"
+  },
+  {
+    "name": "incomplete-line",
+    "content": "0 G  18 w 1 J [] 0 d 48 36 m 48 36 l h 2 l S",
+    "type3": false,
+    "expected_change": true,
+    "input_sha256": "8546fd16dab6cead54d65af46fb0ef6297af186865642584d96a8df0709e2f65"
+  },
+  {
+    "name": "incomplete-curve",
+    "content": "0 G  18 w 1 J [] 0 d 48 36 m 48 36 l h 48 36 48 c S",
+    "type3": false,
+    "expected_change": true,
+    "input_sha256": "a43fc9bf59df0fce352d30d273178288f72ae9cefa6195620ab7b91cc7744858"
+  },
+  {
+    "name": "prefix",
+    "content": "0 G  18 w 1 J [] 0 d 48 36 m 48 36 l h 68 36 l S",
+    "type3": false,
+    "expected_change": true,
+    "input_sha256": "8aebc0e0ee2fef1a826268af6f180aba60aa4d4e1e0f6468a1051daf191efa8f"
+  },
+  {
+    "name": "mixed",
+    "content": "0 G  18 w 1 J [] 0 d 9 12 m 29 12 l 29 22 l h 48 36 0 0 re 130 95 m S",
+    "type3": false,
+    "expected_change": true,
+    "input_sha256": "032c052a80acfa8a07a24670c5f2b74ef2d9a2c09927add3ae97ac1dea0a94f6"
+  },
+  {
+    "name": "type3-open-solid",
+    "content": "0 G  18 w 1 J [] 0 d 48 36 m 48 36 l S",
+    "type3": true,
+    "expected_change": false,
+    "input_sha256": "79d4b313843a3b1979c525abbf40a6560dce05674dc231e86438848ef49411f4"
+  },
+  {
+    "name": "type3-closed-solid",
+    "content": "0 G  18 w 1 J [] 0 d 48 36 m 48 36 l h S",
+    "type3": true,
+    "expected_change": true,
+    "input_sha256": "14b3bb28d67af2d4365e8b721801485da911e7e90f6769e90d2ecc074b29626a"
+  },
+  {
+    "name": "type3-open-on",
+    "content": "0 G  18 w 1 J [11 17] 3 d 48 36 m 48 36 l S",
+    "type3": true,
+    "expected_change": false,
+    "input_sha256": "e94a68b4a36fb3c13b2a92a288bd4f35c43c650c9ac8854564c09214aa886e86"
+  },
+  {
+    "name": "type3-closed-on",
+    "content": "0 G  18 w 1 J [11 17] 3 d 48 36 m 48 36 l h S",
+    "type3": true,
+    "expected_change": false,
+    "input_sha256": "8f6c81c5d4bb9714f4879c4384db8fb97e7d34430c2fe91bafcca83eaef63f24"
+  },
+  {
+    "name": "type3-open-off",
+    "content": "0 G  18 w 1 J [11 17] 19 d 48 36 m 48 36 l S",
+    "type3": true,
+    "expected_change": false,
+    "input_sha256": "3a12e6cc8bcce8614d54346e2286db88a82c4ca3dd94718dca0190327cf2b51b"
+  },
+  {
+    "name": "type3-closed-off",
+    "content": "0 G  18 w 1 J [11 17] 19 d 48 36 m 48 36 l h S",
+    "type3": true,
+    "expected_change": false,
+    "input_sha256": "5db8d7b97d201a99f633dafd01e9d71003870603f848922483cf415683810a7f"
+  }
+]
