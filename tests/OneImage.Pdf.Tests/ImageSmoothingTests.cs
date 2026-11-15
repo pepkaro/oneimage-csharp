@@ -143,8 +143,8 @@ public class ImageSmoothingTests
     {
         byte[] Make(string interpolate) => TestPdf.Page($"0 0 1 rg 0 0 40 40 re f q {Placement} cm /Im0 Do Q", ImageResources, 40, 40,
             [Picture(interpolate, mask), mask == "/Mask 6 0 R"
-                ? RegionTests.Obj("/Type /XObject /Subtype /Image /Width 2 /Height 2 /ImageMask true /BitsPerComponent 1 /Filter /ASCIIHexDecode", "4080>")
-                : Picture("", samples: "0055aaff")]);
+                ? RegionTests.Obj($"/Type /XObject /Subtype /Image /Width 2 /Height 2 /ImageMask true /BitsPerComponent 1 /Filter /ASCIIHexDecode {interpolate}", "4080>")
+                : Picture(interpolate, samples: "0055aaff")]);
         Rgba32[] expected = Render(Make("/Interpolate true"));
         Equal(expected, Render(Make("/Interpolate false"), true));
         Equal(expected, Render(Make("/Interpolate true"), true));

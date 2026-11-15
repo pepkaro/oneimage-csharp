@@ -72,7 +72,8 @@ public sealed class PdfRenderOptions
     /// Gets whether raster images enlarged along either axis are smoothed even when their <c>/Interpolate</c> flag is false or omitted.
     /// Default <see langword="false"/> honors the document's flag. Set to <see langword="true"/> for a smoother display,
     /// as in many PDF viewers; this does not guarantee identical pixels across viewers. Uses the existing bilinear sampler for
-    /// the whole image, including its decoded alpha, even if the other axis shrinks. The area-reduction step is unchanged.
+    /// the whole image, including its decoded alpha, even if the other axis shrinks. A separately sized alpha plane keeps its own
+    /// sample grid and is smoothed when magnified along either axis. Each plane uses the existing area-reduction step.
     /// Does not change images reduced along both axes, one-to-one images, stencil masks, or vector and outline text rendering.
     /// </summary>
     public bool SmoothMagnifiedImages { get; init; }

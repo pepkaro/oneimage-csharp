@@ -10,6 +10,8 @@ All notable changes are listed here. The format follows [Keep a Changelog](https
 
 ### Fixed
 
+- `RecursiveAI.OneImage.Pdf`: sample image colors and separately sized soft or explicit masks on their own unit-square grids, without enlarging colors to the mask size. Preserve each plane's interpolation flag, reduction sizing and cache cost. Requires OnePDF's additive `PdfImageAlpha.Interpolate` API; see `docs/pdf-image-mask-sampling.md` for the dependency and filtering policy.
+
 - `RecursiveAI.OneImage.Pdf`: avoid multiplying image-edge antialiasing twice when a single convex polygon clip with at most eight vertices provably contains the image quad. Other clips and core drawing clip-composition behavior are unchanged.
 
 - PDF: translucent strokes in combined text rendering modes 2 and 6 now knock out their own fills for single-glyph or conservatively pixel-disjoint runs. Text clipping keeps the original outlines; overlapping-run text-knockout limitations remain unchanged.
