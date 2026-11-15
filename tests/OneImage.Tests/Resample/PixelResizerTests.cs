@@ -1,3 +1,4 @@
+using System.Buffers;
 using OneImage.Kernels;
 using Xunit;
 
@@ -162,47 +163,88 @@ public class PixelResizerTests
     [Fact]
     public void OverlappingCallsAreDetected()
     {
-        using var resizer = new PixelResizer(maxDegree: 1);
-        var src = new Rgba32[2000 * 2000];
-        var dst = new Rgba32[1000 * 1000];
-        using var started = new ManualResetEventSlim();
-        bool seen = false;
-        var cts = new CancellationTokenSource();
-        Task first = Task.Run(() =>
+        using var cts = new CancellationTokenSource();
+        using var entered = new ManualResetEventSlim();
+        using var release = new ManualResetEventSlim();
+        ArrayPool<int> previous = Pools<int>.Pool;
+        var pool = new ResizeRentalGate(previous, entered, release);
+        // This class already runs in the nonparallel MemoryMeasurement collection.
+        Pools<int>.Pool = pool;
+        try
         {
-            started.Set();
+            using var resizer = new PixelResizer(maxDegree: 1);
+            var src = new Rgba32[8 * 8];
+            var dst = new Rgba32[4 * 4];
+            Array.Fill(src, new Rgba32(32, 64, 128, 255));
+            Exception? firstError = null;
+            var first = new Thread(() =>
+            {
+                pool.Arm();
+                try
+                {
+                    resizer.Resize<Rgba32>(src, 8, 8, dst, 4, 4, cancellationToken: cts.Token);
+                }
+                catch (Exception e)
+                {
+                    firstError = e;
+                }
+                finally
+                {
+                    // Also wake the test if the resize exits before renting any scratch.
+                    entered.Set();
+                }
+            }) { IsBackground = true };
+            first.Start();
             try
             {
-                for (int i = 0; i < 1000; i++)
-                {
-                    resizer.Resize<Rgba32>(src, 2000, 2000, dst, 1000, 1000, cancellationToken: cts.Token);
-                }
+                // WeightBuffers rents scratch only inside ResizeRaw's claimed region. Holding that rental, rather
+                // than signaling before Resize, proves the first call cannot finish before the competing call enters.
+                Assert.True(entered.Wait(TimeSpan.FromSeconds(30)), "The first resize did not reach its scratch rental.");
+                Assert.True(pool.Entered, $"The first resize exited before renting scratch: {firstError}");
+                // A copy-size competitor does not touch scratch even if the guard is accidentally removed.
+                Assert.Throws<InvalidOperationException>(() => resizer.Resize<Rgba32>(new Rgba32[1], 1, 1, new Rgba32[1], 1, 1));
             }
-            catch (Exception e) when (e is OperationCanceledException or InvalidOperationException)
+            finally
             {
-                // Either thread can be the one that collides with the other.
-                if (e is InvalidOperationException)
-                {
-                    Volatile.Write(ref seen, true);
-                }
+                cts.Cancel();
+                release.Set();
+                Assert.True(first.Join(TimeSpan.FromSeconds(30)), "The first resize did not exit after cancellation.");
             }
-        });
-        started.Wait();
-        for (int i = 0; i < 200 && !Volatile.Read(ref seen); i++)
+
+            Assert.IsType<OperationCanceledException>(firstError);
+            // Cancellation must release the guard, and the instance must remain usable.
+            resizer.Resize<Rgba32>(src, 8, 8, dst, 4, 4);
+            Assert.All(dst, pixel => Assert.Equal(src[0], pixel));
+        }
+        finally
         {
-            try
+            // Restore only after the worker has exited and the resizer has returned its scratch.
+            Pools<int>.Pool = previous;
+        }
+    }
+
+    private sealed class ResizeRentalGate(ArrayPool<int> inner, ManualResetEventSlim entered, ManualResetEventSlim release) : ArrayPool<int>
+    {
+        private int _thread;
+
+        public bool Entered { get; private set; }
+
+        public void Arm() => _thread = Environment.CurrentManagedThreadId;
+
+        public override int[] Rent(int minimumLength)
+        {
+            if (_thread == Environment.CurrentManagedThreadId)
             {
-                resizer.Resize<Rgba32>(new Rgba32[4], 2, 2, new Rgba32[1], 1, 1);
+                _thread = 0;
+                Entered = true;
+                entered.Set();
+                release.Wait();
             }
-            catch (InvalidOperationException)
-            {
-                Volatile.Write(ref seen, true);
-            }
+
+            return inner.Rent(minimumLength);
         }
 
-        cts.Cancel();
-        first.Wait();
-        Assert.True(seen);
+        public override void Return(int[] array, bool clearArray = false) => inner.Return(array, clearArray);
     }
 
     [Fact]
