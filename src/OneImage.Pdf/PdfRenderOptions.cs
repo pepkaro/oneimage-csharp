@@ -78,8 +78,11 @@ public sealed class PdfRenderOptions
     public bool SmoothMagnifiedImages { get; init; }
 
     /// <summary>
-    /// Gets the color the page is drawn on. PDF pages have no background of their own; viewers show white. Use a transparent color to
-    /// get the page content alone. Default opaque white.
+    /// Gets the display color composited behind the completed page with normal alpha composition. It does not participate in PDF
+    /// blend modes, transparency groups or soft masks; a background painted by the PDF still does. Default opaque white.
+    /// A zero-alpha color returns the page content alone; a partially transparent color preserves the resulting alpha.
+    /// Page content is rendered to 8-bit RGBA before this composition, so partially covered pixels can round differently from a
+    /// background painted inside the PDF.
     /// </summary>
     public Rgba32 Background { get; init; } = new(255, 255, 255, 255);
 

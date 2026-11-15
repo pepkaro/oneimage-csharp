@@ -25,8 +25,8 @@ public class GroupAlphaTests
         {
             string form = Form(isolated, $"/H gs 0.2 0.6 0.8 rg 8 8 16 16 re f",
                 $"/ExtGState << /H << /ca {N(child)} /BM /{inside} >> >>");
-            byte[] pdf = TestPdf.Page("/G gs /F Do", $"/XObject << /F 5 0 R >> /ExtGState << /G << /ca {N(outer)} /BM /{outside} >> >>", 32, 32, [form]);
-            Rgba32[] pixels = Pixels(pdf, backdrop);
+            byte[] pdf = PageWithBackdrop("/G gs /F Do", $"/XObject << /F 5 0 R >> /ExtGState << /G << /ca {N(outer)} /BM /{outside} >> >>", backdrop, [form]);
+            Rgba32[] pixels = Pixels(pdf, default);
             double a = outer * child, resultAlpha = a + (ab * (1 - a));
             var expected = new double[4];
             expected[3] = resultAlpha * 255;
@@ -65,9 +65,9 @@ public class GroupAlphaTests
     {
         string leaf = Form(false, "/H gs 1 0 0 rg 8 8 16 16 re f", "/ExtGState << /H << /ca .5 >> >>");
         string middle = Form(isolateMiddle, "/H gs /F Do", "/XObject << /F 5 0 R >> /ExtGState << /H << /ca .5 >> >>");
-        byte[] pdf = TestPdf.Page("/G gs /F Do", $"/XObject << /F 6 0 R >> /ExtGState << /G << /ca .5 /BM /{outside} >> >>", 32, 32, [leaf, middle]);
         var backdrop = new Rgba32(102, 153, 204, 128);
-        Rgba32[] pixels = Pixels(pdf, backdrop);
+        byte[] pdf = PageWithBackdrop("/G gs /F Do", $"/XObject << /F 6 0 R >> /ExtGState << /G << /ca .5 /BM /{outside} >> >>", backdrop, [leaf, middle]);
+        Rgba32[] pixels = Pixels(pdf, default);
         double ab = 128 / 255.0, a = 0.125, alpha = a + ab * (1 - a);
         double[] cb = [0.4, 0.6, 0.8], cs = [1, 0, 0], expected = [0, 0, 0, alpha * 255];
         for (int c = 0; c < 3; c++)
@@ -94,9 +94,9 @@ public class GroupAlphaTests
     {
         string leaf = Form(false, "/H gs 1 0 0 rg 0 0 32 32 re f", "/ExtGState << /H << /ca .5 >> >>");
         string mask = Form(true, "/H gs 1 g 0 0 16 32 re f", "/ExtGState << /H << /ca .5 >> >>");
-        byte[] pdf = TestPdf.Page("/G gs /F Do", $"/XObject << /F 5 0 R >> /ExtGState << /G << /ca .5 /BM /{outside} /SMask << /S /Alpha /G 6 0 R >> >> >>", 32, 32, [leaf, mask]);
         var bg = new Rgba32(102, 153, 204, 255);
-        Rgba32[] pixels = Pixels(pdf, bg);
+        byte[] pdf = PageWithBackdrop("/G gs /F Do", $"/XObject << /F 5 0 R >> /ExtGState << /G << /ca .5 /BM /{outside} /SMask << /S /Alpha /G 6 0 R >> >> >>", bg, [leaf, mask]);
+        Rgba32[] pixels = Pixels(pdf, default);
         double[] cb = [0.4, 0.6, 0.8], cs = [1, 0, 0], expected = [0, 0, 0, 255];
         for (int c = 0; c < 3; c++) expected[c] = 255 * ((0.875 * cb[c]) + (0.125 * Blend(outside, cb[c], cs[c])));
         Near(pixels[(16 * 32) + 8], expected, "masked");
@@ -144,8 +144,8 @@ public class GroupAlphaTests
         foreach (string outside in new[] { "Normal", "Multiply", "Screen" })
         {
             string form = Form(false, "/H gs 0.2 0.6 0.8 rg 8 8 16 16 re f", $"/ExtGState << /H << /ca {N(child)} >> >>");
-            byte[] pdf = TestPdf.Page("/G gs /F Do", $"/XObject << /F 5 0 R >> /ExtGState << /G << /ca .5 /BM /{outside} >> >>", 32, 32, [form]);
-            Rgba32 pixel = Pixels(pdf, new Rgba32(204, 102, 51, (byte)backdropAlpha))[(16 * 32) + 16];
+            byte[] pdf = PageWithBackdrop("/G gs /F Do", $"/XObject << /F 5 0 R >> /ExtGState << /G << /ca .5 /BM /{outside} >> >>", new Rgba32(204, 102, 51, (byte)backdropAlpha), [form]);
+            Rgba32 pixel = Pixels(pdf, default)[(16 * 32) + 16];
             double a = child * 0.5, expectedAlpha = a + (ab * (1 - a));
             Assert.InRange(Math.Abs(pixel.A - (expectedAlpha * 255)), 0, 2);
             byte[] channels = [pixel.R, pixel.G, pixel.B];
@@ -186,6 +186,15 @@ public class GroupAlphaTests
         Assert.Equal(backdrop, pixels[(16 * 32) + 16]);
         Assert.Equal(backdrop, pixels[0]);
     }
+    private static byte[] PageWithBackdrop(string content, string resources, Rgba32 backdrop, string[] extra)
+    {
+        // Group blending tests need actual PDF-painted content, not the viewer's post-render display background.
+        string entry = $" /TestBackdrop << /ca {N(backdrop.A / 255.0)} >> ";
+        resources = resources.Replace("/ExtGState <<", "/ExtGState <<" + entry, StringComparison.Ordinal);
+        string paint = $"q /TestBackdrop gs {N(backdrop.R / 255.0)} {N(backdrop.G / 255.0)} {N(backdrop.B / 255.0)} rg 0 0 32 32 re f Q ";
+        return TestPdf.Page(paint + content, resources, 32, 32, extra);
+    }
+
     private static string Form(bool isolated, string content, string resources = "") => RegionTests.Obj($"/Type /XObject /Subtype /Form /BBox [0 0 32 32] /Group << /S /Transparency /I {isolated.ToString().ToLowerInvariant()} >> /Resources << {resources} >>", content);
     private static Rgba32[] Pixels(byte[] pdf, Rgba32 background, int degree = 1) => RenderTests.Load(pdf, new PdfRenderOptions { Dpi = 72, Background = background }).ToArray<Rgba32>(maxDegree: degree);
     private static string N(double value) => value.ToString("0.#################", CultureInfo.InvariantCulture);

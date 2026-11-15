@@ -80,7 +80,9 @@ public class TextPositionTests
     [Trait("Section", "9.3.2")]
     public void CharacterSpacing()
     {
-        Check(Text("BT /F1 4 Tf 1.5 Tc 2 2 Td (aaa) Tj ET"), E().Rect(2, 2, 6, 6, Black).Rect(7.5, 2, 11.5, 6, Black).Rect(13, 2, 17, 6, Black), Tol.Exact);
+        // Paint the analytic white backdrop inside the PDF: display-background composition has an extra
+        // 8-bit alpha quantization step at half-covered pixels, unrelated to character positioning.
+        Check(Text("q 1 g 0 0 40 20 re f Q BT /F1 4 Tf 1.5 Tc 2 2 Td (aaa) Tj ET"), E().Rect(2, 2, 6, 6, Black).Rect(7.5, 2, 11.5, 6, Black).Rect(13, 2, 17, 6, Black), Tol.Exact);
     }
 
     // 9.3.3 word spacing Tw is added after code 32 only.

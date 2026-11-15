@@ -1,4 +1,7 @@
 using System.Buffers;
+using System.Numerics;
+using System.Runtime.InteropServices;
+using OneImage.Kernels;
 using OnePdf;
 
 namespace OneImage.Pdf.Render;
@@ -57,12 +60,6 @@ internal static class CellRenderer
         var cull = new PdfBounds((cx - 1.5) / sx, (cy - 1.5) / sy, (cx + Cell + 1.5) / sx, (cy + Cell + 1.5) / sy);
         var view = new PdfMatrix(sx, 0, 0, sy, -cx, -cy);
         using var canvas = new Canvas(Cell, Cell, PixelFormat.Rgba8);
-        Rgba32 bg = page.Options.Background;
-        if (bg.A != 0)
-        {
-            canvas.Clear(bg);
-        }
-
         var device = new CanvasDevice(page, view, canvas, depth: 0, tint: null, ct);
         try
         {
@@ -73,6 +70,79 @@ internal static class CellRenderer
             device.Dispose();
         }
 
-        canvas.CopyToBytes(output.AsSpan(0, Cell * Cell * 4), new ImageRect(0, 0, Cell, Cell));
+        // The page begins with a transparent backdrop. A viewer background is not PDF content and must
+        // not participate in its blend modes; composite it behind the completed page instead.
+        Span<byte> bytes = output.AsSpan(0, Cell * Cell * 4);
+        canvas.CopyToBytes(bytes, new ImageRect(0, 0, Cell, Cell));
+        CompositeDisplayBackground(MemoryMarshal.Cast<byte, Rgba32>(bytes), page.Options.Background);
+    }
+
+    /// <summary>Normal destination-over on straight RGBA8 page pixels, after every PDF operation is finished.</summary>
+    internal static void CompositeDisplayBackground(Span<Rgba32> pixels, Rgba32 background)
+    {
+        if (background.A == 0) return;
+        ReadOnlySpan<float> table = ConvertFast.ByteToUnit;
+        float ba = table[background.A];
+        bool opaqueBackground = background.A == 255;
+        float br = table[background.R] * ba, bg = table[background.G] * ba, bb = table[background.B] * ba;
+        Span<uint> packed = MemoryMarshal.Cast<Rgba32, uint>(pixels);
+        var alphaMask = new Vector<uint>(0xff000000u);
+        var display = new Vector<uint>((uint)background.R | ((uint)background.G << 8) | ((uint)background.B << 16) | ((uint)background.A << 24));
+        int i = 0;
+        while (i < pixels.Length)
+        {
+            int end = pixels.Length;
+            if (Vector.IsHardwareAccelerated && BitConverter.IsLittleEndian && i <= pixels.Length - Vector<uint>.Count)
+            {
+                end = i + Vector<uint>.Count;
+                var values = new Vector<uint>(packed.Slice(i, Vector<uint>.Count));
+                Vector<uint> alphaBytes = values & alphaMask;
+                if (Vector.EqualsAll(alphaBytes, alphaMask))
+                {
+                    i = end;
+                    continue;
+                }
+
+                Vector<uint> empty = Vector.Equals(alphaBytes, Vector<uint>.Zero);
+                Vector<uint> opaque = Vector.Equals(alphaBytes, alphaMask);
+                // Most page pixels are empty or fully opaque. Resolve those lanes together without
+                // changing any color/alpha arithmetic for partially covered pixels.
+                if (Vector.EqualsAll(empty | opaque, new Vector<uint>(uint.MaxValue)))
+                {
+                    Vector.ConditionalSelect(empty, display, values).CopyTo(packed.Slice(i, Vector<uint>.Count));
+                    i = end;
+                    continue;
+                }
+            }
+
+            for (; i < end; i++)
+            {
+                Rgba32 p = pixels[i];
+                if (p.A == 255) continue;
+                if (p.A == 0)
+                {
+                    pixels[i] = background;
+                    continue;
+                }
+
+                // Match Canvas.Fill's straight-byte -> premultiplied-float -> DestOver -> straight-byte
+                // operation order. Doing this in the output buffer avoids a second full-cell raster fill.
+                float pa = table[p.A], factor = 1f + (-1f * pa);
+                float r = (br * factor) + (table[p.R] * pa);
+                float g = (bg * factor) + (table[p.G] * pa);
+                float b = (bb * factor) + (table[p.B] * pa);
+                // For an opaque background the generic float alpha is exactly 1 for every byte alpha.
+                // Keep its RGB operation order, but avoid three divisions by one and alpha conversion.
+                if (opaqueBackground)
+                {
+                    pixels[i] = new Rgba32(ConvertFast.ToByte(r), ConvertFast.ToByte(g), ConvertFast.ToByte(b), 255);
+                    continue;
+                }
+
+                float alpha = (ba * factor) + pa;
+                pixels[i] = new Rgba32(ConvertFast.ToByte(r / alpha), ConvertFast.ToByte(g / alpha),
+                    ConvertFast.ToByte(b / alpha), ConvertFast.ToByte(alpha));
+            }
+        }
     }
 }
