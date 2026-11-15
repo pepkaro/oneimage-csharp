@@ -266,18 +266,20 @@ internal sealed partial class CanvasDevice : IPdfDevice, IDisposable
         }
 
         float[] dash = Dashes(state, user, scale);
+        // PDF caps the pieces at the start/end seam of a dashed subpath. Solid fallbacks and generic core drawing
+        // still use closed joins; only nonempty normalized dash patterns reach the separately capped splitter.
         StrokeJoin join = state.LineJoin switch { 1 => StrokeJoin.Round, 2 => StrokeJoin.Bevel, _ => StrokeJoin.Miter };
         StrokeCap cap = state.LineCap switch { 1 => StrokeCap.Round, 2 => StrokeCap.Square, _ => StrokeCap.Butt };
         double miter = double.IsFinite(state.MiterLimit) && state.MiterLimit >= 1 ? state.MiterLimit : 10;
         if (state.LineWidth == 0)
         {
             DrawingPath hairline = StrokeBuilder.Build(user, 1, join, cap, miter, dash, state.DashPhase,
-                DrawingPath.DefaultTolerance, PathConvert.ToMatrix(m));
+                DrawingPath.DefaultTolerance, PathConvert.ToMatrix(m), joinClosedDashes: false);
             return hairline.IsEmpty ? null : hairline;
         }
 
         double tolerance = DrawingPath.DefaultTolerance / scale;
-        DrawingPath outline = StrokeBuilder.Build(user, width, join, cap, miter, dash, state.DashPhase, tolerance);
+        DrawingPath outline = StrokeBuilder.Build(user, width, join, cap, miter, dash, state.DashPhase, tolerance, centerlineTransform: null, joinClosedDashes: false);
         if (outline.IsEmpty)
         {
             return null;

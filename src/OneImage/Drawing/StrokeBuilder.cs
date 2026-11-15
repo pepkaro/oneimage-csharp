@@ -63,7 +63,11 @@ internal sealed class StrokeBuilder : IDashSink
 
     /// <summary>Builds the outline. <paramref name="width"/> 0 gives an empty path. An optional centerline transform maps the
     /// path after user-space dash splitting; the width, caps, joins and tolerance then use the transformed space.</summary>
-    public static Path Build(Path path, double width, StrokeJoin join, StrokeCap cap, double miterLimit, ReadOnlySpan<float> dash, double dashOffset, double tolerance, Matrix3x2? centerlineTransform = null)
+    public static Path Build(Path path, double width, StrokeJoin join, StrokeCap cap, double miterLimit, ReadOnlySpan<float> dash, double dashOffset, double tolerance, Matrix3x2? centerlineTransform = null) =>
+        Build(path, width, join, cap, miterLimit, dash, dashOffset, tolerance, centerlineTransform, joinClosedDashes: true);
+
+    /// <summary>Builds a stroke with an explicit policy for joining first/last dash pieces across a closed figure's seam.</summary>
+    public static Path Build(Path path, double width, StrokeJoin join, StrokeCap cap, double miterLimit, ReadOnlySpan<float> dash, double dashOffset, double tolerance, Matrix3x2? centerlineTransform, bool joinClosedDashes)
     {
         if (!(width > 0) || path.IsEmpty)
         {
@@ -86,7 +90,7 @@ internal sealed class StrokeBuilder : IDashSink
         }
 
         FlatPath flat = Flattener.Flatten(path, Matrix3x2.Identity, flatTolerance, null);
-        DashSplitter? dasher = dash.Length > 0 ? new DashSplitter(dash, dashOffset) : null;
+        DashSplitter? dasher = dash.Length > 0 ? new DashSplitter(dash, dashOffset, joinClosedDashes) : null;
         int begin = 0;
         for (int f = 0; f < flat.FigureCount; f++)
         {
