@@ -12,13 +12,14 @@ internal interface IDashSink
 
 /// <summary>
 /// Cuts a polyline into dashes by walking along it with a repeating on/off pattern. A closed figure that is "on" at its start
-/// and at its end gets one dash through the start point, not two touching ones.
+/// and at its end gets one dash through the start point by default. PDF can instead request separately capped pieces there.
 /// </summary>
 internal sealed class DashSplitter
 {
     /// <summary>The most on/off switches one stroke may make; beyond it the stroke fails with <see cref="ImageLimitException"/>.</summary>
     public const int MaxDashes = 1 << 22;
 
+    private readonly bool _joinClosed;
     private readonly double[] _pattern;
     private readonly double _period;
     private readonly double _offset;
@@ -29,8 +30,9 @@ internal sealed class DashSplitter
     private int _firstCount;
     private double _firstDx, _firstDy;
 
-    public DashSplitter(ReadOnlySpan<float> pattern, double offset)
+    public DashSplitter(ReadOnlySpan<float> pattern, double offset, bool joinClosed = true)
     {
+        _joinClosed = joinClosed;
         // An odd-length pattern repeats once so on and off alternate (SVG).
         int n = pattern.Length % 2 == 1 ? pattern.Length * 2 : pattern.Length;
         _pattern = new double[n];
@@ -120,13 +122,13 @@ internal sealed class DashSplitter
 
         if (on)
         {
-            if (closed && startedOn && !everOff)
+            if (closed && _joinClosed && startedOn && !everOff)
             {
                 // This dash covers the whole figure. Use its original distinct vertices: _cur also contains the
                 // closing endpoint, which would create a zero-length edge when a closed contour is stroked.
                 sink.Dash(xy, n, true, dx, dy);
             }
-            else if (closed && startedOn && _first != null)
+            else if (closed && _joinClosed && startedOn && _first != null)
             {
                 // The last dash runs into the first through the start point.
                 int total = _curCount + _firstCount - 1;
@@ -170,7 +172,7 @@ internal sealed class DashSplitter
     // Ends the current dash. In a closed figure the dash that began at the start is held back: the last dash may continue it.
     private void Finish(IDashSink sink, bool closed, bool startedOn, double dx, double dy, bool last)
     {
-        bool isFirst = closed && startedOn && _first == null && !_firstTaken;
+        bool isFirst = closed && _joinClosed && startedOn && _first == null && !_firstTaken;
         if (isFirst && !last)
         {
             _first = new double[2 * _curCount];
