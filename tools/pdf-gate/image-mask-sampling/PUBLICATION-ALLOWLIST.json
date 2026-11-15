@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "files": [
+    {
+      "path": "CORRECTNESS.md",
+      "bytes": 7773,
+      "sha256": "c890137c3b87303cfbd7c5b1234200d7274e782501cde0c30edd16100d0e38ba",
+      "origin": "unchanged original MIT evidence"
+    },
+    {
+      "path": "visual/before.png",
+      "bytes": 585,
+      "sha256": "8f9ae747bb4a0d52858c3e5c3587aed2b742aeb9601672601eca599d780ec54a",
+      "origin": "unchanged original MIT evidence"
+    },
+    {
+      "path": "visual/after.png",
+      "bytes": 306,
+      "sha256": "8eca32f4c186e3a9b8920c3b7e78cc086757023b09c2e0e9f69515f76c7d4b72",
+      "origin": "unchanged original MIT evidence"
+    },
+    {
+      "path": "visual/pdfium-reference.png",
+      "bytes": 775,
+      "sha256": "64ae4cdda2c098ef7534eac4054149a53f42c9fd553d62475e98e17de0ca60b0",
+      "origin": "unchanged original MIT evidence"
+    },
+    {
+      "path": "visual/3x5-7x11-opaque.pdf",
+      "bytes": 1211,
+      "sha256": "df062c22c0af4e2de56585bcfc965c4e518eef30626f84e4b6998e1f19cf908a",
+      "origin": "unchanged original MIT evidence"
+    },
+    {
+      "path": "visual/LICENSE",
+      "bytes": 1078,
+      "sha256": "f335dd4613c04c2e0f0186d7febd013d25da3ab794a89674db2373d6d35182c5",
+      "origin": "unchanged original MIT evidence"
+    },
+    {
+      "path": "visual/PROVENANCE.md",
+      "bytes": 3430,
+      "sha256": "4ffef135ffa9c19b75fbcc07d9eaa93f281d5650a441bb819bc91bba17e758b3",
+      "origin": "unchanged original MIT evidence"
+    },
+    {
+      "path": "INDEX.md",
+      "bytes": 3167,
+      "sha256": "bede5855894079656f03c8e8c5049f0f1f0b70e61b9af256f80dbb59841d3b2e",
+      "origin": "new selected-scope index"
+    }
+  ],
+  "onePdfSourceTree": "80482a89daf39a6d5143641855e40a4e7e1f9605",
+  "oneImageSourceTree": "4cf93aee51153cfa4ff81d889e1aba17ceeb6382",
+  "omittedReportBundlePaths": [
+    "tools/pdf-gate/image-mask-sampling/LICENSE",
+    "tools/pdf-gate/image-mask-sampling/PERFORMANCE-FASTPATH.md",
+    "tools/pdf-gate/image-mask-sampling/PERFORMANCE-HELD.md",
+    "tools/pdf-gate/image-mask-sampling/README.md",
+    "tools/pdf-gate/image-mask-sampling/harness/MaskSamplingPerf.csproj",
+    "tools/pdf-gate/image-mask-sampling/harness/Program.cs",
+    "tools/pdf-gate/image-mask-sampling/identity/Identity.csproj",
+    "tools/pdf-gate/image-mask-sampling/identity/Program.cs",
+    "tools/pdf-gate/image-mask-sampling/prepare.py",
+    "tools/pdf-gate/image-mask-sampling/run_gate.py",
+    "tools/pdf-gate/image-mask-sampling/summarize.py",
+    "tools/pdf-gate/image-mask-sampling/validate_gate.py"
+  ],
+  "fullRawCollections": "Omitted and unchanged locally; public performance review incomplete",
+  "selfHash": "This manifest is excluded from its own list; Git tree identity protects it."
+}
