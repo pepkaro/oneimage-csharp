@@ -23,8 +23,8 @@ namespace OneImage.Drawing;
 internal sealed class StrokeBuilder : IDashSink
 {
     private const double Kappa4 = 4.0 / 3.0;
-    private const int MaxVerbs = 1 << 23;
-    private const int MaxCoords = 1 << 25;
+    internal const int MaxVerbs = 1 << 23;
+    internal const int MaxCoords = 1 << 25;
     private const double Eps = 1e-9;
 
     // Turns sharper than this (cosine of the angle between directions) put the two edges of the stroke on top of each other.
@@ -34,6 +34,15 @@ internal sealed class StrokeBuilder : IDashSink
     private const int MaxMergeVerbs = 1 << 20;
 
     private readonly double _r;
+    private bool _preserveSmallSegments;
+    private int _maxVerbs = MaxVerbs, _maxCoords = MaxCoords;
+
+    /// <summary>Remaining construction budget shared by precise and ordinary figures before overlap resolution.</summary>
+    internal sealed class Budget
+    {
+        internal int Verbs = MaxVerbs;
+        internal int Coords = MaxCoords;
+    }
     private readonly StrokeJoin _join;
     private readonly StrokeCap _cap;
     private readonly double _miterLimitSq;
@@ -69,12 +78,25 @@ internal sealed class StrokeBuilder : IDashSink
     /// <summary>Builds a stroke with an explicit policy for joining first/last dash pieces across a closed figure's seam.</summary>
     public static Path Build(Path path, double width, StrokeJoin join, StrokeCap cap, double miterLimit, ReadOnlySpan<float> dash, double dashOffset, double tolerance, Matrix3x2? centerlineTransform, bool joinClosedDashes)
     {
+        if (!(width > 0) || path.IsEmpty) { return Path.Empty; }
+        return Build(path, width, join, cap, miterLimit, tolerance, centerlineTransform,
+            dash.Length > 0 ? new DashSplitter(dash, dashOffset, joinClosedDashes) : null, Path.MaxFlattenedPoints);
+    }
+
+    /// <summary>Uses a shared dash budget and a remaining flattening budget when a PDF mixes float and precise figures.</summary>
+    internal static Path Build(Path path, double width, StrokeJoin join, StrokeCap cap, double miterLimit,
+        double tolerance, Matrix3x2? centerlineTransform, DashSplitter? dasher, int maxFlattenedPoints, Budget? budget = null)
+    {
         if (!(width > 0) || path.IsEmpty)
         {
             return Path.Empty;
         }
 
-        var b = new StrokeBuilder(width, join, cap, miterLimit, tolerance, centerlineTransform);
+        var b = new StrokeBuilder(width, join, cap, miterLimit, tolerance, centerlineTransform)
+        {
+            _maxVerbs = budget?.Verbs ?? MaxVerbs,
+            _maxCoords = budget?.Coords ?? MaxCoords,
+        };
         double flatTolerance = tolerance;
         if (centerlineTransform is Matrix3x2 map)
         {
@@ -89,8 +111,7 @@ internal sealed class StrokeBuilder : IDashSink
             flatTolerance /= Math.Max(norm, 1e-9);
         }
 
-        FlatPath flat = Flattener.Flatten(path, Matrix3x2.Identity, flatTolerance, null);
-        DashSplitter? dasher = dash.Length > 0 ? new DashSplitter(dash, dashOffset, joinClosedDashes) : null;
+        FlatPath flat = Flattener.Flatten(path, Matrix3x2.Identity, flatTolerance, null, new FlatPath(maxFlattenedPoints));
         int begin = 0;
         for (int f = 0; f < flat.FigureCount; f++)
         {
@@ -116,8 +137,68 @@ internal sealed class StrokeBuilder : IDashSink
             }
         }
 
+        if (budget is not null) { budget.Verbs -= b._vn; budget.Coords -= b._cn; }
         var outline = new Path(b._verbs.AsSpan(0, b._vn).ToArray(), b._coords.AsSpan(0, b._cn).ToArray());
         return b._overlaps && b._vn <= MaxMergeVerbs ? outline.Resolve(IntersectionRule.NonZero, (float)tolerance) : outline;
+    }
+
+    /// <summary>Strokes one already-flattened, origin-relative PDF figure without treating positive movement as a duplicate.
+    /// Generic float paths keep their existing deduplication policy. The caller retains the usual flattening and dash budgets.</summary>
+    internal static Path BuildPrecise(double[] points, bool closed, double width, StrokeJoin join, StrokeCap cap,
+        double miterLimit, DashSplitter? dasher, double tolerance, Matrix3x2? centerlineTransform, Budget? budget = null)
+    {
+        if (!(width > 0) || points.Length < 4)
+        {
+            return Path.Empty;
+        }
+
+        if (points.Length / 2 > Path.MaxFlattenedPoints)
+        {
+            throw new ImageLimitException($"The path flattens to more than {Path.MaxFlattenedPoints} points.");
+        }
+
+        var b = new StrokeBuilder(width, join, cap, miterLimit, tolerance, centerlineTransform)
+        {
+            _preserveSmallSegments = true,
+            _maxVerbs = budget?.Verbs ?? MaxVerbs,
+            _maxCoords = budget?.Coords ?? MaxCoords,
+        };
+        int n = DedupePrecise(points, points.Length / 2, closed);
+        if (n < 2)
+        {
+            return Path.Empty;
+        }
+
+        if (dasher is null)
+        {
+            b.Contour(points, n, closed, false, 1, 0);
+        }
+        else
+        {
+            dasher.Split(points, n, closed, b, preserveSmallSegments: true);
+        }
+
+        foreach (float coordinate in b._coords.AsSpan(0, b._cn))
+        {
+            if (!float.IsFinite(coordinate))
+            {
+                throw new ImageOperationException("The transform moves a path coordinate out of the finite range.");
+            }
+        }
+
+        if (budget is not null) { budget.Verbs -= b._vn; budget.Coords -= b._cn; }
+        var outline = new Path(b._verbs.AsSpan(0, b._vn).ToArray(), b._coords.AsSpan(0, b._cn).ToArray());
+        return b._overlaps && b._vn <= MaxMergeVerbs ? outline.Resolve(IntersectionRule.NonZero, (float)tolerance) : outline;
+    }
+
+    // Unlike sqrt(x*x + y*y), this keeps the direction of subnormal displacements and avoids squaring overflow.
+    internal static double PreciseLength(double x, double y)
+    {
+        double largest = Math.Max(Math.Abs(x), Math.Abs(y));
+        if (largest == 0) { return 0; }
+        x /= largest;
+        y /= largest;
+        return largest * Math.Sqrt((x * x) + (y * y));
     }
 
     void IDashSink.Dash(double[] xy, int count, bool closed, double dirX, double dirY)
@@ -189,6 +270,24 @@ internal sealed class StrokeBuilder : IDashSink
         return m;
     }
 
+    // Only the PDF double route retains every positive displacement; generic float paths keep the original loop.
+    private static int DedupePrecise(double[] p, int n, bool closed)
+    {
+        int m = 1;
+        for (int i = 1; i < n; i++)
+        {
+            if (p[2 * i] != p[2 * (m - 1)] || p[(2 * i) + 1] != p[(2 * (m - 1)) + 1])
+            {
+                p[2 * m] = p[2 * i];
+                p[(2 * m) + 1] = p[(2 * i) + 1];
+                m++;
+            }
+        }
+
+        if (closed && m > 1 && p[2 * (m - 1)] == p[0] && p[(2 * (m - 1)) + 1] == p[1]) { m--; }
+        return m;
+    }
+
     /// <summary>Strokes one polyline (already free of repeats unless <paramref name="piece"/>, which dashes may produce).</summary>
     private void Contour(double[] p, int n, bool closed, bool piece, double dirX, double dirY)
     {
@@ -212,7 +311,7 @@ internal sealed class StrokeBuilder : IDashSink
             p = mapped;
             // A non-singular double CTM can become singular when rounded to Matrix3x2. Remove segments that collapsed
             // before Directions divides by their length, including solid and closed figures (not just dash pieces).
-            n = Dedupe(p, n, closed);
+            n = _preserveSmallSegments ? DedupePrecise(p, n, closed) : Dedupe(p, n, closed);
             if (n == 1 && (!piece || closed))
             {
                 if (_cap == StrokeCap.Round)
@@ -232,7 +331,7 @@ internal sealed class StrokeBuilder : IDashSink
 
         if (piece && !closed)
         {
-            n = Dedupe(p, n, false);
+            n = _preserveSmallSegments ? DedupePrecise(p, n, false) : Dedupe(p, n, false);
             if (n == 1)
             {
                 if (_cap != StrokeCap.Butt)
@@ -300,6 +399,12 @@ internal sealed class StrokeBuilder : IDashSink
 
     private void Directions(double[] p, int n, int m)
     {
+        if (_preserveSmallSegments)
+        {
+            PreciseDirections(p, n, m);
+            return;
+        }
+
         for (int i = 0; i < m; i++)
         {
             int j = (i + 1) % n;
@@ -308,6 +413,19 @@ internal sealed class StrokeBuilder : IDashSink
             _len[i] = l;
             _ux[i] = dx / l;
             _uy[i] = dy / l;
+        }
+    }
+
+    private void PreciseDirections(double[] p, int n, int m)
+    {
+        for (int i = 0; i < m; i++)
+        {
+            int j = (i + 1) % n;
+            double dx = p[2 * j] - p[2 * i], dy = p[(2 * j) + 1] - p[(2 * i) + 1];
+            double length = PreciseLength(dx, dy);
+            _len[i] = length;
+            _ux[i] = dx / length;
+            _uy[i] = dy / length;
         }
     }
 
@@ -495,7 +613,7 @@ internal sealed class StrokeBuilder : IDashSink
 
     private void Add(byte verb, int coords)
     {
-        if (_vn >= MaxVerbs || _cn + coords > MaxCoords)
+        if (_vn >= _maxVerbs || _cn + coords > _maxCoords)
         {
             throw new ImageLimitException("The stroke outline has too many segments.");
         }

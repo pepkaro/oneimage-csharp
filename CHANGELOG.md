@@ -10,6 +10,8 @@ All notable changes are listed here. The format follows [Keep a Changelog](https
 
 ### Fixed
 
+- `RecursiveAI.OneImage.Pdf`: retain the direction of positive dashed strokes too small for float path coordinates, including closed seams and tiny cubic caps. Exact stationary-cap handling and ordinary core strokes keep their existing policies.
+
 - `RecursiveAI.OneImage.Pdf`: cap the first and last dash pieces separately at a closed subpath's seam, including hairlines and transformed strokes. Core drawing's closed-dash joining policy and normalized solid fallbacks are unchanged.
 
 - Closed dashed strokes no longer generate non-finite outline coordinates when one dash covers the entire figure. A figure that starts in a dash gap keeps the final partial dash open instead of adding a spurious closing edge. Boolean geometry limits are unchanged.

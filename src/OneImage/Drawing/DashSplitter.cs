@@ -49,7 +49,7 @@ internal sealed class DashSplitter
     }
 
     /// <summary>Splits one figure. <paramref name="xy"/> holds <paramref name="n"/> distinct consecutive points; a closed figure has an implicit last segment back to the first.</summary>
-    public void Split(double[] xy, int n, bool closed, IDashSink sink)
+    public void Split(double[] xy, int n, bool closed, IDashSink sink, bool preserveSmallSegments = false)
     {
         _curCount = 0;
         _first = null;
@@ -84,7 +84,8 @@ internal sealed class DashSplitter
         {
             int j = (i + 1) % n;
             double ax = xy[2 * i], ay = xy[(2 * i) + 1], bx = xy[2 * j], by = xy[(2 * j) + 1];
-            double len = Math.Sqrt(((bx - ax) * (bx - ax)) + ((by - ay) * (by - ay)));
+            double len = preserveSmallSegments ? StrokeBuilder.PreciseLength(bx - ax, by - ay)
+                : Math.Sqrt(((bx - ax) * (bx - ax)) + ((by - ay) * (by - ay)));
             dx = (bx - ax) / len;
             dy = (by - ay) / len;
             double pos = 0;
