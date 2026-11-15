@@ -117,7 +117,7 @@ internal sealed partial class CanvasDevice
                 // A passthrough form shares its owner's target. Never cross a mask or another layer.
                 return frame.Kind == FrameKind.Group && ReferenceEquals(frame.Layer, _target) ? frame.Shape : null;
             }
-            return null;
+            return _rootShape;
         }
     }
 

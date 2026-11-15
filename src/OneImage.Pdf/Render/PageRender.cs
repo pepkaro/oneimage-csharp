@@ -16,6 +16,7 @@ internal sealed class PageRender
     private readonly ConcurrentDictionary<RasterKey, Lazy<Raster?>> _rasters = new();
     private readonly ConcurrentDictionary<PdfShading, Lazy<ShadingLut>> _luts = new();
     private readonly ConcurrentDictionary<TileKey, Lazy<PatternTile?>> _tiles = new();
+    private readonly ConcurrentDictionary<PdfTilingPattern, bool> _backdropPatterns = new();
     private PdfDisplayList? _list;
     private PdfPageInfo _info;
     private ExceptionDispatchInfo? _failure;
@@ -178,6 +179,12 @@ internal sealed class PageRender
 
     public ShadingLut GetLut(PdfShading shading) =>
         _luts.GetOrAdd(shading, static s => new Lazy<ShadingLut>(() => new ShadingLut(s, s.Domain.Count >= 2 ? s.Domain[0] : 0, s.Domain.Count >= 2 ? s.Domain[1] : 1))).Value;
+
+    public bool PatternNeedsBackdrop(PdfTilingPattern pattern, CancellationToken ct)
+    {
+        ct.ThrowIfCancellationRequested();
+        return _backdropPatterns.GetOrAdd(pattern, static (p, token) => PatternBlendProbe.NeedsBackdrop(p, token), ct);
+    }
 
     public PatternTile? GetTile(in TileKey key, Func<PatternTile?> build)
     {

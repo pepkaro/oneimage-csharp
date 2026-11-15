@@ -91,6 +91,15 @@ internal sealed partial class CanvasDevice
     private void PaintStencilWithPattern(Raster stencil, in PdfMatrix placement, in PdfMatrix m, in PdfGraphicsState state, bool nearest)
     {
         DrawingPath? quad = PathConvert.ToPath(UnitSquare, m);
+        if (quad is not null && state.FillColor.Pattern is PdfTilingPattern pattern && _page.PatternNeedsBackdrop(pattern, _ct))
+        {
+            using var stencilMask = new Canvas(_w, _h, PixelFormat.Rgba8);
+            var stencilBrush = new PixelBrush(stencil, placement, nearest: nearest, new Rgba32(255, 255, 255, 255));
+            stencilMask.Fill(stencilBrush, DrawingPath.Rectangle(0, 0, _w, _h), antialias: false);
+            PaintBackdropPattern(pattern, state.FillColor, quad, IntersectionRule.NonZero, state.FillAlpha, state, ImageClipPath(quad), stencilMask);
+            return;
+        }
+
         Brush? paint = MakeBrush(state.FillColor);
         if (quad is null || paint is null || !(state.FillAlpha > 0))
         {

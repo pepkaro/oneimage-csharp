@@ -41,7 +41,9 @@ public sealed class PdfRenderLimits
 
     /// <summary>
     /// Gets how many copies of a pattern cell are drawn into one tile picture when the cell's box is larger than its step. More
-    /// copies are not drawn. Default 64.
+    /// copies are not drawn. For backdrop-dependent patterns this also bounds total cell replays to this value times the
+    /// render cell's pixel area (including raster slack); exceeding that work budget fails with <see cref="ImageLimitException"/>.
+    /// Default 64.
     /// </summary>
     public int MaxPatternCopies { get; init; } = 64;
 

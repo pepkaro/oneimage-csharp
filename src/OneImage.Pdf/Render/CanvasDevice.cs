@@ -21,6 +21,7 @@ internal sealed partial class CanvasDevice : IPdfDevice, IDisposable
     private readonly PageRender _page;
     private readonly PdfMatrix _view;
     private readonly Canvas _root;
+    private readonly Canvas? _rootShape;
     private readonly int _w, _h;
     private readonly CancellationToken _ct;
     private readonly int _depth;
@@ -33,11 +34,12 @@ internal sealed partial class CanvasDevice : IPdfDevice, IDisposable
     private PathBuilder? _textClip;
     private bool _disposed;
 
-    public CanvasDevice(PageRender page, in PdfMatrix view, Canvas root, int depth, Rgba32? tint, CancellationToken ct)
+    public CanvasDevice(PageRender page, in PdfMatrix view, Canvas root, int depth, Rgba32? tint, CancellationToken ct, Canvas? rootShape = null)
     {
         _page = page;
         _view = view;
         _root = root;
+        _rootShape = rootShape;
         _target = root;
         _w = root.Width;
         _h = root.Height;
@@ -327,6 +329,12 @@ internal sealed partial class CanvasDevice : IPdfDevice, IDisposable
     /// <summary>Fills a device-space shape with the paint of a PDF color (solid, shading pattern or tiling pattern).</summary>
     private void Paint(DrawingPath shape, IntersectionRule rule, in PdfColor color, double alpha, in PdfGraphicsState state)
     {
+        if (_tint is null && color.Pattern is PdfTilingPattern pattern && _page.PatternNeedsBackdrop(pattern, _ct))
+        {
+            PaintBackdropPattern(pattern, color, shape, rule, alpha, state, _clip.Path);
+            return;
+        }
+
         Brush? brush = MakeBrush(color);
         if (brush is null)
         {
