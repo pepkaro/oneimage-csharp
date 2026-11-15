@@ -1,0 +1,9 @@
+xUnit.net v3 In-Process Runner v4.0.2+0c7aa4991f (64-bit .NET 10.0.15)
+  Discovering: OneImage.Pdf.Tests
+  Discovered:  OneImage.Pdf.Tests
+  Starting:    OneImage.Pdf.Tests
+    OneImage.Pdf.Tests.NovelPdfCorpusTests.RenderMatchesIndependentInteriorAndContentExpectations(id: "blend-empty-backdrop") [SKIP]
+      Page display background participates in blend before page compositing.
+  Finished:    OneImage.Pdf.Tests (ID = 'fc76a84a27f2351f0f530d639f7868613309e8578c5f9a53e822ad0380cee27b')
+=== TEST EXECUTION SUMMARY ===
+   OneImage.Pdf.Tests  Total: 817, Errors: 0, Failed: 0, Skipped: 1, Not Run: 0, Time: 4.377s

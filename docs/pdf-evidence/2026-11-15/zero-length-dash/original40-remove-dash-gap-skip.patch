@@ -1,0 +1,80 @@
+diff --git a/tools/mit-pdf-corpus/generate.py b/tools/mit-pdf-corpus/generate.py
+--- a/tools/mit-pdf-corpus/generate.py
++++ b/tools/mit-pdf-corpus/generate.py
+@@ -53,7 +53,7 @@
+     for name,cap in [('dash-round-cap',1),('dash-square-cap',2)]:
+         emit(name,'Dashed stroke cap geometry',f'0.15 0.25 0.75 RG 14 w {cap} J [31 17] 8 d 34 70 m 286 170 l S')
+     for name,phase in [('zero-length-dash-gap',19),('zero-length-dash-on',3)]:
+-        emit(name,'Zero-length round cap at '+('off' if phase==19 else 'on')+' dash phase',f'24 w 1 J [13 14] {phase} d 160 120 m 160 120 l S',expectedBlank=phase==19,knownFailure='Dash off-phase currently paints a disc.' if phase==19 else None)
++        emit(name,'Zero-length round cap at '+('off' if phase==19 else 'on')+' dash phase',f'24 w 1 J [13 14] {phase} d 160 120 m 160 120 l S',expectedBlank=phase==19)
+     quadrants='0.8 0.15 0.25 rg 20 30 140 90 re f 0.15 0.75 0.3 rg 160 30 140 90 re f 0.15 0.25 0.85 rg 20 120 140 90 re f 0.9 0.75 0.15 rg 160 120 140 90 re f'
+     for angle in (0,90,180,270):
+         d=Document();d.page_entries=f'/CropBox [20 30 300 210] /Rotate {angle}';emit(f'crop-rotation-{angle}','Translated CropBox and rotation '+str(angle),quadrants,d)
+diff --git a/tests/testdata/pdf-novel-mit/features.json b/tests/testdata/pdf-novel-mit/features.json
+--- a/tests/testdata/pdf-novel-mit/features.json
++++ b/tests/testdata/pdf-novel-mit/features.json
+@@ -47,13 +47,11 @@
+   },
+   "zero-length-dash-gap": {
+     "feature": "Zero-length round cap at off dash phase",
+-    "expectedBlank": true,
+-    "knownFailure": "Dash off-phase currently paints a disc."
++    "expectedBlank": true
+   },
+   "zero-length-dash-on": {
+     "feature": "Zero-length round cap at on dash phase",
+-    "expectedBlank": false,
+-    "knownFailure": null
++    "expectedBlank": false
+   },
+   "crop-rotation-0": {
+     "feature": "Translated CropBox and rotation 0"
+diff --git a/tests/testdata/pdf-novel-mit/manifest.json b/tests/testdata/pdf-novel-mit/manifest.json
+--- a/tests/testdata/pdf-novel-mit/manifest.json
++++ b/tests/testdata/pdf-novel-mit/manifest.json
+@@ -3,7 +3,7 @@
+   "license": "MIT",
+   "dpi": 72,
+   "generator": "tools/mit-pdf-corpus/generate.py",
+-  "generatorSha256": "08d35a4dcfb8de6904a28b27acf39161236f4d29eaf72b489ea003c226919551",
++  "generatorSha256": "68937dbb82f691bb8d0d89b44a536a93dd8e32216ebfcf0417616f7c770bc14a",
+   "referenceProvenance": {
+     "pdfium": "153.0.7999.0",
+     "pypdfium2": "5.13.0",
+@@ -2509,8 +2509,7 @@
+             "pdfjs": "9b073a39ce590dfbf5b1d4cafb67ff08e003b182dc516e6ee07d4fe227cb78d9"
+           }
+         }
+-      ],
+-      "knownFailure": "Dash off-phase currently paints a disc."
++      ]
+     },
+     {
+       "id": "zero-length-dash-on",
+diff --git a/tests/testdata/pdf-novel-mit/README.md b/tests/testdata/pdf-novel-mit/README.md
+--- a/tests/testdata/pdf-novel-mit/README.md
++++ b/tests/testdata/pdf-novel-mit/README.md
+@@ -67,16 +67,17 @@
+ 16 nesting levels and 512-pixel pattern tile sides. Render operations get a
+ 15-second cancellation token. No PDF action/event is executed.
+ 
+-Two visual assertions expose known baseline defects, instead of blessing current
+-output. Their structural and region/parallel tests still run:
++The `zero-length-dash-gap` visual assertion now runs normally after the separate
++dash-phase cap fix. Its original blank expectation and input bytes are unchanged.
++One remaining visual assertion exposes a baseline defect instead of blessing
++current output. Its structural and region/parallel tests still run:
+ 
+-- `zero-length-dash-gap`: an off dash phase must be blank, but baseline paints a disc.
+ - `blend-empty-backdrop`: Screen/ColorDodge over unpainted PDF content must paint
+   the source, but baseline incorrectly blends against the white display surface.
+ 
+-Set `ONEIMAGE_PDF_NOVEL_KNOWN_FAILURES=1` to execute those visual assertions; keep
+-this opt-in run in defect verification until the separate production fixes land.
+-A skip is not a pass. This infrastructure change does not claim to fix either bug.
++Set `ONEIMAGE_PDF_NOVEL_KNOWN_FAILURES=1` to execute the remaining visual assertion; keep
++this opt-in run in defect verification until the separate backdrop fix lands.
++A skip is not a pass. The dash fix does not claim to fix the backdrop bug.
+ 
+ ## Pinned independent reference audit
+ 

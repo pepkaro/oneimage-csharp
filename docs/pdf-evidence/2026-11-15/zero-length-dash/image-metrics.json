@@ -1,0 +1,4367 @@
+[
+  {
+    "case": "solid",
+    "input_sha256": "06d531c673ccb9ba801910e2d335dc3fc02b5b133fcb62b96b33b493ecd50a3d",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "d64d66f831df6cb35ddba4d8ecbd4a99d6d23eb731873799e908c9686a842c5a",
+      "rgb_sha256": "70ad978a26f78bacbfce9f7f9b907b508bcd29e52c979b3390816c2d8baf0b8e",
+      "ink_pixels": 1106,
+      "black_area_square_points": 261.2176470588235
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    }
+  },
+  {
+    "case": "even-0",
+    "input_sha256": "bb66ec9f485a87d357a4f773998c130fcf19bba78c4f424b2824f8999ab6489c",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "d64d66f831df6cb35ddba4d8ecbd4a99d6d23eb731873799e908c9686a842c5a",
+      "rgb_sha256": "70ad978a26f78bacbfce9f7f9b907b508bcd29e52c979b3390816c2d8baf0b8e",
+      "ink_pixels": 1106,
+      "black_area_square_points": 261.2176470588235
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    }
+  },
+  {
+    "case": "even-3",
+    "input_sha256": "6ebc1098b23548a7346ed1fd0b62bfb3c510484fd1e081272c786fb1e184c454",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "d64d66f831df6cb35ddba4d8ecbd4a99d6d23eb731873799e908c9686a842c5a",
+      "rgb_sha256": "70ad978a26f78bacbfce9f7f9b907b508bcd29e52c979b3390816c2d8baf0b8e",
+      "ink_pixels": 1106,
+      "black_area_square_points": 261.2176470588235
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    }
+  },
+  {
+    "case": "even-10.999",
+    "input_sha256": "d9dd492ed82ed3910d23eb67b5315abc3c97141b9fab8e7c5a97af9b25c92571",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "d920aea59d5c976fa1ce2bf690e95476bb4ab806440eeee82efb8ffdef817564",
+      "rgb_sha256": "b8d799fce855e225fd283b3ba50cb63ae3696db58df5b78be91138eee1faf1ec",
+      "ink_pixels": 1070,
+      "black_area_square_points": 252.23235294117646
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.010642722800925927,
+      "different_pixels": 135
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.010642722800925927,
+      "different_pixels": 135
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    }
+  },
+  {
+    "case": "even-11",
+    "input_sha256": "049339a7f5c25e6559069ecc2d7466f20e814e90c70a40362e238480963c0af1",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "PDFium": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "MuPDF": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "before_head_changed_pixels": 1076,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    }
+  },
+  {
+    "case": "even-11.001",
+    "input_sha256": "875dc1f01da059d6d07e2f6785048233f735395aeac827a31b442de7c3858f58",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "PDFium": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "MuPDF": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "before_head_changed_pixels": 1076,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    }
+  },
+  {
+    "case": "even-19",
+    "input_sha256": "ffaf94f58275783520742213eb820e5af8f374cfa830cb7721b300c54192a028",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "PDFium": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "MuPDF": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "before_head_changed_pixels": 1076,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    }
+  },
+  {
+    "case": "even-27.999",
+    "input_sha256": "f561e17917e5abe975bcd2e8b1fc775d8e5da1b327cf895ab38f3aef75129029",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "PDFium": {
+      "png_sha256": "fabd92e2d85e6c2f435a404d89421130ee7ea32970238dcca53a243fa11d7805",
+      "rgb_sha256": "641524adb78551ed887da1f6971978282bdecfc58851d0bf08932140da345ecd",
+      "ink_pixels": 1106,
+      "black_area_square_points": 261.1970588235294
+    },
+    "MuPDF": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "before_head_changed_pixels": 1076,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.08477105034722222,
+      "different_pixels": 167
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 2.4090440538194446,
+      "different_pixels": 1106
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    }
+  },
+  {
+    "case": "even-28",
+    "input_sha256": "794258f9b2e9bb89e0970eed74e43bd4628415a70bddcbd225a44b89e50f6549",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "d64d66f831df6cb35ddba4d8ecbd4a99d6d23eb731873799e908c9686a842c5a",
+      "rgb_sha256": "70ad978a26f78bacbfce9f7f9b907b508bcd29e52c979b3390816c2d8baf0b8e",
+      "ink_pixels": 1106,
+      "black_area_square_points": 261.2176470588235
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    }
+  },
+  {
+    "case": "even-31",
+    "input_sha256": "772137673101541774eddb2e03e9386bde8d2ebedf5649ad377e5d4539ec3fc6",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "d64d66f831df6cb35ddba4d8ecbd4a99d6d23eb731873799e908c9686a842c5a",
+      "rgb_sha256": "70ad978a26f78bacbfce9f7f9b907b508bcd29e52c979b3390816c2d8baf0b8e",
+      "ink_pixels": 1106,
+      "black_area_square_points": 261.2176470588235
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    }
+  },
+  {
+    "case": "even-39",
+    "input_sha256": "1b6e2137081462375676a65f0fa7142f3ef0c38576f6414520d24bbbb5d4caf4",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "PDFium": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "MuPDF": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "before_head_changed_pixels": 1076,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    }
+  },
+  {
+    "case": "even-56",
+    "input_sha256": "ac5a8b631fce3280675ffd4e89885a765aad84c92a5746286ebc15489fcc7c73",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "d64d66f831df6cb35ddba4d8ecbd4a99d6d23eb731873799e908c9686a842c5a",
+      "rgb_sha256": "70ad978a26f78bacbfce9f7f9b907b508bcd29e52c979b3390816c2d8baf0b8e",
+      "ink_pixels": 1106,
+      "black_area_square_points": 261.2176470588235
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    }
+  },
+  {
+    "case": "even-59",
+    "input_sha256": "a17cdf21097c6f55cc171efafd012f95dfa7759d170de0c224f0881e1c4ce95f",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "d64d66f831df6cb35ddba4d8ecbd4a99d6d23eb731873799e908c9686a842c5a",
+      "rgb_sha256": "70ad978a26f78bacbfce9f7f9b907b508bcd29e52c979b3390816c2d8baf0b8e",
+      "ink_pixels": 1106,
+      "black_area_square_points": 261.2176470588235
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    }
+  },
+  {
+    "case": "odd-0",
+    "input_sha256": "25a7fd30d9822f6d72983462612ae31c3d8bd211660faad31045f9b347bf927e",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "d64d66f831df6cb35ddba4d8ecbd4a99d6d23eb731873799e908c9686a842c5a",
+      "rgb_sha256": "70ad978a26f78bacbfce9f7f9b907b508bcd29e52c979b3390816c2d8baf0b8e",
+      "ink_pixels": 1106,
+      "black_area_square_points": 261.2176470588235
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    }
+  },
+  {
+    "case": "odd-6",
+    "input_sha256": "14119ccf772bb22bee7927b741391d1b8350c4504ffcd31c4dfcc6bac3dcfbe9",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "d64d66f831df6cb35ddba4d8ecbd4a99d6d23eb731873799e908c9686a842c5a",
+      "rgb_sha256": "70ad978a26f78bacbfce9f7f9b907b508bcd29e52c979b3390816c2d8baf0b8e",
+      "ink_pixels": 1106,
+      "black_area_square_points": 261.2176470588235
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    }
+  },
+  {
+    "case": "odd-7",
+    "input_sha256": "692f5967d2426ce3bb99379955be0a83ad49bc59306a996c414ce9d63643054e",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "PDFium": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "MuPDF": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "before_head_changed_pixels": 1076,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    }
+  },
+  {
+    "case": "odd-12",
+    "input_sha256": "285a7966acbef3809be054f025b1fabf6be8217ba253b700bd5466213e9b5573",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "d64d66f831df6cb35ddba4d8ecbd4a99d6d23eb731873799e908c9686a842c5a",
+      "rgb_sha256": "70ad978a26f78bacbfce9f7f9b907b508bcd29e52c979b3390816c2d8baf0b8e",
+      "ink_pixels": 1106,
+      "black_area_square_points": 261.2176470588235
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    }
+  },
+  {
+    "case": "odd-20",
+    "input_sha256": "c8f95f729cc899890897c3a5962aa96f7e3e714d176d78c7280112d9bb4c0d57",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "d64d66f831df6cb35ddba4d8ecbd4a99d6d23eb731873799e908c9686a842c5a",
+      "rgb_sha256": "70ad978a26f78bacbfce9f7f9b907b508bcd29e52c979b3390816c2d8baf0b8e",
+      "ink_pixels": 1106,
+      "black_area_square_points": 261.2176470588235
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    }
+  },
+  {
+    "case": "odd-21",
+    "input_sha256": "a6e93ddb8299ba9a4f7488d4065c6cd275eb0a026f04de7d67e864127e74e0b7",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "PDFium": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 1076,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 2.298095703125,
+      "different_pixels": 1058
+    }
+  },
+  {
+    "case": "odd-23",
+    "input_sha256": "8937f1b18fe096a7d1a2ece6235fc64bec827699d05a8c24fdd21628fa37f4aa",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "PDFium": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 1076,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 2.298095703125,
+      "different_pixels": 1058
+    }
+  },
+  {
+    "case": "odd-28",
+    "input_sha256": "4b0bcbb8e0796b8171fda2908f74cb0a532162bc60d562debaf9eff23bd64c7a",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "d64d66f831df6cb35ddba4d8ecbd4a99d6d23eb731873799e908c9686a842c5a",
+      "rgb_sha256": "70ad978a26f78bacbfce9f7f9b907b508bcd29e52c979b3390816c2d8baf0b8e",
+      "ink_pixels": 1106,
+      "black_area_square_points": 261.2176470588235
+    },
+    "MuPDF": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    }
+  },
+  {
+    "case": "odd-33",
+    "input_sha256": "607b91a59d89fa18ec9784d581b90ffa89efaa617e3f28b3c2f3863febec0427",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "PDFium": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 1076,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 2.298095703125,
+      "different_pixels": 1058
+    }
+  },
+  {
+    "case": "odd-41",
+    "input_sha256": "151e8aa248d076b817117245a847629f5080d982cc872f5dca77f83266db4224",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "PDFium": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 1076,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 2.298095703125,
+      "different_pixels": 1058
+    }
+  },
+  {
+    "case": "odd-42",
+    "input_sha256": "891ec60695795d3d7c9097eaf9925e97055823089d1188f331a6bd6f9bb7012c",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "d64d66f831df6cb35ddba4d8ecbd4a99d6d23eb731873799e908c9686a842c5a",
+      "rgb_sha256": "70ad978a26f78bacbfce9f7f9b907b508bcd29e52c979b3390816c2d8baf0b8e",
+      "ink_pixels": 1106,
+      "black_area_square_points": 261.2176470588235
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    }
+  },
+  {
+    "case": "odd-49",
+    "input_sha256": "84d387dca2b418fa4ed7347e2919968ae09541a1ec8d0a2651577245d36acf2f",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "PDFium": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "MuPDF": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "before_head_changed_pixels": 1076,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    }
+  },
+  {
+    "case": "odd-54",
+    "input_sha256": "9aa4311ba6e499204b791db54f3d0c24c2299351a2ef4063918da8b1d5d536fd",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "d64d66f831df6cb35ddba4d8ecbd4a99d6d23eb731873799e908c9686a842c5a",
+      "rgb_sha256": "70ad978a26f78bacbfce9f7f9b907b508bcd29e52c979b3390816c2d8baf0b8e",
+      "ink_pixels": 1106,
+      "black_area_square_points": 261.2176470588235
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    }
+  },
+  {
+    "case": "zero-0_17_0",
+    "input_sha256": "86c99c1d78fbd2f0431d76e5e66c033c995a1faae13a382ae151b605720c1198",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "abe6ebc68543c76a0982b6784811464d74f7a21873ead9098d44dcf2ced0135c",
+      "rgb_sha256": "86b644fa7def01dfa94983c01c03515c7b85eb354dce708a5216e7ba7aae4e4f",
+      "ink_pixels": 1080,
+      "black_area_square_points": 254.01372549019607
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.018753616898148147,
+      "different_pixels": 140
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.018753616898148147,
+      "different_pixels": 140
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    }
+  },
+  {
+    "case": "zero-0_17_1",
+    "input_sha256": "b6cd9dc3154beee621f6d71ac47997e8865174c00e02186129c99ec4b57fbab6",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "PDFium": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "MuPDF": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "before_head_changed_pixels": 1076,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    }
+  },
+  {
+    "case": "zero-0_17_11",
+    "input_sha256": "fc068c7e3e600aced80df4d9bef91084112522ca41ea8ae02fd0bc4f6d1f4fd5",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "PDFium": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "MuPDF": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "before_head_changed_pixels": 1076,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    }
+  },
+  {
+    "case": "zero-0_17_17",
+    "input_sha256": "d1c6ae223601602f28a8a38d417af14f3dc36bff83aabf8551fc05f7ed5f5d1f",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "a8467a04b5ba4c1ca03a0b473ec1d4b50d40030f6a3a597d7209b31a7ec316e0",
+      "rgb_sha256": "8105c6a2fd901330eecc22ff44fc1a92beeaf5fb5230bf15eeb590009cd8f14a",
+      "ink_pixels": 1080,
+      "black_area_square_points": 254.01666666666668
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.04957863136574074,
+      "different_pixels": 153
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.04957863136574074,
+      "different_pixels": 153
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    }
+  },
+  {
+    "case": "zero-0_17_28",
+    "input_sha256": "2d81947f373b91225bc525ab35ff6e344378444a8013ebf7b6e7f4bf4d72073b",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "PDFium": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "MuPDF": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "before_head_changed_pixels": 1076,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    }
+  },
+  {
+    "case": "zero-0_17_34",
+    "input_sha256": "eb8bc8a2648ad73f1ae7fa843c086aa1e5328d99e613aef6c2c93091e8dd0886",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "e7ea6c078fa9f571a1891e144893b09375dae3d930081519cc4255f958d54666",
+      "rgb_sha256": "f92a47b123977d0c1ae9f7b87935b5683fad3d9383829cff273a84e1fb4baea3",
+      "ink_pixels": 1077,
+      "black_area_square_points": 254.0078431372549
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.08251953125,
+      "different_pixels": 166
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.08251953125,
+      "different_pixels": 166
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    }
+  },
+  {
+    "case": "zero-11_0_0",
+    "input_sha256": "afe5da72838503fc883a5cde83f619f69181028debce32c7378c12d57452b131",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "d64d66f831df6cb35ddba4d8ecbd4a99d6d23eb731873799e908c9686a842c5a",
+      "rgb_sha256": "70ad978a26f78bacbfce9f7f9b907b508bcd29e52c979b3390816c2d8baf0b8e",
+      "ink_pixels": 1106,
+      "black_area_square_points": 261.2176470588235
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    }
+  },
+  {
+    "case": "zero-11_0_1",
+    "input_sha256": "ac24c6e74fdcdcc4fa965ca95108cbcf72a1918c5930e963466ca8b74739a5dd",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "d64d66f831df6cb35ddba4d8ecbd4a99d6d23eb731873799e908c9686a842c5a",
+      "rgb_sha256": "70ad978a26f78bacbfce9f7f9b907b508bcd29e52c979b3390816c2d8baf0b8e",
+      "ink_pixels": 1106,
+      "black_area_square_points": 261.2176470588235
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    }
+  },
+  {
+    "case": "zero-11_0_11",
+    "input_sha256": "dc8c69cea3fe08f82fe92aa1795de8efda84d193067fd29277f6257e90a3199b",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "9864e2b95e59efab25c2539d4a0f958f314cd1de9b9206248b9d015e42780f26",
+      "rgb_sha256": "fe739c2e7dd6975ea1626cd4d284fbb28ed8ee7a987cd113355ec1b9c0bbcbfe",
+      "ink_pixels": 1099,
+      "black_area_square_points": 259.4186274509804
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.09932906539351852,
+      "different_pixels": 173
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.09932906539351852,
+      "different_pixels": 173
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    }
+  },
+  {
+    "case": "zero-11_0_17",
+    "input_sha256": "a1c461746fa6108dcc385383df59103576dfa07b90bb9ab2ffbc8e8f91e60f23",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "d64d66f831df6cb35ddba4d8ecbd4a99d6d23eb731873799e908c9686a842c5a",
+      "rgb_sha256": "70ad978a26f78bacbfce9f7f9b907b508bcd29e52c979b3390816c2d8baf0b8e",
+      "ink_pixels": 1106,
+      "black_area_square_points": 261.2176470588235
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    }
+  },
+  {
+    "case": "zero-11_0_28",
+    "input_sha256": "422952545598b069033779387f700762fd7de6a9e94c8dcb6821c473684419fa",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "d64d66f831df6cb35ddba4d8ecbd4a99d6d23eb731873799e908c9686a842c5a",
+      "rgb_sha256": "70ad978a26f78bacbfce9f7f9b907b508bcd29e52c979b3390816c2d8baf0b8e",
+      "ink_pixels": 1106,
+      "black_area_square_points": 261.2176470588235
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    }
+  },
+  {
+    "case": "zero-11_0_34",
+    "input_sha256": "7661f455b20e17e6ebd522f3acb39182d5aee256d342724a6936e5c64486d05e",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "d64d66f831df6cb35ddba4d8ecbd4a99d6d23eb731873799e908c9686a842c5a",
+      "rgb_sha256": "70ad978a26f78bacbfce9f7f9b907b508bcd29e52c979b3390816c2d8baf0b8e",
+      "ink_pixels": 1106,
+      "black_area_square_points": 261.2176470588235
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    }
+  },
+  {
+    "case": "zero-0_0_11_17_0",
+    "input_sha256": "6b22b9953f9bc789682e68ea09f0d24421dc548e011660b4e3ee9737da04bc64",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "b204312fcaa8ea57663d441a84b7be448528852edd8cb92cb85a5f8882b233a7",
+      "rgb_sha256": "cfc10212a631ddb1561d06802e85e19bcf5f539238ec07c1e6d3f8f8ec9dd590",
+      "ink_pixels": 1106,
+      "black_area_square_points": 264.4235294117647
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.10787398726851852,
+      "different_pixels": 163
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.10787398726851852,
+      "different_pixels": 163
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    }
+  },
+  {
+    "case": "zero-0_0_11_17_1",
+    "input_sha256": "a91f1269f195fcaa8c89ce384649e71a0fc9a2d06cf1db1d9d518a7de5aab965",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "d64d66f831df6cb35ddba4d8ecbd4a99d6d23eb731873799e908c9686a842c5a",
+      "rgb_sha256": "70ad978a26f78bacbfce9f7f9b907b508bcd29e52c979b3390816c2d8baf0b8e",
+      "ink_pixels": 1106,
+      "black_area_square_points": 261.2176470588235
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    }
+  },
+  {
+    "case": "zero-0_0_11_17_11",
+    "input_sha256": "a8ddf8397756f866c16d169023641367663b4fe1d83a3e7e0307cdb95fce8b4d",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "PDFium": {
+      "png_sha256": "76b44454981a277d009a6589f798bd092c7cf868152a9819ffcc0f3cfd6eadc7",
+      "rgb_sha256": "05f9ec013e9c28703415ef087924a02ab8641ac98019c90925f26b8b4c59da06",
+      "ink_pixels": 1087,
+      "black_area_square_points": 255.81764705882352
+    },
+    "MuPDF": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "before_head_changed_pixels": 1076,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.03495732060185185,
+      "different_pixels": 147
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 2.3594292534722223,
+      "different_pixels": 1087
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    }
+  },
+  {
+    "case": "zero-0_0_11_17_17",
+    "input_sha256": "57c8e5b6228bb8ee2c03329dabfa7c08397461044e5f9e4012971fc190ab3619",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "PDFium": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "MuPDF": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "before_head_changed_pixels": 1076,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    }
+  },
+  {
+    "case": "zero-0_0_11_17_28",
+    "input_sha256": "3f89a02e1a2f8a61ff7da09e0bddf50ed2e63121809a869cce534ae606138e54",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "c2d91c4b6316ddcaf96d3a57b19e9b57811ac1be91a4f5e3369fc24b4de80a7f",
+      "rgb_sha256": "36a0c9e51a2c41e4cb6c5aea43247ae93d63c755e4df84b0925a6fa862730f52",
+      "ink_pixels": 1092,
+      "black_area_square_points": 261.49313725490197
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.12862594039351852,
+      "different_pixels": 165
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.12862594039351852,
+      "different_pixels": 165
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    }
+  },
+  {
+    "case": "zero-0_0_11_17_34",
+    "input_sha256": "a074f2b5d5635e6e2c441d8b559a137d8871ed20807c87b71fd49e019f6ded7f",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "d64d66f831df6cb35ddba4d8ecbd4a99d6d23eb731873799e908c9686a842c5a",
+      "rgb_sha256": "70ad978a26f78bacbfce9f7f9b907b508bcd29e52c979b3390816c2d8baf0b8e",
+      "ink_pixels": 1106,
+      "black_area_square_points": 261.2176470588235
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    }
+  },
+  {
+    "case": "zero-11_0_0_17_0",
+    "input_sha256": "28647c96c6d318921ff24fcef61175842d92ea38b99c163c2239f1426558fa88",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "d64d66f831df6cb35ddba4d8ecbd4a99d6d23eb731873799e908c9686a842c5a",
+      "rgb_sha256": "70ad978a26f78bacbfce9f7f9b907b508bcd29e52c979b3390816c2d8baf0b8e",
+      "ink_pixels": 1106,
+      "black_area_square_points": 261.2176470588235
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    }
+  },
+  {
+    "case": "zero-11_0_0_17_1",
+    "input_sha256": "9ed73ecb463740fd7d6c1a16f984b7081169d5b49e5ee9ad8c5ace4215d4fd4e",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "d64d66f831df6cb35ddba4d8ecbd4a99d6d23eb731873799e908c9686a842c5a",
+      "rgb_sha256": "70ad978a26f78bacbfce9f7f9b907b508bcd29e52c979b3390816c2d8baf0b8e",
+      "ink_pixels": 1106,
+      "black_area_square_points": 261.2176470588235
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    }
+  },
+  {
+    "case": "zero-11_0_0_17_11",
+    "input_sha256": "da3b5cb292e6e237554b4a978aa2fe8dba5c70c14b07bc01f162c4b6d02c2c42",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "a8467a04b5ba4c1ca03a0b473ec1d4b50d40030f6a3a597d7209b31a7ec316e0",
+      "rgb_sha256": "8105c6a2fd901330eecc22ff44fc1a92beeaf5fb5230bf15eeb590009cd8f14a",
+      "ink_pixels": 1080,
+      "black_area_square_points": 254.01666666666668
+    },
+    "MuPDF": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.04957863136574074,
+      "different_pixels": 153
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.04957863136574074,
+      "different_pixels": 153
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    }
+  },
+  {
+    "case": "zero-11_0_0_17_17",
+    "input_sha256": "f0c0f4d833559a8e3f1560b4b8f96b42b89574e6c6da1a598901c30ba722a499",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "PDFium": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "MuPDF": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "before_head_changed_pixels": 1076,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    }
+  },
+  {
+    "case": "zero-11_0_0_17_28",
+    "input_sha256": "87a1b293a243952cfa40446cc55dc7f493b7422776815ce1317df9755b1918bd",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "11c8aaa2680220c84a09bc03f5156baedf786eb5066ae6306b117094d1d5f29b",
+      "rgb_sha256": "e2470ac1a0d8b84b5d695d646e8b45f64b2b9d7d4213c7d09686349485034eae",
+      "ink_pixels": 1092,
+      "black_area_square_points": 257.6127450980392
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.11576786747685185,
+      "different_pixels": 181
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.11576786747685185,
+      "different_pixels": 181
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    }
+  },
+  {
+    "case": "zero-11_0_0_17_34",
+    "input_sha256": "3d3f2409c83a33c806760309f7f4fa9e79b7022d1a34e5b35b596efd06968f93",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "d64d66f831df6cb35ddba4d8ecbd4a99d6d23eb731873799e908c9686a842c5a",
+      "rgb_sha256": "70ad978a26f78bacbfce9f7f9b907b508bcd29e52c979b3390816c2d8baf0b8e",
+      "ink_pixels": 1106,
+      "black_area_square_points": 261.2176470588235
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    }
+  },
+  {
+    "case": "zero-0_0_0_17_0",
+    "input_sha256": "6654a35608494a84e212841549b4ce9e6e28b5edbb2b3073d21fa8f8ca2ced76",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "d32c0ba4d139c87566e76195a4bf18dfdec80347ac7db5320a78951668c9f5dc",
+      "rgb_sha256": "6a910e6baad32468498dbae40bf7c9d3a18d54a5fe9db9c6e69dbf290fbf716b",
+      "ink_pixels": 1091,
+      "black_area_square_points": 261.4656862745098
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.0805935329861111,
+      "different_pixels": 148
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0805935329861111,
+      "different_pixels": 148
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    }
+  },
+  {
+    "case": "zero-0_0_0_17_1",
+    "input_sha256": "d396ca927591d58b15e2e397dab054cbdbdd618e866f4544c4cb013d12ef64dc",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "PDFium": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "MuPDF": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "before_head_changed_pixels": 1076,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    }
+  },
+  {
+    "case": "zero-0_0_0_17_11",
+    "input_sha256": "1d2844a4ae674f369176ba91e6be054905ebba6ca2d717b09e4136ad7cd2a051",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "PDFium": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "MuPDF": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "before_head_changed_pixels": 1076,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    }
+  },
+  {
+    "case": "zero-0_0_0_17_17",
+    "input_sha256": "cb39142d220441a3d9aa2037f6cd82285a863f5d755570282d4e4490079f7ef5",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "ee67efb39dd61d38899ffa8c5d0416a218c6497e8dcd75c18517b229af6e06af",
+      "rgb_sha256": "e6ab658ac21c864ad15233d0ef909c489337b3ed4d3e2f46724914196004707b",
+      "ink_pixels": 1080,
+      "black_area_square_points": 254.01470588235293
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.11558702256944445,
+      "different_pixels": 180
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.11558702256944445,
+      "different_pixels": 180
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    }
+  },
+  {
+    "case": "zero-0_0_0_17_28",
+    "input_sha256": "203718143b42f08442c074f2fe309a3eb881d630b95c221dcbe3f3b73345d266",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "PDFium": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "MuPDF": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "before_head_changed_pixels": 1076,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    }
+  },
+  {
+    "case": "zero-0_0_0_17_34",
+    "input_sha256": "3e93483624e1ed7a67adad00f78ab695805db0c479bd9f153e6cff14136502c4",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    }
+  },
+  {
+    "case": "zero-0_17_0_0",
+    "input_sha256": "0ce1913502e252363d6e681f6a07591958fd7b5dfcfa7c5a8063ef350ed98363",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "abe6ebc68543c76a0982b6784811464d74f7a21873ead9098d44dcf2ced0135c",
+      "rgb_sha256": "86b644fa7def01dfa94983c01c03515c7b85eb354dce708a5216e7ba7aae4e4f",
+      "ink_pixels": 1080,
+      "black_area_square_points": 254.01372549019607
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.018753616898148147,
+      "different_pixels": 140
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.018753616898148147,
+      "different_pixels": 140
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    }
+  },
+  {
+    "case": "zero-0_17_0_1",
+    "input_sha256": "b60a3fc1e89520d02a4d7b31a2a460085879e3dfae48ba2e414acb8cda67e67d",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "PDFium": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "MuPDF": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "before_head_changed_pixels": 1076,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    }
+  },
+  {
+    "case": "zero-0_17_0_11",
+    "input_sha256": "76b35c5a7b072937e9dc744c34fe9072eb6637536fd5477fe8cfde006c41bc9f",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "PDFium": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "MuPDF": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "before_head_changed_pixels": 1076,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    }
+  },
+  {
+    "case": "zero-0_17_0_17",
+    "input_sha256": "845c8b4fabe35bcebcee5933c194f3e4cc70151437ef82004bf37a704665b9d3",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "e5f1c34d406deab82d6c9b13295c2b4cc52fc44a15485f745478aa1ae1d20152",
+      "rgb_sha256": "c042fe0c17870c1b13d89d0aa6540f90038f8ef6c379545e905b07b572813444",
+      "ink_pixels": 1099,
+      "black_area_square_points": 263.09901960784316
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.11045102719907407,
+      "different_pixels": 165
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.11045102719907407,
+      "different_pixels": 165
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    }
+  },
+  {
+    "case": "zero-0_17_0_28",
+    "input_sha256": "6f6b8c6d0862585b23a1b1ca585f7246240d2429aa48daea9a46916dddf0bf53",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "d64d66f831df6cb35ddba4d8ecbd4a99d6d23eb731873799e908c9686a842c5a",
+      "rgb_sha256": "70ad978a26f78bacbfce9f7f9b907b508bcd29e52c979b3390816c2d8baf0b8e",
+      "ink_pixels": 1106,
+      "black_area_square_points": 261.2176470588235
+    },
+    "MuPDF": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    }
+  },
+  {
+    "case": "zero-0_17_0_34",
+    "input_sha256": "58216c408755f4277fe00a4b8354452aa461a23e65a543f3a114a5482e3608fd",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "459c32de33b2792c81ca28652284b05ddbcc694f31f7f461278327092d3edb9c",
+      "rgb_sha256": "5f905ddd1115429b058d52e73704925e74bb9cf3a6d703363d78e3f5b92effe9",
+      "ink_pixels": 1106,
+      "black_area_square_points": 264.4490196078431
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.11020688657407407,
+      "different_pixels": 163
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.11020688657407407,
+      "different_pixels": 163
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    }
+  },
+  {
+    "case": "close-3",
+    "input_sha256": "75798e324aa70b30b399c5fe0134ed90dd117a3793f6248d9c380a063151eac3",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "569d45c9cb1013ea88f98a11d6db67ceb6cfcb7c90cd461a9d266a196800f6c9",
+      "rgb_sha256": "b12895d1650eef5ed0a8817621161a26f9ad96e5700e544454081ba48a989223",
+      "ink_pixels": 571,
+      "black_area_square_points": 138.42843137254903
+    },
+    "MuPDF": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 1.1113190827546295,
+      "different_pixels": 570
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 1.1113190827546295,
+      "different_pixels": 570
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    }
+  },
+  {
+    "case": "close-19",
+    "input_sha256": "7d3b44347c6506a46c2e99a6f16e67fb606fc9f0abdd8fdbf787bf8e8d494f40",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "PDFium": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "MuPDF": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "before_head_changed_pixels": 1076,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    }
+  },
+  {
+    "case": "closedline-3",
+    "input_sha256": "4fd293cb906d13de3a6db0b5bdf44c0e0da496883b96c99032d58621c2665833",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "569d45c9cb1013ea88f98a11d6db67ceb6cfcb7c90cd461a9d266a196800f6c9",
+      "rgb_sha256": "b12895d1650eef5ed0a8817621161a26f9ad96e5700e544454081ba48a989223",
+      "ink_pixels": 571,
+      "black_area_square_points": 138.42843137254903
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 1.1113190827546295,
+      "different_pixels": 570
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 1.1113190827546295,
+      "different_pixels": 570
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    }
+  },
+  {
+    "case": "closedline-19",
+    "input_sha256": "95d8184fe21c72620fdb9743d78d8b8939718d20088dd1329dc1f5a9ccfa6d56",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "PDFium": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "MuPDF": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "before_head_changed_pixels": 1076,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    }
+  },
+  {
+    "case": "curve-3",
+    "input_sha256": "19d93ddde5bb033170133c615234390074a09c9eb7954e78116d861fd7404004",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    }
+  },
+  {
+    "case": "curve-19",
+    "input_sha256": "7cddf539435a5cb0e01270f6ebf19b3a83b226f5f51e3f192ac3d2b7653d297b",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "PDFium": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "MuPDF": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "before_head_changed_pixels": 1076,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    }
+  },
+  {
+    "case": "move-3",
+    "input_sha256": "4fd1e56745461307a69f17c8c415610d14f2fd0ed7bae8abfad7325691963cd2",
+    "before": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "head": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "PDFium": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "MuPDF": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    }
+  },
+  {
+    "case": "move-19",
+    "input_sha256": "2ff909ca9e04125e37e1f6c1deb7f454a7551f6a271eaa95ced9964a9f9bb11b",
+    "before": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "head": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "PDFium": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "MuPDF": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    }
+  },
+  {
+    "case": "rectangle-3",
+    "input_sha256": "ac27a0634c7c04de1c4c253d87360750ed29010ceddc48f2b645f5b7cb9ff661",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    }
+  },
+  {
+    "case": "rectangle-19",
+    "input_sha256": "2614da7b8de00cafc8f987b37dc244178d5533f050a59aaccc99af23df497beb",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "PDFium": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "MuPDF": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "before_head_changed_pixels": 1076,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    }
+  },
+  {
+    "case": "tiny-3",
+    "input_sha256": "5028d29e7ab84c4f2d007ce6acd9145340c1628fdd688801fa89c1ef433bcea6",
+    "before": {
+      "png_sha256": "6d035b029b9becd2714c99da854147e97e45424aaafcd0139fdb37f954010aa2",
+      "rgb_sha256": "6a07f066dbe4f11419aa886c77aa1e8679a06acc738606e4011b99835d8caf2e",
+      "ink_pixels": 1088,
+      "black_area_square_points": 255.1627450980392
+    },
+    "head": {
+      "png_sha256": "6d035b029b9becd2714c99da854147e97e45424aaafcd0139fdb37f954010aa2",
+      "rgb_sha256": "6a07f066dbe4f11419aa886c77aa1e8679a06acc738606e4011b99835d8caf2e",
+      "ink_pixels": 1088,
+      "black_area_square_points": 255.1627450980392
+    },
+    "PDFium": {
+      "png_sha256": "e07b285264e9266c8ec4e55e894dde06929ad4ac782414b726619a87feef3000",
+      "rgb_sha256": "665abe2d720daac73598b9deb2ffa4cd8f261f8d653c00c6bab0b2f68faf5961",
+      "ink_pixels": 1084,
+      "black_area_square_points": 254.4558823529412
+    },
+    "MuPDF": {
+      "png_sha256": "778d85b06c1b9ee199202bc932a4921cacd330cce4a4ea7f279b791f6aff13ef",
+      "rgb_sha256": "39ee11498a79f156335979aa1edea5df2ebe321f6619e0f59503f11a8b96a557",
+      "ink_pixels": 1067,
+      "black_area_square_points": 251.44901960784313
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.010877821180555556,
+      "different_pixels": 137
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03539134837962963,
+      "different_pixels": 149
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.010877821180555556,
+      "different_pixels": 137
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03539134837962963,
+      "different_pixels": 149
+    }
+  },
+  {
+    "case": "tiny-19",
+    "input_sha256": "69f1ac2a8500f8c5af7c0f09546a898c5f66e4b1b28e1950e96ad57c1f8ab6ec",
+    "before": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "head": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "PDFium": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "MuPDF": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    }
+  },
+  {
+    "case": "ordinary-3",
+    "input_sha256": "2f3c653eaa75d1ff603f8c9e4cb68acb6bbd8a73189ce9c42d55d5e479e30267",
+    "before": {
+      "png_sha256": "e32a20d342cc2f3115be1338e3d402dc1aa00ac1dc43c80d4b1dab75fb673e62",
+      "rgb_sha256": "93392f756ae0a5e3f494c6c00d83069ac6fa238f7f9ed5613be2424d9bb20179",
+      "ink_pixels": 10368,
+      "black_area_square_points": 2507.5019607843137
+    },
+    "head": {
+      "png_sha256": "e32a20d342cc2f3115be1338e3d402dc1aa00ac1dc43c80d4b1dab75fb673e62",
+      "rgb_sha256": "93392f756ae0a5e3f494c6c00d83069ac6fa238f7f9ed5613be2424d9bb20179",
+      "ink_pixels": 10368,
+      "black_area_square_points": 2507.5019607843137
+    },
+    "PDFium": {
+      "png_sha256": "84db245b6487b861a5649e0f76ed0c297bf449dc91b019871ebd29a5df2b796d",
+      "rgb_sha256": "b464bb53f485c6be3f4ec14703c3eecbbf4819ecc3de7869aec28843e86fc75c",
+      "ink_pixels": 10332,
+      "black_area_square_points": 2503.9823529411765
+    },
+    "MuPDF": {
+      "png_sha256": "2611bd3754e3e3815b2fc922f9dd09c7f951749d4fcbad7fa96c94ebd6c768f7",
+      "rgb_sha256": "b77fc274fccf218e04179b3d9e767ec2851072cbbb017f3d7eda531af9df966e",
+      "ink_pixels": 10284,
+      "black_area_square_points": 2488.7754901960784
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.05161313657407408,
+      "different_pixels": 676
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.17897316261574073,
+      "different_pixels": 738
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.05161313657407408,
+      "different_pixels": 676
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.17897316261574073,
+      "different_pixels": 738
+    }
+  },
+  {
+    "case": "ordinary-19",
+    "input_sha256": "27ab553082b4ff516304c1d39217b2988ab87285eabe7e4dff7bf38c41915d3f",
+    "before": {
+      "png_sha256": "2d8f4f270cab4a4192d1c4dbff1679af9f55be1f7ebd4dd56eb6a6e10eae834a",
+      "rgb_sha256": "caff86a7485b3ff92043b9d7a1340a66fd4f10505f626c81d7589470883e048d",
+      "ink_pixels": 9244,
+      "black_area_square_points": 2240.18431372549
+    },
+    "head": {
+      "png_sha256": "2d8f4f270cab4a4192d1c4dbff1679af9f55be1f7ebd4dd56eb6a6e10eae834a",
+      "rgb_sha256": "caff86a7485b3ff92043b9d7a1340a66fd4f10505f626c81d7589470883e048d",
+      "ink_pixels": 9244,
+      "black_area_square_points": 2240.18431372549
+    },
+    "PDFium": {
+      "png_sha256": "7c8bdd46d4ad398fd314962a3323d3673a8b6718733462404774c2fd87a598e3",
+      "rgb_sha256": "0edfc81003a7c026f472d8b3b4c495c19d7be27778bcb1580a180254112cb992",
+      "ink_pixels": 9214,
+      "black_area_square_points": 2237.2294117647057
+    },
+    "MuPDF": {
+      "png_sha256": "5b06c556c5877f49ba3bdfe85ffa8103aec2f859c180626a3af4a809ae88b5f1",
+      "rgb_sha256": "10dfb41a1e732072c1864511aed047b9e518183552d2695a6536933d2fa2c8fe",
+      "ink_pixels": 9174,
+      "black_area_square_points": 2224.4872549019606
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.04343894675925926,
+      "different_pixels": 568
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.15001989293981483,
+      "different_pixels": 619
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.04343894675925926,
+      "different_pixels": 568
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.15001989293981483,
+      "different_pixels": 619
+    }
+  },
+  {
+    "case": "cap0-3",
+    "input_sha256": "7f87b3be7d53f5f98900178b4377951d75cc6269f50ab4f9259d3d394ca74492",
+    "before": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "head": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "PDFium": {
+      "png_sha256": "de9aef2f074aeaa81fba1e3d4c1af39e4f70405ab24b96dd588c7ad0cb2e00a4",
+      "rgb_sha256": "86fe15c80cfd2b26d8fb781a1c65d82ae15bdc151a89dad3b1822997519f5977",
+      "ink_pixels": 36,
+      "black_area_square_points": 9.0
+    },
+    "MuPDF": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.0830078125,
+      "different_pixels": 36
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0830078125,
+      "different_pixels": 36
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    }
+  },
+  {
+    "case": "cap0-19",
+    "input_sha256": "20a09161e1da7d028baeaf213d07caf6246b999bb701e5068e4d9780af12ee3b",
+    "before": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "head": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "PDFium": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "MuPDF": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    }
+  },
+  {
+    "case": "cap2-3",
+    "input_sha256": "4417fb14657bb39d480731bfe1bfe6fc4f2e088c2490193fc9e72ce7cbdeefeb",
+    "before": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "head": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "PDFium": {
+      "png_sha256": "b6983644f1b251fa2a9e05c3ee7fb34b527a0d9104c6f2815cf669ec98c179f7",
+      "rgb_sha256": "db944034f74e696d746ef0c67b86e6f398f858d675c595338b4832c7b1ec6d35",
+      "ink_pixels": 1332,
+      "black_area_square_points": 333.0
+    },
+    "MuPDF": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 3.0712890625,
+      "different_pixels": 1332
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 3.0712890625,
+      "different_pixels": 1332
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    }
+  },
+  {
+    "case": "cap2-19",
+    "input_sha256": "a959fe842cfc7bd110138c5eba9230012850b7dd462f6f5cea8d8e36a219d1aa",
+    "before": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "head": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "PDFium": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "MuPDF": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    }
+  },
+  {
+    "case": "transform-3",
+    "input_sha256": "ef510a9caf440ce5d6f57017f42c57218fc664b19f1269a8fcf5b9c518cb85b2",
+    "before": {
+      "png_sha256": "a930946b792f2e09ead6e03b17b0817c6195a709a2a5db48d775b168ba887d81",
+      "rgb_sha256": "25407688b5dd662f2337c4316205be7b11dd3df9a61b626a6dc7e2fff77f2e38",
+      "ink_pixels": 1230,
+      "black_area_square_points": 285.1823529411765
+    },
+    "head": {
+      "png_sha256": "a930946b792f2e09ead6e03b17b0817c6195a709a2a5db48d775b168ba887d81",
+      "rgb_sha256": "25407688b5dd662f2337c4316205be7b11dd3df9a61b626a6dc7e2fff77f2e38",
+      "ink_pixels": 1230,
+      "black_area_square_points": 285.1823529411765
+    },
+    "PDFium": {
+      "png_sha256": "04a3a4efaf025bb2d26fcfd8d45565f376f350ca019c669a06c118947ff19167",
+      "rgb_sha256": "e42a51ad16934aa979a02b162bf3af81629c28c90f7008133db813d7c4bf2470",
+      "ink_pixels": 1251,
+      "black_area_square_points": 291.3205882352941
+    },
+    "MuPDF": {
+      "png_sha256": "bdb823c40ed0fac05909b9176dc6ad6a106c34dd460e1e7e72b0141d8d04084c",
+      "rgb_sha256": "db87cece2d578646f43f7083881592059ef44ac629e33ac90f3f48eed80f5323",
+      "ink_pixels": 1200,
+      "black_area_square_points": 280.26960784313724
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.0628345630787037,
+      "different_pixels": 187
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.04550962094907408,
+      "different_pixels": 178
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0628345630787037,
+      "different_pixels": 187
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.04550962094907408,
+      "different_pixels": 178
+    }
+  },
+  {
+    "case": "transform-19",
+    "input_sha256": "eaa5aff45ade63aa483ecf5742f71d7334bfec0a4f29130b707bd392321a769d",
+    "before": {
+      "png_sha256": "a930946b792f2e09ead6e03b17b0817c6195a709a2a5db48d775b168ba887d81",
+      "rgb_sha256": "25407688b5dd662f2337c4316205be7b11dd3df9a61b626a6dc7e2fff77f2e38",
+      "ink_pixels": 1230,
+      "black_area_square_points": 285.1823529411765
+    },
+    "head": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "PDFium": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "MuPDF": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "before_head_changed_pixels": 1230,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 2.6302625868055554,
+      "different_pixels": 1230
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 2.6302625868055554,
+      "different_pixels": 1230
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    }
+  },
+  {
+    "case": "hairline-3",
+    "input_sha256": "54a6ebedaa2065fcd31ba2153e911f7d929a19caa8bf03e50e0b166cb38f72e4",
+    "before": {
+      "png_sha256": "9cf06399b35d8728f4965dee6f88f6f0749ced68998a5a58c34b04067d2d0573",
+      "rgb_sha256": "f060e02199eee56a46196d9e7337d78973faa5b268242fe1c0057bf6de777948",
+      "ink_pixels": 4,
+      "black_area_square_points": 0.17647058823529413
+    },
+    "head": {
+      "png_sha256": "9cf06399b35d8728f4965dee6f88f6f0749ced68998a5a58c34b04067d2d0573",
+      "rgb_sha256": "f060e02199eee56a46196d9e7337d78973faa5b268242fe1c0057bf6de777948",
+      "ink_pixels": 4,
+      "black_area_square_points": 0.17647058823529413
+    },
+    "PDFium": {
+      "png_sha256": "411eab0a51521edc2da5491e5fedacdeb20054a4946333b7bdd2f32e3d2414fd",
+      "rgb_sha256": "b3b80bb541ce9a7776739a4280e69856de3a98fb42146bb0c450f9aff6ceceec",
+      "ink_pixels": 6,
+      "black_area_square_points": 0.4019607843137255
+    },
+    "MuPDF": {
+      "png_sha256": "1105cbc17bcbd575c8fb92b871918b1e20eec7ee121a290859d4b371e490a2fc",
+      "rgb_sha256": "e0555ab95a292e204c05e402e0daee50aa740ab5276c87319a9ac75d95c41b6b",
+      "ink_pixels": 2,
+      "black_area_square_points": 0.0029411764705882353
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.002296730324074074,
+      "different_pixels": 6
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.0016004774305555555,
+      "different_pixels": 4
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.002296730324074074,
+      "different_pixels": 6
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.0016004774305555555,
+      "different_pixels": 4
+    }
+  },
+  {
+    "case": "hairline-19",
+    "input_sha256": "562db69845dfc21bc23d29594f026b96de65ff5ecc0074283cdde991f2c1d3e9",
+    "before": {
+      "png_sha256": "9cf06399b35d8728f4965dee6f88f6f0749ced68998a5a58c34b04067d2d0573",
+      "rgb_sha256": "f060e02199eee56a46196d9e7337d78973faa5b268242fe1c0057bf6de777948",
+      "ink_pixels": 4,
+      "black_area_square_points": 0.17647058823529413
+    },
+    "head": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "PDFium": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "MuPDF": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "before_head_changed_pixels": 4,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.0016276041666666667,
+      "different_pixels": 4
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.0016276041666666667,
+      "different_pixels": 4
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    }
+  },
+  {
+    "case": "transformed-hairline-3",
+    "input_sha256": "ef6afcbb49584d1f91a940465dccd1f5c4d9a907a7a4a4c9192d73fcda711387",
+    "before": {
+      "png_sha256": "9cf06399b35d8728f4965dee6f88f6f0749ced68998a5a58c34b04067d2d0573",
+      "rgb_sha256": "f060e02199eee56a46196d9e7337d78973faa5b268242fe1c0057bf6de777948",
+      "ink_pixels": 4,
+      "black_area_square_points": 0.17647058823529413
+    },
+    "head": {
+      "png_sha256": "9cf06399b35d8728f4965dee6f88f6f0749ced68998a5a58c34b04067d2d0573",
+      "rgb_sha256": "f060e02199eee56a46196d9e7337d78973faa5b268242fe1c0057bf6de777948",
+      "ink_pixels": 4,
+      "black_area_square_points": 0.17647058823529413
+    },
+    "PDFium": {
+      "png_sha256": "afa4ef5bfa692d5e0f38b58523c580d461c760592733f29c30a81e0b7ab87edf",
+      "rgb_sha256": "a4c39ec5080491f78b71805400637c41c1d7ae7917bc554591a46dc8e03920cb",
+      "ink_pixels": 6,
+      "black_area_square_points": 0.2852941176470588
+    },
+    "MuPDF": {
+      "png_sha256": "fd46c9a0ac4841fdafc603771b5a78b075184e6ebbb5676077835d35d9d53e1e",
+      "rgb_sha256": "38f18fbd43cb36f6d12ee3c171ece3adb3f8e2a8d9f65ef887d57d355c513481",
+      "ink_pixels": 2,
+      "black_area_square_points": 0.00196078431372549
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.001437717013888889,
+      "different_pixels": 5
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.001609519675925926,
+      "different_pixels": 4
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.001437717013888889,
+      "different_pixels": 5
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.001609519675925926,
+      "different_pixels": 4
+    }
+  },
+  {
+    "case": "transformed-hairline-19",
+    "input_sha256": "3121ee1d781b86915ea893354772b5999ee82c03bfa67ba3ed1fb20eec6e241b",
+    "before": {
+      "png_sha256": "9cf06399b35d8728f4965dee6f88f6f0749ced68998a5a58c34b04067d2d0573",
+      "rgb_sha256": "f060e02199eee56a46196d9e7337d78973faa5b268242fe1c0057bf6de777948",
+      "ink_pixels": 4,
+      "black_area_square_points": 0.17647058823529413
+    },
+    "head": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "PDFium": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "MuPDF": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "before_head_changed_pixels": 4,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.0016276041666666667,
+      "different_pixels": 4
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.0016276041666666667,
+      "different_pixels": 4
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    }
+  },
+  {
+    "case": "reset-3",
+    "input_sha256": "11e2e536ae7b98a15582c9c2b7eccf86b76ce348fd69a280ec6224b09f65a14e",
+    "before": {
+      "png_sha256": "218fb61e3c09d42d786fdebff68c7a7cbc1b78e842404daf434922fc031433d9",
+      "rgb_sha256": "c7cb73fb64da4c63634748d7748a8b4cf9a3c0903328645040b11c0105d70233",
+      "ink_pixels": 3804,
+      "black_area_square_points": 902.7411764705882
+    },
+    "head": {
+      "png_sha256": "218fb61e3c09d42d786fdebff68c7a7cbc1b78e842404daf434922fc031433d9",
+      "rgb_sha256": "c7cb73fb64da4c63634748d7748a8b4cf9a3c0903328645040b11c0105d70233",
+      "ink_pixels": 3804,
+      "black_area_square_points": 902.7411764705882
+    },
+    "PDFium": {
+      "png_sha256": "c7d6d352a039a412fc880992dd9d13e873c8170d6fb6fc9c9167e20aed0d18a4",
+      "rgb_sha256": "1cb2538dae3afeb32dbb52468aadee0b629785661d7772bcdc6ce9e5146c4bdc",
+      "ink_pixels": 3858,
+      "black_area_square_points": 918.6529411764706
+    },
+    "MuPDF": {
+      "png_sha256": "4bb1e88157c81e4ef94db18baf6ace38dd3bcfa5cffd8fc64c2cc679a47ad550",
+      "rgb_sha256": "b0b225c47e8823cf59d6e215ce7dd4b9c9988779fc46603d5f90c5634e0141fd",
+      "ink_pixels": 3754,
+      "black_area_square_points": 891.6696078431372
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.1801215277777778,
+      "different_pixels": 470
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.10504376446759259,
+      "different_pixels": 439
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.1801215277777778,
+      "different_pixels": 470
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.10504376446759259,
+      "different_pixels": 439
+    }
+  },
+  {
+    "case": "reset-19",
+    "input_sha256": "81d240cea53b8823881a38424be379021570a6f73fe99edad5c2f9b806506885",
+    "before": {
+      "png_sha256": "36a9470e9914592f5ecc1b28a72f3677988a40076019894c22f61a511e422484",
+      "rgb_sha256": "e9327dc9c74c201a690360fc580dcb92d56c47636f820f0fe6bf16071d96322b",
+      "ink_pixels": 3804,
+      "black_area_square_points": 902.7411764705882
+    },
+    "head": {
+      "png_sha256": "5f0a5c2983e2ce8aeb2e73e9b299c92ea22a762bffdcb8f1a78d622e3572ddb3",
+      "rgb_sha256": "a7a3b5cac94ed70e3e8f7ea8e73b2af8d70d07eec7cd4e97863ea86276a37f3c",
+      "ink_pixels": 1652,
+      "black_area_square_points": 396.9137254901961
+    },
+    "PDFium": {
+      "png_sha256": "6f68f09b403316c36690a427c9431798187a8e0f7e13dc6f5031af7fe633304e",
+      "rgb_sha256": "f9ca7e88ecb09fdae42ba1ec28c9ff4b3f051819d36639e40be334c641767035",
+      "ink_pixels": 1646,
+      "black_area_square_points": 396.2176470588235
+    },
+    "MuPDF": {
+      "png_sha256": "ad4099e38760440cca3ad534d067c05301f7247be3d06411dd4b380c71dd10cf",
+      "rgb_sha256": "d6767ef1d7221f9f3e3b61ebfa4048c53df42b7d09a40813d375b420f6582bd5",
+      "ink_pixels": 1638,
+      "black_area_square_points": 393.3343137254902
+    },
+    "before_head_changed_pixels": 2152,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 4.67603443287037,
+      "different_pixels": 2288
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 4.699499059606482,
+      "different_pixels": 2295
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0107421875,
+      "different_pixels": 136
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03420681423611111,
+      "different_pixels": 143
+    }
+  },
+  {
+    "case": "odd-doubled-21",
+    "input_sha256": "00ba36a1fd28964b65c212d9cbf07af34cb58fa9c2fa8a9a51550b150bf51d1e",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "PDFium": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "MuPDF": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "before_head_changed_pixels": 1076,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    }
+  },
+  {
+    "case": "odd-doubled-23",
+    "input_sha256": "69124a21ecc71998adf60462988c11354380dbaa95d0166e7caedf895170ee17",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "PDFium": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "MuPDF": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "before_head_changed_pixels": 1076,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    }
+  },
+  {
+    "case": "odd-doubled-28",
+    "input_sha256": "e0e23a8f6541b8c25555242e98e9126b6af42a851de4d691aa9e563ec8cd3e8f",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "d64d66f831df6cb35ddba4d8ecbd4a99d6d23eb731873799e908c9686a842c5a",
+      "rgb_sha256": "70ad978a26f78bacbfce9f7f9b907b508bcd29e52c979b3390816c2d8baf0b8e",
+      "ink_pixels": 1106,
+      "black_area_square_points": 261.2176470588235
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    }
+  },
+  {
+    "case": "odd-doubled-33",
+    "input_sha256": "8b1082008c1350370dc75ffeb498abecce1688ab3c0e377cd3f3b57b66f97235",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "PDFium": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "MuPDF": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "before_head_changed_pixels": 1076,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    }
+  },
+  {
+    "case": "odd-doubled-41",
+    "input_sha256": "d5dd9842b2103523de1f5d4699c45d1e6b9ae77d6e90aeb7c74a6d0f58182441",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "PDFium": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "MuPDF": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "before_head_changed_pixels": 1076,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    }
+  },
+  {
+    "case": "zero-interior-tiny",
+    "input_sha256": "6219c27dbf7b8411078a111ba9ee4f8280cb7a6802878041988ad108ffb88f4d",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "6390c14d0b70ddb40dcd055e3addd576e79aaa83d11917522411db4961f525b3",
+      "rgb_sha256": "3987444dd10ebdd97c7d3dacc71473a8f249263607a5981b472231b6c2d02961",
+      "ink_pixels": 1077,
+      "black_area_square_points": 252.65588235294118
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.03731734664351852,
+      "different_pixels": 151
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.03731734664351852,
+      "different_pixels": 151
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    }
+  },
+  {
+    "case": "gap-boundary-tiny",
+    "input_sha256": "62078e2d29bdb116a00d4684968da7fd9436ef280b5a6bb10335f4ac6ba1cc75",
+    "before": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "head": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "PDFium": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "MuPDF": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    }
+  },
+  {
+    "case": "gap-near-end-tiny",
+    "input_sha256": "ed2ddba8c3b7a732a610eca77d6a33a5d99d29cf9d412307260212aba6083e0a",
+    "before": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "head": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "PDFium": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "MuPDF": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    }
+  },
+  {
+    "case": "gap-cross-end-tiny",
+    "input_sha256": "d704ffdf83d1c165bc16507f1f814d73572eb8643b0437b2b741ed178ad74090",
+    "before": {
+      "png_sha256": "b82f4aa3e7bd17c1572c0fced76e1b2181ba8cfd4a54e208ed91e9e0a0f2edf9",
+      "rgb_sha256": "b2652eb1222b79725b7bcd920f1edcd14ef49a7393ddd704b49c64d3a03b8be2",
+      "ink_pixels": 1084,
+      "black_area_square_points": 255.1450980392157
+    },
+    "head": {
+      "png_sha256": "b82f4aa3e7bd17c1572c0fced76e1b2181ba8cfd4a54e208ed91e9e0a0f2edf9",
+      "rgb_sha256": "b2652eb1222b79725b7bcd920f1edcd14ef49a7393ddd704b49c64d3a03b8be2",
+      "ink_pixels": 1084,
+      "black_area_square_points": 255.1450980392157
+    },
+    "PDFium": {
+      "png_sha256": "830c4e27d7ae02c4e846a912df87ed7fa90ec5a6d2f2d3d7bb16417fde9a3ec0",
+      "rgb_sha256": "eff023385c7f2b484d2bd5209d42b9cf1c2c26e7517bc941aaff8dd47ba83c45",
+      "ink_pixels": 1084,
+      "black_area_square_points": 254.43529411764706
+    },
+    "MuPDF": {
+      "png_sha256": "b1286bcfa894bdb10cb6c9ba0c850db05b66e22ae07df899d38f4aa16291a3c3",
+      "rgb_sha256": "2bacfc59aa6eacdc85bd911a8b4f43b9369f08d4a3a7c682472f83f98a57ab09",
+      "ink_pixels": 1064,
+      "black_area_square_points": 251.29019607843136
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.010886863425925927,
+      "different_pixels": 134
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03633174189814815,
+      "different_pixels": 147
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.010886863425925927,
+      "different_pixels": 134
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03633174189814815,
+      "different_pixels": 147
+    }
+  }
+]

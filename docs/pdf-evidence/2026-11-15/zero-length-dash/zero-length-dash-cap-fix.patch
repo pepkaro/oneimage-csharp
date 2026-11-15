@@ -1,0 +1,491 @@
+diff --git a/CHANGELOG.md b/CHANGELOG.md
+--- a/CHANGELOG.md
++++ b/CHANGELOG.md
+@@ -9,6 +9,8 @@
+ - `RecursiveAI.OneImage.Pdf`: opt-in `PdfRenderOptions.SmoothMagnifiedImages` uses smooth sampling for enlarged raster images even when `/Interpolate` is false or omitted, for a display closer to many PDF viewers. Defaults, image reduction and stencil masks are unchanged.
+ 
+ ### Fixed
++
++- `RecursiveAI.OneImage.Pdf`: zero-length round-capped subpaths no longer paint dots during dash gaps. Dash phase, odd patterns, zero-length dashes and subpath resets are respected without changing solid strokes or hairline sizing.
+ 
+ - `RecursiveAI.OneImage.Pdf`: avoid multiplying image-edge antialiasing twice when a single convex polygon clip with at most eight vertices provably contains the image quad. Other clips and core drawing clip-composition behavior are unchanged.
+ 
+diff --git a/src/OneImage.Pdf/Render/CanvasDevice.cs b/src/OneImage.Pdf/Render/CanvasDevice.cs
+--- a/src/OneImage.Pdf/Render/CanvasDevice.cs
++++ b/src/OneImage.Pdf/Render/CanvasDevice.cs
+@@ -163,14 +163,16 @@
+         }
+ 
+         DrawingPath? user = PathConvert.ToPath(path, PdfMatrix.Identity, clamp: false);
+-        DrawingPath? outline = user is null ? null : StrokeUserPath(user, state, m, scale);
+-        if (state.LineCap != 1)
++        float[] dash = user is null && state.LineCap == 1 ? Dashes(state, null, scale) : [];
++        DrawingPath? outline = user is null ? null : StrokeUserPath(user, state, m, scale, out dash);
++        if (state.LineCap != 1 || !DashStartsOn(dash, state.DashPhase))
+         {
+             return outline;
+         }
+ 
+         // 8.5.3.2: a subpath that never leaves its first point, stroked with round caps, paints a disc of the line width. The
+         // stroker has no direction to cap, so the discs are added here, as ellipses in user space (the CTM may be skewed).
++        // 8.4.3.6 still applies: each subpath restarts at the same dash phase, and a gap paints no cap.
+         DrawingPath? discs = ZeroLengthDiscs(path, state, m, scale);
+         if (discs is null)
+         {
+@@ -178,6 +180,42 @@
+         }
+ 
+         return outline is null ? discs : DrawingPath.Combine(outline, discs);
++    }
++
++    private static bool DashStartsOn(ReadOnlySpan<float> dash, double phase)
++    {
++        if (dash.IsEmpty)
++        {
++            return true;
++        }
++
++        // Dashes has already validated the pattern, applied the renderer's safety fallback and doubled odd arrays.
++        double period = 0;
++        foreach (float length in dash)
++        {
++            period += length;
++        }
++
++        double offset = phase % period;
++        if (offset < 0)
++        {
++            offset += period;
++        }
++
++        for (int i = 0; i < dash.Length; i++)
++        {
++            bool on = (i & 1) == 0;
++            if (offset < dash[i] || (offset == 0 && on))
++            {
++                // A zero-length on entry paints a round cap at exactly this phase. Do not skip it together with
++                // zero-length gaps; a positive dash ending here, however, has already been consumed by the phase.
++                return on;
++            }
++
++            offset -= dash[i];
++        }
++
++        return true;
+     }
+ 
+     private static DrawingPath? ZeroLengthDiscs(in PdfPath path, in PdfGraphicsState state, in PdfMatrix m, double scale)
+@@ -254,8 +292,12 @@
+         }
+     }
+ 
+-    private static DrawingPath? StrokeUserPath(DrawingPath user, in PdfGraphicsState state, in PdfMatrix m, double scale)
+-    {
++    private static DrawingPath? StrokeUserPath(DrawingPath user, in PdfGraphicsState state, in PdfMatrix m, double scale) =>
++        StrokeUserPath(user, state, m, scale, out _);
++
++    private static DrawingPath? StrokeUserPath(DrawingPath user, in PdfGraphicsState state, in PdfMatrix m, double scale, out float[] dash)
++    {
++        dash = [];
+         // Keep the existing minimum-width policy for positive widths. Explicit zero-width hairlines are instead
+         // one device pixel, independent of the CTM's anisotropy; user-space dash placement must still be preserved.
+         double minWidth = 1.0 / scale;
+@@ -265,7 +307,7 @@
+             return null;
+         }
+ 
+-        float[] dash = Dashes(state, user, scale);
++        dash = Dashes(state, user, scale);
+         StrokeJoin join = state.LineJoin switch { 1 => StrokeJoin.Round, 2 => StrokeJoin.Bevel, _ => StrokeJoin.Miter };
+         StrokeCap cap = state.LineCap switch { 1 => StrokeCap.Round, 2 => StrokeCap.Square, _ => StrokeCap.Butt };
+         double miter = double.IsFinite(state.MiterLimit) && state.MiterLimit >= 1 ? state.MiterLimit : 10;
+@@ -287,7 +329,7 @@
+         return dev.IsEmpty ? null : dev;
+     }
+ 
+-    private static float[] Dashes(in PdfGraphicsState state, DrawingPath user, double scale)
++    private static float[] Dashes(in PdfGraphicsState state, DrawingPath? user, double scale)
+     {
+         ReadOnlySpan<double> d = state.Dash.Span;
+         if (d.IsEmpty || d.Length > 1024)
+@@ -308,7 +350,7 @@
+ 
+         // All-zero dashes, dashes far below a pixel and dash counts that would bury the rasterizer draw a solid line instead.
+         double devPeriod = sum * scale;
+-        if (!(sum > 0) || devPeriod < 0.05 || (user.Length * scale / devPeriod * d.Length) > 2_000_000)
++        if (!(sum > 0) || devPeriod < 0.05 || ((user?.Length ?? 0) * scale / devPeriod * d.Length) > 2_000_000)
+         {
+             return [];
+         }
+diff --git a/tests/OneImage.Pdf.Tests/SpecTruth/ZeroLengthDashTests.cs b/tests/OneImage.Pdf.Tests/SpecTruth/ZeroLengthDashTests.cs
+new file mode 100644
+--- /dev/null
++++ b/tests/OneImage.Pdf.Tests/SpecTruth/ZeroLengthDashTests.cs
+@@ -0,0 +1,157 @@
++// SPDX-License-Identifier: MIT
++// Copyright (c) 2026 OneImage contributors
++// Independently authored numeric geometry. No external PDF, font, image or reference pixels.
++using static OneImage.Pdf.Tests.SpecTruth.Spec;
++
++namespace OneImage.Pdf.Tests.SpecTruth;
++
++/// <summary>ISO 32000-1 8.4.3.6 and 8.5.3.2: degenerate round-capped subpaths still obey the dash pattern.</summary>
++public class ZeroLengthDashTests
++{
++    // The phase selects the interval beginning at that distance, including exact boundaries. An odd pattern's
++    // on/off cycle repeats twice; zero-length on entries still contribute a cap at their exact position.
++    public static TheoryData<string, bool> Patterns => new()
++    {
++        { "[] 0 d", true },
++        { "[11 17] 0 d", true }, { "[11 17] 3 d", true }, { "[11 17] 10.999 d", true },
++        { "[11 17] 11 d", false }, { "[11 17] 11.001 d", false }, { "[11 17] 19 d", false },
++        { "[11 17] 27.999 d", false }, { "[11 17] 28 d", true }, { "[11 17] 31 d", true },
++        { "[11 17] 39 d", false }, { "[11 17] 56 d", true }, { "[11 17] 59 d", true },
++        { "[7 5 9] 6 d", true }, { "[7 5 9] 7 d", false }, { "[7 5 9] 12 d", true },
++        { "[7 5 9] 20 d", true }, { "[7 5 9] 21 d", false }, { "[7 5 9] 23 d", false },
++        { "[7 5 9] 28 d", true }, { "[7 5 9] 33 d", false }, { "[7 5 9] 41 d", false },
++        { "[7 5 9] 42 d", true }, { "[7 5 9] 49 d", false }, { "[7 5 9] 54 d", true },
++        { "[0 17] 0 d", true }, { "[0 17] 1 d", false }, { "[0 17] 17 d", true },
++        { "[0 17] 28 d", false }, { "[0 17] 34 d", true },
++        { "[11 0] 0 d", true }, { "[11 0] 11 d", true }, { "[11 0] 17 d", true },
++        { "[0 0 11 17] 0 d", true }, { "[0 0 11 17] 11 d", false },
++        { "[11 0 0 17] 11 d", true }, { "[11 0 0 17] 17 d", false },
++        { "[0 0 0 17] 0 d", true }, { "[0 0 0 17] 34 d", true },
++        { "[0 17 0] 17 d", true }, { "[0 17 0] 28 d", true }, { "[0 17 0] 35 d", false },
++    };
++
++    [Theory]
++    [MemberData(nameof(Patterns))]
++    [Trait("Section", "8.4.3.6")]
++    public void DegenerateRoundCapFollowsDashPhase(string dash, bool painted)
++    {
++        Rgba32[] actual = Pix(Page($"0 G 18 w 1 J {dash} 48 36 m 48 36 l S", w: 96, h: 72));
++        Rgba32[] expected = Pix(Page(painted ? "0 G 18 w 1 J 48 36 m 48 36 l S" : "", w: 96, h: 72));
++        Assert.Equal(expected, actual);
++        double area = BlackArea(actual, 96, 0, 0, 96, 72);
++        if (painted)
++        {
++            // A 0.1-pixel flattening error bounds disc-area loss by perimeter * 0.1, less than 6.
++            Assert.InRange(area, (Math.PI * 81) - 6, (Math.PI * 81) + 1);
++        }
++        else
++        {
++            Assert.Equal(0, area);
++        }
++    }
++
++    [Theory]
++    [InlineData("48 36 m h")]
++    [InlineData("48 36 m 48 36 l h")]
++    [InlineData("48 36 m 48 36 48 36 48 36 c")]
++    [InlineData("48 36 0 0 re")]
++    [InlineData("48 36 m 48 36 l 48 36 l")]
++    [Trait("Section", "8.5.3.2")]
++    public void AllDegenerateSubpathFormsObeyTheDash(string path)
++    {
++        Rgba32[] solid = Pix(Page($"0 G 18 w 1 J {path} S", w: 96, h: 72));
++        Rgba32[] on = Pix(Page($"0 G 18 w 1 J [11 17] 3 d {path} S", w: 96, h: 72));
++        Rgba32[] off = Pix(Page($"0 G 18 w 1 J [11 17] 19 d {path} S", w: 96, h: 72));
++        // The solid closed-subpath geometry is an independent control, not the oracle for dash visibility.
++        Assert.Contains(solid, p => p.R != 255);
++        Assert.InRange(BlackArea(on, 96, 0, 0, 96, 72), (Math.PI * 81) - 6, (Math.PI * 81) + 1);
++        Assert.Equal(0, BlackArea(off, 96, 0, 0, 96, 72));
++    }
++
++    [Theory]
++    [InlineData("", 18)]
++    [InlineData("1.5 0.3 0.25 0.8 -33 -7.2 cm", 18)]
++    [InlineData("", 0)]
++    [InlineData("1.5 0.3 0.25 0.8 -33 -7.2 cm", 0)]
++    [InlineData("-1 0 0 1 96 0 cm", 18)]
++    public void TransformAndHairlineDoNotChangeDashSelection(string transform, int width)
++    {
++        string body = $"0 G {transform} {width} w 1 J 48 36 m 48 36 l S";
++        Rgba32[] solid = Pix(Page(body, w: 96, h: 72), new PdfRenderOptions { Dpi = 144 });
++        Rgba32[] on = Pix(Page("[11 17] 3 d " + body, w: 96, h: 72), new PdfRenderOptions { Dpi = 144 });
++        Rgba32[] off = Pix(Page("[11 17] 19 d " + body, w: 96, h: 72), new PdfRenderOptions { Dpi = 144 });
++        Assert.Equal(solid, on);
++        Assert.Contains(on, p => p.R != 255);
++        Assert.All(off, p => Assert.Equal(new Rgba32(255, 255, 255, 255), p));
++    }
++
++    [Theory]
++    [InlineData(3)]
++    [InlineData(19)]
++    public void EachSubpathRestartsThePhase(int phase)
++    {
++        string setup = $"0 G 6 w 1 J [11 17] {phase} d ";
++        const string first = "9 12 m 26 12 l";
++        const string second = "48 36 m 48 36 l";
++        const string third = "75 57 m 75 57 l";
++        Rgba32[] combined = Pix(Page(setup + first + " " + second + " " + third + " S", w: 96, h: 72));
++        Rgba32[] separate = Pix(Page(setup + first + " S " + second + " S " + third + " S", w: 96, h: 72));
++        Assert.Equal(separate, combined);
++        Pixel(combined, 96, 48, 35, phase == 3 ? Gray(0) : Gray(1), Tol.Exact);
++        Pixel(combined, 96, 75, 14, phase == 3 ? Gray(0) : Gray(1), Tol.Exact);
++    }
++
++    [Theory]
++    [InlineData(0)]
++    [InlineData(2)]
++    public void ButtAndSquareCapsStillLeaveDegenerateSubpathsUnpainted(int cap)
++    {
++        foreach (string dash in new[] { "[] 0 d", "[11 17] 3 d", "[11 17] 19 d" })
++        {
++            Assert.Equal(0, BlackArea(Pix(Page($"0 G 18 w {cap} J {dash} 48 36 m 48 36 l S", w: 96, h: 72)), 96, 0, 0, 96, 72));
++        }
++    }
++
++    [Fact]
++    public void MoveOnlyIsNotADegenerateStroke()
++    {
++        foreach (string dash in new[] { "[] 0 d", "[11 17] 3 d", "[0 17] 0 d" })
++        {
++            Assert.Equal(0, BlackArea(Pix(Page($"0 G 18 w 1 J {dash} 48 36 m S", w: 96, h: 72)), 96, 0, 0, 96, 72));
++        }
++    }
++
++    [Fact]
++    public void PositiveLengthAndZeroLengthDashControlsRemainDistinct()
++    {
++        const string tiny = "48 36 m 48.125 36 l S";
++        Assert.Equal(0, BlackArea(Pix(Page("0 G 18 w 1 J [11 17] 19 d " + tiny, w: 96, h: 72)), 96, 0, 0, 96, 72));
++        double on = BlackArea(Pix(Page("0 G 18 w 1 J [11 17] 3 d " + tiny, w: 96, h: 72)), 96, 0, 0, 96, 72);
++        Assert.InRange(on, (Math.PI * 81) + (18 * 0.125) - 6, (Math.PI * 81) + (18 * 0.125) + 1);
++        Assert.Equal(Pix(Page("0 G 18 w 1 J " + tiny, w: 96, h: 72)),
++            Pix(Page("0 G 18 w 1 J [11 17] 3 d " + tiny, w: 96, h: 72)));
++        // Zero-length dashes on a nondegenerate path get square caps; zero-length subpaths do not.
++        Rgba32[] dots = Pix(Page("0 G 4 w 2 J [0 17] 0 d 13 36 m 65 36 l S", w: 96, h: 72));
++        Assert.Equal(64, BlackArea(dots, 96, 0, 0, 96, 72), 6);
++    }
++
++    [Theory]
++    [InlineData(1)]
++    [InlineData(4)]
++    [InlineData(16)]
++    public void DegenerateCapsAreRegionAndThreadDeterministic(int degree)
++    {
++        byte[] pdf = Page("0 G 22 w 1 J [11 17] 19 d 127 129 m 127 129 l 257 257 m 257 257 l S " +
++            "[0 17] 0 d 129 127 m 129 127 l 255 255 m 255 255 l S", w: 384, h: 384);
++        Image img = RenderTests.Load(pdf, new PdfRenderOptions { Dpi = 72 });
++        Rgba32[] whole = img.ToArray<Rgba32>(maxDegree: 1);
++        Assert.Equal(whole, RenderTests.Load(pdf, new PdfRenderOptions { Dpi = 72 }).ToArray<Rgba32>(maxDegree: degree));
++        var region = new ImageRect(111, 111, 162, 162);
++        var part = new Rgba32[region.Width * region.Height];
++        RenderTests.Load(pdf, new PdfRenderOptions { Dpi = 72 }).CopyPixelsTo<Rgba32>(part, region, degree);
++        for (int y = 0; y < region.Height; y++)
++        {
++            Assert.True(part.AsSpan(y * region.Width, region.Width).SequenceEqual(whole.AsSpan(((y + region.Y) * 384) + region.X, region.Width)));
++        }
++    }
++}
+diff --git a/tools/zero-length-dash/LICENSE b/tools/zero-length-dash/LICENSE
+new file mode 100644
+--- /dev/null
++++ b/tools/zero-length-dash/LICENSE
+@@ -0,0 +1,21 @@
++MIT License
++
++Copyright (c) 2026 OneImage contributors
++
++Permission is hereby granted, free of charge, to any person obtaining a copy
++of this software and associated documentation files (the "Software"), to deal
++in the Software without restriction, including without limitation the rights
++to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
++copies of the Software, and to permit persons to whom the Software is
++furnished to do so, subject to the following conditions:
++
++The above copyright notice and this permission notice shall be included in all
++copies or substantial portions of the Software.
++
++THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
++IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
++FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
++AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
++LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
++OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
++SOFTWARE.
+diff --git a/tools/zero-length-dash/README.md b/tools/zero-length-dash/README.md
+new file mode 100644
+--- /dev/null
++++ b/tools/zero-length-dash/README.md
+@@ -0,0 +1,69 @@
++# Zero-length dashed stroke controls
++
++These 97 PDFs and the related `SpecTruth/ZeroLengthDashTests.cs` regressions are
++independently authored MIT material. All geometry is original numeric geometry.
++There are no external test PDFs, fonts, images, source fixtures or expected images.
++The generator takes no source document as input. The existing project and
++reference-runtime licences are unchanged; runtimes are not vendored.
++
++The regression fixes zero-length round-capped subpaths painting during a dash
++gap. ISO 32000-1:2008 8.4.3.6 requires the dash phase to restart independently for
++each subpath; 8.5.3.2 supplies the special round-cap shape for degenerate subpaths.
++A zero-length dash entry at the current phase still paints its cap. A positive
++gap does not. Odd arrays must be repeated twice for the complete on/off cycle.
++
++The unit-test expectations are explicit analytical on/off classifications, with
++solid/no-dash, zero-entry and small positive-length controls. Visible-disc area
++checks allow the existing 0.1-pixel flattening error; gap checks require exactly
++white pixels. These are not reference-image snapshots. They cover boundaries,
++wrapped phase, odd arrays, zero entries, resets, line/curve/closed/rectangle
++degeneracy, move-only, butt/square, affine transforms, hairlines and region/thread
++determinism. The production change does not modify the general stroker or glyph
++outline geometry.
++
++Generate an external evidence directory:
++
++```sh
++python tools/zero-length-dash/generate.py /tmp/zero-dash-inputs
++dotnet build tools/PdfRender -c Release
++dotnet "$ONEIMAGE_ARTIFACTS/bin/PdfRender/release/OneImage.PdfRender.dll" \
++  batch /tmp/zero-dash-inputs/batch.txt /tmp/zero-dash-oneimage 144 20
++```
++
++The generator writes exact PDF SHA-256 hashes, construction operands and batch
++inputs. It writes new original files only; it does not rewrite test expectations.
++The PDF pages are 192×144 points at rotation 0 with an explicit matching CropBox.
++
++For the optional independent reference run, install these tools outside the
++checkout: `pypdfium2==5.13.0` (PDFium 153.0.7999.0), `PyMuPDF==1.26.6`
++(MuPDF 1.26.11), and `Pillow==13.0.0`. They are not package/runtime dependencies.
++
++```sh
++python tools/zero-length-dash/render_references.py \
++  /tmp/zero-dash-inputs /tmp/zero-dash-references
++```
++
++The script verifies these versions and the input hashes, renders full pages at
++144 DPI on opaque white with annotations disabled, and records raw PNG hashes
++and ink/area counts. It performs no cropping, scaling, alignment or retouching.
++There are no annotation objects or executable actions in the generated files.
++
++## Reference disagreements are not an oracle
++
++PDFium and MuPDF agree on the central solid/on/off controls. They disagree on
++some legitimate degenerate-path boundaries and shapes. The explicit doubled
++odd-array controls isolate MuPDF's changed second-traversal parity. PDFium paints
++the exact zero-length line just before the next on interval (`even-27.999`) but
++leaves a shorter-than-the-gap positive segment blank (`gap-near-end-tiny`). Some
++PDFium butt/square degenerates paint, and some degenerate curves/rectangles do
++not. Zero-entry boundaries also differ. Preserve these findings when reviewing
++full metrics; do not replace analytical assertions with a renderer vote.
++
++The Node PDF.js canvas backend is not a valid independent check for exact
++zero-length round caps: it has omitted both solid and on-phase positive controls
++in a separate direct-canvas reduction. Native-browser PDF.js remains unverified.
++This suite does not claim whole-PDF or cross-engine pixel parity.
++
++Primary specification:
++https://opensource.adobe.com/dc-acrobat-sdk-docs/pdfstandards/PDF32000_2008.pdf
++(sections 8.4.3.6 and 8.5.3.2).
+diff --git a/tools/zero-length-dash/generate.py b/tools/zero-length-dash/generate.py
+new file mode 100644
+--- /dev/null
++++ b/tools/zero-length-dash/generate.py
+@@ -0,0 +1,49 @@
++# SPDX-License-Identifier: MIT
++# Independently authored 2026-11-14. No external fixture content.
++import pathlib, json, hashlib, argparse
++parser = argparse.ArgumentParser(description="Generate original MIT zero-length dash controls.")
++parser.add_argument("output", type=pathlib.Path)
++root = parser.parse_args().output.resolve()
++pdfdir = root / "pdf"
++pdfdir.mkdir(parents=True, exist_ok=True)
++def pdf(content):
++    data=content.encode('ascii')
++    objs=[b'<< /Type /Catalog /Pages 2 0 R >>',b'<< /Type /Pages /Kids [3 0 R] /Count 1 >>',b'<< /Type /Page /Parent 2 0 R /MediaBox [0 0 192 144] /CropBox [0 0 192 144] /Rotate 0 /Resources << >> /Contents 4 0 R >>',b'<< /Length '+str(len(data)).encode()+b' >>\nstream\n'+data+b'\nendstream']
++    out=b'%PDF-1.7\n'; offsets=[0]
++    for i,o in enumerate(objs,1):
++        offsets.append(len(out));out+=f'{i} 0 obj\n'.encode()+o+b'\nendobj\n'
++    x=len(out);out+=b'xref\n0 5\n0000000000 65535 f \n'+b''.join(f'{v:010d} 00000 n \n'.encode() for v in offsets[1:])+f'trailer\n<< /Size 5 /Root 1 0 R >>\nstartxref\n{x}\n%%EOF\n'.encode()
++    return out
++cases=[]
++def add(name,dash,phase,path='96 72 m 96 72 l',cap=1,width=18,transform='',marks=None):
++    cases.append(dict(name=name,dash=dash,phase=phase,path=path,cap=cap,width=width,transform=transform,marks=marks))
++add('solid',[],0,marks=True)
++for p in (0,3,10.999,11,11.001,19,27.999,28,31,39,56,59):
++    add('even-'+str(p),[11,17],p)
++for p in (0,6,7,12,20,21,23,28,33,41,42,49,54):
++    add('odd-'+str(p),[7,5,9],p)
++for d in ([0,17],[11,0],[0,0,11,17],[11,0,0,17],[0,0,0,17],[0,17,0]):
++    for p in (0,1,11,17,28,34):add('zero-'+''.join(str(v)+'_' for v in d)+str(p),d,p)
++for name,path in [('close','96 72 m h'),('closedline','96 72 m 96 72 l h'),('curve','96 72 m 96 72 96 72 96 72 c'),('move','96 72 m'),('rectangle','96 72 0 0 re'),('tiny','96 72 m 96.125 72 l'),('ordinary','25 72 m 166 72 l')]:
++    for p in (3,19):add(name+'-'+str(p),[11,17],p,path=path)
++for cap in (0,2):
++    for p in (3,19):add('cap'+str(cap)+'-'+str(p),[11,17],p,cap=cap)
++for name,transform,w in [('transform','1.5 0.3 0.25 0.8 -66 -14.4 cm',18),('hairline','',0),('transformed-hairline','1.5 0.3 0.25 0.8 -66 -14.4 cm',0)]:
++    for p in (3,19):add(name+'-'+str(p),[11,17],p,width=w,transform=transform)
++for p in (3,19):add('reset-'+str(p),[11,17],p,path='26 36 m 43 36 l 96 72 m 96 72 l 153 108 m 153 108 l')
++for p in (21,23,28,33,41):add('odd-doubled-'+str(p),[7,5,9,7,5,9],p)
++add('zero-interior-tiny',[11,0,0,17],11,path='96 72 m 96.125 72 l')
++add('gap-boundary-tiny',[11,17],11,path='96 72 m 96.125 72 l')
++add('gap-near-end-tiny',[11,17],27.999,path='96 72 m 96.000125 72 l')
++add('gap-cross-end-tiny',[11,17],27.999,path='96 72 m 96.125 72 l')
++for c in cases:
++    content=f"q 0 G {c['transform']} {c['width']} w {c['cap']} J [{' '.join(map(str,c['dash']))}] {c['phase']} d {c['path']} S Q"
++    data=pdf(content)
++    p=pdfdir/(c['name']+'.pdf')
++    p.write_bytes(data)
++    c['input_sha256']=hashlib.sha256(data).hexdigest()
++    c['content']=content
++    c.pop('marks')
++(root/'cases.json').write_text(json.dumps(cases,indent=2)+'\n')
++(root/'batch.txt').write_text(''.join(str(pdfdir/(c['name']+'.pdf'))+'\n' for c in cases))
++print(f"Wrote {len(cases)} original MIT PDFs to {pdfdir}")
+diff --git a/tools/zero-length-dash/render_references.py b/tools/zero-length-dash/render_references.py
+new file mode 100644
+--- /dev/null
++++ b/tools/zero-length-dash/render_references.py
+@@ -0,0 +1,51 @@
++# SPDX-License-Identifier: MIT
++# Copyright (c) 2026 OneImage contributors
++# Reference runtimes are external dependencies, not copied test assets.
++import argparse
++import hashlib
++import json
++from pathlib import Path
++import platform
++import pypdfium2 as pdfium
++import pymupdf
++import PIL
++from PIL import Image
++
++parser = argparse.ArgumentParser(description='Render the original zero-length dash controls with pinned references.')
++parser.add_argument('inputs', type=Path)
++parser.add_argument('output', type=Path)
++args = parser.parse_args()
++versions = {'pypdfium2': str(pdfium.PYPDFIUM_INFO.version), 'pdfium': str(pdfium.PDFIUM_INFO.version),
++            'PyMuPDF': pymupdf.VersionBind, 'MuPDF': pymupdf.VersionFitz, 'Pillow': PIL.__version__,
++            'python': platform.python_version()}
++assert versions['pypdfium2'] == '5.13.0', versions
++assert versions['pdfium'] == '153.0.7999.0', versions
++assert versions['PyMuPDF'] == '1.26.6' and versions['MuPDF'] == '1.26.11', versions
++assert versions['Pillow'] == '13.0.0', versions
++for engine in ('pdfium', 'mupdf'):
++    (args.output / engine).mkdir(parents=True, exist_ok=True)
++records = []
++for case in json.loads((args.inputs / 'cases.json').read_text()):
++    data = (args.inputs / 'pdf' / (case['name'] + '.pdf')).read_bytes()
++    assert hashlib.sha256(data).hexdigest() == case['input_sha256']
++    with pdfium.PdfDocument(data) as doc:
++        image = doc[0].render(scale=2, rotation=0, fill_color=(255, 255, 255, 255), draw_annots=False).to_pil().convert('RGB')
++        image.save(args.output / 'pdfium' / (case['name'] + '.png'))
++    with pymupdf.open(stream=data, filetype='pdf') as doc:
++        pix = doc[0].get_pixmap(matrix=pymupdf.Matrix(2, 2), alpha=False, annots=False)
++        Image.frombytes('RGB', (pix.width, pix.height), pix.samples).save(args.output / 'mupdf' / (case['name'] + '.png'))
++    row = {'case': case['name'], 'input_sha256': case['input_sha256']}
++    for engine in ('pdfium', 'mupdf'):
++        output = args.output / engine / (case['name'] + '.png')
++        image = Image.open(output)
++        assert image.size == (384, 288)
++        pixels = list(image.get_flattened_data())
++        row[engine] = {'png_sha256': hashlib.sha256(output.read_bytes()).hexdigest(),
++                       'ink_pixels': sum(min(p) < 255 for p in pixels),
++                       'black_area_square_points': sum(255 - p[0] for p in pixels) / (255 * 4)}
++    records.append(row)
++(args.output / 'reference-results.json').write_text(json.dumps({'versions': versions,
++    'settings': {'dpi': 144, 'box': 'CropBox = MediaBox [0 0 192 144]', 'rotation': 0,
++                 'background': 'opaque white', 'annotations': False, 'image_edits': 'none'},
++    'results': records}, indent=2) + '\n')
++print(f'Rendered {len(records)} cases with each pinned reference.')

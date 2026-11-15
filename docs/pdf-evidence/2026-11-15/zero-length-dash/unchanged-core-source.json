@@ -1,0 +1,1990 @@
+{
+  "base_commit": "e43ee264954a177ff01a16584625a3dea79244fa",
+  "all_identical": true,
+  "files": [
+    {
+      "path": "src/OneImage/Canvas.Clip.cs",
+      "sha256": "6ca90fceeb1e8dbe2e35ce9276ebb27bee93eaca9568dfe62075c2523a8f60d5"
+    },
+    {
+      "path": "src/OneImage/Canvas.Draw.cs",
+      "sha256": "67885a11854d8692e2b92e405007046a1e8db0ac598497d70905ec0c345f1e43"
+    },
+    {
+      "path": "src/OneImage/Canvas.Stroke.cs",
+      "sha256": "0d26101f416d0092e9964722ca07ca3fca7492e6a9760a1855ec3f6bde64c26b"
+    },
+    {
+      "path": "src/OneImage/Canvas.cs",
+      "sha256": "889a49805653ad95a06550bdc0c9eb39f36139438b2020c0d8c2893adda4e867"
+    },
+    {
+      "path": "src/OneImage/Codecs/Bmp/BmpDecoder.cs",
+      "sha256": "c79abf5cb78cefe134e35b9cca2c5bf3805c3683d385d3407890abc3b5fdff19"
+    },
+    {
+      "path": "src/OneImage/Codecs/Bmp/BmpEncoder.cs",
+      "sha256": "07fce2e5479a51573c60b6dedf8e8efa1f56dc401225032436b87b06355ff16d"
+    },
+    {
+      "path": "src/OneImage/Codecs/Gif/GifByteReader.cs",
+      "sha256": "efbb9300a74e11efaf22b88b028b1df638b18cd8f23e31510af7aaa2fd81e098"
+    },
+    {
+      "path": "src/OneImage/Codecs/Gif/GifDecoder.cs",
+      "sha256": "ba39de36fb90891f58aa53afde2556d1d5cb0ff2459b9ca11660984e347358a6"
+    },
+    {
+      "path": "src/OneImage/Codecs/Gif/GifEncoder.cs",
+      "sha256": "28fc1e04687471401a5bf4d99d24f1a6fe53653bfcbec8e0523bf55582cc8bb7"
+    },
+    {
+      "path": "src/OneImage/Codecs/Gif/GifEncoderOptions.cs",
+      "sha256": "98f32a6df91b48456e94f5c91c287fc8ad5648c0895890dff93adb124f87e8a1"
+    },
+    {
+      "path": "src/OneImage/Codecs/Gif/GifFormat.cs",
+      "sha256": "f6698eff39dcbf90e4884ae76585758e59a68ccc3405793434aa3f51ae6db64e"
+    },
+    {
+      "path": "src/OneImage/Codecs/Ico/IcoCodec.cs",
+      "sha256": "55d45894c46531f1af41f69e88cfa1a0db97c6fed6c17976f1702c7dd7fa351b"
+    },
+    {
+      "path": "src/OneImage/Codecs/ImageConfiguration.cs",
+      "sha256": "84ed8bbc7ddf766c33d2afaf2a798107625a2bed388828049d2cf5b5920363cb"
+    },
+    {
+      "path": "src/OneImage/Codecs/ImageInfo.cs",
+      "sha256": "5aa855211d37e052a0ef98450e09a3457ec57246f4518d5474e34e357d98e13b"
+    },
+    {
+      "path": "src/OneImage/Codecs/Interfaces.cs",
+      "sha256": "d1e620e1bd3f1e962c7deb73a129d186f82a37d1fd6f23241e1b63763e69d340"
+    },
+    {
+      "path": "src/OneImage/Codecs/Jbig2/Jbig2Arithmetic.cs",
+      "sha256": "11adb10e995a8721ee81284e834f9eb6b5f51b9bdb93a4e8d125901b1a2a3755"
+    },
+    {
+      "path": "src/OneImage/Codecs/Jbig2/Jbig2Bitmap.cs",
+      "sha256": "4d89b8cbc0330b6711eeea1e6ee569ba2bc4cd38cd12a529a2ffdc1f5bb9ac8f"
+    },
+    {
+      "path": "src/OneImage/Codecs/Jbig2/Jbig2Codec.cs",
+      "sha256": "8fbf65cd2e7d97a20cd7db258a21417ecc18488b9375426083ec98c13506c286"
+    },
+    {
+      "path": "src/OneImage/Codecs/Jbig2/Jbig2Generic.cs",
+      "sha256": "470594dc1c7f9948b847279feccb8fe51f8ea033352ab83c06d158eb818fca06"
+    },
+    {
+      "path": "src/OneImage/Codecs/Jbig2/Jbig2Halftone.cs",
+      "sha256": "85b6483d89d0121c8d3859beac9ab8e0ff7cd3f23de69307d0707e235a3e9b87"
+    },
+    {
+      "path": "src/OneImage/Codecs/Jbig2/Jbig2Huffman.cs",
+      "sha256": "8b4e24efec01f9ed46cc48d9a6b1647e102889afea01834a10c66ac237ce06a0"
+    },
+    {
+      "path": "src/OneImage/Codecs/Jbig2/Jbig2Limits.cs",
+      "sha256": "971b5bac47ca2098005bde021a266fda5fedbe73fbd8ef244b43ce9f87f7f4af"
+    },
+    {
+      "path": "src/OneImage/Codecs/Jbig2/Jbig2Session.cs",
+      "sha256": "cf7ef08c7f5534601ab7c913b1da22d789cd167191dd6cbb1204f99bb7785448"
+    },
+    {
+      "path": "src/OneImage/Codecs/Jbig2/Jbig2Symbols.cs",
+      "sha256": "71a376a7937047c2e0852232544f030be9a135ea62f54a5e012b6cdec184b09b"
+    },
+    {
+      "path": "src/OneImage/Codecs/Jpeg/JpegArithmeticDecoder.cs",
+      "sha256": "1a847e670133a424423211bc422a4576ce43c08204b772e936bab1823587c9ee"
+    },
+    {
+      "path": "src/OneImage/Codecs/Jpeg/JpegArithmeticTables.cs",
+      "sha256": "a080fab9be2cb032cf99e04fc7aad904dbc0eeaa4026fd1b8cdc56483ac0736c"
+    },
+    {
+      "path": "src/OneImage/Codecs/Jpeg/JpegConstants.cs",
+      "sha256": "7b8e7bf44ab196e67bf7d3b435f8d845ed6797d5697885bd97a575a28e09adda"
+    },
+    {
+      "path": "src/OneImage/Codecs/Jpeg/JpegDecoderCore.cs",
+      "sha256": "2b6d49795706448cec372beb5a9161a0f48dc60722228db445dbb41fa1224c6a"
+    },
+    {
+      "path": "src/OneImage/Codecs/Jpeg/JpegEncoderCore.cs",
+      "sha256": "fabf513b4a4b0a3d684cd8c379017433a41804a90f536b0612b1edb803f4dc19"
+    },
+    {
+      "path": "src/OneImage/Codecs/Jpeg/JpegEncoderOptions.cs",
+      "sha256": "c8e866534a4a43a5c4345184bf78ec3c2fad185aec16b6b4973f9079d8989479"
+    },
+    {
+      "path": "src/OneImage/Codecs/Jpeg/JpegEntropyEncoder.cs",
+      "sha256": "2f60b43650d6d1098b0f11b5684d3e926ead4d5e5686d34af5431e5ec8de9031"
+    },
+    {
+      "path": "src/OneImage/Codecs/Jpeg/JpegFormat.cs",
+      "sha256": "a3a9f4ac66d7daf28b1bed137e0c8e9fde7aa60f7f27cc76558fe005d55aac8f"
+    },
+    {
+      "path": "src/OneImage/Codecs/Jpeg/JpegModel.cs",
+      "sha256": "2e2bd1db88db7ca10cf37e658ee07c2c56a2eaaf4ac3126e3f033476bc0507ba"
+    },
+    {
+      "path": "src/OneImage/Codecs/Jpeg/JpegPipeline.cs",
+      "sha256": "b35b92229e50912d3eb53c6e9df2340a622a580dd75ff950577b8aef2a95914e"
+    },
+    {
+      "path": "src/OneImage/Codecs/Jpeg/JpegReader.Bits.cs",
+      "sha256": "d33cde47760fd5836914a0272bef6ff9e2aaaccdbc29c780201bfe4b60d84e56"
+    },
+    {
+      "path": "src/OneImage/Codecs/Jpeg/JpegReader.Progressive.cs",
+      "sha256": "af84ad3ff3a2610a7b6c832603901470cfc5637ab5d9661d77e37a002f732487"
+    },
+    {
+      "path": "src/OneImage/Codecs/Jpeg/JpegReader.cs",
+      "sha256": "ca0681a67bee5a75cdf7325c86dd5d6829ebf28501a68064236b33468793f49c"
+    },
+    {
+      "path": "src/OneImage/Codecs/Jpeg/JpegScanDecoder.Parallel.cs",
+      "sha256": "93dbc243de1e91312e6650768ef7b9bce312c667db47f608f631ef1e757dccd4"
+    },
+    {
+      "path": "src/OneImage/Codecs/Jpeg/JpegScanDecoder.cs",
+      "sha256": "1336261f61c5e5e7b6b60e8ac4eb65123db3a93a9483def2c8845417a4214e54"
+    },
+    {
+      "path": "src/OneImage/Codecs/Jpeg/JpegScanPipeline.cs",
+      "sha256": "b5b1ff0d6c59cd10e6470d38e7a4954848a2ad2e6497f70c13b3657f95ef9be6"
+    },
+    {
+      "path": "src/OneImage/Codecs/Jpeg/JpegTiffBridge.cs",
+      "sha256": "bd7b031ec889ee39865865b97f87f2cf84d0e34d1e1c4c54627a0b8989f1414b"
+    },
+    {
+      "path": "src/OneImage/Codecs/Jpx/JpxBlockDecoder.cs",
+      "sha256": "d457d158ba879557395e51fc9badbbccd98f87e58a2defffd40ac0cdcdbfa563"
+    },
+    {
+      "path": "src/OneImage/Codecs/Jpx/JpxCodec.cs",
+      "sha256": "0f83ca867bb3f2177376bfae1e6cc7eab0124940524741c847a3bed2659a132f"
+    },
+    {
+      "path": "src/OneImage/Codecs/Jpx/JpxCodestream.cs",
+      "sha256": "b654c81d89fde666363173b1227109fd92e5d215725f65a8f5dcf3c5d5531073"
+    },
+    {
+      "path": "src/OneImage/Codecs/Jpx/JpxDwt.cs",
+      "sha256": "f65a51ce476be420bd37f6f7186b9e1d4d3f2b73ee107d8ed9a2b987b2ccd2b6"
+    },
+    {
+      "path": "src/OneImage/Codecs/Jpx/JpxFile.cs",
+      "sha256": "5f0215d55cf87275a58bf33643c39f2bc1e77517465f574aca5738cf03b592ce"
+    },
+    {
+      "path": "src/OneImage/Codecs/Jpx/JpxHeaders.cs",
+      "sha256": "a2dbd81393c19ed174e213abf544e470bd24549f41925fbe77e3f55fd24180e7"
+    },
+    {
+      "path": "src/OneImage/Codecs/Jpx/JpxPacketReader.cs",
+      "sha256": "1ab552d764db4084f665fe62b0eb44405153df99d6a0ddf0748d1d1b790ccef0"
+    },
+    {
+      "path": "src/OneImage/Codecs/Jpx/JpxTileDecoder.cs",
+      "sha256": "d14abb416934623cbd8abb8c86e543f8363f1308ab59e42c660d319512a5772e"
+    },
+    {
+      "path": "src/OneImage/Codecs/Jpx/JpxTileModel.cs",
+      "sha256": "debc7fcc926761dc136baf091194cd3ae9edfb2134ac0425a76419cb1d4073d1"
+    },
+    {
+      "path": "src/OneImage/Codecs/Jpx/JpxTypes.cs",
+      "sha256": "92b27962baff0ec5a785bf45007de585a5ed6f90c069a3d8de1af9e5c4b0e764"
+    },
+    {
+      "path": "src/OneImage/Codecs/Png/ContainerIo.cs",
+      "sha256": "2a5bf1b1d52f151aeb4b8dc225768d650886a761010c7973fc28d58c6cc9fe11"
+    },
+    {
+      "path": "src/OneImage/Codecs/Png/PngDataReader.cs",
+      "sha256": "9d87bed7cdbfbc392f7b930bf722f001782aa02729936882bbb5b0fa8688ee7c"
+    },
+    {
+      "path": "src/OneImage/Codecs/Png/PngDecoder.cs",
+      "sha256": "2a007ce6aff4739a23a80b7ce0930a721f3b1394fbdb816831399205d2fe44d0"
+    },
+    {
+      "path": "src/OneImage/Codecs/Png/PngEncoder.cs",
+      "sha256": "597b4225f4b07a46f3589c55b7be2fc01cedef7f904c0f7d9f07ef5d67dd743c"
+    },
+    {
+      "path": "src/OneImage/Codecs/Png/PngFormat.cs",
+      "sha256": "a96a74f1a11a8e37ac1473157b1c8d33e69b0d8d5876103408830d18fdeb2c77"
+    },
+    {
+      "path": "src/OneImage/Codecs/Png/PngImageReader.cs",
+      "sha256": "0e4d421dd439f12586f3a7ebd0b443b104131447f171ce38f135b1a6f18ce195"
+    },
+    {
+      "path": "src/OneImage/Codecs/Png/PngInfo.cs",
+      "sha256": "d4a5f248d220828d2e0ac8ea3f0413f125d04ac74ebccd8b77bbd67f0719d9d6"
+    },
+    {
+      "path": "src/OneImage/Codecs/Tiff/TiffBlockCache.cs",
+      "sha256": "c75b1476c61052cf02249066bea550c50a1b1b7d256876575b82921ca007bd92"
+    },
+    {
+      "path": "src/OneImage/Codecs/Tiff/TiffBlockDecoder.cs",
+      "sha256": "7e8759c27e3f720bb6c1b62a4c8af0e6f610813a028aaed6cfc776b1a0a366cb"
+    },
+    {
+      "path": "src/OneImage/Codecs/Tiff/TiffCcitt.cs",
+      "sha256": "c18c8e97bf857435d2cfc4be4d45e59beca7b46b95b1d1a3a5208e31f3b5add7"
+    },
+    {
+      "path": "src/OneImage/Codecs/Tiff/TiffChunkSink.cs",
+      "sha256": "73fbfdbc52a4555ed51106cdc637efc49db4988068d34ff9657ed6c527e31c68"
+    },
+    {
+      "path": "src/OneImage/Codecs/Tiff/TiffDecoder.cs",
+      "sha256": "c9a77cf3c61c09719e484d737206f492835b61ca0c9f0089e9f657f3d093e108"
+    },
+    {
+      "path": "src/OneImage/Codecs/Tiff/TiffEncoder.cs",
+      "sha256": "f22e33b400931a4fd39f73b39eb8d8e3746f183c2fd39d391cc49a864851d6f7"
+    },
+    {
+      "path": "src/OneImage/Codecs/Tiff/TiffFile.cs",
+      "sha256": "1638cccf217b9d1d59aeb8b57fe8461e9fa8fe43ff9408da3c82dcf3bac00e18"
+    },
+    {
+      "path": "src/OneImage/Codecs/Tiff/TiffFormat.cs",
+      "sha256": "60556adb95d4107432c1ac551fc9411ecfc0fafb05f891f49c4787b05af83163"
+    },
+    {
+      "path": "src/OneImage/Codecs/Tiff/TiffFrame.cs",
+      "sha256": "78e69da81bf6da22c3842a2f0db469a9b06086c2f7068a796fba9d486a58dfa0"
+    },
+    {
+      "path": "src/OneImage/Codecs/Tiff/TiffJpegSeam.cs",
+      "sha256": "b455c5166c0d1c5cf45fb82a5eb3edc7262b4717753fd73cd4e70b0ce2d98a81"
+    },
+    {
+      "path": "src/OneImage/Codecs/Tiff/TiffMetadataIo.cs",
+      "sha256": "855a939d07b21d65da91c0fcda2be84b018f16a767d4a47252158c2b9ad33280"
+    },
+    {
+      "path": "src/OneImage/Codecs/Tiff/TiffPixelConverter.cs",
+      "sha256": "9da426677361546f20759081a2b4e5eba9cf2ada14d723393e0bcbe93e30ab19"
+    },
+    {
+      "path": "src/OneImage/Codecs/WebP/HuffmanTable.cs",
+      "sha256": "a50d37ca9e5a521c5ec086f8249537532aa5be70d8e995e06717cda1b937a059"
+    },
+    {
+      "path": "src/OneImage/Codecs/WebP/VP8BoolReader.cs",
+      "sha256": "221d6c26e4b9af3a41653edd0ab2e632ae6e051c50107adaf44c1611967c293b"
+    },
+    {
+      "path": "src/OneImage/Codecs/WebP/VP8Borders.cs",
+      "sha256": "0e75f6b64594b992f4d7e81e917f925c2b99a819ab07b3c79458c5e062fa85cc"
+    },
+    {
+      "path": "src/OneImage/Codecs/WebP/VP8Decoder.cs",
+      "sha256": "3a1f2e90f286af8bc9680056fdf500174f101270cfe5abf2ab7546e060e34958"
+    },
+    {
+      "path": "src/OneImage/Codecs/WebP/VP8EncSupport.cs",
+      "sha256": "0a04436cdf08a5ca8b1c15dc3d7af0fa02ae7d6d1532c6d152c9326770fff42f"
+    },
+    {
+      "path": "src/OneImage/Codecs/WebP/VP8Encoder.cs",
+      "sha256": "3e6b7a71edf12a306c2d96048eb82fb3cfca75c8bcd2725349d28ea989c7e47d"
+    },
+    {
+      "path": "src/OneImage/Codecs/WebP/VP8Filters.cs",
+      "sha256": "4ed07a0341c890883ca0bed8b144e0c3ddc78697b2922ba7b9bd10249c1b25f2"
+    },
+    {
+      "path": "src/OneImage/Codecs/WebP/VP8LDecoder.cs",
+      "sha256": "31d61d74be558647350f57dfd92916fc7d92aede0bb3b95c2aedc99b1fc401f8"
+    },
+    {
+      "path": "src/OneImage/Codecs/WebP/VP8LEncoder.cs",
+      "sha256": "dfd8c9f7c8c05f3ff68fb612c8c9b078b5e6063683d9005f2cf7f1d1311567c7"
+    },
+    {
+      "path": "src/OneImage/Codecs/WebP/VP8LEntropy.cs",
+      "sha256": "a42be6e91951339dd312d7d75812cc7ebb7147c44b2ea0dec7e2bb462c93908f"
+    },
+    {
+      "path": "src/OneImage/Codecs/WebP/VP8Predict.cs",
+      "sha256": "9a5d242023270a463c7f99928edac715d64423b1e7e1284265adadb9452b8f4c"
+    },
+    {
+      "path": "src/OneImage/Codecs/WebP/VP8Tables.cs",
+      "sha256": "074dbbf6738f9e5383bf81d6ceb3a723af9d95e26ed82c8ee344bd8ad360a4a7"
+    },
+    {
+      "path": "src/OneImage/Codecs/WebP/VP8Tokens.cs",
+      "sha256": "b517faea059cdd1a6f9ed981d7e7bd41ef409efc35d5434d72c9123493ab2a41"
+    },
+    {
+      "path": "src/OneImage/Codecs/WebP/WebPContainer.cs",
+      "sha256": "e8876a9f7bd9935e0b4e0769ea137cf5824af18f584b276424dad48d79b32298"
+    },
+    {
+      "path": "src/OneImage/Codecs/WebP/WebPDecoderImpl.cs",
+      "sha256": "5777c1b7a532b7733c3dd94b4aff6b4712a01943e148da403de1eebb15caefb5"
+    },
+    {
+      "path": "src/OneImage/Codecs/WebP/WebPEncoderImpl.cs",
+      "sha256": "3946fef4994cf215ecd9bbf5febf2bbc0967295fb399558e38f167df04a0cfb0"
+    },
+    {
+      "path": "src/OneImage/Codecs/WebP/WebPEncoderOptions.cs",
+      "sha256": "bcc96cd88f897aa85951ad54468eeebca14eb06cc48149daa0c21d5fdda9b45f"
+    },
+    {
+      "path": "src/OneImage/Codecs/WebP/WebPFormat.cs",
+      "sha256": "ff78173d4adfcee94cd19b269ada09ad8c239b8e5a51f3a60818636f41ccdaf4"
+    },
+    {
+      "path": "src/OneImage/Color/ColorConvertNode.cs",
+      "sha256": "6a6fdc5dd4bb2245e1dd507c7ab057a42803d619595cf4836bb2d623fc89f6fb"
+    },
+    {
+      "path": "src/OneImage/Color/ColorPixelTypes.cs",
+      "sha256": "70f25f53c6218d090cd40d6cec7b1025d25fd184bacb59af796e5b45da71e715"
+    },
+    {
+      "path": "src/OneImage/Color/ColorProfile.cs",
+      "sha256": "47ce8d11e60970574ef5bac7f1b55bdc6f7bdf2e6f4d30970653ca6e2803cfc7"
+    },
+    {
+      "path": "src/OneImage/Color/ColorTransform.cs",
+      "sha256": "82b10c2075da562eb877cf3cc0c69f29a522f6c172b005c2d3a3be225635515f"
+    },
+    {
+      "path": "src/OneImage/Color/Data/generic-cmyk.bin",
+      "sha256": "92379f175b3e60c600c4864ce7d1907d39e3c2f8a554579bd520360275aec97c"
+    },
+    {
+      "path": "src/OneImage/Color/DeterministicMath.cs",
+      "sha256": "479dd16132b35c62d1619bf788e13f741ac9b4f57fda5bd004df1d07b8ff1b38"
+    },
+    {
+      "path": "src/OneImage/Color/GenericCmykBuilder.cs",
+      "sha256": "2554345a75be2658dcf0c5c1363b665aaaf6696c39d7d3de90f1524fc263fd10"
+    },
+    {
+      "path": "src/OneImage/Color/IccData.cs",
+      "sha256": "813a4cdee19294eba9bdf77810a624ffb300a5f9a84448b2211ea2e3da413bbf"
+    },
+    {
+      "path": "src/OneImage/Color/IccWriter.cs",
+      "sha256": "4deba432d64990ce5fbe9b2bc0e20744ace7818a808a57c939ebfd45d3e3dc90"
+    },
+    {
+      "path": "src/OneImage/Color/Image.Color.cs",
+      "sha256": "a8603787f5e7335d58e6566433bd96a49e72634c97d3ddef8f724eedb2516978"
+    },
+    {
+      "path": "src/OneImage/Color/SrgbTransfer.cs",
+      "sha256": "f9c3631694761c83c4380c5bef54b95f86b34f3fbd916e6323aa37afea8a1b3f"
+    },
+    {
+      "path": "src/OneImage/Color/SrgbTransferData.cs",
+      "sha256": "52a50d8437ad2423077dd960dcbf57138a15f9554d796a432f695879c1e3f3a1"
+    },
+    {
+      "path": "src/OneImage/Color/Stages.cs",
+      "sha256": "61062bc4ce16070d1d0d2c9be07f73a4ee76d1ea4dedc2cf8e495d2d83664133"
+    },
+    {
+      "path": "src/OneImage/Color/ToneCurve.cs",
+      "sha256": "9dec325c105cf43d143e170906a5ed09faa4dba7c97081f1a5c6914cf6abdaab"
+    },
+    {
+      "path": "src/OneImage/Compression/Adler32.cs",
+      "sha256": "3408d9494d08e96bda0f3d4e39336e16723ab5c46a2366711a85475193f4b6f2"
+    },
+    {
+      "path": "src/OneImage/Compression/CodecCache.cs",
+      "sha256": "f14170ea2dfd8b7d413bc0d8c37a429d9b1f156de313641e37f5b5a979f6f089"
+    },
+    {
+      "path": "src/OneImage/Compression/Crc32.cs",
+      "sha256": "7b99ed9fed68a09c75dcfd41ee78012fac90222c6c91fc3fcd807b2b1f58b200"
+    },
+    {
+      "path": "src/OneImage/Compression/DeflateTables.cs",
+      "sha256": "f6760fb2f86c8946983985b092bc9dbe30dc43d57766603a3807894e0bfb76fb"
+    },
+    {
+      "path": "src/OneImage/Compression/Deflater.cs",
+      "sha256": "156d5e63122ebaea9e70fe8b4ebf9a0dbb6d065aac355e3183340feb04098a8d"
+    },
+    {
+      "path": "src/OneImage/Compression/HuffmanTable.cs",
+      "sha256": "f3d053e01306294e34e304cae1ec88853208626a6f594f9602d38ac59c15b41f"
+    },
+    {
+      "path": "src/OneImage/Compression/Inflater.cs",
+      "sha256": "4393b4975bbd1ef914b4a2019c75a29684a16e0488093c60aa2485eb817612b8"
+    },
+    {
+      "path": "src/OneImage/Compression/Lzw.cs",
+      "sha256": "b3014521fe0ea88f2650e817f71ff1405c563c7d9f106d5fd95ea6dc8da21adf"
+    },
+    {
+      "path": "src/OneImage/Core/DecodeSourceNode.cs",
+      "sha256": "39ff006a7f0ef4daecc72f103ca319e1e9f801427cd44c263db0ffb44fa8f916"
+    },
+    {
+      "path": "src/OneImage/Core/FloatScratch.cs",
+      "sha256": "b4c16733b185e5e52eb79b28e756e3bbe4d16ce30d64a1b5a494ae7285be0bbb"
+    },
+    {
+      "path": "src/OneImage/Core/FramePlanes.cs",
+      "sha256": "c792f4aac06a98e31733dc0c9b9cfd000421e0fdd0eeb5454cba64828e958b72"
+    },
+    {
+      "path": "src/OneImage/Core/Node.cs",
+      "sha256": "407b2be97d8c8f39ce3b76587fea428cff1ca789cd1b26cd1bb4631e6d479faa"
+    },
+    {
+      "path": "src/OneImage/Core/Nodes.cs",
+      "sha256": "4e54e3115f4bb79cbf0786eca46a6de24911191f019721f3cba1169278caa738"
+    },
+    {
+      "path": "src/OneImage/Core/Ops.cs",
+      "sha256": "1cad0ad17575b3d871d70f21676894f353bd604b8a9b32fd5f111e5d3d0b754d"
+    },
+    {
+      "path": "src/OneImage/Core/Pools.cs",
+      "sha256": "1dbdbd62811add587e6089ba91c8f9bdeea142cf509a091206e5043bd03624c3"
+    },
+    {
+      "path": "src/OneImage/Core/Sources.cs",
+      "sha256": "4be4df4ca71d839d1fc3bf57639efae720b7f228aacdf6bbe60588f3376f6b04"
+    },
+    {
+      "path": "src/OneImage/Core/SpillEpochs.cs",
+      "sha256": "86396cbe7450cf2ebb8f5fb4722382a364e2fdb0c90d13a63c4c46d4e17b3c8f"
+    },
+    {
+      "path": "src/OneImage/Core/SpillTileStore.cs",
+      "sha256": "a3e6ad8d370def5f6c865bf02d05a6f18cc1e199139fb8028b0c03a3cec3bc75"
+    },
+    {
+      "path": "src/OneImage/Core/StreamingSession.cs",
+      "sha256": "853d7d769fc11e54bef9b287d154b84c9ce8606a77d0e5a2a141eaa36b79784d"
+    },
+    {
+      "path": "src/OneImage/Core/StripToTileBuffer.cs",
+      "sha256": "9db33c4ffdc0f219eebb4cdcb8296c8dee737f3dd82e0b4af18f16070d1b1b76"
+    },
+    {
+      "path": "src/OneImage/Core/Tile.cs",
+      "sha256": "51b11d3dddcdf36861d74e047eed071dc3b01b15824a6a969d904571f86fb8eb"
+    },
+    {
+      "path": "src/OneImage/Core/TileGrid.cs",
+      "sha256": "9aa34a355db75feadce74060b59146ab9a5770a29ec9ca3954341c3e56ed084a"
+    },
+    {
+      "path": "src/OneImage/Core/TileStore.cs",
+      "sha256": "097ee5ce6f70bdde5bb1f9f337aea9696996b35f618b819469e19a0705fc5707"
+    },
+    {
+      "path": "src/OneImage/Drawing/BooleanEngine.cs",
+      "sha256": "32b83e6b73437636f2ec7489b12c43bc2c6b6583386287743efb53797ba5d247"
+    },
+    {
+      "path": "src/OneImage/Drawing/BooleanExtensions.cs",
+      "sha256": "7e9f543786933c0074d0699a785b5f50e74e63ed8a6f4ac4363d232af04f493f"
+    },
+    {
+      "path": "src/OneImage/Drawing/BooleanOffset.cs",
+      "sha256": "dbf086cca3828b743c379c6c8b71287b763d7c7020e92a56e9cc5b6aabae0574"
+    },
+    {
+      "path": "src/OneImage/Drawing/BooleanOperation.cs",
+      "sha256": "0c76bcfbcf39f208a2b9b49fdbb0f1743f761090fb897fb5381445e9fd9dc5a3"
+    },
+    {
+      "path": "src/OneImage/Drawing/Brush.cs",
+      "sha256": "229d38b09c7f05d0e28d0cbd49f9c5dd582933d23360e255a06fc3d5f3d9668b"
+    },
+    {
+      "path": "src/OneImage/Drawing/Brushes/ColorMap.cs",
+      "sha256": "abbdcd70e3f173a71112ffe7656649f8edd3ceca4b6fee48c9a04bb035f2e1cb"
+    },
+    {
+      "path": "src/OneImage/Drawing/Brushes/ColorStop.cs",
+      "sha256": "335af2840fcbee7521ff29c494789a7d4f26a8476343f4e01675f3c670c07646"
+    },
+    {
+      "path": "src/OneImage/Drawing/Brushes/GradientBrush.cs",
+      "sha256": "d10caf27e8a4a59f02f447c58a5b2f21fa2a0b01569ee116dbf122f5b8bb3add"
+    },
+    {
+      "path": "src/OneImage/Drawing/Brushes/ImageBrush.cs",
+      "sha256": "44a4204e083aa0d8c81ecce2c4e61f841c910c248e21926e0ca6610295e54a3f"
+    },
+    {
+      "path": "src/OneImage/Drawing/Brushes/PathGradientBrush.cs",
+      "sha256": "d9d2f3fc93e22e9d21c3f3ffbbb9d79a343b42d1ddf83ce61d99cf311079220c"
+    },
+    {
+      "path": "src/OneImage/Drawing/Brushes/PatternBrush.cs",
+      "sha256": "b465cb7a59980f3eebf2c16c84a686e48b4e8375506ffe85c6685e194cc7f638"
+    },
+    {
+      "path": "src/OneImage/Drawing/Brushes/RecolorBrush.cs",
+      "sha256": "3d2b89ad5491bb00132af304bd4df3a019839f6ed4607d3d906953c5391e504e"
+    },
+    {
+      "path": "src/OneImage/Drawing/Brushes/TransformedGradientBrushes.cs",
+      "sha256": "a9d7654492c89c075c5e669593d29a63bbc7e4784a16ac3087aae51153004357"
+    },
+    {
+      "path": "src/OneImage/Drawing/ClipNode.cs",
+      "sha256": "b29f42b527a71bfe126e3bb1f66ea66ad4c7fc35b50a2dbd26d9568f83012bd0"
+    },
+    {
+      "path": "src/OneImage/Drawing/DashSplitter.cs",
+      "sha256": "bc9d985efb72aebe8b489a757882977e0e774dd8c0c5531de4b4045b485bd4ed"
+    },
+    {
+      "path": "src/OneImage/Drawing/FillNode.cs",
+      "sha256": "261116ebafae4508ffefa65dee7183756ac38cdf7f13cb1982ff6ab723980046"
+    },
+    {
+      "path": "src/OneImage/Drawing/FillPlan.cs",
+      "sha256": "ef2c655b06de4c2f63a376c2c9d057fcb20a18ddb690564abacb64d50530d866"
+    },
+    {
+      "path": "src/OneImage/Drawing/Flattener.cs",
+      "sha256": "15c13937c348a11f4a955a64b74342121a71235b34b0445cbbdf831a1018741c"
+    },
+    {
+      "path": "src/OneImage/Drawing/IntersectionRule.cs",
+      "sha256": "3c8137ab440203a5b62aef1dea0bce1d36ec8170cee479971c101e5e094bc737"
+    },
+    {
+      "path": "src/OneImage/Drawing/Path.cs",
+      "sha256": "6e1215b0ce946544aa6fffaf6c3b24a83c41f414cab10a3a5e1f44109eee37fa"
+    },
+    {
+      "path": "src/OneImage/Drawing/PathBuilder.cs",
+      "sha256": "31b2a77d940558e8e5f4d507b765733cb72bb696807373a5b729f52d114892e5"
+    },
+    {
+      "path": "src/OneImage/Drawing/Pen.cs",
+      "sha256": "011a238d3765a3b9883f93ccd68c116d965b797d5c60bc41db2a1c566072e051"
+    },
+    {
+      "path": "src/OneImage/Drawing/Raster.cs",
+      "sha256": "d6d5a2e82c151cfdf63202f1b94de72350499dd10027e8e1be96985f7671bb44"
+    },
+    {
+      "path": "src/OneImage/Drawing/StrokeBuilder.cs",
+      "sha256": "dc190c78edd01d2d5d7f7c079d4a225ae4c3abd14b0ec372368a6e832e96bc77"
+    },
+    {
+      "path": "src/OneImage/Drawing/StrokeExtensions.cs",
+      "sha256": "d0c3ed3f8d0b528443b4ecf7e4ba99b4c800be9d8c039b1a6a772b230560a9eb"
+    },
+    {
+      "path": "src/OneImage/Drawing/StrokeShapes.cs",
+      "sha256": "c9d0bbc67502c91739790f0f4fc4015387a4032d0267520c8ac0306e0c5971b4"
+    },
+    {
+      "path": "src/OneImage/Drawing/StrokeStyle.cs",
+      "sha256": "0f2dfca79d000a8a9974a2edbd740eabe5d1e0295fe9c1572a69f74fb71146e4"
+    },
+    {
+      "path": "src/OneImage/Drawing/SvgPathParser.cs",
+      "sha256": "829453b2820fffdaede73d2b61c7665f27f612156ccd6b410bac54d6a84261a4"
+    },
+    {
+      "path": "src/OneImage/Drawing/TileRasterizer.cs",
+      "sha256": "17f42282b6c78d0c7832e6e6c2b25c94fe76ff7ac11bae506e5c2a92ad890795"
+    },
+    {
+      "path": "src/OneImage/EdgeDetector.cs",
+      "sha256": "9e608a338627cadd6ed1bd473d9b33632ee7a5c96f7216d0f8106551a7fb6801"
+    },
+    {
+      "path": "src/OneImage/Exceptions.cs",
+      "sha256": "9159ee0aec9aa3f78f83e2e7ffb4ee865ce6bcde2d2f1358a5e9a0d34cf791bc"
+    },
+    {
+      "path": "src/OneImage/Image.Clip.cs",
+      "sha256": "90b0bac8d40fb75abf690881cef65fe2be042e9d65fc6c455fe001320285d467"
+    },
+    {
+      "path": "src/OneImage/Image.ColorMatrix.cs",
+      "sha256": "2350164a11d5f6f962a4f046e8ee8a1821cfcef8df8a9dcab9e7ac0426b0313a"
+    },
+    {
+      "path": "src/OneImage/Image.Composite.cs",
+      "sha256": "547134f82efc3321626316eab485f536c0ecde03ad909802ab08f9359f3be9e4"
+    },
+    {
+      "path": "src/OneImage/Image.Dither.cs",
+      "sha256": "7c5bab7bf1d2181b25784c08473e5275b33f1e997f2672bfb89a0facf3471693"
+    },
+    {
+      "path": "src/OneImage/Image.Draw.cs",
+      "sha256": "d3b35ea3ee41482feef1ee5ec9b6c38e99e7169f411e6e13484b07fdeb688d68"
+    },
+    {
+      "path": "src/OneImage/Image.Effects.cs",
+      "sha256": "3a4cac2306cd8cb59c5bccbbfd32e795249bb26fb83a00e3ade3e8ce56d8b707"
+    },
+    {
+      "path": "src/OneImage/Image.Equalize.cs",
+      "sha256": "e3b1df6a32064ec56652a2a8d59ca457b9bdb42da313996eda7d1983c442b853"
+    },
+    {
+      "path": "src/OneImage/Image.Filter.cs",
+      "sha256": "dff6a26b3210e1fb2f4b85237c2dacb0d1f80a51c1633b598f789f4093fbd978"
+    },
+    {
+      "path": "src/OneImage/Image.Geometry.cs",
+      "sha256": "6e48a9259075f790e1d90f2daba269802d24778892978dd999ed2424ffa5367f"
+    },
+    {
+      "path": "src/OneImage/Image.Histogram.cs",
+      "sha256": "50d6a426d4404e35996be715b6a2ca83b5f12b820393e0d17a2a73c834b7f413"
+    },
+    {
+      "path": "src/OneImage/Image.IO.cs",
+      "sha256": "cb40d10d9da42dc8c4e5141d498d3c71c756462efeeddfaf6617926f5d6d2bcf"
+    },
+    {
+      "path": "src/OneImage/Image.Mask.cs",
+      "sha256": "737ff80ed5206a9674b192cfd881dc1f9c8c54288de4ee77f349a69b8b81f10c"
+    },
+    {
+      "path": "src/OneImage/Image.Perspective.cs",
+      "sha256": "a663b50a1cde879e4cf75fd610a6948c8ef597bf2cc32f9b02da3b989e1ec2d3"
+    },
+    {
+      "path": "src/OneImage/Image.Quantize.cs",
+      "sha256": "49c425340f06915d9d85c6b870abbb393238589a0fef2051c6ade41bafb565fe"
+    },
+    {
+      "path": "src/OneImage/Image.Resize.cs",
+      "sha256": "66ef06da85d2005515ad5cfdf58fe027d773b5cf5175304a9ac91da522798d65"
+    },
+    {
+      "path": "src/OneImage/Image.Stroke.cs",
+      "sha256": "5a818c186d3d780b2678ea177610a85e20fde1af88a7f466f0fb128d80068ad5"
+    },
+    {
+      "path": "src/OneImage/Image.Thumbnail.cs",
+      "sha256": "1849f03f140bbc5fd6437d101a5de12500896ff7cb18ae79001c1c3ee837f4fa"
+    },
+    {
+      "path": "src/OneImage/Image.Tone.cs",
+      "sha256": "d60cb683ac732e3f09dbca262853d4d0c23a663a827e54c5262fe3772115f404"
+    },
+    {
+      "path": "src/OneImage/Image.cs",
+      "sha256": "b99e4996d647058f622a455d1f255ee1b01f7555f432abc4de3b41e4978e574c"
+    },
+    {
+      "path": "src/OneImage/ImageFrame.cs",
+      "sha256": "ba19a31cd16182c69a982a0248f346a70b40985fa097224c363dce003b6a4a1a"
+    },
+    {
+      "path": "src/OneImage/ImageLimits.cs",
+      "sha256": "0ca43967dd034606715fb800328e49a536912b1928f20f2d02ab0d98a8b66049"
+    },
+    {
+      "path": "src/OneImage/ImageRect.cs",
+      "sha256": "e07c626899992cbd1f7297631db662402619804795a80a9bb0c30230bb1906b4"
+    },
+    {
+      "path": "src/OneImage/Kernels/AnalysisKernel.cs",
+      "sha256": "fc93de0c17f579792d16fab9a43757ff6a5c0bffa261e1431d815ddd9677daca"
+    },
+    {
+      "path": "src/OneImage/Kernels/BlendKernel.cs",
+      "sha256": "ff3b93546664f36f542be769e58232fa7451e7151f3a70357eb9e803b7971760"
+    },
+    {
+      "path": "src/OneImage/Kernels/BlurKernel.cs",
+      "sha256": "12fa011190404669c50f2db2bd87704213346ad3bd8fc6546415ed242e79c2e4"
+    },
+    {
+      "path": "src/OneImage/Kernels/BmpPixels.cs",
+      "sha256": "1361c6e28845f49857b24619ef5b9e2f4e50d1697046d5352eb05b70caa29aae"
+    },
+    {
+      "path": "src/OneImage/Kernels/BrushKernel.cs",
+      "sha256": "a9669f62fa5efadec2f6229fdcfb1b6493b6b479d1d2f35f5bba31556407ea33"
+    },
+    {
+      "path": "src/OneImage/Kernels/ColorMatrixKernel.cs",
+      "sha256": "f7cf98e381a7818ce360abf9e11229c6522009425547f75fd2b7c0aaaed62bad"
+    },
+    {
+      "path": "src/OneImage/Kernels/CompositeKernel.cs",
+      "sha256": "0b96579ed9c8ba15d8c437357ad065a23e4101d92c368592bde4f0960150d710"
+    },
+    {
+      "path": "src/OneImage/Kernels/ConvertFast.cs",
+      "sha256": "15c738a6edb375817b18fe5b1251bde2d88a3998cdc33c0db2de05d1b2e76625"
+    },
+    {
+      "path": "src/OneImage/Kernels/ConvertKernel.cs",
+      "sha256": "4ad3ab99296acae9da79eda6520f75bd91e1413249962fcd8f3b0672491c9c77"
+    },
+    {
+      "path": "src/OneImage/Kernels/DitherKernel.cs",
+      "sha256": "3616d651ef905a67a3aadc4d1592b2d774fc9592b4ad76c00cd91b53d479c503"
+    },
+    {
+      "path": "src/OneImage/Kernels/EqualizeKernel.cs",
+      "sha256": "cb06295e9fc946fad3947eebd79fab0ef7ab3d294e43a1b6ab9cb9d367bf1110"
+    },
+    {
+      "path": "src/OneImage/Kernels/FilterColorKernel.cs",
+      "sha256": "502cbc12dfd18f0bcb926f3c7f4b7862c73284108f840f435c82881b6abf18d9"
+    },
+    {
+      "path": "src/OneImage/Kernels/FilterKernel.cs",
+      "sha256": "709b55147419f7aec12fe7ede0a1fcd7ce75a9e13f664ec6b52fd8f56da231c6"
+    },
+    {
+      "path": "src/OneImage/Kernels/FilterRankKernel.cs",
+      "sha256": "5253e212631bb9cdbefd313d4383672d78bece8f6f71e8f75a19d893523c5596"
+    },
+    {
+      "path": "src/OneImage/Kernels/GeometryAffineKernel.cs",
+      "sha256": "5a96ce92ac2044ce39ad92398a1a724bee49623d4b9ec9d1d0deecf7c3ded40f"
+    },
+    {
+      "path": "src/OneImage/Kernels/GeometryKernel.cs",
+      "sha256": "5e5891e13065672ebb33c59f42dae661dae23e74a614345ade3de505153469e4"
+    },
+    {
+      "path": "src/OneImage/Kernels/GridKernel.cs",
+      "sha256": "b5b01dc2fe2fa4209ff70ec36f1d0abc57e6b008fb53e27bc4ac8aebf601c577"
+    },
+    {
+      "path": "src/OneImage/Kernels/InvertKernel.cs",
+      "sha256": "9d0b1cc43dee3eba57595b169c10ab437ff4a864324f6bccb70f7a43fbbf4c14"
+    },
+    {
+      "path": "src/OneImage/Kernels/JpegEncodeKernels.cs",
+      "sha256": "54ea45db91f6f4bc044a15c411c6f51dbbded4611c6bf221c1e498e20b561c39"
+    },
+    {
+      "path": "src/OneImage/Kernels/JpegFdct.cs",
+      "sha256": "e15789f3b64fa979f02d2db604a988e72d6593c81059fb859533bbae94d20f02"
+    },
+    {
+      "path": "src/OneImage/Kernels/JpegIdct.cs",
+      "sha256": "741eca0e47090898217662838c12643db30e74d7b78c8d4a73fa06a38fa5e9dc"
+    },
+    {
+      "path": "src/OneImage/Kernels/JpegRefineKernels.cs",
+      "sha256": "579ff49a705a148ebfbbd1ed899f5c193900820a1a096228147a524e5c31e99d"
+    },
+    {
+      "path": "src/OneImage/Kernels/JpegSampling.cs",
+      "sha256": "353ba1d5b6f9c50b19323de2917f36f383baf3d13ff52ebcee2f601bfedfc21e"
+    },
+    {
+      "path": "src/OneImage/Kernels/LinearLightKernel.cs",
+      "sha256": "0ffa09a81f004592c38fa5a94b23598a1cf97a7b660a3ee03fa0f5ce2d4671ef"
+    },
+    {
+      "path": "src/OneImage/Kernels/Pinned.cs",
+      "sha256": "039ca458242ce52aa949de24e74e2f04a46fe3bf81939554a24d9ccd65e7b36f"
+    },
+    {
+      "path": "src/OneImage/Kernels/PinnedDestination.cs",
+      "sha256": "17d633ec897d9b57bb308553f9645dc2491e538c8c5579e1ef86aeda87cdb093"
+    },
+    {
+      "path": "src/OneImage/Kernels/PngFilter.cs",
+      "sha256": "3813e61f268f548f1de1d2f22766b45caedce47cc7227f35796eebce15155348"
+    },
+    {
+      "path": "src/OneImage/Kernels/PngPixels.cs",
+      "sha256": "2f5a7bf897cbbbb9c1efdadb58d400ad57d57f3797ef739505c48a9758d1711e"
+    },
+    {
+      "path": "src/OneImage/Kernels/QuantizeKernels.cs",
+      "sha256": "f6b3be04ecc43cd7171f0cd25155fef7390d21c1f022b5ce14af8fd38507b9d0"
+    },
+    {
+      "path": "src/OneImage/Kernels/ResampleKernel.cs",
+      "sha256": "c19668d2a71f54412cfb8772e7b76514652c657c1f9fb7f24244f72456f676a9"
+    },
+    {
+      "path": "src/OneImage/Kernels/ResampleRowsKernel.cs",
+      "sha256": "fae0f61eb36665309a07a5377ef89ed281dfb7d50c5a49d8c03c3e355e2aaa09"
+    },
+    {
+      "path": "src/OneImage/Kernels/RgbToGrayKernel.cs",
+      "sha256": "b2ae93d9db26a03c64aff8a6524a936399431fd4c1565e85033b8b3347bb01ef"
+    },
+    {
+      "path": "src/OneImage/Kernels/SpanCast.cs",
+      "sha256": "f245c67c98e615546eead6c79ee0b18781644b9b3045014933f7c1b3cf942e43"
+    },
+    {
+      "path": "src/OneImage/Kernels/SrgbTables.cs",
+      "sha256": "b6d4e2508819d070327af07d917c54d10f573489abff6b4af95054ffbe29d18d"
+    },
+    {
+      "path": "src/OneImage/Kernels/TiffKernels.cs",
+      "sha256": "ac2bed06776f65c3058113949e3df3351912a2d845b734339e148c09147c3fbe"
+    },
+    {
+      "path": "src/OneImage/Kernels/ToneKernel.cs",
+      "sha256": "2442f40d0c19a66dde0396b7dea7b0b770f22b40b4fb7246a700b5aa83ab6437"
+    },
+    {
+      "path": "src/OneImage/Kernels/WebPFdctKernel.cs",
+      "sha256": "6d7b2b7cd6bb9474f0086a7fc6deaa4f30c5b11d7edf4aeb0cff845039b88990"
+    },
+    {
+      "path": "src/OneImage/Kernels/WebPIdctKernel.cs",
+      "sha256": "3127620ebf47380a6fc9f10a661784e2de8f0e442005388872a74b854deb8075"
+    },
+    {
+      "path": "src/OneImage/Kernels/WebPLoopFilterKernel.cs",
+      "sha256": "353bca49b7b79b882e82ef10c4bf4760ca75c72f5eb7b5780ea7fbf35704468b"
+    },
+    {
+      "path": "src/OneImage/Kernels/WebPPredictKernels.cs",
+      "sha256": "58ae3d1cb8ad9bf76832cc931f41daefed8e2ac11ef2fc809dce15710939bd27"
+    },
+    {
+      "path": "src/OneImage/Kernels/WebPQuantKernel.cs",
+      "sha256": "1ef9b26666e1957e7956716e108fd053da5e4bb73600aabbb792316ae2921087"
+    },
+    {
+      "path": "src/OneImage/Kernels/WebPSseKernel.cs",
+      "sha256": "da4915fbd88c80d6d80ba932ca4298c8631833793fc28720eca39e5b4cce86e7"
+    },
+    {
+      "path": "src/OneImage/Kernels/WebPYuvKernel.cs",
+      "sha256": "010975808db233ae6eb8dfccbb90c6e56e679a882af28f4d826b6af7551b47be"
+    },
+    {
+      "path": "src/OneImage/Layers/Adjustment.cs",
+      "sha256": "9c6e8abfc672c653912095fca151f945ea09e98316f701109ada18d41945a371"
+    },
+    {
+      "path": "src/OneImage/Layers/Document.cs",
+      "sha256": "fd1bdd826657430a29fe47adedeb4c386b58b1156ecb93b8bb2c618748db4d7f"
+    },
+    {
+      "path": "src/OneImage/Layers/EffectPaint.cs",
+      "sha256": "93f80759ee0b02a17ab1d67d5a54abaa597231ac2bb53c0637299b83391fefdd"
+    },
+    {
+      "path": "src/OneImage/Layers/Effects.cs",
+      "sha256": "b4dec389fd5b242f125d1a7ff5720ccc38e683f543b83962ed4c7c5fb8e5beda"
+    },
+    {
+      "path": "src/OneImage/Layers/EffectsPaint.cs",
+      "sha256": "3e040f01e3064e68860f3bd113e403b6cc48e56591dbc603c7b23b4d044349be"
+    },
+    {
+      "path": "src/OneImage/Layers/Layer.cs",
+      "sha256": "2ac031ef8d3327059b415a1affe2d96d059a332cc03c559a7880e2303c327402"
+    },
+    {
+      "path": "src/OneImage/Layers/LayerMask.cs",
+      "sha256": "95ebf4f099156147a08a18bfd3553b3e71ea0ae4b66eedcc5b6c79a1fd90c979"
+    },
+    {
+      "path": "src/OneImage/Layers/LayerStyle.Paint.cs",
+      "sha256": "7009f8ac5953429ffa8b52f428b4662c37aec577c4a0b6b818564e10c39cc630"
+    },
+    {
+      "path": "src/OneImage/Layers/LayerStyle.cs",
+      "sha256": "e6d2568c3d1b39363ef3b09ae86ccf265fcdc8b5eeb9dae9c5dceb2daacf127f"
+    },
+    {
+      "path": "src/OneImage/Layers/Layers.cs",
+      "sha256": "e5d3e531bb42fb1db3355f5988b08a6b3e4c24b578b18d6db478a0e1b5da7def"
+    },
+    {
+      "path": "src/OneImage/Layers/Render.cs",
+      "sha256": "90508007217e3cd7b0ff4e7f3b207b035454116cfa4ca3419357f9754228fc07"
+    },
+    {
+      "path": "src/OneImage/Layers/TileJob.Fx.cs",
+      "sha256": "627bc4db842a2f42a1effb972895a3817ed9157c956fceb71510c1f56d7445ea"
+    },
+    {
+      "path": "src/OneImage/Layers/TileJob.cs",
+      "sha256": "86fc3d90b11a1dbea0a793d5454155a4ef8a813990b345eb2f82bfb9d0d108c5"
+    },
+    {
+      "path": "src/OneImage/Library.cs",
+      "sha256": "290867c552c4bd670e38cb56435ca25072406e2f59f6376e0105bd87ee70445f"
+    },
+    {
+      "path": "src/OneImage/Metadata/ExifData.cs",
+      "sha256": "fbab3de49f2eb5910538d762790ef1d2631f751a43df4abc28e2feb68c62f438"
+    },
+    {
+      "path": "src/OneImage/Metadata/ExifWriter.cs",
+      "sha256": "08f5c53bb3fa44a13aed7d9cc85385bf4c96619a4a6fedeb16020389cda87c30"
+    },
+    {
+      "path": "src/OneImage/Metadata/ImageMetadata.Typed.cs",
+      "sha256": "6e50cfd3a49c12ab60b66f9273227b43e0f57e19625e7a185efeeb2521f7ef0c"
+    },
+    {
+      "path": "src/OneImage/OneImage.csproj",
+      "sha256": "676f501faf4ddb2725e2a30a0d3fdae2200928c0dc68af9ab631a3cf5b872a0e"
+    },
+    {
+      "path": "src/OneImage/Ops/Analysis/Analysis.cs",
+      "sha256": "b2c3696cedc82fcb546240010d8ae450974157e23330f43eb9e61e46e4574a60"
+    },
+    {
+      "path": "src/OneImage/Ops/Analysis/HistogramNodes.cs",
+      "sha256": "eaed2fdd90897f8e218e8c87ed4385e38314a8aa35c5e39e994bbd2d3bbbac8e"
+    },
+    {
+      "path": "src/OneImage/Ops/Analysis/TileReducer.cs",
+      "sha256": "cfeb13dca1e8cd51f6a86af6d6c30ceacec6f54459c8d52c0de96a67ff292a7b"
+    },
+    {
+      "path": "src/OneImage/Ops/Composite/BlendMode.cs",
+      "sha256": "8cf52e93a476f7065ac1f72817fac287f21731d50570d6bba8bd87e621c14ac6"
+    },
+    {
+      "path": "src/OneImage/Ops/Composite/CompositeNode.cs",
+      "sha256": "348f485872b7efe93b4d30dae7023972ecd50473345b00bc3297f474e1ddc230"
+    },
+    {
+      "path": "src/OneImage/Ops/Composite/MaskNode.cs",
+      "sha256": "248dc4acc326b5e511d412447ba66146681ba7ce82c81e0758fb44f6d1f15219"
+    },
+    {
+      "path": "src/OneImage/Ops/Effects/BokehNode.cs",
+      "sha256": "dcad2a3df2a5ee64239b15ead2016582548904346ee385f6947611f20d029b55"
+    },
+    {
+      "path": "src/OneImage/Ops/Effects/EdgeDetectNode.cs",
+      "sha256": "6ecdd147af2fc7f2ca713ab0ba7624e9bb62c040052700a00ad25cd429b1a1f9"
+    },
+    {
+      "path": "src/OneImage/Ops/Effects/EntropyScan.cs",
+      "sha256": "d8d6df296f6540cfeb8e7e3856405649461d19969f96695c3637b0e2c6de6af5"
+    },
+    {
+      "path": "src/OneImage/Ops/Effects/OilPaintNode.cs",
+      "sha256": "e5def826bcd6a93b686c1ddfe4feeb534cbefff0f17b3ffb985015211e9a9fe5"
+    },
+    {
+      "path": "src/OneImage/Ops/Effects/PixelateNode.cs",
+      "sha256": "9f502b5eeaa7ae93f3f9df9116de506b979862512d47b2e0cdcb5e3820964ad9"
+    },
+    {
+      "path": "src/OneImage/Ops/Effects/RadialOverlayNode.cs",
+      "sha256": "b7b45a7c645a16fc0b647989157755ed61eabc65264f153f47632fd1f1d11fb4"
+    },
+    {
+      "path": "src/OneImage/Ops/Filter/ConvolveNode.cs",
+      "sha256": "5c5f80dab1229ef09ecf06ec10fcdd37e7a44808199e4caee720416bf4869f19"
+    },
+    {
+      "path": "src/OneImage/Ops/Filter/MaterializeNode.cs",
+      "sha256": "4018dca955649d72cb312dca664f767e8486b328da12a36f49fbf8212c0fa88c"
+    },
+    {
+      "path": "src/OneImage/Ops/Filter/RankAndEdgeNodes.cs",
+      "sha256": "ef697501bbdcc44692f71a587d28b87ff087ff05762bb15928e4ce61aed7637f"
+    },
+    {
+      "path": "src/OneImage/Ops/Filter/WideAxisBlurNode.cs",
+      "sha256": "4b0d573d35a0e010361ba9fc25cc168f22f63876399108ad1cb432bcc95c7dd1"
+    },
+    {
+      "path": "src/OneImage/Ops/Geometry/AffineNode.cs",
+      "sha256": "33ed7040a69045595d09f05dddefa3db6d878b92db50cc57a3d574e3e3ccc993"
+    },
+    {
+      "path": "src/OneImage/Ops/Geometry/ExtendNode.cs",
+      "sha256": "a19796384b043295c2fcde63cb73a3c646f965057567ee9c4ac3c8cd08a359f4"
+    },
+    {
+      "path": "src/OneImage/Ops/Geometry/GeometryEnums.cs",
+      "sha256": "2844457c12437819d6464a2ba60e3fd784a9113a4de9553b242150541c85036b"
+    },
+    {
+      "path": "src/OneImage/Ops/Geometry/OrientNode.cs",
+      "sha256": "0b92de0db54929cc27c979f5db641c6d00a631a87a7640b4c6e0fda6d0d7fd07"
+    },
+    {
+      "path": "src/OneImage/Ops/Geometry/ProjectiveMatrix.cs",
+      "sha256": "c87b87e9b8f6b0ee3ea15c5432a829819bd0706cfee0a5dda34fc97197212ef2"
+    },
+    {
+      "path": "src/OneImage/Ops/Geometry/ProjectiveNode.cs",
+      "sha256": "68557e207b813f182400f7551bb8cccd6f15655a4492219a8d5de2eaad090c5a"
+    },
+    {
+      "path": "src/OneImage/Ops/Geometry/ProjectiveTransformBuilder.cs",
+      "sha256": "6c75fafca473719941ec777c57fde646011149bd6304d3e07339067541ceaa18"
+    },
+    {
+      "path": "src/OneImage/Ops/Quantize/ColorQuantizer.cs",
+      "sha256": "388c3ee6ef5354a68f18edafbfad7041ddcab2c44c0a6d67e88be8a3d4485f2e"
+    },
+    {
+      "path": "src/OneImage/Ops/Quantize/ColorSet.cs",
+      "sha256": "3e36e68069ab9e0a94bb598f8f7eeea2dcde4bba5d0783977ae0ab04d378df03"
+    },
+    {
+      "path": "src/OneImage/Ops/Quantize/DitherTables.cs",
+      "sha256": "5d9bb57df1ebaf49ea37659e75d384537c83ae4f8a32022f1de8ce5430ecf352"
+    },
+    {
+      "path": "src/OneImage/Ops/Quantize/ExactDither.cs",
+      "sha256": "ddc9ed5ca5d6d989a95ff8f869f449c04a85bfcba8af0a2097669b1e43beda3d"
+    },
+    {
+      "path": "src/OneImage/Ops/Quantize/KnownPalettes.cs",
+      "sha256": "2944d443498ca3bb56c555efc76d1c502ca88c68aadc024432d18692fc250a27"
+    },
+    {
+      "path": "src/OneImage/Ops/Quantize/PaletteBuilder.cs",
+      "sha256": "13f4de94e467a48be43d1cde26e2e85f1f45496b00859cb251de53c42fca6a14"
+    },
+    {
+      "path": "src/OneImage/Ops/Quantize/PaletteQuantizer.cs",
+      "sha256": "343fe759b5e4406facd17783d926b56d675cc3267e37ebe7f5417e47c036a660"
+    },
+    {
+      "path": "src/OneImage/Ops/Quantize/QuantizeTypes.cs",
+      "sha256": "2dd6c4b9c95ad197c4ebac5bf96bbe31df07b906a950f8042b99371c2fef8558"
+    },
+    {
+      "path": "src/OneImage/Ops/Quantize/QuantizedPalette.cs",
+      "sha256": "086761df0761977053365f029a1156bece5225c47f71cd23480a259dd91249b4"
+    },
+    {
+      "path": "src/OneImage/Ops/Resample/PadAndSmartCropNodes.cs",
+      "sha256": "8cc50c46849c678537ec7883895ef0da6d13f9a9a4158aac165aff1935010e63"
+    },
+    {
+      "path": "src/OneImage/Ops/Resample/PixelResizer.cs",
+      "sha256": "ffb5bd66a828c601fd50b445d4f4c6fbd2477735692f6afbdde7c0db4538d95b"
+    },
+    {
+      "path": "src/OneImage/Ops/Resample/ResampleNode.cs",
+      "sha256": "bddb436390a506396aa6e345a00dc20f2a6f71f1102b587d8aa922e1f8f6131f"
+    },
+    {
+      "path": "src/OneImage/Ops/Resample/ResizeEnums.cs",
+      "sha256": "d83a2a40e70aee64465ed8c27588df019d5c89bf9e7427e5602532589dd9bc4b"
+    },
+    {
+      "path": "src/OneImage/Ops/Resample/ResizePlan.cs",
+      "sha256": "b8fcd931ddce5d766cd53e170a14cd14735f304212d349d9ced50c64a61b491d"
+    },
+    {
+      "path": "src/OneImage/Ops/Resample/WeightBuffers.cs",
+      "sha256": "111860c4dc0485d6c115e79d20cd303fe029e2a28378e31f0c8ca2b24cd96097"
+    },
+    {
+      "path": "src/OneImage/Ops/Resample/WeightTable.cs",
+      "sha256": "1af625d110424ebd56b9076578e6d223bdd5ec99c8af53658b95e5e99f025273"
+    },
+    {
+      "path": "src/OneImage/Ops/Tone/ChannelSteps.cs",
+      "sha256": "4e4af72d71059fe7d261e27faa0014b81cbcbe7ed0497c496445360a4a37b39d"
+    },
+    {
+      "path": "src/OneImage/Ops/Tone/ColorMatrix.cs",
+      "sha256": "14a490212cb0c2532c16324390b2fdea35b0e9a1ccae1d1544fd708c8b07a719"
+    },
+    {
+      "path": "src/OneImage/Ops/Tone/ColorMatrixStep.cs",
+      "sha256": "c4a210c0b7e0a80897b8c97d38b38b5d173160585d9b544e77a5f158134f4e2f"
+    },
+    {
+      "path": "src/OneImage/Ops/Tone/CombineChannelsNode.cs",
+      "sha256": "ce87f143cf02ed42c402c71c86ccb5c27a65e0522ecf03141ae81666a9d23d56"
+    },
+    {
+      "path": "src/OneImage/Ops/Tone/CrossSteps.cs",
+      "sha256": "d5cfd66f97f731ca698bdbeb601ca5a3c4387fe8eeec013dfccfc3474d116881"
+    },
+    {
+      "path": "src/OneImage/Ops/Tone/EqualizeNode.cs",
+      "sha256": "bd5b10c42ecbe61dac3904e3dcfd517cacc461ef9f9cb9c462bba83dd27cf61c"
+    },
+    {
+      "path": "src/OneImage/Ops/Tone/EqualizeWindow.cs",
+      "sha256": "5d20cae64cc17cf395e6627d98d706ef737858040d7cb8b4b98edd0564b719bd"
+    },
+    {
+      "path": "src/OneImage/Ops/Tone/ToneNode.cs",
+      "sha256": "e4e80c7a57ce1c77c364e3e8bc20e2d07ad9a7d3b6af3aa4238ad6a8682b6569"
+    },
+    {
+      "path": "src/OneImage/Ops/Tone/ToneStep.cs",
+      "sha256": "9d290edd52005f6c790dad0479d5b2f140e53dfe5859fff33c2c56459cfe5d20"
+    },
+    {
+      "path": "src/OneImage/Ops/Tone/ToneTypes.cs",
+      "sha256": "c30a098e93d2aa0634da06d530d809b6ac36c0efd8ed3f0788c9f600bfa0fc4a"
+    },
+    {
+      "path": "src/OneImage/PixelFormat.cs",
+      "sha256": "9041266891b1226c84d78968c35b8977a9feadb0358a3db738b2275a8cb973aa"
+    },
+    {
+      "path": "src/OneImage/PixelLock.cs",
+      "sha256": "a622206d7bb60fdd4fc7a110710278b3b91e43855f43ee4b27c8dfe1de1fd6d2"
+    },
+    {
+      "path": "src/OneImage/PixelTypes.cs",
+      "sha256": "bcedbc1105af0ad6ff729727247c7b91e16f4f7c58fa331cd972fc245d84dc7d"
+    },
+    {
+      "path": "src/OneImage/README.md",
+      "sha256": "e2dda94fd0f3db242eb7f7ba4a833e37975ffa68fbe02242dcf8854c7eb945cb"
+    },
+    {
+      "path": "tests/OneImage.Tests/Analysis/AnalysisTests.cs",
+      "sha256": "3f4c513f349c30f5daec9a626e5ca7e909a6fa8a6c6cf204a62cd986b5c2d75c"
+    },
+    {
+      "path": "tests/OneImage.Tests/Bmp/BmpEncodeAndMalformedTests.cs",
+      "sha256": "d678b689b7859b91fa669460deb484bc40595f2a4e11fe576f320c3d0ded454d"
+    },
+    {
+      "path": "tests/OneImage.Tests/Bmp/BmpPixelsKernelTests.cs",
+      "sha256": "2bdcf2c2f77d5ab7fbd2a21de6c021f1dfd728c5b367c32dbd4adc68d5714cf7"
+    },
+    {
+      "path": "tests/OneImage.Tests/Bmp/BmpTestUtil.cs",
+      "sha256": "db0fb172523299f7e8a3c525c7b4ed3d2c2c3990a6f4354757edaa2ee721f4a5"
+    },
+    {
+      "path": "tests/OneImage.Tests/Bmp/BmpTests.cs",
+      "sha256": "46637e06018294b34095cbf9fde569ea1538302ef941ed1ef0a18fa07d889438"
+    },
+    {
+      "path": "tests/OneImage.Tests/Bmp/BmpVariantTests.cs",
+      "sha256": "90fed026feda6dd7552f6cd723569eed93f0f87b3d98aa900aa8b4035e7644bd"
+    },
+    {
+      "path": "tests/OneImage.Tests/Bmp/IcoTests.cs",
+      "sha256": "ca9fafe156cbbd0ebbbd2cf3c0a3f7ed2c982b45c7a72c2ece3499248a2a2564"
+    },
+    {
+      "path": "tests/OneImage.Tests/BrowserDefaultsTests.cs",
+      "sha256": "569edec4241dcf1bc061f8a15e30cd0f1e32853e8ad8e27c838344476cdffae3"
+    },
+    {
+      "path": "tests/OneImage.Tests/CacheLifetimeTests.cs",
+      "sha256": "4b1df96ab36a9591244747b11f8ec29a26afa7f4d76ffd8957bedba234e92cc7"
+    },
+    {
+      "path": "tests/OneImage.Tests/CanvasTests.cs",
+      "sha256": "d68a5892dc5ddeaa009e193156c831728fd60ff85b6cd1b9ed08a73ce01386e2"
+    },
+    {
+      "path": "tests/OneImage.Tests/CanvasTileLifetimeTests.cs",
+      "sha256": "78fc93217f0b2f336a136b0e375907b4eb342189183157c3e3157ec7ad4f67cb"
+    },
+    {
+      "path": "tests/OneImage.Tests/CheckingTileStore.cs",
+      "sha256": "dae9af3da974198bc88f3fd1d38a30397fac61b5731094239b00331095fac5bc"
+    },
+    {
+      "path": "tests/OneImage.Tests/CodecTests.cs",
+      "sha256": "163c7e505623a600a9bcee5c6c5a48246b9371146c07fe217f83fa9126b82fd7"
+    },
+    {
+      "path": "tests/OneImage.Tests/Color/ColorAccuracyTests.cs",
+      "sha256": "ee7f39f49fb26d6d607aa1386a02f95f502d83c33139a207763876a8b477275b"
+    },
+    {
+      "path": "tests/OneImage.Tests/Color/ColorImageTests.cs",
+      "sha256": "27da332615f49824a792f116aed0bdec8e8ac108e6a665fd4f983bbb5c663b5e"
+    },
+    {
+      "path": "tests/OneImage.Tests/Color/ColorMathTests.cs",
+      "sha256": "428950d0da5283585106c742138465b56db1c4b68451d27e64e83b827d4b7e48"
+    },
+    {
+      "path": "tests/OneImage.Tests/Color/ColorTestUtil.cs",
+      "sha256": "8b26477a81eaef45abc4bf7d4c32baa56a918946568ca2b7c4093d88bc1dd4ae"
+    },
+    {
+      "path": "tests/OneImage.Tests/Color/GenericCmykTests.cs",
+      "sha256": "3de21a11606116d383f9abfe55d0cbc4133e4a273d5cc25046dd70dc3c11a414"
+    },
+    {
+      "path": "tests/OneImage.Tests/Color/LinearLightConsumerPathTests.cs",
+      "sha256": "4029a7a730c950ca18df49ebe4cbff581d70ef1ba71ce3b6830d34af6989e80f"
+    },
+    {
+      "path": "tests/OneImage.Tests/Color/RealProfileTests.cs",
+      "sha256": "ca71d5fd5a7c3a7484972c44b6d5bf0ef9c9cd1f99e607aabc8e0cdb06a89710"
+    },
+    {
+      "path": "tests/OneImage.Tests/Color/SrgbTransferTests.cs",
+      "sha256": "57802ad845c1ab3b446a0b04d3bf1b6732d7a54e17da7419a70eaa9885833252"
+    },
+    {
+      "path": "tests/OneImage.Tests/Color/TransformCacheTests.cs",
+      "sha256": "2324f811bc61537c3d0aef133b6ce0ac41782ba648c0160c54b3502e3ea73249"
+    },
+    {
+      "path": "tests/OneImage.Tests/Composite/ApplyMaskTests.cs",
+      "sha256": "d54b822b3acf3adbdc3f1246fd43256f99079819225d7b5de861e403b755a70e"
+    },
+    {
+      "path": "tests/OneImage.Tests/Composite/BlendModeTests.cs",
+      "sha256": "d667d77ff059dab996b87243a47b5d907cc78f0d5c3ee694808ac779900d558c"
+    },
+    {
+      "path": "tests/OneImage.Tests/Composite/CompositeRgbaKernelTests.cs",
+      "sha256": "e49025a8d896b5ee8ec0cabe6a660de4d076816a25571581797d8dffda1f84dd"
+    },
+    {
+      "path": "tests/OneImage.Tests/Composite/CompositeTests.cs",
+      "sha256": "2bcf6140ed8da4b84ade1df992006dcbab2ce2068008319dbc56ba05d915d1fe"
+    },
+    {
+      "path": "tests/OneImage.Tests/Composite/ThumbnailTests.cs",
+      "sha256": "499ce37dd940a34e28ed7b9c5766afd9a168a4e09e3b65e141aa4118f8e51fc1"
+    },
+    {
+      "path": "tests/OneImage.Tests/Compression/ChecksumTests.cs",
+      "sha256": "a74cc4d6223faf04c750ffc7e0dd28a257639936c8fdb99d300299e30cba7f0e"
+    },
+    {
+      "path": "tests/OneImage.Tests/Compression/CompressionTestUtil.cs",
+      "sha256": "8dd4f7988402fdaedb5b80118dbf05f34226044cacd32e00f97fb6643dfcf240"
+    },
+    {
+      "path": "tests/OneImage.Tests/Compression/DeflateTests.cs",
+      "sha256": "de3a02be55588d8a8f6799b39185ee1edc617574fec050dc2eb538fa420133e8"
+    },
+    {
+      "path": "tests/OneImage.Tests/Compression/InflateSplitTests.cs",
+      "sha256": "366d5d4d271b6a701525c4ba5dd5280301b011ae4e8cd8fcab4ffffc0905211b"
+    },
+    {
+      "path": "tests/OneImage.Tests/Compression/InflateTests.cs",
+      "sha256": "b78b2dd93d954fa8a79140e56b98f3fb1121f92a784cc44a9f5c33b01ef5b3c5"
+    },
+    {
+      "path": "tests/OneImage.Tests/Compression/LzwTests.cs",
+      "sha256": "d4d48c4b7850e849b39ce8d03a289e5b5af23b84cfc2c4645969689304e6af54"
+    },
+    {
+      "path": "tests/OneImage.Tests/ConvertFastTests.cs",
+      "sha256": "3d552d0860a04641d8e67019ad6926efbd709af6270d0705877392b1a5ba9a57"
+    },
+    {
+      "path": "tests/OneImage.Tests/CorruptStateTests.cs",
+      "sha256": "907ddbead84470aff65dfe2fe9202cf7114f09388bc5499cc9d582dd81217f3b"
+    },
+    {
+      "path": "tests/OneImage.Tests/DirectDecodeTests.cs",
+      "sha256": "80afd54e68d86432e8a5e8e4477ebef98e756c0f486fb8b73ef3bddca3bd96e7"
+    },
+    {
+      "path": "tests/OneImage.Tests/DirectReadTests.cs",
+      "sha256": "d9bb49aa192b538d912b36dd5ec1f669edf9d3c73b443f5c68236ba5243e66f5"
+    },
+    {
+      "path": "tests/OneImage.Tests/Dither/DitherBehaviorTests.cs",
+      "sha256": "6c87807afb612a9530d923da2b5d9a807ea9fdafe839056db4d3e2beb3fd94e8"
+    },
+    {
+      "path": "tests/OneImage.Tests/Dither/DitherParityTests.cs",
+      "sha256": "7ae1e5584cd28e2614085016a7507f7f23a8d31d3103cafb8529657c0ad68dad"
+    },
+    {
+      "path": "tests/OneImage.Tests/Docs/ColorMatrixDocsExamples.cs",
+      "sha256": "7a3a09d85b3cecd2a5a90a9602f6dd527d93506a293cf08fef5e039e1f14424f"
+    },
+    {
+      "path": "tests/OneImage.Tests/Docs/DocsExamples.cs",
+      "sha256": "36b0cd588f00d1ea3ccee49094e2400b5c5870431521616aded6a5b9e75820b3"
+    },
+    {
+      "path": "tests/OneImage.Tests/Docs/EffectsDocsExamples.cs",
+      "sha256": "30e3523e1d6687aaf1cac8d903803a06f33119796f5d140691446de83f39db49"
+    },
+    {
+      "path": "tests/OneImage.Tests/Docs/HistogramDocsExamples.cs",
+      "sha256": "07f1d39c3016ce27134d680466a2eacbb5ec185d2e0a2f20324fa225f0dd6a88"
+    },
+    {
+      "path": "tests/OneImage.Tests/Docs/ImageSharpSide.cs",
+      "sha256": "e508ed2cae03a5f03b8f87f838df876afb88905626d137f7c76182b123c2f91d"
+    },
+    {
+      "path": "tests/OneImage.Tests/Docs/MigrationExamples.cs",
+      "sha256": "921aab1a33d0cfd8b9b61800a70679425d2d2ed592337ab0d37291b8642bb3f7"
+    },
+    {
+      "path": "tests/OneImage.Tests/Docs/ReadmeSamples.cs",
+      "sha256": "67a72b21a5762aba39555a7c817cec7ff779786661fe329d7528b071db282c9c"
+    },
+    {
+      "path": "tests/OneImage.Tests/Docs/ResizeDocsExamples.cs",
+      "sha256": "5f6caf5aa7465c7bf1c357bc145893912b38a6efd784240150404957619f8aa2"
+    },
+    {
+      "path": "tests/OneImage.Tests/Drawing/BooleanImageSharpTests.cs",
+      "sha256": "00bd1a4f8117b518565c5968c692fe5dc56fda85f32078cbbf9102e142aeb3d8"
+    },
+    {
+      "path": "tests/OneImage.Tests/Drawing/BooleanTests.cs",
+      "sha256": "b791b9daa9ab0d17646e610acc35a547632cd64b47e0ac2364c35a3aa9d675a9"
+    },
+    {
+      "path": "tests/OneImage.Tests/Drawing/BrushImageSharpTests.cs",
+      "sha256": "2656385c2392c68593b88b505bf77e2c6cf9dffea27da34047aabf0df3718c39"
+    },
+    {
+      "path": "tests/OneImage.Tests/Drawing/BrushKernelTests.cs",
+      "sha256": "d78d95064846c449635ae2805c597f46bf33bd3f58d624285022544c56a9a600"
+    },
+    {
+      "path": "tests/OneImage.Tests/Drawing/BrushTests.cs",
+      "sha256": "0dbf15d563380f3cd860f9363c61b609160d8ca582a4191257b9663da3763336"
+    },
+    {
+      "path": "tests/OneImage.Tests/Drawing/BrushTransformTests.cs",
+      "sha256": "60139e534c50e5018cfa461b2ee6d4c17b9986c8126c8ece72946a6ac9e7bc64"
+    },
+    {
+      "path": "tests/OneImage.Tests/Drawing/CanvasSnapshotDrawTests.cs",
+      "sha256": "f4170334a0f3691c7af4947c95f9c32ade1cdb97e9d09f0f1dd4850445c3eb99"
+    },
+    {
+      "path": "tests/OneImage.Tests/Drawing/ClipTests.cs",
+      "sha256": "489c2af3674c05014859c2641937c0ef1538b77789e987ba1953e1c5c9d7c90d"
+    },
+    {
+      "path": "tests/OneImage.Tests/Drawing/FillReuseTests.cs",
+      "sha256": "2e8e1b77feab878510459f2bd6ec7aca5b9fe353c2471fd67791ac9512fc2cfe"
+    },
+    {
+      "path": "tests/OneImage.Tests/Drawing/FillTests.cs",
+      "sha256": "fce230009f92794f2487d72374fa0b388a31283bb94d683385755f853aeae0f7"
+    },
+    {
+      "path": "tests/OneImage.Tests/Drawing/ImageSharpCoverageTests.cs",
+      "sha256": "bc6c527d09806dfd4cda0f59be9235bb51af3732e8e40553a0b47255e1adc95f"
+    },
+    {
+      "path": "tests/OneImage.Tests/Drawing/LinearFillTests.cs",
+      "sha256": "b81d4435d3fa1180285ac37daa4268a0f0b52d2e3de92755ba89b53d3fba6d69"
+    },
+    {
+      "path": "tests/OneImage.Tests/Drawing/NonSolidRgbaBlendTests.cs",
+      "sha256": "1aece49b12fb87351a3ac25e66f3cba038b32c65e7f86284dbc0f4d7ecd85c71"
+    },
+    {
+      "path": "tests/OneImage.Tests/Drawing/PathTests.cs",
+      "sha256": "7ad0560fd1c18cd36cc9480351075b2ba11cd2f1ed8478a6362dc1b371affc73"
+    },
+    {
+      "path": "tests/OneImage.Tests/Drawing/StrokeImageSharpTests.cs",
+      "sha256": "f4a44ea115f3241d1168612d2cc4288f7bb432a48fe6923ca956e89258a800c3"
+    },
+    {
+      "path": "tests/OneImage.Tests/Drawing/StrokeTests.cs",
+      "sha256": "3ca38ae8a8ae0f64753f6d8ec700393442d1690775c7595e178a95ae620bf067"
+    },
+    {
+      "path": "tests/OneImage.Tests/Drawing/StrokeTransformTests.cs",
+      "sha256": "26547819fe52d1373f675334273025b5aac499abd7a4d6fbee07358daa6f62eb"
+    },
+    {
+      "path": "tests/OneImage.Tests/Effects/EffectsBehaviorTests.cs",
+      "sha256": "3d841bb926cba78139f1539732e64f06dd8823e3f4e140c2a463d8270d3882d0"
+    },
+    {
+      "path": "tests/OneImage.Tests/Effects/EffectsOracleTests.cs",
+      "sha256": "6bd50395b7e45025e23eff83cf69ffba4ae83b9968035a29864beae41bfde9d9"
+    },
+    {
+      "path": "tests/OneImage.Tests/Equalize/EqualizeOracleTests.cs",
+      "sha256": "dae1241288396fab96d1600c30401a04e95f8afbe7ab5a116a43a31f14026952"
+    },
+    {
+      "path": "tests/OneImage.Tests/Equalize/EqualizeTests.cs",
+      "sha256": "4b5c510f1dd8165271187a6606d0ceee728ec49518c3bf959c71f2bc1a91b98e"
+    },
+    {
+      "path": "tests/OneImage.Tests/Filter/BlurIdentityTests.cs",
+      "sha256": "297909a978137aae87315e32e3314820503cbc13bd42b59ee9e890a6fa05b7a2"
+    },
+    {
+      "path": "tests/OneImage.Tests/Filter/BlurTinyFuzzTests.cs",
+      "sha256": "22bab3b7b44350cb20f241869188fa03ab8e7cb188828ed1097ef4aa151e9f2a"
+    },
+    {
+      "path": "tests/OneImage.Tests/Filter/BlurTinyImageTests.cs",
+      "sha256": "dec34cef7667cfcf1e21862c2995f12e6203efc7d0fa9d90a509a52b029b359a"
+    },
+    {
+      "path": "tests/OneImage.Tests/Filter/FilterAccuracyTests.cs",
+      "sha256": "95fc9bff83900f892a7fad86634668054ff10fb1a85dcb9b05536c718cccf435"
+    },
+    {
+      "path": "tests/OneImage.Tests/Filter/FilterLocalityStreamingTests.cs",
+      "sha256": "bccc48efbb20aed6094e99f708866a1f69717bf5ea5ee0843318bd06f33e4e3b"
+    },
+    {
+      "path": "tests/OneImage.Tests/Filter/FilterReference.cs",
+      "sha256": "2d8ecd1d9b91da062e68ff8d2d490bb6eef5cce56cd91d23d5299a9348b1847c"
+    },
+    {
+      "path": "tests/OneImage.Tests/Filter/FilterVipsComparisonTests.cs",
+      "sha256": "a71a2fed8d8cf7e463777dee96fe25d15a0dbb6c2e86d0efd21e9e6b1e859d58"
+    },
+    {
+      "path": "tests/OneImage.Tests/Filter/TestNotes.cs",
+      "sha256": "014ff2c9dac2881ab1ab6dd35027cfc3bd25839cf32b1024a426ac29a3e81aa6"
+    },
+    {
+      "path": "tests/OneImage.Tests/GenFormat.cs",
+      "sha256": "6c3ce70f342a9d40052f77d6de9a14d1ccf6f3cf47d3286718e9600a8d905b3b"
+    },
+    {
+      "path": "tests/OneImage.Tests/Geometry/AffineTests.cs",
+      "sha256": "f4a800dec757b9100f3edc34a4ed18183f29dc0ea6608c0f285466dc36409cd6"
+    },
+    {
+      "path": "tests/OneImage.Tests/Geometry/AutoOrientLoadTests.cs",
+      "sha256": "8afe25820dd48741a81f23af7bbdadcfca007b244b9ea952e083d9966acd1ec3"
+    },
+    {
+      "path": "tests/OneImage.Tests/Geometry/GeometryLocalityTests.cs",
+      "sha256": "14dc2d0b83df7839a14c9af802b8a905b376d8b7051cbdd7e1f03e1d76ad5483"
+    },
+    {
+      "path": "tests/OneImage.Tests/Geometry/OrientTests.cs",
+      "sha256": "1cbe3cb639107b4b3bf52d3f407bb673b5b8aa9a959f884428391542f7ceb6e6"
+    },
+    {
+      "path": "tests/OneImage.Tests/Geometry/PadTests.cs",
+      "sha256": "6861a9bbe15da257dc4f9e5d5eb9a7085712d1055397382d6aea132dcba41305"
+    },
+    {
+      "path": "tests/OneImage.Tests/Geometry/PerspectiveTests.cs",
+      "sha256": "4e4f57e949186b52dbf93875a7c59cd7f5ccf95b0276e76ad645da0f21caf510"
+    },
+    {
+      "path": "tests/OneImage.Tests/Geometry/TrimTests.cs",
+      "sha256": "46f27d2e693114ddd2a1086a3a3d4b9554c3b0d6203ba2b17cc353104c2ebbae"
+    },
+    {
+      "path": "tests/OneImage.Tests/Geometry/VipsComparisonTests.cs",
+      "sha256": "a9479896e93e424c051d6fcefa8f820b03fc2fbb3f90634c72cb4ea64048e324"
+    },
+    {
+      "path": "tests/OneImage.Tests/Gif/ComparisonReport.cs",
+      "sha256": "651212f7646d4174fb892a6d19683da8d4ab1357ced6b1f8af2357af2dcece34"
+    },
+    {
+      "path": "tests/OneImage.Tests/Gif/GifAnimationTests.cs",
+      "sha256": "1b79e24ea3e4c707adc75ff39f69390fee1d4db23fba87ee7f27d04f6dc0b134"
+    },
+    {
+      "path": "tests/OneImage.Tests/Gif/GifBuilder.cs",
+      "sha256": "9a460d8facd05b4265b87698e1cfe21c1522ac357a43f0331095ab59667bc2ab"
+    },
+    {
+      "path": "tests/OneImage.Tests/Gif/GifDecodeTests.cs",
+      "sha256": "91e159ddc5ed3abf1b4001aa92692d144112ee7bcdcc292e97f1170ab1eb86b6"
+    },
+    {
+      "path": "tests/OneImage.Tests/Gif/GifEncodeTests.cs",
+      "sha256": "91b242b053d1f3a0a742f8b80bab2e0b785b9969a4f5a881f21cff91da9efb2b"
+    },
+    {
+      "path": "tests/OneImage.Tests/Gif/GifMalformedTests.cs",
+      "sha256": "d5c8ddda2c2a4b21f70e928a19786a1143dceddc28006f1cae865b1ab658aac3"
+    },
+    {
+      "path": "tests/OneImage.Tests/Gif/GifTestUtil.cs",
+      "sha256": "7ffda85922fec62085cd5fdf42619453463315d87a574ac9a1bbdd54095bf985"
+    },
+    {
+      "path": "tests/OneImage.Tests/Gif/GifTestdataTests.cs",
+      "sha256": "b06bc3b33b8f0304dc5c86a39bbdc20a26d700c2a8d9f3ded9a7c52ab16d9587"
+    },
+    {
+      "path": "tests/OneImage.Tests/Gif/GifToWebPTests.cs",
+      "sha256": "cf0db2754681da6fcd774292d27a9aad6173923f0b857a99067684e58b6681df"
+    },
+    {
+      "path": "tests/OneImage.Tests/Gif/MagickCorpus.cs",
+      "sha256": "9af911bc558f2d120e8ad26e6c6ae9f7f5ac19922f57fd6b4443a4e40b17438d"
+    },
+    {
+      "path": "tests/OneImage.Tests/GraphTests.cs",
+      "sha256": "6d6c0723da91d7b515efdbf1c8830832f27151322bd442901d86cac34acb9fc8"
+    },
+    {
+      "path": "tests/OneImage.Tests/Histogram/HistogramParityTests.cs",
+      "sha256": "db7925cbdbd17630b9a2a8795f7610ea20ec152d7564b93a8fbd689db582eb49"
+    },
+    {
+      "path": "tests/OneImage.Tests/Jbig2/Jbig2AnnexHTests.cs",
+      "sha256": "733037219527293aed7c7c464f1eb5b38c8fc1c7e78d2a9bd2ddcb84ea518ea9"
+    },
+    {
+      "path": "tests/OneImage.Tests/Jbig2/Jbig2CorpusTests.cs",
+      "sha256": "50440d9bef876d9e7e6f577c1ea7bc15bbe3a243893f21a51d47605f8d1b81c9"
+    },
+    {
+      "path": "tests/OneImage.Tests/Jbig2/Jbig2LimitTests.cs",
+      "sha256": "adcf33410e4ba00f26813d018e5d32af218288545c0d4a1b0616c34df93522a7"
+    },
+    {
+      "path": "tests/OneImage.Tests/Jbig2/Jbig2PdfStreamTests.cs",
+      "sha256": "a08b2f54bd6cbee5f2e4f695ec1285de8b7d465607b93e7c610aee2fcec96010"
+    },
+    {
+      "path": "tests/OneImage.Tests/Jpeg/JpegColorTests.cs",
+      "sha256": "0d8458d3ec1e7d1a3f80fb764d79945db476778eef82f76438d35e6ad3c05d49"
+    },
+    {
+      "path": "tests/OneImage.Tests/Jpeg/JpegDecodeTests.cs",
+      "sha256": "94d806fc22179bba26f4280dec24b05b21e599f33192e0fec3d823832a2f2ede"
+    },
+    {
+      "path": "tests/OneImage.Tests/Jpeg/JpegEncodeKernelTests.cs",
+      "sha256": "a4c225f7bef8475937ff63157e714e92daed049a6eacae9064239d97ebc57aba"
+    },
+    {
+      "path": "tests/OneImage.Tests/Jpeg/JpegEncodeMoreTests.cs",
+      "sha256": "933b31e79a823e8703dcb86014776a0219b961a48a903cd033fd9d16f967d2fe"
+    },
+    {
+      "path": "tests/OneImage.Tests/Jpeg/JpegEncodeTests.cs",
+      "sha256": "72204b01f273407d63be546c7a4ad81784e757568ba4544d251060ac79d8da36"
+    },
+    {
+      "path": "tests/OneImage.Tests/Jpeg/JpegEntropyTests.cs",
+      "sha256": "d69bafe1f32bef22f6d19a4521bb9116497f1cced0078a6944b4c6da433532c9"
+    },
+    {
+      "path": "tests/OneImage.Tests/Jpeg/JpegInteropTests.cs",
+      "sha256": "ddfd2d8dfe6f34bcb6b58908b7c80d9dcadfaa47af73a8e5e42160a916dafd4a"
+    },
+    {
+      "path": "tests/OneImage.Tests/Jpeg/JpegKernelTests.cs",
+      "sha256": "78c034ddd77f93f0829483658875c301188d06ce6cf7bd4f17dc6ad86ca7087b"
+    },
+    {
+      "path": "tests/OneImage.Tests/Jpeg/JpegParallelRestartTests.cs",
+      "sha256": "541934a4a7810a89f761fb00827efd22565cbc431177ee0d620423bbcae26f46"
+    },
+    {
+      "path": "tests/OneImage.Tests/Jpeg/JpegProgressiveFastPathTests.cs",
+      "sha256": "9ca53d4cb4b5dea4d42c81c0f5617da7684dda60cd5b848dfd70b2115ed492c0"
+    },
+    {
+      "path": "tests/OneImage.Tests/Jpeg/JpegRobustnessTests.cs",
+      "sha256": "03618e04af66df8f34496e20e3a70eff381924430828deecc5b1b72cd18c879d"
+    },
+    {
+      "path": "tests/OneImage.Tests/Jpeg/JpegScaleRegionTests.cs",
+      "sha256": "210eb9d5b5c6d052a956643cbb7b503c696c0102c4dbd8c4b1fa846c26886763"
+    },
+    {
+      "path": "tests/OneImage.Tests/Jpeg/JpegStagingTests.cs",
+      "sha256": "e4d5d66d5e9fdf040f4e640aafff9607fc180f412c9e0cc2e86054126823c48b"
+    },
+    {
+      "path": "tests/OneImage.Tests/Jpeg/JpegTestSupport.cs",
+      "sha256": "6528a8765ec07df2c0833febf9f9a84c159f4910501eef87c29cb8f525bd6951"
+    },
+    {
+      "path": "tests/OneImage.Tests/Jpeg/JpegTiffTests.cs",
+      "sha256": "8610fe042c99a0dbfb45fdd8cc4dff2c2c078f69291818f2b6490bbed66291b7"
+    },
+    {
+      "path": "tests/OneImage.Tests/Jpx/JpxApiTests.cs",
+      "sha256": "80fe9b06eddad9fdc0f1b6be53c5bdffa5ec52761a4e589a05da13ceb9f497c1"
+    },
+    {
+      "path": "tests/OneImage.Tests/Jpx/JpxConformanceTests.cs",
+      "sha256": "f5cc32052e936147e4ececa3712d37e1b5335fcdff16175a0a34663541cae1f9"
+    },
+    {
+      "path": "tests/OneImage.Tests/Jpx/JpxCorpusTests.cs",
+      "sha256": "6da96657baee9bedc911d0fda17949f20016a946c67d87c635f5c486cbd22533"
+    },
+    {
+      "path": "tests/OneImage.Tests/Jpx/JpxLimitTests.cs",
+      "sha256": "f18d0f3d63c281537481ee9aacd42741345a2fab5ca81c51ce8de39944856194"
+    },
+    {
+      "path": "tests/OneImage.Tests/Jpx/JpxTestStreams.cs",
+      "sha256": "34577cee60586ecf887fef9a6382f17426c89f8f87d2742d86b6e1a47df6b989"
+    },
+    {
+      "path": "tests/OneImage.Tests/KernelAvx2AuditTests.cs",
+      "sha256": "f622ebfe8136f172034bc79a84506e06510ea641cb1988e3c4f6e22c6bdae8e0"
+    },
+    {
+      "path": "tests/OneImage.Tests/KernelTests.cs",
+      "sha256": "b3bd5cace88f7aecb2cb2fde330ce07dd9ec392e1ecf182aab8e47824a6baa9f"
+    },
+    {
+      "path": "tests/OneImage.Tests/Layers/LayerClipTests.cs",
+      "sha256": "63e5e3c44be1e9b75bd74b048c3f51fa61c7f9547387a91efd2136e4048e61e1"
+    },
+    {
+      "path": "tests/OneImage.Tests/Layers/LayerCompositeTests.cs",
+      "sha256": "a7793e3917ab1a1591515f56346e7ee5074908bb3d1317e397c3abbcaa355edd"
+    },
+    {
+      "path": "tests/OneImage.Tests/Layers/LayerSemanticsTests.cs",
+      "sha256": "ef8baec3ad5573a7d207fbb6021e088e91a9729495d35609e2f2dcb14716021d"
+    },
+    {
+      "path": "tests/OneImage.Tests/Layers/LayerStylePaintTests.cs",
+      "sha256": "ae58b8783886f25d225120923506cadeeae629458326133ab01d4ea7cc676c40"
+    },
+    {
+      "path": "tests/OneImage.Tests/Layers/LayerStyleTests.cs",
+      "sha256": "b0fd03b3fcac8fd9755c366431690ef0c187aa397ecb5fe640a39ab26e9c138d"
+    },
+    {
+      "path": "tests/OneImage.Tests/Layers/SpillReuseTests.cs",
+      "sha256": "6f69b22548b7b27c9ab14ad379314e773d01ea9b094931677a4990a7c3be181e"
+    },
+    {
+      "path": "tests/OneImage.Tests/MemoryMeasurement.cs",
+      "sha256": "ad6bf6644ff216f0b188b6492c0af62f2ac5c5375502e9d9e218e83b87f9eb63"
+    },
+    {
+      "path": "tests/OneImage.Tests/Metadata/MetadataRobustnessTests.cs",
+      "sha256": "12f5277981c0561e6c6822566b8925b906e55810fe1f213047e7bff44bcfee8a"
+    },
+    {
+      "path": "tests/OneImage.Tests/Metadata/MetadataTests.cs",
+      "sha256": "8523458b1a84445031b8db977f7e3147007312b5f0a2091ec7d928a56a5cd7e5"
+    },
+    {
+      "path": "tests/OneImage.Tests/OneImage.Tests.csproj",
+      "sha256": "ee48e7774ca120f1d6d1efb0d2069247b1f00d105ce2bb27e03db98493fddb6b"
+    },
+    {
+      "path": "tests/OneImage.Tests/PatternNode.cs",
+      "sha256": "c6a9955ba335556e39dc09c5bb051a1ea7ab2f3389206e415896045a18a9b6c0"
+    },
+    {
+      "path": "tests/OneImage.Tests/Png/ApngTests.cs",
+      "sha256": "37b6500b211376464f54aa52b20efbe69dd4269e4a6e6a092790acd3f832a8f2"
+    },
+    {
+      "path": "tests/OneImage.Tests/Png/MiniPng.cs",
+      "sha256": "ea597a4af0407dd0fd2fb4d099f053654c86711ed44f41fe0bc48e7a0bbaaa63"
+    },
+    {
+      "path": "tests/OneImage.Tests/Png/PngBadFilterTests.cs",
+      "sha256": "3cadaa1a8fafaf32b71e5f118617091b566f3fc4e2e3bc8091f9293bdc5908ed"
+    },
+    {
+      "path": "tests/OneImage.Tests/Png/PngEncodeTests.cs",
+      "sha256": "f47456bae194ca3a6c67666d55518784e9b28d2644f652bba766e28caa37bf28"
+    },
+    {
+      "path": "tests/OneImage.Tests/Png/PngFilterTests.cs",
+      "sha256": "70d897244abd7315959d82f13a6f2c07cd5263ab575963776f5b21f972c61f0e"
+    },
+    {
+      "path": "tests/OneImage.Tests/Png/PngGen.cs",
+      "sha256": "57caec4cc1c377c488d93d6499b3e7515f719ff05decd0928467c25b829b6daa"
+    },
+    {
+      "path": "tests/OneImage.Tests/Png/PngMalformedTests.cs",
+      "sha256": "dccce4d17e47a74bb5e05be265e2ac1944d7a2cbbdcdf0328f7991e8d1a78430"
+    },
+    {
+      "path": "tests/OneImage.Tests/Png/PngPipelineTests.cs",
+      "sha256": "38086b8e625117142675027c0a93b806689a409dd06695194cdd868d10f24c0b"
+    },
+    {
+      "path": "tests/OneImage.Tests/Png/PngStreamingTests.cs",
+      "sha256": "02abb6b2b0304c5555f5f87280753d27a7eb6075a30304b157288fd58536565b"
+    },
+    {
+      "path": "tests/OneImage.Tests/Png/PngSuiteTests.cs",
+      "sha256": "db6f0ce3ec2a3a30c8815980c9f0e83807f6caa45431575f05ea0daf84ec9b63"
+    },
+    {
+      "path": "tests/OneImage.Tests/Png/PngTestUtil.cs",
+      "sha256": "52c55b2d743acb8c162fd1e1df5e41de6be9da3cd84d81140425d256a13d7e87"
+    },
+    {
+      "path": "tests/OneImage.Tests/PngPipelineLifetimeTests.cs",
+      "sha256": "6629c773537417387712d55a16e068ece84a90ee4239fe6f479bfa51a8d7d455"
+    },
+    {
+      "path": "tests/OneImage.Tests/PoolCheck.cs",
+      "sha256": "018e8c5414c6ddc446fbb90b991cf830381dd05945febf974eb1468417d9cf86"
+    },
+    {
+      "path": "tests/OneImage.Tests/PoolCheckTests.cs",
+      "sha256": "d6980afdea3283bb8e6dc43438c260fbfeaa125906d9f84e0ea70f78667d0ae6"
+    },
+    {
+      "path": "tests/OneImage.Tests/PooledSourceLifetimeTests.cs",
+      "sha256": "9288497207cdf34feacbe626f96d5ddd8569077e10a5cd1db4c6f0189d16debd"
+    },
+    {
+      "path": "tests/OneImage.Tests/Quantize/PngIndexedPhotoTests.cs",
+      "sha256": "03279f4729829fb9b568447f1fd83e250f46d84ef0c999b804a39e5ba4f54cf7"
+    },
+    {
+      "path": "tests/OneImage.Tests/Quantize/QuantizeKernelTests.cs",
+      "sha256": "d9bf8ce2d0fc3e82505bec1da32facb9c81310ebfb8bbdf81229fbdb2b69724a"
+    },
+    {
+      "path": "tests/OneImage.Tests/Quantize/QuantizeTests.cs",
+      "sha256": "16c7b4aeb6f7490b08a8d2678c279d4f94ab4faf10b1c60d221dde8a7cff9100"
+    },
+    {
+      "path": "tests/OneImage.Tests/RawFormat.cs",
+      "sha256": "6036b66f0f518324fa69d2930151ed3f2ea8449acc665da6709e489c6e2556b2"
+    },
+    {
+      "path": "tests/OneImage.Tests/Region/GrayReadIdentityTests.cs",
+      "sha256": "96d8d57e1dcfcaf37ff5a86417a5c30154cb921fb1bb94772353c21b9df121ae"
+    },
+    {
+      "path": "tests/OneImage.Tests/Region/RegionCacheTests.cs",
+      "sha256": "e244f9b1572f50cc61ade763ece877b23ebeee37c31708f7ad2e65919de31058"
+    },
+    {
+      "path": "tests/OneImage.Tests/Region/RegionReadIdentityTests.cs",
+      "sha256": "0f1397d408495681be5dd4b8a77100954cbf15cf6bc560b41ff3c546403319d6"
+    },
+    {
+      "path": "tests/OneImage.Tests/Region/ReleaseDecodedPixelsTests.cs",
+      "sha256": "36c7d4fb87b0b510f202aba73fbc2506d074402d833459e252802d2b250d1ad5"
+    },
+    {
+      "path": "tests/OneImage.Tests/Region/ReleaseIdentityTests.cs",
+      "sha256": "7b6528a7a7dafffeb9f850f8f452d1968911305ccc49881f40ad84a1c036df1b"
+    },
+    {
+      "path": "tests/OneImage.Tests/Resample/GradientFormat.cs",
+      "sha256": "3ba40a265b2c77b6a7ba426ba3b19d28e23e6bd388596c5b1ab2018cc4ad2ced"
+    },
+    {
+      "path": "tests/OneImage.Tests/Resample/NewResamplerTests.cs",
+      "sha256": "82eb066cbc4c5b1f20373ce16e4ad8cbea8ff5e8af7948bc900226d120ee5b31"
+    },
+    {
+      "path": "tests/OneImage.Tests/Resample/PixelResizerTests.cs",
+      "sha256": "aee9ba2e3eb8a2f94927415664bc164eaea63c249106bc76d6748adacaa55e31"
+    },
+    {
+      "path": "tests/OneImage.Tests/Resample/ResampleAccuracyTests.cs",
+      "sha256": "adaf4829b7f8e4a27dd1955dbc68cff471c69569551b63bebbc7e1da64b36b85"
+    },
+    {
+      "path": "tests/OneImage.Tests/Resample/ResampleBehaviorTests.cs",
+      "sha256": "b0a2f4ce920c31172617e850b094d328be5fab6e530626afa8acc6a1079b5748"
+    },
+    {
+      "path": "tests/OneImage.Tests/Resample/ResampleStreamingTests.cs",
+      "sha256": "8d6d8ba45f0363baa72056f9f1a00cd72917a1ba4888dc582e6d5cd5879e0fc1"
+    },
+    {
+      "path": "tests/OneImage.Tests/Resample/ResizeBitIdentityTests.cs",
+      "sha256": "64592919ee1f7beefb2a1e8c70fe688da1c5ae42c72e679b47ec4432e1147f18"
+    },
+    {
+      "path": "tests/OneImage.Tests/Resample/ResizeMatrix.cs",
+      "sha256": "97e940e08e5b6d680a7a0fabbd70515ef2004de72e7d480aa9e9933392e26d56"
+    },
+    {
+      "path": "tests/OneImage.Tests/Resample/ResizeModeTests.cs",
+      "sha256": "3e099ef5cf2319f47deb155f9f2d504a4e793ff130b9c75187b5a97a53739ca5"
+    },
+    {
+      "path": "tests/OneImage.Tests/RgbToGrayTests.cs",
+      "sha256": "bb1a69b0b1e791afba9497875122a34193740eb18dcb19bca0f94d52441211b4"
+    },
+    {
+      "path": "tests/OneImage.Tests/ShortReadFixtures.cs",
+      "sha256": "89746dc9937441ab35699639e3ec4fb490eb7398335be7dee64e9566ac56a820"
+    },
+    {
+      "path": "tests/OneImage.Tests/ShortReadStream.cs",
+      "sha256": "0210b1b794d5e2c89d008c0365ce4016701a4f896d1dac2ac8e322fabc7a2424"
+    },
+    {
+      "path": "tests/OneImage.Tests/ShortReadTests.cs",
+      "sha256": "9b27b5d8a9534c6d6b17c1749e3a969e37bcab7c3522c0c558454f966cf13f2d"
+    },
+    {
+      "path": "tests/OneImage.Tests/SkeletonTests.cs",
+      "sha256": "b4c6ec12c3745a6325a4af683689e799f8e4a3ce9c3dded094b94154fcda20bd"
+    },
+    {
+      "path": "tests/OneImage.Tests/StreamingTests.cs",
+      "sha256": "c98437a35e63da420cf3c94483fbf715f38993c6c82363afee2a584d6f4335d2"
+    },
+    {
+      "path": "tests/OneImage.Tests/Tiff/TiffDecodeTests.cs",
+      "sha256": "444eb8fa43f6ab687f80dcbe2a72c631be18185a5d331472f7f31881657dffd1"
+    },
+    {
+      "path": "tests/OneImage.Tests/Tiff/TiffDirectReadTests.cs",
+      "sha256": "102420ce2ea8344a142d15218b62d4b187e3233a72f6a2a0477de155c640336d"
+    },
+    {
+      "path": "tests/OneImage.Tests/Tiff/TiffEncodeTests.cs",
+      "sha256": "66427d4c41044c8bf0234b4b038493e3c1a5161166b48b5cc11bd6fec72961d3"
+    },
+    {
+      "path": "tests/OneImage.Tests/Tiff/TiffPredictorKernelTests.cs",
+      "sha256": "973bb88ae0299524891f91b542abb8eafecf448d96a54ee994f036400ae3cd32"
+    },
+    {
+      "path": "tests/OneImage.Tests/Tiff/TiffRobustnessTests.cs",
+      "sha256": "4670fe713c61d09759341c45a4a2f9ec64f4de157f65fa39d3da15b9af163a4b"
+    },
+    {
+      "path": "tests/OneImage.Tests/Tiff/TiffTestUtil.cs",
+      "sha256": "d5d9e095763af682593ccb4ef39d16d3a096906bd699af5bbc0a88133985123c"
+    },
+    {
+      "path": "tests/OneImage.Tests/Tone/ColorMatrixTests.cs",
+      "sha256": "cc2b73d3c45f20ecaaf808d3ee781852f96c79d95afcb142301bc93f131dbaf4"
+    },
+    {
+      "path": "tests/OneImage.Tests/Tone/PhotoshopToneTests.cs",
+      "sha256": "9cd551a39a5927dab490f1353bf586e1622ec635c227c7a4faa29c33d7260f5d"
+    },
+    {
+      "path": "tests/OneImage.Tests/Tone/ToneAccuracyTests.cs",
+      "sha256": "60a0dc891e178fdab1dc252e07c689720ca975c75add25140ff9f89abf50bfcc"
+    },
+    {
+      "path": "tests/OneImage.Tests/Tone/ToneFusionTests.cs",
+      "sha256": "90843ae67bda7e8680cb405593e1bed516e8bcd1c17c278d3ec9a739a2e8a917"
+    },
+    {
+      "path": "tests/OneImage.Tests/Tone/ToneKernelTests.cs",
+      "sha256": "3f7ed9e45d150d388953f9bd775398a5e61fbb95db12f24ecbb470f03a7cc744"
+    },
+    {
+      "path": "tests/OneImage.Tests/Tone/ToneOracleTests.cs",
+      "sha256": "dbb5e550166968799c41ede26ffaa99b50f38821af05f96e9063ea9c08576a33"
+    },
+    {
+      "path": "tests/OneImage.Tests/Tone/ToneUtil.cs",
+      "sha256": "30512a546ca1bbfccd541c3adfbc3f5aeb9c2c5bf5dd27b479ea65d01e32e8fe"
+    },
+    {
+      "path": "tests/OneImage.Tests/WebP/Quality.cs",
+      "sha256": "3131f370d5574e011bc3d634af69eccff2bd33a5fb662306d8f4e900966720d6"
+    },
+    {
+      "path": "tests/OneImage.Tests/WebP/WebPAnimationTests.cs",
+      "sha256": "43a9fc2edc587fe770825a4a79f64fcd1fa7646211377eeb2f1d384c39fe748b"
+    },
+    {
+      "path": "tests/OneImage.Tests/WebP/WebPApiTests.cs",
+      "sha256": "62432b0668f61d7985da79431d55df812f11b6564af3935e9adda67464ec57a1"
+    },
+    {
+      "path": "tests/OneImage.Tests/WebP/WebPCorpus.cs",
+      "sha256": "a466b71da8df852a3fece4894424001c14fae6d024314dd2c19bafece84c9030"
+    },
+    {
+      "path": "tests/OneImage.Tests/WebP/WebPDecodeTests.cs",
+      "sha256": "b476f8b5608d5e33af6079f7ff25368fed4c4a4eb5ac53816dd53697fec79a67"
+    },
+    {
+      "path": "tests/OneImage.Tests/WebP/WebPEncodeKernelTests.cs",
+      "sha256": "229a476580a456ff80b7f56ea6aac086359e4b8e22b8925af23a09810190e64d"
+    },
+    {
+      "path": "tests/OneImage.Tests/WebP/WebPEqualQualityReport.cs",
+      "sha256": "481c62c1883d1fe4ef0d28a1d7756274f07c65e5dced0b66d0ee086d500c0538"
+    },
+    {
+      "path": "tests/OneImage.Tests/WebP/WebPLoopFilterKernelTests.cs",
+      "sha256": "ea128d7e4b3c93173f4227168df2e549b7a4ba951e50946da23cad3bd50a75fe"
+    },
+    {
+      "path": "tests/OneImage.Tests/WebP/WebPLosslessEncodeTests.cs",
+      "sha256": "f53664dab25282dc41843fe728fb11534e3f79b6e3f485a07e219459c052ffc3"
+    },
+    {
+      "path": "tests/OneImage.Tests/WebP/WebPLosslessSmallImageTests.cs",
+      "sha256": "f14c2b83f8d01921070f356e352eeb8714bd306716317d352c8f9f05fa1429ab"
+    },
+    {
+      "path": "tests/OneImage.Tests/WebP/WebPLossyStreamingTests.cs",
+      "sha256": "21b8cc6e85b4a92e55033e5530ebf36c220e5bbd9f71f9ce191ca3c3602dd02b"
+    },
+    {
+      "path": "tests/OneImage.Tests/WebP/WebPMemoryTests.cs",
+      "sha256": "bf78ff9107c0d8e4b16e87eb499caa7b7480fb7ef272950ab5a9cb5093519cf6"
+    },
+    {
+      "path": "tests/OneImage.Tests/WebP/WebPOracle.cs",
+      "sha256": "0692f70f4db66698983b836cfc85e6566fcc6e830831fa5d76a05f942b342aab"
+    },
+    {
+      "path": "tests/OneImage.Tests/WebP/WebPPipelineTests.cs",
+      "sha256": "5b486c35b74257a0fce9595787e0c01f01bf6ec7021afdbc510ef2d79345d538"
+    },
+    {
+      "path": "tests/OneImage.Tests/WebP/WebPReports.cs",
+      "sha256": "93d59cfafb9bb0b30e5caf94a88fd77bae428829acd39cb963ee93b4447ccf16"
+    },
+    {
+      "path": "tests/OneImage.Tests/WebP/WebPRobustnessTests.cs",
+      "sha256": "5922bcfb4f893cf48dde780849785b63faf1bbb1a37a32c0f6aef93c2bf50f36"
+    },
+    {
+      "path": "tests/OneImage.Tests/WebP/WebPTiming.cs",
+      "sha256": "be3ce9159f18af7404930ea44104f89f41203449a8ab1b0ada6be73e6da92202"
+    },
+    {
+      "path": "tests/OneImage.Tests/WebP/WebPYuvKernelTests.cs",
+      "sha256": "6fad44c48d391e943ea3a42f2776897dcee9fd09e45cdb8ee6da6e39187edd45"
+    }
+  ]
+}

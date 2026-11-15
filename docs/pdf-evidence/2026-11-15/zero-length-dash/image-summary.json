@@ -1,0 +1,94 @@
+{
+  "cases": 97,
+  "changed": 34,
+  "main_defect": {
+    "case": "even-19",
+    "input_sha256": "ffaf94f58275783520742213eb820e5af8f374cfa830cb7721b300c54192a028",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "544242cad7c77dc8363867fe4dcd1ad28403253b7f784945ec99d362059e8d24",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "PDFium": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "MuPDF": {
+      "png_sha256": "f648d4415b3f88a12424d67182475d71424c814c6332c0778bd9ffd69b169f06",
+      "rgb_sha256": "021c7b2cb69bcae6af3d6f8e997d3fc77dc2241d46b94563e859257ef499e72c",
+      "ink_pixels": 0,
+      "black_area_square_points": 0.0
+    },
+    "before_head_changed_pixels": 1076,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 2.332646122685185,
+      "different_pixels": 1076
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.0,
+      "different_pixels": 0
+    }
+  },
+  "on_control": {
+    "case": "even-3",
+    "input_sha256": "6ebc1098b23548a7346ed1fd0b62bfb3c510484fd1e081272c786fb1e184c454",
+    "before": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "head": {
+      "png_sha256": "db541d0c69cb6c0931ab772c1fe73aeb4bad542f40a4a6a119f9acaaebf2d7d2",
+      "rgb_sha256": "480510b92f457e26b2319e883920e6ac764e078f0bbcaf023e98383f9e7dbe96",
+      "ink_pixels": 1076,
+      "black_area_square_points": 252.91372549019607
+    },
+    "PDFium": {
+      "png_sha256": "d64d66f831df6cb35ddba4d8ecbd4a99d6d23eb731873799e908c9686a842c5a",
+      "rgb_sha256": "70ad978a26f78bacbfce9f7f9b907b508bcd29e52c979b3390816c2d8baf0b8e",
+      "ink_pixels": 1106,
+      "black_area_square_points": 261.2176470588235
+    },
+    "MuPDF": {
+      "png_sha256": "a9b87bad1b579411f6ed54459ff74eaf94e7344232b5359a9a79ade10c3b9371",
+      "rgb_sha256": "3b0242bf51d94cd6a3fad2df7fe0dbc8679c24fdd6a43401d86403cb9245c0e5",
+      "ink_pixels": 1058,
+      "black_area_square_points": 249.16764705882352
+    },
+    "before_head_changed_pixels": 0,
+    "before_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "before_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    },
+    "head_vs_PDFium": {
+      "mae_rgb_levels": 0.0846896701388889,
+      "different_pixels": 167
+    },
+    "head_vs_MuPDF": {
+      "mae_rgb_levels": 0.03541847511574074,
+      "different_pixels": 148
+    }
+  }
+}

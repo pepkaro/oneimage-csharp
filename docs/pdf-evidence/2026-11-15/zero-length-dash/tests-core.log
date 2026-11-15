@@ -1,0 +1,173 @@
+xUnit.net v3 In-Process Runner v4.0.2+0c7aa4991f (64-bit .NET 10.0.15)
+  Discovering: OneImage.Tests
+  Discovered:  OneImage.Tests
+  Starting:    OneImage.Tests
+BRUSH linear translucent straight backdrop-opaque=True: mean 0.1121 max 1 channel-values>1 0
+BRUSH linear translucent straight backdrop-opaque=False: mean 0.0986 max 1 channel-values>1 0
+BRUSH recolor threshold 0.02: mean 0.0000 max 1 channel-values>1 0
+BRUSH recolor threshold 0.1: mean 0.0000 max 0 channel-values>1 0
+BRUSH recolor threshold 0.3: mean 0.0000 max 0 channel-values>1 0
+BRUSH linear hard stops: mean 0.0000 max 0 channel-values>1 0
+BRUSH linear unsorted stops, stops outside 0..1: mean 0.0000 max 0 channel-values>1 0
+BRUSH pattern custom translucent: mean 0.0000 max 0 channel-values>1 0
+BRUSH path-gradient hexagon: mean 0.0109 max 136 channel-values>1 6
+BRUSH path-gradient hexagon away from outline: 0 of 5464 pixels differ by more than 2
+BRUSH path-gradient L-shape default center: mean 0.0092 max 4 channel-values>1 3
+BRUSH hatch Horizontal whole image: mean 0.0000 max 0 channel-values>1 0
+BRUSH hatch Horizontal in rectangle: mean 0.0000 max 0 channel-values>1 0
+BRUSH hatch Vertical whole image: mean 0.0000 max 0 channel-values>1 0
+BRUSH hatch Vertical in rectangle: mean 0.0000 max 0 channel-values>1 0
+BRUSH hatch ForwardDiagonal whole image: mean 0.0000 max 0 channel-values>1 0
+BRUSH hatch ForwardDiagonal in rectangle: mean 0.0000 max 0 channel-values>1 0
+BRUSH hatch BackwardDiagonal whole image: mean 0.0000 max 0 channel-values>1 0
+BRUSH hatch BackwardDiagonal in rectangle: mean 0.0000 max 0 channel-values>1 0
+BRUSH hatch Percent10 whole image: mean 0.0000 max 0 channel-values>1 0
+BRUSH hatch Percent10 in rectangle: mean 0.0000 max 0 channel-values>1 0
+BRUSH hatch Percent20 whole image: mean 0.0000 max 0 channel-values>1 0
+BRUSH hatch Percent20 in rectangle: mean 0.0000 max 0 channel-values>1 0
+BRUSH hatch Min whole image: mean 0.0000 max 0 channel-values>1 0
+BRUSH hatch Min in rectangle: mean 0.0000 max 0 channel-values>1 0
+BRUSH elliptic(squared) None: mean 0.0000 max 0 channel-values>1 0
+BRUSH elliptic(squared) Repeat: mean 0.0001 max 1 channel-values>1 0
+BRUSH elliptic(squared) Reflect: mean 0.0000 max 0 channel-values>1 0
+BRUSH elliptic(squared) DontFill: mean 0.0000 max 0 channel-values>1 0
+BRUSH linear None backdrop-opaque=True: mean 0.0000 max 0 channel-values>1 0
+BRUSH linear None backdrop-opaque=False: mean 0.0000 max 0 channel-values>1 0
+BRUSH linear Repeat backdrop-opaque=True: mean 0.0000 max 0 channel-values>1 0
+BRUSH linear Repeat backdrop-opaque=False: mean 0.0000 max 0 channel-values>1 0
+BRUSH linear Reflect backdrop-opaque=True: mean 0.0000 max 0 channel-values>1 0
+BRUSH linear Reflect backdrop-opaque=False: mean 0.0000 max 0 channel-values>1 0
+BRUSH linear DontFill backdrop-opaque=True: mean 0.0000 max 0 channel-values>1 0
+BRUSH linear DontFill backdrop-opaque=False: mean 0.0000 max 0 channel-values>1 0
+BRUSH radial None: mean 0.0000 max 0 channel-values>1 0
+BRUSH radial Repeat: mean 0.0000 max 0 channel-values>1 0
+BRUSH radial Reflect: mean 0.0000 max 0 channel-values>1 0
+BRUSH radial DontFill: mean 0.0000 max 0 channel-values>1 0
+BRUSH image whole: mean 0.0000 max 0 channel-values>1 0
+BRUSH image region+offset: mean 0.0000 max 0 channel-values>1 0
+BRUSH image in rectangle (offset = corner): mean 0.0000 max 0 channel-values>1 0
+BRUSH image whole, opacity .5: mean 0.0217 max 1 channel-values>1 0
+Vector256.IsHardwareAccelerated=True
+Vector256.IsHardwareAccelerated=True Avx2.IsSupported=True
+
+(process:107): VIPS-WARNING **: 16:14:56.717: iCCP: profile 'ICC': 70E15h: invalid length
+
+(process:107): VIPS-WARNING **: 16:14:56.718: iCCP: profile 'ICC': 70E15h: invalid length
+
+(process:107): VIPS-WARNING **: 16:14:56.718: iCCP: profile 'ICC': 70E15h: invalid length
+photo: ours 1336985, SkiaSharp (libpng default) 1626093, ratio 0.822
+screenshot: ours 52072, SkiaSharp (libpng default) 95711, ratio 0.544
+Vector128.IsHardwareAccelerated=True Vector256=True Avx2=True
+    OneImage.Tests.WebP.WebPTiming.RawDecodeAndEncodeTimes [SKIP]
+      report only
+    OneImage.Tests.WebP.WebPTiming.Spin [SKIP]
+      profiling only
+
+(process:107): VIPS-WARNING **: 16:15:20.031: hIST: out of place
+
+(process:107): VIPS-WARNING **: 16:15:20.032: hIST: out of place
+
+(process:107): VIPS-WARNING **: 16:15:20.032: hIST: out of place
+
+(process:107): VIPS-WARNING **: 16:15:20.033: hIST: out of place
+
+(process:107): VIPS-WARNING **: 16:15:20.033: hIST: out of place
+
+(process:107): VIPS-WARNING **: 16:15:20.033: hIST: out of place
+Vector256 accelerated: True, Vector128: True, Vector512: True
+    OneImage.Tests.WebP.WebPEqualQualityReport.LossySizeAtEqualQualityVersusLibwebp [SKIP]
+      report only
+Vector128.IsHardwareAccelerated=True
+Vector128.IsHardwareAccelerated=True Vector256=True Avx2=True Sse41=True
+    OneImage.Tests.Gif.ComparisonReport.Report [SKIP]
+      set ONEIMAGE_REPORT=1 to run
+Vector256 accelerated: True, Vector128: True
+BOOLEAN circles Union: mean 0.2203 max 32 ours 6893.7 theirs 6910.2
+BOOLEAN circles Intersection: mean 0.1149 max 34 ours 1956.1 theirs 1964.8
+BOOLEAN circles Difference: mean 0.1733 max 32 ours 3057.4 theirs 3061.8
+BOOLEAN circles Xor: mean 0.3315 max 32 ours 4937.7 theirs 4945.6
+BOOLEAN star-rect Union: mean 0.1047 max 112 ours 5702.8 theirs 5704.1
+BOOLEAN star-rect Intersection: mean 0.0224 max 14 ours 3136.7 theirs 3135.6
+BOOLEAN star-rect Difference: mean 0.1176 max 112 ours 2130.0 theirs 2132.4
+BOOLEAN star-rect Xor: mean 0.1479 max 112 ours 2566.3 theirs 2570.5
+BOOLEAN pentagram-rect Union: mean 0.1214 max 65 ours 4828.1 theirs 4834.4
+BOOLEAN pentagram-rect Intersection: mean 0.0327 max 11 ours 2413.0 theirs 2415.1
+BOOLEAN pentagram-rect Difference: mean 0.1190 max 65 ours 1628.1 theirs 1634.2
+BOOLEAN pentagram-rect Xor: mean 0.1962 max 65 ours 2415.2 theirs 2425.1
+BOOLEAN holes Union: mean 0.0816 max 16 ours 9250.0 theirs 9256.3
+BOOLEAN holes Intersection: mean 0.0204 max 16 ours 1250.0 theirs 1251.6
+BOOLEAN holes Difference: mean 0.0204 max 16 ours 6250.0 theirs 6251.6
+BOOLEAN holes Xor: mean 0.1224 max 16 ours 8000.0 theirs 8009.4
+BOOLEAN coincident Union: mean 0.0000 max 0 ours 6000.0 theirs 6000.0
+BOOLEAN coincident Intersection: mean 0.0000 max 0 ours 0.0 theirs 0.0
+BOOLEAN coincident Difference: mean 0.0000 max 0 ours 3600.0 theirs 3600.0
+BOOLEAN coincident Xor: mean 0.0000 max 0 ours 6000.0 theirs 6000.0
+BOOLEAN blob-star Union: mean 0.1881 max 163 ours 4960.0 theirs 4964.5
+BOOLEAN blob-star Intersection: mean 0.1053 max 91 ours 1893.0 theirs 1894.1
+BOOLEAN blob-star Difference: mean 0.1469 max 106 ours 1619.1 theirs 1621.7
+BOOLEAN blob-star Xor: mean 0.3169 max 187 ours 3067.0 theirs 3074.9
+BOOLEAN bowtie-self Union: mean 0.1334 max 127 ours 8174.1 theirs 8180.9
+BOOLEAN bowtie-self Intersection: mean 0.1493 max 76 ours 3174.2 theirs 3181.0
+BOOLEAN bowtie-self Difference: mean 0.1276 max 127 ours 1826.1 theirs 1820.3
+BOOLEAN bowtie-self Xor: mean 0.2690 max 127 ours 5000.3 theirs 5001.0
+BOOLEAN pentagram-eo Union: mean 0.1195 max 65 ours 4068.1 theirs 4075.1
+BOOLEAN pentagram-eo Intersection: mean 0.1362 max 95 ours 680.2 theirs 687.8
+BOOLEAN pentagram-eo Difference: mean 0.2097 max 148 ours 2112.1 theirs 2114.1
+BOOLEAN pentagram-eo Xor: mean 0.2878 max 183 ours 3387.9 theirs 3395.4
+ALIASED circle: mean 0.2862 max 255 pixels>1 22
+ALIASED ellipse: mean 0.1041 max 255 pixels>1 8
+ALIASED star: mean 0.3383 max 255 pixels>1 26
+ALIASED pentagram: mean 0.1561 max 255 pixels>1 12
+ALIASED blob: mean 0.2992 max 255 pixels>1 23
+ALIASED cubic: mean 0.3253 max 255 pixels>1 25
+ALIASED svg-arc: mean 0.1301 max 255 pixels>1 10
+ALIASED svg-mixed: mean 0.1041 max 255 pixels>1 8
+ALIASED rounded: mean 0.0520 max 255 pixels>1 4
+ALIASED multi-hole: mean 0.0000 max 0 pixels>1 0
+COVERAGE rect NonZero: mean 0.1291 max 22 pixels>1 182
+COVERAGE rect EvenOdd: mean 0.1291 max 22 pixels>1 182
+COVERAGE rect-thin NonZero: mean 0.5498 max 163 pixels>1 71
+COVERAGE rect-thin EvenOdd: mean 0.5498 max 163 pixels>1 71
+COVERAGE circle NonZero: mean 0.1821 max 28 pixels>1 338
+COVERAGE circle EvenOdd: mean 0.1821 max 28 pixels>1 338
+COVERAGE ellipse NonZero: mean 0.1156 max 28 pixels>1 258
+COVERAGE ellipse EvenOdd: mean 0.1156 max 28 pixels>1 258
+COVERAGE star NonZero: mean 0.1026 max 54 pixels>1 374
+COVERAGE star EvenOdd: mean 0.1026 max 54 pixels>1 374
+COVERAGE pentagram NonZero: mean 0.1119 max 99 pixels>1 422
+COVERAGE pentagram EvenOdd: mean 0.1459 max 99 pixels>1 546
+COVERAGE blob NonZero: mean 0.1468 max 22 pixels>1 492
+COVERAGE blob EvenOdd: mean 0.1468 max 22 pixels>1 492
+COVERAGE cubic NonZero: mean 0.2564 max 176 pixels>1 342
+COVERAGE cubic EvenOdd: mean 0.2564 max 176 pixels>1 342
+COVERAGE svg-arc NonZero: mean 0.0713 max 21 pixels>1 255
+COVERAGE svg-arc EvenOdd: mean 0.0713 max 21 pixels>1 255
+COVERAGE svg-mixed NonZero: mean 0.0903 max 32 pixels>1 150
+COVERAGE svg-mixed EvenOdd: mean 0.1486 max 32 pixels>1 310
+COVERAGE rounded NonZero: mean 0.0711 max 26 pixels>1 136
+COVERAGE rounded EvenOdd: mean 0.0711 max 26 pixels>1 136
+COVERAGE multi-hole NonZero: mean 0.0490 max 16 pixels>1 60
+COVERAGE multi-hole EvenOdd: mean 0.0490 max 16 pixels>1 60
+    OneImage.Tests.WebP.WebPReports.LosslessSizeVersusLibwebp [SKIP]
+      report only
+    OneImage.Tests.WebP.WebPReports.LossySizeAndQualityVersusLibwebp [SKIP]
+      report only
+Vector128.IsHardwareAccelerated=True Vector256=True Avx2=True Ssse3=True
+    OneImage.Tests.Gif.GifTestdataTests.Write [SKIP]
+      set ONEIMAGE_WRITE_TESTDATA to a directory to regenerate the files
+iterations=60 start heap=332 rss=1235 heap(MiB) mid=335 end=335 rss(MiB) first-half max=1209 second-half min=945 max=945
+    OneImage.Tests.Drawing.CanvasSnapshotDrawTests.LinearFillAfterSnapshotLeavesNothingInTheCache [FAIL]
+      Assert.Equal() Failure: Values differ
+      Expected: 65536
+      Actual:   0
+      Stack Trace:
+        tests/OneImage.Tests/Drawing/CanvasSnapshotDrawTests.cs(101,0): at OneImage.Tests.Drawing.CanvasSnapshotDrawTests.LinearFillAfterSnapshotLeavesNothingInTheCache()
+           at System.RuntimeMethodHandle.InvokeMethod(ObjectHandleOnStack target, Void** arguments, ObjectHandleOnStack sig, BOOL isConstructor, ObjectHandleOnStack result)
+           at System.RuntimeMethodHandle.InvokeMethod(ObjectHandleOnStack target, Void** arguments, ObjectHandleOnStack sig, BOOL isConstructor, ObjectHandleOnStack result)
+           at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+           at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+    OneImage.Tests.WebP.WebPMemoryTests.WriteTestData [SKIP]
+      generator only
+  Finished:    OneImage.Tests (ID = '6aec1e178a8d8e1c9771ef81547cc7ff7fb6b104aa9a7c6b15cc288bf72ab564')
+=== TEST EXECUTION SUMMARY ===
+   OneImage.Tests  Total: 3200, Errors: 0, Failed: 1, Skipped: 8, Not Run: 0, Time: 532.726s
