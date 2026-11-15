@@ -10,6 +10,8 @@ All notable changes are listed here. The format follows [Keep a Changelog](https
 
 ### Fixed
 
+- `RecursiveAI.OneImage.Pdf`: non-isolated knockout groups blend each element with the initial backdrop and replace prior elements by geometric shape, independently of opacity. Nested groups, patterns, masks and alpha-as-shape preserve this distinction.
+
 - `RecursiveAI.OneImage.Pdf`: tiling patterns with internal non-Normal blending now use their actual backdrop before applying outer opacity, masks and blending. Normal-only patterns retain cached tiles.
 
 - `RecursiveAI.OneImage.Pdf`: avoid multiplying image-edge antialiasing twice when a single convex polygon clip with at most eight vertices provably contains the image quad. Other clips and core drawing clip-composition behavior are unchanged.

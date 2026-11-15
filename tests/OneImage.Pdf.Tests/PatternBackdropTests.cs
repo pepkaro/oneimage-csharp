@@ -213,13 +213,23 @@ public class PatternBackdropTests
     {
         const string resources = "/ExtGState << /A << /BM /Multiply /ca .5 >> /B << /BM /Screen /ca .5 >> >>";
         const string body = "/A gs .8 .4 .2 rg 0 0 24 24 re f /B gs .1 .8 .3 rg 12 0 12 24 re f";
-        // The renderer currently treats all knockout groups as isolated. Preserve that existing limitation:
-        // derive the cell on transparent black, then replace it with disjoint Normal objects of equal RGBA.
-        double[] first = [.8, .4, .2], second = [.1, .8, .3];
-        string[] components = Enumerable.Range(0, 3).Select(c =>
-            ((.25 * first[c] + .25 * second[c] + .25 * Blend("Screen", first[c], second[c])) / .75)
-            .ToString("0.#################", CultureInfo.InvariantCulture)).ToArray();
-        string equivalent = "/A gs .8 .4 .2 rg 0 0 12 24 re f /B gs " + string.Join(" ", components) + " rg 12 0 12 24 re f";
+        // Flatten the non-knockout pattern cell against the knockout parent's INITIAL backdrop,
+        // then remove that backdrop. Isolated parents use transparent black; non-isolated parents retain alpha.
+        double[] first = [.8, .4, .2], second = [.1, .8, .3], cb = [.2, .6, .8];
+        double ab = isolated ? 0 : backgroundAlpha / 255.0;
+        var firstColor = new double[3];
+        var overlapColor = new double[3];
+        for (int c = 0; c < 3; c++)
+        {
+            firstColor[c] = (1 - ab) * first[c] + ab * cb[c] * first[c];
+            double a1 = .5 + ab * .5;
+            double p1 = .5 * ab * cb[c] + .5 * firstColor[c];
+            double p2 = .5 * p1 + .5 * ((1 - a1) * second[c] + a1 * Blend("Screen", p1 / a1, second[c]));
+            overlapColor[c] = (p2 - .25 * ab * cb[c]) / .75;
+        }
+        string firstComponents = string.Join(" ", firstColor.Select(c => c.ToString("0.#################", CultureInfo.InvariantCulture)));
+        string overlapComponents = string.Join(" ", overlapColor.Select(c => c.ToString("0.#################", CultureInfo.InvariantCulture)));
+        string equivalent = "/A gs " + firstComponents + " rg 0 0 12 24 re f /B gs " + overlapComponents + " rg 12 0 12 24 re f";
         const string normalResources = "/ExtGState << /A << /ca .5 >> /B << /ca .75 >> >>";
         string parent = RegionTests.Obj($"/Type /XObject /Subtype /Form /BBox [0 0 96 96] /Group << /S /Transparency /K true /I {isolated.ToString().ToLowerInvariant()} >> /Resources << /Pattern << /P 5 0 R >> /ExtGState << /H << /ca .5 >> >> >>", "0 1 0 rg 0 0 96 96 re f /H gs " + Paint);
         const string pageResources = "/XObject << /F 6 0 R >> /ExtGState << /G << /ca .5 >> >>";

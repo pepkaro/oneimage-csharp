@@ -11,7 +11,7 @@ internal sealed partial class CanvasDevice
     private void PaintBackdropPattern(PdfTilingPattern pattern, in PdfColor color, DrawingPath area, IntersectionRule rule,
         double alpha, in PdfGraphicsState state, DrawingPath? clip, Canvas? stencil = null)
     {
-        if (!(alpha > 0) || pattern.Cell is null) return;
+        if ((!(alpha > 0) && !InKnockoutGroup && GeometryShadow is null) || pattern.Cell is null) return;
         PdfMatrix view = pattern.Matrix.Then(_view);
         double xs = Math.Abs(pattern.XStep), ys = Math.Abs(pattern.YStep);
         if (!view.IsFinite || !Invert(view, out PdfMatrix inverse) || !(xs > 1e-9 && ys > 1e-9) || !double.IsFinite(xs + ys)) return;
@@ -40,7 +40,9 @@ internal sealed partial class CanvasDevice
         using var layer = new Canvas(_w, _h, PixelFormat.Rgba8);
         using var coverage = new Canvas(_w, _h, PixelFormat.Rgba8);
         bool knockout = InKnockoutGroup;
-        if (!knockout) CopyBackdrop(layer, _target, rect);
+        Canvas? backdrop = GroupBackdrop;
+        using var geometry = knockout || GeometryShadow is not null ? new Canvas(_w, _h, PixelFormat.Rgba8) : null;
+        if (backdrop is not null) CopyBackdrop(layer, backdrop, rect);
         for (double j = firstY; j <= lastY; j++)
         for (double i = firstX; i <= lastX; i++)
         {
@@ -48,12 +50,34 @@ internal sealed partial class CanvasDevice
             PdfMatrix copyView = PdfMatrix.Translation(i * xs, j * ys).Then(view);
             if (!Invert(copyView, out PdfMatrix inv)) continue;
             PdfBounds cull = inv.TransformBounds(new PdfBounds(-1.5, -1.5, _w + 1.5, _h + 1.5));
-            using var device = new CanvasDevice(_page, copyView, layer, _depth + _frames.Count + 1, tint, _ct, coverage);
+            using var device = new CanvasDevice(_page, copyView, layer, _depth + _frames.Count + 1, tint, _ct, coverage, geometry);
             pattern.Cell.Replay(device, cull);
         }
 
         Canvas? mask = null;
         if (state.SoftMaskId != 0) _masks.TryGetValue(state.SoftMaskId, out mask);
+        float amount = (float)Math.Clamp(alpha, 0, 1);
+        BlendMode blend = ParseBlend(state.BlendMode);
+        if (knockout)
+        {
+            using var geometric = new CanvasLayerBrush(geometry!, null, null, rect);
+            if (backdrop is not null)
+            {
+                using var source = new NonIsolatedGroupBrush(layer, coverage, null, rect, 1, interpolate: false);
+                PaintKnockout(source, geometric, area, rule, amount, blend, mask, state.AlphaIsShape, clip, true, stencil);
+            }
+            else
+            {
+                using var source = new CanvasLayerBrush(layer, null, null, rect);
+                PaintKnockout(source, geometric, area, rule, amount, blend, mask, state.AlphaIsShape, clip, true, stencil);
+            }
+            return;
+        }
+        if (geometry is not null)
+        {
+            using var geometric = new CanvasLayerBrush(geometry, null, null, rect);
+            TrackGeometry(geometric, geometric, area, rule, amount, mask, state.AlphaIsShape, clip, true, stencil);
+        }
         using Canvas? combinedMask = stencil is not null && mask is not null ? new Canvas(_w, _h, PixelFormat.Rgba8) : null;
         if (combinedMask is not null)
         {
@@ -61,19 +85,9 @@ internal sealed partial class CanvasDevice
             combinedMask.Fill(maskBrush, DrawingPath.Rectangle(0, 0, _w, _h), antialias: false);
         }
         mask = combinedMask ?? stencil ?? mask;
-        BlendMode blend = knockout ? BlendMode.Normal : ParseBlend(state.BlendMode);
-        bool interpolate = !knockout && blend == BlendMode.Normal;
-        float amount = (float)Math.Min(alpha, 1);
-        if (knockout)
+        bool interpolate = blend == BlendMode.Normal;
+        using (var brush = new NonIsolatedGroupBrush(layer, coverage, mask, rect, amount, interpolate))
         {
-            // The existing knockout renderer uses a transparent initial backdrop. No backdrop was copied above,
-            // so there is nothing to remove: recover against the previous sibling here and its color would leak in.
-            using var brush = new CanvasLayerBrush(layer, null, mask, rect);
-            _target.Fill(brush, area, true, rule, amount, BlendMode.Normal, AlphaComposition.Src, false, null, clip, _clip.Rule);
-        }
-        else
-        {
-            using var brush = new NonIsolatedGroupBrush(layer, coverage, mask, rect, amount, interpolate);
             _target.Fill(brush, area, true, rule, 1, blend,
                 interpolate ? AlphaComposition.Src : AlphaComposition.SrcOver, false, null, clip, _clip.Rule);
         }

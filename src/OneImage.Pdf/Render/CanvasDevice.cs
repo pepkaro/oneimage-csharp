@@ -12,9 +12,9 @@ namespace OneImage.Pdf.Render;
 /// subtracted, and shapes are rasterized by exact area, so a cell is drawn the same way whatever else is being drawn.
 /// </summary>
 /// <remarks>
-/// Transparency: a group, or any paint under a soft mask, is drawn into a transparent cell-sized layer and composited with the group's
-/// opacity, blend mode and mask. A non-isolated group whose composite would change nothing is painted straight onto its parent; other
-/// non-isolated groups are treated as isolated, and knockout groups as non-knockout.
+/// Non-isolated groups retain their initial backdrop and track their own alpha separately. Knockout elements blend with that initial
+/// backdrop, replacing earlier elements by geometric shape rather than opacity. Separate shape is allocated only where an ancestor
+/// knockout requires it. Ordinary Normal non-isolated groups still paint directly into their parent.
 /// </remarks>
 internal sealed partial class CanvasDevice : IPdfDevice, IDisposable
 {
@@ -22,6 +22,7 @@ internal sealed partial class CanvasDevice : IPdfDevice, IDisposable
     private readonly PdfMatrix _view;
     private readonly Canvas _root;
     private readonly Canvas? _rootShape;
+    private readonly Canvas? _rootGeometry;
     private readonly int _w, _h;
     private readonly CancellationToken _ct;
     private readonly int _depth;
@@ -34,12 +35,13 @@ internal sealed partial class CanvasDevice : IPdfDevice, IDisposable
     private PathBuilder? _textClip;
     private bool _disposed;
 
-    public CanvasDevice(PageRender page, in PdfMatrix view, Canvas root, int depth, Rgba32? tint, CancellationToken ct, Canvas? rootShape = null)
+    public CanvasDevice(PageRender page, in PdfMatrix view, Canvas root, int depth, Rgba32? tint, CancellationToken ct, Canvas? rootShape = null, Canvas? rootGeometry = null)
     {
         _page = page;
         _view = view;
         _root = root;
         _rootShape = rootShape;
+        _rootGeometry = rootGeometry;
         _target = root;
         _w = root.Width;
         _h = root.Height;
@@ -64,6 +66,8 @@ internal sealed partial class CanvasDevice : IPdfDevice, IDisposable
         foreach (Frame f in _frames)
         {
             f.Layer?.Dispose();
+            f.Shape?.Dispose();
+            f.Geometry?.Dispose();
         }
 
         _frames.Clear();
@@ -329,7 +333,7 @@ internal sealed partial class CanvasDevice : IPdfDevice, IDisposable
     /// <summary>Fills a device-space shape with the paint of a PDF color (solid, shading pattern or tiling pattern).</summary>
     private void Paint(DrawingPath shape, IntersectionRule rule, in PdfColor color, double alpha, in PdfGraphicsState state)
     {
-        if (_tint is null && color.Pattern is PdfTilingPattern pattern && _page.PatternNeedsBackdrop(pattern, _ct))
+        if (_tint is null && color.Pattern is PdfTilingPattern pattern && (InKnockoutGroup || GeometryShadow is not null || _page.PatternNeedsBackdrop(pattern, _ct)))
         {
             PaintBackdropPattern(pattern, color, shape, rule, alpha, state, _clip.Path);
             return;
@@ -347,23 +351,29 @@ internal sealed partial class CanvasDevice : IPdfDevice, IDisposable
     private void PaintBrush(Brush brush, DrawingPath shape, IntersectionRule rule, double alpha, in PdfGraphicsState state) =>
         PaintBrush(brush, shape, rule, alpha, state, _clip.Path);
 
-    private void PaintBrush(Brush brush, DrawingPath shape, IntersectionRule rule, double alpha, in PdfGraphicsState state, DrawingPath? clip)
+    private void PaintBrush(Brush brush, DrawingPath shape, IntersectionRule rule, double alpha, in PdfGraphicsState state, DrawingPath? clip, Brush? intrinsicShape = null)
     {
-        if (!(alpha > 0))
+        if (!(alpha > 0) && !InKnockoutGroup && GeometryShadow is null)
         {
             return;
         }
 
+        Canvas? mask = null;
+        if (state.SoftMaskId != 0) _masks.TryGetValue(state.SoftMaskId, out mask);
+        float amount = (float)Math.Clamp(alpha, 0, 1);
+        intrinsicShape ??= brush;
+        if (InKnockoutGroup)
+        {
+            PaintKnockout(brush, intrinsicShape, shape, rule, amount, ParseBlend(state.BlendMode), mask, state.AlphaIsShape, clip, true);
+            return;
+        }
+        TrackGeometry(brush, intrinsicShape, shape, rule, amount, mask, state.AlphaIsShape, clip, true);
         Canvas? layer = BeginMasked(state);
         Canvas canvas = layer ?? _target;
         BlendMode blend = layer is null ? ParseBlend(state.BlendMode) : BlendMode.Normal;
-        // 11.4.6: in a knockout group each object is composited against the group's initial backdrop, not against the objects
-        // before it, so inside the shape it replaces them (Src), weighted by coverage at the edges. Blend modes inside a knockout
-        // group are not applied (they would need the initial backdrop of a non-isolated group).
-        bool knock = layer is null && InKnockoutGroup;
         try
         {
-            canvas.Fill(brush, shape, true, rule, (float)Math.Min(alpha, 1), knock ? BlendMode.Normal : blend, knock ? AlphaComposition.Src : AlphaComposition.SrcOver, false, null, clip, _clip.Rule);
+            canvas.Fill(brush, shape, true, rule, (float)Math.Min(alpha, 1), blend, AlphaComposition.SrcOver, false, null, clip, _clip.Rule);
             if (layer is null)
             {
                 ShapeShadow?.Fill(brush, shape, true, rule, (float)Math.Min(alpha, 1), BlendMode.Normal, AlphaComposition.SrcOver, false, null, clip, _clip.Rule);
@@ -651,7 +661,7 @@ internal sealed partial class CanvasDevice : IPdfDevice, IDisposable
         // something other than a glyph is drawn. A translucent fill is the only case where it shows.
         if (_t3Depth == 0 && !_textKnockout && state.TextKnockout && state.FillAlpha < 1 && !Skip)
         {
-            BeginKnockoutLayer(state);
+            BeginKnockoutLayer();
             _textKnockout = true;
         }
 

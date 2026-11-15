@@ -75,7 +75,16 @@ internal sealed partial class CanvasDevice
         }
 
         var brush = new PixelBrush(raster, placement, nearest: nearest, stencil);
-        PaintBrush(brush, quad, IntersectionRule.NonZero, state.FillAlpha, state, ImageClipPath(quad));
+        // Image soft masks are opacity unless /AIS says shape; stencils and hard masks are always shape (11.6.4).
+        Brush? intrinsicShape = null;
+        if ((InKnockoutGroup || GeometryShadow is not null) && !raster.Stencil && !state.AlphaIsShape && data.Alpha is not null)
+        {
+            bool softMask = image.Dictionary.Get("SMask") is PdfStream;
+            bool hardMask = image.Dictionary.Get("Mask") is PdfStream or PdfArray;
+            bool embeddedOpacity = !hardMask && data.EncodedFilter == "JPXDecode" && data.Semantics.SMaskInData != 0;
+            if (softMask || embeddedOpacity) intrinsicShape = Brush.Solid(new Rgba32(255, 255, 255, 255));
+        }
+        PaintBrush(brush, quad, IntersectionRule.NonZero, state.FillAlpha, state, ImageClipPath(quad), intrinsicShape);
     }
 
     // Canvas.Fill intentionally multiplies independent shape/clip coverage. A PDF clip containing the image is geometry,
@@ -91,7 +100,7 @@ internal sealed partial class CanvasDevice
     private void PaintStencilWithPattern(Raster stencil, in PdfMatrix placement, in PdfMatrix m, in PdfGraphicsState state, bool nearest)
     {
         DrawingPath? quad = PathConvert.ToPath(UnitSquare, m);
-        if (quad is not null && state.FillColor.Pattern is PdfTilingPattern pattern && _page.PatternNeedsBackdrop(pattern, _ct))
+        if (quad is not null && state.FillColor.Pattern is PdfTilingPattern pattern && (InKnockoutGroup || GeometryShadow is not null || _page.PatternNeedsBackdrop(pattern, _ct)))
         {
             using var stencilMask = new Canvas(_w, _h, PixelFormat.Rgba8);
             var stencilBrush = new PixelBrush(stencil, placement, nearest: nearest, new Rgba32(255, 255, 255, 255));
@@ -101,7 +110,7 @@ internal sealed partial class CanvasDevice
         }
 
         Brush? paint = MakeBrush(state.FillColor);
-        if (quad is null || paint is null || !(state.FillAlpha > 0))
+        if (quad is null || paint is null || (!(state.FillAlpha > 0) && !InKnockoutGroup && GeometryShadow is null))
         {
             return;
         }
@@ -115,20 +124,10 @@ internal sealed partial class CanvasDevice
         var brush = new ImageBrush(masked, null, 0, 0, null, tile: false, pooled: true);
         try
         {
-            Canvas? layer = BeginMasked(state);
-            Canvas target = layer ?? _target;
+            // This brush already carries the stencil and clip coverage. Route it through the same object
+            // compositor as paths/images so a knockout parent applies its initial backdrop and shape.
             DrawingPath area = DrawingPath.Rectangle(0, 0, _w, _h);
-            float opacity = (float)Math.Min(state.FillAlpha, 1);
-            target.Fill(brush, area, false, IntersectionRule.NonZero, opacity, layer is null ? ParseBlend(state.BlendMode) : BlendMode.Normal, AlphaComposition.SrcOver);
-            if (layer is null)
-            {
-                // The brush already includes pattern alpha, the stencil, and the current clip.
-                ShapeShadow?.Fill(brush, area, false, IntersectionRule.NonZero, opacity, BlendMode.Normal, AlphaComposition.SrcOver);
-            }
-            if (layer is not null)
-            {
-                CompositeLayer(layer, 1, ParseBlend(state.BlendMode), state.SoftMaskId);
-            }
+            PaintBrush(brush, area, IntersectionRule.NonZero, state.FillAlpha, state, null);
         }
         finally
         {
