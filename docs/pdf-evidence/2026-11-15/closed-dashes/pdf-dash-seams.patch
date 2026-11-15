@@ -1,0 +1,325 @@
+--- a/CHANGELOG.md
++++ b/CHANGELOG.md
+@@ -9,6 +9,8 @@
+ - `RecursiveAI.OneImage.Pdf`: opt-in `PdfRenderOptions.SmoothMagnifiedImages` uses smooth sampling for enlarged raster images even when `/Interpolate` is false or omitted, for a display closer to many PDF viewers. Defaults, image reduction and stencil masks are unchanged.
+ 
+ ### Fixed
++
++- `RecursiveAI.OneImage.Pdf`: cap the first and last dash pieces separately at a closed subpath's seam, including hairlines and transformed strokes. Core drawing's closed-dash joining policy and normalized solid fallbacks are unchanged.
+ 
+ - Closed dashed strokes no longer generate non-finite outline coordinates when one dash covers the entire figure. A figure that starts in a dash gap keeps the final partial dash open instead of adding a spurious closing edge. Boolean geometry limits are unchanged.
+ 
+--- a/src/OneImage/Drawing/DashSplitter.cs
++++ b/src/OneImage/Drawing/DashSplitter.cs
+@@ -12,13 +12,14 @@
+ 
+ /// <summary>
+ /// Cuts a polyline into dashes by walking along it with a repeating on/off pattern. A closed figure that is "on" at its start
+-/// and at its end gets one dash through the start point, not two touching ones.
++/// and at its end gets one dash through the start point by default. PDF can instead request separately capped pieces there.
+ /// </summary>
+ internal sealed class DashSplitter
+ {
+     /// <summary>The most on/off switches one stroke may make; beyond it the stroke fails with <see cref="ImageLimitException"/>.</summary>
+     public const int MaxDashes = 1 << 22;
+ 
++    private readonly bool _joinClosed;
+     private readonly double[] _pattern;
+     private readonly double _period;
+     private readonly double _offset;
+@@ -29,8 +30,9 @@
+     private int _firstCount;
+     private double _firstDx, _firstDy;
+ 
+-    public DashSplitter(ReadOnlySpan<float> pattern, double offset)
++    public DashSplitter(ReadOnlySpan<float> pattern, double offset, bool joinClosed = true)
+     {
++        _joinClosed = joinClosed;
+         // An odd-length pattern repeats once so on and off alternate (SVG).
+         int n = pattern.Length % 2 == 1 ? pattern.Length * 2 : pattern.Length;
+         _pattern = new double[n];
+@@ -120,13 +122,13 @@
+ 
+         if (on)
+         {
+-            if (closed && startedOn && !everOff)
++            if (closed && _joinClosed && startedOn && !everOff)
+             {
+                 // This dash covers the whole figure. Use its original distinct vertices: _cur also contains the
+                 // closing endpoint, which would create a zero-length edge when a closed contour is stroked.
+                 sink.Dash(xy, n, true, dx, dy);
+             }
+-            else if (closed && startedOn && _first != null)
++            else if (closed && _joinClosed && startedOn && _first != null)
+             {
+                 // The last dash runs into the first through the start point.
+                 int total = _curCount + _firstCount - 1;
+@@ -170,7 +172,7 @@
+     // Ends the current dash. In a closed figure the dash that began at the start is held back: the last dash may continue it.
+     private void Finish(IDashSink sink, bool closed, bool startedOn, double dx, double dy, bool last)
+     {
+-        bool isFirst = closed && startedOn && _first == null && !_firstTaken;
++        bool isFirst = closed && _joinClosed && startedOn && _first == null && !_firstTaken;
+         if (isFirst && !last)
+         {
+             _first = new double[2 * _curCount];
+--- a/src/OneImage/Drawing/StrokeBuilder.cs
++++ b/src/OneImage/Drawing/StrokeBuilder.cs
+@@ -63,7 +63,11 @@
+ 
+     /// <summary>Builds the outline. <paramref name="width"/> 0 gives an empty path. An optional centerline transform maps the
+     /// path after user-space dash splitting; the width, caps, joins and tolerance then use the transformed space.</summary>
+-    public static Path Build(Path path, double width, StrokeJoin join, StrokeCap cap, double miterLimit, ReadOnlySpan<float> dash, double dashOffset, double tolerance, Matrix3x2? centerlineTransform = null)
++    public static Path Build(Path path, double width, StrokeJoin join, StrokeCap cap, double miterLimit, ReadOnlySpan<float> dash, double dashOffset, double tolerance, Matrix3x2? centerlineTransform = null) =>
++        Build(path, width, join, cap, miterLimit, dash, dashOffset, tolerance, centerlineTransform, joinClosedDashes: true);
++
++    /// <summary>Builds a stroke with an explicit policy for joining first/last dash pieces across a closed figure's seam.</summary>
++    public static Path Build(Path path, double width, StrokeJoin join, StrokeCap cap, double miterLimit, ReadOnlySpan<float> dash, double dashOffset, double tolerance, Matrix3x2? centerlineTransform, bool joinClosedDashes)
+     {
+         if (!(width > 0) || path.IsEmpty)
+         {
+@@ -86,7 +90,7 @@
+         }
+ 
+         FlatPath flat = Flattener.Flatten(path, Matrix3x2.Identity, flatTolerance, null);
+-        DashSplitter? dasher = dash.Length > 0 ? new DashSplitter(dash, dashOffset) : null;
++        DashSplitter? dasher = dash.Length > 0 ? new DashSplitter(dash, dashOffset, joinClosedDashes) : null;
+         int begin = 0;
+         for (int f = 0; f < flat.FigureCount; f++)
+         {
+--- a/src/OneImage.Pdf/Render/CanvasDevice.cs
++++ b/src/OneImage.Pdf/Render/CanvasDevice.cs
+@@ -266,18 +266,20 @@
+         }
+ 
+         float[] dash = Dashes(state, user, scale);
++        // PDF caps the pieces at the start/end seam of a dashed subpath. Solid fallbacks and generic core drawing
++        // still use closed joins; only nonempty normalized dash patterns reach the separately capped splitter.
+         StrokeJoin join = state.LineJoin switch { 1 => StrokeJoin.Round, 2 => StrokeJoin.Bevel, _ => StrokeJoin.Miter };
+         StrokeCap cap = state.LineCap switch { 1 => StrokeCap.Round, 2 => StrokeCap.Square, _ => StrokeCap.Butt };
+         double miter = double.IsFinite(state.MiterLimit) && state.MiterLimit >= 1 ? state.MiterLimit : 10;
+         if (state.LineWidth == 0)
+         {
+             DrawingPath hairline = StrokeBuilder.Build(user, 1, join, cap, miter, dash, state.DashPhase,
+-                DrawingPath.DefaultTolerance, PathConvert.ToMatrix(m));
++                DrawingPath.DefaultTolerance, PathConvert.ToMatrix(m), joinClosedDashes: false);
+             return hairline.IsEmpty ? null : hairline;
+         }
+ 
+         double tolerance = DrawingPath.DefaultTolerance / scale;
+-        DrawingPath outline = StrokeBuilder.Build(user, width, join, cap, miter, dash, state.DashPhase, tolerance);
++        DrawingPath outline = StrokeBuilder.Build(user, width, join, cap, miter, dash, state.DashPhase, tolerance, centerlineTransform: null, joinClosedDashes: false);
+         if (outline.IsEmpty)
+         {
+             return null;
+--- /dev/null
++++ b/tests/OneImage.Pdf.Tests/SpecTruth/DashSeamTests.cs
+@@ -0,0 +1,109 @@
++// SPDX-License-Identifier: MIT
++// Copyright (c) 2026 OneImage contributors
++// Independently authored numeric geometry; no reference pixels or external assets.
++using static OneImage.Pdf.Tests.SpecTruth.Spec;
++
++namespace OneImage.Pdf.Tests.SpecTruth;
++
++public class DashSeamTests
++{
++    [Theory]
++    [InlineData(72)]
++    [InlineData(144)]
++    public void TinyOutAndBackDashHasOneHalfDiscAtTheSeam(int dpi)
++    {
++        // Both round caps face left at the same origin. Their union is one half-disc, plus the narrow rectangle.
++        int scale = dpi / 72;
++        Rgba32[] pixels = Pix(Page("0 G 18 w 1 J [11 17] 3 d 48 36 m 48.125 36 l h S", w: 96, h: 72), new PdfRenderOptions { Dpi = dpi });
++        double area = BlackArea(pixels, 96 * scale, 0, 0, 96 * scale, 72 * scale) / (scale * scale);
++        double exact = (Math.PI * 81 / 2) + (18 * 0.125);
++        // A 0.1-pixel flattening error along the semicircle permits less than 3 square points of loss;
++        // the slightly wider bound also covers coordinate snapping and byte coverage rounding.
++        Assert.InRange(area, exact - 3.5, exact + 0.5);
++        Pixel(pixels, 96 * scale, 44 * scale, 35 * scale, Gray(0), Tol.Exact);
++        Pixel(pixels, 96 * scale, 52 * scale, 35 * scale, Gray(1), Tol.Exact);
++    }
++
++    public static TheoryData<string, string, int, int> SeamCases
++    {
++        get
++        {
++            var data = new TheoryData<string, string, int, int>();
++            var shapes = new (string Closed, string Open)[]
++            {
++                ("48 36 m 48.125 36 l h", "48 36 m 48.125 36 l 48 36 l"),
++                ("48 36 m 49 36 47 36 48 36 c h", "48 36 m 49 36 47 36 48 36 c"),
++                ("24 24 8 6 re", "24 24 m 32 24 l 32 30 l 24 30 l 24 24 l"),
++                ("22 24 m 35 25 l 29 37 l h", "22 24 m 35 25 l 29 37 l 22 24 l"),
++            };
++            foreach (var shape in shapes)
++            foreach (int cap in new[] { 0, 1, 2 })
++            foreach (int dpi in new[] { 72, 144 })
++            {
++                data.Add(shape.Closed, shape.Open, cap, dpi);
++            }
++
++            return data;
++        }
++    }
++
++    [Theory]
++    [MemberData(nameof(SeamCases))]
++    public void WholeOnDashCapsTheSeamLikeTheExplicitOpenPath(string closed, string open, int cap, int dpi)
++    {
++        var options = new PdfRenderOptions { Dpi = dpi };
++        string setup = $"0 G 18 w {cap} J ";
++        Assert.Equal(Pix(Page(setup + open + " S", w: 96, h: 72), options),
++            Pix(Page(setup + "[200 17] 3 d " + closed + " S", w: 96, h: 72), options));
++    }
++
++    [Theory]
++    [InlineData("[12 7] 3 d")]
++    [InlineData("[7 5 9] 12 d")]
++    [InlineData("[0 7] 0 d")]
++    [InlineData("[12 0] 0 d")]
++    [InlineData("[60 20] 65 d")]
++    public void SeveralDashesDoNotJoinAcrossTheSeam(string dash)
++    {
++        const string closed = "24 24 8 6 re";
++        const string open = "24 24 m 32 24 l 32 30 l 24 30 l 24 24 l";
++        string setup = "0 G 4 w 1 J " + dash + " ";
++        Assert.Equal(Pix(Page(setup + open + " S", w: 64, h: 64)),
++            Pix(Page(setup + closed + " S", w: 64, h: 64)));
++    }
++
++    [Theory]
++    [InlineData("[0 0] 0 d")]
++    [InlineData("[.00001 .00001] 0 d")]
++    public void NormalizedSolidFallbackKeepsTheClosedJoin(string dash)
++    {
++        const string body = "0 G 4 w 1 J 24 24 8 6 re S";
++        Assert.Equal(Pix(Page(body, w: 64, h: 64)), Pix(Page(dash + " " + body, w: 64, h: 64)));
++    }
++
++    [Theory]
++    [InlineData("", 18)]
++    [InlineData("1.5 .3 .25 .8 -33 -7.2 cm", 18)]
++    [InlineData("-1 0 0 1 96 0 cm", 18)]
++    [InlineData("", 0)]
++    [InlineData("1.5 .3 .25 .8 -33 -7.2 cm", 0)]
++    [InlineData("", 0.01)]
++    public void TransformAndWidthPoliciesPreserveCappedSeams(string transform, double width)
++    {
++        string setup = $"0 G {transform} {N(width)} w 1 J ";
++        var options = new PdfRenderOptions { Dpi = 144 };
++        Assert.Equal(Pix(Page(setup + "24 24 m 32 24 l 32 30 l 24 30 l 24 24 l S", w: 96, h: 72), options),
++            Pix(Page(setup + "[200 17] 3 d 24 24 8 6 re S", w: 96, h: 72), options));
++    }
++
++    [Theory]
++    [InlineData("24 24 8 6 re 50 20 l", "24 24 m 32 24 l 32 30 l 24 30 l 24 24 l 24 24 m 50 20 l")]
++    [InlineData("24 24 8 6 re 60 30 m 80 40 l", "24 24 m 32 24 l 32 30 l 24 30 l 24 24 l 60 30 m 80 40 l")]
++    [InlineData("24 24 8 6 re 40 40 8 6 re", "24 24 m 32 24 l 32 30 l 24 30 l 24 24 l 40 40 m 48 40 l 48 46 l 40 46 l 40 40 l")]
++    public void LaterPathCommandsKeepTheirCurrentPointAndRestartDashPhase(string closed, string open)
++    {
++        const string setup = "0 G 4 w 1 J [12 7] 3 d ";
++        Assert.Equal(Pix(Page(setup + open + " S", w: 96, h: 72)),
++            Pix(Page(setup + closed + " S", w: 96, h: 72)));
++    }
++}
+--- /dev/null
++++ b/tools/pdf-dash-seams/LICENSE
+@@ -0,0 +1,21 @@
++MIT License
++
++Copyright (c) Recursive AI, LLC
++
++Permission is hereby granted, free of charge, to any person obtaining a copy
++of this software and associated documentation files (the "Software"), to deal
++in the Software without restriction, including without limitation the rights
++to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
++copies of the Software, and to permit persons to whom the Software is
++furnished to do so, subject to the following conditions:
++
++The above copyright notice and this permission notice shall be included in all
++copies or substantial portions of the Software.
++
++THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
++IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
++FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
++AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
++LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
++OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
++SOFTWARE.
+--- /dev/null
++++ b/tools/pdf-dash-seams/README.md
+@@ -0,0 +1,37 @@
++# PDF dashed seams
++
++These controls are independently authored original MIT numeric geometry. They
++use only the original PDF writer from the adjacent `closed-dashes` tools; no
++private documents, vendor fixtures, fonts, images or reference pixels are copied.
++
++```sh
++python3 tools/pdf-dash-seams/generate.py /tmp/pdf-dash-seams
++python3 tools/closed-dashes/render_references.py /tmp/pdf-dash-seams
++```
++
++The 61 PDFs cover tiny out-and-back lines, cubic reversals, polygons, every cap,
++multiple/odd/zero-length dash patterns, positive and zero widths, skew/reflection,
++all-zero/tiny-pattern solid fallbacks, repeated explicit closing vertices and
++commands after Close. All pages are 192 by 144 points with matching CropBox,
++zero rotation, white background and no annotations. Reference images are direct
++72/144 DPI renders with no crop, resizing, alignment or retouching.
++
++The PDF policy caps the first and last dash pieces independently at a closed
++subpath's seam. Core drawing retains its existing joined policy by default.
++Only nonempty normalized dash arrays reach the new splitter policy; solid
++fallbacks keep their closed joins. Both positive-width and hairline PDF paths
++use the explicit PDF policy. The previous StrokeBuilder.Build entry point is
++retained for already compiled drawing clients.
++
++The analytical tiny-line test expects one half-disc plus the narrow rectangle.
++Other tests compare equivalent independently written path descriptions, not
++copied renderer pixels. Relevant primary specification: ISO 32000-1:2008
++sections 8.4.3.6, 8.5.3.2 and Table 59:
++https://opensource.adobe.com/dc-acrobat-sdk-docs/pdfstandards/PDF32000_2008.pdf
++
++The seam policy is supported by the independent PDFium/MuPDF comparisons; exact
++antialiasing pixels differ between engines. Reference disagreements remain
++explicit: MuPDF handles a line after Close differently from PDFium and the
++standard's new-subpath rule, and omits the malformed all-zero dash fixture
++instead of this renderer's existing solid fallback. The fallback is not changed.
++Those results do not constitute universal or pixel-exact parity.
+--- /dev/null
++++ b/tools/pdf-dash-seams/generate.py
+@@ -0,0 +1,32 @@
++# SPDX-License-Identifier: MIT
++# Copyright (c) 2026 OneImage contributors
++# Original numeric controls, reusing only our original MIT PDF writer.
++import argparse, hashlib, json, runpy
++from pathlib import Path
++writer=runpy.run_path(str(Path(__file__).resolve().parent.parent/'closed-dashes/generate.py'))['document']
++shapes={
++ 'tiny':('48 36 m 48.125 36 l h','48 36 m 48.125 36 l 48 36 l'),
++ 'cubic':('48 36 m 49 36 47 36 48 36 c h','48 36 m 49 36 47 36 48 36 c'),
++ 'rectangle':('24 24 8 6 re','24 24 m 32 24 l 32 30 l 24 30 l 24 24 l'),
++ 'triangle':('22 24 m 35 25 l 29 37 l h','22 24 m 35 25 l 29 37 l 22 24 l'),
++ 'repeated-return':('48 36 m 48.125 36 l 48 36 l 48 36 l h','48 36 m 48.125 36 l 48 36 l 48 36 l')}
++items=[]
++def pair(name,closed,open,style):
++ for label,path in [('closed',closed),('open',open)]:
++  items.append(dict(name=name+'-'+label,content=style+' '+path+' S',equivalent_pair=name))
++for name,(closed,open) in shapes.items():
++ for cap in (0,1,2):pair(f'{name}-cap{cap}',closed,open,f'0 G 18 w {cap} J [200 17] 3 d')
++for label,dash in [('crossing','[12 7] 3 d'),('odd','[7 5 9] 12 d'),('zero','[0 7] 0 d'),('zero-gap','[12 0] 0 d'),('initial-gap','[60 20] 65 d')]:
++ pair(label,*shapes['rectangle'],'0 G 4 w 1 J '+dash)
++for label,matrix,width in [('plain','',18),('skew','1.5 .3 .25 .8 -33 -7.2 cm',18),('reflect','-1 0 0 1 96 0 cm',18),('hairline','',0),('skew-hairline','1.5 .3 .25 .8 -33 -7.2 cm',0),('minimum','',.01)]:
++ pair(label,*shapes['rectangle'],f'0 G {matrix} {width} w 1 J [200 17] 3 d')
++for label,closed,open in [('after-close-line','24 24 8 6 re 50 20 l','24 24 m 32 24 l 32 30 l 24 30 l 24 24 l 24 24 m 50 20 l'),('after-close-move','24 24 8 6 re 60 30 m 80 40 l','24 24 m 32 24 l 32 30 l 24 30 l 24 24 l 60 30 m 80 40 l'),('next-rectangle','24 24 8 6 re 40 40 8 6 re','24 24 m 32 24 l 32 30 l 24 30 l 24 24 l 40 40 m 48 40 l 48 46 l 40 46 l 40 40 l')]:
++ pair(label,closed,open,'0 G 4 w 1 J [12 7] 3 d')
++for label,dash in [('solid','[] 0 d'),('all-zero','[0 0] 0 d'),('tiny-pattern','[.00001 .00001] 0 d')]:
++ items.append(dict(name='fallback-'+label,content=f'0 G 4 w 1 J {dash} 24 24 8 6 re S',equivalent_pair='normalized-solid-fallback'))
++parser=argparse.ArgumentParser();parser.add_argument('output',type=Path);root=parser.parse_args().output;(root/'pdf').mkdir(parents=True,exist_ok=True)
++for item in items:
++ data=writer(item['content']);(root/'pdf'/(item['name']+'.pdf')).write_bytes(data);item['input_sha256']=hashlib.sha256(data).hexdigest()
++(root/'cases.json').write_text(json.dumps(items,indent=2)+'\n')
++(root/'inputs.txt').write_text(''.join(str((root/'pdf'/(c['name']+'.pdf')).resolve())+'\t'+c['name']+'\n' for c in items))
++print(f'Generated {len(items)} original MIT seam controls.')

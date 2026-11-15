@@ -1,0 +1,344 @@
+--- a/CHANGELOG.md
++++ b/CHANGELOG.md
+@@ -9,6 +9,8 @@
+ - `RecursiveAI.OneImage.Pdf`: opt-in `PdfRenderOptions.SmoothMagnifiedImages` uses smooth sampling for enlarged raster images even when `/Interpolate` is false or omitted, for a display closer to many PDF viewers. Defaults, image reduction and stencil masks are unchanged.
+ 
+ ### Fixed
++
++- Closed dashed strokes no longer generate non-finite outline coordinates when one dash covers the entire figure. A figure that starts in a dash gap keeps the final partial dash open instead of adding a spurious closing edge. Boolean geometry limits are unchanged.
+ 
+ - `RecursiveAI.OneImage.Pdf`: avoid multiplying image-edge antialiasing twice when a single convex polygon clip with at most eight vertices provably contains the image quad. Other clips and core drawing clip-composition behavior are unchanged.
+ 
+--- a/src/OneImage/Drawing/DashSplitter.cs
++++ b/src/OneImage/Drawing/DashSplitter.cs
+@@ -120,9 +120,11 @@
+ 
+         if (on)
+         {
+-            if (closed && !everOff)
++            if (closed && startedOn && !everOff)
+             {
+-                sink.Dash(_cur, _curCount, true, dx, dy);
++                // This dash covers the whole figure. Use its original distinct vertices: _cur also contains the
++                // closing endpoint, which would create a zero-length edge when a closed contour is stroked.
++                sink.Dash(xy, n, true, dx, dy);
+             }
+             else if (closed && startedOn && _first != null)
+             {
+--- /dev/null
++++ b/tests/OneImage.Tests/Drawing/ClosedDashTests.cs
+@@ -0,0 +1,103 @@
++// SPDX-License-Identifier: MIT
++// Copyright (c) 2026 OneImage contributors
++// Original numeric geometry and analytical controls; no external assets or expected pixels.
++using OneImage.Drawing;
++using Path = OneImage.Drawing.Path;
++using PathBuilder = OneImage.Drawing.PathBuilder;
++
++namespace OneImage.Tests.Drawing;
++
++public class ClosedDashTests
++{
++    [Theory]
++    [InlineData(3)]
++    [InlineData(10.75)] // The dash ends exactly where this figure closes.
++    [InlineData(31)]
++    [InlineData(-25)]
++    public void WholeOnFigureHasOnlyItsOriginalVertices(double phase)
++    {
++        double[] points = [48, 36, 48.125, 36];
++        var sink = new Capture();
++        new DashSplitter([11, 17], phase).Split(points, 2, true, sink);
++        var piece = Assert.Single(sink.Pieces);
++        Assert.True(piece.Closed);
++        Assert.Equal(points, piece.Points);
++    }
++
++    [Fact]
++    public void InitialOffIntervalLeavesTheFinalDashOpen()
++    {
++        // Perimeter 40; phase 65 skips the first 15 units, then paints the remaining 25.
++        var sink = new Capture();
++        new DashSplitter([60, 20], 65).Split([20, 20, 30, 20, 30, 30, 20, 30], 4, true, sink);
++        var piece = Assert.Single(sink.Pieces);
++        Assert.False(piece.Closed);
++        Assert.Equal(new double[] { 30, 25, 30, 30, 20, 30, 20, 20 }, piece.Points);
++    }
++
++    public static TheoryData<int, StrokeJoin, StrokeCap> WholeFigures
++    {
++        get
++        {
++            var data = new TheoryData<int, StrokeJoin, StrokeCap>();
++            foreach (int shape in new[] { 0, 1, 2, 3, 4 })
++            foreach (StrokeJoin join in Enum.GetValues<StrokeJoin>())
++            foreach (StrokeCap cap in Enum.GetValues<StrokeCap>())
++            {
++                data.Add(shape, join, cap);
++            }
++
++            return data;
++        }
++    }
++
++    [Theory]
++    [MemberData(nameof(WholeFigures))]
++    public void WholeOnOutlineIsExactlyTheSolidOutline(int shape, StrokeJoin join, StrokeCap cap)
++    {
++        Path path = shape switch
++        {
++            0 => new PathBuilder().MoveTo(48, 36).LineTo(48.125f, 36).Close().Build(),
++            1 => new PathBuilder().MoveTo(48, 36).CubicBezierTo(49, 36, 47, 36, 48, 36).Close().Build(),
++            2 => Path.Rectangle(24, 24, 8, 6),
++            3 => Path.Polygon([new(22, 24), new(35, 25), new(29, 37)]),
++            // Figure.Dedupe must remove both the consecutive repeat and explicit closing vertex before Split.
++            _ => new PathBuilder().MoveTo(48, 36).LineTo(48.125f, 36).LineTo(48, 36).LineTo(48, 36).Close().Build(),
++        };
++        Path solid = path.GenerateOutline(18, join, cap);
++        Path dashed = path.GenerateOutline(18, join, cap, dashPattern: [200, 17], dashOffset: 3);
++        Assert.Equal(solid.Verbs.ToArray(), dashed.Verbs.ToArray());
++        Assert.Equal(solid.Coords.ToArray(), dashed.Coords.ToArray());
++        Assert.All(dashed.Coords.ToArray(), c => Assert.True(float.IsFinite(c)));
++        Assert.False(dashed.IsEmpty);
++    }
++
++    [Theory]
++    [InlineData(StrokeCap.Butt)]
++    [InlineData(StrokeCap.Round)]
++    [InlineData(StrokeCap.Square)]
++    public void InitialGapMatchesAnExplicitOpenDash(StrokeCap cap)
++    {
++        Path closed = Path.Rectangle(20, 20, 10, 10);
++        Path painted = new PathBuilder().MoveTo(30, 25).LineTo(30, 30).LineTo(20, 30).LineTo(20, 20).Build();
++        Path expected = painted.GenerateOutline(4, cap: cap);
++        Path actual = closed.GenerateOutline(4, cap: cap, dashPattern: [60, 20], dashOffset: 65);
++        Assert.Equal(expected.Verbs.ToArray(), actual.Verbs.ToArray());
++        Assert.Equal(expected.Coords.ToArray(), actual.Coords.ToArray());
++    }
++
++    [Fact]
++    public void RealBooleanCoordinateLimitIsStillEnforced()
++    {
++        Path path = new PathBuilder().MoveTo(40_000_000, 36).LineTo(40_000_032, 36).Close().Build();
++        Assert.Throws<ImageLimitException>(() => path.GenerateOutline(18, dashPattern: [200, 17]));
++    }
++
++    private sealed class Capture : IDashSink
++    {
++        public List<(double[] Points, bool Closed)> Pieces { get; } = [];
++
++        public void Dash(double[] xy, int count, bool closed, double dirX, double dirY) =>
++            Pieces.Add((xy.AsSpan(0, 2 * count).ToArray(), closed));
++    }
++}
+--- /dev/null
++++ b/tests/OneImage.Pdf.Tests/SpecTruth/ClosedDashTests.cs
+@@ -0,0 +1,61 @@
++// SPDX-License-Identifier: MIT
++// Copyright (c) 2026 OneImage contributors
++// Original numeric geometry. Expected images come from equivalent geometry, not reference pixels.
++using static OneImage.Pdf.Tests.SpecTruth.Spec;
++
++namespace OneImage.Pdf.Tests.SpecTruth;
++
++/// <summary>PDF integration for closed-dash geometry safety and initial-gap handling (ISO 32000-1 8.4.3.6).</summary>
++public class ClosedDashTests
++{
++    [Theory]
++    [InlineData("48 36 m 48.125 36 l h", 72)]
++    [InlineData("48 36 m 48.125 36 l h", 144)]
++    [InlineData("48 36 m 49 36 47 36 48 36 c h", 72)]
++    [InlineData("48 36 m 49 36 47 36 48 36 c h", 144)]
++    public void PositiveClosedDashesRenderWithoutNonFiniteCoordinates(string path, int dpi)
++    {
++        // A PDF integration smoke test for the core coordinate failure, not a dash-seam pixel oracle.
++        // The direct core tests verify exact outline geometry. PDF dash-seam semantics are a separate issue.
++        Rgba32[] pixels = Pix(Page($"0 G 18 w 1 J [11 17] 3 d {path} S", w: 96, h: 72), new PdfRenderOptions { Dpi = dpi });
++        Assert.Contains(pixels, p => p.R != 255);
++        Assert.All(pixels, p => Assert.Equal((byte)255, p.A));
++    }
++
++    [Theory]
++    [InlineData(0, 72)]
++    [InlineData(1, 72)]
++    [InlineData(2, 72)]
++    [InlineData(0, 144)]
++    [InlineData(1, 144)]
++    [InlineData(2, 144)]
++    public void InitialOffIntervalDoesNotCloseTheRemainingDash(int cap, int dpi)
++    {
++        var options = new PdfRenderOptions { Dpi = dpi };
++        string setup = $"0 G 4 w {cap} J ";
++        Rgba32[] expected = Pix(Page(setup + "30 25 m 30 30 l 20 30 l 20 20 l S", w: 64, h: 64), options);
++        Rgba32[] actual = Pix(Page(setup + "[60 20] 65 d 20 20 10 10 re S", w: 64, h: 64), options);
++        Assert.Equal(expected, actual);
++    }
++
++    [Theory]
++    [InlineData(1)]
++    [InlineData(4)]
++    [InlineData(16)]
++    public void ClosedDashesAreRegionAndThreadDeterministic(int degree)
++    {
++        byte[] pdf = Page("0 G 18 w 1 J [200 17] 3 d 127 129 m 127.125 129 l h " +
++            "257 257 m 258 257 256 257 257 257 c h 121 121 8 6 re S " +
++            "4 w [60 20] 65 d 250 250 10 10 re S", w: 384, h: 384);
++        var options = new PdfRenderOptions { Dpi = 72 };
++        Rgba32[] whole = RenderTests.Load(pdf, options).ToArray<Rgba32>(maxDegree: 1);
++        Assert.Equal(whole, RenderTests.Load(pdf, options).ToArray<Rgba32>(maxDegree: degree));
++        var region = new ImageRect(111, 111, 162, 162);
++        var part = new Rgba32[region.Width * region.Height];
++        RenderTests.Load(pdf, options).CopyPixelsTo<Rgba32>(part, region, degree);
++        for (int y = 0; y < region.Height; y++)
++        {
++            Assert.True(part.AsSpan(y * region.Width, region.Width).SequenceEqual(whole.AsSpan(((y + region.Y) * 384) + region.X, region.Width)));
++        }
++    }
++}
+--- /dev/null
++++ b/tools/closed-dashes/LICENSE
+@@ -0,0 +1,21 @@
++MIT License
++
++Copyright (c) Recursive AI, LLC
++
++Permission is hereby granted, free of charge, to any person obtaining a copy
++of this software and associated documentation files (the "Software"), to deal
++in the Software without restriction, including without limitation the rights
++to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
++copies of the Software, and to permit persons to whom the Software is
++furnished to do so, subject to the following conditions:
++
++The above copyright notice and this permission notice shall be included in all
++copies or substantial portions of the Software.
++
++THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
++IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
++FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
++AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
++LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
++OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
++SOFTWARE.
+--- /dev/null
++++ b/tools/closed-dashes/README.md
+@@ -0,0 +1,39 @@
++# Closed-dash construction controls
++
++All new numeric geometry, test code, fixture-generator code and generated PDFs
++are original MIT-licensed work. There are no input documents, external images,
++fonts, vendor fixtures or copied reference pixels.
++
++Generate the 91 full-page controls with:
++
++```sh
++python3 tools/closed-dashes/generate.py /tmp/closed-dashes
++python3 tools/closed-dashes/render_references.py /tmp/closed-dashes
++```
++
++The reference script needs `pypdfium2`, `PyMuPDF` and `Pillow`. It renders at 72 and
++144 DPI with matching MediaBox/CropBox, rotation zero, opaque white and no
++annotations. Output PNGs are not cropped, resized, aligned or retouched.
++`reference-settings.json` records exact engine versions. Use the project's
++`PdfRender batch` command with generated `inputs.txt` for before/head rendering.
++
++The core fix preserves the documented joining of closed dashed figures. A whole
++ON interval must pass the original distinct vertices to the stroker, not an
++extra copy of the closing point. A figure starting in an OFF interval must not
++be marked wholly ON, or the final partial dash acquires a false closing edge.
++Direct core tests assert the exact outline and dash-piece coordinates, including
++all joins/caps and a true out-of-bounds Boolean limit. The PDF tests add no-crash,
++initial-gap, fresh-region and thread-degree coverage.
++
++The exception fix is **not PDF dash-seam parity**. Both PDFium and MuPDF cap the
++first/last pieces at a PDF closed dashed subpath's seam, unlike the core's joined
++policy. In particular, the tiny and out-and-back cubic examples now render, but
++retain a substantial shape difference. That PDF-specific seam behavior is a
++separate issue; PDF smoke tests do not encode whole-ON=solid as a PDF pixel
++contract. ISO 32000-1:2008 sections 8.4.3.6 and 8.5.3.2 are the relevant primary
++specification, available from:
++https://opensource.adobe.com/dc-acrobat-sdk-docs/pdfstandards/PDF32000_2008.pdf
++
++Neither exceptions nor missing reference output count as pixel matches.
++PDF.js with Node Canvas has a known stationary-cap limitation and is not used as
++a native PDF.js/WebView equivalence claim.
+--- /dev/null
++++ b/tools/closed-dashes/generate.py
+@@ -0,0 +1,53 @@
++# SPDX-License-Identifier: MIT
++# Copyright (c) 2026 OneImage contributors
++# Independently authored numeric geometry. No input PDFs, fonts, images or vendor assets.
++import argparse, hashlib, json
++from pathlib import Path
++
++def document(content):
++    data = content.encode('ascii')
++    objects = [b'<< /Type /Catalog /Pages 2 0 R >>', b'<< /Type /Pages /Kids [3 0 R] /Count 1 >>',
++        b'<< /Type /Page /Parent 2 0 R /MediaBox [0 0 192 144] /CropBox [0 0 192 144] /Rotate 0 /Resources << >> /Contents 4 0 R >>',
++        b'<< /Length '+str(len(data)).encode()+b' >>\nstream\n'+data+b'\nendstream']
++    out = b'%PDF-1.7\n'
++    offsets=[]
++    for i, obj in enumerate(objects, 1):
++        offsets.append(len(out)); out+=f'{i} 0 obj\n'.encode()+obj+b'\nendobj\n'
++    xref=len(out)
++    out+=b'xref\n0 5\n0000000000 65535 f \n'+b''.join(f'{p:010d} 00000 n \n'.encode() for p in offsets)
++    return out+f'trailer\n<< /Size 5 /Root 1 0 R >>\nstartxref\n{xref}\n%%EOF\n'.encode()
++
++def cases():
++    result=[]
++    def add(name, body, group): result.append(dict(name=name, content=body, group=group))
++    shapes={'tiny':'48 36 m 48.125 36 l h', 'cubic':'48 36 m 49 36 47 36 48 36 c h',
++        'rectangle':'24 24 8 6 re', 'triangle':'22 24 m 35 25 l 29 37 l h'}
++    for shape,path in shapes.items():
++        for join in range(3):
++            for label,dash in [('solid','[] 0 d'),('whole-on','[200 17] 3 d'),('all-off','[200 200] 220 d'),('ordinary','[4 3] 1 d')]:
++                add(f'{shape}-j{join}-{label}',f'0 G 18 w 1 J {join} j {dash} {path} S',label)
++    for cap in range(3):
++        for label,body in [('initial-gap','[60 20] 65 d 20 20 10 10 re'),('explicit-gap','30 25 m 30 30 l 20 30 l 20 20 l')]:
++            add(f'{label}-c{cap}',f'0 G 4 w {cap} J {body} S',label)
++    for phase in [0,3,10.749,10.75,10.751,11,19,27.875,28,31]:
++        add('tiny-phase-'+str(phase).replace('.','_'),f'0 G 18 w 1 J [11 17] {phase} d {shapes["tiny"]} S','phase-boundary')
++    for label,ctm,width in [('skew','1.5 .3 .25 .8 -33 -7.2 cm',18),('reflect','-1 0 0 1 96 0 cm',18),('hairline','',0),('skew-hairline','1.5 .3 .25 .8 -33 -7.2 cm',0),('minimum','',.01)]:
++        for dashname,dash in [('solid','[] 0 d'),('whole-on','[200 17] 3 d')]:
++            add(f'{label}-{dashname}',f'0 G {ctm} {width} w 1 J {dash} 24 24 8 6 re S',dashname)
++    for label,path in [('open','20 20 m 80 35 l 35 70 l'),('multi','20 20 10 10 re 70 60 25 20 re'),('stationary','48 36 m 48 36 l h')]:
++        for name,dash in [('solid','[] 0 d'),('whole-on','[200 17] 3 d'),('crossing','[4 3] 1 d'),('odd','[7 5 9] 12 d'),('zero','[0 17] 0 d')]:
++            add(f'{label}-{name}',f'0 G 4 w 1 J {dash} {path} S','unchanged' if label in ('open','stationary') or name not in ('whole-on',) else 'whole-on')
++    for label,dash in [("solid","[] 0 d"),("whole-on","[200 17] 3 d")]:
++        add("explicit-repeated-return-"+label,f"0 G 18 w 1 J {dash} 48 36 m 48.125 36 l 48 36 l 48 36 l h S",label)
++    return result
++
++if __name__=='__main__':
++    parser=argparse.ArgumentParser(); parser.add_argument('output',type=Path); args=parser.parse_args()
++    root=args.output; (root/'pdf').mkdir(parents=True,exist_ok=True)
++    items=cases()
++    for item in items:
++        data=document(item['content']); (root/'pdf'/(item['name']+'.pdf')).write_bytes(data)
++        item['input_sha256']=hashlib.sha256(data).hexdigest()
++    (root/'cases.json').write_text(json.dumps(items,indent=2)+'\n')
++    (root/'inputs.txt').write_text(''.join(str((root/'pdf'/(c['name']+'.pdf')).resolve())+'\t'+c['name']+'\n' for c in items))
++    print(f'Generated {len(items)} original MIT numeric-geometry PDFs.')
+--- /dev/null
++++ b/tools/closed-dashes/render_references.py
+@@ -0,0 +1,22 @@
++# SPDX-License-Identifier: MIT
++# Copyright (c) 2026 OneImage contributors
++import json, hashlib, platform, argparse
++from pathlib import Path
++import pypdfium2 as pdfium
++import pymupdf
++from PIL import Image, __version__ as pillow_version
++parser=argparse.ArgumentParser(); parser.add_argument("output",type=Path); r=parser.parse_args().output
++cases=json.loads((r/'cases.json').read_text())
++for dpi in (72,144):
++    for engine in ('pdfium','mupdf'): (r/f'{engine}-{dpi}').mkdir(exist_ok=True)
++    for case in cases:
++        data=(r/'pdf'/(case['name']+'.pdf')).read_bytes()
++        assert hashlib.sha256(data).hexdigest()==case['input_sha256']
++        with pdfium.PdfDocument(data) as doc:
++            page=doc[0]; bitmap=page.render(scale=dpi/72,rotation=0,fill_color=(255,255,255,255),draw_annots=False)
++            bitmap.to_pil().convert('RGB').save(r/f'pdfium-{dpi}'/(case['name']+'.png')); bitmap.close(); page.close()
++        with pymupdf.open(stream=data,filetype='pdf') as doc:
++            pix=doc[0].get_pixmap(matrix=pymupdf.Matrix(dpi/72,dpi/72),alpha=False,annots=False)
++            Image.frombytes('RGB',(pix.width,pix.height),pix.samples).save(r/f'mupdf-{dpi}'/(case['name']+'.png'))
++(r/'reference-settings.json').write_text(json.dumps(dict(pypdfium2=pdfium.PYPDFIUM_INFO.version,pdfium=pdfium.PDFIUM_INFO.version,pymupdf=pymupdf.VersionBind,mupdf=pymupdf.VersionFitz,pillow=pillow_version,python=platform.python_version(),dpi=[72,144],cropbox='MediaBox = CropBox = [0 0 192 144]',rotation=0,background='opaque white',annotations=False,edits='none'),indent=2)+'\n')
++print(f'Rendered {len(cases)} original controls with both references at both DPI settings.')
