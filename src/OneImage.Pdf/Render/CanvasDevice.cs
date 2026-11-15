@@ -154,7 +154,7 @@ internal sealed partial class CanvasDevice : IPdfDevice, IDisposable
     }
 
     /// <summary>The stroke of a user-space path as a device-space outline to fill non-zero, or null when it draws nothing.</summary>
-    private static DrawingPath? StrokeOutline(in PdfPath path, in PdfGraphicsState state, in PdfMatrix m)
+    private DrawingPath? StrokeOutline(in PdfPath path, in PdfGraphicsState state, in PdfMatrix m)
     {
         double scale = PathConvert.MeanScale(m);
         if (!(scale > 1e-9) || !double.IsFinite(scale))
@@ -163,7 +163,8 @@ internal sealed partial class CanvasDevice : IPdfDevice, IDisposable
         }
 
         DrawingPath? user = PathConvert.ToPath(path, PdfMatrix.Identity, clamp: false);
-        DrawingPath? outline = user is null ? null : StrokeUserPath(user, state, m, scale);
+        DrawingPath? outline = user is null ? null : !state.Dash.IsEmpty && NeedsPreciseStroke(path, StrokeFlatTolerance(state, m, scale), _ct)
+            ? StrokePrecise(path, state, m, scale, user, _ct) : StrokeUserPath(user, state, m, scale);
         if (state.LineCap != 1)
         {
             return outline;
