@@ -26,11 +26,11 @@ Cross-tags describe pipeline participation, not proven root-cause ownership. Cas
 - [resource-category-page](CATALOG.md#resource-category-page) — pass; owner unresolved.
 - [resource-category-page-form](CATALOG.md#resource-category-page-form) — pass; owner unresolved.
 - [resource-category-sibling-forms](CATALOG.md#resource-category-sibling-forms) — pass; owner unresolved.
-- [resource-inherit-root](CATALOG.md#resource-inherit-root) — agreed; owner unresolved.
-- [resource-explicit-page](CATALOG.md#resource-explicit-page) — agreed; owner unresolved.
-- [resource-sibling-root-before](CATALOG.md#resource-sibling-root-before) — agreed; owner unresolved.
-- [resource-nearest-ancestor](CATALOG.md#resource-nearest-ancestor) — agreed; owner unresolved.
-- [resource-sibling-root-after](CATALOG.md#resource-sibling-root-after) — agreed; owner unresolved.
+- [resource-inherit-root](CATALOG.md#resource-inherit-root) — pass; owner unresolved.
+- [resource-explicit-page](CATALOG.md#resource-explicit-page) — pass; owner unresolved.
+- [resource-sibling-root-before](CATALOG.md#resource-sibling-root-before) — pass; owner unresolved.
+- [resource-nearest-ancestor](CATALOG.md#resource-nearest-ancestor) — pass; owner unresolved.
+- [resource-sibling-root-after](CATALOG.md#resource-sibling-root-after) — pass; owner unresolved.
 
 ## OnePDF/font-text-interpretation
 
@@ -42,10 +42,10 @@ Cross-tags describe pipeline participation, not proven root-cause ownership. Cas
 - [textscale-ts-baselines](CATALOG.md#textscale-ts-baselines) — pass; owner unresolved.
 - [textscale-tz-spacing](CATALOG.md#textscale-tz-spacing) — pass; owner unresolved.
 - [textscale-tz-tj-rise](CATALOG.md#textscale-tz-tj-rise) — pass; owner unresolved.
-- [textleading-tl-nextline](CATALOG.md#textleading-tl-nextline) — agreed; owner unresolved.
-- [textleading-td-sets-leading](CATALOG.md#textleading-td-sets-leading) — agreed; owner unresolved.
-- [textleading-td-preserves-leading](CATALOG.md#textleading-td-preserves-leading) — agreed; owner unresolved.
-- [textleading-bt-reset-leading-persists](CATALOG.md#textleading-bt-reset-leading-persists) — agreed; owner unresolved.
+- [textleading-tl-nextline](CATALOG.md#textleading-tl-nextline) — pass; owner unresolved.
+- [textleading-td-sets-leading](CATALOG.md#textleading-td-sets-leading) — pass; owner unresolved.
+- [textleading-td-preserves-leading](CATALOG.md#textleading-td-preserves-leading) — pass; owner unresolved.
+- [textleading-bt-reset-leading-persists](CATALOG.md#textleading-bt-reset-leading-persists) — pass; owner unresolved.
 
 ## OnePDF/content-interpretation
 
@@ -76,14 +76,14 @@ Cross-tags describe pipeline participation, not proven root-cause ownership. Cas
 - [resource-category-page](CATALOG.md#resource-category-page) — pass; owner unresolved.
 - [resource-category-page-form](CATALOG.md#resource-category-page-form) — pass; owner unresolved.
 - [resource-category-sibling-forms](CATALOG.md#resource-category-sibling-forms) — pass; owner unresolved.
-- [resource-inherit-root](CATALOG.md#resource-inherit-root) — agreed; owner unresolved.
-- [resource-explicit-page](CATALOG.md#resource-explicit-page) — agreed; owner unresolved.
-- [resource-sibling-root-before](CATALOG.md#resource-sibling-root-before) — agreed; owner unresolved.
-- [resource-nearest-ancestor](CATALOG.md#resource-nearest-ancestor) — agreed; owner unresolved.
-- [resource-sibling-root-after](CATALOG.md#resource-sibling-root-after) — agreed; owner unresolved.
-- [img-colorkey-bg-control](CATALOG.md#img-colorkey-bg-control) — agreed; owner unresolved.
-- [img-colorkey-bg-exact](CATALOG.md#img-colorkey-bg-exact) — agreed; owner unresolved.
-- [img-colorkey-bg-range](CATALOG.md#img-colorkey-bg-range) — agreed; owner unresolved.
+- [resource-inherit-root](CATALOG.md#resource-inherit-root) — pass; owner unresolved.
+- [resource-explicit-page](CATALOG.md#resource-explicit-page) — pass; owner unresolved.
+- [resource-sibling-root-before](CATALOG.md#resource-sibling-root-before) — pass; owner unresolved.
+- [resource-nearest-ancestor](CATALOG.md#resource-nearest-ancestor) — pass; owner unresolved.
+- [resource-sibling-root-after](CATALOG.md#resource-sibling-root-after) — pass; owner unresolved.
+- [img-colorkey-bg-control](CATALOG.md#img-colorkey-bg-control) — pass; owner unresolved.
+- [img-colorkey-bg-exact](CATALOG.md#img-colorkey-bg-exact) — pass; owner unresolved.
+- [img-colorkey-bg-range](CATALOG.md#img-colorkey-bg-range) — pass; owner unresolved.
 
 ## OnePDF/image-color-decoding
 
@@ -105,9 +105,9 @@ Cross-tags describe pipeline participation, not proven root-cause ownership. Cas
 - [img-colorkey-control](CATALOG.md#img-colorkey-control) — pass; owner unresolved.
 - [img-colorkey-exact](CATALOG.md#img-colorkey-exact) — pass; owner unresolved.
 - [img-colorkey-range](CATALOG.md#img-colorkey-range) — pass; owner unresolved.
-- [img-colorkey-bg-control](CATALOG.md#img-colorkey-bg-control) — agreed; owner unresolved.
-- [img-colorkey-bg-exact](CATALOG.md#img-colorkey-bg-exact) — agreed; owner unresolved.
-- [img-colorkey-bg-range](CATALOG.md#img-colorkey-bg-range) — agreed; owner unresolved.
+- [img-colorkey-bg-control](CATALOG.md#img-colorkey-bg-control) — pass; owner unresolved.
+- [img-colorkey-bg-exact](CATALOG.md#img-colorkey-bg-exact) — pass; owner unresolved.
+- [img-colorkey-bg-range](CATALOG.md#img-colorkey-bg-range) — pass; owner unresolved.
 
 ## OneImage/paths-clipping
 
@@ -139,15 +139,15 @@ Cross-tags describe pipeline participation, not proven root-cause ownership. Cas
 - [textscale-ts-baselines](CATALOG.md#textscale-ts-baselines) — pass; owner unresolved.
 - [textscale-tz-spacing](CATALOG.md#textscale-tz-spacing) — pass; owner unresolved.
 - [textscale-tz-tj-rise](CATALOG.md#textscale-tz-tj-rise) — pass; owner unresolved.
-- [resource-inherit-root](CATALOG.md#resource-inherit-root) — agreed; owner unresolved.
-- [resource-explicit-page](CATALOG.md#resource-explicit-page) — agreed; owner unresolved.
-- [resource-sibling-root-before](CATALOG.md#resource-sibling-root-before) — agreed; owner unresolved.
-- [resource-nearest-ancestor](CATALOG.md#resource-nearest-ancestor) — agreed; owner unresolved.
-- [resource-sibling-root-after](CATALOG.md#resource-sibling-root-after) — agreed; owner unresolved.
-- [textleading-tl-nextline](CATALOG.md#textleading-tl-nextline) — agreed; owner unresolved.
-- [textleading-td-sets-leading](CATALOG.md#textleading-td-sets-leading) — agreed; owner unresolved.
-- [textleading-td-preserves-leading](CATALOG.md#textleading-td-preserves-leading) — agreed; owner unresolved.
-- [textleading-bt-reset-leading-persists](CATALOG.md#textleading-bt-reset-leading-persists) — agreed; owner unresolved.
+- [resource-inherit-root](CATALOG.md#resource-inherit-root) — pass; owner unresolved.
+- [resource-explicit-page](CATALOG.md#resource-explicit-page) — pass; owner unresolved.
+- [resource-sibling-root-before](CATALOG.md#resource-sibling-root-before) — pass; owner unresolved.
+- [resource-nearest-ancestor](CATALOG.md#resource-nearest-ancestor) — pass; owner unresolved.
+- [resource-sibling-root-after](CATALOG.md#resource-sibling-root-after) — pass; owner unresolved.
+- [textleading-tl-nextline](CATALOG.md#textleading-tl-nextline) — pass; owner unresolved.
+- [textleading-td-sets-leading](CATALOG.md#textleading-td-sets-leading) — pass; owner unresolved.
+- [textleading-td-preserves-leading](CATALOG.md#textleading-td-preserves-leading) — pass; owner unresolved.
+- [textleading-bt-reset-leading-persists](CATALOG.md#textleading-bt-reset-leading-persists) — pass; owner unresolved.
 
 ## OneImage/glyph-rasterization
 
@@ -159,10 +159,10 @@ Cross-tags describe pipeline participation, not proven root-cause ownership. Cas
 - [textscale-ts-baselines](CATALOG.md#textscale-ts-baselines) — pass; owner unresolved.
 - [textscale-tz-spacing](CATALOG.md#textscale-tz-spacing) — pass; owner unresolved.
 - [textscale-tz-tj-rise](CATALOG.md#textscale-tz-tj-rise) — pass; owner unresolved.
-- [textleading-tl-nextline](CATALOG.md#textleading-tl-nextline) — agreed; owner unresolved.
-- [textleading-td-sets-leading](CATALOG.md#textleading-td-sets-leading) — agreed; owner unresolved.
-- [textleading-td-preserves-leading](CATALOG.md#textleading-td-preserves-leading) — agreed; owner unresolved.
-- [textleading-bt-reset-leading-persists](CATALOG.md#textleading-bt-reset-leading-persists) — agreed; owner unresolved.
+- [textleading-tl-nextline](CATALOG.md#textleading-tl-nextline) — pass; owner unresolved.
+- [textleading-td-sets-leading](CATALOG.md#textleading-td-sets-leading) — pass; owner unresolved.
+- [textleading-td-preserves-leading](CATALOG.md#textleading-td-preserves-leading) — pass; owner unresolved.
+- [textleading-bt-reset-leading-persists](CATALOG.md#textleading-bt-reset-leading-persists) — pass; owner unresolved.
 
 ## OneImage/image-sampling
 
@@ -184,9 +184,9 @@ Cross-tags describe pipeline participation, not proven root-cause ownership. Cas
 - [img-colorkey-control](CATALOG.md#img-colorkey-control) — pass; owner unresolved.
 - [img-colorkey-exact](CATALOG.md#img-colorkey-exact) — pass; owner unresolved.
 - [img-colorkey-range](CATALOG.md#img-colorkey-range) — pass; owner unresolved.
-- [img-colorkey-bg-control](CATALOG.md#img-colorkey-bg-control) — agreed; owner unresolved.
-- [img-colorkey-bg-exact](CATALOG.md#img-colorkey-bg-exact) — agreed; owner unresolved.
-- [img-colorkey-bg-range](CATALOG.md#img-colorkey-bg-range) — agreed; owner unresolved.
+- [img-colorkey-bg-control](CATALOG.md#img-colorkey-bg-control) — pass; owner unresolved.
+- [img-colorkey-bg-exact](CATALOG.md#img-colorkey-bg-exact) — pass; owner unresolved.
+- [img-colorkey-bg-range](CATALOG.md#img-colorkey-bg-range) — pass; owner unresolved.
 
 ## OneImage/color-conversion
 
@@ -201,9 +201,9 @@ No focused case in this batch.
 - [alpha-stroke-fraction06](CATALOG.md#alpha-stroke-fraction06) — mismatch; owner unresolved.
 - [alpha-fill-fraction025](CATALOG.md#alpha-fill-fraction025) — mismatch; owner unresolved.
 - [alpha-stroke-fraction025](CATALOG.md#alpha-stroke-fraction025) — mismatch; owner unresolved.
-- [img-colorkey-bg-control](CATALOG.md#img-colorkey-bg-control) — agreed; owner unresolved.
-- [img-colorkey-bg-exact](CATALOG.md#img-colorkey-bg-exact) — agreed; owner unresolved.
-- [img-colorkey-bg-range](CATALOG.md#img-colorkey-bg-range) — agreed; owner unresolved.
+- [img-colorkey-bg-control](CATALOG.md#img-colorkey-bg-control) — pass; owner unresolved.
+- [img-colorkey-bg-exact](CATALOG.md#img-colorkey-bg-exact) — pass; owner unresolved.
+- [img-colorkey-bg-range](CATALOG.md#img-colorkey-bg-range) — pass; owner unresolved.
 
 ## OneImage.Pdf/bridge-integration
 
@@ -263,15 +263,15 @@ No focused case in this batch.
 - [textscale-ts-baselines](CATALOG.md#textscale-ts-baselines) — pass; owner unresolved.
 - [textscale-tz-spacing](CATALOG.md#textscale-tz-spacing) — pass; owner unresolved.
 - [textscale-tz-tj-rise](CATALOG.md#textscale-tz-tj-rise) — pass; owner unresolved.
-- [resource-inherit-root](CATALOG.md#resource-inherit-root) — agreed; owner unresolved.
-- [resource-explicit-page](CATALOG.md#resource-explicit-page) — agreed; owner unresolved.
-- [resource-sibling-root-before](CATALOG.md#resource-sibling-root-before) — agreed; owner unresolved.
-- [resource-nearest-ancestor](CATALOG.md#resource-nearest-ancestor) — agreed; owner unresolved.
-- [resource-sibling-root-after](CATALOG.md#resource-sibling-root-after) — agreed; owner unresolved.
-- [textleading-tl-nextline](CATALOG.md#textleading-tl-nextline) — agreed; owner unresolved.
-- [textleading-td-sets-leading](CATALOG.md#textleading-td-sets-leading) — agreed; owner unresolved.
-- [textleading-td-preserves-leading](CATALOG.md#textleading-td-preserves-leading) — agreed; owner unresolved.
-- [textleading-bt-reset-leading-persists](CATALOG.md#textleading-bt-reset-leading-persists) — agreed; owner unresolved.
-- [img-colorkey-bg-control](CATALOG.md#img-colorkey-bg-control) — agreed; owner unresolved.
-- [img-colorkey-bg-exact](CATALOG.md#img-colorkey-bg-exact) — agreed; owner unresolved.
-- [img-colorkey-bg-range](CATALOG.md#img-colorkey-bg-range) — agreed; owner unresolved.
+- [resource-inherit-root](CATALOG.md#resource-inherit-root) — pass; owner unresolved.
+- [resource-explicit-page](CATALOG.md#resource-explicit-page) — pass; owner unresolved.
+- [resource-sibling-root-before](CATALOG.md#resource-sibling-root-before) — pass; owner unresolved.
+- [resource-nearest-ancestor](CATALOG.md#resource-nearest-ancestor) — pass; owner unresolved.
+- [resource-sibling-root-after](CATALOG.md#resource-sibling-root-after) — pass; owner unresolved.
+- [textleading-tl-nextline](CATALOG.md#textleading-tl-nextline) — pass; owner unresolved.
+- [textleading-td-sets-leading](CATALOG.md#textleading-td-sets-leading) — pass; owner unresolved.
+- [textleading-td-preserves-leading](CATALOG.md#textleading-td-preserves-leading) — pass; owner unresolved.
+- [textleading-bt-reset-leading-persists](CATALOG.md#textleading-bt-reset-leading-persists) — pass; owner unresolved.
+- [img-colorkey-bg-control](CATALOG.md#img-colorkey-bg-control) — pass; owner unresolved.
+- [img-colorkey-bg-exact](CATALOG.md#img-colorkey-bg-exact) — pass; owner unresolved.
+- [img-colorkey-bg-range](CATALOG.md#img-colorkey-bg-range) — pass; owner unresolved.

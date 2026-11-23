@@ -176,7 +176,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 Page without Resources inherits root binding
 
-Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-inheritance-root/original.pdf); [clause evidence](resources3/clause-index.json).
+Stage: **pass**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-inheritance-root/original.pdf); [clause evidence](resources3/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-inheritance-root/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-inheritance-root/expected-144.png).
 
@@ -186,7 +186,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 Complete explicit page Resources overrides root binding
 
-Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-inheritance-explicit/original.pdf); [clause evidence](resources3/clause-index.json).
+Stage: **pass**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-inheritance-explicit/original.pdf); [clause evidence](resources3/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-inheritance-explicit/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-inheritance-explicit/expected-144.png).
 
@@ -196,7 +196,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 First root sibling inherits root binding
 
-Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-inheritance-siblings/original.pdf); [clause evidence](resources3/clause-index.json).
+Stage: **pass**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-inheritance-siblings/original.pdf); [clause evidence](resources3/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-inheritance-siblings/page-0-resource-sibling-root-before/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-inheritance-siblings/page-0-resource-sibling-root-before/expected-144.png).
 
@@ -206,7 +206,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 Nested page inherits nearer intermediate Pages binding
 
-Stage: **agreed**; page1,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-inheritance-siblings/original.pdf); [clause evidence](resources3/clause-index.json).
+Stage: **pass**; page1,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-inheritance-siblings/original.pdf); [clause evidence](resources3/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-inheritance-siblings/page-1-resource-nearest-ancestor/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-inheritance-siblings/page-1-resource-nearest-ancestor/expected-144.png).
 
@@ -216,7 +216,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 Later root sibling retains root binding after nested subtree
 
-Stage: **agreed**; page2,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-inheritance-siblings/original.pdf); [clause evidence](resources3/clause-index.json).
+Stage: **pass**; page2,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-inheritance-siblings/original.pdf); [clause evidence](resources3/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-inheritance-siblings/page-2-resource-sibling-root-after/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-inheritance-siblings/page-2-resource-sibling-root-after/expected-144.png).
 
@@ -486,7 +486,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 An unmasked opaque RGB image covers its previously painted green/blue checkerboard.
 
-Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/img-colorkey-bg-control/original.pdf); [clause evidence](colorkeybackground/clause-index.json).
+Stage: **pass**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/img-colorkey-bg-control/original.pdf); [clause evidence](colorkeybackground/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/img-colorkey-bg-control/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/img-colorkey-bg-control/expected-144.png).
 
@@ -496,7 +496,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 An exact RGB color key leaves its matched pixel unpainted, revealing the existing green backdrop.
 
-Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/img-colorkey-bg-exact/original.pdf); [clause evidence](colorkeybackground/clause-index.json).
+Stage: **pass**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/img-colorkey-bg-exact/original.pdf); [clause evidence](colorkeybackground/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/img-colorkey-bg-exact/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/img-colorkey-bg-exact/expected-144.png).
 
@@ -506,7 +506,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 Inclusive RGB component ranges reveal the prior green/blue cells; one-value-outside controls remain opaque.
 
-Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/img-colorkey-bg-range/original.pdf); [clause evidence](colorkeybackground/clause-index.json).
+Stage: **pass**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/img-colorkey-bg-range/original.pdf); [clause evidence](colorkeybackground/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/img-colorkey-bg-range/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/img-colorkey-bg-range/expected-144.png).
 
@@ -592,7 +592,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 T* uses negative TL and the line origin after Tj advances the current text matrix.
 
-Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.02-Text-positioning-operators/textleading-tl-nextline/original.pdf); [clause evidence](textleading/clause-index.json).
+Stage: **pass**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.02-Text-positioning-operators/textleading-tl-nextline/original.pdf); [clause evidence](textleading/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.02-Text-positioning-operators/textleading-tl-nextline/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.02-Text-positioning-operators/textleading-tl-nextline/expected-144.png).
 
@@ -602,7 +602,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 TD moves the line origin and sets leading to negative ty for a subsequent T*.
 
-Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.02-Text-positioning-operators/textleading-td-sets-leading/original.pdf); [clause evidence](textleading/clause-index.json).
+Stage: **pass**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.02-Text-positioning-operators/textleading-td-sets-leading/original.pdf); [clause evidence](textleading/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.02-Text-positioning-operators/textleading-td-sets-leading/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.02-Text-positioning-operators/textleading-td-sets-leading/expected-144.png).
 
@@ -612,7 +612,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 Td changes the line origin but preserves TL for a subsequent T*.
 
-Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.02-Text-positioning-operators/textleading-td-preserves-leading/original.pdf); [clause evidence](textleading/clause-index.json).
+Stage: **pass**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.02-Text-positioning-operators/textleading-td-preserves-leading/original.pdf); [clause evidence](textleading/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.02-Text-positioning-operators/textleading-td-preserves-leading/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.02-Text-positioning-operators/textleading-td-preserves-leading/expected-144.png).
 
@@ -622,7 +622,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 New BT resets text and line matrices while leading persists as text state across objects.
 
-Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.02-Text-positioning-operators/textleading-bt-reset-leading-persists/original.pdf); [clause evidence](textleading/clause-index.json).
+Stage: **pass**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.02-Text-positioning-operators/textleading-bt-reset-leading-persists/original.pdf); [clause evidence](textleading/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.02-Text-positioning-operators/textleading-bt-reset-leading-persists/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.02-Text-positioning-operators/textleading-bt-reset-leading-persists/expected-144.png).
 
