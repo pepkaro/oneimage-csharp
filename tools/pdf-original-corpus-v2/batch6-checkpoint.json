@@ -28,5 +28,32 @@
   "new_held_page_views": 3,
   "upstream_credited": 0,
   "product_executed": 0,
-  "stage": "references scored; preproduct acceptance"
+  "stage": "accepted and graded; three new checkerboard cases held",
+  "acceptance_commit_local": "be90ac06f2bf3879cd5866514444079514a35fbc",
+  "acceptance_tree": "be06cd2735e34afac59e74df455cb1057ea5423e",
+  "new_reference_runs": 108,
+  "new_reference_passed": 102,
+  "new_reference_failed": 6,
+  "new_reference_skipped": 0,
+  "new_expected_png_paths": 30,
+  "new_product_executed": 30,
+  "new_product_passed": 30,
+  "new_product_failed": 0,
+  "new_product_skipped": 6,
+  "new_named_assertions": 526,
+  "new_scored_pixels": 232920,
+  "component_evidence": {
+    "new_checkerboard_full_cases_held": 3,
+    "mask_selection_checks": 648,
+    "mask_selection_passes": 648,
+    "mupdf_marked_black_centres_with_delta1": 42,
+    "full_case_pass_credit": 0,
+    "product_executed": 0
+  },
+  "actual_pdf_reference_calls_this_work": 720,
+  "actual_product_calls_this_work": 180,
+  "strict_boundary_preserved": true,
+  "fractional_alpha_held": true,
+  "acceptance_commit_remote": "f2cce2ff49883aca9a9c1152af6a1a195a50113f",
+  "publication_target": "https://github.com/pepkaro/oneimage-csharp/pull/94"
 }

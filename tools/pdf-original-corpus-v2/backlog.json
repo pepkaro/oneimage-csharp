@@ -4,7 +4,7 @@
   "completion_rule": "Every applicable scoped semanticrule has committed independentlyvalidatedfixture+assertion or explicitreviewedexception; inventory completion is not behavior completion",
   "scope_limit": "Initial manuallyscopedordinaryvisualrules only; fullstandard ruleenumeration incomplete pendingfull2020text and furthermanualqualification; no claim everyapplicablePDFbehaviorislisted",
   "recovery_rule": "ReadthisbacklogandGitHEAD; verifypriorcheckpoint;claimoneunclaimeddisjointslice; neverrerunblockedAOTIPC; checkpointblockedreasonandcontinueindependenteligible work; no newapprovalneededwithin authorizedscope",
-  "current_publication": "Continuation from draft94 head688d99e57791656b25b4d5a69f431f9adc60af22; sixth batch preproduct acceptance",
+  "current_publication": "Verified draft94 acceptance f2cce2ff49883aca9a9c1152af6a1a195a50113f; measured sixth-batch evidence follows",
   "slices": [
     {
       "slice_id": "ISO-PAGE-BOX-INDIRECT-02",
@@ -55,7 +55,7 @@
       "slice_id": "ISO-PAGE-BOX-INDIRECT-01",
       "iso_2020_order": "07.07.03.03",
       "verified_coarse_title": "Page objects",
-      "state": "reference-scored-awaiting-commit-and-product",
+      "state": "complete-product-mask-and-named-assertions-pass",
       "owner": "upstream_match5",
       "case_ids": [
         "boxes-direct-control",
@@ -72,7 +72,8 @@
         "boxes-indirect-coordinates"
       ],
       "held_cases": [],
-      "unique_pdfs": 3
+      "unique_pdfs": 3,
+      "evidence": "product-batch6-strict-results.json"
     },
     {
       "slice_id": "ISO-PAGE-GEOMETRY-01",
@@ -122,7 +123,7 @@
       "slice_id": "ISO-PAGE-ATTRIBUTE-INHERIT-02",
       "iso_2020_order": "07.07.03.04",
       "verified_coarse_title": "Inheritance of page attributes",
-      "state": "reference-scored-awaiting-commit-and-product",
+      "state": "complete-product-mask-and-named-assertions-pass",
       "owner": "mozilla_originals",
       "case_ids": [
         "rotate-inherit-root90",
@@ -141,7 +142,8 @@
         "rotate-sibling-root-after"
       ],
       "held_cases": [],
-      "unique_pdfs": 3
+      "unique_pdfs": 3,
+      "evidence": "product-batch6-strict-results.json"
     },
     {
       "slice_id": "ISO-PAGE-ATTRIBUTE-INHERIT-03",
@@ -412,7 +414,7 @@
       "slice_id": "ISO-IMAGE-STENCIL-01",
       "iso_2020_order": "08.09.06.02",
       "verified_coarse_title": "Stencil masking",
-      "state": "reference-scored-awaiting-commit-and-product",
+      "state": "white-backed-cases-pass-checkerboard-reference-held",
       "owner": "root",
       "case_ids": [
         "stencil-default-red",
@@ -434,7 +436,9 @@
         "stencil-inverse-red",
         "stencil-current-color-reuse"
       ],
-      "unique_pdfs": 6
+      "unique_pdfs": 6,
+      "evidence": "stencil/classification-results.json",
+      "exception": "Three white-backed full cases pass; three checkerboard full cases remain held without goldens/product grades"
     },
     {
       "slice_id": "ISO-IMAGE-EXPLICIT-MASK-01",
@@ -509,7 +513,7 @@
       "slice_id": "ISO-TEXT-INVISIBLE-01",
       "iso_2020_order": "09.03",
       "verified_coarse_title": "Text state parameters and operators; finer heading must be reverified",
-      "state": "reference-scored-awaiting-commit-and-product",
+      "state": "complete-product-mask-and-named-assertions-pass",
       "owner": "pdfium_originals",
       "case_ids": [
         "text-invisible-advance",
@@ -526,7 +530,8 @@
         "text-invisible-no-clip"
       ],
       "held_cases": [],
-      "unique_pdfs": 4
+      "unique_pdfs": 4,
+      "evidence": "product-batch6-strict-results.json"
     },
     {
       "slice_id": "ISO-TEXT-SCALE-RISE-01",
@@ -662,8 +667,8 @@
       "exception": "Implementationarithmeticexplained; no normativebyteoracleor productfix;fourcasesremainheld"
     }
   ],
-  "checkpoint_state": "Three owned slices checkpointed:12 new page views pass;4 new full cases held; no upstream credit",
-  "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
-  "acceptance_tree": "23f443626f7ff7a3ca55b708ed673228ce9f5364",
+  "checkpoint_state": "Four owned slices checkpointed:15 new page views pass;3 new full cases held; no upstream credit",
+  "acceptance_commit_remote": "f2cce2ff49883aca9a9c1152af6a1a195a50113f",
+  "acceptance_tree": "be06cd2735e34afac59e74df455cb1057ea5423e",
   "publication_target": "https://github.com/pepkaro/oneimage-csharp/pull/94"
 }

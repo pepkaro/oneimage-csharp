@@ -14,9 +14,9 @@ Cross-tags describe pipeline participation, not proven root-cause ownership. Cas
 - [img-colorkey-control](CATALOG.md#img-colorkey-control) — pass; owner unresolved.
 - [img-colorkey-exact](CATALOG.md#img-colorkey-exact) — pass; owner unresolved.
 - [img-colorkey-range](CATALOG.md#img-colorkey-range) — pass; owner unresolved.
-- [boxes-direct-control](CATALOG.md#boxes-direct-control) — agreed; owner unresolved.
-- [boxes-indirect-arrays](CATALOG.md#boxes-indirect-arrays) — agreed; owner unresolved.
-- [boxes-indirect-coordinates](CATALOG.md#boxes-indirect-coordinates) — agreed; owner unresolved.
+- [boxes-direct-control](CATALOG.md#boxes-direct-control) — pass; owner unresolved.
+- [boxes-indirect-arrays](CATALOG.md#boxes-indirect-arrays) — pass; owner unresolved.
+- [boxes-indirect-coordinates](CATALOG.md#boxes-indirect-coordinates) — pass; owner unresolved.
 
 ## OnePDF/page-resources
 
@@ -39,14 +39,14 @@ Cross-tags describe pipeline participation, not proven root-cause ownership. Cas
 - [mediabox-sibling-root-before](CATALOG.md#mediabox-sibling-root-before) — pass; owner unresolved.
 - [mediabox-nearest-ancestor](CATALOG.md#mediabox-nearest-ancestor) — pass; owner unresolved.
 - [mediabox-sibling-root-after](CATALOG.md#mediabox-sibling-root-after) — pass; owner unresolved.
-- [boxes-direct-control](CATALOG.md#boxes-direct-control) — agreed; owner unresolved.
-- [boxes-indirect-arrays](CATALOG.md#boxes-indirect-arrays) — agreed; owner unresolved.
-- [boxes-indirect-coordinates](CATALOG.md#boxes-indirect-coordinates) — agreed; owner unresolved.
-- [rotate-inherit-root90](CATALOG.md#rotate-inherit-root90) — agreed; owner unresolved.
-- [rotate-explicit-page0](CATALOG.md#rotate-explicit-page0) — agreed; owner unresolved.
-- [rotate-sibling-root-before](CATALOG.md#rotate-sibling-root-before) — agreed; owner unresolved.
-- [rotate-nearest-ancestor270](CATALOG.md#rotate-nearest-ancestor270) — agreed; owner unresolved.
-- [rotate-sibling-root-after](CATALOG.md#rotate-sibling-root-after) — agreed; owner unresolved.
+- [boxes-direct-control](CATALOG.md#boxes-direct-control) — pass; owner unresolved.
+- [boxes-indirect-arrays](CATALOG.md#boxes-indirect-arrays) — pass; owner unresolved.
+- [boxes-indirect-coordinates](CATALOG.md#boxes-indirect-coordinates) — pass; owner unresolved.
+- [rotate-inherit-root90](CATALOG.md#rotate-inherit-root90) — pass; owner unresolved.
+- [rotate-explicit-page0](CATALOG.md#rotate-explicit-page0) — pass; owner unresolved.
+- [rotate-sibling-root-before](CATALOG.md#rotate-sibling-root-before) — pass; owner unresolved.
+- [rotate-nearest-ancestor270](CATALOG.md#rotate-nearest-ancestor270) — pass; owner unresolved.
+- [rotate-sibling-root-after](CATALOG.md#rotate-sibling-root-after) — pass; owner unresolved.
 
 ## OnePDF/font-text-interpretation
 
@@ -66,10 +66,10 @@ Cross-tags describe pipeline participation, not proven root-cause ownership. Cas
 - [textquote-double-equivalent](CATALOG.md#textquote-double-equivalent) — pass; owner unresolved.
 - [textquote-spacing-persists](CATALOG.md#textquote-spacing-persists) — pass; owner unresolved.
 - [textquote-shift-and-object-state](CATALOG.md#textquote-shift-and-object-state) — pass; owner unresolved.
-- [text-invisible-advance](CATALOG.md#text-invisible-advance) — agreed; owner unresolved.
-- [text-invisible-spacing-tj](CATALOG.md#text-invisible-spacing-tj) — agreed; owner unresolved.
-- [text-invisible-object-state](CATALOG.md#text-invisible-object-state) — agreed; owner unresolved.
-- [text-invisible-no-clip](CATALOG.md#text-invisible-no-clip) — agreed; owner unresolved.
+- [text-invisible-advance](CATALOG.md#text-invisible-advance) — pass; owner unresolved.
+- [text-invisible-spacing-tj](CATALOG.md#text-invisible-spacing-tj) — pass; owner unresolved.
+- [text-invisible-object-state](CATALOG.md#text-invisible-object-state) — pass; owner unresolved.
+- [text-invisible-no-clip](CATALOG.md#text-invisible-no-clip) — pass; owner unresolved.
 
 ## OnePDF/content-interpretation
 
@@ -120,17 +120,17 @@ Cross-tags describe pipeline participation, not proven root-cause ownership. Cas
 - [img-colorkey-endpoint-control](CATALOG.md#img-colorkey-endpoint-control) — pass; owner unresolved.
 - [img-colorkey-endpoint-stored-red](CATALOG.md#img-colorkey-endpoint-stored-red) — pass; owner unresolved.
 - [img-colorkey-endpoint-stored-red-magenta-range](CATALOG.md#img-colorkey-endpoint-stored-red-magenta-range) — pass; owner unresolved.
-- [rotate-inherit-root90](CATALOG.md#rotate-inherit-root90) — agreed; owner unresolved.
-- [rotate-explicit-page0](CATALOG.md#rotate-explicit-page0) — agreed; owner unresolved.
-- [rotate-sibling-root-before](CATALOG.md#rotate-sibling-root-before) — agreed; owner unresolved.
-- [rotate-nearest-ancestor270](CATALOG.md#rotate-nearest-ancestor270) — agreed; owner unresolved.
-- [rotate-sibling-root-after](CATALOG.md#rotate-sibling-root-after) — agreed; owner unresolved.
+- [rotate-inherit-root90](CATALOG.md#rotate-inherit-root90) — pass; owner unresolved.
+- [rotate-explicit-page0](CATALOG.md#rotate-explicit-page0) — pass; owner unresolved.
+- [rotate-sibling-root-before](CATALOG.md#rotate-sibling-root-before) — pass; owner unresolved.
+- [rotate-nearest-ancestor270](CATALOG.md#rotate-nearest-ancestor270) — pass; owner unresolved.
+- [rotate-sibling-root-after](CATALOG.md#rotate-sibling-root-after) — pass; owner unresolved.
 - [stencil-default-red](CATALOG.md#stencil-default-red) — generated; owner unresolved.
 - [stencil-inverse-red](CATALOG.md#stencil-inverse-red) — generated; owner unresolved.
 - [stencil-current-color-reuse](CATALOG.md#stencil-current-color-reuse) — generated; owner unresolved.
-- [stencil-white-default-red](CATALOG.md#stencil-white-default-red) — agreed; owner unresolved.
-- [stencil-white-inverse-red](CATALOG.md#stencil-white-inverse-red) — agreed; owner unresolved.
-- [stencil-white-reuse-red-green](CATALOG.md#stencil-white-reuse-red-green) — agreed; owner unresolved.
+- [stencil-white-default-red](CATALOG.md#stencil-white-default-red) — pass; owner unresolved.
+- [stencil-white-inverse-red](CATALOG.md#stencil-white-inverse-red) — pass; owner unresolved.
+- [stencil-white-reuse-red-green](CATALOG.md#stencil-white-reuse-red-green) — pass; owner unresolved.
 
 ## OnePDF/image-color-decoding
 
@@ -165,9 +165,9 @@ Cross-tags describe pipeline participation, not proven root-cause ownership. Cas
 - [stencil-default-red](CATALOG.md#stencil-default-red) — generated; owner unresolved.
 - [stencil-inverse-red](CATALOG.md#stencil-inverse-red) — generated; owner unresolved.
 - [stencil-current-color-reuse](CATALOG.md#stencil-current-color-reuse) — generated; owner unresolved.
-- [stencil-white-default-red](CATALOG.md#stencil-white-default-red) — agreed; owner unresolved.
-- [stencil-white-inverse-red](CATALOG.md#stencil-white-inverse-red) — agreed; owner unresolved.
-- [stencil-white-reuse-red-green](CATALOG.md#stencil-white-reuse-red-green) — agreed; owner unresolved.
+- [stencil-white-default-red](CATALOG.md#stencil-white-default-red) — pass; owner unresolved.
+- [stencil-white-inverse-red](CATALOG.md#stencil-white-inverse-red) — pass; owner unresolved.
+- [stencil-white-reuse-red-green](CATALOG.md#stencil-white-reuse-red-green) — pass; owner unresolved.
 
 ## OneImage/paths-clipping
 
@@ -213,14 +213,14 @@ Cross-tags describe pipeline participation, not proven root-cause ownership. Cas
 - [mediabox-sibling-root-before](CATALOG.md#mediabox-sibling-root-before) — pass; owner unresolved.
 - [mediabox-nearest-ancestor](CATALOG.md#mediabox-nearest-ancestor) — pass; owner unresolved.
 - [mediabox-sibling-root-after](CATALOG.md#mediabox-sibling-root-after) — pass; owner unresolved.
-- [boxes-direct-control](CATALOG.md#boxes-direct-control) — agreed; owner unresolved.
-- [boxes-indirect-arrays](CATALOG.md#boxes-indirect-arrays) — agreed; owner unresolved.
-- [boxes-indirect-coordinates](CATALOG.md#boxes-indirect-coordinates) — agreed; owner unresolved.
-- [rotate-inherit-root90](CATALOG.md#rotate-inherit-root90) — agreed; owner unresolved.
-- [rotate-explicit-page0](CATALOG.md#rotate-explicit-page0) — agreed; owner unresolved.
-- [rotate-sibling-root-before](CATALOG.md#rotate-sibling-root-before) — agreed; owner unresolved.
-- [rotate-nearest-ancestor270](CATALOG.md#rotate-nearest-ancestor270) — agreed; owner unresolved.
-- [rotate-sibling-root-after](CATALOG.md#rotate-sibling-root-after) — agreed; owner unresolved.
+- [boxes-direct-control](CATALOG.md#boxes-direct-control) — pass; owner unresolved.
+- [boxes-indirect-arrays](CATALOG.md#boxes-indirect-arrays) — pass; owner unresolved.
+- [boxes-indirect-coordinates](CATALOG.md#boxes-indirect-coordinates) — pass; owner unresolved.
+- [rotate-inherit-root90](CATALOG.md#rotate-inherit-root90) — pass; owner unresolved.
+- [rotate-explicit-page0](CATALOG.md#rotate-explicit-page0) — pass; owner unresolved.
+- [rotate-sibling-root-before](CATALOG.md#rotate-sibling-root-before) — pass; owner unresolved.
+- [rotate-nearest-ancestor270](CATALOG.md#rotate-nearest-ancestor270) — pass; owner unresolved.
+- [rotate-sibling-root-after](CATALOG.md#rotate-sibling-root-after) — pass; owner unresolved.
 
 ## OneImage/glyph-rasterization
 
@@ -240,10 +240,10 @@ Cross-tags describe pipeline participation, not proven root-cause ownership. Cas
 - [textquote-double-equivalent](CATALOG.md#textquote-double-equivalent) — pass; owner unresolved.
 - [textquote-spacing-persists](CATALOG.md#textquote-spacing-persists) — pass; owner unresolved.
 - [textquote-shift-and-object-state](CATALOG.md#textquote-shift-and-object-state) — pass; owner unresolved.
-- [text-invisible-advance](CATALOG.md#text-invisible-advance) — agreed; owner unresolved.
-- [text-invisible-spacing-tj](CATALOG.md#text-invisible-spacing-tj) — agreed; owner unresolved.
-- [text-invisible-object-state](CATALOG.md#text-invisible-object-state) — agreed; owner unresolved.
-- [text-invisible-no-clip](CATALOG.md#text-invisible-no-clip) — agreed; owner unresolved.
+- [text-invisible-advance](CATALOG.md#text-invisible-advance) — pass; owner unresolved.
+- [text-invisible-spacing-tj](CATALOG.md#text-invisible-spacing-tj) — pass; owner unresolved.
+- [text-invisible-object-state](CATALOG.md#text-invisible-object-state) — pass; owner unresolved.
+- [text-invisible-no-clip](CATALOG.md#text-invisible-no-clip) — pass; owner unresolved.
 
 ## OneImage/image-sampling
 
@@ -278,9 +278,9 @@ Cross-tags describe pipeline participation, not proven root-cause ownership. Cas
 - [stencil-default-red](CATALOG.md#stencil-default-red) — generated; owner unresolved.
 - [stencil-inverse-red](CATALOG.md#stencil-inverse-red) — generated; owner unresolved.
 - [stencil-current-color-reuse](CATALOG.md#stencil-current-color-reuse) — generated; owner unresolved.
-- [stencil-white-default-red](CATALOG.md#stencil-white-default-red) — agreed; owner unresolved.
-- [stencil-white-inverse-red](CATALOG.md#stencil-white-inverse-red) — agreed; owner unresolved.
-- [stencil-white-reuse-red-green](CATALOG.md#stencil-white-reuse-red-green) — agreed; owner unresolved.
+- [stencil-white-default-red](CATALOG.md#stencil-white-default-red) — pass; owner unresolved.
+- [stencil-white-inverse-red](CATALOG.md#stencil-white-inverse-red) — pass; owner unresolved.
+- [stencil-white-reuse-red-green](CATALOG.md#stencil-white-reuse-red-green) — pass; owner unresolved.
 
 ## OneImage/color-conversion
 
@@ -294,9 +294,9 @@ Cross-tags describe pipeline participation, not proven root-cause ownership. Cas
 - [stencil-default-red](CATALOG.md#stencil-default-red) — generated; owner unresolved.
 - [stencil-inverse-red](CATALOG.md#stencil-inverse-red) — generated; owner unresolved.
 - [stencil-current-color-reuse](CATALOG.md#stencil-current-color-reuse) — generated; owner unresolved.
-- [stencil-white-default-red](CATALOG.md#stencil-white-default-red) — agreed; owner unresolved.
-- [stencil-white-inverse-red](CATALOG.md#stencil-white-inverse-red) — agreed; owner unresolved.
-- [stencil-white-reuse-red-green](CATALOG.md#stencil-white-reuse-red-green) — agreed; owner unresolved.
+- [stencil-white-default-red](CATALOG.md#stencil-white-default-red) — pass; owner unresolved.
+- [stencil-white-inverse-red](CATALOG.md#stencil-white-inverse-red) — pass; owner unresolved.
+- [stencil-white-reuse-red-green](CATALOG.md#stencil-white-reuse-red-green) — pass; owner unresolved.
 
 ## OneImage/transparency-compositing
 
@@ -320,9 +320,9 @@ Cross-tags describe pipeline participation, not proven root-cause ownership. Cas
 - [stencil-default-red](CATALOG.md#stencil-default-red) — generated; owner unresolved.
 - [stencil-inverse-red](CATALOG.md#stencil-inverse-red) — generated; owner unresolved.
 - [stencil-current-color-reuse](CATALOG.md#stencil-current-color-reuse) — generated; owner unresolved.
-- [stencil-white-default-red](CATALOG.md#stencil-white-default-red) — agreed; owner unresolved.
-- [stencil-white-inverse-red](CATALOG.md#stencil-white-inverse-red) — agreed; owner unresolved.
-- [stencil-white-reuse-red-green](CATALOG.md#stencil-white-reuse-red-green) — agreed; owner unresolved.
+- [stencil-white-default-red](CATALOG.md#stencil-white-default-red) — pass; owner unresolved.
+- [stencil-white-inverse-red](CATALOG.md#stencil-white-inverse-red) — pass; owner unresolved.
+- [stencil-white-reuse-red-green](CATALOG.md#stencil-white-reuse-red-green) — pass; owner unresolved.
 
 ## OneImage.Pdf/bridge-integration
 
@@ -410,21 +410,21 @@ Cross-tags describe pipeline participation, not proven root-cause ownership. Cas
 - [img-colorkey-endpoint-control](CATALOG.md#img-colorkey-endpoint-control) — pass; owner unresolved.
 - [img-colorkey-endpoint-stored-red](CATALOG.md#img-colorkey-endpoint-stored-red) — pass; owner unresolved.
 - [img-colorkey-endpoint-stored-red-magenta-range](CATALOG.md#img-colorkey-endpoint-stored-red-magenta-range) — pass; owner unresolved.
-- [boxes-direct-control](CATALOG.md#boxes-direct-control) — agreed; owner unresolved.
-- [boxes-indirect-arrays](CATALOG.md#boxes-indirect-arrays) — agreed; owner unresolved.
-- [boxes-indirect-coordinates](CATALOG.md#boxes-indirect-coordinates) — agreed; owner unresolved.
-- [rotate-inherit-root90](CATALOG.md#rotate-inherit-root90) — agreed; owner unresolved.
-- [rotate-explicit-page0](CATALOG.md#rotate-explicit-page0) — agreed; owner unresolved.
-- [rotate-sibling-root-before](CATALOG.md#rotate-sibling-root-before) — agreed; owner unresolved.
-- [rotate-nearest-ancestor270](CATALOG.md#rotate-nearest-ancestor270) — agreed; owner unresolved.
-- [rotate-sibling-root-after](CATALOG.md#rotate-sibling-root-after) — agreed; owner unresolved.
-- [text-invisible-advance](CATALOG.md#text-invisible-advance) — agreed; owner unresolved.
-- [text-invisible-spacing-tj](CATALOG.md#text-invisible-spacing-tj) — agreed; owner unresolved.
-- [text-invisible-object-state](CATALOG.md#text-invisible-object-state) — agreed; owner unresolved.
-- [text-invisible-no-clip](CATALOG.md#text-invisible-no-clip) — agreed; owner unresolved.
+- [boxes-direct-control](CATALOG.md#boxes-direct-control) — pass; owner unresolved.
+- [boxes-indirect-arrays](CATALOG.md#boxes-indirect-arrays) — pass; owner unresolved.
+- [boxes-indirect-coordinates](CATALOG.md#boxes-indirect-coordinates) — pass; owner unresolved.
+- [rotate-inherit-root90](CATALOG.md#rotate-inherit-root90) — pass; owner unresolved.
+- [rotate-explicit-page0](CATALOG.md#rotate-explicit-page0) — pass; owner unresolved.
+- [rotate-sibling-root-before](CATALOG.md#rotate-sibling-root-before) — pass; owner unresolved.
+- [rotate-nearest-ancestor270](CATALOG.md#rotate-nearest-ancestor270) — pass; owner unresolved.
+- [rotate-sibling-root-after](CATALOG.md#rotate-sibling-root-after) — pass; owner unresolved.
+- [text-invisible-advance](CATALOG.md#text-invisible-advance) — pass; owner unresolved.
+- [text-invisible-spacing-tj](CATALOG.md#text-invisible-spacing-tj) — pass; owner unresolved.
+- [text-invisible-object-state](CATALOG.md#text-invisible-object-state) — pass; owner unresolved.
+- [text-invisible-no-clip](CATALOG.md#text-invisible-no-clip) — pass; owner unresolved.
 - [stencil-default-red](CATALOG.md#stencil-default-red) — generated; owner unresolved.
 - [stencil-inverse-red](CATALOG.md#stencil-inverse-red) — generated; owner unresolved.
 - [stencil-current-color-reuse](CATALOG.md#stencil-current-color-reuse) — generated; owner unresolved.
-- [stencil-white-default-red](CATALOG.md#stencil-white-default-red) — agreed; owner unresolved.
-- [stencil-white-inverse-red](CATALOG.md#stencil-white-inverse-red) — agreed; owner unresolved.
-- [stencil-white-reuse-red-green](CATALOG.md#stencil-white-reuse-red-green) — agreed; owner unresolved.
+- [stencil-white-default-red](CATALOG.md#stencil-white-default-red) — pass; owner unresolved.
+- [stencil-white-inverse-red](CATALOG.md#stencil-white-inverse-red) — pass; owner unresolved.
+- [stencil-white-reuse-red-green](CATALOG.md#stencil-white-reuse-red-green) — pass; owner unresolved.
