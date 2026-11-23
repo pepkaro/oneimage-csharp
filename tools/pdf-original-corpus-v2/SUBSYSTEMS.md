@@ -31,11 +31,11 @@ Cross-tags describe pipeline participation, not proven root-cause ownership. Cas
 - [resource-sibling-root-before](CATALOG.md#resource-sibling-root-before) — pass; owner unresolved.
 - [resource-nearest-ancestor](CATALOG.md#resource-nearest-ancestor) — pass; owner unresolved.
 - [resource-sibling-root-after](CATALOG.md#resource-sibling-root-after) — pass; owner unresolved.
-- [mediabox-inherit-root](CATALOG.md#mediabox-inherit-root) — agreed; owner unresolved.
-- [mediabox-explicit-page](CATALOG.md#mediabox-explicit-page) — agreed; owner unresolved.
-- [mediabox-sibling-root-before](CATALOG.md#mediabox-sibling-root-before) — agreed; owner unresolved.
-- [mediabox-nearest-ancestor](CATALOG.md#mediabox-nearest-ancestor) — agreed; owner unresolved.
-- [mediabox-sibling-root-after](CATALOG.md#mediabox-sibling-root-after) — agreed; owner unresolved.
+- [mediabox-inherit-root](CATALOG.md#mediabox-inherit-root) — pass; owner unresolved.
+- [mediabox-explicit-page](CATALOG.md#mediabox-explicit-page) — pass; owner unresolved.
+- [mediabox-sibling-root-before](CATALOG.md#mediabox-sibling-root-before) — pass; owner unresolved.
+- [mediabox-nearest-ancestor](CATALOG.md#mediabox-nearest-ancestor) — pass; owner unresolved.
+- [mediabox-sibling-root-after](CATALOG.md#mediabox-sibling-root-after) — pass; owner unresolved.
 
 ## OnePDF/font-text-interpretation
 
@@ -51,10 +51,10 @@ Cross-tags describe pipeline participation, not proven root-cause ownership. Cas
 - [textleading-td-sets-leading](CATALOG.md#textleading-td-sets-leading) — pass; owner unresolved.
 - [textleading-td-preserves-leading](CATALOG.md#textleading-td-preserves-leading) — pass; owner unresolved.
 - [textleading-bt-reset-leading-persists](CATALOG.md#textleading-bt-reset-leading-persists) — pass; owner unresolved.
-- [textquote-single-equivalent](CATALOG.md#textquote-single-equivalent) — agreed; owner unresolved.
-- [textquote-double-equivalent](CATALOG.md#textquote-double-equivalent) — agreed; owner unresolved.
-- [textquote-spacing-persists](CATALOG.md#textquote-spacing-persists) — agreed; owner unresolved.
-- [textquote-shift-and-object-state](CATALOG.md#textquote-shift-and-object-state) — agreed; owner unresolved.
+- [textquote-single-equivalent](CATALOG.md#textquote-single-equivalent) — pass; owner unresolved.
+- [textquote-double-equivalent](CATALOG.md#textquote-double-equivalent) — pass; owner unresolved.
+- [textquote-spacing-persists](CATALOG.md#textquote-spacing-persists) — pass; owner unresolved.
+- [textquote-shift-and-object-state](CATALOG.md#textquote-shift-and-object-state) — pass; owner unresolved.
 
 ## OnePDF/content-interpretation
 
@@ -78,10 +78,10 @@ Cross-tags describe pipeline participation, not proven root-cause ownership. Cas
 - [alpha-fill-endpoints](CATALOG.md#alpha-fill-endpoints) — pass; owner unresolved.
 - [alpha-stroke-endpoints](CATALOG.md#alpha-stroke-endpoints) — pass; owner unresolved.
 - [alpha-ca-state-restore](CATALOG.md#alpha-ca-state-restore) — pass; owner unresolved.
-- [alpha-fill-fraction06](CATALOG.md#alpha-fill-fraction06) — mismatch; owner unresolved.
-- [alpha-stroke-fraction06](CATALOG.md#alpha-stroke-fraction06) — mismatch; owner unresolved.
-- [alpha-fill-fraction025](CATALOG.md#alpha-fill-fraction025) — mismatch; owner unresolved.
-- [alpha-stroke-fraction025](CATALOG.md#alpha-stroke-fraction025) — mismatch; owner unresolved.
+- [alpha-fill-fraction06](CATALOG.md#alpha-fill-fraction06) — generated; owner unresolved.
+- [alpha-stroke-fraction06](CATALOG.md#alpha-stroke-fraction06) — generated; owner unresolved.
+- [alpha-fill-fraction025](CATALOG.md#alpha-fill-fraction025) — generated; owner unresolved.
+- [alpha-stroke-fraction025](CATALOG.md#alpha-stroke-fraction025) — generated; owner unresolved.
 - [resource-category-page](CATALOG.md#resource-category-page) — pass; owner unresolved.
 - [resource-category-page-form](CATALOG.md#resource-category-page-form) — pass; owner unresolved.
 - [resource-category-sibling-forms](CATALOG.md#resource-category-sibling-forms) — pass; owner unresolved.
@@ -93,25 +93,25 @@ Cross-tags describe pipeline participation, not proven root-cause ownership. Cas
 - [img-colorkey-bg-control](CATALOG.md#img-colorkey-bg-control) — pass; owner unresolved.
 - [img-colorkey-bg-exact](CATALOG.md#img-colorkey-bg-exact) — pass; owner unresolved.
 - [img-colorkey-bg-range](CATALOG.md#img-colorkey-bg-range) — pass; owner unresolved.
-- [mediabox-inherit-root](CATALOG.md#mediabox-inherit-root) — agreed; owner unresolved.
-- [mediabox-explicit-page](CATALOG.md#mediabox-explicit-page) — agreed; owner unresolved.
-- [mediabox-sibling-root-before](CATALOG.md#mediabox-sibling-root-before) — agreed; owner unresolved.
-- [mediabox-nearest-ancestor](CATALOG.md#mediabox-nearest-ancestor) — agreed; owner unresolved.
-- [mediabox-sibling-root-after](CATALOG.md#mediabox-sibling-root-after) — agreed; owner unresolved.
+- [mediabox-inherit-root](CATALOG.md#mediabox-inherit-root) — pass; owner unresolved.
+- [mediabox-explicit-page](CATALOG.md#mediabox-explicit-page) — pass; owner unresolved.
+- [mediabox-sibling-root-before](CATALOG.md#mediabox-sibling-root-before) — pass; owner unresolved.
+- [mediabox-nearest-ancestor](CATALOG.md#mediabox-nearest-ancestor) — pass; owner unresolved.
+- [mediabox-sibling-root-after](CATALOG.md#mediabox-sibling-root-after) — pass; owner unresolved.
 - [img-colorkey-decode-opaque](CATALOG.md#img-colorkey-decode-opaque) — generated; owner unresolved.
 - [img-colorkey-decode-stored-key](CATALOG.md#img-colorkey-decode-stored-key) — generated; owner unresolved.
 - [img-colorkey-decode-decoded-key-control](CATALOG.md#img-colorkey-decode-decoded-key-control) — generated; owner unresolved.
 - [img-colorkey-decode-stored-range](CATALOG.md#img-colorkey-decode-stored-range) — generated; owner unresolved.
-- [img-colorkey-endpoint-control](CATALOG.md#img-colorkey-endpoint-control) — agreed; owner unresolved.
-- [img-colorkey-endpoint-stored-red](CATALOG.md#img-colorkey-endpoint-stored-red) — agreed; owner unresolved.
-- [img-colorkey-endpoint-stored-red-magenta-range](CATALOG.md#img-colorkey-endpoint-stored-red-magenta-range) — agreed; owner unresolved.
+- [img-colorkey-endpoint-control](CATALOG.md#img-colorkey-endpoint-control) — pass; owner unresolved.
+- [img-colorkey-endpoint-stored-red](CATALOG.md#img-colorkey-endpoint-stored-red) — pass; owner unresolved.
+- [img-colorkey-endpoint-stored-red-magenta-range](CATALOG.md#img-colorkey-endpoint-stored-red-magenta-range) — pass; owner unresolved.
 
 ## OnePDF/image-color-decoding
 
 - [img-gray2-packed-padding](CATALOG.md#img-gray2-packed-padding) — pass; owner unresolved.
 - [img-gray4-inverted-decode](CATALOG.md#img-gray4-inverted-decode) — pass; owner unresolved.
 - [img-gray8-restricted-decode](CATALOG.md#img-gray8-restricted-decode) — pass; owner unresolved.
-- [img-rgb8-channel-decode](CATALOG.md#img-rgb8-channel-decode) — mismatch; owner unresolved.
+- [img-rgb8-channel-decode](CATALOG.md#img-rgb8-channel-decode) — generated; owner unresolved.
 - [img-indexed2-lookup-padding](CATALOG.md#img-indexed2-lookup-padding) — pass; owner unresolved.
 - [img-indexed4-reversed-decode](CATALOG.md#img-indexed4-reversed-decode) — pass; owner unresolved.
 - [img-rgb16-big-endian](CATALOG.md#img-rgb16-big-endian) — pass; owner unresolved.
@@ -133,9 +133,9 @@ Cross-tags describe pipeline participation, not proven root-cause ownership. Cas
 - [img-colorkey-decode-stored-key](CATALOG.md#img-colorkey-decode-stored-key) — generated; owner unresolved.
 - [img-colorkey-decode-decoded-key-control](CATALOG.md#img-colorkey-decode-decoded-key-control) — generated; owner unresolved.
 - [img-colorkey-decode-stored-range](CATALOG.md#img-colorkey-decode-stored-range) — generated; owner unresolved.
-- [img-colorkey-endpoint-control](CATALOG.md#img-colorkey-endpoint-control) — agreed; owner unresolved.
-- [img-colorkey-endpoint-stored-red](CATALOG.md#img-colorkey-endpoint-stored-red) — agreed; owner unresolved.
-- [img-colorkey-endpoint-stored-red-magenta-range](CATALOG.md#img-colorkey-endpoint-stored-red-magenta-range) — agreed; owner unresolved.
+- [img-colorkey-endpoint-control](CATALOG.md#img-colorkey-endpoint-control) — pass; owner unresolved.
+- [img-colorkey-endpoint-stored-red](CATALOG.md#img-colorkey-endpoint-stored-red) — pass; owner unresolved.
+- [img-colorkey-endpoint-stored-red-magenta-range](CATALOG.md#img-colorkey-endpoint-stored-red-magenta-range) — pass; owner unresolved.
 
 ## OneImage/paths-clipping
 
@@ -176,11 +176,11 @@ Cross-tags describe pipeline participation, not proven root-cause ownership. Cas
 - [textleading-td-sets-leading](CATALOG.md#textleading-td-sets-leading) — pass; owner unresolved.
 - [textleading-td-preserves-leading](CATALOG.md#textleading-td-preserves-leading) — pass; owner unresolved.
 - [textleading-bt-reset-leading-persists](CATALOG.md#textleading-bt-reset-leading-persists) — pass; owner unresolved.
-- [mediabox-inherit-root](CATALOG.md#mediabox-inherit-root) — agreed; owner unresolved.
-- [mediabox-explicit-page](CATALOG.md#mediabox-explicit-page) — agreed; owner unresolved.
-- [mediabox-sibling-root-before](CATALOG.md#mediabox-sibling-root-before) — agreed; owner unresolved.
-- [mediabox-nearest-ancestor](CATALOG.md#mediabox-nearest-ancestor) — agreed; owner unresolved.
-- [mediabox-sibling-root-after](CATALOG.md#mediabox-sibling-root-after) — agreed; owner unresolved.
+- [mediabox-inherit-root](CATALOG.md#mediabox-inherit-root) — pass; owner unresolved.
+- [mediabox-explicit-page](CATALOG.md#mediabox-explicit-page) — pass; owner unresolved.
+- [mediabox-sibling-root-before](CATALOG.md#mediabox-sibling-root-before) — pass; owner unresolved.
+- [mediabox-nearest-ancestor](CATALOG.md#mediabox-nearest-ancestor) — pass; owner unresolved.
+- [mediabox-sibling-root-after](CATALOG.md#mediabox-sibling-root-after) — pass; owner unresolved.
 
 ## OneImage/glyph-rasterization
 
@@ -196,17 +196,17 @@ Cross-tags describe pipeline participation, not proven root-cause ownership. Cas
 - [textleading-td-sets-leading](CATALOG.md#textleading-td-sets-leading) — pass; owner unresolved.
 - [textleading-td-preserves-leading](CATALOG.md#textleading-td-preserves-leading) — pass; owner unresolved.
 - [textleading-bt-reset-leading-persists](CATALOG.md#textleading-bt-reset-leading-persists) — pass; owner unresolved.
-- [textquote-single-equivalent](CATALOG.md#textquote-single-equivalent) — agreed; owner unresolved.
-- [textquote-double-equivalent](CATALOG.md#textquote-double-equivalent) — agreed; owner unresolved.
-- [textquote-spacing-persists](CATALOG.md#textquote-spacing-persists) — agreed; owner unresolved.
-- [textquote-shift-and-object-state](CATALOG.md#textquote-shift-and-object-state) — agreed; owner unresolved.
+- [textquote-single-equivalent](CATALOG.md#textquote-single-equivalent) — pass; owner unresolved.
+- [textquote-double-equivalent](CATALOG.md#textquote-double-equivalent) — pass; owner unresolved.
+- [textquote-spacing-persists](CATALOG.md#textquote-spacing-persists) — pass; owner unresolved.
+- [textquote-shift-and-object-state](CATALOG.md#textquote-shift-and-object-state) — pass; owner unresolved.
 
 ## OneImage/image-sampling
 
 - [img-gray2-packed-padding](CATALOG.md#img-gray2-packed-padding) — pass; owner unresolved.
 - [img-gray4-inverted-decode](CATALOG.md#img-gray4-inverted-decode) — pass; owner unresolved.
 - [img-gray8-restricted-decode](CATALOG.md#img-gray8-restricted-decode) — pass; owner unresolved.
-- [img-rgb8-channel-decode](CATALOG.md#img-rgb8-channel-decode) — mismatch; owner unresolved.
+- [img-rgb8-channel-decode](CATALOG.md#img-rgb8-channel-decode) — generated; owner unresolved.
 - [img-indexed2-lookup-padding](CATALOG.md#img-indexed2-lookup-padding) — pass; owner unresolved.
 - [img-indexed4-reversed-decode](CATALOG.md#img-indexed4-reversed-decode) — pass; owner unresolved.
 - [img-rgb16-big-endian](CATALOG.md#img-rgb16-big-endian) — pass; owner unresolved.
@@ -228,9 +228,9 @@ Cross-tags describe pipeline participation, not proven root-cause ownership. Cas
 - [img-colorkey-decode-stored-key](CATALOG.md#img-colorkey-decode-stored-key) — generated; owner unresolved.
 - [img-colorkey-decode-decoded-key-control](CATALOG.md#img-colorkey-decode-decoded-key-control) — generated; owner unresolved.
 - [img-colorkey-decode-stored-range](CATALOG.md#img-colorkey-decode-stored-range) — generated; owner unresolved.
-- [img-colorkey-endpoint-control](CATALOG.md#img-colorkey-endpoint-control) — agreed; owner unresolved.
-- [img-colorkey-endpoint-stored-red](CATALOG.md#img-colorkey-endpoint-stored-red) — agreed; owner unresolved.
-- [img-colorkey-endpoint-stored-red-magenta-range](CATALOG.md#img-colorkey-endpoint-stored-red-magenta-range) — agreed; owner unresolved.
+- [img-colorkey-endpoint-control](CATALOG.md#img-colorkey-endpoint-control) — pass; owner unresolved.
+- [img-colorkey-endpoint-stored-red](CATALOG.md#img-colorkey-endpoint-stored-red) — pass; owner unresolved.
+- [img-colorkey-endpoint-stored-red-magenta-range](CATALOG.md#img-colorkey-endpoint-stored-red-magenta-range) — pass; owner unresolved.
 
 ## OneImage/color-conversion
 
@@ -238,19 +238,19 @@ Cross-tags describe pipeline participation, not proven root-cause ownership. Cas
 - [img-colorkey-decode-stored-key](CATALOG.md#img-colorkey-decode-stored-key) — generated; owner unresolved.
 - [img-colorkey-decode-decoded-key-control](CATALOG.md#img-colorkey-decode-decoded-key-control) — generated; owner unresolved.
 - [img-colorkey-decode-stored-range](CATALOG.md#img-colorkey-decode-stored-range) — generated; owner unresolved.
-- [img-colorkey-endpoint-control](CATALOG.md#img-colorkey-endpoint-control) — agreed; owner unresolved.
-- [img-colorkey-endpoint-stored-red](CATALOG.md#img-colorkey-endpoint-stored-red) — agreed; owner unresolved.
-- [img-colorkey-endpoint-stored-red-magenta-range](CATALOG.md#img-colorkey-endpoint-stored-red-magenta-range) — agreed; owner unresolved.
+- [img-colorkey-endpoint-control](CATALOG.md#img-colorkey-endpoint-control) — pass; owner unresolved.
+- [img-colorkey-endpoint-stored-red](CATALOG.md#img-colorkey-endpoint-stored-red) — pass; owner unresolved.
+- [img-colorkey-endpoint-stored-red-magenta-range](CATALOG.md#img-colorkey-endpoint-stored-red-magenta-range) — pass; owner unresolved.
 
 ## OneImage/transparency-compositing
 
 - [alpha-fill-endpoints](CATALOG.md#alpha-fill-endpoints) — pass; owner unresolved.
 - [alpha-stroke-endpoints](CATALOG.md#alpha-stroke-endpoints) — pass; owner unresolved.
 - [alpha-ca-state-restore](CATALOG.md#alpha-ca-state-restore) — pass; owner unresolved.
-- [alpha-fill-fraction06](CATALOG.md#alpha-fill-fraction06) — mismatch; owner unresolved.
-- [alpha-stroke-fraction06](CATALOG.md#alpha-stroke-fraction06) — mismatch; owner unresolved.
-- [alpha-fill-fraction025](CATALOG.md#alpha-fill-fraction025) — mismatch; owner unresolved.
-- [alpha-stroke-fraction025](CATALOG.md#alpha-stroke-fraction025) — mismatch; owner unresolved.
+- [alpha-fill-fraction06](CATALOG.md#alpha-fill-fraction06) — generated; owner unresolved.
+- [alpha-stroke-fraction06](CATALOG.md#alpha-stroke-fraction06) — generated; owner unresolved.
+- [alpha-fill-fraction025](CATALOG.md#alpha-fill-fraction025) — generated; owner unresolved.
+- [alpha-stroke-fraction025](CATALOG.md#alpha-stroke-fraction025) — generated; owner unresolved.
 - [img-colorkey-bg-control](CATALOG.md#img-colorkey-bg-control) — pass; owner unresolved.
 - [img-colorkey-bg-exact](CATALOG.md#img-colorkey-bg-exact) — pass; owner unresolved.
 - [img-colorkey-bg-range](CATALOG.md#img-colorkey-bg-range) — pass; owner unresolved.
@@ -258,9 +258,9 @@ Cross-tags describe pipeline participation, not proven root-cause ownership. Cas
 - [img-colorkey-decode-stored-key](CATALOG.md#img-colorkey-decode-stored-key) — generated; owner unresolved.
 - [img-colorkey-decode-decoded-key-control](CATALOG.md#img-colorkey-decode-decoded-key-control) — generated; owner unresolved.
 - [img-colorkey-decode-stored-range](CATALOG.md#img-colorkey-decode-stored-range) — generated; owner unresolved.
-- [img-colorkey-endpoint-control](CATALOG.md#img-colorkey-endpoint-control) — agreed; owner unresolved.
-- [img-colorkey-endpoint-stored-red](CATALOG.md#img-colorkey-endpoint-stored-red) — agreed; owner unresolved.
-- [img-colorkey-endpoint-stored-red-magenta-range](CATALOG.md#img-colorkey-endpoint-stored-red-magenta-range) — agreed; owner unresolved.
+- [img-colorkey-endpoint-control](CATALOG.md#img-colorkey-endpoint-control) — pass; owner unresolved.
+- [img-colorkey-endpoint-stored-red](CATALOG.md#img-colorkey-endpoint-stored-red) — pass; owner unresolved.
+- [img-colorkey-endpoint-stored-red-magenta-range](CATALOG.md#img-colorkey-endpoint-stored-red-magenta-range) — pass; owner unresolved.
 
 ## OneImage.Pdf/bridge-integration
 
@@ -275,7 +275,7 @@ Cross-tags describe pipeline participation, not proven root-cause ownership. Cas
 - [img-gray2-packed-padding](CATALOG.md#img-gray2-packed-padding) — pass; owner unresolved.
 - [img-gray4-inverted-decode](CATALOG.md#img-gray4-inverted-decode) — pass; owner unresolved.
 - [img-gray8-restricted-decode](CATALOG.md#img-gray8-restricted-decode) — pass; owner unresolved.
-- [img-rgb8-channel-decode](CATALOG.md#img-rgb8-channel-decode) — mismatch; owner unresolved.
+- [img-rgb8-channel-decode](CATALOG.md#img-rgb8-channel-decode) — generated; owner unresolved.
 - [img-indexed2-lookup-padding](CATALOG.md#img-indexed2-lookup-padding) — pass; owner unresolved.
 - [img-indexed4-reversed-decode](CATALOG.md#img-indexed4-reversed-decode) — pass; owner unresolved.
 - [img-rgb16-big-endian](CATALOG.md#img-rgb16-big-endian) — pass; owner unresolved.
@@ -309,10 +309,10 @@ Cross-tags describe pipeline participation, not proven root-cause ownership. Cas
 - [alpha-fill-endpoints](CATALOG.md#alpha-fill-endpoints) — pass; owner unresolved.
 - [alpha-stroke-endpoints](CATALOG.md#alpha-stroke-endpoints) — pass; owner unresolved.
 - [alpha-ca-state-restore](CATALOG.md#alpha-ca-state-restore) — pass; owner unresolved.
-- [alpha-fill-fraction06](CATALOG.md#alpha-fill-fraction06) — mismatch; owner unresolved.
-- [alpha-stroke-fraction06](CATALOG.md#alpha-stroke-fraction06) — mismatch; owner unresolved.
-- [alpha-fill-fraction025](CATALOG.md#alpha-fill-fraction025) — mismatch; owner unresolved.
-- [alpha-stroke-fraction025](CATALOG.md#alpha-stroke-fraction025) — mismatch; owner unresolved.
+- [alpha-fill-fraction06](CATALOG.md#alpha-fill-fraction06) — generated; owner unresolved.
+- [alpha-stroke-fraction06](CATALOG.md#alpha-stroke-fraction06) — generated; owner unresolved.
+- [alpha-fill-fraction025](CATALOG.md#alpha-fill-fraction025) — generated; owner unresolved.
+- [alpha-stroke-fraction025](CATALOG.md#alpha-stroke-fraction025) — generated; owner unresolved.
 - [resource-category-page](CATALOG.md#resource-category-page) — pass; owner unresolved.
 - [resource-category-page-form](CATALOG.md#resource-category-page-form) — pass; owner unresolved.
 - [resource-category-sibling-forms](CATALOG.md#resource-category-sibling-forms) — pass; owner unresolved.
@@ -332,19 +332,19 @@ Cross-tags describe pipeline participation, not proven root-cause ownership. Cas
 - [img-colorkey-bg-control](CATALOG.md#img-colorkey-bg-control) — pass; owner unresolved.
 - [img-colorkey-bg-exact](CATALOG.md#img-colorkey-bg-exact) — pass; owner unresolved.
 - [img-colorkey-bg-range](CATALOG.md#img-colorkey-bg-range) — pass; owner unresolved.
-- [mediabox-inherit-root](CATALOG.md#mediabox-inherit-root) — agreed; owner unresolved.
-- [mediabox-explicit-page](CATALOG.md#mediabox-explicit-page) — agreed; owner unresolved.
-- [mediabox-sibling-root-before](CATALOG.md#mediabox-sibling-root-before) — agreed; owner unresolved.
-- [mediabox-nearest-ancestor](CATALOG.md#mediabox-nearest-ancestor) — agreed; owner unresolved.
-- [mediabox-sibling-root-after](CATALOG.md#mediabox-sibling-root-after) — agreed; owner unresolved.
-- [textquote-single-equivalent](CATALOG.md#textquote-single-equivalent) — agreed; owner unresolved.
-- [textquote-double-equivalent](CATALOG.md#textquote-double-equivalent) — agreed; owner unresolved.
-- [textquote-spacing-persists](CATALOG.md#textquote-spacing-persists) — agreed; owner unresolved.
-- [textquote-shift-and-object-state](CATALOG.md#textquote-shift-and-object-state) — agreed; owner unresolved.
+- [mediabox-inherit-root](CATALOG.md#mediabox-inherit-root) — pass; owner unresolved.
+- [mediabox-explicit-page](CATALOG.md#mediabox-explicit-page) — pass; owner unresolved.
+- [mediabox-sibling-root-before](CATALOG.md#mediabox-sibling-root-before) — pass; owner unresolved.
+- [mediabox-nearest-ancestor](CATALOG.md#mediabox-nearest-ancestor) — pass; owner unresolved.
+- [mediabox-sibling-root-after](CATALOG.md#mediabox-sibling-root-after) — pass; owner unresolved.
+- [textquote-single-equivalent](CATALOG.md#textquote-single-equivalent) — pass; owner unresolved.
+- [textquote-double-equivalent](CATALOG.md#textquote-double-equivalent) — pass; owner unresolved.
+- [textquote-spacing-persists](CATALOG.md#textquote-spacing-persists) — pass; owner unresolved.
+- [textquote-shift-and-object-state](CATALOG.md#textquote-shift-and-object-state) — pass; owner unresolved.
 - [img-colorkey-decode-opaque](CATALOG.md#img-colorkey-decode-opaque) — generated; owner unresolved.
 - [img-colorkey-decode-stored-key](CATALOG.md#img-colorkey-decode-stored-key) — generated; owner unresolved.
 - [img-colorkey-decode-decoded-key-control](CATALOG.md#img-colorkey-decode-decoded-key-control) — generated; owner unresolved.
 - [img-colorkey-decode-stored-range](CATALOG.md#img-colorkey-decode-stored-range) — generated; owner unresolved.
-- [img-colorkey-endpoint-control](CATALOG.md#img-colorkey-endpoint-control) — agreed; owner unresolved.
-- [img-colorkey-endpoint-stored-red](CATALOG.md#img-colorkey-endpoint-stored-red) — agreed; owner unresolved.
-- [img-colorkey-endpoint-stored-red-magenta-range](CATALOG.md#img-colorkey-endpoint-stored-red-magenta-range) — agreed; owner unresolved.
+- [img-colorkey-endpoint-control](CATALOG.md#img-colorkey-endpoint-control) — pass; owner unresolved.
+- [img-colorkey-endpoint-stored-red](CATALOG.md#img-colorkey-endpoint-stored-red) — pass; owner unresolved.
+- [img-colorkey-endpoint-stored-red-magenta-range](CATALOG.md#img-colorkey-endpoint-stored-red-magenta-range) — pass; owner unresolved.

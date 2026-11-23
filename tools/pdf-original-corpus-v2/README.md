@@ -1,18 +1,22 @@
 # Original PDF behavior corpus
 
-One canonical fixture root, `tests/testdata/pdf-original-v2`, follows verified ISO 32000-2:2020 headings. PDFs and selected goldens live under their focused clauses. The generated catalog and subsystem view point to those same assets. Each page-view case has named assertions and explicit settings; a multipage PDF is stored once.
+One canonical fixture root, `tests/testdata/pdf-original-v2`, follows verified ISO 32000-2:2020 headings. Original PDFs, selected goldens and independent captures live under focused clauses. Catalog and subsystem views point to those same assets. Page-view cases have explicit settings and named assertions; multipage PDFs are stored once.
 
-Current v2 corpus: **66 unique PDFs, 68 page views**. Independently agreed: **61 PDFs / 63 views**. Five PDFs/views remain held. There are 126 selected expected PNG paths (110 byte-unique) and 408 independent capture paths (360 byte-unique). The fourth batch adds 10 unique originals, 12 views, 72 agreed references and 24 expected-image paths.
+Current v2 corpus: **80 unique PDFs, 84 page views**. Reference-agreed: **71 PDFs / 75 views**. Nine PDFs/views remain held. There are 150 selected expected PNG paths (130 byte-unique) and 504 independent capture paths (444 byte-unique).
 
-A fresh full replay produced 394 reference passes and 14 registered disagreements, with 0 skips and 408 byte-identical captures. All66 originals regenerate byte-identically. Product comparison passed 126/126 declared masks; strict results are 125 passes and 1 preserved round-cap boundary mismatch;10 held variants were skipped. All 24 new variants passed 392 named assertions and 152,520 scored pixels. A second product run after lossless routing JSON compaction reproduced all 126 images byte-for-byte.
+The fifth batch adds 14 original PDFs / 16 views. Page-attribute inheritance and quote operators add 7 PDFs / 9 views. Three endpoint-only colour-key Decode controls also agree. Four non-endpoint reversed-Decode PDFs remain held. New reference results: 96 renders, 88 passes, 8 registered disagreements, 0 skips. New product results: 24 accepted variants pass 590 named assertions and 109,270 scored pixels; 8 held variants are skipped.
 
-Agreement requires matched dimensions, exact analytic RGB and pairwise equality among the three pinned engines on predeclared interiors. Selected expected images are fresh PDFium captures only after agreement. Other pixels are unscored; product output and engine majority are never oracles. The strict point probe remains unchanged and intentionally makes the grader return nonzero. See `stroke/boundary-classification.json`.
+Fresh full replay: 504 renders, 482 passes, 22 registered disagreements, 0 skips; every capture is byte-identical to its committed counterpart. All 80 PDFs regenerate byte-identically. Product: 150/150 declared masks pass; strict checks 149 pass/1 preserved round-cap boundary failure; 18 held variants skipped. Ledger stages: 74 strict-pass views, 1 mismatch view, 9 held/generated views. These are original semantic cases, not upstream suite passes.
 
-All four fractional alpha cases remain held: source-backed implementation models explain rounding differences without establishing a normative ISO byte oracle. The prior RGB8 Decode case remains held too. See `alpha-classify/README.md`. No production fix or renderer ownership is inferred.
+Agreement requires matched dimensions, exact analytic RGB and pairwise equality among pinned PDFium/PDF.js/MuPDF on predeclared interiors. Other pixels are unscored. Expected images are fresh PDFium captures selected after this agreement; product output and engine majority are never oracles.
+
+All four new non-endpoint RGB8 Decode cases are wholly held: PDFium opaque output differs by one byte from ideal complemented samples and the other engines, including an unmasked control. Reference-only classification passes 288 stored-sample mask decisions and 186 same-engine opaque/control comparisons. These earn no full-case, golden or product pass. Expectations and held originals are unchanged. The separate endpoint-only originals close none of those holds. See `colorkeydecode/classification-results.json`.
+
+The four fractional-alpha cases and prior RGB8 Decode case remain held too. Exact 8-bit output rounding is an observed raster acceptance rule, not a normative ISO byte requirement. The cap probe's unchanged expectation and raw strict failure remain in `stroke/boundary-classification.json`; the grader intentionally returns nonzero. No renderer ownership, production defect or fix is inferred.
 
 ## Reproduce
 
-Use Python 3.12, Node 24.22.3 and .NET SDK 10.0.404. Reference versions are PDFium 153.0.7999.0/pypdfium2 5.13.0, PDF.js 6.5.438/build0a4153349 with @napi-rs/canvas 1.1.1, and MuPDF 1.26.11/PyMuPDF 1.26.6. Install isolated reference dependencies:
+Use Python 3.12, Node 24.22.3 and .NET SDK 10.0.404. References are PDFium 153.0.7999.0/pypdfium2 5.13.0, MuPDF 1.26.11/PyMuPDF 1.26.6, and PDF.js 6.5.438/build0a4153349 with @napi-rs/canvas 1.1.1. Install reference-only dependencies in isolation:
 
 ```sh
 python -m pip install -r tools/pdf-original-corpus-v2/requirements.txt
@@ -23,29 +27,21 @@ python tools/pdf-original-corpus-v2/pipeline.py catalog
 python tools/pdf-original-corpus-v2/pipeline.py references --pdfjs tools/pdf-original-corpus-v2/node_modules/pdfjs-dist --output /tmp/new-pdf-references
 ```
 
-`family-routes.json` declares generators and reference steps. Generation uses temporary directories and checks canonical PDF hashes. Verification checks capture hashes, analytic masks, pairwise agreement, actual page indices and registered holds; duplicated canonical PDF bytes are rejected. Fresh captures use a new output directory and never promote or overwrite goldens automatically.
+`family-routes.json` declares generators/reference steps. `routes.json` references canonical family manifests; `routing-manifest-proof.json` proves all 84 resolved cases unchanged. Legacy inline records remain supported. Verification checks capture hashes, analytic masks, engine pairs, page indices and registered holds; duplicate canonical PDF bytes are rejected. Fresh captures use a new output directory and never promote or overwrite goldens automatically.
 
 ```sh
 dotnet build tools/PdfRender/PdfRender.csproj -c Release -m:1 -p:UseSharedCompilation=false
 python tools/pdf-original-corpus-v2/pipeline.py grade --renderer-dll /absolute/artifacts/bin/PdfRender/release/OneImage.PdfRender.dll --acceptance-commit ACCEPTANCE_COMMIT --source-head EXACT_PRODUCT_SOURCE_SHA --output /tmp/new-pdf-product
 ```
 
-The grader verifies committed original/golden bytes before product execution and selects the case's actual page. Use remote acceptance `6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0`, tree `6e44219885322baa1f75d462e44ba16c60a775fe`, identical to local pre-grading acceptance `0a56d97e3721cf28295d4a81d330bfe3a2d1e123`. The earlier local acceptance is preserved. The strict grader returns nonzero for the documented cap probe; report accepted-mask evidence separately and preserve the raw strict failure.
+The grader verifies committed original/golden bytes before running the product and selects the actual case page. Remote acceptance `b05c2197fc6a186699fcff3a94842b0b4c22c2cc`, tree `23f443626f7ff7a3ca55b708ed673228ce9f5364`, matches local pre-grading acceptance `e0461e70d5dc52f71f70ee246a7e5bd4043f8397`. Preserve the known strict nonzero result; report mask evidence separately.
 
-Measured evidence: `batch4-checkpoint.json`, `batch4-reproduction.json`, `product-batch4-strict-results.json`, `product-batch4-mask-results.json`, `batch4-product-provenance.json`. Prior batch checkpoints remain preserved. Routing/report JSON compaction changes whitespace only; `routing-format-proof.json` records parsed equivalence.
+Measured evidence: `batch5-checkpoint.json`, `batch5-reproduction.json`, `product-batch5-strict-results.json`, `product-batch5-mask-results.json`, `batch5-product-provenance.json`. Prior checkpoints/canonical assets remain preserved.
 
-The exact product baseline is OneImage main `eb47d5a0155bdb38f6fc7b08a5fa7279fd004a12` with declared OnePDF/Fonts 1.18.0 packages. All five managed assembly hashes match the prior recorded build. No fresh build, unmerged OnePDF fork head, AOT/WASM/Windows gate or patch-stack validation is claimed. Existing merge gates remain.
+Exact product baseline: OneImage main `eb47d5a0155bdb38f6fc7b08a5fa7279fd004a12` with declared OnePDF/Fonts 1.18.0 packages. Five managed assembly hashes match the previous recorded build. No fresh build, unmerged OnePDF fork head or patch-stack validation is claimed; AOT/WASM/platform merge gates remain unchanged.
 
-The 2811 upstream rows are inventory: 0 upstream inputs executed and 0 IDs mapped/credited. `batch4-mapping-review.json` records missing exact scene/route evidence. New cases are independently authored standard-derived semantics; they do not approximate arbitrary upstream files. Full standard-rule enumeration remains incomplete. Verified 2020 headings/cross-references and unavailable fine-text limits are explicit; PDF 1.7 originals use separately verified 2008 governing clauses. The font is our own MIT Type 3 design, with no external font bytes; positioning evidence does not establish native text weight.
+The bounded metadata review manually inspected 8 entries using 3 public lookups. There are 0 exact current matches/associations and 0 upstream inputs executed or IDs credited. The 2811 rows remain inventory. `upstreammatch5/metadata-review.json` records precise gaps: indirect boxes are described but indirection form/pages/settings and current inheritance-scene correspondence are unqualified. The indirect-box behavior is a separate unclaimed proposal. Full standard-rule enumeration remains incomplete.
 
-No borrowed/private fixtures, goldens or fonts, known vulnerability/crash reproductions, private patches, production changes, merges, releases, workflow or settings changes. WebView speed, Windows, speech and full-suite parity remain untested here.
+Storage uses verified 2020 headings/cross-references with fine-text access limits recorded. PDF 1.7 originals retain verified 2008 governing clauses. Our reused Type 3 font has no external font bytes and tests positioning, not native weight. No borrowed/private fixtures or goldens, known vulnerability/crash reproductions, private patches, production changes, merges, releases, workflow or settings changes. No Windows, WebView-speed, native-font-weight, speech or full-suite parity claim.
 
-Checkpoint attestation: Codex, 2026-11-23 UTC. New original sources and assets MIT. GitHub API commits are unsigned; Signed-off-by is an authorship attestation, not a cryptographic signature.
-
-## Fifth batch before product grading
-
-Adds14 unique original PDFs and16 page-view cases. Twelve views agree across the three references; four non-endpoint reversed-Decode cases are held because opaque RGB differs by one byte in PDFium. Separate endpoint-only controls agree without altering the held originals. The new96 reference renders have88 passes and8 registered disagreements; no skips. No new product result is claimed yet.
-
-The routing index now points to canonical family manifests instead of repeating them. `routing-manifest-proof.json` proves the resolved84 cases are identical; legacy inline routes remain supported. Full verification reports80 unique PDFs,84 views,71 agreed PDFs/75 agreed views,9 held views,504 captures with482 passes/22 known disagreements. All80 PDFs regenerate byte-identically.
-
-The bounded metadata review inspected8 selected entries with3 public lookups; no exact current match, association or upstream credit was established. The indirect-box description is a separate unclaimed proposal with explicit source-scope gaps.
+Checkpoint attestation: Codex, 2026-11-23 UTC. New original sources/assets MIT. GitHub API commits are unsigned; Signed-off-by is an authorship attestation, not a cryptographic signature.

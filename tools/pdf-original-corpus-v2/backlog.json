@@ -4,7 +4,7 @@
   "completion_rule": "Every applicable scoped semanticrule has committed independentlyvalidatedfixture+assertion or explicitreviewedexception; inventory completion is not behavior completion",
   "scope_limit": "Initial manuallyscopedordinaryvisualrules only; fullstandard ruleenumeration incomplete pendingfull2020text and furthermanualqualification; no claim everyapplicablePDFbehaviorislisted",
   "recovery_rule": "ReadthisbacklogandGitHEAD; verifypriorcheckpoint;claimoneunclaimeddisjointslice; neverrerunblockedAOTIPC; checkpointblockedreasonandcontinueindependenteligible work; no newapprovalneededwithin authorizedscope",
-  "current_publication": "Continuation from draft94 head1cd8573f84a52941723475ae1792f54b259343b0; fifth batch preproduct acceptance",
+  "current_publication": "Verified draft94 acceptance b05c2197fc6a186699fcff3a94842b0b4c22c2cc; measured fifth-batch evidence follows",
   "slices": [
     {
       "slice_id": "ISO-FILTER-BASE-01",
@@ -74,7 +74,7 @@
       "slice_id": "ISO-PAGE-ATTRIBUTE-INHERIT-01",
       "iso_2020_order": "07.07.03.04",
       "verified_coarse_title": "Inheritance of page attributes (cross-reference; finer2020 text pending)",
-      "state": "reference-scored-awaiting-commit-and-product",
+      "state": "complete-product-mask-and-named-assertions-pass",
       "owner": "mozilla_originals",
       "case_ids": [
         "mediabox-inherit-root",
@@ -94,7 +94,8 @@
         "mediabox-sibling-root-after"
       ],
       "held_cases": [],
-      "unique_pdfs": 3
+      "unique_pdfs": 3,
+      "evidence": "product-batch5-strict-results.json"
     },
     {
       "slice_id": "ISO-PAGE-ATTRIBUTE-INHERIT-02",
@@ -375,7 +376,7 @@
       "slice_id": "ISO-IMAGE-COLORKEY-DECODE-03",
       "iso_2020_order": "08.09.06.04",
       "verified_coarse_title": "Colour key masking (verified cross-reference)",
-      "state": "reference-scored-awaiting-commit-and-product",
+      "state": "endpoint-cases-pass-nonendpoint-reference-held",
       "owner": "root",
       "case_ids": [
         "img-colorkey-decode-opaque",
@@ -400,7 +401,9 @@
         "img-colorkey-decode-decoded-key-control",
         "img-colorkey-decode-stored-range"
       ],
-      "unique_pdfs": 7
+      "unique_pdfs": 7,
+      "evidence": "colorkeydecode/classification-results.json",
+      "exception": "Three endpoint-only full cases pass; four non-endpoint full cases remain held without goldens/product grades"
     },
     {
       "slice_id": "ISO-TEXT-POSITION-01",
@@ -489,7 +492,7 @@
       "slice_id": "ISO-TEXT-QUOTE-01",
       "iso_2020_order": "09.04.03",
       "verified_coarse_title": "Text-showing operators (heading to reverify before assignment)",
-      "state": "reference-scored-awaiting-commit-and-product",
+      "state": "complete-product-mask-and-named-assertions-pass",
       "owner": "pdfium_originals",
       "case_ids": [
         "textquote-single-equivalent",
@@ -507,7 +510,8 @@
         "textquote-shift-and-object-state"
       ],
       "held_cases": [],
-      "unique_pdfs": 4
+      "unique_pdfs": 4,
+      "evidence": "product-batch5-strict-results.json"
     },
     {
       "slice_id": "ISO-TRANSPARENCY-01",
@@ -561,8 +565,8 @@
       "exception": "Implementationarithmeticexplained; no normativebyteoracleor productfix;fourcasesremainheld"
     }
   ],
-  "checkpoint_state": "Three assigned disjoint slices complete:10newuniquePDFs/12pageviews/24productvariants pass; fractional alpha held; old strict boundary mismatch unchanged",
-  "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
-  "acceptance_tree": "6e44219885322baa1f75d462e44ba16c60a775fe",
+  "checkpoint_state": "Three owned slices checkpointed:12 new page views pass;4 new full cases held; no upstream credit",
+  "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
+  "acceptance_tree": "23f443626f7ff7a3ca55b708ed673228ce9f5364",
   "publication_target": "https://github.com/pepkaro/oneimage-csharp/pull/94"
 }

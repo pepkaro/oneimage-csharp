@@ -37,7 +37,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/content-interpretation",
@@ -59,12 +59,14 @@
       ],
       "review": "draft corpus review; no renderer ownership proven",
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123",
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
       "selected_reference_engine": "pdfium",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
       "committed_original": true,
-      "mismatch_stage": null
+      "mismatch_stage": null,
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "geometry-clip-intersection",
@@ -99,7 +101,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/content-interpretation",
@@ -120,12 +122,14 @@
       ],
       "review": "draft corpus review; no renderer ownership proven",
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123",
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
       "selected_reference_engine": "pdfium",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
       "committed_original": true,
-      "mismatch_stage": null
+      "mismatch_stage": null,
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "geometry-saved-clip",
@@ -160,7 +164,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/content-interpretation",
@@ -182,12 +186,14 @@
       ],
       "review": "draft corpus review; no renderer ownership proven",
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123",
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
       "selected_reference_engine": "pdfium",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
       "committed_original": true,
-      "mismatch_stage": null
+      "mismatch_stage": null,
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "geometry-clip-path-reset",
@@ -222,7 +228,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/content-interpretation",
@@ -244,12 +250,14 @@
       ],
       "review": "draft corpus review; no renderer ownership proven",
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123",
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
       "selected_reference_engine": "pdfium",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
       "committed_original": true,
-      "mismatch_stage": null
+      "mismatch_stage": null,
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "geometry-concat-order",
@@ -284,7 +292,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/content-interpretation",
@@ -306,12 +314,14 @@
       ],
       "review": "draft corpus review; no renderer ownership proven",
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123",
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
       "selected_reference_engine": "pdfium",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
       "committed_original": true,
-      "mismatch_stage": null
+      "mismatch_stage": null,
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "geometry-cropbox-offset",
@@ -346,7 +356,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/page-resources",
@@ -367,12 +377,14 @@
       ],
       "review": "draft corpus review; no renderer ownership proven",
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123",
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
       "selected_reference_engine": "pdfium",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
       "committed_original": true,
-      "mismatch_stage": null
+      "mismatch_stage": null,
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "geometry-rotate-90",
@@ -407,7 +419,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/page-resources",
@@ -427,12 +439,14 @@
       ],
       "review": "draft corpus review; no renderer ownership proven",
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123",
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
       "selected_reference_engine": "pdfium",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
       "committed_original": true,
-      "mismatch_stage": null
+      "mismatch_stage": null,
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "geometry-user-unit-2",
@@ -467,7 +481,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/page-resources",
@@ -488,12 +502,14 @@
       ],
       "review": "draft corpus review; no renderer ownership proven",
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123",
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
       "selected_reference_engine": "pdfium",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
       "committed_original": true,
-      "mismatch_stage": null
+      "mismatch_stage": null,
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "img-gray2-packed-padding",
@@ -528,7 +544,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/image-color-decoding",
@@ -557,12 +573,14 @@
       ],
       "review": "draft corpus review; no renderer ownership proven",
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123",
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
       "selected_reference_engine": "mupdf",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
       "committed_original": true,
-      "mismatch_stage": null
+      "mismatch_stage": null,
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "img-gray4-inverted-decode",
@@ -597,7 +615,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/image-color-decoding",
@@ -630,12 +648,14 @@
       ],
       "review": "draft corpus review; no renderer ownership proven",
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123",
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
       "selected_reference_engine": "mupdf",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
       "committed_original": true,
-      "mismatch_stage": null
+      "mismatch_stage": null,
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "img-gray8-restricted-decode",
@@ -670,7 +690,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/image-color-decoding",
@@ -696,12 +716,14 @@
       ],
       "review": "draft corpus review; no renderer ownership proven",
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123",
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
       "selected_reference_engine": "mupdf",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
       "committed_original": true,
-      "mismatch_stage": null
+      "mismatch_stage": null,
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "img-rgb8-channel-decode",
@@ -725,11 +747,15 @@
       "expected_images": [],
       "source_case_ids": [],
       "associations": [],
-      "stage": "mismatch",
+      "stage": "generated",
       "reference_status": "mismatch",
       "assertion": "exact RGB on independently declared interiors; dimensions exact; outside mask unscored",
       "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
-      "product_result": "not-executed-reference-disagreement",
+      "product_result": {
+        "executed": 0,
+        "skipped": 2,
+        "reason": "Reference-disputed full case; no agreed golden"
+      },
       "subsystems": [
         "OnePDF/image-color-decoding",
         "OneImage.Pdf/bridge-integration",
@@ -756,7 +782,8 @@
       "selected_reference_engine": null,
       "committed_original": true,
       "mismatch_stage": "reference",
-      "acceptance_commit_remote": "30c3fce95e2a6c62b9b39fef8914423c5cb9e849"
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "img-indexed2-lookup-padding",
@@ -791,7 +818,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/image-color-decoding",
@@ -826,12 +853,14 @@
       ],
       "review": "draft corpus review; no renderer ownership proven",
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123",
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
       "selected_reference_engine": "mupdf",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
       "committed_original": true,
-      "mismatch_stage": null
+      "mismatch_stage": null,
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "img-indexed4-reversed-decode",
@@ -866,7 +895,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/image-color-decoding",
@@ -893,12 +922,14 @@
       ],
       "review": "draft corpus review; no renderer ownership proven",
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123",
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
       "selected_reference_engine": "mupdf",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
       "committed_original": true,
-      "mismatch_stage": null
+      "mismatch_stage": null,
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "img-rgb16-big-endian",
@@ -933,7 +964,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/image-color-decoding",
@@ -958,12 +989,14 @@
       ],
       "review": "draft corpus review; no renderer ownership proven",
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123",
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
       "selected_reference_engine": "mupdf",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
       "committed_original": true,
-      "mismatch_stage": null
+      "mismatch_stage": null,
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "img-rgb8-mirrored-placement",
@@ -998,7 +1031,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/image-color-decoding",
@@ -1021,12 +1054,14 @@
       ],
       "review": "draft corpus review; no renderer ownership proven",
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123",
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
       "selected_reference_engine": "mupdf",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
       "committed_original": true,
-      "mismatch_stage": null
+      "mismatch_stage": null,
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "stroke-cap-butt",
@@ -1069,7 +1104,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/content-interpretation",
@@ -1082,11 +1117,13 @@
       "secondary_clause_tags": [],
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "selected_reference_engine": "pdfium",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "stroke-cap-round",
@@ -1129,7 +1166,7 @@
         "strict_executed": 2,
         "strict_passed": 1,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/content-interpretation",
@@ -1142,11 +1179,13 @@
       "secondary_clause_tags": [],
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "selected_reference_engine": "pdfium",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
       "committed_original": true,
       "mismatch_stage": "out-of-mask-compatibility-probe",
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "stroke-cap-projecting-square",
@@ -1189,7 +1228,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/content-interpretation",
@@ -1202,11 +1241,13 @@
       "secondary_clause_tags": [],
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "selected_reference_engine": "pdfium",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "img-filter-equivalence-raw",
@@ -1262,7 +1303,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/object-xref-streams",
@@ -1280,11 +1321,13 @@
       ],
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "selected_reference_engine": "pdfium",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "img-filter-equivalence-flate",
@@ -1340,7 +1383,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/object-xref-streams",
@@ -1358,11 +1401,13 @@
       ],
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "selected_reference_engine": "pdfium",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "img-filter-equivalence-runlength",
@@ -1418,7 +1463,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/object-xref-streams",
@@ -1436,11 +1481,13 @@
       ],
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "selected_reference_engine": "pdfium",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "stroke-join-miter",
@@ -1483,7 +1530,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/content-interpretation",
@@ -1496,11 +1543,13 @@
       "secondary_clause_tags": [],
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "selected_reference_engine": "pdfium",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "stroke-join-round",
@@ -1543,7 +1592,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/content-interpretation",
@@ -1556,11 +1605,13 @@
       "secondary_clause_tags": [],
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "selected_reference_engine": "pdfium",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "stroke-join-bevel",
@@ -1603,7 +1654,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/content-interpretation",
@@ -1616,11 +1667,13 @@
       "secondary_clause_tags": [],
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "selected_reference_engine": "pdfium",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "img-predictor-none",
@@ -1678,7 +1731,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/object-xref-streams",
@@ -1696,11 +1749,13 @@
       ],
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "selected_reference_engine": "pdfium",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "img-predictor-tiff-sub",
@@ -1758,7 +1813,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/object-xref-streams",
@@ -1776,11 +1831,13 @@
       ],
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "selected_reference_engine": "pdfium",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "img-predictor-png-sub",
@@ -1838,7 +1895,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/object-xref-streams",
@@ -1856,11 +1913,13 @@
       ],
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "selected_reference_engine": "pdfium",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "img-predictor-png-up",
@@ -1918,7 +1977,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/object-xref-streams",
@@ -1936,11 +1995,13 @@
       ],
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "selected_reference_engine": "pdfium",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "stroke-dash-pair-phase0",
@@ -1983,7 +2044,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/content-interpretation",
@@ -1996,11 +2057,13 @@
       "secondary_clause_tags": [],
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "selected_reference_engine": "pdfium",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "stroke-dash-pair-phase5",
@@ -2043,7 +2106,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/content-interpretation",
@@ -2056,11 +2119,13 @@
       "secondary_clause_tags": [],
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "selected_reference_engine": "pdfium",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "stroke-dash-four-phase2",
@@ -2103,7 +2168,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/content-interpretation",
@@ -2116,11 +2181,13 @@
       "secondary_clause_tags": [],
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "selected_reference_engine": "pdfium",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "img-colorkey-control",
@@ -2178,7 +2245,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/object-xref-streams",
@@ -2196,11 +2263,13 @@
       ],
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "selected_reference_engine": "pdfium",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "img-colorkey-exact",
@@ -2258,7 +2327,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/object-xref-streams",
@@ -2276,11 +2345,13 @@
       ],
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "selected_reference_engine": "pdfium",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "img-colorkey-range",
@@ -2338,7 +2409,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/object-xref-streams",
@@ -2356,11 +2427,13 @@
       ],
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "selected_reference_engine": "pdfium",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "resource-page-form-isolation",
@@ -2403,7 +2476,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/page-resources",
@@ -2421,10 +2494,12 @@
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
       "selected_reference_engine": "pdfium",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "resource-sibling-form-isolation",
@@ -2467,7 +2542,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/page-resources",
@@ -2485,10 +2560,12 @@
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
       "selected_reference_engine": "pdfium",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "resource-nested-form-restoration",
@@ -2531,7 +2608,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/page-resources",
@@ -2549,10 +2626,12 @@
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
       "selected_reference_engine": "pdfium",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "text-td-line-origin",
@@ -2610,7 +2689,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/font-text-interpretation",
@@ -2629,10 +2708,12 @@
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
       "selected_reference_engine": "pdfium",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "text-tc-tw-spacing",
@@ -2700,7 +2781,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/font-text-interpretation",
@@ -2720,10 +2801,12 @@
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
       "selected_reference_engine": "pdfium",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "text-tj-signed-adjustment",
@@ -2775,7 +2858,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/font-text-interpretation",
@@ -2794,10 +2877,12 @@
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
       "selected_reference_engine": "pdfium",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "text-tm-rotate-replace",
@@ -2855,7 +2940,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/font-text-interpretation",
@@ -2874,10 +2959,12 @@
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
       "selected_reference_engine": "pdfium",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "alpha-fill-endpoints",
@@ -2917,7 +3004,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/content-interpretation",
@@ -2935,10 +3022,12 @@
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
       "selected_reference_engine": "pdfium",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "alpha-stroke-endpoints",
@@ -2979,7 +3068,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/content-interpretation",
@@ -2997,10 +3086,12 @@
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
       "selected_reference_engine": "pdfium",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "alpha-ca-state-restore",
@@ -3040,7 +3131,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/content-interpretation",
@@ -3060,10 +3151,12 @@
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
       "selected_reference_engine": "pdfium",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "alpha-fill-fraction06",
@@ -3087,7 +3180,7 @@
       "expected_images": [],
       "source_case_ids": [],
       "associations": [],
-      "stage": "mismatch",
+      "stage": "generated",
       "reference_status": "mismatch",
       "assertion": "ExactRGB on independent authored interiors; exact dimensions; boundaries unscored",
       "assertion_ids": [
@@ -3096,7 +3189,11 @@
         "paper"
       ],
       "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
-      "product_result": "not-executed-reference-disagreement",
+      "product_result": {
+        "executed": 0,
+        "skipped": 2,
+        "reason": "Reference-disputed full case; no agreed golden"
+      },
       "subsystems": [
         "OnePDF/content-interpretation",
         "OneImage.Pdf/bridge-integration",
@@ -3118,7 +3215,8 @@
       "alpha_classification": "Source-backedintegerroutepredictionmatchesall24capturesand138240interiorpixels; directCanvasisolatesPDF.jsbackend",
       "classification_evidence": "tools/pdf-original-corpus-v2/alpha-classify/classification-results.json",
       "normative_pixel_oracle": false,
-      "acceptance_commit_remote": "30c3fce95e2a6c62b9b39fef8914423c5cb9e849"
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "alpha-stroke-fraction06",
@@ -3142,7 +3240,7 @@
       "expected_images": [],
       "source_case_ids": [],
       "associations": [],
-      "stage": "mismatch",
+      "stage": "generated",
       "reference_status": "mismatch",
       "assertion": "ExactRGB on independent authored interiors; exact dimensions; boundaries unscored",
       "assertion_ids": [
@@ -3151,7 +3249,11 @@
         "paper"
       ],
       "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
-      "product_result": "not-executed-reference-disagreement",
+      "product_result": {
+        "executed": 0,
+        "skipped": 2,
+        "reason": "Reference-disputed full case; no agreed golden"
+      },
       "subsystems": [
         "OnePDF/content-interpretation",
         "OneImage.Pdf/bridge-integration",
@@ -3173,7 +3275,8 @@
       "alpha_classification": "Source-backedintegerroutepredictionmatchesall24capturesand138240interiorpixels; directCanvasisolatesPDF.jsbackend",
       "classification_evidence": "tools/pdf-original-corpus-v2/alpha-classify/classification-results.json",
       "normative_pixel_oracle": false,
-      "acceptance_commit_remote": "30c3fce95e2a6c62b9b39fef8914423c5cb9e849"
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "alpha-fill-fraction025",
@@ -3197,7 +3300,7 @@
       "expected_images": [],
       "source_case_ids": [],
       "associations": [],
-      "stage": "mismatch",
+      "stage": "generated",
       "reference_status": "mismatch",
       "assertion": "ExactRGB on independent authored interiors; exact dimensions; boundaries unscored",
       "assertion_ids": [
@@ -3206,7 +3309,11 @@
         "paper"
       ],
       "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
-      "product_result": "not-executed-reference-disagreement",
+      "product_result": {
+        "executed": 0,
+        "skipped": 2,
+        "reason": "Reference-disputed full case; no agreed golden"
+      },
       "subsystems": [
         "OnePDF/content-interpretation",
         "OneImage.Pdf/bridge-integration",
@@ -3228,7 +3335,8 @@
       "alpha_classification": "Source-backedintegerroutepredictionmatchesall24capturesand138240interiorpixels; directCanvasisolatesPDF.jsbackend",
       "classification_evidence": "tools/pdf-original-corpus-v2/alpha-classify/classification-results.json",
       "normative_pixel_oracle": false,
-      "acceptance_commit_remote": "30c3fce95e2a6c62b9b39fef8914423c5cb9e849"
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "alpha-stroke-fraction025",
@@ -3252,7 +3360,7 @@
       "expected_images": [],
       "source_case_ids": [],
       "associations": [],
-      "stage": "mismatch",
+      "stage": "generated",
       "reference_status": "mismatch",
       "assertion": "ExactRGB on independent authored interiors; exact dimensions; boundaries unscored",
       "assertion_ids": [
@@ -3261,7 +3369,11 @@
         "paper"
       ],
       "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
-      "product_result": "not-executed-reference-disagreement",
+      "product_result": {
+        "executed": 0,
+        "skipped": 2,
+        "reason": "Reference-disputed full case; no agreed golden"
+      },
       "subsystems": [
         "OnePDF/content-interpretation",
         "OneImage.Pdf/bridge-integration",
@@ -3283,7 +3395,8 @@
       "alpha_classification": "Source-backedintegerroutepredictionmatchesall24capturesand138240interiorpixels; directCanvasisolatesPDF.jsbackend",
       "classification_evidence": "tools/pdf-original-corpus-v2/alpha-classify/classification-results.json",
       "normative_pixel_oracle": false,
-      "acceptance_commit_remote": "30c3fce95e2a6c62b9b39fef8914423c5cb9e849"
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "resource-category-page",
@@ -3326,7 +3439,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/page-resources",
@@ -3347,8 +3460,10 @@
       "selected_reference_engine": "pdfium",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "resource-category-page-form",
@@ -3391,7 +3506,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/page-resources",
@@ -3412,8 +3527,10 @@
       "selected_reference_engine": "pdfium",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "resource-category-sibling-forms",
@@ -3456,7 +3573,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/page-resources",
@@ -3477,8 +3594,10 @@
       "selected_reference_engine": "pdfium",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "textscale-tz-shape-advance",
@@ -3536,7 +3655,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/font-text-interpretation",
@@ -3557,8 +3676,10 @@
       "selected_reference_engine": "pdfium",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "textscale-ts-baselines",
@@ -3626,7 +3747,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/font-text-interpretation",
@@ -3647,8 +3768,10 @@
       "selected_reference_engine": "pdfium",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "textscale-tz-spacing",
@@ -3706,7 +3829,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/font-text-interpretation",
@@ -3728,8 +3851,10 @@
       "selected_reference_engine": "pdfium",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "textscale-tz-tj-rise",
@@ -3795,7 +3920,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/font-text-interpretation",
@@ -3818,8 +3943,10 @@
       "selected_reference_engine": "pdfium",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "resource-inherit-root",
@@ -3864,7 +3991,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/page-resources",
@@ -3885,8 +4012,10 @@
       "selected_reference_engine": "pdfium",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "resource-explicit-page",
@@ -3931,7 +4060,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/page-resources",
@@ -3952,8 +4081,10 @@
       "selected_reference_engine": "pdfium",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "resource-sibling-root-before",
@@ -3998,7 +4129,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/page-resources",
@@ -4019,8 +4150,10 @@
       "selected_reference_engine": "pdfium",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "resource-nearest-ancestor",
@@ -4065,7 +4198,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/page-resources",
@@ -4086,8 +4219,10 @@
       "selected_reference_engine": "pdfium",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "resource-sibling-root-after",
@@ -4132,7 +4267,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/page-resources",
@@ -4153,8 +4288,10 @@
       "selected_reference_engine": "pdfium",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "textleading-tl-nextline",
@@ -4224,7 +4361,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/font-text-interpretation",
@@ -4245,8 +4382,10 @@
       "selected_reference_engine": "pdfium",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "textleading-td-sets-leading",
@@ -4316,7 +4455,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/font-text-interpretation",
@@ -4337,8 +4476,10 @@
       "selected_reference_engine": "pdfium",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "textleading-td-preserves-leading",
@@ -4408,7 +4549,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/font-text-interpretation",
@@ -4429,8 +4570,10 @@
       "selected_reference_engine": "pdfium",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "textleading-bt-reset-leading-persists",
@@ -4500,7 +4643,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/font-text-interpretation",
@@ -4522,8 +4665,10 @@
       "selected_reference_engine": "pdfium",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "img-colorkey-bg-control",
@@ -4576,7 +4721,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/image-color-decoding",
@@ -4598,8 +4743,10 @@
       "selected_reference_engine": "pdfium",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "img-colorkey-bg-exact",
@@ -4652,7 +4799,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/image-color-decoding",
@@ -4674,8 +4821,10 @@
       "selected_reference_engine": "pdfium",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "img-colorkey-bg-range",
@@ -4728,7 +4877,7 @@
         "strict_executed": 2,
         "strict_passed": 2,
         "mask_passed": 2,
-        "evidence": "tools/pdf-original-corpus-v2/product-batch4-strict-results.json"
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
       },
       "subsystems": [
         "OnePDF/image-color-decoding",
@@ -4750,8 +4899,10 @@
       "selected_reference_engine": "pdfium",
       "committed_original": true,
       "mismatch_stage": null,
-      "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123",
-      "acceptance_commit_remote": "6a5d56793da8d7c3375ceb1f8554f2054f4a5ad0"
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "mediabox-inherit-root",
@@ -4780,7 +4931,7 @@
       ],
       "source_case_ids": [],
       "associations": [],
-      "stage": "agreed",
+      "stage": "pass",
       "reference_status": "three-engine-agreement-on-predeclared-interiors",
       "assertion": "Exact RGB on independent authored interiors; exact dimensions; boundaries unscored",
       "assertion_ids": [
@@ -4792,7 +4943,12 @@
         "paper-3"
       ],
       "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
-      "product_result": "not-run-before-acceptance-commit",
+      "product_result": {
+        "strict_executed": 2,
+        "strict_passed": 2,
+        "mask_passed": 2,
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
+      },
       "subsystems": [
         "OnePDF/page-resources",
         "OnePDF/content-interpretation",
@@ -4809,7 +4965,13 @@
       ],
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
-      "selected_reference_engine": "pdfium"
+      "selected_reference_engine": "pdfium",
+      "committed_original": true,
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "mismatch_stage": null,
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "mediabox-explicit-page",
@@ -4838,7 +5000,7 @@
       ],
       "source_case_ids": [],
       "associations": [],
-      "stage": "agreed",
+      "stage": "pass",
       "reference_status": "three-engine-agreement-on-predeclared-interiors",
       "assertion": "Exact RGB on independent authored interiors; exact dimensions; boundaries unscored",
       "assertion_ids": [
@@ -4850,7 +5012,12 @@
         "paper-3"
       ],
       "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
-      "product_result": "not-run-before-acceptance-commit",
+      "product_result": {
+        "strict_executed": 2,
+        "strict_passed": 2,
+        "mask_passed": 2,
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
+      },
       "subsystems": [
         "OnePDF/page-resources",
         "OnePDF/content-interpretation",
@@ -4867,7 +5034,13 @@
       ],
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
-      "selected_reference_engine": "pdfium"
+      "selected_reference_engine": "pdfium",
+      "committed_original": true,
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "mismatch_stage": null,
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "mediabox-sibling-root-before",
@@ -4896,7 +5069,7 @@
       ],
       "source_case_ids": [],
       "associations": [],
-      "stage": "agreed",
+      "stage": "pass",
       "reference_status": "three-engine-agreement-on-predeclared-interiors",
       "assertion": "Exact RGB on independent authored interiors; exact dimensions; boundaries unscored",
       "assertion_ids": [
@@ -4908,7 +5081,12 @@
         "paper-3"
       ],
       "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
-      "product_result": "not-run-before-acceptance-commit",
+      "product_result": {
+        "strict_executed": 2,
+        "strict_passed": 2,
+        "mask_passed": 2,
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
+      },
       "subsystems": [
         "OnePDF/page-resources",
         "OnePDF/content-interpretation",
@@ -4925,7 +5103,13 @@
       ],
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
-      "selected_reference_engine": "pdfium"
+      "selected_reference_engine": "pdfium",
+      "committed_original": true,
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "mismatch_stage": null,
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "mediabox-nearest-ancestor",
@@ -4954,7 +5138,7 @@
       ],
       "source_case_ids": [],
       "associations": [],
-      "stage": "agreed",
+      "stage": "pass",
       "reference_status": "three-engine-agreement-on-predeclared-interiors",
       "assertion": "Exact RGB on independent authored interiors; exact dimensions; boundaries unscored",
       "assertion_ids": [
@@ -4966,7 +5150,12 @@
         "paper-3"
       ],
       "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
-      "product_result": "not-run-before-acceptance-commit",
+      "product_result": {
+        "strict_executed": 2,
+        "strict_passed": 2,
+        "mask_passed": 2,
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
+      },
       "subsystems": [
         "OnePDF/page-resources",
         "OnePDF/content-interpretation",
@@ -4983,7 +5172,13 @@
       ],
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
-      "selected_reference_engine": "pdfium"
+      "selected_reference_engine": "pdfium",
+      "committed_original": true,
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "mismatch_stage": null,
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "mediabox-sibling-root-after",
@@ -5012,7 +5207,7 @@
       ],
       "source_case_ids": [],
       "associations": [],
-      "stage": "agreed",
+      "stage": "pass",
       "reference_status": "three-engine-agreement-on-predeclared-interiors",
       "assertion": "Exact RGB on independent authored interiors; exact dimensions; boundaries unscored",
       "assertion_ids": [
@@ -5024,7 +5219,12 @@
         "paper-3"
       ],
       "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
-      "product_result": "not-run-before-acceptance-commit",
+      "product_result": {
+        "strict_executed": 2,
+        "strict_passed": 2,
+        "mask_passed": 2,
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
+      },
       "subsystems": [
         "OnePDF/page-resources",
         "OnePDF/content-interpretation",
@@ -5041,7 +5241,13 @@
       ],
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
-      "selected_reference_engine": "pdfium"
+      "selected_reference_engine": "pdfium",
+      "committed_original": true,
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "mismatch_stage": null,
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "textquote-single-equivalent",
@@ -5070,7 +5276,7 @@
       ],
       "source_case_ids": [],
       "associations": [],
-      "stage": "agreed",
+      "stage": "pass",
       "reference_status": "three-engine-agreement-on-predeclared-interiors",
       "assertion": "Exact RGB on independent authored interiors; exact dimensions; boundaries unscored",
       "assertion_ids": [
@@ -5117,7 +5323,12 @@
         "paper"
       ],
       "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
-      "product_result": "not-run-before-acceptance-commit",
+      "product_result": {
+        "strict_executed": 2,
+        "strict_passed": 2,
+        "mask_passed": 2,
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
+      },
       "subsystems": [
         "OnePDF/font-text-interpretation",
         "OneImage.Pdf/bridge-integration",
@@ -5134,7 +5345,13 @@
       ],
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
-      "selected_reference_engine": "pdfium"
+      "selected_reference_engine": "pdfium",
+      "committed_original": true,
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "mismatch_stage": null,
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "textquote-double-equivalent",
@@ -5163,7 +5380,7 @@
       ],
       "source_case_ids": [],
       "associations": [],
-      "stage": "agreed",
+      "stage": "pass",
       "reference_status": "three-engine-agreement-on-predeclared-interiors",
       "assertion": "Exact RGB on independent authored interiors; exact dimensions; boundaries unscored",
       "assertion_ids": [
@@ -5210,7 +5427,12 @@
         "paper"
       ],
       "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
-      "product_result": "not-run-before-acceptance-commit",
+      "product_result": {
+        "strict_executed": 2,
+        "strict_passed": 2,
+        "mask_passed": 2,
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
+      },
       "subsystems": [
         "OnePDF/font-text-interpretation",
         "OneImage.Pdf/bridge-integration",
@@ -5227,7 +5449,13 @@
       ],
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
-      "selected_reference_engine": "pdfium"
+      "selected_reference_engine": "pdfium",
+      "committed_original": true,
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "mismatch_stage": null,
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "textquote-spacing-persists",
@@ -5256,7 +5484,7 @@
       ],
       "source_case_ids": [],
       "associations": [],
-      "stage": "agreed",
+      "stage": "pass",
       "reference_status": "three-engine-agreement-on-predeclared-interiors",
       "assertion": "Exact RGB on independent authored interiors; exact dimensions; boundaries unscored",
       "assertion_ids": [
@@ -5303,7 +5531,12 @@
         "paper"
       ],
       "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
-      "product_result": "not-run-before-acceptance-commit",
+      "product_result": {
+        "strict_executed": 2,
+        "strict_passed": 2,
+        "mask_passed": 2,
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
+      },
       "subsystems": [
         "OnePDF/font-text-interpretation",
         "OneImage.Pdf/bridge-integration",
@@ -5320,7 +5553,13 @@
       ],
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
-      "selected_reference_engine": "pdfium"
+      "selected_reference_engine": "pdfium",
+      "committed_original": true,
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "mismatch_stage": null,
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "textquote-shift-and-object-state",
@@ -5349,7 +5588,7 @@
       ],
       "source_case_ids": [],
       "associations": [],
-      "stage": "agreed",
+      "stage": "pass",
       "reference_status": "three-engine-agreement-on-predeclared-interiors",
       "assertion": "Exact RGB on independent authored interiors; exact dimensions; boundaries unscored",
       "assertion_ids": [
@@ -5386,7 +5625,12 @@
         "paper"
       ],
       "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
-      "product_result": "not-run-before-acceptance-commit",
+      "product_result": {
+        "strict_executed": 2,
+        "strict_passed": 2,
+        "mask_passed": 2,
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
+      },
       "subsystems": [
         "OnePDF/font-text-interpretation",
         "OneImage.Pdf/bridge-integration",
@@ -5403,7 +5647,13 @@
       ],
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
-      "selected_reference_engine": "pdfium"
+      "selected_reference_engine": "pdfium",
+      "committed_original": true,
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "mismatch_stage": null,
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "img-colorkey-decode-opaque",
@@ -5449,7 +5699,11 @@
         "paper"
       ],
       "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
-      "product_result": "withheld-reference-disagreement",
+      "product_result": {
+        "executed": 0,
+        "skipped": 2,
+        "reason": "Reference-disputed full case; no agreed golden"
+      },
       "subsystems": [
         "OnePDF/image-color-decoding",
         "OnePDF/content-interpretation",
@@ -5468,7 +5722,10 @@
       ],
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
-      "selected_reference_engine": "pdfium"
+      "selected_reference_engine": "pdfium",
+      "committed_original": true,
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "img-colorkey-decode-stored-key",
@@ -5514,7 +5771,11 @@
         "paper"
       ],
       "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
-      "product_result": "withheld-reference-disagreement",
+      "product_result": {
+        "executed": 0,
+        "skipped": 2,
+        "reason": "Reference-disputed full case; no agreed golden"
+      },
       "subsystems": [
         "OnePDF/image-color-decoding",
         "OnePDF/content-interpretation",
@@ -5533,7 +5794,10 @@
       ],
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
-      "selected_reference_engine": "pdfium"
+      "selected_reference_engine": "pdfium",
+      "committed_original": true,
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "img-colorkey-decode-decoded-key-control",
@@ -5579,7 +5843,11 @@
         "paper"
       ],
       "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
-      "product_result": "withheld-reference-disagreement",
+      "product_result": {
+        "executed": 0,
+        "skipped": 2,
+        "reason": "Reference-disputed full case; no agreed golden"
+      },
       "subsystems": [
         "OnePDF/image-color-decoding",
         "OnePDF/content-interpretation",
@@ -5598,7 +5866,10 @@
       ],
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
-      "selected_reference_engine": "pdfium"
+      "selected_reference_engine": "pdfium",
+      "committed_original": true,
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "img-colorkey-decode-stored-range",
@@ -5644,7 +5915,11 @@
         "paper"
       ],
       "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
-      "product_result": "withheld-reference-disagreement",
+      "product_result": {
+        "executed": 0,
+        "skipped": 2,
+        "reason": "Reference-disputed full case; no agreed golden"
+      },
       "subsystems": [
         "OnePDF/image-color-decoding",
         "OnePDF/content-interpretation",
@@ -5663,7 +5938,10 @@
       ],
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
-      "selected_reference_engine": "pdfium"
+      "selected_reference_engine": "pdfium",
+      "committed_original": true,
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "img-colorkey-endpoint-control",
@@ -5692,7 +5970,7 @@
       ],
       "source_case_ids": [],
       "associations": [],
-      "stage": "agreed",
+      "stage": "pass",
       "reference_status": "three-engine-agreement-on-predeclared-interiors",
       "assertion": "Exact RGB on independent authored interiors; exact dimensions; boundaries unscored",
       "assertion_ids": [
@@ -5735,7 +6013,12 @@
         "paper"
       ],
       "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
-      "product_result": "not-run-before-acceptance-commit",
+      "product_result": {
+        "strict_executed": 2,
+        "strict_passed": 2,
+        "mask_passed": 2,
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
+      },
       "subsystems": [
         "OnePDF/image-color-decoding",
         "OnePDF/content-interpretation",
@@ -5753,7 +6036,13 @@
       ],
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
-      "selected_reference_engine": "pdfium"
+      "selected_reference_engine": "pdfium",
+      "committed_original": true,
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "mismatch_stage": null,
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "img-colorkey-endpoint-stored-red",
@@ -5782,7 +6071,7 @@
       ],
       "source_case_ids": [],
       "associations": [],
-      "stage": "agreed",
+      "stage": "pass",
       "reference_status": "three-engine-agreement-on-predeclared-interiors",
       "assertion": "Exact RGB on independent authored interiors; exact dimensions; boundaries unscored",
       "assertion_ids": [
@@ -5825,7 +6114,12 @@
         "paper"
       ],
       "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
-      "product_result": "not-run-before-acceptance-commit",
+      "product_result": {
+        "strict_executed": 2,
+        "strict_passed": 2,
+        "mask_passed": 2,
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
+      },
       "subsystems": [
         "OnePDF/image-color-decoding",
         "OnePDF/content-interpretation",
@@ -5843,7 +6137,13 @@
       ],
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
-      "selected_reference_engine": "pdfium"
+      "selected_reference_engine": "pdfium",
+      "committed_original": true,
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "mismatch_stage": null,
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     },
     {
       "use_case_id": "img-colorkey-endpoint-stored-red-magenta-range",
@@ -5872,7 +6172,7 @@
       ],
       "source_case_ids": [],
       "associations": [],
-      "stage": "agreed",
+      "stage": "pass",
       "reference_status": "three-engine-agreement-on-predeclared-interiors",
       "assertion": "Exact RGB on independent authored interiors; exact dimensions; boundaries unscored",
       "assertion_ids": [
@@ -5915,7 +6215,12 @@
         "paper"
       ],
       "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
-      "product_result": "not-run-before-acceptance-commit",
+      "product_result": {
+        "strict_executed": 2,
+        "strict_passed": 2,
+        "mask_passed": 2,
+        "evidence": "tools/pdf-original-corpus-v2/product-batch5-strict-results.json"
+      },
       "subsystems": [
         "OnePDF/image-color-decoding",
         "OnePDF/content-interpretation",
@@ -5933,7 +6238,13 @@
       ],
       "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
-      "selected_reference_engine": "pdfium"
+      "selected_reference_engine": "pdfium",
+      "committed_original": true,
+      "original_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "mismatch_stage": null,
+      "acceptance_commit_local": "e0461e70d5dc52f71f70ee246a7e5bd4043f8397",
+      "original_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc",
+      "acceptance_commit_remote": "b05c2197fc6a186699fcff3a94842b0b4c22c2cc"
     }
   ]
 }
