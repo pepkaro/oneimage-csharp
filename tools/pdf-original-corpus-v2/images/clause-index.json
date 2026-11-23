@@ -1,0 +1,497 @@
+{
+  "schema_version": 1,
+  "verified_date": "2026-11-23",
+  "license": "MIT; original index prose/data only, no standard text redistributed",
+  "source_evidence": {
+    "governing_2008": {
+      "url": "https://opensource.adobe.com/dc-acrobat-sdk-docs/pdfstandards/PDF32000_2008.pdf",
+      "local_path": "pdf-axial-followup-20261123/docs/PDF32000_2008.pdf",
+      "sha256": "9de0ca9e8570d6209e8bd48a355be8eb6ec376acfc3fc3ae97cd8730351417ff",
+      "verification": "Full local text inspected; fresh web open exceeded tool content limit, not treated as new full-text verification."
+    },
+    "resource_2020": {
+      "url": "https://pdfa.org/resource/iso-32000-2",
+      "verified": "Official resource identifies 2020 revision and errata bundle; common clauses may clarify earlier editions."
+    },
+    "errata_2020": {
+      "url": "https://pdf-issues.pdfa.org/32000-2-2020/clause08.html",
+      "verified": "Image dictionary hierarchy and the Table 87 BitsPerComponent correction were inspected directly."
+    },
+    "limitations": [
+      "The full 2020 standard was not obtained; no cart, download form or account submission was attempted.",
+      "Absence of a fine-grained heading from an errata page proves neither removal nor renumbering.",
+      "Source-code comments asserting 2020 clause/table numbers are not independent standards verification.",
+      "All originals are PDF1.7; do not relabel their coverage as complete PDF2.0 conformance."
+    ]
+  },
+  "clauses": {
+    "2008-samples": {
+      "edition": "ISO 32000-1:2008",
+      "clause": "8.9.3",
+      "heading": "Sample Representation",
+      "verified": "local-full-text",
+      "scope": "MSB-first samples, big-endian 16-bit units, per-row byte padding, interleaved components."
+    },
+    "2008-coordinates": {
+      "edition": "ISO 32000-1:2008",
+      "clause": "8.9.4",
+      "heading": "Image Coordinate System",
+      "verified": "local-full-text",
+      "scope": "Top-left row order and image-to-unit-square mapping."
+    },
+    "2008-dictionary": {
+      "edition": "ISO 32000-1:2008",
+      "clause": "8.9.5.1",
+      "table": "89",
+      "heading": "General",
+      "verified": "local-full-text",
+      "scope": "Image dictionary and valid component bit depths."
+    },
+    "2008-decode": {
+      "edition": "ISO 32000-1:2008",
+      "clause": "8.9.5.2",
+      "table": "90",
+      "heading": "Decode Arrays",
+      "verified": "local-full-text",
+      "scope": "Per-component linear Decode transformation and defaults."
+    },
+    "2008-interpolation": {
+      "edition": "ISO 32000-1:2008",
+      "clause": "8.9.5.3",
+      "heading": "Image Interpolation",
+      "verified": "local-full-text",
+      "scope": "Interpolation defaults off; implementation latitude remains."
+    },
+    "2008-indexed": {
+      "edition": "ISO 32000-1:2008",
+      "clause": "8.6.6.3",
+      "heading": "Indexed Colour Spaces",
+      "verified": "local-full-text",
+      "scope": "Sample indices select ordered base-space palette components."
+    },
+    "2020-dictionary": {
+      "edition": "ISO 32000-2:2020 plus official errata",
+      "clause": "8.9.5.1",
+      "table": "87",
+      "heading": "General",
+      "verified": "official-errata-excerpt",
+      "url": "https://pdf-issues.pdfa.org/32000-2-2020/clause08.html#8951-general",
+      "scope": "Bit depths 1/2/4/8/16; Flate output samples agree with declared size. Other dictionary entries are outside this batch."
+    }
+  },
+  "subsystem_tags": {
+    "unpack": {
+      "repo": "pepkaro/onepdf-csharp",
+      "inspected_head": "2d1928d5ee67bf4526903d3d44ae37792b1f27b8",
+      "path": "src/OnePdf/Images/ImageLoader.cs",
+      "symbol": "ReadSample / ConvertColor",
+      "line": 614,
+      "sha256": "9a3e1786d6e3024a259d12ceab3e17af64ac95d25816fa050902139d52b3e99e",
+      "url": "https://github.com/pepkaro/onepdf-csharp/blob/2d1928d5ee67bf4526903d3d44ae37792b1f27b8/src/OnePdf/Images/ImageLoader.cs#L614",
+      "reason": "Packed-bit, 16-bit and row-oriented image sample decoding.",
+      "defect_ownership": "not inferred; navigation cross-tag only"
+    },
+    "decode": {
+      "repo": "pepkaro/onepdf-csharp",
+      "inspected_head": "2d1928d5ee67bf4526903d3d44ae37792b1f27b8",
+      "path": "src/OnePdf/Images/ImageLoader.cs",
+      "symbol": "ConvertColor / Encode",
+      "line": 646,
+      "sha256": "9a3e1786d6e3024a259d12ceab3e17af64ac95d25816fa050902139d52b3e99e",
+      "url": "https://github.com/pepkaro/onepdf-csharp/blob/2d1928d5ee67bf4526903d3d44ae37792b1f27b8/src/OnePdf/Images/ImageLoader.cs#L646",
+      "reason": "Decode mapping and final output-byte encoding; 16-bit high-byte lookup optimization is visible in this function.",
+      "defect_ownership": "not inferred; navigation cross-tag only"
+    },
+    "indexed": {
+      "repo": "pepkaro/onepdf-csharp",
+      "inspected_head": "2d1928d5ee67bf4526903d3d44ae37792b1f27b8",
+      "path": "src/OnePdf/ColorSpaces/PdfColorSpace.cs",
+      "symbol": "GetDefaultDecode / ToFinalCore",
+      "line": 235,
+      "sha256": "51bb671885ca29494f844de1da816c336446760f3de2ea2d9f1147077ec586e6",
+      "url": "https://github.com/pepkaro/onepdf-csharp/blob/2d1928d5ee67bf4526903d3d44ae37792b1f27b8/src/OnePdf/ColorSpaces/PdfColorSpace.cs#L235",
+      "reason": "Indexed default decoding and palette-to-base-space conversion.",
+      "defect_ownership": "not inferred; navigation cross-tag only"
+    },
+    "placement": {
+      "repo": "pepkaro/oneimage-csharp",
+      "inspected_head": "eb47d5a0155bdb38f6fc7b08a5fa7279fd004a12",
+      "path": "src/OneImage.Pdf/Render/CanvasDevice.Images.cs",
+      "symbol": "DrawImage",
+      "line": 14,
+      "sha256": "ba94cb0d0eaa4d099cb3ca8aa0498fee31f4d641c16389139c3e80cfa57d88bb",
+      "url": "https://github.com/pepkaro/oneimage-csharp/blob/eb47d5a0155bdb38f6fc7b08a5fa7279fd004a12/src/OneImage.Pdf/Render/CanvasDevice.Images.cs#L14",
+      "reason": "Decoded raster bridge, image-to-unit-square transform, graphics CTM and interpolation choice.",
+      "defect_ownership": "not inferred; navigation cross-tag only"
+    },
+    "sampling": {
+      "repo": "pepkaro/oneimage-csharp",
+      "inspected_head": "eb47d5a0155bdb38f6fc7b08a5fa7279fd004a12",
+      "path": "src/OneImage.Pdf/Render/PixelBrush.cs",
+      "symbol": "PixelBrush / FillRow",
+      "line": 22,
+      "sha256": "061008a08a59af4c0271a30530270a30492ff71256b920b59a1b147e0f5518a3",
+      "url": "https://github.com/pepkaro/oneimage-csharp/blob/eb47d5a0155bdb38f6fc7b08a5fa7279fd004a12/src/OneImage.Pdf/Render/PixelBrush.cs#L22",
+      "reason": "Inverse placement mapping and nearest/bilinear raster sampling.",
+      "defect_ownership": "not inferred; navigation cross-tag only"
+    }
+  },
+  "cases": [
+    {
+      "fixture_id": "img-gray2-packed-padding",
+      "pdf_version": "1.7",
+      "governing_edition": "ISO 32000-1:2008",
+      "primary_clause_ids": [
+        "2008-samples"
+      ],
+      "secondary_clause_ids": [
+        "2008-dictionary",
+        "2008-decode"
+      ],
+      "verified_2020_clause_ids": [
+        "2020-dictionary"
+      ],
+      "2020_finer_clause_status": "pending-full-standard; sample/Decode/Indexed/coordinate/interpolation numbering and wording not independently verified from the partial errata page",
+      "normative_contract": "Packed Gray2 row padding and sample ordering.",
+      "subsystem_tag_ids": [
+        "unpack",
+        "decode",
+        "placement"
+      ],
+      "upstream_id": null,
+      "upstream_parity_validated": false,
+      "analytic_output_contract": {
+        "color_model": "white-composited 8-bit RGB",
+        "tolerance": 0,
+        "region_definition": "Authored cell rectangles inset 2 PDF points on all sides; paper control [4,4,16,16].",
+        "dpis": [
+          72,
+          144
+        ],
+        "edges": "unscored",
+        "expected_sample_count": 11
+      },
+      "reference_status": "three-engine-interior-agreement",
+      "quantization_note": "Exact analytic RGB is a corpus acceptance criterion, not a claim that the standard mandates a particular renderer output-byte rounding rule."
+    },
+    {
+      "fixture_id": "img-gray4-inverted-decode",
+      "pdf_version": "1.7",
+      "governing_edition": "ISO 32000-1:2008",
+      "primary_clause_ids": [
+        "2008-decode"
+      ],
+      "secondary_clause_ids": [
+        "2008-samples",
+        "2008-dictionary"
+      ],
+      "verified_2020_clause_ids": [
+        "2020-dictionary"
+      ],
+      "2020_finer_clause_status": "pending-full-standard; sample/Decode/Indexed/coordinate/interpolation numbering and wording not independently verified from the partial errata page",
+      "normative_contract": "Gray4 values map through reversed Decode endpoints.",
+      "subsystem_tag_ids": [
+        "unpack",
+        "decode",
+        "placement"
+      ],
+      "upstream_id": null,
+      "upstream_parity_validated": false,
+      "analytic_output_contract": {
+        "color_model": "white-composited 8-bit RGB",
+        "tolerance": 0,
+        "region_definition": "Authored cell rectangles inset 2 PDF points on all sides; paper control [4,4,16,16].",
+        "dpis": [
+          72,
+          144
+        ],
+        "edges": "unscored",
+        "expected_sample_count": 15
+      },
+      "reference_status": "three-engine-interior-agreement",
+      "quantization_note": "Exact analytic RGB is a corpus acceptance criterion, not a claim that the standard mandates a particular renderer output-byte rounding rule."
+    },
+    {
+      "fixture_id": "img-gray8-restricted-decode",
+      "pdf_version": "1.7",
+      "governing_edition": "ISO 32000-1:2008",
+      "primary_clause_ids": [
+        "2008-decode"
+      ],
+      "secondary_clause_ids": [
+        "2008-dictionary"
+      ],
+      "verified_2020_clause_ids": [
+        "2020-dictionary"
+      ],
+      "2020_finer_clause_status": "pending-full-standard; sample/Decode/Indexed/coordinate/interpolation numbering and wording not independently verified from the partial errata page",
+      "normative_contract": "Gray8 values map linearly into restricted endpoints.",
+      "subsystem_tag_ids": [
+        "decode",
+        "placement"
+      ],
+      "upstream_id": null,
+      "upstream_parity_validated": false,
+      "analytic_output_contract": {
+        "color_model": "white-composited 8-bit RGB",
+        "tolerance": 0,
+        "region_definition": "Authored cell rectangles inset 2 PDF points on all sides; paper control [4,4,16,16].",
+        "dpis": [
+          72,
+          144
+        ],
+        "edges": "unscored",
+        "expected_sample_count": 9
+      },
+      "reference_status": "three-engine-interior-agreement",
+      "quantization_note": "Exact analytic RGB is a corpus acceptance criterion, not a claim that the standard mandates a particular renderer output-byte rounding rule."
+    },
+    {
+      "fixture_id": "img-rgb8-channel-decode",
+      "pdf_version": "1.7",
+      "governing_edition": "ISO 32000-1:2008",
+      "primary_clause_ids": [
+        "2008-decode"
+      ],
+      "secondary_clause_ids": [
+        "2008-samples",
+        "2008-dictionary"
+      ],
+      "verified_2020_clause_ids": [
+        "2020-dictionary"
+      ],
+      "2020_finer_clause_status": "pending-full-standard; sample/Decode/Indexed/coordinate/interpolation numbering and wording not independently verified from the partial errata page",
+      "normative_contract": "Interleaved RGB components use independent Decode endpoint pairs.",
+      "subsystem_tag_ids": [
+        "unpack",
+        "decode",
+        "placement"
+      ],
+      "upstream_id": null,
+      "upstream_parity_validated": false,
+      "analytic_output_contract": {
+        "color_model": "white-composited 8-bit RGB",
+        "tolerance": 0,
+        "region_definition": "Authored cell rectangles inset 2 PDF points on all sides; paper control [4,4,16,16].",
+        "dpis": [
+          72,
+          144
+        ],
+        "edges": "unscored",
+        "expected_sample_count": 7
+      },
+      "reference_status": "HOLD-reference-disagreement",
+      "quantization_note": "Exact analytic RGB is a corpus acceptance criterion, not a claim that the standard mandates a particular renderer output-byte rounding rule."
+    },
+    {
+      "fixture_id": "img-indexed2-lookup-padding",
+      "pdf_version": "1.7",
+      "governing_edition": "ISO 32000-1:2008",
+      "primary_clause_ids": [
+        "2008-indexed"
+      ],
+      "secondary_clause_ids": [
+        "2008-samples",
+        "2008-decode"
+      ],
+      "verified_2020_clause_ids": [
+        "2020-dictionary"
+      ],
+      "2020_finer_clause_status": "pending-full-standard; sample/Decode/Indexed/coordinate/interpolation numbering and wording not independently verified from the partial errata page",
+      "normative_contract": "Padded Indexed2 samples select the declared RGB lookup entries.",
+      "subsystem_tag_ids": [
+        "unpack",
+        "decode",
+        "indexed",
+        "placement"
+      ],
+      "upstream_id": null,
+      "upstream_parity_validated": false,
+      "analytic_output_contract": {
+        "color_model": "white-composited 8-bit RGB",
+        "tolerance": 0,
+        "region_definition": "Authored cell rectangles inset 2 PDF points on all sides; paper control [4,4,16,16].",
+        "dpis": [
+          72,
+          144
+        ],
+        "edges": "unscored",
+        "expected_sample_count": 16
+      },
+      "reference_status": "three-engine-interior-agreement",
+      "quantization_note": "Exact analytic RGB is a corpus acceptance criterion, not a claim that the standard mandates a particular renderer output-byte rounding rule."
+    },
+    {
+      "fixture_id": "img-indexed4-reversed-decode",
+      "pdf_version": "1.7",
+      "governing_edition": "ISO 32000-1:2008",
+      "primary_clause_ids": [
+        "2008-decode",
+        "2008-indexed"
+      ],
+      "secondary_clause_ids": [
+        "2008-samples"
+      ],
+      "verified_2020_clause_ids": [
+        "2020-dictionary"
+      ],
+      "2020_finer_clause_status": "pending-full-standard; sample/Decode/Indexed/coordinate/interpolation numbering and wording not independently verified from the partial errata page",
+      "normative_contract": "Indexed4 reversed Decode selects integer palette entries.",
+      "subsystem_tag_ids": [
+        "unpack",
+        "decode",
+        "indexed",
+        "placement"
+      ],
+      "upstream_id": null,
+      "upstream_parity_validated": false,
+      "analytic_output_contract": {
+        "color_model": "white-composited 8-bit RGB",
+        "tolerance": 0,
+        "region_definition": "Authored cell rectangles inset 2 PDF points on all sides; paper control [4,4,16,16].",
+        "dpis": [
+          72,
+          144
+        ],
+        "edges": "unscored",
+        "expected_sample_count": 9
+      },
+      "reference_status": "three-engine-interior-agreement",
+      "quantization_note": "Exact analytic RGB is a corpus acceptance criterion, not a claim that the standard mandates a particular renderer output-byte rounding rule."
+    },
+    {
+      "fixture_id": "img-rgb16-big-endian",
+      "pdf_version": "1.7",
+      "governing_edition": "ISO 32000-1:2008",
+      "primary_clause_ids": [
+        "2008-samples"
+      ],
+      "secondary_clause_ids": [
+        "2008-dictionary",
+        "2008-decode"
+      ],
+      "verified_2020_clause_ids": [
+        "2020-dictionary"
+      ],
+      "2020_finer_clause_status": "pending-full-standard; sample/Decode/Indexed/coordinate/interpolation numbering and wording not independently verified from the partial errata page",
+      "normative_contract": "RGB16 components use big-endian byte order.",
+      "subsystem_tag_ids": [
+        "unpack",
+        "decode",
+        "placement"
+      ],
+      "upstream_id": null,
+      "upstream_parity_validated": false,
+      "analytic_output_contract": {
+        "color_model": "white-composited 8-bit RGB",
+        "tolerance": 0,
+        "region_definition": "Authored cell rectangles inset 2 PDF points on all sides; paper control [4,4,16,16].",
+        "dpis": [
+          72,
+          144
+        ],
+        "edges": "unscored",
+        "expected_sample_count": 7
+      },
+      "reference_status": "three-engine-interior-agreement",
+      "quantization_note": "Exact analytic RGB is a corpus acceptance criterion, not a claim that the standard mandates a particular renderer output-byte rounding rule."
+    },
+    {
+      "fixture_id": "img-rgb8-mirrored-placement",
+      "pdf_version": "1.7",
+      "governing_edition": "ISO 32000-1:2008",
+      "primary_clause_ids": [
+        "2008-coordinates"
+      ],
+      "secondary_clause_ids": [
+        "2008-interpolation",
+        "2008-samples"
+      ],
+      "verified_2020_clause_ids": [
+        "2020-dictionary"
+      ],
+      "2020_finer_clause_status": "pending-full-standard; sample/Decode/Indexed/coordinate/interpolation numbering and wording not independently verified from the partial errata page",
+      "normative_contract": "Negative-X CTM mirrors columns while preserving source row order.",
+      "subsystem_tag_ids": [
+        "unpack",
+        "placement",
+        "sampling"
+      ],
+      "upstream_id": null,
+      "upstream_parity_validated": false,
+      "analytic_output_contract": {
+        "color_model": "white-composited 8-bit RGB",
+        "tolerance": 0,
+        "region_definition": "Authored cell rectangles inset 2 PDF points on all sides; paper control [4,4,16,16].",
+        "dpis": [
+          72,
+          144
+        ],
+        "edges": "unscored",
+        "expected_sample_count": 5
+      },
+      "reference_status": "three-engine-interior-agreement",
+      "quantization_note": "Exact analytic RGB is a corpus acceptance criterion, not a claim that the standard mandates a particular renderer output-byte rounding rule."
+    }
+  ],
+  "observed_reference_disagreement": {
+    "fixture_id": "img-rgb8-channel-decode",
+    "engine": "PDFium 153.0.7999.0 via pypdfium2 5.13.0",
+    "dpis": [
+      72,
+      144
+    ],
+    "expected_actual_rgb": [
+      [
+        [
+          238,
+          51,
+          51
+        ],
+        [
+          238,
+          51,
+          50
+        ]
+      ],
+      [
+        [
+          15,
+          136,
+          187
+        ],
+        [
+          14,
+          136,
+          187
+        ]
+      ],
+      [
+        [
+          255,
+          255,
+          136
+        ],
+        [
+          255,
+          255,
+          135
+        ]
+      ],
+      [
+        [
+          170,
+          170,
+          221
+        ],
+        [
+          169,
+          170,
+          221
+        ]
+      ]
+    ],
+    "classification": "Output-byte quantization disagreement under strict analytic RGB criterion; no conformance-defect or product-ownership conclusion.",
+    "policy": "Held before golden acceptance and product grading; preserve all references."
+  }
+}

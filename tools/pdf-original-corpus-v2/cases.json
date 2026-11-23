@@ -1,0 +1,863 @@
+{
+  "schema_version": 1,
+  "index_standard": "ISO 32000-2:2020",
+  "canonical_fixture_root": "tests/testdata/pdf-original-v2",
+  "many_to_many_association_rule": "Associations link use_case_id and pinned source_case_id with asserted contract/page/settings; only complete scored contract may earn credit. Empty means no mapping.",
+  "cases": [
+    {
+      "use_case_id": "geometry-fill-rules",
+      "family": "geometry",
+      "primary_iso_2020_directory": "08-Graphics/08.05-Path-construction-and-painting",
+      "primary_citation_status": "verified public official heading; full rule wording pending where clause-index states",
+      "clause_detail": "tools/pdf-original-corpus-v2/geometry/clause-index.json",
+      "expected_behavior": "Nonzero and even-odd rules treat same-winding nested subpaths differently",
+      "fixture": "tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/geometry-fill-rules/original.pdf",
+      "fixture_sha256": "f323000127de527590de59378b55c627ea27d6ec20ff08e4a1569c374409855b",
+      "pdf_version": "2.0",
+      "license": "MIT",
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "page_bounds": "visible CropBox with declared Rotate/UserUnit",
+      "background": "white",
+      "annotations": false,
+      "expected_images": [
+        "tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/geometry-fill-rules/expected-72.png",
+        "tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/geometry-fill-rules/expected-144.png"
+      ],
+      "source_case_ids": [],
+      "associations": [],
+      "stage": "agreed",
+      "reference_status": "three-engine-agreement-on-declared-mask",
+      "assertion": "exact RGB on independently declared interiors; dimensions exact; outside mask unscored",
+      "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
+      "product_result": "not-run-before-reference-acceptance-commit",
+      "subsystems": [
+        "OnePDF/content-interpretation",
+        "OneImage.Pdf/bridge-integration",
+        "OneImage/paths-clipping"
+      ],
+      "proven_root_cause_owner": null,
+      "exception_reason": null,
+      "assertion_ids": [
+        "nonzero-inner",
+        "nonzero-ring",
+        "evenodd-inner",
+        "evenodd-ring",
+        "outside"
+      ],
+      "normative_status": "Standard-defined semantic contract; exact raster quantization is observed acceptance criterion",
+      "secondary_clause_tags": [
+        "ISO 32000-1:2008 8.5.3.3"
+      ],
+      "review": "draft corpus review; no renderer ownership proven",
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6"
+    },
+    {
+      "use_case_id": "geometry-clip-intersection",
+      "family": "geometry",
+      "primary_iso_2020_directory": "08-Graphics/08.05-Path-construction-and-painting",
+      "primary_citation_status": "verified public official heading; full rule wording pending where clause-index states",
+      "clause_detail": "tools/pdf-original-corpus-v2/geometry/clause-index.json",
+      "expected_behavior": "Successive clipping paths intersect and cannot expand the current clip",
+      "fixture": "tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/geometry-clip-intersection/original.pdf",
+      "fixture_sha256": "94e1df6377c968ae96575f95d3d60e3162a56e0fed145015c58b3d6b009b562e",
+      "pdf_version": "2.0",
+      "license": "MIT",
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "page_bounds": "visible CropBox with declared Rotate/UserUnit",
+      "background": "white",
+      "annotations": false,
+      "expected_images": [
+        "tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/geometry-clip-intersection/expected-72.png",
+        "tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/geometry-clip-intersection/expected-144.png"
+      ],
+      "source_case_ids": [],
+      "associations": [],
+      "stage": "agreed",
+      "reference_status": "three-engine-agreement-on-declared-mask",
+      "assertion": "exact RGB on independently declared interiors; dimensions exact; outside mask unscored",
+      "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
+      "product_result": "not-run-before-reference-acceptance-commit",
+      "subsystems": [
+        "OnePDF/content-interpretation",
+        "OneImage.Pdf/bridge-integration",
+        "OneImage/paths-clipping"
+      ],
+      "proven_root_cause_owner": null,
+      "exception_reason": null,
+      "assertion_ids": [
+        "intersection",
+        "first-only",
+        "second-only",
+        "neither"
+      ],
+      "normative_status": "Standard-defined semantic contract; exact raster quantization is observed acceptance criterion",
+      "secondary_clause_tags": [
+        "ISO 32000-1:2008 8.5.4"
+      ],
+      "review": "draft corpus review; no renderer ownership proven",
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6"
+    },
+    {
+      "use_case_id": "geometry-saved-clip",
+      "family": "geometry",
+      "primary_iso_2020_directory": "08-Graphics/08.04-Graphics-state/08.04.02-Graphics-state-stack",
+      "primary_citation_status": "verified public official heading; full rule wording pending where clause-index states",
+      "clause_detail": "tools/pdf-original-corpus-v2/geometry/clause-index.json",
+      "expected_behavior": "Q restores the clipping path saved by q",
+      "fixture": "tests/testdata/pdf-original-v2/08-Graphics/08.04-Graphics-state/08.04.02-Graphics-state-stack/geometry-saved-clip/original.pdf",
+      "fixture_sha256": "6d336aab3107c864693f1b4c5da2df8503d74b6ff8b87b387d20658b1cb4e320",
+      "pdf_version": "2.0",
+      "license": "MIT",
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "page_bounds": "visible CropBox with declared Rotate/UserUnit",
+      "background": "white",
+      "annotations": false,
+      "expected_images": [
+        "tests/testdata/pdf-original-v2/08-Graphics/08.04-Graphics-state/08.04.02-Graphics-state-stack/geometry-saved-clip/expected-72.png",
+        "tests/testdata/pdf-original-v2/08-Graphics/08.04-Graphics-state/08.04.02-Graphics-state-stack/geometry-saved-clip/expected-144.png"
+      ],
+      "source_case_ids": [],
+      "associations": [],
+      "stage": "agreed",
+      "reference_status": "three-engine-agreement-on-declared-mask",
+      "assertion": "exact RGB on independently declared interiors; dimensions exact; outside mask unscored",
+      "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
+      "product_result": "not-run-before-reference-acceptance-commit",
+      "subsystems": [
+        "OnePDF/content-interpretation",
+        "OneImage.Pdf/bridge-integration",
+        "OneImage/paths-clipping"
+      ],
+      "proven_root_cause_owner": null,
+      "exception_reason": null,
+      "assertion_ids": [
+        "saved-clip-red",
+        "restored-outside-blue",
+        "between",
+        "above"
+      ],
+      "normative_status": "Standard-defined semantic contract; exact raster quantization is observed acceptance criterion",
+      "secondary_clause_tags": [
+        "ISO 32000-1:2008 8.4.2",
+        "ISO 32000-1:2008 8.5.4"
+      ],
+      "review": "draft corpus review; no renderer ownership proven",
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6"
+    },
+    {
+      "use_case_id": "geometry-clip-path-reset",
+      "family": "geometry",
+      "primary_iso_2020_directory": "08-Graphics/08.05-Path-construction-and-painting",
+      "primary_citation_status": "verified public official heading; full rule wording pending where clause-index states",
+      "clause_detail": "tools/pdf-original-corpus-v2/geometry/clause-index.json",
+      "expected_behavior": "n ends and clears the current path after W without painting it",
+      "fixture": "tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/geometry-clip-path-reset/original.pdf",
+      "fixture_sha256": "8407a39a5aa4843e9d070e6cf4917a53f04eb6776a2944bb959f7c71fcc5c45b",
+      "pdf_version": "2.0",
+      "license": "MIT",
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "page_bounds": "visible CropBox with declared Rotate/UserUnit",
+      "background": "white",
+      "annotations": false,
+      "expected_images": [
+        "tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/geometry-clip-path-reset/expected-72.png",
+        "tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/geometry-clip-path-reset/expected-144.png"
+      ],
+      "source_case_ids": [],
+      "associations": [],
+      "stage": "agreed",
+      "reference_status": "three-engine-agreement-on-declared-mask",
+      "assertion": "exact RGB on independently declared interiors; dimensions exact; outside mask unscored",
+      "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
+      "product_result": "not-run-before-reference-acceptance-commit",
+      "subsystems": [
+        "OnePDF/content-interpretation",
+        "OneImage.Pdf/bridge-integration",
+        "OneImage/paths-clipping"
+      ],
+      "proven_root_cause_owner": null,
+      "exception_reason": null,
+      "assertion_ids": [
+        "cleared-path-unpainted",
+        "new-path-clipped",
+        "later-blue",
+        "outside"
+      ],
+      "normative_status": "Standard-defined semantic contract; exact raster quantization is observed acceptance criterion",
+      "secondary_clause_tags": [
+        "ISO 32000-1:2008 8.5.3",
+        "ISO 32000-1:2008 8.5.4"
+      ],
+      "review": "draft corpus review; no renderer ownership proven",
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6"
+    },
+    {
+      "use_case_id": "geometry-concat-order",
+      "family": "geometry",
+      "primary_iso_2020_directory": "08-Graphics/08.04-Graphics-state/08.04.04-Graphics-state-operators",
+      "primary_citation_status": "verified public official heading; full rule wording pending where clause-index states",
+      "clause_detail": "tools/pdf-original-corpus-v2/geometry/clause-index.json",
+      "expected_behavior": "cm concatenates the user-space scale inside the existing translation",
+      "fixture": "tests/testdata/pdf-original-v2/08-Graphics/08.04-Graphics-state/08.04.04-Graphics-state-operators/geometry-concat-order/original.pdf",
+      "fixture_sha256": "301fc3cb88cd8d3ff48466d970dcc448b7ddbbc60e5491c155ec893d21e22de7",
+      "pdf_version": "2.0",
+      "license": "MIT",
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "page_bounds": "visible CropBox with declared Rotate/UserUnit",
+      "background": "white",
+      "annotations": false,
+      "expected_images": [
+        "tests/testdata/pdf-original-v2/08-Graphics/08.04-Graphics-state/08.04.04-Graphics-state-operators/geometry-concat-order/expected-72.png",
+        "tests/testdata/pdf-original-v2/08-Graphics/08.04-Graphics-state/08.04.04-Graphics-state-operators/geometry-concat-order/expected-144.png"
+      ],
+      "source_case_ids": [],
+      "associations": [],
+      "stage": "agreed",
+      "reference_status": "three-engine-agreement-on-declared-mask",
+      "assertion": "exact RGB on independently declared interiors; dimensions exact; outside mask unscored",
+      "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
+      "product_result": "not-run-before-reference-acceptance-commit",
+      "subsystems": [
+        "OnePDF/content-interpretation",
+        "OneImage.Pdf/bridge-integration",
+        "OneImage/paths-clipping"
+      ],
+      "proven_root_cause_owner": null,
+      "exception_reason": null,
+      "assertion_ids": [
+        "scaled-translated-red",
+        "translated-origin-blue",
+        "wrong-order-control",
+        "outside"
+      ],
+      "normative_status": "Standard-defined semantic contract; exact raster quantization is observed acceptance criterion",
+      "secondary_clause_tags": [
+        "ISO 32000-1:2008 8.3.3",
+        "ISO 32000-1:2008 8.4.4"
+      ],
+      "review": "draft corpus review; no renderer ownership proven",
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6"
+    },
+    {
+      "use_case_id": "geometry-cropbox-offset",
+      "family": "geometry",
+      "primary_iso_2020_directory": "07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.03-Page-objects",
+      "primary_citation_status": "verified public official heading; full rule wording pending where clause-index states",
+      "clause_detail": "tools/pdf-original-corpus-v2/geometry/clause-index.json",
+      "expected_behavior": "CropBox establishes an offset visible viewport without translating content objects themselves",
+      "fixture": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.03-Page-objects/geometry-cropbox-offset/original.pdf",
+      "fixture_sha256": "a0e910e3d97348eee1c1135fb4816a3e5a3fa516577c195b39f4c0f0caecadf0",
+      "pdf_version": "2.0",
+      "license": "MIT",
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "page_bounds": "visible CropBox with declared Rotate/UserUnit",
+      "background": "white",
+      "annotations": false,
+      "expected_images": [
+        "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.03-Page-objects/geometry-cropbox-offset/expected-72.png",
+        "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.03-Page-objects/geometry-cropbox-offset/expected-144.png"
+      ],
+      "source_case_ids": [],
+      "associations": [],
+      "stage": "agreed",
+      "reference_status": "three-engine-agreement-on-declared-mask",
+      "assertion": "exact RGB on independently declared interiors; dimensions exact; outside mask unscored",
+      "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
+      "product_result": "not-run-before-reference-acceptance-commit",
+      "subsystems": [
+        "OnePDF/page-resources",
+        "OneImage.Pdf/bridge-integration"
+      ],
+      "proven_root_cause_owner": null,
+      "exception_reason": null,
+      "assertion_ids": [
+        "cropped-origin-red",
+        "cropped-top-blue",
+        "middle",
+        "outside-red"
+      ],
+      "normative_status": "Standard-defined semantic contract; exact raster quantization is observed acceptance criterion",
+      "secondary_clause_tags": [
+        "ISO 32000-1:2008 Table 30 CropBox",
+        "ISO 32000-1:2008 14.11.2"
+      ],
+      "review": "draft corpus review; no renderer ownership proven",
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6"
+    },
+    {
+      "use_case_id": "geometry-rotate-90",
+      "family": "geometry",
+      "primary_iso_2020_directory": "07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.03-Page-objects",
+      "primary_citation_status": "verified public official heading; full rule wording pending where clause-index states",
+      "clause_detail": "tools/pdf-original-corpus-v2/geometry/clause-index.json",
+      "expected_behavior": "Rotate 90 displays the page clockwise and swaps the visible width/height",
+      "fixture": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.03-Page-objects/geometry-rotate-90/original.pdf",
+      "fixture_sha256": "b08713d897c4ad73d89f8215cc4672516bb49dd826c28e0f02ddc37c47dbc02b",
+      "pdf_version": "2.0",
+      "license": "MIT",
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "page_bounds": "visible CropBox with declared Rotate/UserUnit",
+      "background": "white",
+      "annotations": false,
+      "expected_images": [
+        "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.03-Page-objects/geometry-rotate-90/expected-72.png",
+        "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.03-Page-objects/geometry-rotate-90/expected-144.png"
+      ],
+      "source_case_ids": [],
+      "associations": [],
+      "stage": "agreed",
+      "reference_status": "three-engine-agreement-on-declared-mask",
+      "assertion": "exact RGB on independently declared interiors; dimensions exact; outside mask unscored",
+      "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
+      "product_result": "not-run-before-reference-acceptance-commit",
+      "subsystems": [
+        "OnePDF/page-resources",
+        "OneImage.Pdf/bridge-integration"
+      ],
+      "proven_root_cause_owner": null,
+      "exception_reason": null,
+      "assertion_ids": [
+        "clockwise-red",
+        "clockwise-blue",
+        "middle",
+        "blank-corner"
+      ],
+      "normative_status": "Standard-defined semantic contract; exact raster quantization is observed acceptance criterion",
+      "secondary_clause_tags": [
+        "ISO 32000-1:2008 Table 30 Rotate"
+      ],
+      "review": "draft corpus review; no renderer ownership proven",
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6"
+    },
+    {
+      "use_case_id": "geometry-user-unit-2",
+      "family": "geometry",
+      "primary_iso_2020_directory": "07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.03-Page-objects",
+      "primary_citation_status": "verified public official heading; full rule wording pending where clause-index states",
+      "clause_detail": "tools/pdf-original-corpus-v2/geometry/clause-index.json",
+      "expected_behavior": "UserUnit 2 assigns two 1/72-inch physical units per default user-space unit when supported",
+      "fixture": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.03-Page-objects/geometry-user-unit-2/original.pdf",
+      "fixture_sha256": "a5139430844bd6c8aa46d86de3dd6cfa8c849241c94aeca4c57fbebae0b027dc",
+      "pdf_version": "2.0",
+      "license": "MIT",
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "page_bounds": "visible CropBox with declared Rotate/UserUnit",
+      "background": "white",
+      "annotations": false,
+      "expected_images": [
+        "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.03-Page-objects/geometry-user-unit-2/expected-72.png",
+        "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.03-Page-objects/geometry-user-unit-2/expected-144.png"
+      ],
+      "source_case_ids": [],
+      "associations": [],
+      "stage": "agreed",
+      "reference_status": "three-engine-agreement-on-declared-mask",
+      "assertion": "exact RGB on independently declared interiors; dimensions exact; outside mask unscored",
+      "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
+      "product_result": "not-run-before-reference-acceptance-commit",
+      "subsystems": [
+        "OnePDF/page-resources",
+        "OneImage.Pdf/bridge-integration"
+      ],
+      "proven_root_cause_owner": null,
+      "exception_reason": null,
+      "assertion_ids": [
+        "physical-red",
+        "physical-blue",
+        "middle",
+        "outside"
+      ],
+      "normative_status": "Standard-defined semantic contract; exact raster quantization is observed acceptance criterion",
+      "secondary_clause_tags": [
+        "ISO 32000-1:2008 Table 30 UserUnit",
+        "ISO 32000-1:2008 8.3.2.3"
+      ],
+      "review": "draft corpus review; no renderer ownership proven",
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6"
+    },
+    {
+      "use_case_id": "img-gray2-packed-padding",
+      "family": "images",
+      "primary_iso_2020_directory": "08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General",
+      "primary_citation_status": "verified public official heading; full rule wording pending where clause-index states",
+      "clause_detail": "tools/pdf-original-corpus-v2/images/clause-index.json",
+      "expected_behavior": "Two-bit DeviceGray samples are MSB-first and each five-sample row starts at a new byte.",
+      "fixture": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General/img-gray2-packed-padding/original.pdf",
+      "fixture_sha256": "7be83ed1a3194853335b492693e9d429515786c0d372e517416899465d9bb061",
+      "pdf_version": "1.7",
+      "license": "MIT",
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "page_bounds": "visible CropBox with declared Rotate/UserUnit",
+      "background": "white",
+      "annotations": false,
+      "expected_images": [
+        "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General/img-gray2-packed-padding/expected-72.png",
+        "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General/img-gray2-packed-padding/expected-144.png"
+      ],
+      "source_case_ids": [],
+      "associations": [],
+      "stage": "agreed",
+      "reference_status": "three-engine-agreement-on-declared-mask",
+      "assertion": "exact RGB on independently declared interiors; dimensions exact; outside mask unscored",
+      "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
+      "product_result": "not-run-before-reference-acceptance-commit",
+      "subsystems": [
+        "OnePDF/image-color-decoding",
+        "OneImage.Pdf/bridge-integration",
+        "OneImage/image-sampling"
+      ],
+      "proven_root_cause_owner": null,
+      "exception_reason": null,
+      "assertion_ids": [
+        "cell-0-0",
+        "cell-1-0",
+        "cell-2-0",
+        "cell-3-0",
+        "cell-4-0",
+        "cell-0-1",
+        "cell-1-1",
+        "cell-2-1",
+        "cell-3-1",
+        "cell-4-1",
+        "paper"
+      ],
+      "normative_status": "Standard-defined semantic contract; exact raster quantization is observed acceptance criterion",
+      "secondary_clause_tags": [
+        "8.9.3 Sample Representation",
+        "8.9.5.1 Image Dictionaries, Table 89"
+      ],
+      "review": "draft corpus review; no renderer ownership proven",
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6"
+    },
+    {
+      "use_case_id": "img-gray4-inverted-decode",
+      "family": "images",
+      "primary_iso_2020_directory": "08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General",
+      "primary_citation_status": "verified public official heading; full rule wording pending where clause-index states",
+      "clause_detail": "tools/pdf-original-corpus-v2/images/clause-index.json",
+      "expected_behavior": "Four-bit DeviceGray Decode [1 0] reverses tone after unpacking, with independent row padding.",
+      "fixture": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General/img-gray4-inverted-decode/original.pdf",
+      "fixture_sha256": "8a8a828836e602d9a6f80aa2ea7c0049bde1444e2756f651846770ef3af23dd8",
+      "pdf_version": "1.7",
+      "license": "MIT",
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "page_bounds": "visible CropBox with declared Rotate/UserUnit",
+      "background": "white",
+      "annotations": false,
+      "expected_images": [
+        "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General/img-gray4-inverted-decode/expected-72.png",
+        "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General/img-gray4-inverted-decode/expected-144.png"
+      ],
+      "source_case_ids": [],
+      "associations": [],
+      "stage": "agreed",
+      "reference_status": "three-engine-agreement-on-declared-mask",
+      "assertion": "exact RGB on independently declared interiors; dimensions exact; outside mask unscored",
+      "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
+      "product_result": "not-run-before-reference-acceptance-commit",
+      "subsystems": [
+        "OnePDF/image-color-decoding",
+        "OneImage.Pdf/bridge-integration",
+        "OneImage/image-sampling"
+      ],
+      "proven_root_cause_owner": null,
+      "exception_reason": null,
+      "assertion_ids": [
+        "cell-0-0",
+        "cell-1-0",
+        "cell-2-0",
+        "cell-3-0",
+        "cell-4-0",
+        "cell-5-0",
+        "cell-6-0",
+        "cell-0-1",
+        "cell-1-1",
+        "cell-2-1",
+        "cell-3-1",
+        "cell-4-1",
+        "cell-5-1",
+        "cell-6-1",
+        "paper"
+      ],
+      "normative_status": "Standard-defined semantic contract; exact raster quantization is observed acceptance criterion",
+      "secondary_clause_tags": [
+        "8.9.3 Sample Representation",
+        "8.9.5.2 Decode Arrays"
+      ],
+      "review": "draft corpus review; no renderer ownership proven",
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6"
+    },
+    {
+      "use_case_id": "img-gray8-restricted-decode",
+      "family": "images",
+      "primary_iso_2020_directory": "08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General",
+      "primary_citation_status": "verified public official heading; full rule wording pending where clause-index states",
+      "clause_detail": "tools/pdf-original-corpus-v2/images/clause-index.json",
+      "expected_behavior": "DeviceGray Decode [0.2 0.8] maps encoded endpoints and exact thirds into the restricted component range.",
+      "fixture": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General/img-gray8-restricted-decode/original.pdf",
+      "fixture_sha256": "7ee04b41e99be76d76d91418675a8793de6cb2d2e9a5ccec9f959b68a911fd92",
+      "pdf_version": "1.7",
+      "license": "MIT",
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "page_bounds": "visible CropBox with declared Rotate/UserUnit",
+      "background": "white",
+      "annotations": false,
+      "expected_images": [
+        "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General/img-gray8-restricted-decode/expected-72.png",
+        "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General/img-gray8-restricted-decode/expected-144.png"
+      ],
+      "source_case_ids": [],
+      "associations": [],
+      "stage": "agreed",
+      "reference_status": "three-engine-agreement-on-declared-mask",
+      "assertion": "exact RGB on independently declared interiors; dimensions exact; outside mask unscored",
+      "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
+      "product_result": "not-run-before-reference-acceptance-commit",
+      "subsystems": [
+        "OnePDF/image-color-decoding",
+        "OneImage.Pdf/bridge-integration",
+        "OneImage/image-sampling"
+      ],
+      "proven_root_cause_owner": null,
+      "exception_reason": null,
+      "assertion_ids": [
+        "cell-0-0",
+        "cell-1-0",
+        "cell-2-0",
+        "cell-3-0",
+        "cell-0-1",
+        "cell-1-1",
+        "cell-2-1",
+        "cell-3-1",
+        "paper"
+      ],
+      "normative_status": "Standard-defined semantic contract; exact raster quantization is observed acceptance criterion",
+      "secondary_clause_tags": [
+        "8.9.5.2 Decode Arrays, Table 90"
+      ],
+      "review": "draft corpus review; no renderer ownership proven",
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6"
+    },
+    {
+      "use_case_id": "img-rgb8-channel-decode",
+      "family": "images",
+      "primary_iso_2020_directory": "08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General",
+      "primary_citation_status": "verified public official heading; full rule wording pending where clause-index states",
+      "clause_detail": "tools/pdf-original-corpus-v2/images/clause-index.json",
+      "expected_behavior": "RGB Decode independently reverses red/blue while preserving green; samples stay interleaved RGB.",
+      "fixture": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General/img-rgb8-channel-decode/original.pdf",
+      "fixture_sha256": "8b781bb08d1cbca927113c46f8bcdc60edf9ea7d4a3a0233ff29007211f7194a",
+      "pdf_version": "1.7",
+      "license": "MIT",
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "page_bounds": "visible CropBox with declared Rotate/UserUnit",
+      "background": "white",
+      "annotations": false,
+      "expected_images": [],
+      "source_case_ids": [],
+      "associations": [],
+      "stage": "generated",
+      "reference_status": "mismatch",
+      "assertion": "exact RGB on independently declared interiors; dimensions exact; outside mask unscored",
+      "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
+      "product_result": "not-run-before-reference-acceptance-commit",
+      "subsystems": [
+        "OnePDF/image-color-decoding",
+        "OneImage.Pdf/bridge-integration",
+        "OneImage/image-sampling"
+      ],
+      "proven_root_cause_owner": null,
+      "exception_reason": "PDFium RGB8 channel Decode differs by1; no accepted golden and no product grading",
+      "assertion_ids": [
+        "cell-0-0",
+        "cell-1-0",
+        "cell-2-0",
+        "cell-0-1",
+        "cell-1-1",
+        "cell-2-1",
+        "paper"
+      ],
+      "normative_status": "Standard-defined semantic contract; exact raster quantization is observed acceptance criterion",
+      "secondary_clause_tags": [
+        "8.9.3 Sample Representation",
+        "8.9.5.2 Decode Arrays"
+      ],
+      "review": "draft corpus review; no renderer ownership proven",
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6"
+    },
+    {
+      "use_case_id": "img-indexed2-lookup-padding",
+      "family": "images",
+      "primary_iso_2020_directory": "08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General",
+      "primary_citation_status": "verified public official heading; full rule wording pending where clause-index states",
+      "clause_detail": "tools/pdf-original-corpus-v2/images/clause-index.json",
+      "expected_behavior": "Two-bit indices select a nonmonotone RGB lookup directly; five-index scanlines have independent padding.",
+      "fixture": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General/img-indexed2-lookup-padding/original.pdf",
+      "fixture_sha256": "a8ed81b7992b4f5ad236814bb4a961477f064d4f383a69de1d262df7a57773ff",
+      "pdf_version": "1.7",
+      "license": "MIT",
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "page_bounds": "visible CropBox with declared Rotate/UserUnit",
+      "background": "white",
+      "annotations": false,
+      "expected_images": [
+        "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General/img-indexed2-lookup-padding/expected-72.png",
+        "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General/img-indexed2-lookup-padding/expected-144.png"
+      ],
+      "source_case_ids": [],
+      "associations": [],
+      "stage": "agreed",
+      "reference_status": "three-engine-agreement-on-declared-mask",
+      "assertion": "exact RGB on independently declared interiors; dimensions exact; outside mask unscored",
+      "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
+      "product_result": "not-run-before-reference-acceptance-commit",
+      "subsystems": [
+        "OnePDF/image-color-decoding",
+        "OneImage.Pdf/bridge-integration",
+        "OneImage/image-sampling"
+      ],
+      "proven_root_cause_owner": null,
+      "exception_reason": null,
+      "assertion_ids": [
+        "cell-0-0",
+        "cell-1-0",
+        "cell-2-0",
+        "cell-3-0",
+        "cell-4-0",
+        "cell-0-1",
+        "cell-1-1",
+        "cell-2-1",
+        "cell-3-1",
+        "cell-4-1",
+        "cell-0-2",
+        "cell-1-2",
+        "cell-2-2",
+        "cell-3-2",
+        "cell-4-2",
+        "paper"
+      ],
+      "normative_status": "Standard-defined semantic contract; exact raster quantization is observed acceptance criterion",
+      "secondary_clause_tags": [
+        "8.6.6.3 Indexed Colour Spaces",
+        "8.9.3 Sample Representation",
+        "8.9.5.2 Table 90 default Indexed Decode"
+      ],
+      "review": "draft corpus review; no renderer ownership proven",
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6"
+    },
+    {
+      "use_case_id": "img-indexed4-reversed-decode",
+      "family": "images",
+      "primary_iso_2020_directory": "08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General",
+      "primary_citation_status": "verified public official heading; full rule wording pending where clause-index states",
+      "clause_detail": "tools/pdf-original-corpus-v2/images/clause-index.json",
+      "expected_behavior": "Indexed four-bit Decode [3 0] maps four exact encoded values to palette indices 3,2,1,0 before lookup.",
+      "fixture": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General/img-indexed4-reversed-decode/original.pdf",
+      "fixture_sha256": "ef3da2b98655a8e25b698bb30744bb7c396b2f0d26716f72bf3f514b20571d47",
+      "pdf_version": "1.7",
+      "license": "MIT",
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "page_bounds": "visible CropBox with declared Rotate/UserUnit",
+      "background": "white",
+      "annotations": false,
+      "expected_images": [
+        "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General/img-indexed4-reversed-decode/expected-72.png",
+        "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General/img-indexed4-reversed-decode/expected-144.png"
+      ],
+      "source_case_ids": [],
+      "associations": [],
+      "stage": "agreed",
+      "reference_status": "three-engine-agreement-on-declared-mask",
+      "assertion": "exact RGB on independently declared interiors; dimensions exact; outside mask unscored",
+      "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
+      "product_result": "not-run-before-reference-acceptance-commit",
+      "subsystems": [
+        "OnePDF/image-color-decoding",
+        "OneImage.Pdf/bridge-integration",
+        "OneImage/image-sampling"
+      ],
+      "proven_root_cause_owner": null,
+      "exception_reason": null,
+      "assertion_ids": [
+        "cell-0-0",
+        "cell-1-0",
+        "cell-2-0",
+        "cell-3-0",
+        "cell-0-1",
+        "cell-1-1",
+        "cell-2-1",
+        "cell-3-1",
+        "paper"
+      ],
+      "normative_status": "Standard-defined semantic contract; exact raster quantization is observed acceptance criterion",
+      "secondary_clause_tags": [
+        "8.6.6.3 Indexed Colour Spaces",
+        "8.9.5.2 Decode Arrays"
+      ],
+      "review": "draft corpus review; no renderer ownership proven",
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6"
+    },
+    {
+      "use_case_id": "img-rgb16-big-endian",
+      "family": "images",
+      "primary_iso_2020_directory": "08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General",
+      "primary_citation_status": "verified public official heading; full rule wording pending where clause-index states",
+      "clause_detail": "tools/pdf-original-corpus-v2/images/clause-index.json",
+      "expected_behavior": "Sixteen-bit RGB components use big-endian bytes; replicated-byte samples normalize exactly to their eight-bit values.",
+      "fixture": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General/img-rgb16-big-endian/original.pdf",
+      "fixture_sha256": "10811fb78ba3650a631e2a955833a4a82436ba4631298b7a6edb73721bb11ced",
+      "pdf_version": "1.7",
+      "license": "MIT",
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "page_bounds": "visible CropBox with declared Rotate/UserUnit",
+      "background": "white",
+      "annotations": false,
+      "expected_images": [
+        "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General/img-rgb16-big-endian/expected-72.png",
+        "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General/img-rgb16-big-endian/expected-144.png"
+      ],
+      "source_case_ids": [],
+      "associations": [],
+      "stage": "agreed",
+      "reference_status": "three-engine-agreement-on-declared-mask",
+      "assertion": "exact RGB on independently declared interiors; dimensions exact; outside mask unscored",
+      "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
+      "product_result": "not-run-before-reference-acceptance-commit",
+      "subsystems": [
+        "OnePDF/image-color-decoding",
+        "OneImage.Pdf/bridge-integration",
+        "OneImage/image-sampling"
+      ],
+      "proven_root_cause_owner": null,
+      "exception_reason": null,
+      "assertion_ids": [
+        "cell-0-0",
+        "cell-1-0",
+        "cell-2-0",
+        "cell-0-1",
+        "cell-1-1",
+        "cell-2-1",
+        "paper"
+      ],
+      "normative_status": "Standard-defined semantic contract; exact raster quantization is observed acceptance criterion",
+      "secondary_clause_tags": [
+        "8.9.3 Sample Representation, 16-bit byte ordering",
+        "8.9.5.1 Image Dictionaries, Table 89"
+      ],
+      "review": "draft corpus review; no renderer ownership proven",
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6"
+    },
+    {
+      "use_case_id": "img-rgb8-mirrored-placement",
+      "family": "images",
+      "primary_iso_2020_directory": "08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General",
+      "primary_citation_status": "verified public official heading; full rule wording pending where clause-index states",
+      "clause_detail": "tools/pdf-original-corpus-v2/images/clause-index.json",
+      "expected_behavior": "A negative-x image CTM mirrors columns once while retaining top-to-bottom source row orientation.",
+      "fixture": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General/img-rgb8-mirrored-placement/original.pdf",
+      "fixture_sha256": "010170ac5a93aa876b2c361be0ae1901a96efabd9d7b475150dc315c2c56ea77",
+      "pdf_version": "1.7",
+      "license": "MIT",
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "page_bounds": "visible CropBox with declared Rotate/UserUnit",
+      "background": "white",
+      "annotations": false,
+      "expected_images": [
+        "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General/img-rgb8-mirrored-placement/expected-72.png",
+        "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General/img-rgb8-mirrored-placement/expected-144.png"
+      ],
+      "source_case_ids": [],
+      "associations": [],
+      "stage": "agreed",
+      "reference_status": "three-engine-agreement-on-declared-mask",
+      "assertion": "exact RGB on independently declared interiors; dimensions exact; outside mask unscored",
+      "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
+      "product_result": "not-run-before-reference-acceptance-commit",
+      "subsystems": [
+        "OnePDF/image-color-decoding",
+        "OneImage.Pdf/bridge-integration",
+        "OneImage/image-sampling"
+      ],
+      "proven_root_cause_owner": null,
+      "exception_reason": null,
+      "assertion_ids": [
+        "cell-0-0",
+        "cell-1-0",
+        "cell-0-1",
+        "cell-1-1",
+        "paper"
+      ],
+      "normative_status": "Standard-defined semantic contract; exact raster quantization is observed acceptance criterion",
+      "secondary_clause_tags": [
+        "8.9.4 Image Coordinate System",
+        "8.9.5.3 Image Interpolation"
+      ],
+      "review": "draft corpus review; no renderer ownership proven",
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6"
+    }
+  ]
+}

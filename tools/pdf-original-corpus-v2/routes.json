@@ -1,0 +1,3627 @@
+[
+  {
+    "family": "geometry",
+    "id": "geometry-fill-rules",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/geometry-fill-rules",
+    "manifest": {
+      "id": "geometry-fill-rules",
+      "file": "inputs/geometry-fill-rules.pdf",
+      "sha256": "f323000127de527590de59378b55c627ea27d6ec20ff08e4a1569c374409855b",
+      "license": "MIT",
+      "contract": "Nonzero and even-odd rules treat same-winding nested subpaths differently",
+      "spec": [
+        "ISO 32000-1:2008 8.5.3.3"
+      ],
+      "pages": [
+        0
+      ],
+      "page_count": 1,
+      "display_width_points": 160,
+      "display_height_points": 100,
+      "dpis": [
+        72,
+        144
+      ],
+      "user_unit": 1,
+      "rotation": 0,
+      "sample_coordinates": "upright visible display points: x right, y up after CropBox/Rotate/UserUnit; image row=floor((display_height-y)*dpi/72)",
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "annotations": "none",
+      "expected_regions": [
+        [
+          10,
+          10,
+          60,
+          80,
+          [
+            255,
+            0,
+            0
+          ]
+        ],
+        [
+          90,
+          10,
+          60,
+          80,
+          [
+            255,
+            0,
+            0
+          ]
+        ],
+        [
+          105,
+          30,
+          30,
+          40,
+          [
+            255,
+            255,
+            255
+          ]
+        ]
+      ],
+      "samples": [
+        {
+          "id": "nonzero-inner",
+          "x": 40,
+          "y": 50,
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "nonzero-ring",
+          "x": 15,
+          "y": 50,
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "evenodd-inner",
+          "x": 120,
+          "y": 50,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "evenodd-ring",
+          "x": 95,
+          "y": 50,
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "outside",
+          "x": 80,
+          "y": 50,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "required_capability": null,
+      "upstream_association": {
+        "suite": "Mozilla-style eq metadata association only",
+        "manifest_pin": "45a902c03843b5300dc799d535ad8f4fcdac0b30",
+        "upstream_id": null,
+        "scope": "standard-contract-only",
+        "exact_upstream_scope_established": false,
+        "upstream_input_executed": false
+      }
+    },
+    "accepted": true
+  },
+  {
+    "family": "geometry",
+    "id": "geometry-clip-intersection",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/geometry-clip-intersection",
+    "manifest": {
+      "id": "geometry-clip-intersection",
+      "file": "inputs/geometry-clip-intersection.pdf",
+      "sha256": "94e1df6377c968ae96575f95d3d60e3162a56e0fed145015c58b3d6b009b562e",
+      "license": "MIT",
+      "contract": "Successive clipping paths intersect and cannot expand the current clip",
+      "spec": [
+        "ISO 32000-1:2008 8.5.4"
+      ],
+      "pages": [
+        0
+      ],
+      "page_count": 1,
+      "display_width_points": 120,
+      "display_height_points": 100,
+      "dpis": [
+        72,
+        144
+      ],
+      "user_unit": 1,
+      "rotation": 0,
+      "sample_coordinates": "upright visible display points: x right, y up after CropBox/Rotate/UserUnit; image row=floor((display_height-y)*dpi/72)",
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "annotations": "none",
+      "expected_regions": [
+        [
+          50,
+          40,
+          50,
+          40,
+          [
+            0,
+            255,
+            0
+          ]
+        ]
+      ],
+      "samples": [
+        {
+          "id": "intersection",
+          "x": 75,
+          "y": 60,
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "first-only",
+          "x": 25,
+          "y": 30,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "second-only",
+          "x": 105,
+          "y": 60,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "neither",
+          "x": 75,
+          "y": 20,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "required_capability": null,
+      "upstream_association": {
+        "suite": "Mozilla-style eq metadata association only",
+        "manifest_pin": "45a902c03843b5300dc799d535ad8f4fcdac0b30",
+        "upstream_id": null,
+        "scope": "standard-contract-only",
+        "exact_upstream_scope_established": false,
+        "upstream_input_executed": false
+      }
+    },
+    "accepted": true
+  },
+  {
+    "family": "geometry",
+    "id": "geometry-saved-clip",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.04-Graphics-state/08.04.02-Graphics-state-stack/geometry-saved-clip",
+    "manifest": {
+      "id": "geometry-saved-clip",
+      "file": "inputs/geometry-saved-clip.pdf",
+      "sha256": "6d336aab3107c864693f1b4c5da2df8503d74b6ff8b87b387d20658b1cb4e320",
+      "license": "MIT",
+      "contract": "Q restores the clipping path saved by q",
+      "spec": [
+        "ISO 32000-1:2008 8.4.2",
+        "ISO 32000-1:2008 8.5.4"
+      ],
+      "pages": [
+        0
+      ],
+      "page_count": 1,
+      "display_width_points": 120,
+      "display_height_points": 100,
+      "dpis": [
+        72,
+        144
+      ],
+      "user_unit": 1,
+      "rotation": 0,
+      "sample_coordinates": "upright visible display points: x right, y up after CropBox/Rotate/UserUnit; image row=floor((display_height-y)*dpi/72)",
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "annotations": "none",
+      "expected_regions": [
+        [
+          10,
+          10,
+          40,
+          50,
+          [
+            255,
+            0,
+            0
+          ]
+        ],
+        [
+          70,
+          20,
+          30,
+          40,
+          [
+            0,
+            0,
+            255
+          ]
+        ]
+      ],
+      "samples": [
+        {
+          "id": "saved-clip-red",
+          "x": 25,
+          "y": 30,
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "restored-outside-blue",
+          "x": 85,
+          "y": 40,
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "between",
+          "x": 60,
+          "y": 40,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "above",
+          "x": 30,
+          "y": 80,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "required_capability": null,
+      "upstream_association": {
+        "suite": "Mozilla-style eq metadata association only",
+        "manifest_pin": "45a902c03843b5300dc799d535ad8f4fcdac0b30",
+        "upstream_id": null,
+        "scope": "standard-contract-only",
+        "exact_upstream_scope_established": false,
+        "upstream_input_executed": false
+      }
+    },
+    "accepted": true
+  },
+  {
+    "family": "geometry",
+    "id": "geometry-clip-path-reset",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/geometry-clip-path-reset",
+    "manifest": {
+      "id": "geometry-clip-path-reset",
+      "file": "inputs/geometry-clip-path-reset.pdf",
+      "sha256": "8407a39a5aa4843e9d070e6cf4917a53f04eb6776a2944bb959f7c71fcc5c45b",
+      "license": "MIT",
+      "contract": "n ends and clears the current path after W without painting it",
+      "spec": [
+        "ISO 32000-1:2008 8.5.3",
+        "ISO 32000-1:2008 8.5.4"
+      ],
+      "pages": [
+        0
+      ],
+      "page_count": 1,
+      "display_width_points": 120,
+      "display_height_points": 100,
+      "dpis": [
+        72,
+        144
+      ],
+      "user_unit": 1,
+      "rotation": 0,
+      "sample_coordinates": "upright visible display points: x right, y up after CropBox/Rotate/UserUnit; image row=floor((display_height-y)*dpi/72)",
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "annotations": "none",
+      "expected_regions": [
+        [
+          15,
+          75,
+          20,
+          15,
+          [
+            0,
+            0,
+            255
+          ]
+        ]
+      ],
+      "samples": [
+        {
+          "id": "cleared-path-unpainted",
+          "x": 30,
+          "y": 30,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "new-path-clipped",
+          "x": 95,
+          "y": 30,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "later-blue",
+          "x": 25,
+          "y": 82,
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "outside",
+          "x": 75,
+          "y": 80,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "required_capability": null,
+      "upstream_association": {
+        "suite": "Mozilla-style eq metadata association only",
+        "manifest_pin": "45a902c03843b5300dc799d535ad8f4fcdac0b30",
+        "upstream_id": null,
+        "scope": "standard-contract-only",
+        "exact_upstream_scope_established": false,
+        "upstream_input_executed": false
+      }
+    },
+    "accepted": true
+  },
+  {
+    "family": "geometry",
+    "id": "geometry-concat-order",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.04-Graphics-state/08.04.04-Graphics-state-operators/geometry-concat-order",
+    "manifest": {
+      "id": "geometry-concat-order",
+      "file": "inputs/geometry-concat-order.pdf",
+      "sha256": "301fc3cb88cd8d3ff48466d970dcc448b7ddbbc60e5491c155ec893d21e22de7",
+      "license": "MIT",
+      "contract": "cm concatenates the user-space scale inside the existing translation",
+      "spec": [
+        "ISO 32000-1:2008 8.3.3",
+        "ISO 32000-1:2008 8.4.4"
+      ],
+      "pages": [
+        0
+      ],
+      "page_count": 1,
+      "display_width_points": 120,
+      "display_height_points": 100,
+      "dpis": [
+        72,
+        144
+      ],
+      "user_unit": 1,
+      "rotation": 0,
+      "sample_coordinates": "upright visible display points: x right, y up after CropBox/Rotate/UserUnit; image row=floor((display_height-y)*dpi/72)",
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "annotations": "none",
+      "expected_regions": [
+        [
+          28,
+          24,
+          24,
+          24,
+          [
+            255,
+            0,
+            0
+          ]
+        ],
+        [
+          18,
+          12,
+          6,
+          9,
+          [
+            0,
+            0,
+            255
+          ]
+        ]
+      ],
+      "samples": [
+        {
+          "id": "scaled-translated-red",
+          "x": 40,
+          "y": 36,
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "translated-origin-blue",
+          "x": 21,
+          "y": 16,
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "wrong-order-control",
+          "x": 60,
+          "y": 60,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "outside",
+          "x": 85,
+          "y": 20,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "required_capability": null,
+      "upstream_association": {
+        "suite": "Mozilla-style eq metadata association only",
+        "manifest_pin": "45a902c03843b5300dc799d535ad8f4fcdac0b30",
+        "upstream_id": null,
+        "scope": "standard-contract-only",
+        "exact_upstream_scope_established": false,
+        "upstream_input_executed": false
+      }
+    },
+    "accepted": true
+  },
+  {
+    "family": "geometry",
+    "id": "geometry-cropbox-offset",
+    "canonical_dir": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.03-Page-objects/geometry-cropbox-offset",
+    "manifest": {
+      "id": "geometry-cropbox-offset",
+      "file": "inputs/geometry-cropbox-offset.pdf",
+      "sha256": "a0e910e3d97348eee1c1135fb4816a3e5a3fa516577c195b39f4c0f0caecadf0",
+      "license": "MIT",
+      "contract": "CropBox establishes an offset visible viewport without translating content objects themselves",
+      "spec": [
+        "ISO 32000-1:2008 Table 30 CropBox",
+        "ISO 32000-1:2008 14.11.2"
+      ],
+      "pages": [
+        0
+      ],
+      "page_count": 1,
+      "display_width_points": 100,
+      "display_height_points": 80,
+      "dpis": [
+        72,
+        144
+      ],
+      "user_unit": 1,
+      "rotation": 0,
+      "sample_coordinates": "upright visible display points: x right, y up after CropBox/Rotate/UserUnit; image row=floor((display_height-y)*dpi/72)",
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "annotations": "none",
+      "expected_regions": [
+        [
+          0,
+          0,
+          30,
+          20,
+          [
+            255,
+            0,
+            0
+          ]
+        ],
+        [
+          70,
+          60,
+          30,
+          20,
+          [
+            0,
+            0,
+            255
+          ]
+        ]
+      ],
+      "samples": [
+        {
+          "id": "cropped-origin-red",
+          "x": 10,
+          "y": 10,
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cropped-top-blue",
+          "x": 85,
+          "y": 70,
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "middle",
+          "x": 50,
+          "y": 40,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "outside-red",
+          "x": 40,
+          "y": 10,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "required_capability": null,
+      "upstream_association": {
+        "suite": "Mozilla-style eq metadata association only",
+        "manifest_pin": "45a902c03843b5300dc799d535ad8f4fcdac0b30",
+        "upstream_id": null,
+        "scope": "standard-contract-only",
+        "exact_upstream_scope_established": false,
+        "upstream_input_executed": false
+      }
+    },
+    "accepted": true
+  },
+  {
+    "family": "geometry",
+    "id": "geometry-rotate-90",
+    "canonical_dir": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.03-Page-objects/geometry-rotate-90",
+    "manifest": {
+      "id": "geometry-rotate-90",
+      "file": "inputs/geometry-rotate-90.pdf",
+      "sha256": "b08713d897c4ad73d89f8215cc4672516bb49dd826c28e0f02ddc37c47dbc02b",
+      "license": "MIT",
+      "contract": "Rotate 90 displays the page clockwise and swaps the visible width/height",
+      "spec": [
+        "ISO 32000-1:2008 Table 30 Rotate"
+      ],
+      "pages": [
+        0
+      ],
+      "page_count": 1,
+      "display_width_points": 80,
+      "display_height_points": 120,
+      "dpis": [
+        72,
+        144
+      ],
+      "user_unit": 1,
+      "rotation": 90,
+      "sample_coordinates": "upright visible display points: x right, y up after CropBox/Rotate/UserUnit; image row=floor((display_height-y)*dpi/72)",
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "annotations": "none",
+      "expected_regions": [
+        [
+          10,
+          90,
+          15,
+          20,
+          [
+            255,
+            0,
+            0
+          ]
+        ],
+        [
+          45,
+          10,
+          20,
+          25,
+          [
+            0,
+            0,
+            255
+          ]
+        ]
+      ],
+      "samples": [
+        {
+          "id": "clockwise-red",
+          "x": 17,
+          "y": 100,
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "clockwise-blue",
+          "x": 55,
+          "y": 22,
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "middle",
+          "x": 40,
+          "y": 65,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "blank-corner",
+          "x": 5,
+          "y": 5,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "required_capability": null,
+      "upstream_association": {
+        "suite": "Mozilla-style eq metadata association only",
+        "manifest_pin": "45a902c03843b5300dc799d535ad8f4fcdac0b30",
+        "upstream_id": null,
+        "scope": "standard-contract-only",
+        "exact_upstream_scope_established": false,
+        "upstream_input_executed": false
+      }
+    },
+    "accepted": true
+  },
+  {
+    "family": "geometry",
+    "id": "geometry-user-unit-2",
+    "canonical_dir": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.03-Page-objects/geometry-user-unit-2",
+    "manifest": {
+      "id": "geometry-user-unit-2",
+      "file": "inputs/geometry-user-unit-2.pdf",
+      "sha256": "a5139430844bd6c8aa46d86de3dd6cfa8c849241c94aeca4c57fbebae0b027dc",
+      "license": "MIT",
+      "contract": "UserUnit 2 assigns two 1/72-inch physical units per default user-space unit when supported",
+      "spec": [
+        "ISO 32000-1:2008 Table 30 UserUnit",
+        "ISO 32000-1:2008 8.3.2.3"
+      ],
+      "pages": [
+        0
+      ],
+      "page_count": 1,
+      "display_width_points": 120,
+      "display_height_points": 80,
+      "dpis": [
+        72,
+        144
+      ],
+      "user_unit": 2,
+      "rotation": 0,
+      "sample_coordinates": "upright visible display points: x right, y up after CropBox/Rotate/UserUnit; image row=floor((display_height-y)*dpi/72)",
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "annotations": "none",
+      "expected_regions": [
+        [
+          10,
+          10,
+          30,
+          20,
+          [
+            255,
+            0,
+            0
+          ]
+        ],
+        [
+          80,
+          50,
+          30,
+          20,
+          [
+            0,
+            0,
+            255
+          ]
+        ]
+      ],
+      "samples": [
+        {
+          "id": "physical-red",
+          "x": 20,
+          "y": 20,
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "physical-blue",
+          "x": 90,
+          "y": 60,
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "middle",
+          "x": 60,
+          "y": 40,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "outside",
+          "x": 5,
+          "y": 5,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "required_capability": "user-unit-physical-scaling",
+      "upstream_association": {
+        "suite": "Mozilla-style eq metadata association only",
+        "manifest_pin": "45a902c03843b5300dc799d535ad8f4fcdac0b30",
+        "upstream_id": null,
+        "scope": "standard-contract-only",
+        "exact_upstream_scope_established": false,
+        "upstream_input_executed": false
+      }
+    },
+    "accepted": true
+  },
+  {
+    "family": "images",
+    "id": "img-gray2-packed-padding",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General/img-gray2-packed-padding",
+    "manifest": {
+      "id": "img-gray2-packed-padding",
+      "file": "inputs/img-gray2-packed-padding.pdf",
+      "license": "MIT",
+      "contract": "Two-bit DeviceGray samples are MSB-first and each five-sample row starts at a new byte.",
+      "spec": "ISO 32000-1:2008",
+      "spec_clauses": [
+        "8.9.3 Sample Representation",
+        "8.9.5.1 Image Dictionaries, Table 89"
+      ],
+      "route": "page image XObject /FlateDecode /Interpolate false",
+      "width": 240,
+      "height": 180,
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "rotation": 0,
+      "annotations": "none",
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "image": {
+        "width": 5,
+        "height": 2,
+        "bpc": 2,
+        "color_space": "/DeviceGray",
+        "decode": null,
+        "ctm": [
+          120,
+          0,
+          0,
+          48,
+          32,
+          40
+        ],
+        "raw_sha256": "967e711a216584930ef57dd59f8bdc062462d6848602c42d9cbfcd6917dfc7e0"
+      },
+      "sha256": "7be83ed1a3194853335b492693e9d429515786c0d372e517416899465d9bb061",
+      "expected_samples": [
+        {
+          "id": "cell-0-0",
+          "point": [
+            44.0,
+            76.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-0",
+          "point": [
+            68.0,
+            76.0
+          ],
+          "rgb": [
+            85,
+            85,
+            85
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-0",
+          "point": [
+            92.0,
+            76.0
+          ],
+          "rgb": [
+            170,
+            170,
+            170
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-0",
+          "point": [
+            116.0,
+            76.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-4-0",
+          "point": [
+            140.0,
+            76.0
+          ],
+          "rgb": [
+            85,
+            85,
+            85
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-1",
+          "point": [
+            44.0,
+            52.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-1",
+          "point": [
+            68.0,
+            52.0
+          ],
+          "rgb": [
+            170,
+            170,
+            170
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-1",
+          "point": [
+            92.0,
+            52.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-1",
+          "point": [
+            116.0,
+            52.0
+          ],
+          "rgb": [
+            85,
+            85,
+            85
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-4-1",
+          "point": [
+            140.0,
+            52.0
+          ],
+          "rgb": [
+            170,
+            170,
+            170
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "point": [
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_regions": [
+        {
+          "id": "cell-0-0",
+          "rect": [
+            34.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-0",
+          "rect": [
+            58.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            85,
+            85,
+            85
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-0",
+          "rect": [
+            82.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            170,
+            170,
+            170
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-0",
+          "rect": [
+            106.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-4-0",
+          "rect": [
+            130.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            85,
+            85,
+            85
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-1",
+          "rect": [
+            34.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-1",
+          "rect": [
+            58.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            170,
+            170,
+            170
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-1",
+          "rect": [
+            82.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-1",
+          "rect": [
+            106.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            85,
+            85,
+            85
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-4-1",
+          "rect": [
+            130.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            170,
+            170,
+            170
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "rect": [
+            4,
+            4,
+            16,
+            16
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "region_rule": "Each authored24-point cell is inset2PDFpoints on all sides; outer/cell boundary bands are unscored. Paper uses a separate16-point rectangle.",
+      "association": {
+        "scope": "standard-contract-only",
+        "upstream_id": null,
+        "upstream_entry_validated": false,
+        "reason": "No reviewed metadata-only scene capsule establishes a full matching upstream contract."
+      }
+    },
+    "accepted": true
+  },
+  {
+    "family": "images",
+    "id": "img-gray4-inverted-decode",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General/img-gray4-inverted-decode",
+    "manifest": {
+      "id": "img-gray4-inverted-decode",
+      "file": "inputs/img-gray4-inverted-decode.pdf",
+      "license": "MIT",
+      "contract": "Four-bit DeviceGray Decode [1 0] reverses tone after unpacking, with independent row padding.",
+      "spec": "ISO 32000-1:2008",
+      "spec_clauses": [
+        "8.9.3 Sample Representation",
+        "8.9.5.2 Decode Arrays"
+      ],
+      "route": "page image XObject /FlateDecode /Interpolate false",
+      "width": 240,
+      "height": 180,
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "rotation": 0,
+      "annotations": "none",
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "image": {
+        "width": 7,
+        "height": 2,
+        "bpc": 4,
+        "color_space": "/DeviceGray",
+        "decode": [
+          1,
+          0
+        ],
+        "ctm": [
+          168,
+          0,
+          0,
+          48,
+          32,
+          40
+        ],
+        "raw_sha256": "e3b13290df7c2cbdb92ba64885696c2776e2f39e8b29ca86f0db70cb50b53bec"
+      },
+      "sha256": "8a8a828836e602d9a6f80aa2ea7c0049bde1444e2756f651846770ef3af23dd8",
+      "expected_samples": [
+        {
+          "id": "cell-0-0",
+          "point": [
+            44.0,
+            76.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-0",
+          "point": [
+            68.0,
+            76.0
+          ],
+          "rgb": [
+            221,
+            221,
+            221
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-0",
+          "point": [
+            92.0,
+            76.0
+          ],
+          "rgb": [
+            170,
+            170,
+            170
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-0",
+          "point": [
+            116.0,
+            76.0
+          ],
+          "rgb": [
+            136,
+            136,
+            136
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-4-0",
+          "point": [
+            140.0,
+            76.0
+          ],
+          "rgb": [
+            85,
+            85,
+            85
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-5-0",
+          "point": [
+            164.0,
+            76.0
+          ],
+          "rgb": [
+            34,
+            34,
+            34
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-6-0",
+          "point": [
+            188.0,
+            76.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-1",
+          "point": [
+            44.0,
+            52.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-1",
+          "point": [
+            68.0,
+            52.0
+          ],
+          "rgb": [
+            51,
+            51,
+            51
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-1",
+          "point": [
+            92.0,
+            52.0
+          ],
+          "rgb": [
+            102,
+            102,
+            102
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-1",
+          "point": [
+            116.0,
+            52.0
+          ],
+          "rgb": [
+            153,
+            153,
+            153
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-4-1",
+          "point": [
+            140.0,
+            52.0
+          ],
+          "rgb": [
+            204,
+            204,
+            204
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-5-1",
+          "point": [
+            164.0,
+            52.0
+          ],
+          "rgb": [
+            238,
+            238,
+            238
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-6-1",
+          "point": [
+            188.0,
+            52.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "point": [
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_regions": [
+        {
+          "id": "cell-0-0",
+          "rect": [
+            34.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-0",
+          "rect": [
+            58.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            221,
+            221,
+            221
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-0",
+          "rect": [
+            82.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            170,
+            170,
+            170
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-0",
+          "rect": [
+            106.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            136,
+            136,
+            136
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-4-0",
+          "rect": [
+            130.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            85,
+            85,
+            85
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-5-0",
+          "rect": [
+            154.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            34,
+            34,
+            34
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-6-0",
+          "rect": [
+            178.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-1",
+          "rect": [
+            34.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-1",
+          "rect": [
+            58.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            51,
+            51,
+            51
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-1",
+          "rect": [
+            82.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            102,
+            102,
+            102
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-1",
+          "rect": [
+            106.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            153,
+            153,
+            153
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-4-1",
+          "rect": [
+            130.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            204,
+            204,
+            204
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-5-1",
+          "rect": [
+            154.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            238,
+            238,
+            238
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-6-1",
+          "rect": [
+            178.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "rect": [
+            4,
+            4,
+            16,
+            16
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "region_rule": "Each authored24-point cell is inset2PDFpoints on all sides; outer/cell boundary bands are unscored. Paper uses a separate16-point rectangle.",
+      "association": {
+        "scope": "standard-contract-only",
+        "upstream_id": null,
+        "upstream_entry_validated": false,
+        "reason": "No reviewed metadata-only scene capsule establishes a full matching upstream contract."
+      }
+    },
+    "accepted": true
+  },
+  {
+    "family": "images",
+    "id": "img-gray8-restricted-decode",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General/img-gray8-restricted-decode",
+    "manifest": {
+      "id": "img-gray8-restricted-decode",
+      "file": "inputs/img-gray8-restricted-decode.pdf",
+      "license": "MIT",
+      "contract": "DeviceGray Decode [0.2 0.8] maps encoded endpoints and exact thirds into the restricted component range.",
+      "spec": "ISO 32000-1:2008",
+      "spec_clauses": [
+        "8.9.5.2 Decode Arrays, Table 90"
+      ],
+      "route": "page image XObject /FlateDecode /Interpolate false",
+      "width": 240,
+      "height": 180,
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "rotation": 0,
+      "annotations": "none",
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "image": {
+        "width": 4,
+        "height": 2,
+        "bpc": 8,
+        "color_space": "/DeviceGray",
+        "decode": [
+          0.2,
+          0.8
+        ],
+        "ctm": [
+          96,
+          0,
+          0,
+          48,
+          32,
+          40
+        ],
+        "raw_sha256": "dac10d4f5a347ca0c92db04003866e9244243e7d79b304f261a785074670dba2"
+      },
+      "sha256": "7ee04b41e99be76d76d91418675a8793de6cb2d2e9a5ccec9f959b68a911fd92",
+      "expected_samples": [
+        {
+          "id": "cell-0-0",
+          "point": [
+            44.0,
+            76.0
+          ],
+          "rgb": [
+            51,
+            51,
+            51
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-0",
+          "point": [
+            68.0,
+            76.0
+          ],
+          "rgb": [
+            102,
+            102,
+            102
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-0",
+          "point": [
+            92.0,
+            76.0
+          ],
+          "rgb": [
+            153,
+            153,
+            153
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-0",
+          "point": [
+            116.0,
+            76.0
+          ],
+          "rgb": [
+            204,
+            204,
+            204
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-1",
+          "point": [
+            44.0,
+            52.0
+          ],
+          "rgb": [
+            204,
+            204,
+            204
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-1",
+          "point": [
+            68.0,
+            52.0
+          ],
+          "rgb": [
+            153,
+            153,
+            153
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-1",
+          "point": [
+            92.0,
+            52.0
+          ],
+          "rgb": [
+            102,
+            102,
+            102
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-1",
+          "point": [
+            116.0,
+            52.0
+          ],
+          "rgb": [
+            51,
+            51,
+            51
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "point": [
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_regions": [
+        {
+          "id": "cell-0-0",
+          "rect": [
+            34.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            51,
+            51,
+            51
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-0",
+          "rect": [
+            58.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            102,
+            102,
+            102
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-0",
+          "rect": [
+            82.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            153,
+            153,
+            153
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-0",
+          "rect": [
+            106.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            204,
+            204,
+            204
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-1",
+          "rect": [
+            34.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            204,
+            204,
+            204
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-1",
+          "rect": [
+            58.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            153,
+            153,
+            153
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-1",
+          "rect": [
+            82.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            102,
+            102,
+            102
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-1",
+          "rect": [
+            106.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            51,
+            51,
+            51
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "rect": [
+            4,
+            4,
+            16,
+            16
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "region_rule": "Each authored24-point cell is inset2PDFpoints on all sides; outer/cell boundary bands are unscored. Paper uses a separate16-point rectangle.",
+      "association": {
+        "scope": "standard-contract-only",
+        "upstream_id": null,
+        "upstream_entry_validated": false,
+        "reason": "No reviewed metadata-only scene capsule establishes a full matching upstream contract."
+      }
+    },
+    "accepted": true
+  },
+  {
+    "family": "images",
+    "id": "img-rgb8-channel-decode",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General/img-rgb8-channel-decode",
+    "manifest": {
+      "id": "img-rgb8-channel-decode",
+      "file": "inputs/img-rgb8-channel-decode.pdf",
+      "license": "MIT",
+      "contract": "RGB Decode independently reverses red/blue while preserving green; samples stay interleaved RGB.",
+      "spec": "ISO 32000-1:2008",
+      "spec_clauses": [
+        "8.9.3 Sample Representation",
+        "8.9.5.2 Decode Arrays"
+      ],
+      "route": "page image XObject /FlateDecode /Interpolate false",
+      "width": 240,
+      "height": 180,
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "rotation": 0,
+      "annotations": "none",
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "image": {
+        "width": 3,
+        "height": 2,
+        "bpc": 8,
+        "color_space": "/DeviceRGB",
+        "decode": [
+          1,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "ctm": [
+          72,
+          0,
+          0,
+          48,
+          32,
+          40
+        ],
+        "raw_sha256": "f7ad43808684123aebc83c1add5adfae79bd281c2223527d9b1f9005765483cf"
+      },
+      "sha256": "8b781bb08d1cbca927113c46f8bcdc60edf9ea7d4a3a0233ff29007211f7194a",
+      "expected_samples": [
+        {
+          "id": "cell-0-0",
+          "point": [
+            44.0,
+            76.0
+          ],
+          "rgb": [
+            238,
+            51,
+            51
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-0",
+          "point": [
+            68.0,
+            76.0
+          ],
+          "rgb": [
+            15,
+            136,
+            187
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-0",
+          "point": [
+            92.0,
+            76.0
+          ],
+          "rgb": [
+            255,
+            255,
+            136
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-1",
+          "point": [
+            44.0,
+            52.0
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-1",
+          "point": [
+            68.0,
+            52.0
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-1",
+          "point": [
+            92.0,
+            52.0
+          ],
+          "rgb": [
+            170,
+            170,
+            221
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "point": [
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_regions": [
+        {
+          "id": "cell-0-0",
+          "rect": [
+            34.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            238,
+            51,
+            51
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-0",
+          "rect": [
+            58.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            15,
+            136,
+            187
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-0",
+          "rect": [
+            82.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            255,
+            255,
+            136
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-1",
+          "rect": [
+            34.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-1",
+          "rect": [
+            58.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-1",
+          "rect": [
+            82.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            170,
+            170,
+            221
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "rect": [
+            4,
+            4,
+            16,
+            16
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "region_rule": "Each authored24-point cell is inset2PDFpoints on all sides; outer/cell boundary bands are unscored. Paper uses a separate16-point rectangle.",
+      "association": {
+        "scope": "standard-contract-only",
+        "upstream_id": null,
+        "upstream_entry_validated": false,
+        "reason": "No reviewed metadata-only scene capsule establishes a full matching upstream contract."
+      }
+    },
+    "accepted": false
+  },
+  {
+    "family": "images",
+    "id": "img-indexed2-lookup-padding",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General/img-indexed2-lookup-padding",
+    "manifest": {
+      "id": "img-indexed2-lookup-padding",
+      "file": "inputs/img-indexed2-lookup-padding.pdf",
+      "license": "MIT",
+      "contract": "Two-bit indices select a nonmonotone RGB lookup directly; five-index scanlines have independent padding.",
+      "spec": "ISO 32000-1:2008",
+      "spec_clauses": [
+        "8.6.6.3 Indexed Colour Spaces",
+        "8.9.3 Sample Representation",
+        "8.9.5.2 Table 90 default Indexed Decode"
+      ],
+      "route": "page image XObject /FlateDecode /Interpolate false",
+      "width": 240,
+      "height": 180,
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "rotation": 0,
+      "annotations": "none",
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "image": {
+        "width": 5,
+        "height": 3,
+        "bpc": 2,
+        "color_space": "[/Indexed /DeviceRGB 3 <0d43d3fb891d2fe571ad1fbf>]",
+        "decode": null,
+        "ctm": [
+          120,
+          0,
+          0,
+          72,
+          32,
+          40
+        ],
+        "raw_sha256": "96c8c6399e56f015b1dcb8d64bc9f85713664c08dd74804359888bcf5a7f8318"
+      },
+      "sha256": "a8ed81b7992b4f5ad236814bb4a961477f064d4f383a69de1d262df7a57773ff",
+      "expected_samples": [
+        {
+          "id": "cell-0-0",
+          "point": [
+            44.0,
+            100.0
+          ],
+          "rgb": [
+            13,
+            67,
+            211
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-0",
+          "point": [
+            68.0,
+            100.0
+          ],
+          "rgb": [
+            173,
+            31,
+            191
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-0",
+          "point": [
+            92.0,
+            100.0
+          ],
+          "rgb": [
+            251,
+            137,
+            29
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-0",
+          "point": [
+            116.0,
+            100.0
+          ],
+          "rgb": [
+            47,
+            229,
+            113
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-4-0",
+          "point": [
+            140.0,
+            100.0
+          ],
+          "rgb": [
+            173,
+            31,
+            191
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-1",
+          "point": [
+            44.0,
+            76.0
+          ],
+          "rgb": [
+            47,
+            229,
+            113
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-1",
+          "point": [
+            68.0,
+            76.0
+          ],
+          "rgb": [
+            251,
+            137,
+            29
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-1",
+          "point": [
+            92.0,
+            76.0
+          ],
+          "rgb": [
+            13,
+            67,
+            211
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-1",
+          "point": [
+            116.0,
+            76.0
+          ],
+          "rgb": [
+            173,
+            31,
+            191
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-4-1",
+          "point": [
+            140.0,
+            76.0
+          ],
+          "rgb": [
+            251,
+            137,
+            29
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-2",
+          "point": [
+            44.0,
+            52.0
+          ],
+          "rgb": [
+            251,
+            137,
+            29
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-2",
+          "point": [
+            68.0,
+            52.0
+          ],
+          "rgb": [
+            13,
+            67,
+            211
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-2",
+          "point": [
+            92.0,
+            52.0
+          ],
+          "rgb": [
+            47,
+            229,
+            113
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-2",
+          "point": [
+            116.0,
+            52.0
+          ],
+          "rgb": [
+            251,
+            137,
+            29
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-4-2",
+          "point": [
+            140.0,
+            52.0
+          ],
+          "rgb": [
+            173,
+            31,
+            191
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "point": [
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_regions": [
+        {
+          "id": "cell-0-0",
+          "rect": [
+            34.0,
+            90.0,
+            20,
+            20
+          ],
+          "rgb": [
+            13,
+            67,
+            211
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-0",
+          "rect": [
+            58.0,
+            90.0,
+            20,
+            20
+          ],
+          "rgb": [
+            173,
+            31,
+            191
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-0",
+          "rect": [
+            82.0,
+            90.0,
+            20,
+            20
+          ],
+          "rgb": [
+            251,
+            137,
+            29
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-0",
+          "rect": [
+            106.0,
+            90.0,
+            20,
+            20
+          ],
+          "rgb": [
+            47,
+            229,
+            113
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-4-0",
+          "rect": [
+            130.0,
+            90.0,
+            20,
+            20
+          ],
+          "rgb": [
+            173,
+            31,
+            191
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-1",
+          "rect": [
+            34.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            47,
+            229,
+            113
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-1",
+          "rect": [
+            58.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            251,
+            137,
+            29
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-1",
+          "rect": [
+            82.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            13,
+            67,
+            211
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-1",
+          "rect": [
+            106.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            173,
+            31,
+            191
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-4-1",
+          "rect": [
+            130.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            251,
+            137,
+            29
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-2",
+          "rect": [
+            34.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            251,
+            137,
+            29
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-2",
+          "rect": [
+            58.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            13,
+            67,
+            211
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-2",
+          "rect": [
+            82.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            47,
+            229,
+            113
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-2",
+          "rect": [
+            106.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            251,
+            137,
+            29
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-4-2",
+          "rect": [
+            130.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            173,
+            31,
+            191
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "rect": [
+            4,
+            4,
+            16,
+            16
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "region_rule": "Each authored24-point cell is inset2PDFpoints on all sides; outer/cell boundary bands are unscored. Paper uses a separate16-point rectangle.",
+      "association": {
+        "scope": "standard-contract-only",
+        "upstream_id": null,
+        "upstream_entry_validated": false,
+        "reason": "No reviewed metadata-only scene capsule establishes a full matching upstream contract."
+      }
+    },
+    "accepted": true
+  },
+  {
+    "family": "images",
+    "id": "img-indexed4-reversed-decode",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General/img-indexed4-reversed-decode",
+    "manifest": {
+      "id": "img-indexed4-reversed-decode",
+      "file": "inputs/img-indexed4-reversed-decode.pdf",
+      "license": "MIT",
+      "contract": "Indexed four-bit Decode [3 0] maps four exact encoded values to palette indices 3,2,1,0 before lookup.",
+      "spec": "ISO 32000-1:2008",
+      "spec_clauses": [
+        "8.6.6.3 Indexed Colour Spaces",
+        "8.9.5.2 Decode Arrays"
+      ],
+      "route": "page image XObject /FlateDecode /Interpolate false",
+      "width": 240,
+      "height": 180,
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "rotation": 0,
+      "annotations": "none",
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "image": {
+        "width": 4,
+        "height": 2,
+        "bpc": 4,
+        "color_space": "[/Indexed /DeviceRGB 3 <0d43d3fb891d2fe571ad1fbf>]",
+        "decode": [
+          3,
+          0
+        ],
+        "ctm": [
+          96,
+          0,
+          0,
+          48,
+          32,
+          40
+        ],
+        "raw_sha256": "41ef60bf1ffb8dfd099bc3955c6fc1335b2cc4696187c7137db59148566836db"
+      },
+      "sha256": "ef3da2b98655a8e25b698bb30744bb7c396b2f0d26716f72bf3f514b20571d47",
+      "expected_samples": [
+        {
+          "id": "cell-0-0",
+          "point": [
+            44.0,
+            76.0
+          ],
+          "rgb": [
+            173,
+            31,
+            191
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-0",
+          "point": [
+            68.0,
+            76.0
+          ],
+          "rgb": [
+            47,
+            229,
+            113
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-0",
+          "point": [
+            92.0,
+            76.0
+          ],
+          "rgb": [
+            251,
+            137,
+            29
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-0",
+          "point": [
+            116.0,
+            76.0
+          ],
+          "rgb": [
+            13,
+            67,
+            211
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-1",
+          "point": [
+            44.0,
+            52.0
+          ],
+          "rgb": [
+            13,
+            67,
+            211
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-1",
+          "point": [
+            68.0,
+            52.0
+          ],
+          "rgb": [
+            251,
+            137,
+            29
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-1",
+          "point": [
+            92.0,
+            52.0
+          ],
+          "rgb": [
+            47,
+            229,
+            113
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-1",
+          "point": [
+            116.0,
+            52.0
+          ],
+          "rgb": [
+            173,
+            31,
+            191
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "point": [
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_regions": [
+        {
+          "id": "cell-0-0",
+          "rect": [
+            34.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            173,
+            31,
+            191
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-0",
+          "rect": [
+            58.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            47,
+            229,
+            113
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-0",
+          "rect": [
+            82.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            251,
+            137,
+            29
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-0",
+          "rect": [
+            106.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            13,
+            67,
+            211
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-1",
+          "rect": [
+            34.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            13,
+            67,
+            211
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-1",
+          "rect": [
+            58.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            251,
+            137,
+            29
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-1",
+          "rect": [
+            82.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            47,
+            229,
+            113
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-1",
+          "rect": [
+            106.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            173,
+            31,
+            191
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "rect": [
+            4,
+            4,
+            16,
+            16
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "region_rule": "Each authored24-point cell is inset2PDFpoints on all sides; outer/cell boundary bands are unscored. Paper uses a separate16-point rectangle.",
+      "association": {
+        "scope": "standard-contract-only",
+        "upstream_id": null,
+        "upstream_entry_validated": false,
+        "reason": "No reviewed metadata-only scene capsule establishes a full matching upstream contract."
+      }
+    },
+    "accepted": true
+  },
+  {
+    "family": "images",
+    "id": "img-rgb16-big-endian",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General/img-rgb16-big-endian",
+    "manifest": {
+      "id": "img-rgb16-big-endian",
+      "file": "inputs/img-rgb16-big-endian.pdf",
+      "license": "MIT",
+      "contract": "Sixteen-bit RGB components use big-endian bytes; replicated-byte samples normalize exactly to their eight-bit values.",
+      "spec": "ISO 32000-1:2008",
+      "spec_clauses": [
+        "8.9.3 Sample Representation, 16-bit byte ordering",
+        "8.9.5.1 Image Dictionaries, Table 89"
+      ],
+      "route": "page image XObject /FlateDecode /Interpolate false",
+      "width": 240,
+      "height": 180,
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "rotation": 0,
+      "annotations": "none",
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "image": {
+        "width": 3,
+        "height": 2,
+        "bpc": 16,
+        "color_space": "/DeviceRGB",
+        "decode": null,
+        "ctm": [
+          72,
+          0,
+          0,
+          48,
+          32,
+          40
+        ],
+        "raw_sha256": "2462f4e25588d5e01cb9955c2149f6000110d92ba4499c229676b7daebda2936"
+      },
+      "sha256": "10811fb78ba3650a631e2a955833a4a82436ba4631298b7a6edb73721bb11ced",
+      "expected_samples": [
+        {
+          "id": "cell-0-0",
+          "point": [
+            44.0,
+            76.0
+          ],
+          "rgb": [
+            1,
+            128,
+            240
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-0",
+          "point": [
+            68.0,
+            76.0
+          ],
+          "rgb": [
+            17,
+            204,
+            51
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-0",
+          "point": [
+            92.0,
+            76.0
+          ],
+          "rgb": [
+            255,
+            0,
+            170
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-1",
+          "point": [
+            44.0,
+            52.0
+          ],
+          "rgb": [
+            34,
+            85,
+            136
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-1",
+          "point": [
+            68.0,
+            52.0
+          ],
+          "rgb": [
+            221,
+            68,
+            187
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-1",
+          "point": [
+            92.0,
+            52.0
+          ],
+          "rgb": [
+            0,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "point": [
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_regions": [
+        {
+          "id": "cell-0-0",
+          "rect": [
+            34.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            1,
+            128,
+            240
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-0",
+          "rect": [
+            58.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            17,
+            204,
+            51
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-0",
+          "rect": [
+            82.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            255,
+            0,
+            170
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-1",
+          "rect": [
+            34.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            34,
+            85,
+            136
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-1",
+          "rect": [
+            58.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            221,
+            68,
+            187
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-1",
+          "rect": [
+            82.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            0,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "rect": [
+            4,
+            4,
+            16,
+            16
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "region_rule": "Each authored24-point cell is inset2PDFpoints on all sides; outer/cell boundary bands are unscored. Paper uses a separate16-point rectangle.",
+      "association": {
+        "scope": "standard-contract-only",
+        "upstream_id": null,
+        "upstream_entry_validated": false,
+        "reason": "No reviewed metadata-only scene capsule establishes a full matching upstream contract."
+      }
+    },
+    "accepted": true
+  },
+  {
+    "family": "images",
+    "id": "img-rgb8-mirrored-placement",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General/img-rgb8-mirrored-placement",
+    "manifest": {
+      "id": "img-rgb8-mirrored-placement",
+      "file": "inputs/img-rgb8-mirrored-placement.pdf",
+      "license": "MIT",
+      "contract": "A negative-x image CTM mirrors columns once while retaining top-to-bottom source row orientation.",
+      "spec": "ISO 32000-1:2008",
+      "spec_clauses": [
+        "8.9.4 Image Coordinate System",
+        "8.9.5.3 Image Interpolation"
+      ],
+      "route": "page image XObject /FlateDecode /Interpolate false",
+      "width": 240,
+      "height": 180,
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "rotation": 0,
+      "annotations": "none",
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "image": {
+        "width": 2,
+        "height": 2,
+        "bpc": 8,
+        "color_space": "/DeviceRGB",
+        "decode": null,
+        "ctm": [
+          -48,
+          0,
+          0,
+          48,
+          80,
+          40
+        ],
+        "raw_sha256": "95b59fabbfae4907a5e67761c1fc56c9978020604258b78e6427ca8288563e5f"
+      },
+      "sha256": "010170ac5a93aa876b2c361be0ae1901a96efabd9d7b475150dc315c2c56ea77",
+      "expected_samples": [
+        {
+          "id": "cell-0-0",
+          "point": [
+            68.0,
+            76.0
+          ],
+          "rgb": [
+            221,
+            17,
+            85
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-0",
+          "point": [
+            44.0,
+            76.0
+          ],
+          "rgb": [
+            51,
+            187,
+            238
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-1",
+          "point": [
+            68.0,
+            52.0
+          ],
+          "rgb": [
+            119,
+            255,
+            34
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-1",
+          "point": [
+            44.0,
+            52.0
+          ],
+          "rgb": [
+            170,
+            68,
+            204
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "point": [
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_regions": [
+        {
+          "id": "cell-0-0",
+          "rect": [
+            58.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            221,
+            17,
+            85
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-0",
+          "rect": [
+            34.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            51,
+            187,
+            238
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-1",
+          "rect": [
+            58.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            119,
+            255,
+            34
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-1",
+          "rect": [
+            34.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            170,
+            68,
+            204
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "rect": [
+            4,
+            4,
+            16,
+            16
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "region_rule": "Each authored24-point cell is inset2PDFpoints on all sides; outer/cell boundary bands are unscored. Paper uses a separate16-point rectangle.",
+      "association": {
+        "scope": "standard-contract-only",
+        "upstream_id": null,
+        "upstream_entry_validated": false,
+        "reason": "No reviewed metadata-only scene capsule establishes a full matching upstream contract."
+      }
+    },
+    "accepted": true
+  }
+]
