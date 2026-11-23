@@ -1,0 +1,46 @@
+{
+  "license": "MIT",
+  "copyright": "Owned original numeric font design, generated PDFs and sources are MIT; reused adapters retain earlier headers.",
+  "font_provenance": {
+    "source_slice": "ISO-TEXT-POSITION-01",
+    "reused_from_checkpoint": "ISO-TEXT-LEADING-01",
+    "kind": "Type3",
+    "design_reused": true,
+    "new_font_designs": 0,
+    "external_font_bytes": 0,
+    "glyph_stream_sha256": {
+      "A": "4b73f4c8379a88f4ca7a2c9d79c08e29f74ad580115b3d9bf53c8f01b7938392",
+      "B": "d6a2fb8e0102dbfe8cd862334fc05442bfb45d1f63c17fcbd33eff4341927e48",
+      "space": "ab7650175034cf35fac613c21f726a2d4bf45ce5c3cc557c8623936875018536"
+    },
+    "verification": "Glyph fingerprints match the preceding original-font manifest."
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "pypdf": "6.21.4",
+  "references": {
+    "pdfium": "153.0.7999.0",
+    "pypdfium2": "5.13.0",
+    "mupdf": "1.26.11",
+    "pymupdf": "1.26.6",
+    "pdfjs": "6.5.438",
+    "pdfjs_build": "0a4153349",
+    "node": "24.22.3",
+    "node_canvas": "1.1.1"
+  },
+  "expected_oracle": "Independent explicit text/line/effective glyph matrices and spacing/leading state, checked by separate PDF-operator interpreter; three fresh reference renders qualify source-defined interiors.",
+  "baseline": {
+    "draft_pr": 94,
+    "remote_head_prefix_supplied_by_root": "1cd8573",
+    "remote_full_head_resolved_by_worker": false,
+    "materialized_local_head": "9b4b91126e54a9c9ba0ae79e57fe007e36274ee9",
+    "materialized_tree": "22257be8ecf9bc14a30db43c721db374e0da7fd0",
+    "verification": "Worker rechecked local HEAD/tree, consistent with root-supplied preserved tree prefix. No remote lookup or write."
+  },
+  "upstream_fixture_fetches": 0,
+  "upstream_inputs_executed": 0,
+  "upstream_entry_passes": 0,
+  "product_tests": 0,
+  "remote_writes": 0,
+  "prior_checkpoints_preserved": true,
+  "net_new_global_behavior_count": null
+}

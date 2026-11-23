@@ -1,0 +1,9 @@
+{
+  "license": "MIT",
+  "authorship": "New original Codex numeric grid, source PDF writer and opaque checkerboard; no upstream/private asset input",
+  "raw_bytes": 36,
+  "source": "generate.py",
+  "reference_rule": "PinnedPDFium/PDF.js/MuPDF plus independent parsed-sample/region checks; no engine-majority oracle",
+  "reference_result": "All4 non-endpoint cases held; ideal RGB expectations unchanged",
+  "product_executed": 0
+}

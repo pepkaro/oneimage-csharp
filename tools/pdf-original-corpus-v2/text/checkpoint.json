@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "batch": "ISO-TEXT-POSITION-01",
+  "state": "complete-local-reference-qualified",
+  "generated_unique_pdfs": 4,
+  "original_font_designs": 1,
+  "named_text_contracts": 4,
+  "reference_png_files": 24,
+  "reference_png_unique_bytes": 24,
+  "references_executed": 24,
+  "reference_passed": 24,
+  "reference_failed": 0,
+  "reference_skipped": 0,
+  "analytic_sample_checks": 528,
+  "analytic_sample_passed": 528,
+  "interior_pixels_per_engine": 36860,
+  "analytic_reference_pixel_checks": 110580,
+  "interior_tolerance": 0,
+  "independently_parsed_visible_glyph_matrices": 17,
+  "analytic_layout_assertion_scope": "Exact authored PDF text-operator math and font advances; not renderer edge-position measurements.",
+  "qualified_fixture_ids": [
+    "text-td-line-origin",
+    "text-tc-tw-spacing",
+    "text-tj-signed-adjustment",
+    "text-tm-rotate-replace"
+  ],
+  "held_fixture_ids": [],
+  "named_visual_assertions_outside_regions": [],
+  "unscored": [
+    "Glyph ink/counter boundaries and all undeclared page regions.",
+    "Exact reference glyph-edge coordinates, strict full-page equality and native text weight.",
+    "TrueType hinting, shaping, extraction correctness, Tz, rise and vertical writing."
+  ],
+  "upstream_entry_validated": 0,
+  "product_runs": 0,
+  "selected_expected_images_created": 0,
+  "selected_expected_candidates": [
+    "references/text-td-line-origin-72-mupdf.png",
+    "references/text-td-line-origin-144-mupdf.png",
+    "references/text-tc-tw-spacing-72-mupdf.png",
+    "references/text-tc-tw-spacing-144-mupdf.png",
+    "references/text-tj-signed-adjustment-72-mupdf.png",
+    "references/text-tj-signed-adjustment-144-mupdf.png",
+    "references/text-tm-rotate-replace-72-mupdf.png",
+    "references/text-tm-rotate-replace-144-mupdf.png"
+  ],
+  "regeneration": "All reference-rendered PDF bytes unchanged; finalized manifest/PDF generator rerun byte-identical.",
+  "commands": [
+    "python generate.py",
+    "python run-references.py /path/to/node_modules/pdfjs-dist",
+    "python verify-regions.py",
+    "python verify.py"
+  ],
+  "worker_remote_writes": 0,
+  "target_review_head": "1caa785479982f7b1431a728cb14e89ae0bf21c8"
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "owner": "pdfium_originals",
+  "slice": "ISO-TEXT-LEADING-01",
+  "path": "work/textleading",
+  "state": "complete-local-reference-qualified-awaiting-root-review",
+  "actual": {
+    "generated_unique_pdfs": 4,
+    "reused_original_fonts": 1,
+    "named_contracts": 4,
+    "references_executed": 24,
+    "reference_passed": 24,
+    "reference_failed": 0,
+    "reference_skipped": 0,
+    "qualified_cases": 4,
+    "held_cases": 0,
+    "upstream_entry_passes": 0,
+    "product_runs": 0,
+    "published_by_worker": 0
+  },
+  "next_unclaimed_slice": {
+    "id": "ISO-TEXT-QUOTE-01",
+    "state": "proposed-unclaimed-not-started",
+    "scope": "Owned original font: single-quote next-line show and double-quote spacing update/next-line show, with explicit equivalent controls.",
+    "acceptance_criteria": [
+      "Confirm disjoint ownership before assignment.",
+      "Inspect governing Table109 and available official2020 entries; keep unavailable fine wording pending.",
+      "Independently compute line/current matrices and Tc/Tw updates, freeze interiors, then run three fresh pinned references at72/144.",
+      "No filename-based upstream credit or native font-weight claim."
+    ]
+  }
+}

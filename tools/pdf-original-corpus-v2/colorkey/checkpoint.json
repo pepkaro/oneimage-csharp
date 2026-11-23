@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "batch": "ISO-IMAGE-COLORKEY-01",
+  "state": "complete-local-reference-qualified",
+  "generated_unique_pdfs": 3,
+  "shared_decoded_sample_grids": 1,
+  "decoded_bytes_per_grid": 60,
+  "contract_families": 1,
+  "reference_png_files": 18,
+  "reference_png_unique_bytes": 18,
+  "references_executed": 18,
+  "reference_passed": 18,
+  "reference_failed": 0,
+  "reference_skipped": 0,
+  "analytic_sample_checks": 378,
+  "analytic_sample_passed": 378,
+  "interior_pixels_per_engine": 123840,
+  "analytic_reference_pixel_checks": 371520,
+  "interior_tolerance": 0,
+  "masked_cells_by_variant": {
+    "img-colorkey-control": 0,
+    "img-colorkey-exact": 1,
+    "img-colorkey-range": 8
+  },
+  "qualified_fixture_ids": [
+    "img-colorkey-control",
+    "img-colorkey-exact",
+    "img-colorkey-range"
+  ],
+  "held_fixture_ids": [],
+  "independent_decoding": "3/3 decoded source-byte grids exact; range formula and separately enumerated masked-cell IDs exact.",
+  "unscored": [
+    "All cell and outer boundary bands.",
+    "Colored-background reveal, RGBA export and non-default Decode interaction."
+  ],
+  "upstream_inputs_executed": 0,
+  "upstream_entry_validated": 0,
+  "product_runs": 0,
+  "selected_expected_images_created": 0,
+  "selected_expected_candidates": [
+    "references/img-colorkey-control-72-mupdf.png",
+    "references/img-colorkey-control-144-mupdf.png",
+    "references/img-colorkey-exact-72-mupdf.png",
+    "references/img-colorkey-exact-144-mupdf.png",
+    "references/img-colorkey-range-72-mupdf.png",
+    "references/img-colorkey-range-144-mupdf.png"
+  ],
+  "regeneration": "Three PDFs and manifest byte-identical after generator rerun.",
+  "commands": [
+    "python generate.py",
+    "python run-references.py /path/to/node_modules/pdfjs-dist",
+    "python verify-regions.py",
+    "python verify.py"
+  ],
+  "worker_remote_writes": 0
+}

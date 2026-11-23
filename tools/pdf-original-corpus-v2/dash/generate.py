@@ -1,0 +1,26 @@
+#!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2026 Original PDF Corpus contributors
+"""Three original ordinary dash-array PDFs, no external inputs."""
+from pathlib import Path
+import hashlib,json
+ROOT=Path(__file__).resolve().parent
+
+def pdf(array,phase):
+ content=f'1 0 0 RG 12 w 0 J [{" ".join(map(str,array))}] {phase} d 20 50 m 120 50 l S'.encode('ascii')
+ objects=[b'<< /Type /Catalog /Pages 2 0 R >>',b'<< /Type /Pages /Kids [3 0 R] /Count 1 >>',b'<< /Type /Page /Parent 2 0 R /MediaBox [0 0 140 100] /Resources << >> /Contents 4 0 R >>',f'<< /Length {len(content)} >>\nstream\n'.encode()+content+b'\nendstream']
+ out=bytearray(b'%PDF-1.7\n');offsets=[]
+ for i,obj in enumerate(objects,1):offsets.append(len(out));out.extend(f'{i} 0 obj\n'.encode()+obj+b'\nendobj\n')
+ start=len(out);out.extend(b'xref\n0 5\n0000000000 65535 f \n')
+ for off in offsets:out.extend(f'{off:010d} 00000 n \n'.encode())
+ out.extend(f'trailer\n<< /Size 5 /Root 1 0 R >>\nstartxref\n{start}\n%%EOF\n'.encode());return bytes(out)
+
+def main():
+ (ROOT/'inputs').mkdir(exist_ok=True);cases=[]
+ variants=[('pair-phase0',[12,8],0,[[0,12],[20,32],[40,52],[60,72],[80,92]],[(6,True),(16,False),(26,True),(36,False),(86,True),(96,False)]),('pair-phase5',[12,8],5,[[0,7],[15,27],[35,47],[55,67],[75,87],[95,100]],[(3,True),(11,False),(20,True),(30,False),(97,True),(-5,False)]),('four-phase2',[8,4,3,5],2,[[0,6],[10,13],[18,26],[30,33],[38,46],[50,53],[58,66],[70,73],[78,86],[90,93],[98,100]],[(3,True),(8,False),(11,True),(15,False),(22,True),(28,False)])]
+ for name,array,phase,intervals,samples in variants:
+  id='stroke-dash-'+name;data=pdf(array,phase);file='inputs/'+id+'.pdf';(ROOT/file).write_bytes(data)
+  cases.append(dict(id=id,file=file,sha256=hashlib.sha256(data).hexdigest(),license='MIT',fixture_version='1.7',contract='Positive even-length dash array and ordinary phase on a straight butt-cap stroke',dash_array=array,dash_phase=phase,path_points=[[20,50],[120,50]],line_width=12,cap_style=0,analytic_local_on_intervals=intervals,analytic_shape='Each declared local interval [a,b] maps to rectangle [20+a,44,20+b,56]; clip final dash at path endpoint120',display_width_points=140,display_height_points=100,user_unit=1,rotation=0,pages=[0],page_count=1,dpis=[72,144],background=[255,255,255],stroke_rgb=[255,0,0],annotations='none',sample_coordinates='upright display points x right/y up; row=floor((100-y)*dpi/72)',samples=[dict(id='interval-control-'+str(i),x=20+x,y=50,rgb=([255,0,0] if inside else [255,255,255]),tolerance=0) for i,(x,inside) in enumerate(samples)],predeclared_mask='One-device-pixel band around each independently declared dash rectangle boundary excluded before rendering',legacy_verified_clause='ISO 32000-1:2008 8.4.3.6 Line Dash Pattern; 8.4.3.3 butt caps; 8.4.4/Table57 d',official_2020_coarse_index='8.5 Path construction and painting; 8.5.3.1 Path-painting operators, general',narrow_2020_rule_status='Pending full official2020 text access; no exact dash clause or wording verified from public errata',source_urls=['https://pdfa.org/resource/iso-32000-2','https://pdf-issues.pdfa.org/32000-2-2020/clause08.html'],upstream_association=dict(upstream_id=None,scope='standard-contract-only',exact_upstream_scope_established=False,upstream_input_executed=False)))
+ (ROOT/'manifest.json').write_text(json.dumps(dict(schema_version=1,slice='ISO-GEOMETRY-DASH-01',owner='mozilla_originals',independently_authored=True,upstream_fixture_bytes_read=0,case_count=3,cases=cases),indent=2)+'\n')
+ print(json.dumps(dict(unique_pdfs=len(cases),bytes=sum((ROOT/c['file']).stat().st_size for c in cases))))
+if __name__=='__main__':main()

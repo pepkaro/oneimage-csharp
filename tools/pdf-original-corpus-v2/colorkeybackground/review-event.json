@@ -1,0 +1,7 @@
+{
+  "denied_operation": "Finalize color-key slice while reading another verifier as a template",
+  "reason": "Automatic review interpreted the read as an overwrite of textleading/verify-regions.py",
+  "executed": false,
+  "unchanged_textleading_sha256": "ff899a4ce63b54a0dfaaf8b08ed329c5fd316488355c9669ae416c1ee3e483ff",
+  "resolution": "Fresh verifier text written only in new colorkeybackground directory; denied command not retried"
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "batch": "ISO-IMAGE-FILTER-CONTROL-01",
+  "state": "local-reference-qualified",
+  "generated_unique_pdfs": 3,
+  "shared_decoded_sample_grids": 1,
+  "contract_families": 1,
+  "reference_png_files": 18,
+  "reference_png_unique_bytes": 6,
+  "reference_runs": 18,
+  "reference_passed": 18,
+  "reference_failed": 0,
+  "reference_skipped": 0,
+  "analytic_sample_checks": 342,
+  "analytic_sample_passed": 342,
+  "interior_pixels_per_engine": 111840,
+  "analytic_reference_pixel_checks": 335520,
+  "interior_tolerance": 0,
+  "qualified_fixture_ids": [
+    "img-filter-equivalence-raw",
+    "img-filter-equivalence-flate",
+    "img-filter-equivalence-runlength"
+  ],
+  "held_fixture_ids": [],
+  "unscored": "All cell and outer boundary bands; no boundary-equivalence claim.",
+  "upstream_inputs_executed": 0,
+  "full_upstream_entry_validated": 0,
+  "product_runs": 0,
+  "selected_expected_images_created": 0,
+  "selected_expected_candidates": [
+    "references/img-filter-equivalence-raw-72-mupdf.png",
+    "references/img-filter-equivalence-raw-144-mupdf.png",
+    "references/img-filter-equivalence-flate-72-mupdf.png",
+    "references/img-filter-equivalence-flate-144-mupdf.png",
+    "references/img-filter-equivalence-runlength-72-mupdf.png",
+    "references/img-filter-equivalence-runlength-144-mupdf.png"
+  ],
+  "regeneration": "Generator rerun produced byte-identical three PDFs and manifest.",
+  "commands": [
+    "python generate.py",
+    "python run-references.py /path/to/node_modules/pdfjs-dist",
+    "python verify-regions.py",
+    "python verify.py"
+  ],
+  "previous_checkpoint": "work/pdfium preserved; no changes",
+  "worker_remote_writes": 0
+}

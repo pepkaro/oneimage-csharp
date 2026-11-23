@@ -1,0 +1,2324 @@
+{
+  "schema_version": 1,
+  "batch": "ISO-IMAGE-COLORKEY-01",
+  "purpose": "One ordinary color-key family, three variants; no upstream-entry or net-new global-behavior claim.",
+  "fixture_count": 3,
+  "decoded_bytes_hex": "2255884477aa3366992155884577aa2254884478aa2255874477ab336698336599326699000000eeddcc11cc554455aa2277885555882288882255bb",
+  "cases": [
+    {
+      "id": "img-colorkey-control",
+      "file": "inputs/img-colorkey-control.pdf",
+      "license": "MIT",
+      "contract": "Original RGB8 control color-key masking; inclusive per-component intersection over authored source samples, composited on white.",
+      "spec": "ISO 32000-1:2008",
+      "spec_clauses": [
+        "8.9.6.4 Colour Key Masking",
+        "8.9.5.1 General, Table 89",
+        "8.9.3 Sample Representation"
+      ],
+      "route": "page image XObject /FlateDecode /Mask absent /Interpolate false",
+      "width": 240,
+      "height": 180,
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "rotation": 0,
+      "annotations": "none",
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "image": {
+        "width": 5,
+        "height": 4,
+        "bpc": 8,
+        "color_space": "/DeviceRGB",
+        "decode": null,
+        "ctm": [
+          120,
+          0,
+          0,
+          96,
+          32,
+          40
+        ],
+        "filter": "FlateDecode",
+        "mask": null,
+        "raw_sha256": "1a52ced4df0d99ce821fe3295e3a577d732b663c2eb9a8c913a72cfd76becc17",
+        "encoded_sha256": "e90c4cd77ffe907c57600f358b04b9302c675aba5553e31abd76839bc11c0ca0",
+        "masked_cells": 0
+      },
+      "sha256": "09f86c127465171785a756e027669acc8d80e9c12ae721d9473fb232eaae4f4a",
+      "expected_samples": [
+        {
+          "id": "cell-0-0",
+          "point": [
+            44.0,
+            124.0
+          ],
+          "rgb": [
+            34,
+            85,
+            136
+          ],
+          "source_rgb": [
+            34,
+            85,
+            136
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-0",
+          "point": [
+            68.0,
+            124.0
+          ],
+          "rgb": [
+            68,
+            119,
+            170
+          ],
+          "source_rgb": [
+            68,
+            119,
+            170
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-0",
+          "point": [
+            92.0,
+            124.0
+          ],
+          "rgb": [
+            51,
+            102,
+            153
+          ],
+          "source_rgb": [
+            51,
+            102,
+            153
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-0",
+          "point": [
+            116.0,
+            124.0
+          ],
+          "rgb": [
+            33,
+            85,
+            136
+          ],
+          "source_rgb": [
+            33,
+            85,
+            136
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-4-0",
+          "point": [
+            140.0,
+            124.0
+          ],
+          "rgb": [
+            69,
+            119,
+            170
+          ],
+          "source_rgb": [
+            69,
+            119,
+            170
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-1",
+          "point": [
+            44.0,
+            100.0
+          ],
+          "rgb": [
+            34,
+            84,
+            136
+          ],
+          "source_rgb": [
+            34,
+            84,
+            136
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-1",
+          "point": [
+            68.0,
+            100.0
+          ],
+          "rgb": [
+            68,
+            120,
+            170
+          ],
+          "source_rgb": [
+            68,
+            120,
+            170
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-1",
+          "point": [
+            92.0,
+            100.0
+          ],
+          "rgb": [
+            34,
+            85,
+            135
+          ],
+          "source_rgb": [
+            34,
+            85,
+            135
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-1",
+          "point": [
+            116.0,
+            100.0
+          ],
+          "rgb": [
+            68,
+            119,
+            171
+          ],
+          "source_rgb": [
+            68,
+            119,
+            171
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-4-1",
+          "point": [
+            140.0,
+            100.0
+          ],
+          "rgb": [
+            51,
+            102,
+            152
+          ],
+          "source_rgb": [
+            51,
+            102,
+            152
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-2",
+          "point": [
+            44.0,
+            76.0
+          ],
+          "rgb": [
+            51,
+            101,
+            153
+          ],
+          "source_rgb": [
+            51,
+            101,
+            153
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-2",
+          "point": [
+            68.0,
+            76.0
+          ],
+          "rgb": [
+            50,
+            102,
+            153
+          ],
+          "source_rgb": [
+            50,
+            102,
+            153
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-2",
+          "point": [
+            92.0,
+            76.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "source_rgb": [
+            0,
+            0,
+            0
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-2",
+          "point": [
+            116.0,
+            76.0
+          ],
+          "rgb": [
+            238,
+            221,
+            204
+          ],
+          "source_rgb": [
+            238,
+            221,
+            204
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-4-2",
+          "point": [
+            140.0,
+            76.0
+          ],
+          "rgb": [
+            17,
+            204,
+            85
+          ],
+          "source_rgb": [
+            17,
+            204,
+            85
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-3",
+          "point": [
+            44.0,
+            52.0
+          ],
+          "rgb": [
+            68,
+            85,
+            170
+          ],
+          "source_rgb": [
+            68,
+            85,
+            170
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-3",
+          "point": [
+            68.0,
+            52.0
+          ],
+          "rgb": [
+            34,
+            119,
+            136
+          ],
+          "source_rgb": [
+            34,
+            119,
+            136
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-3",
+          "point": [
+            92.0,
+            52.0
+          ],
+          "rgb": [
+            85,
+            85,
+            136
+          ],
+          "source_rgb": [
+            85,
+            85,
+            136
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-3",
+          "point": [
+            116.0,
+            52.0
+          ],
+          "rgb": [
+            34,
+            136,
+            136
+          ],
+          "source_rgb": [
+            34,
+            136,
+            136
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-4-3",
+          "point": [
+            140.0,
+            52.0
+          ],
+          "rgb": [
+            34,
+            85,
+            187
+          ],
+          "source_rgb": [
+            34,
+            85,
+            187
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "point": [
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_regions": [
+        {
+          "id": "cell-0-0",
+          "rect": [
+            34.0,
+            114.0,
+            20,
+            20
+          ],
+          "rgb": [
+            34,
+            85,
+            136
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-0",
+          "rect": [
+            58.0,
+            114.0,
+            20,
+            20
+          ],
+          "rgb": [
+            68,
+            119,
+            170
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-0",
+          "rect": [
+            82.0,
+            114.0,
+            20,
+            20
+          ],
+          "rgb": [
+            51,
+            102,
+            153
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-0",
+          "rect": [
+            106.0,
+            114.0,
+            20,
+            20
+          ],
+          "rgb": [
+            33,
+            85,
+            136
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-4-0",
+          "rect": [
+            130.0,
+            114.0,
+            20,
+            20
+          ],
+          "rgb": [
+            69,
+            119,
+            170
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-1",
+          "rect": [
+            34.0,
+            90.0,
+            20,
+            20
+          ],
+          "rgb": [
+            34,
+            84,
+            136
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-1",
+          "rect": [
+            58.0,
+            90.0,
+            20,
+            20
+          ],
+          "rgb": [
+            68,
+            120,
+            170
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-1",
+          "rect": [
+            82.0,
+            90.0,
+            20,
+            20
+          ],
+          "rgb": [
+            34,
+            85,
+            135
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-1",
+          "rect": [
+            106.0,
+            90.0,
+            20,
+            20
+          ],
+          "rgb": [
+            68,
+            119,
+            171
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-4-1",
+          "rect": [
+            130.0,
+            90.0,
+            20,
+            20
+          ],
+          "rgb": [
+            51,
+            102,
+            152
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-2",
+          "rect": [
+            34.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            51,
+            101,
+            153
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-2",
+          "rect": [
+            58.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            50,
+            102,
+            153
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-2",
+          "rect": [
+            82.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-2",
+          "rect": [
+            106.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            238,
+            221,
+            204
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-4-2",
+          "rect": [
+            130.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            17,
+            204,
+            85
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-3",
+          "rect": [
+            34.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            68,
+            85,
+            170
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-3",
+          "rect": [
+            58.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            34,
+            119,
+            136
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-3",
+          "rect": [
+            82.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            85,
+            85,
+            136
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-3",
+          "rect": [
+            106.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            34,
+            136,
+            136
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-4-3",
+          "rect": [
+            130.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            34,
+            85,
+            187
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "rect": [
+            4,
+            4,
+            16,
+            16
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "region_rule": "Each authored 24-point cell inset 2 points; all boundaries unscored. Paper rectangle [4,4,16,16].",
+      "association": {
+        "scope": "standard-contract-only",
+        "upstream_id": null,
+        "upstream_entry_validated": false,
+        "reason": "No exact upstream metadata-only scene assertion established."
+      }
+    },
+    {
+      "id": "img-colorkey-exact",
+      "file": "inputs/img-colorkey-exact.pdf",
+      "license": "MIT",
+      "contract": "Original RGB8 exact color-key masking; inclusive per-component intersection over authored source samples, composited on white.",
+      "spec": "ISO 32000-1:2008",
+      "spec_clauses": [
+        "8.9.6.4 Colour Key Masking",
+        "8.9.5.1 General, Table 89",
+        "8.9.3 Sample Representation"
+      ],
+      "route": "page image XObject /FlateDecode /Mask color-key array /Interpolate false",
+      "width": 240,
+      "height": 180,
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "rotation": 0,
+      "annotations": "none",
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "image": {
+        "width": 5,
+        "height": 4,
+        "bpc": 8,
+        "color_space": "/DeviceRGB",
+        "decode": null,
+        "ctm": [
+          120,
+          0,
+          0,
+          96,
+          32,
+          40
+        ],
+        "filter": "FlateDecode",
+        "mask": [
+          51,
+          51,
+          102,
+          102,
+          153,
+          153
+        ],
+        "raw_sha256": "1a52ced4df0d99ce821fe3295e3a577d732b663c2eb9a8c913a72cfd76becc17",
+        "encoded_sha256": "e90c4cd77ffe907c57600f358b04b9302c675aba5553e31abd76839bc11c0ca0",
+        "masked_cells": 1
+      },
+      "sha256": "96b88952e558068d2c8663dfc3d4addf8204eface0a746d1b9277cabe9d9e817",
+      "expected_samples": [
+        {
+          "id": "cell-0-0",
+          "point": [
+            44.0,
+            124.0
+          ],
+          "rgb": [
+            34,
+            85,
+            136
+          ],
+          "source_rgb": [
+            34,
+            85,
+            136
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-0",
+          "point": [
+            68.0,
+            124.0
+          ],
+          "rgb": [
+            68,
+            119,
+            170
+          ],
+          "source_rgb": [
+            68,
+            119,
+            170
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-0",
+          "point": [
+            92.0,
+            124.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "source_rgb": [
+            51,
+            102,
+            153
+          ],
+          "masked": true,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-0",
+          "point": [
+            116.0,
+            124.0
+          ],
+          "rgb": [
+            33,
+            85,
+            136
+          ],
+          "source_rgb": [
+            33,
+            85,
+            136
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-4-0",
+          "point": [
+            140.0,
+            124.0
+          ],
+          "rgb": [
+            69,
+            119,
+            170
+          ],
+          "source_rgb": [
+            69,
+            119,
+            170
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-1",
+          "point": [
+            44.0,
+            100.0
+          ],
+          "rgb": [
+            34,
+            84,
+            136
+          ],
+          "source_rgb": [
+            34,
+            84,
+            136
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-1",
+          "point": [
+            68.0,
+            100.0
+          ],
+          "rgb": [
+            68,
+            120,
+            170
+          ],
+          "source_rgb": [
+            68,
+            120,
+            170
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-1",
+          "point": [
+            92.0,
+            100.0
+          ],
+          "rgb": [
+            34,
+            85,
+            135
+          ],
+          "source_rgb": [
+            34,
+            85,
+            135
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-1",
+          "point": [
+            116.0,
+            100.0
+          ],
+          "rgb": [
+            68,
+            119,
+            171
+          ],
+          "source_rgb": [
+            68,
+            119,
+            171
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-4-1",
+          "point": [
+            140.0,
+            100.0
+          ],
+          "rgb": [
+            51,
+            102,
+            152
+          ],
+          "source_rgb": [
+            51,
+            102,
+            152
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-2",
+          "point": [
+            44.0,
+            76.0
+          ],
+          "rgb": [
+            51,
+            101,
+            153
+          ],
+          "source_rgb": [
+            51,
+            101,
+            153
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-2",
+          "point": [
+            68.0,
+            76.0
+          ],
+          "rgb": [
+            50,
+            102,
+            153
+          ],
+          "source_rgb": [
+            50,
+            102,
+            153
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-2",
+          "point": [
+            92.0,
+            76.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "source_rgb": [
+            0,
+            0,
+            0
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-2",
+          "point": [
+            116.0,
+            76.0
+          ],
+          "rgb": [
+            238,
+            221,
+            204
+          ],
+          "source_rgb": [
+            238,
+            221,
+            204
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-4-2",
+          "point": [
+            140.0,
+            76.0
+          ],
+          "rgb": [
+            17,
+            204,
+            85
+          ],
+          "source_rgb": [
+            17,
+            204,
+            85
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-3",
+          "point": [
+            44.0,
+            52.0
+          ],
+          "rgb": [
+            68,
+            85,
+            170
+          ],
+          "source_rgb": [
+            68,
+            85,
+            170
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-3",
+          "point": [
+            68.0,
+            52.0
+          ],
+          "rgb": [
+            34,
+            119,
+            136
+          ],
+          "source_rgb": [
+            34,
+            119,
+            136
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-3",
+          "point": [
+            92.0,
+            52.0
+          ],
+          "rgb": [
+            85,
+            85,
+            136
+          ],
+          "source_rgb": [
+            85,
+            85,
+            136
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-3",
+          "point": [
+            116.0,
+            52.0
+          ],
+          "rgb": [
+            34,
+            136,
+            136
+          ],
+          "source_rgb": [
+            34,
+            136,
+            136
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-4-3",
+          "point": [
+            140.0,
+            52.0
+          ],
+          "rgb": [
+            34,
+            85,
+            187
+          ],
+          "source_rgb": [
+            34,
+            85,
+            187
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "point": [
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_regions": [
+        {
+          "id": "cell-0-0",
+          "rect": [
+            34.0,
+            114.0,
+            20,
+            20
+          ],
+          "rgb": [
+            34,
+            85,
+            136
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-0",
+          "rect": [
+            58.0,
+            114.0,
+            20,
+            20
+          ],
+          "rgb": [
+            68,
+            119,
+            170
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-0",
+          "rect": [
+            82.0,
+            114.0,
+            20,
+            20
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-0",
+          "rect": [
+            106.0,
+            114.0,
+            20,
+            20
+          ],
+          "rgb": [
+            33,
+            85,
+            136
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-4-0",
+          "rect": [
+            130.0,
+            114.0,
+            20,
+            20
+          ],
+          "rgb": [
+            69,
+            119,
+            170
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-1",
+          "rect": [
+            34.0,
+            90.0,
+            20,
+            20
+          ],
+          "rgb": [
+            34,
+            84,
+            136
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-1",
+          "rect": [
+            58.0,
+            90.0,
+            20,
+            20
+          ],
+          "rgb": [
+            68,
+            120,
+            170
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-1",
+          "rect": [
+            82.0,
+            90.0,
+            20,
+            20
+          ],
+          "rgb": [
+            34,
+            85,
+            135
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-1",
+          "rect": [
+            106.0,
+            90.0,
+            20,
+            20
+          ],
+          "rgb": [
+            68,
+            119,
+            171
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-4-1",
+          "rect": [
+            130.0,
+            90.0,
+            20,
+            20
+          ],
+          "rgb": [
+            51,
+            102,
+            152
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-2",
+          "rect": [
+            34.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            51,
+            101,
+            153
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-2",
+          "rect": [
+            58.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            50,
+            102,
+            153
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-2",
+          "rect": [
+            82.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-2",
+          "rect": [
+            106.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            238,
+            221,
+            204
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-4-2",
+          "rect": [
+            130.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            17,
+            204,
+            85
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-3",
+          "rect": [
+            34.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            68,
+            85,
+            170
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-3",
+          "rect": [
+            58.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            34,
+            119,
+            136
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-3",
+          "rect": [
+            82.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            85,
+            85,
+            136
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-3",
+          "rect": [
+            106.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            34,
+            136,
+            136
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-4-3",
+          "rect": [
+            130.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            34,
+            85,
+            187
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "rect": [
+            4,
+            4,
+            16,
+            16
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "region_rule": "Each authored 24-point cell inset 2 points; all boundaries unscored. Paper rectangle [4,4,16,16].",
+      "association": {
+        "scope": "standard-contract-only",
+        "upstream_id": null,
+        "upstream_entry_validated": false,
+        "reason": "No exact upstream metadata-only scene assertion established."
+      }
+    },
+    {
+      "id": "img-colorkey-range",
+      "file": "inputs/img-colorkey-range.pdf",
+      "license": "MIT",
+      "contract": "Original RGB8 range color-key masking; inclusive per-component intersection over authored source samples, composited on white.",
+      "spec": "ISO 32000-1:2008",
+      "spec_clauses": [
+        "8.9.6.4 Colour Key Masking",
+        "8.9.5.1 General, Table 89",
+        "8.9.3 Sample Representation"
+      ],
+      "route": "page image XObject /FlateDecode /Mask color-key array /Interpolate false",
+      "width": 240,
+      "height": 180,
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "rotation": 0,
+      "annotations": "none",
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "image": {
+        "width": 5,
+        "height": 4,
+        "bpc": 8,
+        "color_space": "/DeviceRGB",
+        "decode": null,
+        "ctm": [
+          120,
+          0,
+          0,
+          96,
+          32,
+          40
+        ],
+        "filter": "FlateDecode",
+        "mask": [
+          34,
+          68,
+          85,
+          119,
+          136,
+          170
+        ],
+        "raw_sha256": "1a52ced4df0d99ce821fe3295e3a577d732b663c2eb9a8c913a72cfd76becc17",
+        "encoded_sha256": "e90c4cd77ffe907c57600f358b04b9302c675aba5553e31abd76839bc11c0ca0",
+        "masked_cells": 8
+      },
+      "sha256": "544f550d6d769d2874184530ad001e30b72446a4de75c0b207d3dd986bb4a270",
+      "expected_samples": [
+        {
+          "id": "cell-0-0",
+          "point": [
+            44.0,
+            124.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "source_rgb": [
+            34,
+            85,
+            136
+          ],
+          "masked": true,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-0",
+          "point": [
+            68.0,
+            124.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "source_rgb": [
+            68,
+            119,
+            170
+          ],
+          "masked": true,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-0",
+          "point": [
+            92.0,
+            124.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "source_rgb": [
+            51,
+            102,
+            153
+          ],
+          "masked": true,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-0",
+          "point": [
+            116.0,
+            124.0
+          ],
+          "rgb": [
+            33,
+            85,
+            136
+          ],
+          "source_rgb": [
+            33,
+            85,
+            136
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-4-0",
+          "point": [
+            140.0,
+            124.0
+          ],
+          "rgb": [
+            69,
+            119,
+            170
+          ],
+          "source_rgb": [
+            69,
+            119,
+            170
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-1",
+          "point": [
+            44.0,
+            100.0
+          ],
+          "rgb": [
+            34,
+            84,
+            136
+          ],
+          "source_rgb": [
+            34,
+            84,
+            136
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-1",
+          "point": [
+            68.0,
+            100.0
+          ],
+          "rgb": [
+            68,
+            120,
+            170
+          ],
+          "source_rgb": [
+            68,
+            120,
+            170
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-1",
+          "point": [
+            92.0,
+            100.0
+          ],
+          "rgb": [
+            34,
+            85,
+            135
+          ],
+          "source_rgb": [
+            34,
+            85,
+            135
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-1",
+          "point": [
+            116.0,
+            100.0
+          ],
+          "rgb": [
+            68,
+            119,
+            171
+          ],
+          "source_rgb": [
+            68,
+            119,
+            171
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-4-1",
+          "point": [
+            140.0,
+            100.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "source_rgb": [
+            51,
+            102,
+            152
+          ],
+          "masked": true,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-2",
+          "point": [
+            44.0,
+            76.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "source_rgb": [
+            51,
+            101,
+            153
+          ],
+          "masked": true,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-2",
+          "point": [
+            68.0,
+            76.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "source_rgb": [
+            50,
+            102,
+            153
+          ],
+          "masked": true,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-2",
+          "point": [
+            92.0,
+            76.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "source_rgb": [
+            0,
+            0,
+            0
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-2",
+          "point": [
+            116.0,
+            76.0
+          ],
+          "rgb": [
+            238,
+            221,
+            204
+          ],
+          "source_rgb": [
+            238,
+            221,
+            204
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-4-2",
+          "point": [
+            140.0,
+            76.0
+          ],
+          "rgb": [
+            17,
+            204,
+            85
+          ],
+          "source_rgb": [
+            17,
+            204,
+            85
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-3",
+          "point": [
+            44.0,
+            52.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "source_rgb": [
+            68,
+            85,
+            170
+          ],
+          "masked": true,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-3",
+          "point": [
+            68.0,
+            52.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "source_rgb": [
+            34,
+            119,
+            136
+          ],
+          "masked": true,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-3",
+          "point": [
+            92.0,
+            52.0
+          ],
+          "rgb": [
+            85,
+            85,
+            136
+          ],
+          "source_rgb": [
+            85,
+            85,
+            136
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-3",
+          "point": [
+            116.0,
+            52.0
+          ],
+          "rgb": [
+            34,
+            136,
+            136
+          ],
+          "source_rgb": [
+            34,
+            136,
+            136
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "cell-4-3",
+          "point": [
+            140.0,
+            52.0
+          ],
+          "rgb": [
+            34,
+            85,
+            187
+          ],
+          "source_rgb": [
+            34,
+            85,
+            187
+          ],
+          "masked": false,
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "point": [
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_regions": [
+        {
+          "id": "cell-0-0",
+          "rect": [
+            34.0,
+            114.0,
+            20,
+            20
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-0",
+          "rect": [
+            58.0,
+            114.0,
+            20,
+            20
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-0",
+          "rect": [
+            82.0,
+            114.0,
+            20,
+            20
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-0",
+          "rect": [
+            106.0,
+            114.0,
+            20,
+            20
+          ],
+          "rgb": [
+            33,
+            85,
+            136
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-4-0",
+          "rect": [
+            130.0,
+            114.0,
+            20,
+            20
+          ],
+          "rgb": [
+            69,
+            119,
+            170
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-1",
+          "rect": [
+            34.0,
+            90.0,
+            20,
+            20
+          ],
+          "rgb": [
+            34,
+            84,
+            136
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-1",
+          "rect": [
+            58.0,
+            90.0,
+            20,
+            20
+          ],
+          "rgb": [
+            68,
+            120,
+            170
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-1",
+          "rect": [
+            82.0,
+            90.0,
+            20,
+            20
+          ],
+          "rgb": [
+            34,
+            85,
+            135
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-1",
+          "rect": [
+            106.0,
+            90.0,
+            20,
+            20
+          ],
+          "rgb": [
+            68,
+            119,
+            171
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-4-1",
+          "rect": [
+            130.0,
+            90.0,
+            20,
+            20
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-2",
+          "rect": [
+            34.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-2",
+          "rect": [
+            58.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-2",
+          "rect": [
+            82.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-2",
+          "rect": [
+            106.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            238,
+            221,
+            204
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-4-2",
+          "rect": [
+            130.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            17,
+            204,
+            85
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-3",
+          "rect": [
+            34.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-3",
+          "rect": [
+            58.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-3",
+          "rect": [
+            82.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            85,
+            85,
+            136
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-3",
+          "rect": [
+            106.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            34,
+            136,
+            136
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-4-3",
+          "rect": [
+            130.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            34,
+            85,
+            187
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "rect": [
+            4,
+            4,
+            16,
+            16
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "region_rule": "Each authored 24-point cell inset 2 points; all boundaries unscored. Paper rectangle [4,4,16,16].",
+      "association": {
+        "scope": "standard-contract-only",
+        "upstream_id": null,
+        "upstream_entry_validated": false,
+        "reason": "No exact upstream metadata-only scene assertion established."
+      }
+    }
+  ]
+}

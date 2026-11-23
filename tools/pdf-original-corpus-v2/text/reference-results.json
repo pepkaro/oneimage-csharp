@@ -1,0 +1,8205 @@
+{
+  "fixture_count": 4,
+  "unique_pdfs": 4,
+  "reference_runs": 24,
+  "passed": 24,
+  "failed": 0,
+  "skipped": 0,
+  "unscored_edge_regions": "Named point probes during capture; authored interiors verified separately; outside-mask regions unscored.",
+  "rows": [
+    {
+      "id": "text-td-line-origin",
+      "dpi": 72,
+      "engine": "pdfium",
+      "file": "references/text-td-line-origin-72-pdfium.png",
+      "sha256": "e5e30aab6ebbe97d8d19cc05fa693bee3da860fe69b7763a5b09e1fda0008385",
+      "sample_count": 21,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "glyph-0-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "text-td-line-origin",
+      "dpi": 72,
+      "engine": "mupdf",
+      "file": "references/text-td-line-origin-72-mupdf.png",
+      "sha256": "90cc660ea28e20fff81217bfe94575dc63c001e5d19ceffa7ced67c3e6d23c0e",
+      "sample_count": 21,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "glyph-0-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "text-td-line-origin",
+      "dpi": 72,
+      "engine": "pdfjs",
+      "file": "references/text-td-line-origin-72-pdfjs.png",
+      "sha256": "c8dcec4b0c578f1f4e8d72a9e75031a45b3b46efbdb79ff272a3f38abbeb0759",
+      "sample_count": 21,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "glyph-0-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "text-td-line-origin",
+      "dpi": 144,
+      "engine": "pdfium",
+      "file": "references/text-td-line-origin-144-pdfium.png",
+      "sha256": "5b8ee3e51e33e526a59bcf581a54ac96ee2e959873965b80da048dba035f7523",
+      "sample_count": 21,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "glyph-0-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "text-td-line-origin",
+      "dpi": 144,
+      "engine": "mupdf",
+      "file": "references/text-td-line-origin-144-mupdf.png",
+      "sha256": "3c5f2aead3c4e11752438f8a0b51abb90133d3e3644e246879a757b79f54bdbb",
+      "sample_count": 21,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "glyph-0-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "text-td-line-origin",
+      "dpi": 144,
+      "engine": "pdfjs",
+      "file": "references/text-td-line-origin-144-pdfjs.png",
+      "sha256": "9e8d2ccedc5320f2507290dea07e952371777ccc74a532d5afbac08f825c0411",
+      "sample_count": 21,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "glyph-0-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "text-tc-tw-spacing",
+      "dpi": 72,
+      "engine": "pdfium",
+      "file": "references/text-tc-tw-spacing-72-pdfium.png",
+      "sha256": "632b0e19c9fff2592071fe79c137034d6fa89a9dd2cb56f9cca42e9d1db1b91e",
+      "sample_count": 31,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "glyph-0-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-4-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-4-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-4-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-4-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-5-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-5-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-5-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-5-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-5-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-5-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "text-tc-tw-spacing",
+      "dpi": 72,
+      "engine": "mupdf",
+      "file": "references/text-tc-tw-spacing-72-mupdf.png",
+      "sha256": "dd80f467951d6a13d0fbcb243936c7cca732479def8d2cf9e9e6093f09321037",
+      "sample_count": 31,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "glyph-0-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-4-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-4-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-4-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-4-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-5-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-5-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-5-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-5-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-5-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-5-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "text-tc-tw-spacing",
+      "dpi": 72,
+      "engine": "pdfjs",
+      "file": "references/text-tc-tw-spacing-72-pdfjs.png",
+      "sha256": "e6c15dc7644f4b31d5c3880112523a08e71f43d0839e0bbce5d255f144d67695",
+      "sample_count": 31,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "glyph-0-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-4-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-4-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-4-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-4-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-5-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-5-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-5-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-5-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-5-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-5-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "text-tc-tw-spacing",
+      "dpi": 144,
+      "engine": "pdfium",
+      "file": "references/text-tc-tw-spacing-144-pdfium.png",
+      "sha256": "a5cb39ad253d46a40c4d8b38630e59c0262f0c4796182bc16ce86c7266aabb7f",
+      "sample_count": 31,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "glyph-0-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-4-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-4-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-4-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-4-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-5-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-5-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-5-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-5-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-5-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-5-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "text-tc-tw-spacing",
+      "dpi": 144,
+      "engine": "mupdf",
+      "file": "references/text-tc-tw-spacing-144-mupdf.png",
+      "sha256": "e6a00511514cdfd324b31f7018a27f49848ec1af8a2dd1fbee8459059cfb5775",
+      "sample_count": 31,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "glyph-0-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-4-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-4-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-4-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-4-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-5-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-5-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-5-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-5-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-5-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-5-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "text-tc-tw-spacing",
+      "dpi": 144,
+      "engine": "pdfjs",
+      "file": "references/text-tc-tw-spacing-144-pdfjs.png",
+      "sha256": "be5a3ed055fc45771cc067b10b220feda66364dbd3bc18c523d6443100ae768a",
+      "sample_count": 31,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "glyph-0-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-4-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-4-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-4-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-4-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-5-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-5-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-5-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-5-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-5-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-5-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "text-tj-signed-adjustment",
+      "dpi": 72,
+      "engine": "pdfium",
+      "file": "references/text-tj-signed-adjustment-72-pdfium.png",
+      "sha256": "fea8b6639d91af7ad9fe07e6daf18026a321174ea422184a4864c709e813bc88",
+      "sample_count": 15,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "glyph-0-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "text-tj-signed-adjustment",
+      "dpi": 72,
+      "engine": "mupdf",
+      "file": "references/text-tj-signed-adjustment-72-mupdf.png",
+      "sha256": "43ee9c457217961bb55e6a389119c7d0c0bbd4a3588a997f0c66ef2772b8e8f8",
+      "sample_count": 15,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "glyph-0-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "text-tj-signed-adjustment",
+      "dpi": 72,
+      "engine": "pdfjs",
+      "file": "references/text-tj-signed-adjustment-72-pdfjs.png",
+      "sha256": "73df00124ef9c01c009ca8e4e8ad5c9c0cb6a3e73d99a2892d543d3c99dfca58",
+      "sample_count": 15,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "glyph-0-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "text-tj-signed-adjustment",
+      "dpi": 144,
+      "engine": "pdfium",
+      "file": "references/text-tj-signed-adjustment-144-pdfium.png",
+      "sha256": "4f29498544b76a2d6f6f3c1e813cd69418f220906dd9d400787bf04b5f182378",
+      "sample_count": 15,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "glyph-0-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "text-tj-signed-adjustment",
+      "dpi": 144,
+      "engine": "mupdf",
+      "file": "references/text-tj-signed-adjustment-144-mupdf.png",
+      "sha256": "820e0328edf5c0e470389c6b591a2c4175b3fe9ac35e19b2f34d3158609792d1",
+      "sample_count": 15,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "glyph-0-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "text-tj-signed-adjustment",
+      "dpi": 144,
+      "engine": "pdfjs",
+      "file": "references/text-tj-signed-adjustment-144-pdfjs.png",
+      "sha256": "fd995523b7ba56a167552b445d25cd05c5bb42972d3c9bedb68d860cc2030e62",
+      "sample_count": 15,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "glyph-0-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "text-tm-rotate-replace",
+      "dpi": 72,
+      "engine": "pdfium",
+      "file": "references/text-tm-rotate-replace-72-pdfium.png",
+      "sha256": "03e99e8b640283e9616348bc385bb532796e45316a0ae42f6be96e0141e149e1",
+      "sample_count": 21,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "glyph-0-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "text-tm-rotate-replace",
+      "dpi": 72,
+      "engine": "mupdf",
+      "file": "references/text-tm-rotate-replace-72-mupdf.png",
+      "sha256": "dae9b41c111ee8384c1887e760afbb50ac4c49394669c1e349dff2d55407bbe4",
+      "sample_count": 21,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "glyph-0-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "text-tm-rotate-replace",
+      "dpi": 72,
+      "engine": "pdfjs",
+      "file": "references/text-tm-rotate-replace-72-pdfjs.png",
+      "sha256": "c8c391bde2b61e30a34cfdc2e2eddc29a4a66748170c8b6b1411bd59b18f72b7",
+      "sample_count": 21,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "glyph-0-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "text-tm-rotate-replace",
+      "dpi": 144,
+      "engine": "pdfium",
+      "file": "references/text-tm-rotate-replace-144-pdfium.png",
+      "sha256": "b73bbbd9a3672b4343291e31306f7dd0effd22403c1343c9622abd4ec2deb6cc",
+      "sample_count": 21,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "glyph-0-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "text-tm-rotate-replace",
+      "dpi": 144,
+      "engine": "mupdf",
+      "file": "references/text-tm-rotate-replace-144-mupdf.png",
+      "sha256": "eccbe8719b1a8366521c43d19a907916c57fd2efdc995b8c4ee3215e90c72b71",
+      "sample_count": 21,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "glyph-0-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "text-tm-rotate-replace",
+      "dpi": 144,
+      "engine": "pdfjs",
+      "file": "references/text-tm-rotate-replace-144-pdfjs.png",
+      "sha256": "d048059fb3b9ca73c0ab3b3e16277cc20dd36f9b3e1fae2a926fc2a4e258157d",
+      "sample_count": 21,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "glyph-0-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-0-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-1-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-ink-3",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-2-B-counter-1",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-ink-0",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-ink-1",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-ink-2",
+          "expected": [
+            0,
+            0,
+            0
+          ],
+          "actual": [
+            0,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "glyph-3-A-counter-0",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "versions": {
+    "pdfium": "153.0.7999.0",
+    "pypdfium2": "5.13.0",
+    "mupdf": "1.26.11",
+    "pymupdf": "1.26.6",
+    "pdfjs": "6.5.438",
+    "pdfjs_build": "0a4153349",
+    "node": "24.22.3",
+    "node_canvas": "1.1.1"
+  }
+}

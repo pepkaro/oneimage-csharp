@@ -1,0 +1,2463 @@
+{
+  "fixture_count": 7,
+  "unique_pdfs": 7,
+  "reference_runs": 42,
+  "passed": 30,
+  "failed": 12,
+  "skipped": 0,
+  "unscored_edge_regions": "Named point probes during capture; authored interiors verified separately; outside-mask regions unscored.",
+  "rows": [
+    {
+      "id": "alpha-fill-endpoints",
+      "dpi": 72,
+      "engine": "pdfium",
+      "file": "references/alpha-fill-endpoints-72-pdfium.png",
+      "sha256": "7e00ff41de03133aada052bcdad865d4578ae505887cf88e0a8fc5c52673b6fd",
+      "sample_count": 3,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "ca-zero-preserves-blue",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "ca-one-opaque-red",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "alpha-fill-endpoints",
+      "dpi": 72,
+      "engine": "mupdf",
+      "file": "references/alpha-fill-endpoints-72-mupdf.png",
+      "sha256": "9a89fb34d3f94f7d80523605572083c2e133cb6b991145ddd228aee09c767dad",
+      "sample_count": 3,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "ca-zero-preserves-blue",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "ca-one-opaque-red",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "alpha-fill-endpoints",
+      "dpi": 72,
+      "engine": "pdfjs",
+      "file": "references/alpha-fill-endpoints-72-pdfjs.png",
+      "sha256": "4127530c17d013ce34e4eaea20e002187c6620b417d6810cd056fa91d8f9fb4e",
+      "sample_count": 3,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "ca-zero-preserves-blue",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "ca-one-opaque-red",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "alpha-fill-endpoints",
+      "dpi": 144,
+      "engine": "pdfium",
+      "file": "references/alpha-fill-endpoints-144-pdfium.png",
+      "sha256": "f5e84031d7d62bf6673f81ffbe91bbc66c1c89ef2b96e234cf5f6879c96ac26a",
+      "sample_count": 3,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "ca-zero-preserves-blue",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "ca-one-opaque-red",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "alpha-fill-endpoints",
+      "dpi": 144,
+      "engine": "mupdf",
+      "file": "references/alpha-fill-endpoints-144-mupdf.png",
+      "sha256": "89ec2032ecd258191d1db1da15526c5f7a6504433e197506b20c399885080d48",
+      "sample_count": 3,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "ca-zero-preserves-blue",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "ca-one-opaque-red",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "alpha-fill-endpoints",
+      "dpi": 144,
+      "engine": "pdfjs",
+      "file": "references/alpha-fill-endpoints-144-pdfjs.png",
+      "sha256": "6093bfa11f72561028d03b21b1b88df47d72dbad93a3b2224e4babd39cc22d7b",
+      "sample_count": 3,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "ca-zero-preserves-blue",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "ca-one-opaque-red",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "alpha-stroke-endpoints",
+      "dpi": 72,
+      "engine": "pdfium",
+      "file": "references/alpha-stroke-endpoints-72-pdfium.png",
+      "sha256": "ca5b5c1490cae6d13f7129552675b877c339134a083889f7f5f451c7a0608b76",
+      "sample_count": 4,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "CA-zero-invisible",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "CA-one-opaque",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "fill-independent-of-CA",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "alpha-stroke-endpoints",
+      "dpi": 72,
+      "engine": "mupdf",
+      "file": "references/alpha-stroke-endpoints-72-mupdf.png",
+      "sha256": "d10be9dd89c29c23ebfc052ef2a2b6bfaa02b41ea7fbe3f72da26ba3bfdfe00a",
+      "sample_count": 4,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "CA-zero-invisible",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "CA-one-opaque",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "fill-independent-of-CA",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "alpha-stroke-endpoints",
+      "dpi": 72,
+      "engine": "pdfjs",
+      "file": "references/alpha-stroke-endpoints-72-pdfjs.png",
+      "sha256": "3f1f0b055735262203293f55a67a87c0306af45521b9724e405bca9b8f2f8658",
+      "sample_count": 4,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "CA-zero-invisible",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "CA-one-opaque",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "fill-independent-of-CA",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "alpha-stroke-endpoints",
+      "dpi": 144,
+      "engine": "pdfium",
+      "file": "references/alpha-stroke-endpoints-144-pdfium.png",
+      "sha256": "5f09645f050dd86b2828db996c9df31808de219c6ea6e15335c0c97f6fea0946",
+      "sample_count": 4,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "CA-zero-invisible",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "CA-one-opaque",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "fill-independent-of-CA",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "alpha-stroke-endpoints",
+      "dpi": 144,
+      "engine": "mupdf",
+      "file": "references/alpha-stroke-endpoints-144-mupdf.png",
+      "sha256": "282806ab1c25a2393f9838e6786ef2e3096a40e16adaba02be49f5e0b2c07f61",
+      "sample_count": 4,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "CA-zero-invisible",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "CA-one-opaque",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "fill-independent-of-CA",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "alpha-stroke-endpoints",
+      "dpi": 144,
+      "engine": "pdfjs",
+      "file": "references/alpha-stroke-endpoints-144-pdfjs.png",
+      "sha256": "ab1f8ff7c8dfb41a4f2b9a9bc66ee6d0802bfce14026fbd00686f6e96c589e20",
+      "sample_count": 4,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "CA-zero-invisible",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "CA-one-opaque",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "fill-independent-of-CA",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "alpha-ca-state-restore",
+      "dpi": 72,
+      "engine": "pdfium",
+      "file": "references/alpha-ca-state-restore-72-pdfium.png",
+      "sha256": "891a6a3c2f962c9a4e8dd5ea379de82286b08f995d782ed9aaeca76343433515",
+      "sample_count": 3,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "scoped-transparent-fill",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "restored-opaque-fill",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "alpha-ca-state-restore",
+      "dpi": 72,
+      "engine": "mupdf",
+      "file": "references/alpha-ca-state-restore-72-mupdf.png",
+      "sha256": "3d1e083d07efb756c5f06946b8d5bcbf2eb5a2fa03e3c755ce73bb1f1c9d1fd0",
+      "sample_count": 3,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "scoped-transparent-fill",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "restored-opaque-fill",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "alpha-ca-state-restore",
+      "dpi": 72,
+      "engine": "pdfjs",
+      "file": "references/alpha-ca-state-restore-72-pdfjs.png",
+      "sha256": "3756ed579b7357eea45e9f212d3446984e672877c1d90145c6de760cff29e323",
+      "sample_count": 3,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "scoped-transparent-fill",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "restored-opaque-fill",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "alpha-ca-state-restore",
+      "dpi": 144,
+      "engine": "pdfium",
+      "file": "references/alpha-ca-state-restore-144-pdfium.png",
+      "sha256": "f4da91563068f294f8b43ff43a23025fc7062d8f7e5d2792dc47a02566499efd",
+      "sample_count": 3,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "scoped-transparent-fill",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "restored-opaque-fill",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "alpha-ca-state-restore",
+      "dpi": 144,
+      "engine": "mupdf",
+      "file": "references/alpha-ca-state-restore-144-mupdf.png",
+      "sha256": "08359de90f826ad8e7620aeec0ba5fe2d0b128235bc4fe429adff243445d33ad",
+      "sample_count": 3,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "scoped-transparent-fill",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "restored-opaque-fill",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "alpha-ca-state-restore",
+      "dpi": 144,
+      "engine": "pdfjs",
+      "file": "references/alpha-ca-state-restore-144-pdfjs.png",
+      "sha256": "78ab340062541d56fd902e5a10a61b787ccbe73bcaa884b980298317ebfad447",
+      "sample_count": 3,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "scoped-transparent-fill",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "restored-opaque-fill",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "alpha-fill-fraction06",
+      "dpi": 72,
+      "engine": "pdfium",
+      "file": "references/alpha-fill-fraction06-72-pdfium.png",
+      "sha256": "403794f26f9b2e71d270688bd4ab142354ffa8aa794e4346c157805b0f38d126",
+      "sample_count": 3,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "fractional-red",
+          "expected": [
+            255,
+            102,
+            102
+          ],
+          "actual": [
+            255,
+            102,
+            102
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "opaque-blue-control",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "alpha-fill-fraction06",
+      "dpi": 72,
+      "engine": "mupdf",
+      "file": "references/alpha-fill-fraction06-72-mupdf.png",
+      "sha256": "5a293248f66c87dfab171c79a485909e0b536f33c3269071f147dc8df42b39f9",
+      "sample_count": 3,
+      "status": "failed",
+      "checks": [
+        {
+          "id": "fractional-red",
+          "expected": [
+            255,
+            102,
+            102
+          ],
+          "actual": [
+            255,
+            101,
+            101
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "opaque-blue-control",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "alpha-fill-fraction06",
+      "dpi": 72,
+      "engine": "pdfjs",
+      "file": "references/alpha-fill-fraction06-72-pdfjs.png",
+      "sha256": "c929e5dadb09d01cfd098ea179a320b1ca65395cba1da7f865757ac7e4435a26",
+      "sample_count": 3,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "fractional-red",
+          "expected": [
+            255,
+            102,
+            102
+          ],
+          "actual": [
+            255,
+            102,
+            102
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "opaque-blue-control",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "alpha-fill-fraction06",
+      "dpi": 144,
+      "engine": "pdfium",
+      "file": "references/alpha-fill-fraction06-144-pdfium.png",
+      "sha256": "a9398e4ccee470d25e2610e8af800201c5bae0ddcc4e5a3774a96d08fdf27aea",
+      "sample_count": 3,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "fractional-red",
+          "expected": [
+            255,
+            102,
+            102
+          ],
+          "actual": [
+            255,
+            102,
+            102
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "opaque-blue-control",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "alpha-fill-fraction06",
+      "dpi": 144,
+      "engine": "mupdf",
+      "file": "references/alpha-fill-fraction06-144-mupdf.png",
+      "sha256": "e5cd88f786864c3cbff8c82365fa9a98b34022acd6dafb77afe0c1d2ed124296",
+      "sample_count": 3,
+      "status": "failed",
+      "checks": [
+        {
+          "id": "fractional-red",
+          "expected": [
+            255,
+            102,
+            102
+          ],
+          "actual": [
+            255,
+            101,
+            101
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "opaque-blue-control",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "alpha-fill-fraction06",
+      "dpi": 144,
+      "engine": "pdfjs",
+      "file": "references/alpha-fill-fraction06-144-pdfjs.png",
+      "sha256": "49fbbb4fc9778fb99fe81884c24bfe6a18fbf5386990378a30bb69f567908117",
+      "sample_count": 3,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "fractional-red",
+          "expected": [
+            255,
+            102,
+            102
+          ],
+          "actual": [
+            255,
+            102,
+            102
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "opaque-blue-control",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "alpha-stroke-fraction06",
+      "dpi": 72,
+      "engine": "pdfium",
+      "file": "references/alpha-stroke-fraction06-72-pdfium.png",
+      "sha256": "5974186e497b494f7ef074e8e244376a2b25190677a92486c10c26725c057ff4",
+      "sample_count": 3,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "fractional-blue",
+          "expected": [
+            102,
+            102,
+            255
+          ],
+          "actual": [
+            102,
+            102,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "opaque-red-independent-ca",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "alpha-stroke-fraction06",
+      "dpi": 72,
+      "engine": "mupdf",
+      "file": "references/alpha-stroke-fraction06-72-mupdf.png",
+      "sha256": "fcceadff11960872c0dfaf6b77ab58abb65da7cbf5e6a7a23cb3a1ef42738add",
+      "sample_count": 3,
+      "status": "failed",
+      "checks": [
+        {
+          "id": "fractional-blue",
+          "expected": [
+            102,
+            102,
+            255
+          ],
+          "actual": [
+            101,
+            101,
+            255
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "opaque-red-independent-ca",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "alpha-stroke-fraction06",
+      "dpi": 72,
+      "engine": "pdfjs",
+      "file": "references/alpha-stroke-fraction06-72-pdfjs.png",
+      "sha256": "f95171a94778f467543aa71a1e94a86c9dabd3ac47f525e7b479232ae2990725",
+      "sample_count": 3,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "fractional-blue",
+          "expected": [
+            102,
+            102,
+            255
+          ],
+          "actual": [
+            102,
+            102,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "opaque-red-independent-ca",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "alpha-stroke-fraction06",
+      "dpi": 144,
+      "engine": "pdfium",
+      "file": "references/alpha-stroke-fraction06-144-pdfium.png",
+      "sha256": "3b2488475421446a6ede8c3dd240dc092d97e1b906bd765e54ef36c2dc7407c8",
+      "sample_count": 3,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "fractional-blue",
+          "expected": [
+            102,
+            102,
+            255
+          ],
+          "actual": [
+            102,
+            102,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "opaque-red-independent-ca",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "alpha-stroke-fraction06",
+      "dpi": 144,
+      "engine": "mupdf",
+      "file": "references/alpha-stroke-fraction06-144-mupdf.png",
+      "sha256": "c67424fe0f950cdbcbbbe81f01401b876a6c3ba9a7cd583227ba2824ef81ef06",
+      "sample_count": 3,
+      "status": "failed",
+      "checks": [
+        {
+          "id": "fractional-blue",
+          "expected": [
+            102,
+            102,
+            255
+          ],
+          "actual": [
+            101,
+            101,
+            255
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "opaque-red-independent-ca",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "alpha-stroke-fraction06",
+      "dpi": 144,
+      "engine": "pdfjs",
+      "file": "references/alpha-stroke-fraction06-144-pdfjs.png",
+      "sha256": "88a6633345ca86ec01dbcaecb497cccf69b46b3f43aa440dcdb6299404764fd5",
+      "sample_count": 3,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "fractional-blue",
+          "expected": [
+            102,
+            102,
+            255
+          ],
+          "actual": [
+            102,
+            102,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "opaque-red-independent-ca",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "alpha-fill-fraction025",
+      "dpi": 72,
+      "engine": "pdfium",
+      "file": "references/alpha-fill-fraction025-72-pdfium.png",
+      "sha256": "3f6a30d49e0adcfad39d8e2f5d090fc780892156587256a64e84acca5449f204",
+      "sample_count": 3,
+      "status": "failed",
+      "checks": [
+        {
+          "id": "quarter-red",
+          "expected": [
+            255,
+            191,
+            191
+          ],
+          "actual": [
+            255,
+            192,
+            192
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "opaque-blue-control",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "alpha-fill-fraction025",
+      "dpi": 72,
+      "engine": "mupdf",
+      "file": "references/alpha-fill-fraction025-72-mupdf.png",
+      "sha256": "410dfa3c777611cdc630751e545e9930e39d1d5eda7e68bbc8826fb6bde7ab22",
+      "sample_count": 3,
+      "status": "failed",
+      "checks": [
+        {
+          "id": "quarter-red",
+          "expected": [
+            255,
+            191,
+            191
+          ],
+          "actual": [
+            255,
+            192,
+            192
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "opaque-blue-control",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "alpha-fill-fraction025",
+      "dpi": 72,
+      "engine": "pdfjs",
+      "file": "references/alpha-fill-fraction025-72-pdfjs.png",
+      "sha256": "07d0dde732c50607e289c73964794c44985d4f2864085653a440903f9a322caa",
+      "sample_count": 3,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "quarter-red",
+          "expected": [
+            255,
+            191,
+            191
+          ],
+          "actual": [
+            255,
+            191,
+            191
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "opaque-blue-control",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "alpha-fill-fraction025",
+      "dpi": 144,
+      "engine": "pdfium",
+      "file": "references/alpha-fill-fraction025-144-pdfium.png",
+      "sha256": "74c7c900348a39fc0e3e6b54cb75ac7237423809047cb0328bd39a82fa5f8fb0",
+      "sample_count": 3,
+      "status": "failed",
+      "checks": [
+        {
+          "id": "quarter-red",
+          "expected": [
+            255,
+            191,
+            191
+          ],
+          "actual": [
+            255,
+            192,
+            192
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "opaque-blue-control",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "alpha-fill-fraction025",
+      "dpi": 144,
+      "engine": "mupdf",
+      "file": "references/alpha-fill-fraction025-144-mupdf.png",
+      "sha256": "7b7068919cf371d74b865e5f918d5492c5dd22452b79e71722a6418e3526cff4",
+      "sample_count": 3,
+      "status": "failed",
+      "checks": [
+        {
+          "id": "quarter-red",
+          "expected": [
+            255,
+            191,
+            191
+          ],
+          "actual": [
+            255,
+            192,
+            192
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "opaque-blue-control",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "alpha-fill-fraction025",
+      "dpi": 144,
+      "engine": "pdfjs",
+      "file": "references/alpha-fill-fraction025-144-pdfjs.png",
+      "sha256": "ea2ab8a863dd7060edd6bba17188370bf6c2acae1b861ab87b653b2455d0a40a",
+      "sample_count": 3,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "quarter-red",
+          "expected": [
+            255,
+            191,
+            191
+          ],
+          "actual": [
+            255,
+            191,
+            191
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "opaque-blue-control",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "alpha-stroke-fraction025",
+      "dpi": 72,
+      "engine": "pdfium",
+      "file": "references/alpha-stroke-fraction025-72-pdfium.png",
+      "sha256": "cce848208d912283d215103385cb37d26a80c387d5e54215ec5ade5604394511",
+      "sample_count": 3,
+      "status": "failed",
+      "checks": [
+        {
+          "id": "quarter-blue",
+          "expected": [
+            191,
+            191,
+            255
+          ],
+          "actual": [
+            192,
+            192,
+            255
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "opaque-red-independent-ca",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "alpha-stroke-fraction025",
+      "dpi": 72,
+      "engine": "mupdf",
+      "file": "references/alpha-stroke-fraction025-72-mupdf.png",
+      "sha256": "140434c107154b09c1ed426f1bf95f0df089e350d69bbc19edb5812a8d1a7d35",
+      "sample_count": 3,
+      "status": "failed",
+      "checks": [
+        {
+          "id": "quarter-blue",
+          "expected": [
+            191,
+            191,
+            255
+          ],
+          "actual": [
+            192,
+            192,
+            255
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "opaque-red-independent-ca",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "alpha-stroke-fraction025",
+      "dpi": 72,
+      "engine": "pdfjs",
+      "file": "references/alpha-stroke-fraction025-72-pdfjs.png",
+      "sha256": "e6f74a54b289911319e2a75201c0a86e98380a9592d48d6fd034472f783b3076",
+      "sample_count": 3,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "quarter-blue",
+          "expected": [
+            191,
+            191,
+            255
+          ],
+          "actual": [
+            191,
+            191,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "opaque-red-independent-ca",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "alpha-stroke-fraction025",
+      "dpi": 144,
+      "engine": "pdfium",
+      "file": "references/alpha-stroke-fraction025-144-pdfium.png",
+      "sha256": "fddfd4d5989e263eab96e7c2ccf885287d1762a86868f3c273aeda58e1953298",
+      "sample_count": 3,
+      "status": "failed",
+      "checks": [
+        {
+          "id": "quarter-blue",
+          "expected": [
+            191,
+            191,
+            255
+          ],
+          "actual": [
+            192,
+            192,
+            255
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "opaque-red-independent-ca",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "alpha-stroke-fraction025",
+      "dpi": 144,
+      "engine": "mupdf",
+      "file": "references/alpha-stroke-fraction025-144-mupdf.png",
+      "sha256": "8572bacfea907e57c2a765838b77301aedc1c55a412f768150eb2f04714ee82c",
+      "sample_count": 3,
+      "status": "failed",
+      "checks": [
+        {
+          "id": "quarter-blue",
+          "expected": [
+            191,
+            191,
+            255
+          ],
+          "actual": [
+            192,
+            192,
+            255
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "opaque-red-independent-ca",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "alpha-stroke-fraction025",
+      "dpi": 144,
+      "engine": "pdfjs",
+      "file": "references/alpha-stroke-fraction025-144-pdfjs.png",
+      "sha256": "7adee4eae2cda759c2bceb139d3f4c0a66515b9549dbdc990191c8675b02c459",
+      "sample_count": 3,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "quarter-blue",
+          "expected": [
+            191,
+            191,
+            255
+          ],
+          "actual": [
+            191,
+            191,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "opaque-red-independent-ca",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "versions": {
+    "pdfium": "153.0.7999.0",
+    "pypdfium2": "5.13.0",
+    "mupdf": "1.26.11",
+    "pymupdf": "1.26.6",
+    "pdfjs": "6.5.438",
+    "pdfjs_build": "0a4153349",
+    "node": "24.22.3",
+    "node_canvas": "1.1.1"
+  }
+}

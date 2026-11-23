@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "source": "Actual reference-invocations.jsonl events; not inferred from retained files.",
+  "runner_invocations": 1,
+  "capture_start_attempts": 18,
+  "confirmed_capture_finishes": 18,
+  "engine_subprocess_counts": {
+    "pdfium": 6,
+    "mupdf": 6,
+    "pdfjs": 6
+  },
+  "successful_exit0": 18,
+  "failed_exit": 0,
+  "unmatched_attempts": 0,
+  "reruns": 0,
+  "retained_reference_paths": 18,
+  "root_replays_included": false
+}

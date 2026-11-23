@@ -1,0 +1,4200 @@
+{
+  "schema_version": 1,
+  "batch": "ISO-IMAGE-STENCIL-01-WHITE-CONTROLS",
+  "logical_parent_family": "ISO-IMAGE-STENCIL-01",
+  "fixture_count": 3,
+  "scope": "WHITE-backed only; held checkerboard originals remain separate.",
+  "raw_bits": [
+    [
+      0,
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0
+    ]
+  ],
+  "raw_hex": "65003a809700",
+  "cases": [
+    {
+      "id": "stencil-white-default-red",
+      "fixture_id": "stencil-white-default-red",
+      "file": "inputs/stencil-white-default-red.pdf",
+      "license": "MIT",
+      "contract": "WHITE-backed ordinary stencil default-red; default0 paints/inverse1 paints; reuse tint comes from each draw current color.",
+      "scope": "Opaque WHITE backdrops only; closes none of root checkerboard holds.",
+      "spec": "ISO 32000-1:2008",
+      "spec_clauses": [
+        "8.9.6.2 Stencil Masking",
+        "8.9.3 Sample Representation"
+      ],
+      "route": "page ImageMask9x3 BPC1 with no ColorSpace, q/Q-separated placements and current nonstroking tint",
+      "width": 240,
+      "height": 180,
+      "page": 0,
+      "page_count": 1,
+      "dpis": [
+        72,
+        144
+      ],
+      "rotation": 0,
+      "annotations": "none",
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "sha256": "306e729260b9746085f589a5ce43bda4fff245453e3091cc95346d5050842450",
+      "sha": "306e729260b9746085f589a5ce43bda4fff245453e3091cc95346d5050842450",
+      "image": {
+        "width": 9,
+        "height": 3,
+        "bpc": 1,
+        "image_mask": true,
+        "decode": null,
+        "raw_sha256": "05ff35ec8e99e686491d5b817a6b2db6099888c417c0d94bbbdd47fd6849bc8e",
+        "raw_hex": "65003a809700",
+        "row_bytes": 2,
+        "color_space": null,
+        "object_count": 1
+      },
+      "placements": [
+        {
+          "id": "draw-0",
+          "x": 32,
+          "y": 80,
+          "tint_rgb": [
+            255,
+            0,
+            0
+          ],
+          "ctm": [
+            144,
+            0,
+            0,
+            48,
+            32,
+            80
+          ],
+          "backdrop_rect": [
+            24,
+            72,
+            160,
+            64
+          ],
+          "mask_resource": "M",
+          "mask_object_number": 5
+        }
+      ],
+      "expected_samples": [
+        {
+          "id": "draw-0-cell-0-0",
+          "point": [
+            40,
+            120
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 0,
+          "painted": true
+        },
+        {
+          "id": "draw-0-cell-1-0",
+          "point": [
+            56,
+            120
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 1,
+          "painted": false
+        },
+        {
+          "id": "draw-0-cell-2-0",
+          "point": [
+            72,
+            120
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 1,
+          "painted": false
+        },
+        {
+          "id": "draw-0-cell-3-0",
+          "point": [
+            88,
+            120
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 0,
+          "painted": true
+        },
+        {
+          "id": "draw-0-cell-4-0",
+          "point": [
+            104,
+            120
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 0,
+          "painted": true
+        },
+        {
+          "id": "draw-0-cell-5-0",
+          "point": [
+            120,
+            120
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 1,
+          "painted": false
+        },
+        {
+          "id": "draw-0-cell-6-0",
+          "point": [
+            136,
+            120
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 0,
+          "painted": true
+        },
+        {
+          "id": "draw-0-cell-7-0",
+          "point": [
+            152,
+            120
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 1,
+          "painted": false
+        },
+        {
+          "id": "draw-0-cell-8-0",
+          "point": [
+            168,
+            120
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 0,
+          "painted": true
+        },
+        {
+          "id": "draw-0-cell-0-1",
+          "point": [
+            40,
+            104
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 0,
+          "painted": true
+        },
+        {
+          "id": "draw-0-cell-1-1",
+          "point": [
+            56,
+            104
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 0,
+          "painted": true
+        },
+        {
+          "id": "draw-0-cell-2-1",
+          "point": [
+            72,
+            104
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 1,
+          "painted": false
+        },
+        {
+          "id": "draw-0-cell-3-1",
+          "point": [
+            88,
+            104
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 1,
+          "painted": false
+        },
+        {
+          "id": "draw-0-cell-4-1",
+          "point": [
+            104,
+            104
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 1,
+          "painted": false
+        },
+        {
+          "id": "draw-0-cell-5-1",
+          "point": [
+            120,
+            104
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 0,
+          "painted": true
+        },
+        {
+          "id": "draw-0-cell-6-1",
+          "point": [
+            136,
+            104
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 1,
+          "painted": false
+        },
+        {
+          "id": "draw-0-cell-7-1",
+          "point": [
+            152,
+            104
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 0,
+          "painted": true
+        },
+        {
+          "id": "draw-0-cell-8-1",
+          "point": [
+            168,
+            104
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 1,
+          "painted": false
+        },
+        {
+          "id": "draw-0-cell-0-2",
+          "point": [
+            40,
+            88
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 1,
+          "painted": false
+        },
+        {
+          "id": "draw-0-cell-1-2",
+          "point": [
+            56,
+            88
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 0,
+          "painted": true
+        },
+        {
+          "id": "draw-0-cell-2-2",
+          "point": [
+            72,
+            88
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 0,
+          "painted": true
+        },
+        {
+          "id": "draw-0-cell-3-2",
+          "point": [
+            88,
+            88
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 1,
+          "painted": false
+        },
+        {
+          "id": "draw-0-cell-4-2",
+          "point": [
+            104,
+            88
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 0,
+          "painted": true
+        },
+        {
+          "id": "draw-0-cell-5-2",
+          "point": [
+            120,
+            88
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 1,
+          "painted": false
+        },
+        {
+          "id": "draw-0-cell-6-2",
+          "point": [
+            136,
+            88
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 1,
+          "painted": false
+        },
+        {
+          "id": "draw-0-cell-7-2",
+          "point": [
+            152,
+            88
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 1,
+          "painted": false
+        },
+        {
+          "id": "draw-0-cell-8-2",
+          "point": [
+            168,
+            88
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 0,
+          "painted": true
+        },
+        {
+          "id": "draw-0-white-frame-left",
+          "point": [
+            28.0,
+            104.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-white-frame-right",
+          "point": [
+            180.0,
+            104.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-white-frame-bottom",
+          "point": [
+            104.0,
+            76.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-white-frame-top",
+          "point": [
+            104.0,
+            132.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "point": [
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_regions": [
+        {
+          "id": "draw-0-cell-0-0",
+          "rect": [
+            34,
+            114,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-1-0",
+          "rect": [
+            50,
+            114,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-2-0",
+          "rect": [
+            66,
+            114,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-3-0",
+          "rect": [
+            82,
+            114,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-4-0",
+          "rect": [
+            98,
+            114,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-5-0",
+          "rect": [
+            114,
+            114,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-6-0",
+          "rect": [
+            130,
+            114,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-7-0",
+          "rect": [
+            146,
+            114,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-8-0",
+          "rect": [
+            162,
+            114,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-0-1",
+          "rect": [
+            34,
+            98,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-1-1",
+          "rect": [
+            50,
+            98,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-2-1",
+          "rect": [
+            66,
+            98,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-3-1",
+          "rect": [
+            82,
+            98,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-4-1",
+          "rect": [
+            98,
+            98,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-5-1",
+          "rect": [
+            114,
+            98,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-6-1",
+          "rect": [
+            130,
+            98,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-7-1",
+          "rect": [
+            146,
+            98,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-8-1",
+          "rect": [
+            162,
+            98,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-0-2",
+          "rect": [
+            34,
+            82,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-1-2",
+          "rect": [
+            50,
+            82,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-2-2",
+          "rect": [
+            66,
+            82,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-3-2",
+          "rect": [
+            82,
+            82,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-4-2",
+          "rect": [
+            98,
+            82,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-5-2",
+          "rect": [
+            114,
+            82,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-6-2",
+          "rect": [
+            130,
+            82,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-7-2",
+          "rect": [
+            146,
+            82,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-8-2",
+          "rect": [
+            162,
+            82,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-white-frame-left",
+          "rect": [
+            26,
+            74,
+            4,
+            60
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-white-frame-right",
+          "rect": [
+            178,
+            74,
+            4,
+            60
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-white-frame-bottom",
+          "rect": [
+            34,
+            74,
+            140,
+            4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-white-frame-top",
+          "rect": [
+            34,
+            130,
+            140,
+            4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "rect": [
+            4,
+            4,
+            16,
+            16
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "region_rule": "Each16pt source cell inset2pt; white-frame strips and paper independently inset2pt; all boundaries unscored.",
+      "association": {
+        "scope": "standard-contract-only",
+        "upstream_id": null,
+        "upstream_entry_validated": false,
+        "reason": "No exact upstream stencil scene scope established."
+      }
+    },
+    {
+      "id": "stencil-white-inverse-red",
+      "fixture_id": "stencil-white-inverse-red",
+      "file": "inputs/stencil-white-inverse-red.pdf",
+      "license": "MIT",
+      "contract": "WHITE-backed ordinary stencil inverse-red; default0 paints/inverse1 paints; reuse tint comes from each draw current color.",
+      "scope": "Opaque WHITE backdrops only; closes none of root checkerboard holds.",
+      "spec": "ISO 32000-1:2008",
+      "spec_clauses": [
+        "8.9.6.2 Stencil Masking",
+        "8.9.3 Sample Representation"
+      ],
+      "route": "page ImageMask9x3 BPC1 with no ColorSpace, q/Q-separated placements and current nonstroking tint",
+      "width": 240,
+      "height": 180,
+      "page": 0,
+      "page_count": 1,
+      "dpis": [
+        72,
+        144
+      ],
+      "rotation": 0,
+      "annotations": "none",
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "sha256": "c00f4597b02bd4fa1d9f349236015a402d61fb395273040436c68dca1c6b0a5b",
+      "sha": "c00f4597b02bd4fa1d9f349236015a402d61fb395273040436c68dca1c6b0a5b",
+      "image": {
+        "width": 9,
+        "height": 3,
+        "bpc": 1,
+        "image_mask": true,
+        "decode": [
+          1,
+          0
+        ],
+        "raw_sha256": "05ff35ec8e99e686491d5b817a6b2db6099888c417c0d94bbbdd47fd6849bc8e",
+        "raw_hex": "65003a809700",
+        "row_bytes": 2,
+        "color_space": null,
+        "object_count": 1
+      },
+      "placements": [
+        {
+          "id": "draw-0",
+          "x": 32,
+          "y": 80,
+          "tint_rgb": [
+            255,
+            0,
+            0
+          ],
+          "ctm": [
+            144,
+            0,
+            0,
+            48,
+            32,
+            80
+          ],
+          "backdrop_rect": [
+            24,
+            72,
+            160,
+            64
+          ],
+          "mask_resource": "M",
+          "mask_object_number": 5
+        }
+      ],
+      "expected_samples": [
+        {
+          "id": "draw-0-cell-0-0",
+          "point": [
+            40,
+            120
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 0,
+          "painted": false
+        },
+        {
+          "id": "draw-0-cell-1-0",
+          "point": [
+            56,
+            120
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 1,
+          "painted": true
+        },
+        {
+          "id": "draw-0-cell-2-0",
+          "point": [
+            72,
+            120
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 1,
+          "painted": true
+        },
+        {
+          "id": "draw-0-cell-3-0",
+          "point": [
+            88,
+            120
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 0,
+          "painted": false
+        },
+        {
+          "id": "draw-0-cell-4-0",
+          "point": [
+            104,
+            120
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 0,
+          "painted": false
+        },
+        {
+          "id": "draw-0-cell-5-0",
+          "point": [
+            120,
+            120
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 1,
+          "painted": true
+        },
+        {
+          "id": "draw-0-cell-6-0",
+          "point": [
+            136,
+            120
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 0,
+          "painted": false
+        },
+        {
+          "id": "draw-0-cell-7-0",
+          "point": [
+            152,
+            120
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 1,
+          "painted": true
+        },
+        {
+          "id": "draw-0-cell-8-0",
+          "point": [
+            168,
+            120
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 0,
+          "painted": false
+        },
+        {
+          "id": "draw-0-cell-0-1",
+          "point": [
+            40,
+            104
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 0,
+          "painted": false
+        },
+        {
+          "id": "draw-0-cell-1-1",
+          "point": [
+            56,
+            104
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 0,
+          "painted": false
+        },
+        {
+          "id": "draw-0-cell-2-1",
+          "point": [
+            72,
+            104
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 1,
+          "painted": true
+        },
+        {
+          "id": "draw-0-cell-3-1",
+          "point": [
+            88,
+            104
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 1,
+          "painted": true
+        },
+        {
+          "id": "draw-0-cell-4-1",
+          "point": [
+            104,
+            104
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 1,
+          "painted": true
+        },
+        {
+          "id": "draw-0-cell-5-1",
+          "point": [
+            120,
+            104
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 0,
+          "painted": false
+        },
+        {
+          "id": "draw-0-cell-6-1",
+          "point": [
+            136,
+            104
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 1,
+          "painted": true
+        },
+        {
+          "id": "draw-0-cell-7-1",
+          "point": [
+            152,
+            104
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 0,
+          "painted": false
+        },
+        {
+          "id": "draw-0-cell-8-1",
+          "point": [
+            168,
+            104
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 1,
+          "painted": true
+        },
+        {
+          "id": "draw-0-cell-0-2",
+          "point": [
+            40,
+            88
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 1,
+          "painted": true
+        },
+        {
+          "id": "draw-0-cell-1-2",
+          "point": [
+            56,
+            88
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 0,
+          "painted": false
+        },
+        {
+          "id": "draw-0-cell-2-2",
+          "point": [
+            72,
+            88
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 0,
+          "painted": false
+        },
+        {
+          "id": "draw-0-cell-3-2",
+          "point": [
+            88,
+            88
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 1,
+          "painted": true
+        },
+        {
+          "id": "draw-0-cell-4-2",
+          "point": [
+            104,
+            88
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 0,
+          "painted": false
+        },
+        {
+          "id": "draw-0-cell-5-2",
+          "point": [
+            120,
+            88
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 1,
+          "painted": true
+        },
+        {
+          "id": "draw-0-cell-6-2",
+          "point": [
+            136,
+            88
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 1,
+          "painted": true
+        },
+        {
+          "id": "draw-0-cell-7-2",
+          "point": [
+            152,
+            88
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 1,
+          "painted": true
+        },
+        {
+          "id": "draw-0-cell-8-2",
+          "point": [
+            168,
+            88
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 0,
+          "painted": false
+        },
+        {
+          "id": "draw-0-white-frame-left",
+          "point": [
+            28.0,
+            104.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-white-frame-right",
+          "point": [
+            180.0,
+            104.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-white-frame-bottom",
+          "point": [
+            104.0,
+            76.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-white-frame-top",
+          "point": [
+            104.0,
+            132.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "point": [
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_regions": [
+        {
+          "id": "draw-0-cell-0-0",
+          "rect": [
+            34,
+            114,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-1-0",
+          "rect": [
+            50,
+            114,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-2-0",
+          "rect": [
+            66,
+            114,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-3-0",
+          "rect": [
+            82,
+            114,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-4-0",
+          "rect": [
+            98,
+            114,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-5-0",
+          "rect": [
+            114,
+            114,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-6-0",
+          "rect": [
+            130,
+            114,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-7-0",
+          "rect": [
+            146,
+            114,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-8-0",
+          "rect": [
+            162,
+            114,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-0-1",
+          "rect": [
+            34,
+            98,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-1-1",
+          "rect": [
+            50,
+            98,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-2-1",
+          "rect": [
+            66,
+            98,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-3-1",
+          "rect": [
+            82,
+            98,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-4-1",
+          "rect": [
+            98,
+            98,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-5-1",
+          "rect": [
+            114,
+            98,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-6-1",
+          "rect": [
+            130,
+            98,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-7-1",
+          "rect": [
+            146,
+            98,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-8-1",
+          "rect": [
+            162,
+            98,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-0-2",
+          "rect": [
+            34,
+            82,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-1-2",
+          "rect": [
+            50,
+            82,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-2-2",
+          "rect": [
+            66,
+            82,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-3-2",
+          "rect": [
+            82,
+            82,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-4-2",
+          "rect": [
+            98,
+            82,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-5-2",
+          "rect": [
+            114,
+            82,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-6-2",
+          "rect": [
+            130,
+            82,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-7-2",
+          "rect": [
+            146,
+            82,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-8-2",
+          "rect": [
+            162,
+            82,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-white-frame-left",
+          "rect": [
+            26,
+            74,
+            4,
+            60
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-white-frame-right",
+          "rect": [
+            178,
+            74,
+            4,
+            60
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-white-frame-bottom",
+          "rect": [
+            34,
+            74,
+            140,
+            4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-white-frame-top",
+          "rect": [
+            34,
+            130,
+            140,
+            4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "rect": [
+            4,
+            4,
+            16,
+            16
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "region_rule": "Each16pt source cell inset2pt; white-frame strips and paper independently inset2pt; all boundaries unscored.",
+      "association": {
+        "scope": "standard-contract-only",
+        "upstream_id": null,
+        "upstream_entry_validated": false,
+        "reason": "No exact upstream stencil scene scope established."
+      }
+    },
+    {
+      "id": "stencil-white-reuse-red-green",
+      "fixture_id": "stencil-white-reuse-red-green",
+      "file": "inputs/stencil-white-reuse-red-green.pdf",
+      "license": "MIT",
+      "contract": "WHITE-backed ordinary stencil reuse-red-green; default0 paints/inverse1 paints; reuse tint comes from each draw current color.",
+      "scope": "Opaque WHITE backdrops only; closes none of root checkerboard holds.",
+      "spec": "ISO 32000-1:2008",
+      "spec_clauses": [
+        "8.9.6.2 Stencil Masking",
+        "8.9.3 Sample Representation"
+      ],
+      "route": "page ImageMask9x3 BPC1 with no ColorSpace, q/Q-separated placements and current nonstroking tint",
+      "width": 240,
+      "height": 180,
+      "page": 0,
+      "page_count": 1,
+      "dpis": [
+        72,
+        144
+      ],
+      "rotation": 0,
+      "annotations": "none",
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "sha256": "33bdaf198a67d8d0498b8c24bbcb095ef874e783742b921a73f0fcdaf0a9379b",
+      "sha": "33bdaf198a67d8d0498b8c24bbcb095ef874e783742b921a73f0fcdaf0a9379b",
+      "image": {
+        "width": 9,
+        "height": 3,
+        "bpc": 1,
+        "image_mask": true,
+        "decode": null,
+        "raw_sha256": "05ff35ec8e99e686491d5b817a6b2db6099888c417c0d94bbbdd47fd6849bc8e",
+        "raw_hex": "65003a809700",
+        "row_bytes": 2,
+        "color_space": null,
+        "object_count": 1
+      },
+      "placements": [
+        {
+          "id": "draw-0",
+          "x": 32,
+          "y": 104,
+          "tint_rgb": [
+            255,
+            0,
+            0
+          ],
+          "ctm": [
+            144,
+            0,
+            0,
+            48,
+            32,
+            104
+          ],
+          "backdrop_rect": [
+            24,
+            96,
+            160,
+            64
+          ],
+          "mask_resource": "M",
+          "mask_object_number": 5
+        },
+        {
+          "id": "draw-1",
+          "x": 32,
+          "y": 24,
+          "tint_rgb": [
+            0,
+            255,
+            0
+          ],
+          "ctm": [
+            144,
+            0,
+            0,
+            48,
+            32,
+            24
+          ],
+          "backdrop_rect": [
+            24,
+            16,
+            160,
+            64
+          ],
+          "mask_resource": "M",
+          "mask_object_number": 5
+        }
+      ],
+      "expected_samples": [
+        {
+          "id": "draw-0-cell-0-0",
+          "point": [
+            40,
+            144
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 0,
+          "painted": true
+        },
+        {
+          "id": "draw-0-cell-1-0",
+          "point": [
+            56,
+            144
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 1,
+          "painted": false
+        },
+        {
+          "id": "draw-0-cell-2-0",
+          "point": [
+            72,
+            144
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 1,
+          "painted": false
+        },
+        {
+          "id": "draw-0-cell-3-0",
+          "point": [
+            88,
+            144
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 0,
+          "painted": true
+        },
+        {
+          "id": "draw-0-cell-4-0",
+          "point": [
+            104,
+            144
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 0,
+          "painted": true
+        },
+        {
+          "id": "draw-0-cell-5-0",
+          "point": [
+            120,
+            144
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 1,
+          "painted": false
+        },
+        {
+          "id": "draw-0-cell-6-0",
+          "point": [
+            136,
+            144
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 0,
+          "painted": true
+        },
+        {
+          "id": "draw-0-cell-7-0",
+          "point": [
+            152,
+            144
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 1,
+          "painted": false
+        },
+        {
+          "id": "draw-0-cell-8-0",
+          "point": [
+            168,
+            144
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 0,
+          "painted": true
+        },
+        {
+          "id": "draw-0-cell-0-1",
+          "point": [
+            40,
+            128
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 0,
+          "painted": true
+        },
+        {
+          "id": "draw-0-cell-1-1",
+          "point": [
+            56,
+            128
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 0,
+          "painted": true
+        },
+        {
+          "id": "draw-0-cell-2-1",
+          "point": [
+            72,
+            128
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 1,
+          "painted": false
+        },
+        {
+          "id": "draw-0-cell-3-1",
+          "point": [
+            88,
+            128
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 1,
+          "painted": false
+        },
+        {
+          "id": "draw-0-cell-4-1",
+          "point": [
+            104,
+            128
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 1,
+          "painted": false
+        },
+        {
+          "id": "draw-0-cell-5-1",
+          "point": [
+            120,
+            128
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 0,
+          "painted": true
+        },
+        {
+          "id": "draw-0-cell-6-1",
+          "point": [
+            136,
+            128
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 1,
+          "painted": false
+        },
+        {
+          "id": "draw-0-cell-7-1",
+          "point": [
+            152,
+            128
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 0,
+          "painted": true
+        },
+        {
+          "id": "draw-0-cell-8-1",
+          "point": [
+            168,
+            128
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 1,
+          "painted": false
+        },
+        {
+          "id": "draw-0-cell-0-2",
+          "point": [
+            40,
+            112
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 1,
+          "painted": false
+        },
+        {
+          "id": "draw-0-cell-1-2",
+          "point": [
+            56,
+            112
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 0,
+          "painted": true
+        },
+        {
+          "id": "draw-0-cell-2-2",
+          "point": [
+            72,
+            112
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 0,
+          "painted": true
+        },
+        {
+          "id": "draw-0-cell-3-2",
+          "point": [
+            88,
+            112
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 1,
+          "painted": false
+        },
+        {
+          "id": "draw-0-cell-4-2",
+          "point": [
+            104,
+            112
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 0,
+          "painted": true
+        },
+        {
+          "id": "draw-0-cell-5-2",
+          "point": [
+            120,
+            112
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 1,
+          "painted": false
+        },
+        {
+          "id": "draw-0-cell-6-2",
+          "point": [
+            136,
+            112
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 1,
+          "painted": false
+        },
+        {
+          "id": "draw-0-cell-7-2",
+          "point": [
+            152,
+            112
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 1,
+          "painted": false
+        },
+        {
+          "id": "draw-0-cell-8-2",
+          "point": [
+            168,
+            112
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 0,
+          "source_bit": 0,
+          "painted": true
+        },
+        {
+          "id": "draw-0-white-frame-left",
+          "point": [
+            28.0,
+            128.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-white-frame-right",
+          "point": [
+            180.0,
+            128.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-white-frame-bottom",
+          "point": [
+            104.0,
+            100.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-white-frame-top",
+          "point": [
+            104.0,
+            156.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-1-cell-0-0",
+          "point": [
+            40,
+            64
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 1,
+          "source_bit": 0,
+          "painted": true
+        },
+        {
+          "id": "draw-1-cell-1-0",
+          "point": [
+            56,
+            64
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 1,
+          "source_bit": 1,
+          "painted": false
+        },
+        {
+          "id": "draw-1-cell-2-0",
+          "point": [
+            72,
+            64
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 1,
+          "source_bit": 1,
+          "painted": false
+        },
+        {
+          "id": "draw-1-cell-3-0",
+          "point": [
+            88,
+            64
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 1,
+          "source_bit": 0,
+          "painted": true
+        },
+        {
+          "id": "draw-1-cell-4-0",
+          "point": [
+            104,
+            64
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 1,
+          "source_bit": 0,
+          "painted": true
+        },
+        {
+          "id": "draw-1-cell-5-0",
+          "point": [
+            120,
+            64
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 1,
+          "source_bit": 1,
+          "painted": false
+        },
+        {
+          "id": "draw-1-cell-6-0",
+          "point": [
+            136,
+            64
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 1,
+          "source_bit": 0,
+          "painted": true
+        },
+        {
+          "id": "draw-1-cell-7-0",
+          "point": [
+            152,
+            64
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 1,
+          "source_bit": 1,
+          "painted": false
+        },
+        {
+          "id": "draw-1-cell-8-0",
+          "point": [
+            168,
+            64
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 1,
+          "source_bit": 0,
+          "painted": true
+        },
+        {
+          "id": "draw-1-cell-0-1",
+          "point": [
+            40,
+            48
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 1,
+          "source_bit": 0,
+          "painted": true
+        },
+        {
+          "id": "draw-1-cell-1-1",
+          "point": [
+            56,
+            48
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 1,
+          "source_bit": 0,
+          "painted": true
+        },
+        {
+          "id": "draw-1-cell-2-1",
+          "point": [
+            72,
+            48
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 1,
+          "source_bit": 1,
+          "painted": false
+        },
+        {
+          "id": "draw-1-cell-3-1",
+          "point": [
+            88,
+            48
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 1,
+          "source_bit": 1,
+          "painted": false
+        },
+        {
+          "id": "draw-1-cell-4-1",
+          "point": [
+            104,
+            48
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 1,
+          "source_bit": 1,
+          "painted": false
+        },
+        {
+          "id": "draw-1-cell-5-1",
+          "point": [
+            120,
+            48
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 1,
+          "source_bit": 0,
+          "painted": true
+        },
+        {
+          "id": "draw-1-cell-6-1",
+          "point": [
+            136,
+            48
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 1,
+          "source_bit": 1,
+          "painted": false
+        },
+        {
+          "id": "draw-1-cell-7-1",
+          "point": [
+            152,
+            48
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 1,
+          "source_bit": 0,
+          "painted": true
+        },
+        {
+          "id": "draw-1-cell-8-1",
+          "point": [
+            168,
+            48
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 1,
+          "source_bit": 1,
+          "painted": false
+        },
+        {
+          "id": "draw-1-cell-0-2",
+          "point": [
+            40,
+            32
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 1,
+          "source_bit": 1,
+          "painted": false
+        },
+        {
+          "id": "draw-1-cell-1-2",
+          "point": [
+            56,
+            32
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 1,
+          "source_bit": 0,
+          "painted": true
+        },
+        {
+          "id": "draw-1-cell-2-2",
+          "point": [
+            72,
+            32
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 1,
+          "source_bit": 0,
+          "painted": true
+        },
+        {
+          "id": "draw-1-cell-3-2",
+          "point": [
+            88,
+            32
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 1,
+          "source_bit": 1,
+          "painted": false
+        },
+        {
+          "id": "draw-1-cell-4-2",
+          "point": [
+            104,
+            32
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 1,
+          "source_bit": 0,
+          "painted": true
+        },
+        {
+          "id": "draw-1-cell-5-2",
+          "point": [
+            120,
+            32
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 1,
+          "source_bit": 1,
+          "painted": false
+        },
+        {
+          "id": "draw-1-cell-6-2",
+          "point": [
+            136,
+            32
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 1,
+          "source_bit": 1,
+          "painted": false
+        },
+        {
+          "id": "draw-1-cell-7-2",
+          "point": [
+            152,
+            32
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "draw": 1,
+          "source_bit": 1,
+          "painted": false
+        },
+        {
+          "id": "draw-1-cell-8-2",
+          "point": [
+            168,
+            32
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0,
+          "draw": 1,
+          "source_bit": 0,
+          "painted": true
+        },
+        {
+          "id": "draw-1-white-frame-left",
+          "point": [
+            28.0,
+            48.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-1-white-frame-right",
+          "point": [
+            180.0,
+            48.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-1-white-frame-bottom",
+          "point": [
+            104.0,
+            20.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-1-white-frame-top",
+          "point": [
+            104.0,
+            76.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "point": [
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_regions": [
+        {
+          "id": "draw-0-cell-0-0",
+          "rect": [
+            34,
+            138,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-1-0",
+          "rect": [
+            50,
+            138,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-2-0",
+          "rect": [
+            66,
+            138,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-3-0",
+          "rect": [
+            82,
+            138,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-4-0",
+          "rect": [
+            98,
+            138,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-5-0",
+          "rect": [
+            114,
+            138,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-6-0",
+          "rect": [
+            130,
+            138,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-7-0",
+          "rect": [
+            146,
+            138,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-8-0",
+          "rect": [
+            162,
+            138,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-0-1",
+          "rect": [
+            34,
+            122,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-1-1",
+          "rect": [
+            50,
+            122,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-2-1",
+          "rect": [
+            66,
+            122,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-3-1",
+          "rect": [
+            82,
+            122,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-4-1",
+          "rect": [
+            98,
+            122,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-5-1",
+          "rect": [
+            114,
+            122,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-6-1",
+          "rect": [
+            130,
+            122,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-7-1",
+          "rect": [
+            146,
+            122,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-8-1",
+          "rect": [
+            162,
+            122,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-0-2",
+          "rect": [
+            34,
+            106,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-1-2",
+          "rect": [
+            50,
+            106,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-2-2",
+          "rect": [
+            66,
+            106,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-3-2",
+          "rect": [
+            82,
+            106,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-4-2",
+          "rect": [
+            98,
+            106,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-5-2",
+          "rect": [
+            114,
+            106,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-6-2",
+          "rect": [
+            130,
+            106,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-7-2",
+          "rect": [
+            146,
+            106,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-cell-8-2",
+          "rect": [
+            162,
+            106,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-white-frame-left",
+          "rect": [
+            26,
+            98,
+            4,
+            60
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-white-frame-right",
+          "rect": [
+            178,
+            98,
+            4,
+            60
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-white-frame-bottom",
+          "rect": [
+            34,
+            98,
+            140,
+            4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-0-white-frame-top",
+          "rect": [
+            34,
+            154,
+            140,
+            4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-1-cell-0-0",
+          "rect": [
+            34,
+            58,
+            12,
+            12
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-1-cell-1-0",
+          "rect": [
+            50,
+            58,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-1-cell-2-0",
+          "rect": [
+            66,
+            58,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-1-cell-3-0",
+          "rect": [
+            82,
+            58,
+            12,
+            12
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-1-cell-4-0",
+          "rect": [
+            98,
+            58,
+            12,
+            12
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-1-cell-5-0",
+          "rect": [
+            114,
+            58,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-1-cell-6-0",
+          "rect": [
+            130,
+            58,
+            12,
+            12
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-1-cell-7-0",
+          "rect": [
+            146,
+            58,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-1-cell-8-0",
+          "rect": [
+            162,
+            58,
+            12,
+            12
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-1-cell-0-1",
+          "rect": [
+            34,
+            42,
+            12,
+            12
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-1-cell-1-1",
+          "rect": [
+            50,
+            42,
+            12,
+            12
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-1-cell-2-1",
+          "rect": [
+            66,
+            42,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-1-cell-3-1",
+          "rect": [
+            82,
+            42,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-1-cell-4-1",
+          "rect": [
+            98,
+            42,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-1-cell-5-1",
+          "rect": [
+            114,
+            42,
+            12,
+            12
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-1-cell-6-1",
+          "rect": [
+            130,
+            42,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-1-cell-7-1",
+          "rect": [
+            146,
+            42,
+            12,
+            12
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-1-cell-8-1",
+          "rect": [
+            162,
+            42,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-1-cell-0-2",
+          "rect": [
+            34,
+            26,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-1-cell-1-2",
+          "rect": [
+            50,
+            26,
+            12,
+            12
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-1-cell-2-2",
+          "rect": [
+            66,
+            26,
+            12,
+            12
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-1-cell-3-2",
+          "rect": [
+            82,
+            26,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-1-cell-4-2",
+          "rect": [
+            98,
+            26,
+            12,
+            12
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-1-cell-5-2",
+          "rect": [
+            114,
+            26,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-1-cell-6-2",
+          "rect": [
+            130,
+            26,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-1-cell-7-2",
+          "rect": [
+            146,
+            26,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-1-cell-8-2",
+          "rect": [
+            162,
+            26,
+            12,
+            12
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-1-white-frame-left",
+          "rect": [
+            26,
+            18,
+            4,
+            60
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-1-white-frame-right",
+          "rect": [
+            178,
+            18,
+            4,
+            60
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-1-white-frame-bottom",
+          "rect": [
+            34,
+            18,
+            140,
+            4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "draw-1-white-frame-top",
+          "rect": [
+            34,
+            74,
+            140,
+            4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "rect": [
+            4,
+            4,
+            16,
+            16
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "region_rule": "Each16pt source cell inset2pt; white-frame strips and paper independently inset2pt; all boundaries unscored.",
+      "association": {
+        "scope": "standard-contract-only",
+        "upstream_id": null,
+        "upstream_entry_validated": false,
+        "reason": "No exact upstream stencil scene scope established."
+      }
+    }
+  ]
+}

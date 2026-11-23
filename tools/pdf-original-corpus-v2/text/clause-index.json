@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "batch": "ISO-TEXT-POSITION-01",
+  "verified_date": "2026-11-23",
+  "fixture_pdf_version": "1.7",
+  "governing_edition": "ISO 32000-1:2008",
+  "governing_document_sha256": "9de0ca9e8570d6209e8bd48a355be8eb6ec376acfc3fc3ae97cd8730351417ff",
+  "governing_document_redistributed": false,
+  "clauses": {
+    "2008-tc": {
+      "clause": "9.3.2",
+      "heading": "Character Spacing",
+      "verification": "local full text inspected"
+    },
+    "2008-tw": {
+      "clause": "9.3.3",
+      "heading": "Word Spacing",
+      "verification": "local full text inspected"
+    },
+    "2008-position": {
+      "clause": "9.4.2",
+      "table": "108",
+      "heading": "Text-Positioning Operators",
+      "verification": "local full text inspected"
+    },
+    "2008-show": {
+      "clause": "9.4.3",
+      "table": "109",
+      "heading": "Text-Showing Operators",
+      "verification": "local full text inspected"
+    },
+    "2008-type3": {
+      "clause": "9.6.5",
+      "table": "112",
+      "heading": "Type 3 Fonts",
+      "verification": "local full text inspected"
+    },
+    "2020-position": {
+      "clause": "9.4.2",
+      "table": "106",
+      "heading": "Text-positioning operators",
+      "verification": "official errata heading/table and T* correction inspected",
+      "url": "https://pdf-issues.pdfa.org/32000-2-2020/clause09.html",
+      "scope": "Positioning heading/table verified; full Td/Tm entries are not reproduced by this errata excerpt."
+    },
+    "2020-show": {
+      "clause": "9.4.3",
+      "heading": "Text-showing operators",
+      "verification": "official errata heading inspected",
+      "url": "https://pdf-issues.pdfa.org/32000-2-2020/clause09.html",
+      "scope": "Full TJ numeric rule is not reproduced by this excerpt."
+    },
+    "2020-type3": {
+      "clause": "9.6.4",
+      "tables": [
+        "110",
+        "111"
+      ],
+      "heading": "Type 3 fonts",
+      "verification": "official errata Type 3 text/dictionary/operator entries inspected",
+      "url": "https://pdf-issues.pdfa.org/32000-2-2020/clause09.html",
+      "scope": "Font owns glyph graphics streams and encoding; glyph procedure advances agree with Widths."
+    }
+  },
+  "cases": [
+    {
+      "fixture_id": "text-td-line-origin",
+      "primary_2008_clause_ids": [
+        "2008-position"
+      ],
+      "secondary_2008_clause_ids": [
+        "2008-type3"
+      ],
+      "verified_2020_clause_ids": [
+        "2020-position",
+        "2020-show",
+        "2020-type3"
+      ],
+      "upstream_id": null,
+      "finer_2020_status": "pending full relevant entries beyond official errata excerpts"
+    },
+    {
+      "fixture_id": "text-tc-tw-spacing",
+      "primary_2008_clause_ids": [
+        "2008-tc",
+        "2008-tw"
+      ],
+      "secondary_2008_clause_ids": [
+        "2008-type3"
+      ],
+      "verified_2020_clause_ids": [
+        "2020-position",
+        "2020-show",
+        "2020-type3"
+      ],
+      "upstream_id": null,
+      "finer_2020_status": "pending full relevant entries beyond official errata excerpts"
+    },
+    {
+      "fixture_id": "text-tj-signed-adjustment",
+      "primary_2008_clause_ids": [
+        "2008-show"
+      ],
+      "secondary_2008_clause_ids": [
+        "2008-type3"
+      ],
+      "verified_2020_clause_ids": [
+        "2020-position",
+        "2020-show",
+        "2020-type3"
+      ],
+      "upstream_id": null,
+      "finer_2020_status": "pending full relevant entries beyond official errata excerpts"
+    },
+    {
+      "fixture_id": "text-tm-rotate-replace",
+      "primary_2008_clause_ids": [
+        "2008-position"
+      ],
+      "secondary_2008_clause_ids": [
+        "2008-type3"
+      ],
+      "verified_2020_clause_ids": [
+        "2020-position",
+        "2020-show",
+        "2020-type3"
+      ],
+      "upstream_id": null,
+      "finer_2020_status": "pending full relevant entries beyond official errata excerpts"
+    }
+  ],
+  "limitations": [
+    "No full 2020 standard downloaded or cart/form submitted.",
+    "Finer 2020 character/word spacing and complete Td/Tm/TJ text remain pending; do not infer identical numbering from source comments.",
+    "All visual claims are restricted to declared glyph ink/counter interiors, not exact edges."
+  ],
+  "subsystem_tags": [
+    {
+      "repo": "pepkaro/onepdf-csharp",
+      "inspected_head": "2d1928d5ee67bf4526903d3d44ae37792b1f27b8",
+      "path": "src/OnePdf/Content/ContentInterpreter.Text.cs",
+      "lines": [
+        143,
+        301,
+        357
+      ],
+      "symbols": [
+        "TextMatrix operator",
+        "TJ numeric adjustment",
+        "ShowString advances"
+      ],
+      "scope": "Text line/current matrices, spacing and glyph displacement."
+    },
+    {
+      "repo": "pepkaro/onepdf-csharp",
+      "inspected_head": "2d1928d5ee67bf4526903d3d44ae37792b1f27b8",
+      "path": "src/OnePdf/Content/ContentInterpreter.Type3.cs",
+      "line": 39,
+      "symbol": "ShowType3Glyphs",
+      "scope": "Applies original font matrix and text-space placement to glyph procedures."
+    },
+    {
+      "repo": "pepkaro/oneimage-csharp",
+      "inspected_head": "6f8060d33bb6043034247a730a5570ce541b54de",
+      "path": "src/OneImage.Pdf/Render/CanvasDevice.Text.cs",
+      "line": 14,
+      "symbol": "ShowGlyphRun",
+      "scope": "Glyph-run rendering bridge; Type 3 procedures also emit ordinary graphics."
+    }
+  ],
+  "source_navigation_limitation": "Cross-tags guide inspection only; they do not assign a renderer defect or claim product execution."
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "batch": "ISO-TEXT-INVISIBLE-01",
+  "state": "complete-local-reference-qualified",
+  "generated_unique_pdfs": 4,
+  "single_page_cases": 4,
+  "unique_case_dpi_views": 8,
+  "qualified_case_dpi_views": 8,
+  "held_case_dpi_views": 0,
+  "reference_png_files": 24,
+  "reference_png_unique_bytes": 24,
+  "references_executed": 24,
+  "reference_passed": 24,
+  "reference_failed": 0,
+  "reference_skipped": 0,
+  "actual_engine_invocations": {
+    "pdfium": 8,
+    "mupdf": 8,
+    "pdfjs": 8
+  },
+  "actual_total_engine_invocations": 24,
+  "actual_runner_invocations": 1,
+  "reruns": 0,
+  "root_replays_included": false,
+  "analytic_sample_checks": 492,
+  "analytic_sample_passed": 492,
+  "interior_pixels_per_engine": 60500,
+  "analytic_reference_pixel_checks": 181500,
+  "interior_tolerance": 0,
+  "independently_parsed_glyph_records": 17,
+  "invisible_Tr3_glyph_records": 11,
+  "visible_Tr0_glyph_records": 6,
+  "independently_checked": [
+    "raw text_matrix",
+    "line_matrix",
+    "effective glyph_matrix",
+    "Tr/Tc/Tw/leading state"
+  ],
+  "analytic_layout_assertion_scope": "Exact authored operator intent; not renderer edge measurements.",
+  "qualified_fixture_ids": [
+    "text-invisible-advance",
+    "text-invisible-spacing-tj",
+    "text-invisible-object-state",
+    "text-invisible-no-clip"
+  ],
+  "held_fixture_ids": [],
+  "named_visual_assertions_outside_regions": [],
+  "later_paint_case_scope": "Verifies nontext paint remains unclipped; does not independently observe glyph invisibility beneath overpaint.",
+  "Tr7_used": false,
+  "unscored": [
+    "All glyph/rectangle boundaries and undeclared pixels; strict full-page equality.",
+    "Tr7 clipping, extraction, native font weight/hinting/shaping, rotated writing and external CTM interactions."
+  ],
+  "upstream_entry_validated": 0,
+  "upstream_mappings": [],
+  "product_runs": 0,
+  "selected_expected_images_created": 0,
+  "selected_expected_candidates": [
+    "references/text-invisible-advance-72-mupdf.png",
+    "references/text-invisible-advance-144-mupdf.png",
+    "references/text-invisible-spacing-tj-72-mupdf.png",
+    "references/text-invisible-spacing-tj-144-mupdf.png",
+    "references/text-invisible-object-state-72-mupdf.png",
+    "references/text-invisible-object-state-144-mupdf.png",
+    "references/text-invisible-no-clip-72-mupdf.png",
+    "references/text-invisible-no-clip-144-mupdf.png"
+  ],
+  "regeneration": "PDFs, manifest and font design byte-identical after generator rerun.",
+  "commands": [
+    "python generate.py",
+    "python run-references.py /path/to/node_modules/pdfjs-dist",
+    "python verify-regions.py",
+    "python verify.py"
+  ],
+  "worker_global_writes": 0,
+  "worker_remote_writes": 0
+}

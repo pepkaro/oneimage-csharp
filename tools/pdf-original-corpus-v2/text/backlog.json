@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "owner": "pdfium_originals",
+  "slice": "ISO-TEXT-POSITION-01",
+  "path": "work/text",
+  "state": "complete-local-reference-qualified-awaiting-root-review",
+  "actual": {
+    "generated_unique_pdfs": 4,
+    "original_fonts": 1,
+    "named_contracts": 4,
+    "references_executed": 24,
+    "reference_passed": 24,
+    "reference_failed": 0,
+    "reference_skipped": 0,
+    "qualified_cases": 4,
+    "held_cases": 0,
+    "upstream_entry_passes": 0,
+    "product_runs": 0,
+    "published_by_worker": 0
+  },
+  "next_unclaimed_slice": {
+    "id": "ISO-TEXT-SCALE-RISE-01",
+    "state": "proposed-unclaimed-not-started",
+    "scope": "Reuse owned original font for separate ordinary Tz horizontal scaling and Ts rise controls with independent matrices.",
+    "acceptance_criteria": [
+      "Confirm no overlapping owner before assignment.",
+      "Verify governing clause text and official available 2020 headings.",
+      "Freeze numeric glyph matrices/interior regions before fresh three-reference 72/144-DPI captures.",
+      "Accept only reference-agreed regions; preserve disagreements and do not claim native font-weight or shaping parity."
+    ]
+  }
+}

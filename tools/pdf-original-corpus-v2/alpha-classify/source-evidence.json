@@ -1,0 +1,104 @@
+{
+  "pdfium_version": "153.0.7999.0",
+  "pdfium_source_snapshot": "e9fc01804a0c5224ea780ad782abb8cfede628ef",
+  "pdfium_source_basis": "Official immutable153.0.7999.0 release notes saychromium/7999; officialGitilesbranch resolvedto snapshot. Installedmetadata has no sourcehash.",
+  "pdfium_release": "https://github.com/bblanchon/pdfium-binaries/releases/tag/chromium%2F7999",
+  "mupdf_version": "1.26.11",
+  "mupdf_tag": "1.26.11",
+  "mupdf_source_commit": "d189cc13194a1e32026b6161b543df02c120aac2",
+  "pdfjs_version": "6.5.438",
+  "pdfjs_source_commit": "0a4153349dc473ba950fc17941c5ca7eda43c1de",
+  "sources": [
+    {
+      "id": "pdfium-alpha",
+      "url": "https://raw.githubusercontent.com/chromium/pdfium/e9fc01804a0c5224ea780ad782abb8cfede628ef/core/fpdfapi/render/cpdf_renderstatus.cpp",
+      "sha256": "4e4eeb90ed2c18e4f78cbebe0feaba3ccb7828addf80193e3d1e7f9632879c25",
+      "bytes": 54285,
+      "symbol": "GetFillArgbForType3/GetStrokeArgb",
+      "summary": "Fill/stroke alpha is converted to an integer after multiplication by255, without rounding.",
+      "third_party_source_redistributed": false
+    },
+    {
+      "id": "pdfium-blend",
+      "url": "https://raw.githubusercontent.com/chromium/pdfium/e9fc01804a0c5224ea780ad782abb8cfede628ef/core/fxge/dib/fx_dib.h",
+      "sha256": "6865f2620e59f4975532b495285eb21ac7d58c54d0b53606dd4b7c593c5d9fd7",
+      "bytes": 7844,
+      "symbol": "AlphaMerge",
+      "summary": "RGB channels use integer weighted source/backdrop blending over255.",
+      "third_party_source_redistributed": false
+    },
+    {
+      "id": "pdfium-route",
+      "url": "https://raw.githubusercontent.com/chromium/pdfium/e9fc01804a0c5224ea780ad782abb8cfede628ef/core/fxge/dib/cfx_scanlinecompositor.cpp",
+      "sha256": "70c1c8d825eb72e879df62e181cb479db5526177f4dac09a071808066ba0cb70",
+      "bytes": 90928,
+      "symbol": "AlphaMergeToDest",
+      "summary": "The RGB scanline route calls the same channel blend helper.",
+      "third_party_source_redistributed": false
+    },
+    {
+      "id": "mupdf-alpha",
+      "url": "https://raw.githubusercontent.com/ArtifexSoftware/mupdf/d189cc13194a1e32026b6161b543df02c120aac2/source/fitz/draw-device.c",
+      "sha256": "533ef73a8e3921e87241a829cfb731881c7b549b0d9bd72f05261d3d093e5785",
+      "bytes": 98093,
+      "symbol": "resolve_color",
+      "summary": "The solid-color alpha byte receives alpha multiplied by255.",
+      "third_party_source_redistributed": false
+    },
+    {
+      "id": "mupdf-blend",
+      "url": "https://raw.githubusercontent.com/ArtifexSoftware/mupdf/d189cc13194a1e32026b6161b543df02c120aac2/source/fitz/draw-paint.c",
+      "sha256": "d6ec03fd363ca3b1b42b0a7b78d2f7399c2bfe4b9cb9ff39582cf61b1a51d5f8",
+      "bytes": 72649,
+      "symbol": "template_solid_color_N_sa / fz_get_solid_color_painter",
+      "summary": "Opaque RGB interiors select a solid-color painter with an expanded alpha weight.",
+      "third_party_source_redistributed": false
+    },
+    {
+      "id": "mupdf-weight",
+      "url": "https://raw.githubusercontent.com/ArtifexSoftware/mupdf/d189cc13194a1e32026b6161b543df02c120aac2/include/mupdf/fitz/geometry.h",
+      "sha256": "2f7501e4a178d85942f731689b6570667c1b086d8f4d58e25acd523cb498fb97",
+      "bytes": 21046,
+      "symbol": "FZ_EXPAND / FZ_BLEND",
+      "summary": "Alpha is expanded to a256-step weight; channel blending uses a right-shift integer result.",
+      "third_party_source_redistributed": false
+    },
+    {
+      "id": "pdfjs-canvas",
+      "url": "https://raw.githubusercontent.com/mozilla/pdf.js/0a4153349dc473ba950fc17941c5ca7eda43c1de/src/display/canvas.js",
+      "sha256": "d3ee050b84a0924f168cc10ce5bedb96080de1ad0ae4ca61f62b4bbaa379d44d",
+      "bytes": 146161,
+      "symbol": "CanvasGraphics.setGState / stroke",
+      "summary": "PDF alpha is assigned to Canvas globalAlpha rather than converted through these native integer helpers.",
+      "third_party_source_redistributed": false
+    }
+  ],
+  "runtime_binaries": [
+    {
+      "name": "libpdfium.so",
+      "sha256": "224f8ece41f7e35891f11c10073b7b7062d7a18e9ef870586162a85c46130f7d",
+      "bytes": 7669256
+    },
+    {
+      "name": "_mupdf.so",
+      "sha256": "5d54def935362b25bd82f21515ed45f4c4bbdfc3505a6d7897b5038e3d6d0725",
+      "bytes": 14152456
+    },
+    {
+      "name": "libmupdf.so.26.11",
+      "sha256": "2802c2bfedc5b2f4381d93dc2367c9987fa307fabc45c7a041d819c950cc5791",
+      "bytes": 34263192
+    },
+    {
+      "name": "libmupdfcpp.so.26.11",
+      "sha256": "1d81a51e193fa549e30ca7fdfba3402ad44bf17c5a7f9966e3298de995168789",
+      "bytes": 2842312
+    }
+  ],
+  "limitations": [
+    "Sourcesmatchreportedruntimeversions; no completebinaryrebuild/sourceattestation or in-processbranchtracingwasperformed.",
+    "Modelsareconsistentwithall24measuredinteriors; theydo notestablisha normativeISO8bitroundingrule.",
+    "DirectCanvascontrols isolate the Nodebackend withoutPDF.js parsing; browserCanvas andotherbackends remainuntested."
+  ],
+  "oracle_status": "Notestablished; fractionalPDFgoldens remainabsent"
+}

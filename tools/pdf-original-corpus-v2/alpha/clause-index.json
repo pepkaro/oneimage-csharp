@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "index_standard": "ISO 32000-2:2020",
+  "primary_verified_clause": "11.6 Specifying transparency in PDF",
+  "source_urls": [
+    "https://pdfa.org/resource/iso-32000-2",
+    "https://pdf-issues.pdfa.org/32000-2-2020/clause11.html"
+  ],
+  "verified_2020": "11.6 heading;11.3 Basic compositing computations secondary heading. Full unamended alpha rule text not acquired; finer2020rule number intentionally not assigned.",
+  "governing_2008": {
+    "11.6.4.4": "Constant Shape and Opacity, PDFpage354",
+    "8.4.5 Table57": "CA stroking/ca nonstroking alpha, PDFpage138",
+    "11.3.3": "Basic Compositing Formula"
+  },
+  "governing_source": {
+    "url": "https://opensource.adobe.com/dc-acrobat-sdk-docs/pdfstandards/PDF32000_2008.pdf",
+    "sha256": "9de0ca9e8570d6209e8bd48a355be8eb6ec376acfc3fc3ae97cd8730351417ff"
+  },
+  "normative": "Separate stroking/nonstroking alpha; real-valuedNormalcompositing; balancedq/Qrestoresstate",
+  "observed_compatibility": "Exact8bit quantization is the declared comparison criterion, not an asserted ISO rounding rule. Four fractional controls disagree between independent engines and are not accepted.",
+  "subsystems": [
+    "OnePDF/content-interpretation",
+    "OneImage.Pdf/bridge-integration",
+    "OneImage/transparency-compositing"
+  ],
+  "root_cause_owner": null,
+  "source_paths": [
+    "src/OneImage.Pdf/Render/CanvasDevice.cs",
+    "src/OneImage/Canvas.cs"
+  ],
+  "upstream_scope": "spec-derived-only; no upstream inputs executed or IDs mapped"
+}

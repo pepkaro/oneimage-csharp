@@ -1,0 +1,44 @@
+{
+  "license": "MIT",
+  "copyright": "Owned original numeric font design, generated PDFs and sources are MIT; reused adapters retain original headers.",
+  "font_provenance": {
+    "source_slice": "ISO-TEXT-POSITION-01",
+    "kind": "Type3",
+    "design_reused": true,
+    "new_font_designs": 0,
+    "external_font_bytes": 0,
+    "glyph_stream_sha256": {
+      "A": "4b73f4c8379a88f4ca7a2c9d79c08e29f74ad580115b3d9bf53c8f01b7938392",
+      "B": "d6a2fb8e0102dbfe8cd862334fc05442bfb45d1f63c17fcbd33eff4341927e48",
+      "space": "ab7650175034cf35fac613c21f726a2d4bf45ce5c3cc557c8623936875018536"
+    },
+    "verification": "Glyph fingerprints match prior original-font checkpoint."
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "pypdf": "6.21.4",
+  "references": {
+    "pdfium": "153.0.7999.0",
+    "pypdfium2": "5.13.0",
+    "mupdf": "1.26.11",
+    "pymupdf": "1.26.6",
+    "pdfjs": "6.5.438",
+    "pdfjs_build": "0a4153349",
+    "node": "24.22.3",
+    "node_canvas": "1.1.1"
+  },
+  "expected_oracle": "Declared raw/effective glyph matrices and original numeric ink/counter shapes; independently parsed operators verify leading/matrices; three fresh references qualify pixels.",
+  "target": {
+    "draft_pr": 94,
+    "remote_review_head": "f56204210b1443f42971dbb32d0c693744b57c76",
+    "materialized_local_head": "72886e91de55565fa3fc56608ae0a33c6a442bcd",
+    "materialized_tree": "c20beb32ff7a278d9e2feecbe5dfd241fc6c84c9",
+    "verification": "Root verified matching remote/local trees; worker rechecked local HEAD/tree without fetching."
+  },
+  "upstream_fixture_fetches": 0,
+  "upstream_inputs_executed": 0,
+  "upstream_entry_passes": 0,
+  "product_tests": 0,
+  "remote_writes": 0,
+  "prior_checkpoints_preserved": true,
+  "net_new_global_behavior_count": null
+}

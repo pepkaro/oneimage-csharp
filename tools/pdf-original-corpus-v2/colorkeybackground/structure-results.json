@@ -1,0 +1,49 @@
+{
+  "passed": 3,
+  "failed": 0,
+  "rows": [
+    {
+      "id": "img-colorkey-bg-control",
+      "raw_bytes": 36,
+      "mask": null,
+      "masked_cell_ids": [],
+      "passed": true
+    },
+    {
+      "id": "img-colorkey-bg-exact",
+      "raw_bytes": 36,
+      "mask": [
+        51,
+        51,
+        102,
+        102,
+        153,
+        153
+      ],
+      "masked_cell_ids": [
+        "cell-2-0"
+      ],
+      "passed": true
+    },
+    {
+      "id": "img-colorkey-bg-range",
+      "raw_bytes": 36,
+      "mask": [
+        34,
+        68,
+        85,
+        119,
+        136,
+        170
+      ],
+      "masked_cell_ids": [
+        "cell-0-0",
+        "cell-1-0",
+        "cell-2-0",
+        "cell-1-2",
+        "cell-2-2"
+      ],
+      "passed": true
+    }
+  ]
+}

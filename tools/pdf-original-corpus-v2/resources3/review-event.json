@@ -1,0 +1,17 @@
+{
+  "status": "resolved-by-safe-alternative",
+  "denied_action": "Finalization command creating resources3 structure/verifier files and adapting prior verifier text read-only",
+  "denied_target": "new resources3 directory; command also read prior resources2/verify.py",
+  "exact_rejection": "Although the new structure checks are bounded and authorized, the command also modifies the prior completed batch at `pdf-corpus-third-20261123/work/resources2/verify.py`, explicitly violating the instruction not to change old paths.",
+  "execution_status": "Rejected before execution; confirmed new verification files absent immediately afterward",
+  "unchanged_old_file_proof": {
+    "path": "pdf-corpus-third-20261123/work/resources2/verify.py",
+    "checkpoint_sha256": "7a9dcc80b609f4d614bf1eb313c9ac4855db6544b9176eac59d26f55b6e55f02",
+    "observed_sha256": "7a9dcc80b609f4d614bf1eb313c9ac4855db6544b9176eac59d26f55b6e55f02",
+    "unchanged": true
+  },
+  "safe_alternative": "Wrote fresh verifier and structure parser directly under new resources3 only; no prior-file read or mutation in that command; approved and passed",
+  "parent_confirmation": "Parent explicitly instructed to proceed with new-only verifier and preserve unchanged hash proof",
+  "original_command_retried": false,
+  "outstanding_block": false
+}

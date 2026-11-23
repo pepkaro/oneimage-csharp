@@ -1,0 +1,590 @@
+{
+  "unique_original_pdfs": 8,
+  "reference_outputs": 48,
+  "analytic_reference_passed": 48,
+  "analytic_reference_failed": 0,
+  "sample_checks_passed": 198,
+  "pairwise_checks_passed": 48,
+  "pairwise_checks_failed": 0,
+  "boundaries": "One device-pixel band around analytic region boundaries is unscored, declared before rendering",
+  "upstream_inputs_executed": 0,
+  "upstream_rows_validated": 0,
+  "rows": [
+    {
+      "id": "geometry-fill-rules",
+      "dpi": 72,
+      "engines": [
+        "pdfium",
+        "mupdf"
+      ],
+      "scored_pixels": 14600,
+      "unscored_boundary_pixels": 1400,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-fill-rules",
+      "dpi": 72,
+      "engines": [
+        "pdfium",
+        "pdfjs"
+      ],
+      "scored_pixels": 14600,
+      "unscored_boundary_pixels": 1400,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-fill-rules",
+      "dpi": 72,
+      "engines": [
+        "mupdf",
+        "pdfjs"
+      ],
+      "scored_pixels": 14600,
+      "unscored_boundary_pixels": 1400,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-fill-rules",
+      "dpi": 144,
+      "engines": [
+        "pdfium",
+        "mupdf"
+      ],
+      "scored_pixels": 61200,
+      "unscored_boundary_pixels": 2800,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-fill-rules",
+      "dpi": 144,
+      "engines": [
+        "pdfium",
+        "pdfjs"
+      ],
+      "scored_pixels": 61200,
+      "unscored_boundary_pixels": 2800,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-fill-rules",
+      "dpi": 144,
+      "engines": [
+        "mupdf",
+        "pdfjs"
+      ],
+      "scored_pixels": 61200,
+      "unscored_boundary_pixels": 2800,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-clip-intersection",
+      "dpi": 72,
+      "engines": [
+        "pdfium",
+        "mupdf"
+      ],
+      "scored_pixels": 11640,
+      "unscored_boundary_pixels": 360,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-clip-intersection",
+      "dpi": 72,
+      "engines": [
+        "pdfium",
+        "pdfjs"
+      ],
+      "scored_pixels": 11640,
+      "unscored_boundary_pixels": 360,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-clip-intersection",
+      "dpi": 72,
+      "engines": [
+        "mupdf",
+        "pdfjs"
+      ],
+      "scored_pixels": 11640,
+      "unscored_boundary_pixels": 360,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-clip-intersection",
+      "dpi": 144,
+      "engines": [
+        "pdfium",
+        "mupdf"
+      ],
+      "scored_pixels": 47280,
+      "unscored_boundary_pixels": 720,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-clip-intersection",
+      "dpi": 144,
+      "engines": [
+        "pdfium",
+        "pdfjs"
+      ],
+      "scored_pixels": 47280,
+      "unscored_boundary_pixels": 720,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-clip-intersection",
+      "dpi": 144,
+      "engines": [
+        "mupdf",
+        "pdfjs"
+      ],
+      "scored_pixels": 47280,
+      "unscored_boundary_pixels": 720,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-saved-clip",
+      "dpi": 72,
+      "engines": [
+        "pdfium",
+        "mupdf"
+      ],
+      "scored_pixels": 11360,
+      "unscored_boundary_pixels": 640,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-saved-clip",
+      "dpi": 72,
+      "engines": [
+        "pdfium",
+        "pdfjs"
+      ],
+      "scored_pixels": 11360,
+      "unscored_boundary_pixels": 640,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-saved-clip",
+      "dpi": 72,
+      "engines": [
+        "mupdf",
+        "pdfjs"
+      ],
+      "scored_pixels": 11360,
+      "unscored_boundary_pixels": 640,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-saved-clip",
+      "dpi": 144,
+      "engines": [
+        "pdfium",
+        "mupdf"
+      ],
+      "scored_pixels": 46720,
+      "unscored_boundary_pixels": 1280,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-saved-clip",
+      "dpi": 144,
+      "engines": [
+        "pdfium",
+        "pdfjs"
+      ],
+      "scored_pixels": 46720,
+      "unscored_boundary_pixels": 1280,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-saved-clip",
+      "dpi": 144,
+      "engines": [
+        "mupdf",
+        "pdfjs"
+      ],
+      "scored_pixels": 46720,
+      "unscored_boundary_pixels": 1280,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-clip-path-reset",
+      "dpi": 72,
+      "engines": [
+        "pdfium",
+        "mupdf"
+      ],
+      "scored_pixels": 11860,
+      "unscored_boundary_pixels": 140,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-clip-path-reset",
+      "dpi": 72,
+      "engines": [
+        "pdfium",
+        "pdfjs"
+      ],
+      "scored_pixels": 11860,
+      "unscored_boundary_pixels": 140,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-clip-path-reset",
+      "dpi": 72,
+      "engines": [
+        "mupdf",
+        "pdfjs"
+      ],
+      "scored_pixels": 11860,
+      "unscored_boundary_pixels": 140,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-clip-path-reset",
+      "dpi": 144,
+      "engines": [
+        "pdfium",
+        "mupdf"
+      ],
+      "scored_pixels": 47720,
+      "unscored_boundary_pixels": 280,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-clip-path-reset",
+      "dpi": 144,
+      "engines": [
+        "pdfium",
+        "pdfjs"
+      ],
+      "scored_pixels": 47720,
+      "unscored_boundary_pixels": 280,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-clip-path-reset",
+      "dpi": 144,
+      "engines": [
+        "mupdf",
+        "pdfjs"
+      ],
+      "scored_pixels": 47720,
+      "unscored_boundary_pixels": 280,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-concat-order",
+      "dpi": 72,
+      "engines": [
+        "pdfium",
+        "mupdf"
+      ],
+      "scored_pixels": 11748,
+      "unscored_boundary_pixels": 252,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-concat-order",
+      "dpi": 72,
+      "engines": [
+        "pdfium",
+        "pdfjs"
+      ],
+      "scored_pixels": 11748,
+      "unscored_boundary_pixels": 252,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-concat-order",
+      "dpi": 72,
+      "engines": [
+        "mupdf",
+        "pdfjs"
+      ],
+      "scored_pixels": 11748,
+      "unscored_boundary_pixels": 252,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-concat-order",
+      "dpi": 144,
+      "engines": [
+        "pdfium",
+        "mupdf"
+      ],
+      "scored_pixels": 47496,
+      "unscored_boundary_pixels": 504,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-concat-order",
+      "dpi": 144,
+      "engines": [
+        "pdfium",
+        "pdfjs"
+      ],
+      "scored_pixels": 47496,
+      "unscored_boundary_pixels": 504,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-concat-order",
+      "dpi": 144,
+      "engines": [
+        "mupdf",
+        "pdfjs"
+      ],
+      "scored_pixels": 47496,
+      "unscored_boundary_pixels": 504,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-cropbox-offset",
+      "dpi": 72,
+      "engines": [
+        "pdfium",
+        "mupdf"
+      ],
+      "scored_pixels": 7706,
+      "unscored_boundary_pixels": 294,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-cropbox-offset",
+      "dpi": 72,
+      "engines": [
+        "pdfium",
+        "pdfjs"
+      ],
+      "scored_pixels": 7706,
+      "unscored_boundary_pixels": 294,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-cropbox-offset",
+      "dpi": 72,
+      "engines": [
+        "mupdf",
+        "pdfjs"
+      ],
+      "scored_pixels": 7706,
+      "unscored_boundary_pixels": 294,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-cropbox-offset",
+      "dpi": 144,
+      "engines": [
+        "pdfium",
+        "mupdf"
+      ],
+      "scored_pixels": 31406,
+      "unscored_boundary_pixels": 594,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-cropbox-offset",
+      "dpi": 144,
+      "engines": [
+        "pdfium",
+        "pdfjs"
+      ],
+      "scored_pixels": 31406,
+      "unscored_boundary_pixels": 594,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-cropbox-offset",
+      "dpi": 144,
+      "engines": [
+        "mupdf",
+        "pdfjs"
+      ],
+      "scored_pixels": 31406,
+      "unscored_boundary_pixels": 594,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-rotate-90",
+      "dpi": 72,
+      "engines": [
+        "pdfium",
+        "mupdf"
+      ],
+      "scored_pixels": 9280,
+      "unscored_boundary_pixels": 320,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-rotate-90",
+      "dpi": 72,
+      "engines": [
+        "pdfium",
+        "pdfjs"
+      ],
+      "scored_pixels": 9280,
+      "unscored_boundary_pixels": 320,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-rotate-90",
+      "dpi": 72,
+      "engines": [
+        "mupdf",
+        "pdfjs"
+      ],
+      "scored_pixels": 9280,
+      "unscored_boundary_pixels": 320,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-rotate-90",
+      "dpi": 144,
+      "engines": [
+        "pdfium",
+        "mupdf"
+      ],
+      "scored_pixels": 37760,
+      "unscored_boundary_pixels": 640,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-rotate-90",
+      "dpi": 144,
+      "engines": [
+        "pdfium",
+        "pdfjs"
+      ],
+      "scored_pixels": 37760,
+      "unscored_boundary_pixels": 640,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-rotate-90",
+      "dpi": 144,
+      "engines": [
+        "mupdf",
+        "pdfjs"
+      ],
+      "scored_pixels": 37760,
+      "unscored_boundary_pixels": 640,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-user-unit-2",
+      "dpi": 72,
+      "engines": [
+        "pdfium",
+        "mupdf"
+      ],
+      "scored_pixels": 9200,
+      "unscored_boundary_pixels": 400,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-user-unit-2",
+      "dpi": 72,
+      "engines": [
+        "pdfium",
+        "pdfjs"
+      ],
+      "scored_pixels": 9200,
+      "unscored_boundary_pixels": 400,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-user-unit-2",
+      "dpi": 72,
+      "engines": [
+        "mupdf",
+        "pdfjs"
+      ],
+      "scored_pixels": 9200,
+      "unscored_boundary_pixels": 400,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-user-unit-2",
+      "dpi": 144,
+      "engines": [
+        "pdfium",
+        "mupdf"
+      ],
+      "scored_pixels": 37600,
+      "unscored_boundary_pixels": 800,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-user-unit-2",
+      "dpi": 144,
+      "engines": [
+        "pdfium",
+        "pdfjs"
+      ],
+      "scored_pixels": 37600,
+      "unscored_boundary_pixels": 800,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "geometry-user-unit-2",
+      "dpi": 144,
+      "engines": [
+        "mupdf",
+        "pdfjs"
+      ],
+      "scored_pixels": 37600,
+      "unscored_boundary_pixels": 800,
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    }
+  ]
+}

@@ -1,0 +1,926 @@
+{
+  "schema_version": 1,
+  "slice": "ISO-TRANSPARENCY-01",
+  "owner": "root",
+  "independently_authored": true,
+  "upstream_assets_read": 0,
+  "cases": [
+    {
+      "id": "alpha-fill-endpoints",
+      "file": "inputs/alpha-fill-endpoints.pdf",
+      "sha256": "76b0c94955ecf50229f686af4a9e428a82123a25fac5f012776947f90f3ccb5a",
+      "license": "MIT",
+      "pdf_version": "1.7",
+      "contract": "Nonstroking ca0 leaves the opaque backdrop unchanged; ca1 replaces it.",
+      "width": 240,
+      "height": 160,
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "rotation": 0,
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "annotations": "none",
+      "spec": "ISO 32000-1:2008",
+      "spec_clauses": [
+        "11.6.4.4 Constant Shape and Opacity",
+        "8.4.5 Graphics State Parameter Dictionaries, Table57 CA/ca",
+        "11.3.3 Basic Compositing Formula"
+      ],
+      "expected_regions": [
+        {
+          "id": "ca-zero-preserves-blue",
+          "rect": [
+            24,
+            34,
+            72,
+            52
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "ca-one-opaque-red",
+          "rect": [
+            144,
+            34,
+            72,
+            52
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "rect": [
+            4,
+            4,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_samples": [
+        {
+          "id": "ca-zero-preserves-blue",
+          "point": [
+            60.0,
+            60.0
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "ca-one-opaque-red",
+          "point": [
+            180.0,
+            60.0
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "point": [
+            10.0,
+            10.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "association": {
+        "scope": "spec-derived-only",
+        "upstream_id": null,
+        "upstream_entry_validated": false
+      },
+      "scope_limits": [
+        "Normal blend only",
+        "No groups/soft masks/images/text",
+        "White backdrop except explicitly authored opaque blue endpoint backdrop",
+        "Exact8-bit quantization is an observed route criterion, not an ISO bit-exact requirement"
+      ]
+    },
+    {
+      "id": "alpha-stroke-endpoints",
+      "file": "inputs/alpha-stroke-endpoints.pdf",
+      "sha256": "329c367b91b4ceeee25ef18058ad0857e6a068440b79448a3fc1021549709a7c",
+      "license": "MIT",
+      "pdf_version": "1.7",
+      "contract": "Stroking CA0 is invisible; CA1 is opaque, and CA does not suppress an ordinary fill.",
+      "width": 240,
+      "height": 160,
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "rotation": 0,
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "annotations": "none",
+      "spec": "ISO 32000-1:2008",
+      "spec_clauses": [
+        "11.6.4.4 Constant Shape and Opacity",
+        "8.4.5 Graphics State Parameter Dictionaries, Table57 CA/ca",
+        "11.3.3 Basic Compositing Formula"
+      ],
+      "expected_regions": [
+        {
+          "id": "CA-zero-invisible",
+          "rect": [
+            24,
+            54,
+            72,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "CA-one-opaque",
+          "rect": [
+            144,
+            54,
+            72,
+            12
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "fill-independent-of-CA",
+          "rect": [
+            34,
+            114,
+            32,
+            17
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "rect": [
+            4,
+            4,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_samples": [
+        {
+          "id": "CA-zero-invisible",
+          "point": [
+            60.0,
+            60.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "CA-one-opaque",
+          "point": [
+            180.0,
+            60.0
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "fill-independent-of-CA",
+          "point": [
+            50.0,
+            122.5
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "point": [
+            10.0,
+            10.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "association": {
+        "scope": "spec-derived-only",
+        "upstream_id": null,
+        "upstream_entry_validated": false
+      },
+      "scope_limits": [
+        "Normal blend only",
+        "No groups/soft masks/images/text",
+        "White backdrop except explicitly authored opaque blue endpoint backdrop",
+        "Exact8-bit quantization is an observed route criterion, not an ISO bit-exact requirement"
+      ]
+    },
+    {
+      "id": "alpha-ca-state-restore",
+      "file": "inputs/alpha-ca-state-restore.pdf",
+      "sha256": "284bd0ab2c9d6ad31b0e8326b87f8a1bf46911a513af92b0c07e681f649ea8ce",
+      "license": "MIT",
+      "pdf_version": "1.7",
+      "contract": "Balanced q/Q restores the prior nonstroking alpha after a ca0 scope.",
+      "width": 240,
+      "height": 160,
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "rotation": 0,
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "annotations": "none",
+      "spec": "ISO 32000-1:2008",
+      "spec_clauses": [
+        "11.6.4.4 Constant Shape and Opacity",
+        "8.4.5 Graphics State Parameter Dictionaries, Table57 CA/ca",
+        "11.3.3 Basic Compositing Formula"
+      ],
+      "expected_regions": [
+        {
+          "id": "scoped-transparent-fill",
+          "rect": [
+            24,
+            34,
+            72,
+            52
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "restored-opaque-fill",
+          "rect": [
+            144,
+            34,
+            72,
+            52
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "rect": [
+            4,
+            4,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_samples": [
+        {
+          "id": "scoped-transparent-fill",
+          "point": [
+            60.0,
+            60.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "restored-opaque-fill",
+          "point": [
+            180.0,
+            60.0
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "point": [
+            10.0,
+            10.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "association": {
+        "scope": "spec-derived-only",
+        "upstream_id": null,
+        "upstream_entry_validated": false
+      },
+      "scope_limits": [
+        "Normal blend only",
+        "No groups/soft masks/images/text",
+        "White backdrop except explicitly authored opaque blue endpoint backdrop",
+        "Exact8-bit quantization is an observed route criterion, not an ISO bit-exact requirement"
+      ]
+    },
+    {
+      "id": "alpha-fill-fraction06",
+      "file": "inputs/alpha-fill-fraction06.pdf",
+      "sha256": "2c7bc20eff979b0713adaae7ee31c4232272e8c7cc0924df717c9047b4281d45",
+      "license": "MIT",
+      "pdf_version": "1.7",
+      "contract": "Normal nonstroking alpha0.6 composites an ordinary red fill over white; byte quantization is measured separately from normative real-valued blending.",
+      "width": 240,
+      "height": 160,
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "rotation": 0,
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "annotations": "none",
+      "spec": "ISO 32000-1:2008",
+      "spec_clauses": [
+        "11.6.4.4 Constant Shape and Opacity",
+        "8.4.5 Graphics State Parameter Dictionaries, Table57 CA/ca",
+        "11.3.3 Basic Compositing Formula"
+      ],
+      "expected_regions": [
+        {
+          "id": "fractional-red",
+          "rect": [
+            24,
+            34,
+            72,
+            52
+          ],
+          "rgb": [
+            255,
+            102,
+            102
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "opaque-blue-control",
+          "rect": [
+            144,
+            34,
+            72,
+            52
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "rect": [
+            4,
+            4,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_samples": [
+        {
+          "id": "fractional-red",
+          "point": [
+            60.0,
+            60.0
+          ],
+          "rgb": [
+            255,
+            102,
+            102
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "opaque-blue-control",
+          "point": [
+            180.0,
+            60.0
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "point": [
+            10.0,
+            10.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "association": {
+        "scope": "spec-derived-only",
+        "upstream_id": null,
+        "upstream_entry_validated": false
+      },
+      "scope_limits": [
+        "Normal blend only",
+        "No groups/soft masks/images/text",
+        "White backdrop except explicitly authored opaque blue endpoint backdrop",
+        "Exact8-bit quantization is an observed route criterion, not an ISO bit-exact requirement"
+      ]
+    },
+    {
+      "id": "alpha-stroke-fraction06",
+      "file": "inputs/alpha-stroke-fraction06.pdf",
+      "sha256": "de8613f491f0223d25d52b04c189e4f965980b9e8575b695b79e05ade5057aa6",
+      "license": "MIT",
+      "pdf_version": "1.7",
+      "contract": "Normal stroking alpha0.6 composites an ordinary blue stroke over white while a nonstroking fill remains opaque.",
+      "width": 240,
+      "height": 160,
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "rotation": 0,
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "annotations": "none",
+      "spec": "ISO 32000-1:2008",
+      "spec_clauses": [
+        "11.6.4.4 Constant Shape and Opacity",
+        "8.4.5 Graphics State Parameter Dictionaries, Table57 CA/ca",
+        "11.3.3 Basic Compositing Formula"
+      ],
+      "expected_regions": [
+        {
+          "id": "fractional-blue",
+          "rect": [
+            24,
+            54,
+            72,
+            12
+          ],
+          "rgb": [
+            102,
+            102,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "opaque-red-independent-ca",
+          "rect": [
+            144,
+            34,
+            72,
+            52
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "rect": [
+            4,
+            4,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_samples": [
+        {
+          "id": "fractional-blue",
+          "point": [
+            60.0,
+            60.0
+          ],
+          "rgb": [
+            102,
+            102,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "opaque-red-independent-ca",
+          "point": [
+            180.0,
+            60.0
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "point": [
+            10.0,
+            10.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "association": {
+        "scope": "spec-derived-only",
+        "upstream_id": null,
+        "upstream_entry_validated": false
+      },
+      "scope_limits": [
+        "Normal blend only",
+        "No groups/soft masks/images/text",
+        "White backdrop except explicitly authored opaque blue endpoint backdrop",
+        "Exact8-bit quantization is an observed route criterion, not an ISO bit-exact requirement"
+      ]
+    },
+    {
+      "id": "alpha-fill-fraction025",
+      "file": "inputs/alpha-fill-fraction025.pdf",
+      "sha256": "149513d262c02c440ba2c4d3c3170e146a886323b0a11073ea73535dab3d7a1f",
+      "license": "MIT",
+      "pdf_version": "1.7",
+      "contract": "A separate binary-exact ca0.25 control composites red over white; nearest8bit analytic samples are191 for the backdrop channels.",
+      "width": 240,
+      "height": 160,
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "rotation": 0,
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "annotations": "none",
+      "spec": "ISO 32000-1:2008",
+      "spec_clauses": [
+        "11.6.4.4 Constant Shape and Opacity",
+        "8.4.5 Graphics State Parameter Dictionaries, Table57 CA/ca",
+        "11.3.3 Basic Compositing Formula"
+      ],
+      "expected_regions": [
+        {
+          "id": "quarter-red",
+          "rect": [
+            24,
+            34,
+            72,
+            52
+          ],
+          "rgb": [
+            255,
+            191,
+            191
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "opaque-blue-control",
+          "rect": [
+            144,
+            34,
+            72,
+            52
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "rect": [
+            4,
+            4,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_samples": [
+        {
+          "id": "quarter-red",
+          "point": [
+            60.0,
+            60.0
+          ],
+          "rgb": [
+            255,
+            191,
+            191
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "opaque-blue-control",
+          "point": [
+            180.0,
+            60.0
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "point": [
+            10.0,
+            10.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "association": {
+        "scope": "spec-derived-only",
+        "upstream_id": null,
+        "upstream_entry_validated": false
+      },
+      "scope_limits": [
+        "Normal blend only",
+        "No groups/soft masks/images/text",
+        "White backdrop except explicitly authored opaque blue endpoint backdrop",
+        "Exact8-bit quantization is an observed route criterion, not an ISO bit-exact requirement"
+      ]
+    },
+    {
+      "id": "alpha-stroke-fraction025",
+      "file": "inputs/alpha-stroke-fraction025.pdf",
+      "sha256": "e04d501fbaa658a078ed8364cf869485ff125027c02b4668c91318e09328fd13",
+      "license": "MIT",
+      "pdf_version": "1.7",
+      "contract": "A separate binary-exact CA0.25 control composites blue over white while the ordinary fill remains opaque.",
+      "width": 240,
+      "height": 160,
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "rotation": 0,
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "annotations": "none",
+      "spec": "ISO 32000-1:2008",
+      "spec_clauses": [
+        "11.6.4.4 Constant Shape and Opacity",
+        "8.4.5 Graphics State Parameter Dictionaries, Table57 CA/ca",
+        "11.3.3 Basic Compositing Formula"
+      ],
+      "expected_regions": [
+        {
+          "id": "quarter-blue",
+          "rect": [
+            24,
+            54,
+            72,
+            12
+          ],
+          "rgb": [
+            191,
+            191,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "opaque-red-independent-ca",
+          "rect": [
+            144,
+            34,
+            72,
+            52
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "rect": [
+            4,
+            4,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_samples": [
+        {
+          "id": "quarter-blue",
+          "point": [
+            60.0,
+            60.0
+          ],
+          "rgb": [
+            191,
+            191,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "opaque-red-independent-ca",
+          "point": [
+            180.0,
+            60.0
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "point": [
+            10.0,
+            10.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "association": {
+        "scope": "spec-derived-only",
+        "upstream_id": null,
+        "upstream_entry_validated": false
+      },
+      "scope_limits": [
+        "Normal blend only",
+        "No groups/soft masks/images/text",
+        "White backdrop except explicitly authored opaque blue endpoint backdrop",
+        "Exact8-bit quantization is an observed route criterion, not an ISO bit-exact requirement"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "source_head": "eb47d5a0155bdb38f6fc7b08a5fa7279fd004a12",
+  "packages": [
+    {
+      "id": "recursiveai.onepdf",
+      "version": "1.18.0",
+      "sha256": "5d32d582c6d6a1b86df7f14be7379ed92a3360b8b899e6091af86756bca8da38",
+      "nuget_sha512": "XYXJGx4wiVlodiz2iAW5uxTkzi0Hz0umPYvLNhVIjwMqiIy+yT0V3QAETXHiEy00odE3LRr9YXLdXgnJI2avUw==",
+      "source_fork_commit": "notestablishedfrompackage; do notclaimtestedOnePDFmain/draftheads"
+    },
+    {
+      "id": "recursiveai.onepdf.fonts",
+      "version": "1.18.0",
+      "sha256": "a61062e02c6ffd665f0ec6591c2e864de3c514c5ee1a4f25a257f2ccc069eca0",
+      "nuget_sha512": "c1TBPErbxpHOkMrvBv19z8/6vQ3VSWiwu9qCKH0U3ThFyQB6l8j6VXpOr4zMztz+5KgKr+KJFRsQ9Um9/Pl5UA==",
+      "source_fork_commit": "notestablishedfrompackage; do notclaimtestedOnePDFmain/draftheads"
+    }
+  ],
+  "assemblies": [
+    {
+      "name": "OneImage.Pdf.dll",
+      "sha256": "ad064f8f5f12a84ba9ba244cfd87c3596f6501dc065fe9ed2f574b85e8684c80"
+    },
+    {
+      "name": "OneImage.PdfRender.dll",
+      "sha256": "ee727c465f360eebe2eaa376ba5e921a1dd80b66fc778a4dc25d28294910120d"
+    },
+    {
+      "name": "OneImage.dll",
+      "sha256": "a6e596e05b8d75ded039d1a4c90fa45751bdb08dadd22a6b1530c7e6cdc84dac"
+    },
+    {
+      "name": "OnePdf.Fonts.dll",
+      "sha256": "7938dd1607de5866aa17791902a8764ab56be576640890eb25c0c6662bf32c17"
+    },
+    {
+      "name": "OnePdf.dll",
+      "sha256": "f5a18b3a3b16fa3e1d39f4ab1fdba9454b449c675e54fbd411362d9165693fce"
+    }
+  ],
+  "assembly_hashes_match": true,
+  "new_build": false,
+  "reason": "No production changes; exact prior managed baseline reused",
+  "limitations": [
+    "Linuxmanagedbaselineonly",
+    "notfreshAOT/WASM/Windows",
+    "draftfixstacknotincluded",
+    "no textweight/performanceclaim"
+  ]
+}

@@ -1,0 +1,264 @@
+{
+  "renderer_subprocess_invocations": 18,
+  "by_engine": {
+    "pdfium": 6,
+    "mupdf": 6,
+    "pdfjs": 6
+  },
+  "other_render_invocations": 0,
+  "product_invocations": 0,
+  "calls": [
+    {
+      "id": "boxes-direct-control",
+      "dpi": 72,
+      "engine": "pdfium",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/render-native.py",
+        "pdfium",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/inputs/boxes-direct-control.pdf",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/references/boxes-direct-control-72-pdfium.png",
+        "72"
+      ],
+      "exit_code": 0
+    },
+    {
+      "id": "boxes-direct-control",
+      "dpi": 72,
+      "engine": "mupdf",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/render-native.py",
+        "mupdf",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/inputs/boxes-direct-control.pdf",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/references/boxes-direct-control-72-mupdf.png",
+        "72"
+      ],
+      "exit_code": 0
+    },
+    {
+      "id": "boxes-direct-control",
+      "dpi": 72,
+      "engine": "pdfjs",
+      "argv": [
+        "node",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/render-pdfjs.mjs",
+        "/workspace/scratch/ee1a2fb9052d/pdf-checkpoint-20261123/references/node_modules/pdfjs-dist",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/inputs/boxes-direct-control.pdf",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/references/boxes-direct-control-72-pdfjs.png",
+        "72"
+      ],
+      "exit_code": 0
+    },
+    {
+      "id": "boxes-direct-control",
+      "dpi": 144,
+      "engine": "pdfium",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/render-native.py",
+        "pdfium",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/inputs/boxes-direct-control.pdf",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/references/boxes-direct-control-144-pdfium.png",
+        "144"
+      ],
+      "exit_code": 0
+    },
+    {
+      "id": "boxes-direct-control",
+      "dpi": 144,
+      "engine": "mupdf",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/render-native.py",
+        "mupdf",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/inputs/boxes-direct-control.pdf",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/references/boxes-direct-control-144-mupdf.png",
+        "144"
+      ],
+      "exit_code": 0
+    },
+    {
+      "id": "boxes-direct-control",
+      "dpi": 144,
+      "engine": "pdfjs",
+      "argv": [
+        "node",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/render-pdfjs.mjs",
+        "/workspace/scratch/ee1a2fb9052d/pdf-checkpoint-20261123/references/node_modules/pdfjs-dist",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/inputs/boxes-direct-control.pdf",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/references/boxes-direct-control-144-pdfjs.png",
+        "144"
+      ],
+      "exit_code": 0
+    },
+    {
+      "id": "boxes-indirect-arrays",
+      "dpi": 72,
+      "engine": "pdfium",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/render-native.py",
+        "pdfium",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/inputs/boxes-indirect-arrays.pdf",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/references/boxes-indirect-arrays-72-pdfium.png",
+        "72"
+      ],
+      "exit_code": 0
+    },
+    {
+      "id": "boxes-indirect-arrays",
+      "dpi": 72,
+      "engine": "mupdf",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/render-native.py",
+        "mupdf",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/inputs/boxes-indirect-arrays.pdf",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/references/boxes-indirect-arrays-72-mupdf.png",
+        "72"
+      ],
+      "exit_code": 0
+    },
+    {
+      "id": "boxes-indirect-arrays",
+      "dpi": 72,
+      "engine": "pdfjs",
+      "argv": [
+        "node",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/render-pdfjs.mjs",
+        "/workspace/scratch/ee1a2fb9052d/pdf-checkpoint-20261123/references/node_modules/pdfjs-dist",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/inputs/boxes-indirect-arrays.pdf",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/references/boxes-indirect-arrays-72-pdfjs.png",
+        "72"
+      ],
+      "exit_code": 0
+    },
+    {
+      "id": "boxes-indirect-arrays",
+      "dpi": 144,
+      "engine": "pdfium",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/render-native.py",
+        "pdfium",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/inputs/boxes-indirect-arrays.pdf",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/references/boxes-indirect-arrays-144-pdfium.png",
+        "144"
+      ],
+      "exit_code": 0
+    },
+    {
+      "id": "boxes-indirect-arrays",
+      "dpi": 144,
+      "engine": "mupdf",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/render-native.py",
+        "mupdf",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/inputs/boxes-indirect-arrays.pdf",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/references/boxes-indirect-arrays-144-mupdf.png",
+        "144"
+      ],
+      "exit_code": 0
+    },
+    {
+      "id": "boxes-indirect-arrays",
+      "dpi": 144,
+      "engine": "pdfjs",
+      "argv": [
+        "node",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/render-pdfjs.mjs",
+        "/workspace/scratch/ee1a2fb9052d/pdf-checkpoint-20261123/references/node_modules/pdfjs-dist",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/inputs/boxes-indirect-arrays.pdf",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/references/boxes-indirect-arrays-144-pdfjs.png",
+        "144"
+      ],
+      "exit_code": 0
+    },
+    {
+      "id": "boxes-indirect-coordinates",
+      "dpi": 72,
+      "engine": "pdfium",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/render-native.py",
+        "pdfium",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/inputs/boxes-indirect-coordinates.pdf",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/references/boxes-indirect-coordinates-72-pdfium.png",
+        "72"
+      ],
+      "exit_code": 0
+    },
+    {
+      "id": "boxes-indirect-coordinates",
+      "dpi": 72,
+      "engine": "mupdf",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/render-native.py",
+        "mupdf",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/inputs/boxes-indirect-coordinates.pdf",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/references/boxes-indirect-coordinates-72-mupdf.png",
+        "72"
+      ],
+      "exit_code": 0
+    },
+    {
+      "id": "boxes-indirect-coordinates",
+      "dpi": 72,
+      "engine": "pdfjs",
+      "argv": [
+        "node",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/render-pdfjs.mjs",
+        "/workspace/scratch/ee1a2fb9052d/pdf-checkpoint-20261123/references/node_modules/pdfjs-dist",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/inputs/boxes-indirect-coordinates.pdf",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/references/boxes-indirect-coordinates-72-pdfjs.png",
+        "72"
+      ],
+      "exit_code": 0
+    },
+    {
+      "id": "boxes-indirect-coordinates",
+      "dpi": 144,
+      "engine": "pdfium",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/render-native.py",
+        "pdfium",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/inputs/boxes-indirect-coordinates.pdf",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/references/boxes-indirect-coordinates-144-pdfium.png",
+        "144"
+      ],
+      "exit_code": 0
+    },
+    {
+      "id": "boxes-indirect-coordinates",
+      "dpi": 144,
+      "engine": "mupdf",
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/render-native.py",
+        "mupdf",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/inputs/boxes-indirect-coordinates.pdf",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/references/boxes-indirect-coordinates-144-mupdf.png",
+        "144"
+      ],
+      "exit_code": 0
+    },
+    {
+      "id": "boxes-indirect-coordinates",
+      "dpi": 144,
+      "engine": "pdfjs",
+      "argv": [
+        "node",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/render-pdfjs.mjs",
+        "/workspace/scratch/ee1a2fb9052d/pdf-checkpoint-20261123/references/node_modules/pdfjs-dist",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/inputs/boxes-indirect-coordinates.pdf",
+        "/workspace/scratch/ee1a2fb9052d/pdf-corpus-sixth-20261123/work/indirectboxes/references/boxes-indirect-coordinates-144-pdfjs.png",
+        "144"
+      ],
+      "exit_code": 0
+    }
+  ]
+}

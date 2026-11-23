@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "sub_slice": "ISO-IMAGE-COLORKEY-DECODE-03-ENDPOINT-CONTROLS",
+  "logical_parent_family": "ISO-IMAGE-COLORKEY-DECODE-03",
+  "input_domain": "Only RGB8 components0/255 in six chromatic colors; no black/white source image cells.",
+  "decoded_mapping": "Exact endpoint complement for reversed Decode[1 0 1 0 1 0].",
+  "cases": [
+    "img-colorkey-endpoint-control",
+    "img-colorkey-endpoint-stored-red",
+    "img-colorkey-endpoint-stored-red-magenta-range"
+  ],
+  "fully_passed_declared_endpoint_cases": 3,
+  "parent_nonendpoint_cases_closed": 0,
+  "parent_state_context": {
+    "source": "Parent delegation, not rerun by this worker.",
+    "four_nonendpoint_cases_remain": "HELD",
+    "reported_cause": "Opaque RGB differences of one byte, including unmasked control.",
+    "expectations_modified_by_worker": false,
+    "partial_parent_results_promoted": false
+  },
+  "limitations": [
+    "No non-endpoint interpolation, byte-rounding or full RGB8 coverage claim.",
+    "All image/cell/checker edges and undeclared page pixels unscored.",
+    "No product, global ledger, upstream or remote actions."
+  ],
+  "upstream_mappings": []
+}

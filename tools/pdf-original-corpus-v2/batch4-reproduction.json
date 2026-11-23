@@ -1,0 +1,118 @@
+{
+  "command": "python tools/pdf-original-corpus-v2/pipeline.py references --pdfjs /pinned/pdfjs-dist --output /new/outputdirectory",
+  "exit_code": 0,
+  "runs": 408,
+  "passed": 394,
+  "failed": 14,
+  "skipped": 0,
+  "capture_byte_matches": 408,
+  "unique_pdf_hash_matches": 66,
+  "page_view_cases": 68,
+  "families": [
+    {
+      "family": "alpha",
+      "runs": 42,
+      "passed": 30,
+      "failed": 12
+    },
+    {
+      "family": "colorkey",
+      "runs": 18,
+      "passed": 18,
+      "failed": 0
+    },
+    {
+      "family": "colorkeybackground",
+      "runs": 18,
+      "passed": 18,
+      "failed": 0
+    },
+    {
+      "family": "dash",
+      "runs": 18,
+      "passed": 18,
+      "failed": 0
+    },
+    {
+      "family": "filters",
+      "runs": 18,
+      "passed": 18,
+      "failed": 0
+    },
+    {
+      "family": "geometry",
+      "runs": 48,
+      "passed": 48,
+      "failed": 0
+    },
+    {
+      "family": "images",
+      "runs": 48,
+      "passed": 46,
+      "failed": 2
+    },
+    {
+      "family": "joins",
+      "runs": 18,
+      "passed": 18,
+      "failed": 0
+    },
+    {
+      "family": "predictors",
+      "runs": 24,
+      "passed": 24,
+      "failed": 0
+    },
+    {
+      "family": "resources",
+      "runs": 18,
+      "passed": 18,
+      "failed": 0
+    },
+    {
+      "family": "resources2",
+      "runs": 18,
+      "passed": 18,
+      "failed": 0
+    },
+    {
+      "family": "resources3",
+      "runs": 30,
+      "passed": 30,
+      "failed": 0
+    },
+    {
+      "family": "stroke",
+      "runs": 18,
+      "passed": 18,
+      "failed": 0
+    },
+    {
+      "family": "text",
+      "runs": 24,
+      "passed": 24,
+      "failed": 0
+    },
+    {
+      "family": "textleading",
+      "runs": 24,
+      "passed": 24,
+      "failed": 0
+    },
+    {
+      "family": "textscale",
+      "runs": 24,
+      "passed": 24,
+      "failed": 0
+    }
+  ],
+  "product_revalidation_after_route_compaction": {
+    "executed": 126,
+    "strict_passed": 125,
+    "strict_failed": 1,
+    "skipped": 10,
+    "output_byte_matches": 126,
+    "acceptance_commit_local": "0a56d97e3721cf28295d4a81d330bfe3a2d1e123"
+  },
+  "routing_format_proof": "routing-format-proof.json"
+}

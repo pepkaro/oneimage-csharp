@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "owner": "pdfium_originals",
+  "slice": "ISO-IMAGE-COLORKEY-DECODE-03-ENDPOINT-CONTROLS",
+  "path": "work/colorkeyendpoints",
+  "state": "complete-local-reference-qualified-endpoint-only-awaiting-root-review",
+  "actual": {
+    "unique_pdfs": 3,
+    "case_dpi_views": 6,
+    "reference_runs": 18,
+    "passed": 18,
+    "failed": 0,
+    "skipped": 0,
+    "endpoint_cases_qualified": 3,
+    "endpoint_cases_held": 0,
+    "parent_nonendpoint_cases_closed": 0,
+    "product_runs": 0,
+    "remote_writes": 0
+  },
+  "next_unclaimed_slice": null,
+  "next_step": "Root integrates only this narrowed endpoint family; retain four primary non-endpoint holds and their expectations."
+}

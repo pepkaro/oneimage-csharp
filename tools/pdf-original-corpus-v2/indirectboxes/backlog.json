@@ -1,0 +1,18 @@
+{
+  "slice_id": "ISO-PAGE-BOX-INDIRECT-01",
+  "owner": "upstream_match5",
+  "state": "reference-validation-complete-awaiting-root-integration",
+  "scope": [
+    "direct control",
+    "whole-array refs for both boxes",
+    "coordinate refs for both boxes"
+  ],
+  "upstream_credited": 0,
+  "next_unclaimed_proposal": {
+    "slice_id": "ISO-PAGE-BOX-INDIRECT-02",
+    "state": "unclaimed-proposal",
+    "behavior": "Combined whole-array plus coordinate-element indirection for both ordinary page boxes",
+    "acceptance": "Small valid original arrays themselves indirect and all coordinates indirect; direct control; independently resolve object graph and visible origin/dimensions;3pinnedrefs at72/144DPI; keep source-scene mapping unqualified",
+    "reason_unclaimed": "Two isolated indirection placements are covered here; combined two-level interaction intentionally outside this bounded3-PDF slice"
+  }
+}

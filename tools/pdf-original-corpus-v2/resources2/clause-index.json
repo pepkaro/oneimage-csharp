@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "slice": "ISO-PAGE-RESOURCE-02",
+  "verified_on": "2026-11-23",
+  "primary": {
+    "standard": "ISO32000-2:2020",
+    "clause": "7.8.3/Table34 Resource dictionaries",
+    "verified_scope": "Public amended resource-association text and ColorSpace entry permit a category dictionary mapping a resource name to DeviceRGB or DeviceGray.",
+    "url": "https://pdf-issues.pdfa.org/32000-2-2020/clause07.html"
+  },
+  "secondary": [
+    {
+      "clause": "8.10.2/Table93 Resources",
+      "verified_scope": "Public amended Form entry requires independent resources and forbids promoting those resources to the caller dictionary.",
+      "url": "https://pdf-issues.pdfa.org/32000-2-2020/clause08.html"
+    },
+    {
+      "clause": "8.6.8 Colour operators",
+      "verified_scope": "Official heading/partial corrected colour operator table; exact cs/scn rows were not reproduced or verified.",
+      "url": "https://pdf-issues.pdfa.org/32000-2-2020/clause08.html"
+    }
+  ],
+  "governing_legacy": {
+    "standard": "ISO32000-1:2008",
+    "fixture_version": "1.7",
+    "verified_clauses": [
+      "7.8.3/Table33 Resources: separate resource-category subdictionaries",
+      "8.6.8/Table74 Colour Operators",
+      "8.10.2/Table95 Form Resources"
+    ],
+    "verified_scope": "Existing official text inspected; category subdictionary keys identify their own resources and independent Forms carry local resources."
+  },
+  "limitation": "Full2020 standard not acquired. Public errata is not complete normative text; unamended XObject/category and cs/scn rows remain pending full-text verification. These1.7fixtures use verified2008 semantic contracts. Exact RGB interior equality is an independent analytic route criterion, not a standard-required quantization algorithm.",
+  "resource": "https://pdfa.org/resource/iso-32000-2",
+  "entries": [
+    {
+      "id": "resource-category-page",
+      "normative_behavior": "The page resolves /Shared independently in its ColorSpace and XObject categories",
+      "upstream_ids": [],
+      "primary": "7.8.3/Table34",
+      "secondary": [
+        "8.10.2/Table93",
+        "8.6.8 finer operator rows pending"
+      ]
+    },
+    {
+      "id": "resource-category-page-form",
+      "normative_behavior": "A Form binds /Shared to DeviceRGB and its red leaf while the page binds it to DeviceGray and a blue leaf; postForm calls use page bindings",
+      "upstream_ids": [],
+      "primary": "7.8.3/Table34",
+      "secondary": [
+        "8.10.2/Table93",
+        "8.6.8 finer operator rows pending"
+      ]
+    },
+    {
+      "id": "resource-category-sibling-forms",
+      "normative_behavior": "Two sibling Forms each resolve /Shared in separate ColorSpace and XObject categories with RGB versus Gray and different leaf colors",
+      "upstream_ids": [],
+      "primary": "7.8.3/Table34",
+      "secondary": [
+        "8.10.2/Table93",
+        "8.6.8 finer operator rows pending"
+      ]
+    }
+  ]
+}

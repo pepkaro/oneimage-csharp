@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "batch": "ISO-IMAGE-STENCIL-01-WHITE-CONTROLS",
+  "logical_parent_family": "ISO-IMAGE-STENCIL-01",
+  "state": "complete-local-reference-agreed-WHITE-only",
+  "generated_unique_pdfs": 3,
+  "single_page_cases": 3,
+  "unique_case_dpi_views": 6,
+  "qualified_case_dpi_views": 6,
+  "held_case_dpi_views": 0,
+  "reference_png_files": 18,
+  "reference_png_unique_bytes": 18,
+  "references_executed": 18,
+  "reference_passed": 18,
+  "reference_failed": 0,
+  "reference_skipped": 0,
+  "actual_engine_invocations": {
+    "pdfium": 6,
+    "mupdf": 6,
+    "pdfjs": 6
+  },
+  "actual_total_engine_invocations": 18,
+  "actual_runner_invocations": 1,
+  "reruns": 0,
+  "root_replays_included": false,
+  "analytic_sample_checks": 762,
+  "analytic_sample_passed": 762,
+  "interior_pixels_per_engine": 113600,
+  "analytic_reference_pixel_checks": 340800,
+  "interior_tolerance": 0,
+  "independent_draw_cell_bit_checks": 108,
+  "painted_cells_by_case": {
+    "stencil-white-default-red": 13,
+    "stencil-white-inverse-red": 14,
+    "stencil-white-reuse-red-green": 26
+  },
+  "reuse_assertion": "One mask object is drawn twice with separately set red/green current color in balanced q/Q placements.",
+  "reference_agreed_fixture_ids": [
+    "stencil-white-default-red",
+    "stencil-white-inverse-red",
+    "stencil-white-reuse-red-green"
+  ],
+  "held_fixture_ids": [],
+  "parent_checkerboard_cases_closed": 0,
+  "scope_limit": "WHITE-backed only; all3 parent checkerboard cases stay held and unchanged.",
+  "named_visual_assertions_outside_regions": [],
+  "unscored": [
+    "All image/cell/frame boundaries and undeclared page pixels.",
+    "Black/colored-backdrop compositing, interpolation and general-stencil parity."
+  ],
+  "upstream_entry_validated": 0,
+  "upstream_mappings": [],
+  "product_runs": 0,
+  "selected_expected_images_created": 0,
+  "expected_goldens_promoted": 0,
+  "regeneration": "Exactly3 PDFs and manifest byte-identical after generator rerun.",
+  "commands": [
+    "python generate.py",
+    "python run-references.py /path/to/node_modules/pdfjs-dist",
+    "python verify-regions.py",
+    "python verify.py"
+  ],
+  "worker_global_writes": 0,
+  "worker_remote_writes": 0
+}

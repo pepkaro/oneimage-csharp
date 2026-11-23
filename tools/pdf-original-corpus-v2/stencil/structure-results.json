@@ -1,0 +1,103 @@
+{
+  "passed": 3,
+  "failed": 0,
+  "rows": [
+    {
+      "id": "stencil-default-red",
+      "raw_bytes": 6,
+      "row_bytes": 2,
+      "ignored_padding_bits": 7,
+      "draw_count": 1,
+      "draws": [
+        {
+          "paint_rgb": [
+            255,
+            0,
+            0
+          ],
+          "ctm": [
+            108.0,
+            0.0,
+            0.0,
+            36.0,
+            24.0,
+            40.0
+          ],
+          "resource": "/Im"
+        }
+      ],
+      "marks": 14,
+      "passed": true
+    },
+    {
+      "id": "stencil-inverse-red",
+      "raw_bytes": 6,
+      "row_bytes": 2,
+      "ignored_padding_bits": 7,
+      "draw_count": 1,
+      "draws": [
+        {
+          "paint_rgb": [
+            255,
+            0,
+            0
+          ],
+          "ctm": [
+            108.0,
+            0.0,
+            0.0,
+            36.0,
+            24.0,
+            40.0
+          ],
+          "resource": "/Im"
+        }
+      ],
+      "marks": 13,
+      "passed": true
+    },
+    {
+      "id": "stencil-current-color-reuse",
+      "raw_bytes": 6,
+      "row_bytes": 2,
+      "ignored_padding_bits": 7,
+      "draw_count": 2,
+      "draws": [
+        {
+          "paint_rgb": [
+            255,
+            0,
+            0
+          ],
+          "ctm": [
+            108.0,
+            0.0,
+            0.0,
+            36.0,
+            24.0,
+            40.0
+          ],
+          "resource": "/Im"
+        },
+        {
+          "paint_rgb": [
+            0,
+            255,
+            0
+          ],
+          "ctm": [
+            108.0,
+            0.0,
+            0.0,
+            36.0,
+            152.0,
+            40.0
+          ],
+          "resource": "/Im"
+        }
+      ],
+      "marks": 28,
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,316 @@
+{
+  "schema_version": 1,
+  "verified_on": "2026-11-23",
+  "scope": "Eight original geometry contracts; public official 2020 resource and ratified errata review, plus legacy text cross-check",
+  "full_2020_text_inspected": false,
+  "verification_limitation": "Official no-cost download reaches PDF Association cart/checkout; no account, personal details, checkout or download performed. Public errata is a correction set, not the complete standard. Unreproduced clauses/rows are explicitly not fully verified; no absence-of-errata claim proves unchanged text.",
+  "version_correction": "All eight current fixture bytes declare PDF-2.0, not PDF-1.7. They use legacy features; 2008 references govern a separately authored 1.7 variant only. No headers, inputs, expectations or hashes changed in this documentation pass.",
+  "sources": [
+    {
+      "url": "https://pdfa.org/resource/iso-32000-2",
+      "finding": "Official landing page identifies ISO 32000-2:2020 with Errata Collection 3 as current distributed core edition."
+    },
+    {
+      "url": "https://pdf-issues.pdfa.org/32000-2-2020/clause08.html",
+      "finding": "Verified public headings 8.4.2, 8.4.4/Table56, 8.5.3.1/Table59; balanced q/Q correction applies."
+    },
+    {
+      "url": "https://pdf-issues.pdfa.org/32000-2-2020/clause07.html",
+      "finding": "Verified public heading 7.7.3.3/Table31; displayed corrections concern Contents/ID/B, not the geometry rows."
+    },
+    {
+      "url": "https://www.pdfa-inc.org/cart/",
+      "finding": "Read-only download link resolved here; no full standard acquired."
+    }
+  ],
+  "source_snapshot": {
+    "onepdf_head": "2d1928d5ee67bf4526903d3d44ae37792b1f27b8",
+    "oneimage_head": "00e25fc3d440ca9c5a5a1d32198373f696f260e3",
+    "path_base": "pdf-preview-pair-20261123",
+    "purpose": "Subsystem cross-tags only, not reviewed current-main provenance or defect ownership",
+    "files": [
+      {
+        "path": "oneimage/src/OneImage.Pdf/PdfDecoder.cs",
+        "sha256": "bc2e74a4d90f140a951692d21d5600ec86f5f5c18118dabcf62a9cadec0f7d3f"
+      },
+      {
+        "path": "oneimage/src/OneImage.Pdf/Render/CanvasDevice.cs",
+        "sha256": "913953e4829505d850983baaf12eb1dc167b4ea53971bc6d389c671f80383ade"
+      },
+      {
+        "path": "oneimage/src/OneImage/Drawing/FillPlan.cs",
+        "sha256": "ef2c655b06de4c2f63a376c2c9d057fcb20a18ddb690564abacb64d50530d866"
+      },
+      {
+        "path": "onepdf/src/OnePdf/Content/ContentInterpreter.cs",
+        "sha256": "1001dd377928432c7d8d0af2a0cfe3b78e49a9e5bb589ae318f3e00a2fc4f11e"
+      },
+      {
+        "path": "onepdf/src/OnePdf/Content/OptionalContent.cs",
+        "sha256": "cc19e84c3a8ad4ee149c1da89209534da8ffa1c5f41d971f3012428109eb3796"
+      },
+      {
+        "path": "onepdf/src/OnePdf/Model/PdfPage.Geometry.cs",
+        "sha256": "7e42440f808909f98b55b833e08edd5ad9223eb39dd449d0c2a18a8eb3021ea8"
+      }
+    ]
+  },
+  "entries": [
+    {
+      "id": "geometry-fill-rules",
+      "fixture_header": "PDF-2.0",
+      "primary_clause_2020": "8.5.3.3 Filling",
+      "secondary_clauses_2020": [
+        "8.5.3.3.2 Nonzero winding number rule",
+        "8.5.3.3.3 Even-odd rule",
+        "8.5.3.1 / Table 59"
+      ],
+      "verification_2020": "primary-not-reproduced-in-public-errata; secondary-8.5.3.1-and-Table59-verified-heading",
+      "verified_primary_behavior_source": "ISO 32000-1:2008 locally available official Adobe publication; corresponding legacy contract",
+      "governing_crossrefs_for_PDF17": [
+        "8.5.3.3.1",
+        "8.5.3.3.2",
+        "8.5.3.3.3"
+      ],
+      "normative_behavior": "Same-winding nested subpaths remain filled under nonzero; even-odd leaves a hole.",
+      "observed_quantization": "At 72/144 physical DPI all three references equal analytic interiors exactly; predefined one-device-pixel boundaries unscored. RGB endpoint equality and raster rounding are measured route criteria, not an assertion that ISO mandates identical pixels.",
+      "source_urls": [
+        "https://pdfa.org/resource/iso-32000-2",
+        "https://pdf-issues.pdfa.org/32000-2-2020/",
+        "https://pdf-issues.pdfa.org/32000-2-2020/clause08.html"
+      ],
+      "proposed_subsystem_cross_tags": [
+        "path-fill-rule",
+        "raster-interior"
+      ],
+      "inspected_source_paths": [
+        "onepdf/src/OnePdf/Content/ContentInterpreter.cs",
+        "oneimage/src/OneImage.Pdf/Render/CanvasDevice.cs",
+        "oneimage/src/OneImage/Drawing/FillPlan.cs"
+      ],
+      "defect_ownership_claimed": false
+    },
+    {
+      "id": "geometry-clip-intersection",
+      "fixture_header": "PDF-2.0",
+      "primary_clause_2020": "8.5.4 Clipping path operators",
+      "secondary_clauses_2020": [
+        "8.4.1 Graphics state",
+        "8.5.3.1"
+      ],
+      "verification_2020": "primary-not-reproduced-in-public-errata; secondary-8.5.3.1-verified-heading",
+      "verified_primary_behavior_source": "ISO 32000-1:2008 locally available official Adobe publication; corresponding legacy contract",
+      "governing_crossrefs_for_PDF17": [
+        "8.5.4"
+      ],
+      "normative_behavior": "Successive clips restrict painting to their intersection.",
+      "observed_quantization": "At 72/144 physical DPI all three references equal analytic interiors exactly; predefined one-device-pixel boundaries unscored. RGB endpoint equality and raster rounding are measured route criteria, not an assertion that ISO mandates identical pixels.",
+      "source_urls": [
+        "https://pdfa.org/resource/iso-32000-2",
+        "https://pdf-issues.pdfa.org/32000-2-2020/",
+        "https://pdf-issues.pdfa.org/32000-2-2020/clause08.html"
+      ],
+      "proposed_subsystem_cross_tags": [
+        "clip-intersection",
+        "raster-interior"
+      ],
+      "inspected_source_paths": [
+        "onepdf/src/OnePdf/Content/ContentInterpreter.cs",
+        "oneimage/src/OneImage.Pdf/Render/CanvasDevice.cs"
+      ],
+      "defect_ownership_claimed": false
+    },
+    {
+      "id": "geometry-saved-clip",
+      "fixture_header": "PDF-2.0",
+      "primary_clause_2020": "8.4.2 Graphics state stack",
+      "secondary_clauses_2020": [
+        "8.4.4 / Table 56",
+        "8.5.4"
+      ],
+      "verification_2020": "primary-heading-and-balanced-qQ-erratum-verified; full-stack-text-unavailable",
+      "verified_primary_behavior_source": "ISO 32000-1:2008 locally available official Adobe publication; corresponding legacy contract",
+      "governing_crossrefs_for_PDF17": [
+        "8.4.2",
+        "8.4.4 / Table 57",
+        "8.5.4"
+      ],
+      "normative_behavior": "Q restores the saved clipping state.",
+      "observed_quantization": "At 72/144 physical DPI all three references equal analytic interiors exactly; predefined one-device-pixel boundaries unscored. RGB endpoint equality and raster rounding are measured route criteria, not an assertion that ISO mandates identical pixels.",
+      "source_urls": [
+        "https://pdfa.org/resource/iso-32000-2",
+        "https://pdf-issues.pdfa.org/32000-2-2020/",
+        "https://pdf-issues.pdfa.org/32000-2-2020/clause08.html"
+      ],
+      "proposed_subsystem_cross_tags": [
+        "graphics-state",
+        "clip-restore"
+      ],
+      "inspected_source_paths": [
+        "onepdf/src/OnePdf/Content/ContentInterpreter.cs",
+        "oneimage/src/OneImage.Pdf/Render/CanvasDevice.cs"
+      ],
+      "defect_ownership_claimed": false
+    },
+    {
+      "id": "geometry-clip-path-reset",
+      "fixture_header": "PDF-2.0",
+      "primary_clause_2020": "8.5.3.1 Path-painting operators, general / Table 59 n",
+      "secondary_clauses_2020": [
+        "8.5.4"
+      ],
+      "verification_2020": "primary-heading-and-table-number-verified; n-row-not-reproduced",
+      "verified_primary_behavior_source": "ISO 32000-1:2008 locally available official Adobe publication; corresponding legacy contract",
+      "governing_crossrefs_for_PDF17": [
+        "8.5.3.1 / Table 60 n",
+        "8.5.4"
+      ],
+      "normative_behavior": "W followed by n applies the clip and ends the current path without painting.",
+      "observed_quantization": "At 72/144 physical DPI all three references equal analytic interiors exactly; predefined one-device-pixel boundaries unscored. RGB endpoint equality and raster rounding are measured route criteria, not an assertion that ISO mandates identical pixels.",
+      "source_urls": [
+        "https://pdfa.org/resource/iso-32000-2",
+        "https://pdf-issues.pdfa.org/32000-2-2020/",
+        "https://pdf-issues.pdfa.org/32000-2-2020/clause08.html"
+      ],
+      "proposed_subsystem_cross_tags": [
+        "path-lifecycle",
+        "clip-application"
+      ],
+      "inspected_source_paths": [
+        "onepdf/src/OnePdf/Content/ContentInterpreter.cs",
+        "oneimage/src/OneImage.Pdf/Render/CanvasDevice.cs"
+      ],
+      "defect_ownership_claimed": false
+    },
+    {
+      "id": "geometry-concat-order",
+      "fixture_header": "PDF-2.0",
+      "primary_clause_2020": "8.4.4 Graphics state operators / Table 56 cm",
+      "secondary_clauses_2020": [
+        "8.3.3 Common transformations",
+        "8.3.4 Transformation matrices"
+      ],
+      "verification_2020": "primary-heading-and-table-number-verified; cm-row-and-matrix-text-unavailable",
+      "verified_primary_behavior_source": "ISO 32000-1:2008 locally available official Adobe publication; corresponding legacy contract",
+      "governing_crossrefs_for_PDF17": [
+        "8.4.4 / Table 57 cm",
+        "8.3.3",
+        "8.3.4"
+      ],
+      "normative_behavior": "Concatenation preserves the authored translation and applies the inner scale.",
+      "observed_quantization": "At 72/144 physical DPI all three references equal analytic interiors exactly; predefined one-device-pixel boundaries unscored. RGB endpoint equality and raster rounding are measured route criteria, not an assertion that ISO mandates identical pixels.",
+      "source_urls": [
+        "https://pdfa.org/resource/iso-32000-2",
+        "https://pdf-issues.pdfa.org/32000-2-2020/",
+        "https://pdf-issues.pdfa.org/32000-2-2020/clause08.html"
+      ],
+      "proposed_subsystem_cross_tags": [
+        "ctm-concatenation",
+        "path-transform"
+      ],
+      "inspected_source_paths": [
+        "onepdf/src/OnePdf/Content/ContentInterpreter.cs",
+        "oneimage/src/OneImage.Pdf/Render/CanvasDevice.cs"
+      ],
+      "defect_ownership_claimed": false
+    },
+    {
+      "id": "geometry-cropbox-offset",
+      "fixture_header": "PDF-2.0",
+      "primary_clause_2020": "7.7.3.3 Page objects / Table 31 CropBox",
+      "secondary_clauses_2020": [
+        "8.3.2.3 User space",
+        "14.11.2 Page boundaries"
+      ],
+      "verification_2020": "primary-heading-and-table-number-verified; CropBox-row-and-secondary-text-unavailable",
+      "verified_primary_behavior_source": "ISO 32000-1:2008 locally available official Adobe publication; corresponding legacy contract",
+      "governing_crossrefs_for_PDF17": [
+        "7.7.3.3 / Table 30 CropBox",
+        "8.3.2.3",
+        "14.11.2"
+      ],
+      "normative_behavior": "The offset CropBox selects the visible viewport and clips page content.",
+      "observed_quantization": "At 72/144 physical DPI all three references equal analytic interiors exactly; predefined one-device-pixel boundaries unscored. RGB endpoint equality and raster rounding are measured route criteria, not an assertion that ISO mandates identical pixels.",
+      "source_urls": [
+        "https://pdfa.org/resource/iso-32000-2",
+        "https://pdf-issues.pdfa.org/32000-2-2020/",
+        "https://pdf-issues.pdfa.org/32000-2-2020/clause07.html"
+      ],
+      "proposed_subsystem_cross_tags": [
+        "page-box",
+        "page-to-device-transform",
+        "viewport-size"
+      ],
+      "inspected_source_paths": [
+        "onepdf/src/OnePdf/Model/PdfPage.Geometry.cs",
+        "onepdf/src/OnePdf/Content/OptionalContent.cs",
+        "oneimage/src/OneImage.Pdf/PdfDecoder.cs"
+      ],
+      "defect_ownership_claimed": false
+    },
+    {
+      "id": "geometry-rotate-90",
+      "fixture_header": "PDF-2.0",
+      "primary_clause_2020": "7.7.3.3 Page objects / Table 31 Rotate",
+      "secondary_clauses_2020": [
+        "8.3.2.3 User space"
+      ],
+      "verification_2020": "primary-heading-and-table-number-verified; Rotate-row-unavailable",
+      "verified_primary_behavior_source": "ISO 32000-1:2008 locally available official Adobe publication; corresponding legacy contract",
+      "governing_crossrefs_for_PDF17": [
+        "7.7.3.3 / Table 30 Rotate",
+        "8.3.2.3"
+      ],
+      "normative_behavior": "A 90-degree clockwise page rotation swaps display dimensions.",
+      "observed_quantization": "At 72/144 physical DPI all three references equal analytic interiors exactly; predefined one-device-pixel boundaries unscored. RGB endpoint equality and raster rounding are measured route criteria, not an assertion that ISO mandates identical pixels.",
+      "source_urls": [
+        "https://pdfa.org/resource/iso-32000-2",
+        "https://pdf-issues.pdfa.org/32000-2-2020/",
+        "https://pdf-issues.pdfa.org/32000-2-2020/clause07.html"
+      ],
+      "proposed_subsystem_cross_tags": [
+        "page-rotation",
+        "page-to-device-transform",
+        "viewport-size"
+      ],
+      "inspected_source_paths": [
+        "onepdf/src/OnePdf/Model/PdfPage.Geometry.cs",
+        "onepdf/src/OnePdf/Content/OptionalContent.cs",
+        "oneimage/src/OneImage.Pdf/PdfDecoder.cs"
+      ],
+      "defect_ownership_claimed": false
+    },
+    {
+      "id": "geometry-user-unit-2",
+      "fixture_header": "PDF-2.0",
+      "primary_clause_2020": "7.7.3.3 Page objects / Table 31 UserUnit",
+      "secondary_clauses_2020": [
+        "8.3.2.3 User space"
+      ],
+      "verification_2020": "primary-heading-and-table-number-verified; UserUnit-row-unavailable",
+      "verified_primary_behavior_source": "ISO 32000-1:2008 locally available official Adobe publication; corresponding legacy contract",
+      "governing_crossrefs_for_PDF17": [
+        "7.7.3.3 / Table 30 UserUnit",
+        "8.3.2.3"
+      ],
+      "normative_behavior": "Supported UserUnit 2 makes each canvas unit 2/72 inch; support range is implementation-dependent.",
+      "observed_quantization": "At 72/144 physical DPI all three references equal analytic interiors exactly; predefined one-device-pixel boundaries unscored. RGB endpoint equality and raster rounding are measured route criteria, not an assertion that ISO mandates identical pixels.",
+      "source_urls": [
+        "https://pdfa.org/resource/iso-32000-2",
+        "https://pdf-issues.pdfa.org/32000-2-2020/",
+        "https://pdf-issues.pdfa.org/32000-2-2020/clause07.html"
+      ],
+      "proposed_subsystem_cross_tags": [
+        "physical-page-scale",
+        "page-to-device-transform",
+        "viewport-size"
+      ],
+      "inspected_source_paths": [
+        "onepdf/src/OnePdf/Model/PdfPage.Geometry.cs",
+        "onepdf/src/OnePdf/Content/OptionalContent.cs",
+        "oneimage/src/OneImage.Pdf/PdfDecoder.cs"
+      ],
+      "defect_ownership_claimed": false
+    }
+  ]
+}

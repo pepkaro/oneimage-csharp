@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "batch": "ISO-IMAGE-COLORKEY-DECODE-03-ENDPOINT-CONTROLS",
+  "logical_parent_family": "ISO-IMAGE-COLORKEY-DECODE-03",
+  "scope": "Endpoint-only RGB8 controls; no non-endpoint quantization closure.",
+  "verified_date": "2026-11-23",
+  "fixture_pdf_version": "1.7",
+  "governing_edition": "ISO 32000-1:2008",
+  "governing_document_sha256": "9de0ca9e8570d6209e8bd48a355be8eb6ec376acfc3fc3ae97cd8730351417ff",
+  "governing_document_redistributed": false,
+  "clauses": {
+    "2008-colorkey": {
+      "clause": "8.9.6.4",
+      "heading": "Colour Key Masking",
+      "verification": "full local text directly inspected",
+      "scope": "Stored component ranges select samples before Decode."
+    },
+    "2008-decode": {
+      "clause": "8.9.5.2",
+      "heading": "Decode Arrays",
+      "verification": "full local text directly inspected",
+      "scope": "Per-component linear mapping; these endpoint complements are exact."
+    },
+    "2020-mask": {
+      "clause": "8.9.5.1",
+      "table": "87",
+      "entry": "Mask",
+      "verification": "official errata entry directly inspected",
+      "url": "https://pdf-issues.pdfa.org/32000-2-2020/clause08.html"
+    },
+    "2020-colorkey-location": {
+      "clause": "8.9.6.4",
+      "heading": "Colour key masking",
+      "verification": "explicit official Mask-entry cross-reference; full algorithm not exposed",
+      "url": "https://pdf-issues.pdfa.org/32000-2-2020/clause08.html"
+    }
+  },
+  "cases": [
+    {
+      "fixture_id": "img-colorkey-endpoint-control",
+      "primary_2008_clause_ids": [
+        "2008-colorkey",
+        "2008-decode"
+      ],
+      "verified_2020_clause_ids": [
+        "2020-mask",
+        "2020-colorkey-location"
+      ],
+      "upstream_id": null
+    },
+    {
+      "fixture_id": "img-colorkey-endpoint-stored-red",
+      "primary_2008_clause_ids": [
+        "2008-colorkey",
+        "2008-decode"
+      ],
+      "verified_2020_clause_ids": [
+        "2020-mask",
+        "2020-colorkey-location"
+      ],
+      "upstream_id": null
+    },
+    {
+      "fixture_id": "img-colorkey-endpoint-stored-red-magenta-range",
+      "primary_2008_clause_ids": [
+        "2008-colorkey",
+        "2008-decode"
+      ],
+      "verified_2020_clause_ids": [
+        "2020-mask",
+        "2020-colorkey-location"
+      ],
+      "upstream_id": null
+    }
+  ],
+  "limitations": [
+    "Full 2020 color-key algorithm/Decode text pending; no finer unverified claim.",
+    "No standard download, form/cart submission or redistribution.",
+    "Agreement on these endpoints does not resolve parent non-endpoint color disagreements."
+  ],
+  "subsystem_tags": [
+    {
+      "repo": "pepkaro/onepdf-csharp",
+      "inspected_head": "2d1928d5ee67bf4526903d3d44ae37792b1f27b8",
+      "path": "src/OnePdf/Images/ImageLoader.cs",
+      "symbols": [
+        "Mask extraction",
+        "ConvertColor key comparisons before component encoding"
+      ],
+      "scope": "Previously inspected navigation only; no product execution or defect ownership inferred."
+    }
+  ]
+}

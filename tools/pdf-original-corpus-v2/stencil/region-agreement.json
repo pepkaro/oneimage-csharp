@@ -1,0 +1,4493 @@
+{
+  "rule": "Exact RGB analytic and pairwise equality on predeclared two-point-inset interiors; boundaries unscored",
+  "accepted_fixture_ids": [],
+  "held_fixture_ids": [
+    "stencil-default-red",
+    "stencil-inverse-red",
+    "stencil-current-color-reuse"
+  ],
+  "rows": [
+    {
+      "id": "stencil-default-red",
+      "dpi": 72,
+      "analytic": {
+        "pdfium": {
+          "regions": [
+            {
+              "id": "placement-0-cell-0-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-0-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-0-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "frame-0",
+              "pixels": 4,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 1796,
+          "wrong": 0,
+          "passed": true
+        },
+        "pdfjs": {
+          "regions": [
+            {
+              "id": "placement-0-cell-0-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-0-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-0-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "frame-0",
+              "pixels": 4,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 1796,
+          "wrong": 0,
+          "passed": true
+        },
+        "mupdf": {
+          "regions": [
+            {
+              "id": "placement-0-cell-0-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-0",
+              "pixels": 64,
+              "wrong": 64,
+              "max_delta": 1
+            },
+            {
+              "id": "placement-0-cell-6-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-0-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-1",
+              "pixels": 64,
+              "wrong": 64,
+              "max_delta": 1
+            },
+            {
+              "id": "placement-0-cell-3-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-0-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-2",
+              "pixels": 64,
+              "wrong": 64,
+              "max_delta": 1
+            },
+            {
+              "id": "placement-0-cell-2-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-2",
+              "pixels": 64,
+              "wrong": 64,
+              "max_delta": 1
+            },
+            {
+              "id": "placement-0-cell-8-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "frame-0",
+              "pixels": 4,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 1796,
+          "wrong": 256,
+          "passed": false
+        }
+      },
+      "pairwise": [
+        {
+          "engines": [
+            "pdfium",
+            "pdfjs"
+          ],
+          "pixels": 1796,
+          "different": 0,
+          "max_delta": 0
+        },
+        {
+          "engines": [
+            "pdfium",
+            "mupdf"
+          ],
+          "pixels": 1796,
+          "different": 256,
+          "max_delta": 1
+        },
+        {
+          "engines": [
+            "pdfjs",
+            "mupdf"
+          ],
+          "pixels": 1796,
+          "different": 256,
+          "max_delta": 1
+        }
+      ],
+      "accepted": false
+    },
+    {
+      "id": "stencil-default-red",
+      "dpi": 144,
+      "analytic": {
+        "pdfium": {
+          "regions": [
+            {
+              "id": "placement-0-cell-0-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-0-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-0-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "frame-0",
+              "pixels": 16,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 7184,
+          "wrong": 0,
+          "passed": true
+        },
+        "pdfjs": {
+          "regions": [
+            {
+              "id": "placement-0-cell-0-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-0-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-0-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "frame-0",
+              "pixels": 16,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 7184,
+          "wrong": 0,
+          "passed": true
+        },
+        "mupdf": {
+          "regions": [
+            {
+              "id": "placement-0-cell-0-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-0",
+              "pixels": 256,
+              "wrong": 256,
+              "max_delta": 1
+            },
+            {
+              "id": "placement-0-cell-6-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-0-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-1",
+              "pixels": 256,
+              "wrong": 256,
+              "max_delta": 1
+            },
+            {
+              "id": "placement-0-cell-3-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-0-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-2",
+              "pixels": 256,
+              "wrong": 256,
+              "max_delta": 1
+            },
+            {
+              "id": "placement-0-cell-2-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-2",
+              "pixels": 256,
+              "wrong": 256,
+              "max_delta": 1
+            },
+            {
+              "id": "placement-0-cell-8-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "frame-0",
+              "pixels": 16,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 7184,
+          "wrong": 1024,
+          "passed": false
+        }
+      },
+      "pairwise": [
+        {
+          "engines": [
+            "pdfium",
+            "pdfjs"
+          ],
+          "pixels": 7184,
+          "different": 0,
+          "max_delta": 0
+        },
+        {
+          "engines": [
+            "pdfium",
+            "mupdf"
+          ],
+          "pixels": 7184,
+          "different": 1024,
+          "max_delta": 1
+        },
+        {
+          "engines": [
+            "pdfjs",
+            "mupdf"
+          ],
+          "pixels": 7184,
+          "different": 1024,
+          "max_delta": 1
+        }
+      ],
+      "accepted": false
+    },
+    {
+      "id": "stencil-inverse-red",
+      "dpi": 72,
+      "analytic": {
+        "pdfium": {
+          "regions": [
+            {
+              "id": "placement-0-cell-0-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-0-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-0-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "frame-0",
+              "pixels": 4,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 1796,
+          "wrong": 0,
+          "passed": true
+        },
+        "pdfjs": {
+          "regions": [
+            {
+              "id": "placement-0-cell-0-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-0-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-0-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "frame-0",
+              "pixels": 4,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 1796,
+          "wrong": 0,
+          "passed": true
+        },
+        "mupdf": {
+          "regions": [
+            {
+              "id": "placement-0-cell-0-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-0",
+              "pixels": 64,
+              "wrong": 64,
+              "max_delta": 1
+            },
+            {
+              "id": "placement-0-cell-2-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-0",
+              "pixels": 64,
+              "wrong": 64,
+              "max_delta": 1
+            },
+            {
+              "id": "placement-0-cell-4-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-0",
+              "pixels": 64,
+              "wrong": 64,
+              "max_delta": 1
+            },
+            {
+              "id": "placement-0-cell-8-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-0-1",
+              "pixels": 64,
+              "wrong": 64,
+              "max_delta": 1
+            },
+            {
+              "id": "placement-0-cell-1-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-1",
+              "pixels": 64,
+              "wrong": 64,
+              "max_delta": 1
+            },
+            {
+              "id": "placement-0-cell-5-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-1",
+              "pixels": 64,
+              "wrong": 64,
+              "max_delta": 1
+            },
+            {
+              "id": "placement-0-cell-7-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-1",
+              "pixels": 64,
+              "wrong": 64,
+              "max_delta": 1
+            },
+            {
+              "id": "placement-0-cell-0-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-2",
+              "pixels": 64,
+              "wrong": 64,
+              "max_delta": 1
+            },
+            {
+              "id": "placement-0-cell-4-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-2",
+              "pixels": 64,
+              "wrong": 64,
+              "max_delta": 1
+            },
+            {
+              "id": "placement-0-cell-6-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "frame-0",
+              "pixels": 4,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 1796,
+          "wrong": 576,
+          "passed": false
+        }
+      },
+      "pairwise": [
+        {
+          "engines": [
+            "pdfium",
+            "pdfjs"
+          ],
+          "pixels": 1796,
+          "different": 0,
+          "max_delta": 0
+        },
+        {
+          "engines": [
+            "pdfium",
+            "mupdf"
+          ],
+          "pixels": 1796,
+          "different": 576,
+          "max_delta": 1
+        },
+        {
+          "engines": [
+            "pdfjs",
+            "mupdf"
+          ],
+          "pixels": 1796,
+          "different": 576,
+          "max_delta": 1
+        }
+      ],
+      "accepted": false
+    },
+    {
+      "id": "stencil-inverse-red",
+      "dpi": 144,
+      "analytic": {
+        "pdfium": {
+          "regions": [
+            {
+              "id": "placement-0-cell-0-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-0-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-0-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "frame-0",
+              "pixels": 16,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 7184,
+          "wrong": 0,
+          "passed": true
+        },
+        "pdfjs": {
+          "regions": [
+            {
+              "id": "placement-0-cell-0-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-0-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-0-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "frame-0",
+              "pixels": 16,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 7184,
+          "wrong": 0,
+          "passed": true
+        },
+        "mupdf": {
+          "regions": [
+            {
+              "id": "placement-0-cell-0-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-0",
+              "pixels": 256,
+              "wrong": 256,
+              "max_delta": 1
+            },
+            {
+              "id": "placement-0-cell-2-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-0",
+              "pixels": 256,
+              "wrong": 256,
+              "max_delta": 1
+            },
+            {
+              "id": "placement-0-cell-4-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-0",
+              "pixels": 256,
+              "wrong": 256,
+              "max_delta": 1
+            },
+            {
+              "id": "placement-0-cell-8-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-0-1",
+              "pixels": 256,
+              "wrong": 256,
+              "max_delta": 1
+            },
+            {
+              "id": "placement-0-cell-1-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-1",
+              "pixels": 256,
+              "wrong": 256,
+              "max_delta": 1
+            },
+            {
+              "id": "placement-0-cell-5-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-1",
+              "pixels": 256,
+              "wrong": 256,
+              "max_delta": 1
+            },
+            {
+              "id": "placement-0-cell-7-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-1",
+              "pixels": 256,
+              "wrong": 256,
+              "max_delta": 1
+            },
+            {
+              "id": "placement-0-cell-0-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-2",
+              "pixels": 256,
+              "wrong": 256,
+              "max_delta": 1
+            },
+            {
+              "id": "placement-0-cell-4-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-2",
+              "pixels": 256,
+              "wrong": 256,
+              "max_delta": 1
+            },
+            {
+              "id": "placement-0-cell-6-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "frame-0",
+              "pixels": 16,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 7184,
+          "wrong": 2304,
+          "passed": false
+        }
+      },
+      "pairwise": [
+        {
+          "engines": [
+            "pdfium",
+            "pdfjs"
+          ],
+          "pixels": 7184,
+          "different": 0,
+          "max_delta": 0
+        },
+        {
+          "engines": [
+            "pdfium",
+            "mupdf"
+          ],
+          "pixels": 7184,
+          "different": 2304,
+          "max_delta": 1
+        },
+        {
+          "engines": [
+            "pdfjs",
+            "mupdf"
+          ],
+          "pixels": 7184,
+          "different": 2304,
+          "max_delta": 1
+        }
+      ],
+      "accepted": false
+    },
+    {
+      "id": "stencil-current-color-reuse",
+      "dpi": 72,
+      "analytic": {
+        "pdfium": {
+          "regions": [
+            {
+              "id": "placement-0-cell-0-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-0-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-0-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "frame-0",
+              "pixels": 4,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-0-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-1-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-2-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-3-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-4-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-5-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-6-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-7-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-8-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-0-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-1-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-2-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-3-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-4-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-5-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-6-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-7-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-8-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-0-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-1-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-2-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-3-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-4-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-5-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-6-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-7-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-8-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "frame-1",
+              "pixels": 4,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 3528,
+          "wrong": 0,
+          "passed": true
+        },
+        "pdfjs": {
+          "regions": [
+            {
+              "id": "placement-0-cell-0-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-0-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-0-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "frame-0",
+              "pixels": 4,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-0-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-1-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-2-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-3-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-4-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-5-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-6-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-7-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-8-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-0-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-1-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-2-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-3-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-4-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-5-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-6-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-7-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-8-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-0-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-1-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-2-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-3-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-4-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-5-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-6-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-7-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-8-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "frame-1",
+              "pixels": 4,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 3528,
+          "wrong": 0,
+          "passed": true
+        },
+        "mupdf": {
+          "regions": [
+            {
+              "id": "placement-0-cell-0-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-0",
+              "pixels": 64,
+              "wrong": 64,
+              "max_delta": 1
+            },
+            {
+              "id": "placement-0-cell-6-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-0-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-1",
+              "pixels": 64,
+              "wrong": 64,
+              "max_delta": 1
+            },
+            {
+              "id": "placement-0-cell-3-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-0-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-2",
+              "pixels": 64,
+              "wrong": 64,
+              "max_delta": 1
+            },
+            {
+              "id": "placement-0-cell-2-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-2",
+              "pixels": 64,
+              "wrong": 64,
+              "max_delta": 1
+            },
+            {
+              "id": "placement-0-cell-8-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "frame-0",
+              "pixels": 4,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-0-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-1-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-2-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-3-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-4-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-5-0",
+              "pixels": 64,
+              "wrong": 64,
+              "max_delta": 1
+            },
+            {
+              "id": "placement-1-cell-6-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-7-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-8-0",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-0-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-1-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-2-1",
+              "pixels": 64,
+              "wrong": 64,
+              "max_delta": 1
+            },
+            {
+              "id": "placement-1-cell-3-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-4-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-5-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-6-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-7-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-8-1",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-0-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-1-2",
+              "pixels": 64,
+              "wrong": 64,
+              "max_delta": 1
+            },
+            {
+              "id": "placement-1-cell-2-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-3-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-4-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-5-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-6-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-7-2",
+              "pixels": 64,
+              "wrong": 64,
+              "max_delta": 1
+            },
+            {
+              "id": "placement-1-cell-8-2",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "frame-1",
+              "pixels": 4,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 3528,
+          "wrong": 512,
+          "passed": false
+        }
+      },
+      "pairwise": [
+        {
+          "engines": [
+            "pdfium",
+            "pdfjs"
+          ],
+          "pixels": 3528,
+          "different": 0,
+          "max_delta": 0
+        },
+        {
+          "engines": [
+            "pdfium",
+            "mupdf"
+          ],
+          "pixels": 3528,
+          "different": 512,
+          "max_delta": 1
+        },
+        {
+          "engines": [
+            "pdfjs",
+            "mupdf"
+          ],
+          "pixels": 3528,
+          "different": 512,
+          "max_delta": 1
+        }
+      ],
+      "accepted": false
+    },
+    {
+      "id": "stencil-current-color-reuse",
+      "dpi": 144,
+      "analytic": {
+        "pdfium": {
+          "regions": [
+            {
+              "id": "placement-0-cell-0-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-0-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-0-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "frame-0",
+              "pixels": 16,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-0-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-1-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-2-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-3-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-4-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-5-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-6-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-7-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-8-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-0-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-1-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-2-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-3-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-4-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-5-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-6-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-7-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-8-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-0-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-1-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-2-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-3-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-4-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-5-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-6-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-7-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-8-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "frame-1",
+              "pixels": 16,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 14112,
+          "wrong": 0,
+          "passed": true
+        },
+        "pdfjs": {
+          "regions": [
+            {
+              "id": "placement-0-cell-0-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-0-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-0-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "frame-0",
+              "pixels": 16,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-0-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-1-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-2-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-3-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-4-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-5-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-6-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-7-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-8-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-0-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-1-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-2-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-3-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-4-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-5-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-6-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-7-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-8-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-0-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-1-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-2-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-3-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-4-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-5-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-6-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-7-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-8-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "frame-1",
+              "pixels": 16,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 14112,
+          "wrong": 0,
+          "passed": true
+        },
+        "mupdf": {
+          "regions": [
+            {
+              "id": "placement-0-cell-0-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-0",
+              "pixels": 256,
+              "wrong": 256,
+              "max_delta": 1
+            },
+            {
+              "id": "placement-0-cell-6-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-0-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-2-1",
+              "pixels": 256,
+              "wrong": 256,
+              "max_delta": 1
+            },
+            {
+              "id": "placement-0-cell-3-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-8-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-0-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-1-2",
+              "pixels": 256,
+              "wrong": 256,
+              "max_delta": 1
+            },
+            {
+              "id": "placement-0-cell-2-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-3-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-4-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-5-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-6-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-0-cell-7-2",
+              "pixels": 256,
+              "wrong": 256,
+              "max_delta": 1
+            },
+            {
+              "id": "placement-0-cell-8-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "frame-0",
+              "pixels": 16,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-0-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-1-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-2-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-3-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-4-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-5-0",
+              "pixels": 256,
+              "wrong": 256,
+              "max_delta": 1
+            },
+            {
+              "id": "placement-1-cell-6-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-7-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-8-0",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-0-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-1-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-2-1",
+              "pixels": 256,
+              "wrong": 256,
+              "max_delta": 1
+            },
+            {
+              "id": "placement-1-cell-3-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-4-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-5-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-6-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-7-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-8-1",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-0-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-1-2",
+              "pixels": 256,
+              "wrong": 256,
+              "max_delta": 1
+            },
+            {
+              "id": "placement-1-cell-2-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-3-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-4-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-5-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-6-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "placement-1-cell-7-2",
+              "pixels": 256,
+              "wrong": 256,
+              "max_delta": 1
+            },
+            {
+              "id": "placement-1-cell-8-2",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "frame-1",
+              "pixels": 16,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 14112,
+          "wrong": 2048,
+          "passed": false
+        }
+      },
+      "pairwise": [
+        {
+          "engines": [
+            "pdfium",
+            "pdfjs"
+          ],
+          "pixels": 14112,
+          "different": 0,
+          "max_delta": 0
+        },
+        {
+          "engines": [
+            "pdfium",
+            "mupdf"
+          ],
+          "pixels": 14112,
+          "different": 2048,
+          "max_delta": 1
+        },
+        {
+          "engines": [
+            "pdfjs",
+            "mupdf"
+          ],
+          "pixels": 14112,
+          "different": 2048,
+          "max_delta": 1
+        }
+      ],
+      "accepted": false
+    }
+  ]
+}

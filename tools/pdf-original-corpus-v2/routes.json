@@ -1,0 +1,762 @@
+[
+  {
+    "family": "geometry",
+    "id": "geometry-fill-rules",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/geometry-fill-rules",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/geometry/manifest.json"
+  },
+  {
+    "family": "geometry",
+    "id": "geometry-clip-intersection",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/geometry-clip-intersection",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/geometry/manifest.json"
+  },
+  {
+    "family": "geometry",
+    "id": "geometry-saved-clip",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.04-Graphics-state/08.04.02-Graphics-state-stack/geometry-saved-clip",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/geometry/manifest.json"
+  },
+  {
+    "family": "geometry",
+    "id": "geometry-clip-path-reset",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/geometry-clip-path-reset",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/geometry/manifest.json"
+  },
+  {
+    "family": "geometry",
+    "id": "geometry-concat-order",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.04-Graphics-state/08.04.04-Graphics-state-operators/geometry-concat-order",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/geometry/manifest.json"
+  },
+  {
+    "family": "geometry",
+    "id": "geometry-cropbox-offset",
+    "canonical_dir": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.03-Page-objects/geometry-cropbox-offset",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/geometry/manifest.json"
+  },
+  {
+    "family": "geometry",
+    "id": "geometry-rotate-90",
+    "canonical_dir": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.03-Page-objects/geometry-rotate-90",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/geometry/manifest.json"
+  },
+  {
+    "family": "geometry",
+    "id": "geometry-user-unit-2",
+    "canonical_dir": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.03-Page-objects/geometry-user-unit-2",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/geometry/manifest.json"
+  },
+  {
+    "family": "images",
+    "id": "img-gray2-packed-padding",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General/img-gray2-packed-padding",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/images/manifest.json"
+  },
+  {
+    "family": "images",
+    "id": "img-gray4-inverted-decode",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General/img-gray4-inverted-decode",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/images/manifest.json"
+  },
+  {
+    "family": "images",
+    "id": "img-gray8-restricted-decode",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General/img-gray8-restricted-decode",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/images/manifest.json"
+  },
+  {
+    "family": "images",
+    "id": "img-rgb8-channel-decode",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General/img-rgb8-channel-decode",
+    "accepted": false,
+    "manifest_file": "tools/pdf-original-corpus-v2/images/manifest.json"
+  },
+  {
+    "family": "images",
+    "id": "img-indexed2-lookup-padding",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General/img-indexed2-lookup-padding",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/images/manifest.json"
+  },
+  {
+    "family": "images",
+    "id": "img-indexed4-reversed-decode",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General/img-indexed4-reversed-decode",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/images/manifest.json"
+  },
+  {
+    "family": "images",
+    "id": "img-rgb16-big-endian",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General/img-rgb16-big-endian",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/images/manifest.json"
+  },
+  {
+    "family": "images",
+    "id": "img-rgb8-mirrored-placement",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General/img-rgb8-mirrored-placement",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/images/manifest.json"
+  },
+  {
+    "id": "stroke-cap-butt",
+    "family": "stroke",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-cap-butt",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/stroke/manifest.json"
+  },
+  {
+    "id": "stroke-cap-round",
+    "family": "stroke",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-cap-round",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/stroke/manifest.json"
+  },
+  {
+    "id": "stroke-cap-projecting-square",
+    "family": "stroke",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-cap-projecting-square",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/stroke/manifest.json"
+  },
+  {
+    "id": "img-filter-equivalence-raw",
+    "family": "filters",
+    "canonical_dir": "tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.01-General/img-filter-equivalence-raw",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/filters/manifest.json"
+  },
+  {
+    "id": "img-filter-equivalence-flate",
+    "family": "filters",
+    "canonical_dir": "tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.01-General/img-filter-equivalence-flate",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/filters/manifest.json"
+  },
+  {
+    "id": "img-filter-equivalence-runlength",
+    "family": "filters",
+    "canonical_dir": "tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.01-General/img-filter-equivalence-runlength",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/filters/manifest.json"
+  },
+  {
+    "id": "stroke-join-miter",
+    "family": "joins",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-join-miter",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/joins/manifest.json"
+  },
+  {
+    "id": "stroke-join-round",
+    "family": "joins",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-join-round",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/joins/manifest.json"
+  },
+  {
+    "id": "stroke-join-bevel",
+    "family": "joins",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-join-bevel",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/joins/manifest.json"
+  },
+  {
+    "id": "img-predictor-none",
+    "family": "predictors",
+    "canonical_dir": "tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.04-LZWDecode-and-FlateDecode-filters/07.04.04.03-LZWDecode-and-FlateDecode-parameters/img-predictor-none",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/predictors/manifest.json"
+  },
+  {
+    "id": "img-predictor-tiff-sub",
+    "family": "predictors",
+    "canonical_dir": "tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.04-LZWDecode-and-FlateDecode-filters/07.04.04.03-LZWDecode-and-FlateDecode-parameters/img-predictor-tiff-sub",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/predictors/manifest.json"
+  },
+  {
+    "id": "img-predictor-png-sub",
+    "family": "predictors",
+    "canonical_dir": "tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.04-LZWDecode-and-FlateDecode-filters/07.04.04.03-LZWDecode-and-FlateDecode-parameters/img-predictor-png-sub",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/predictors/manifest.json"
+  },
+  {
+    "id": "img-predictor-png-up",
+    "family": "predictors",
+    "canonical_dir": "tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.04-LZWDecode-and-FlateDecode-filters/07.04.04.03-LZWDecode-and-FlateDecode-parameters/img-predictor-png-up",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/predictors/manifest.json"
+  },
+  {
+    "id": "stroke-dash-pair-phase0",
+    "family": "dash",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-dash-pair-phase0",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/dash/manifest.json"
+  },
+  {
+    "id": "stroke-dash-pair-phase5",
+    "family": "dash",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-dash-pair-phase5",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/dash/manifest.json"
+  },
+  {
+    "id": "stroke-dash-four-phase2",
+    "family": "dash",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-dash-four-phase2",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/dash/manifest.json"
+  },
+  {
+    "id": "img-colorkey-control",
+    "family": "colorkey",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/img-colorkey-control",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/colorkey/manifest.json"
+  },
+  {
+    "id": "img-colorkey-exact",
+    "family": "colorkey",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/img-colorkey-exact",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/colorkey/manifest.json"
+  },
+  {
+    "id": "img-colorkey-range",
+    "family": "colorkey",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/img-colorkey-range",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/colorkey/manifest.json"
+  },
+  {
+    "id": "resource-page-form-isolation",
+    "family": "resources",
+    "canonical_dir": "tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-page-form-isolation",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/resources/manifest.json"
+  },
+  {
+    "id": "resource-sibling-form-isolation",
+    "family": "resources",
+    "canonical_dir": "tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-sibling-form-isolation",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/resources/manifest.json"
+  },
+  {
+    "id": "resource-nested-form-restoration",
+    "family": "resources",
+    "canonical_dir": "tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-nested-form-restoration",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/resources/manifest.json"
+  },
+  {
+    "id": "text-td-line-origin",
+    "family": "text",
+    "canonical_dir": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.02-Text-positioning-operators/text-td-line-origin",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/text/manifest.json"
+  },
+  {
+    "id": "text-tc-tw-spacing",
+    "family": "text",
+    "canonical_dir": "tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/text-tc-tw-spacing",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/text/manifest.json"
+  },
+  {
+    "id": "text-tj-signed-adjustment",
+    "family": "text",
+    "canonical_dir": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/text-tj-signed-adjustment",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/text/manifest.json"
+  },
+  {
+    "id": "text-tm-rotate-replace",
+    "family": "text",
+    "canonical_dir": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.02-Text-positioning-operators/text-tm-rotate-replace",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/text/manifest.json"
+  },
+  {
+    "id": "alpha-fill-endpoints",
+    "family": "alpha",
+    "canonical_dir": "tests/testdata/pdf-original-v2/11-Transparency/11.06-Specifying-transparency-in-PDF/alpha-fill-endpoints",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/alpha/manifest.json"
+  },
+  {
+    "id": "alpha-stroke-endpoints",
+    "family": "alpha",
+    "canonical_dir": "tests/testdata/pdf-original-v2/11-Transparency/11.06-Specifying-transparency-in-PDF/alpha-stroke-endpoints",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/alpha/manifest.json"
+  },
+  {
+    "id": "alpha-ca-state-restore",
+    "family": "alpha",
+    "canonical_dir": "tests/testdata/pdf-original-v2/11-Transparency/11.06-Specifying-transparency-in-PDF/alpha-ca-state-restore",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/alpha/manifest.json"
+  },
+  {
+    "id": "alpha-fill-fraction06",
+    "family": "alpha",
+    "canonical_dir": "tests/testdata/pdf-original-v2/11-Transparency/11.06-Specifying-transparency-in-PDF/alpha-fill-fraction06",
+    "accepted": false,
+    "manifest_file": "tools/pdf-original-corpus-v2/alpha/manifest.json"
+  },
+  {
+    "id": "alpha-stroke-fraction06",
+    "family": "alpha",
+    "canonical_dir": "tests/testdata/pdf-original-v2/11-Transparency/11.06-Specifying-transparency-in-PDF/alpha-stroke-fraction06",
+    "accepted": false,
+    "manifest_file": "tools/pdf-original-corpus-v2/alpha/manifest.json"
+  },
+  {
+    "id": "alpha-fill-fraction025",
+    "family": "alpha",
+    "canonical_dir": "tests/testdata/pdf-original-v2/11-Transparency/11.06-Specifying-transparency-in-PDF/alpha-fill-fraction025",
+    "accepted": false,
+    "manifest_file": "tools/pdf-original-corpus-v2/alpha/manifest.json"
+  },
+  {
+    "id": "alpha-stroke-fraction025",
+    "family": "alpha",
+    "canonical_dir": "tests/testdata/pdf-original-v2/11-Transparency/11.06-Specifying-transparency-in-PDF/alpha-stroke-fraction025",
+    "accepted": false,
+    "manifest_file": "tools/pdf-original-corpus-v2/alpha/manifest.json"
+  },
+  {
+    "id": "resource-category-page",
+    "family": "resources2",
+    "canonical_dir": "tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-category-page",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/resources2/manifest.json"
+  },
+  {
+    "id": "resource-category-page-form",
+    "family": "resources2",
+    "canonical_dir": "tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-category-page-form",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/resources2/manifest.json"
+  },
+  {
+    "id": "resource-category-sibling-forms",
+    "family": "resources2",
+    "canonical_dir": "tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-category-sibling-forms",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/resources2/manifest.json"
+  },
+  {
+    "id": "textscale-tz-shape-advance",
+    "family": "textscale",
+    "canonical_dir": "tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/09.03.04-Horizontal-scaling/textscale-tz-shape-advance",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/textscale/manifest.json"
+  },
+  {
+    "id": "textscale-ts-baselines",
+    "family": "textscale",
+    "canonical_dir": "tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/textscale-ts-baselines",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/textscale/manifest.json"
+  },
+  {
+    "id": "textscale-tz-spacing",
+    "family": "textscale",
+    "canonical_dir": "tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/09.03.04-Horizontal-scaling/textscale-tz-spacing",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/textscale/manifest.json"
+  },
+  {
+    "id": "textscale-tz-tj-rise",
+    "family": "textscale",
+    "canonical_dir": "tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/09.03.04-Horizontal-scaling/textscale-tz-tj-rise",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/textscale/manifest.json"
+  },
+  {
+    "id": "resource-inherit-root",
+    "family": "resources3",
+    "canonical_dir": "tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-inheritance-root",
+    "fixture_file": "tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-inheritance-root/original.pdf",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/resources3/manifest.json"
+  },
+  {
+    "id": "resource-explicit-page",
+    "family": "resources3",
+    "canonical_dir": "tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-inheritance-explicit",
+    "fixture_file": "tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-inheritance-explicit/original.pdf",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/resources3/manifest.json"
+  },
+  {
+    "id": "resource-sibling-root-before",
+    "family": "resources3",
+    "canonical_dir": "tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-inheritance-siblings/page-0-resource-sibling-root-before",
+    "fixture_file": "tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-inheritance-siblings/original.pdf",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/resources3/manifest.json"
+  },
+  {
+    "id": "resource-nearest-ancestor",
+    "family": "resources3",
+    "canonical_dir": "tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-inheritance-siblings/page-1-resource-nearest-ancestor",
+    "fixture_file": "tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-inheritance-siblings/original.pdf",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/resources3/manifest.json"
+  },
+  {
+    "id": "resource-sibling-root-after",
+    "family": "resources3",
+    "canonical_dir": "tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-inheritance-siblings/page-2-resource-sibling-root-after",
+    "fixture_file": "tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-inheritance-siblings/original.pdf",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/resources3/manifest.json"
+  },
+  {
+    "id": "textleading-tl-nextline",
+    "family": "textleading",
+    "canonical_dir": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.02-Text-positioning-operators/textleading-tl-nextline",
+    "fixture_file": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.02-Text-positioning-operators/textleading-tl-nextline/original.pdf",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/textleading/manifest.json"
+  },
+  {
+    "id": "textleading-td-sets-leading",
+    "family": "textleading",
+    "canonical_dir": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.02-Text-positioning-operators/textleading-td-sets-leading",
+    "fixture_file": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.02-Text-positioning-operators/textleading-td-sets-leading/original.pdf",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/textleading/manifest.json"
+  },
+  {
+    "id": "textleading-td-preserves-leading",
+    "family": "textleading",
+    "canonical_dir": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.02-Text-positioning-operators/textleading-td-preserves-leading",
+    "fixture_file": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.02-Text-positioning-operators/textleading-td-preserves-leading/original.pdf",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/textleading/manifest.json"
+  },
+  {
+    "id": "textleading-bt-reset-leading-persists",
+    "family": "textleading",
+    "canonical_dir": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.02-Text-positioning-operators/textleading-bt-reset-leading-persists",
+    "fixture_file": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.02-Text-positioning-operators/textleading-bt-reset-leading-persists/original.pdf",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/textleading/manifest.json"
+  },
+  {
+    "id": "img-colorkey-bg-control",
+    "family": "colorkeybackground",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/img-colorkey-bg-control",
+    "fixture_file": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/img-colorkey-bg-control/original.pdf",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/colorkeybackground/manifest.json"
+  },
+  {
+    "id": "img-colorkey-bg-exact",
+    "family": "colorkeybackground",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/img-colorkey-bg-exact",
+    "fixture_file": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/img-colorkey-bg-exact/original.pdf",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/colorkeybackground/manifest.json"
+  },
+  {
+    "id": "img-colorkey-bg-range",
+    "family": "colorkeybackground",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/img-colorkey-bg-range",
+    "fixture_file": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/img-colorkey-bg-range/original.pdf",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/colorkeybackground/manifest.json"
+  },
+  {
+    "id": "mediabox-inherit-root",
+    "family": "pageattributes",
+    "canonical_dir": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-root",
+    "fixture_file": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-root/original.pdf",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/pageattributes/manifest.json"
+  },
+  {
+    "id": "mediabox-explicit-page",
+    "family": "pageattributes",
+    "canonical_dir": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-explicit",
+    "fixture_file": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-explicit/original.pdf",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/pageattributes/manifest.json"
+  },
+  {
+    "id": "mediabox-sibling-root-before",
+    "family": "pageattributes",
+    "canonical_dir": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-siblings/page-0-mediabox-sibling-root-before",
+    "fixture_file": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-siblings/original.pdf",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/pageattributes/manifest.json"
+  },
+  {
+    "id": "mediabox-nearest-ancestor",
+    "family": "pageattributes",
+    "canonical_dir": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-siblings/page-1-mediabox-nearest-ancestor",
+    "fixture_file": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-siblings/original.pdf",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/pageattributes/manifest.json"
+  },
+  {
+    "id": "mediabox-sibling-root-after",
+    "family": "pageattributes",
+    "canonical_dir": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-siblings/page-2-mediabox-sibling-root-after",
+    "fixture_file": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-siblings/original.pdf",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/pageattributes/manifest.json"
+  },
+  {
+    "id": "textquote-single-equivalent",
+    "family": "textquote",
+    "canonical_dir": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/textquote-single-equivalent",
+    "fixture_file": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/textquote-single-equivalent/original.pdf",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/textquote/manifest.json"
+  },
+  {
+    "id": "textquote-double-equivalent",
+    "family": "textquote",
+    "canonical_dir": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/textquote-double-equivalent",
+    "fixture_file": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/textquote-double-equivalent/original.pdf",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/textquote/manifest.json"
+  },
+  {
+    "id": "textquote-spacing-persists",
+    "family": "textquote",
+    "canonical_dir": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/textquote-spacing-persists",
+    "fixture_file": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/textquote-spacing-persists/original.pdf",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/textquote/manifest.json"
+  },
+  {
+    "id": "textquote-shift-and-object-state",
+    "family": "textquote",
+    "canonical_dir": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/textquote-shift-and-object-state",
+    "fixture_file": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/textquote-shift-and-object-state/original.pdf",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/textquote/manifest.json"
+  },
+  {
+    "id": "img-colorkey-decode-opaque",
+    "family": "colorkeydecode",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-decode-opaque",
+    "fixture_file": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-decode-opaque/original.pdf",
+    "accepted": false,
+    "manifest_file": "tools/pdf-original-corpus-v2/colorkeydecode/manifest.json"
+  },
+  {
+    "id": "img-colorkey-decode-stored-key",
+    "family": "colorkeydecode",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-decode-stored-key",
+    "fixture_file": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-decode-stored-key/original.pdf",
+    "accepted": false,
+    "manifest_file": "tools/pdf-original-corpus-v2/colorkeydecode/manifest.json"
+  },
+  {
+    "id": "img-colorkey-decode-decoded-key-control",
+    "family": "colorkeydecode",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-decode-decoded-key-control",
+    "fixture_file": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-decode-decoded-key-control/original.pdf",
+    "accepted": false,
+    "manifest_file": "tools/pdf-original-corpus-v2/colorkeydecode/manifest.json"
+  },
+  {
+    "id": "img-colorkey-decode-stored-range",
+    "family": "colorkeydecode",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-decode-stored-range",
+    "fixture_file": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-decode-stored-range/original.pdf",
+    "accepted": false,
+    "manifest_file": "tools/pdf-original-corpus-v2/colorkeydecode/manifest.json"
+  },
+  {
+    "id": "img-colorkey-endpoint-control",
+    "family": "colorkeyendpoints",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-endpoint-control",
+    "fixture_file": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-endpoint-control/original.pdf",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/colorkeyendpoints/manifest.json"
+  },
+  {
+    "id": "img-colorkey-endpoint-stored-red",
+    "family": "colorkeyendpoints",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-endpoint-stored-red",
+    "fixture_file": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-endpoint-stored-red/original.pdf",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/colorkeyendpoints/manifest.json"
+  },
+  {
+    "id": "img-colorkey-endpoint-stored-red-magenta-range",
+    "family": "colorkeyendpoints",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-endpoint-stored-red-magenta-range",
+    "fixture_file": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-endpoint-stored-red-magenta-range/original.pdf",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/colorkeyendpoints/manifest.json"
+  },
+  {
+    "id": "boxes-direct-control",
+    "family": "indirectboxes",
+    "canonical_dir": "tests/testdata/pdf-original-v2/07-Syntax/07.03-Objects/07.03.10-Indirect-objects/boxes-direct-control",
+    "fixture_file": "tests/testdata/pdf-original-v2/07-Syntax/07.03-Objects/07.03.10-Indirect-objects/boxes-direct-control/original.pdf",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/indirectboxes/manifest.json"
+  },
+  {
+    "id": "boxes-indirect-arrays",
+    "family": "indirectboxes",
+    "canonical_dir": "tests/testdata/pdf-original-v2/07-Syntax/07.03-Objects/07.03.10-Indirect-objects/boxes-indirect-arrays",
+    "fixture_file": "tests/testdata/pdf-original-v2/07-Syntax/07.03-Objects/07.03.10-Indirect-objects/boxes-indirect-arrays/original.pdf",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/indirectboxes/manifest.json"
+  },
+  {
+    "id": "boxes-indirect-coordinates",
+    "family": "indirectboxes",
+    "canonical_dir": "tests/testdata/pdf-original-v2/07-Syntax/07.03-Objects/07.03.10-Indirect-objects/boxes-indirect-coordinates",
+    "fixture_file": "tests/testdata/pdf-original-v2/07-Syntax/07.03-Objects/07.03.10-Indirect-objects/boxes-indirect-coordinates/original.pdf",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/indirectboxes/manifest.json"
+  },
+  {
+    "id": "rotate-inherit-root90",
+    "family": "inheritedrotate",
+    "canonical_dir": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/rotate-inheritance-root",
+    "fixture_file": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/rotate-inheritance-root/original.pdf",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/inheritedrotate/manifest.json"
+  },
+  {
+    "id": "rotate-explicit-page0",
+    "family": "inheritedrotate",
+    "canonical_dir": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/rotate-inheritance-explicit",
+    "fixture_file": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/rotate-inheritance-explicit/original.pdf",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/inheritedrotate/manifest.json"
+  },
+  {
+    "id": "rotate-sibling-root-before",
+    "family": "inheritedrotate",
+    "canonical_dir": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/rotate-inheritance-siblings/page-0-rotate-sibling-root-before",
+    "fixture_file": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/rotate-inheritance-siblings/original.pdf",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/inheritedrotate/manifest.json"
+  },
+  {
+    "id": "rotate-nearest-ancestor270",
+    "family": "inheritedrotate",
+    "canonical_dir": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/rotate-inheritance-siblings/page-1-rotate-nearest-ancestor270",
+    "fixture_file": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/rotate-inheritance-siblings/original.pdf",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/inheritedrotate/manifest.json"
+  },
+  {
+    "id": "rotate-sibling-root-after",
+    "family": "inheritedrotate",
+    "canonical_dir": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/rotate-inheritance-siblings/page-2-rotate-sibling-root-after",
+    "fixture_file": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/rotate-inheritance-siblings/original.pdf",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/inheritedrotate/manifest.json"
+  },
+  {
+    "id": "text-invisible-advance",
+    "family": "invisibletext",
+    "canonical_dir": "tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/09.03.06-Text-rendering-mode/text-invisible-advance",
+    "fixture_file": "tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/09.03.06-Text-rendering-mode/text-invisible-advance/original.pdf",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/invisibletext/manifest.json"
+  },
+  {
+    "id": "text-invisible-spacing-tj",
+    "family": "invisibletext",
+    "canonical_dir": "tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/09.03.06-Text-rendering-mode/text-invisible-spacing-tj",
+    "fixture_file": "tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/09.03.06-Text-rendering-mode/text-invisible-spacing-tj/original.pdf",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/invisibletext/manifest.json"
+  },
+  {
+    "id": "text-invisible-object-state",
+    "family": "invisibletext",
+    "canonical_dir": "tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/09.03.06-Text-rendering-mode/text-invisible-object-state",
+    "fixture_file": "tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/09.03.06-Text-rendering-mode/text-invisible-object-state/original.pdf",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/invisibletext/manifest.json"
+  },
+  {
+    "id": "text-invisible-no-clip",
+    "family": "invisibletext",
+    "canonical_dir": "tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/09.03.06-Text-rendering-mode/text-invisible-no-clip",
+    "fixture_file": "tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/09.03.06-Text-rendering-mode/text-invisible-no-clip/original.pdf",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/invisibletext/manifest.json"
+  },
+  {
+    "id": "stencil-default-red",
+    "family": "stencil",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.02-Stencil-masking/stencil-default-red",
+    "fixture_file": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.02-Stencil-masking/stencil-default-red/original.pdf",
+    "accepted": false,
+    "manifest_file": "tools/pdf-original-corpus-v2/stencil/manifest.json"
+  },
+  {
+    "id": "stencil-inverse-red",
+    "family": "stencil",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.02-Stencil-masking/stencil-inverse-red",
+    "fixture_file": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.02-Stencil-masking/stencil-inverse-red/original.pdf",
+    "accepted": false,
+    "manifest_file": "tools/pdf-original-corpus-v2/stencil/manifest.json"
+  },
+  {
+    "id": "stencil-current-color-reuse",
+    "family": "stencil",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.02-Stencil-masking/stencil-current-color-reuse",
+    "fixture_file": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.02-Stencil-masking/stencil-current-color-reuse/original.pdf",
+    "accepted": false,
+    "manifest_file": "tools/pdf-original-corpus-v2/stencil/manifest.json"
+  },
+  {
+    "id": "stencil-white-default-red",
+    "family": "stencilwhite",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.02-Stencil-masking/stencil-white-default-red",
+    "fixture_file": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.02-Stencil-masking/stencil-white-default-red/original.pdf",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/stencilwhite/manifest.json"
+  },
+  {
+    "id": "stencil-white-inverse-red",
+    "family": "stencilwhite",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.02-Stencil-masking/stencil-white-inverse-red",
+    "fixture_file": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.02-Stencil-masking/stencil-white-inverse-red/original.pdf",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/stencilwhite/manifest.json"
+  },
+  {
+    "id": "stencil-white-reuse-red-green",
+    "family": "stencilwhite",
+    "canonical_dir": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.02-Stencil-masking/stencil-white-reuse-red-green",
+    "fixture_file": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.02-Stencil-masking/stencil-white-reuse-red-green/original.pdf",
+    "accepted": true,
+    "manifest_file": "tools/pdf-original-corpus-v2/stencilwhite/manifest.json"
+  }
+]

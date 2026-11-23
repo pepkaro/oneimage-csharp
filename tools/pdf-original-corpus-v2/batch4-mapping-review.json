@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "scope": "Fourth-batch metadata-only qualification; no upstream input/golden bytes retrieved",
+  "upstream_credited": 0,
+  "upstream_inputs_executed": 0,
+  "source_metadata_sha256": "c1ba989e37fd33a661e82c1a8787d128bb0fd54e316ab9ea4f7b624b14586914",
+  "pdfium_revision": "1f02bc7d908ab301fa2a2babd87226a19311ff38",
+  "mozilla_revision": "d4da7f6542bfdf7f256db30f28fa7057c9006ca3",
+  "reviews": [
+    {
+      "slice": "ISO-PAGE-RESOURCE-03",
+      "source_case_id": "mozilla:issue4461-load",
+      "official_metadata": {
+        "id": "issue4461-load",
+        "file": "pdfs/issue4461.pdf",
+        "md5": "9df4ecaae429adb5dc93d9342a53159d",
+        "rounds": 1,
+        "type": "load",
+        "about": "Document without /Resources entry in page dictionary"
+      },
+      "classification": "different-route-and-unknown-inheritance",
+      "credit": false,
+      "missing": "Official description establishes missing page Resources and load-only route; does not establish valid parent Resources or nearest ancestor/sibling binding. Original visual assertions are spec-derived, not that source input."
+    },
+    {
+      "slice": "ISO-TEXT-LEADING-01",
+      "metadata_review": "textleading/upstream-metadata-review.json",
+      "classification": "unknown-exact-leading-contract",
+      "source_ids": [
+        "pdfium-main:testing/resources/pixel/font_size.in",
+        "pdfium-main:testing/resources/pixel/type3.in",
+        "pdfium-main:testing/resources/pixel/type3_xobject.in"
+      ],
+      "credit": false,
+      "missing": "Font size/Type3 names do not establish TL/T*/TD/Td or BT reset/persistence, page/settings or exact assertion."
+    },
+    {
+      "slice": "ISO-IMAGE-COLORKEY-COMPOSITE-02",
+      "classification": "no-exact-colorkey-scene-in-reviewed-snapshot",
+      "credit": false,
+      "candidate_source_ids": [
+        "pdfium-main:testing/resources/pixel/jpxdecode_smask_in_data_2.in",
+        "pdfium-main:testing/resources/pixel/jpxdecode_without_smaskindata.in",
+        "pdfium-main:testing/resources/pixel/smask_blend.in"
+      ],
+      "missing": "Reviewed mask-name entries are JPX intrinsic alpha/SMask or soft-mask blend, different contracts from ordinary RGB color-key array over opaque checkerboard. Their own scopes remain unqualified; no association claimed."
+    }
+  ],
+  "limits": [
+    "150-entry PDFium metadata snapshot plus previously pinned Mozilla metadata only; not a full2811 scene review",
+    "Need independently available official exact semantic intent/route/page/settings to map an upstream ID",
+    "No borrowed/private assets, security recreation or speculative parity"
+  ]
+}

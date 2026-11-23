@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "slice": "ISO-PAGE-BOX-INDIRECT-01",
+  "verified_on": "2026-11-23",
+  "primary": {
+    "standard": "ISO32000-2:2020",
+    "clause": "7.3.10",
+    "title": "Indirect objects",
+    "url": "https://pdf-issues.pdfa.org/32000-2-2020/clause07.html",
+    "verification": "Official errata heading and first-paragraph rule inspected",
+    "supported_scope": "Indirect objects may be referenced as array elements or dictionary values; numeric objects and array objects are both supported here."
+  },
+  "secondary": [
+    {
+      "clause": "7.7.3.3",
+      "title": "Page objects",
+      "verification": "Official2020 heading verified; complete base MediaBox/CropBox entry text not supplied by errata",
+      "url": "https://pdf-issues.pdfa.org/32000-2-2020/clause07.html"
+    },
+    {
+      "clause": "7.9.5",
+      "title_status": "Location verified by rectangle-type cross-reference; exact heading not reverified from full2020 text",
+      "verification": "Official2020 7.9.1 data-type table identifies a rectangle as an array with4 numeric elements and references7.9.5",
+      "url": "https://pdf-issues.pdfa.org/32000-2-2020/clause07.html"
+    }
+  ],
+  "governing_legacy": {
+    "standard": "ISO32000-1:2008",
+    "fixture_pdf_version": "1.7",
+    "document_sha256": "9de0ca9e8570d6209e8bd48a355be8eb6ec376acfc3fc3ae97cd8730351417ff",
+    "document_redistributed": false,
+    "clauses": [
+      {
+        "clause": "7.3.6",
+        "title": "Array Objects",
+        "pdf_page_1based": 26,
+        "scope": "Array elements can be objects of different types."
+      },
+      {
+        "clause": "7.3.10",
+        "title": "Indirect Objects",
+        "pdf_page_1based": 29,
+        "scope": "Any object may be indirect, including an object referenced from an array or dictionary value."
+      },
+      {
+        "clause": "7.7.3.3",
+        "table": "30",
+        "title": "Page Objects",
+        "pdf_page_1based": 85,
+        "scope": "MediaBox is a rectangle; CropBox defines the visible region and clipping. No direct-only restriction is imposed on these rectangle entries."
+      },
+      {
+        "clause": "7.9.5",
+        "title": "Rectangles",
+        "pdf_page_1based": 96,
+        "scope": "Four numeric corner coordinates define a rectangle. Numeric reference elements resolve to the same numeric objects."
+      },
+      {
+        "clause": "14.11.2",
+        "title_status": "Page Boundaries cross-reference only",
+        "scope": "Not assigned any additional unverified normative requirements"
+      }
+    ],
+    "validity_conclusion": "Whole-array and numeric-coordinate references are permitted by the general indirect-object rule; these ordinary page-box entries impose no direct-only exception."
+  },
+  "limits": [
+    "Full2020 standard not acquired; base page-box wording is grounded in the separately inspected PDF1.7 governing edition.",
+    "Exact raster pixels on inset regions are acceptance criteria; no ISO antialiasing requirement is asserted."
+  ],
+  "source_resource": "https://pdfa.org/resource/iso-32000-2",
+  "cases": [
+    {
+      "id": "boxes-direct-control",
+      "upstream_ids": [],
+      "primary": "2020 7.3.10",
+      "secondary": [
+        "2008 7.3.6",
+        "2008 7.7.3.3/Table30",
+        "2008 7.9.5"
+      ]
+    },
+    {
+      "id": "boxes-indirect-arrays",
+      "upstream_ids": [],
+      "primary": "2020 7.3.10",
+      "secondary": [
+        "2008 7.3.6",
+        "2008 7.7.3.3/Table30",
+        "2008 7.9.5"
+      ]
+    },
+    {
+      "id": "boxes-indirect-coordinates",
+      "upstream_ids": [],
+      "primary": "2020 7.3.10",
+      "secondary": [
+        "2008 7.3.6",
+        "2008 7.7.3.3/Table30",
+        "2008 7.9.5"
+      ]
+    }
+  ]
+}

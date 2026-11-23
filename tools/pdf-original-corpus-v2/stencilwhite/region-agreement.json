@@ -1,0 +1,4927 @@
+{
+  "rule": "Original stencil cells/frame/paper inset2pt; exact analytic/pairwise RGB tolerance0; all boundaries unscored.",
+  "accepted_fixture_ids": [
+    "stencil-white-default-red",
+    "stencil-white-inverse-red",
+    "stencil-white-reuse-red-green"
+  ],
+  "held_fixture_ids": [],
+  "accepted_fixtures": 3,
+  "held_fixtures": 0,
+  "rows": [
+    {
+      "id": "stencil-white-default-red",
+      "dpi": 72,
+      "analytic": {
+        "pdfium": {
+          "regions": [
+            {
+              "id": "draw-0-cell-0-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-0-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-0-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-left",
+              "pixels": 240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-right",
+              "pixels": 240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-bottom",
+              "pixels": 560,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-top",
+              "pixels": 560,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 5744,
+          "wrong": 0,
+          "status": "passed"
+        },
+        "mupdf": {
+          "regions": [
+            {
+              "id": "draw-0-cell-0-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-0-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-0-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-left",
+              "pixels": 240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-right",
+              "pixels": 240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-bottom",
+              "pixels": 560,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-top",
+              "pixels": 560,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 5744,
+          "wrong": 0,
+          "status": "passed"
+        },
+        "pdfjs": {
+          "regions": [
+            {
+              "id": "draw-0-cell-0-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-0-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-0-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-left",
+              "pixels": 240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-right",
+              "pixels": 240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-bottom",
+              "pixels": 560,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-top",
+              "pixels": 560,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 5744,
+          "wrong": 0,
+          "status": "passed"
+        }
+      },
+      "pairwise": [
+        {
+          "engines": [
+            "pdfium",
+            "mupdf"
+          ],
+          "pixels": 5744,
+          "different": 0,
+          "max_delta": 0
+        },
+        {
+          "engines": [
+            "pdfium",
+            "pdfjs"
+          ],
+          "pixels": 5744,
+          "different": 0,
+          "max_delta": 0
+        },
+        {
+          "engines": [
+            "mupdf",
+            "pdfjs"
+          ],
+          "pixels": 5744,
+          "different": 0,
+          "max_delta": 0
+        }
+      ],
+      "accepted": true
+    },
+    {
+      "id": "stencil-white-default-red",
+      "dpi": 144,
+      "analytic": {
+        "pdfium": {
+          "regions": [
+            {
+              "id": "draw-0-cell-0-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-0-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-0-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-left",
+              "pixels": 960,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-right",
+              "pixels": 960,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-bottom",
+              "pixels": 2240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-top",
+              "pixels": 2240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 1024,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 22976,
+          "wrong": 0,
+          "status": "passed"
+        },
+        "mupdf": {
+          "regions": [
+            {
+              "id": "draw-0-cell-0-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-0-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-0-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-left",
+              "pixels": 960,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-right",
+              "pixels": 960,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-bottom",
+              "pixels": 2240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-top",
+              "pixels": 2240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 1024,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 22976,
+          "wrong": 0,
+          "status": "passed"
+        },
+        "pdfjs": {
+          "regions": [
+            {
+              "id": "draw-0-cell-0-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-0-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-0-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-left",
+              "pixels": 960,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-right",
+              "pixels": 960,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-bottom",
+              "pixels": 2240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-top",
+              "pixels": 2240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 1024,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 22976,
+          "wrong": 0,
+          "status": "passed"
+        }
+      },
+      "pairwise": [
+        {
+          "engines": [
+            "pdfium",
+            "mupdf"
+          ],
+          "pixels": 22976,
+          "different": 0,
+          "max_delta": 0
+        },
+        {
+          "engines": [
+            "pdfium",
+            "pdfjs"
+          ],
+          "pixels": 22976,
+          "different": 0,
+          "max_delta": 0
+        },
+        {
+          "engines": [
+            "mupdf",
+            "pdfjs"
+          ],
+          "pixels": 22976,
+          "different": 0,
+          "max_delta": 0
+        }
+      ],
+      "accepted": true
+    },
+    {
+      "id": "stencil-white-inverse-red",
+      "dpi": 72,
+      "analytic": {
+        "pdfium": {
+          "regions": [
+            {
+              "id": "draw-0-cell-0-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-0-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-0-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-left",
+              "pixels": 240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-right",
+              "pixels": 240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-bottom",
+              "pixels": 560,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-top",
+              "pixels": 560,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 5744,
+          "wrong": 0,
+          "status": "passed"
+        },
+        "mupdf": {
+          "regions": [
+            {
+              "id": "draw-0-cell-0-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-0-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-0-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-left",
+              "pixels": 240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-right",
+              "pixels": 240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-bottom",
+              "pixels": 560,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-top",
+              "pixels": 560,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 5744,
+          "wrong": 0,
+          "status": "passed"
+        },
+        "pdfjs": {
+          "regions": [
+            {
+              "id": "draw-0-cell-0-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-0-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-0-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-left",
+              "pixels": 240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-right",
+              "pixels": 240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-bottom",
+              "pixels": 560,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-top",
+              "pixels": 560,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 5744,
+          "wrong": 0,
+          "status": "passed"
+        }
+      },
+      "pairwise": [
+        {
+          "engines": [
+            "pdfium",
+            "mupdf"
+          ],
+          "pixels": 5744,
+          "different": 0,
+          "max_delta": 0
+        },
+        {
+          "engines": [
+            "pdfium",
+            "pdfjs"
+          ],
+          "pixels": 5744,
+          "different": 0,
+          "max_delta": 0
+        },
+        {
+          "engines": [
+            "mupdf",
+            "pdfjs"
+          ],
+          "pixels": 5744,
+          "different": 0,
+          "max_delta": 0
+        }
+      ],
+      "accepted": true
+    },
+    {
+      "id": "stencil-white-inverse-red",
+      "dpi": 144,
+      "analytic": {
+        "pdfium": {
+          "regions": [
+            {
+              "id": "draw-0-cell-0-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-0-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-0-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-left",
+              "pixels": 960,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-right",
+              "pixels": 960,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-bottom",
+              "pixels": 2240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-top",
+              "pixels": 2240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 1024,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 22976,
+          "wrong": 0,
+          "status": "passed"
+        },
+        "mupdf": {
+          "regions": [
+            {
+              "id": "draw-0-cell-0-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-0-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-0-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-left",
+              "pixels": 960,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-right",
+              "pixels": 960,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-bottom",
+              "pixels": 2240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-top",
+              "pixels": 2240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 1024,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 22976,
+          "wrong": 0,
+          "status": "passed"
+        },
+        "pdfjs": {
+          "regions": [
+            {
+              "id": "draw-0-cell-0-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-0-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-0-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-left",
+              "pixels": 960,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-right",
+              "pixels": 960,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-bottom",
+              "pixels": 2240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-top",
+              "pixels": 2240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 1024,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 22976,
+          "wrong": 0,
+          "status": "passed"
+        }
+      },
+      "pairwise": [
+        {
+          "engines": [
+            "pdfium",
+            "mupdf"
+          ],
+          "pixels": 22976,
+          "different": 0,
+          "max_delta": 0
+        },
+        {
+          "engines": [
+            "pdfium",
+            "pdfjs"
+          ],
+          "pixels": 22976,
+          "different": 0,
+          "max_delta": 0
+        },
+        {
+          "engines": [
+            "mupdf",
+            "pdfjs"
+          ],
+          "pixels": 22976,
+          "different": 0,
+          "max_delta": 0
+        }
+      ],
+      "accepted": true
+    },
+    {
+      "id": "stencil-white-reuse-red-green",
+      "dpi": 72,
+      "analytic": {
+        "pdfium": {
+          "regions": [
+            {
+              "id": "draw-0-cell-0-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-0-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-0-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-left",
+              "pixels": 240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-right",
+              "pixels": 240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-bottom",
+              "pixels": 560,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-top",
+              "pixels": 560,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-0-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-1-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-2-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-3-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-4-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-5-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-6-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-7-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-8-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-0-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-1-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-2-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-3-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-4-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-5-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-6-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-7-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-8-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-0-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-1-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-2-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-3-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-4-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-5-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-6-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-7-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-8-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-white-frame-left",
+              "pixels": 240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-white-frame-right",
+              "pixels": 240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-white-frame-bottom",
+              "pixels": 560,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-white-frame-top",
+              "pixels": 560,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 11232,
+          "wrong": 0,
+          "status": "passed"
+        },
+        "mupdf": {
+          "regions": [
+            {
+              "id": "draw-0-cell-0-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-0-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-0-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-left",
+              "pixels": 240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-right",
+              "pixels": 240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-bottom",
+              "pixels": 560,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-top",
+              "pixels": 560,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-0-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-1-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-2-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-3-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-4-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-5-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-6-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-7-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-8-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-0-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-1-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-2-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-3-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-4-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-5-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-6-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-7-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-8-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-0-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-1-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-2-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-3-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-4-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-5-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-6-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-7-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-8-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-white-frame-left",
+              "pixels": 240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-white-frame-right",
+              "pixels": 240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-white-frame-bottom",
+              "pixels": 560,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-white-frame-top",
+              "pixels": 560,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 11232,
+          "wrong": 0,
+          "status": "passed"
+        },
+        "pdfjs": {
+          "regions": [
+            {
+              "id": "draw-0-cell-0-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-0-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-0-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-left",
+              "pixels": 240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-right",
+              "pixels": 240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-bottom",
+              "pixels": 560,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-top",
+              "pixels": 560,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-0-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-1-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-2-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-3-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-4-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-5-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-6-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-7-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-8-0",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-0-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-1-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-2-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-3-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-4-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-5-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-6-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-7-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-8-1",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-0-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-1-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-2-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-3-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-4-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-5-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-6-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-7-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-8-2",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-white-frame-left",
+              "pixels": 240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-white-frame-right",
+              "pixels": 240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-white-frame-bottom",
+              "pixels": 560,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-white-frame-top",
+              "pixels": 560,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 11232,
+          "wrong": 0,
+          "status": "passed"
+        }
+      },
+      "pairwise": [
+        {
+          "engines": [
+            "pdfium",
+            "mupdf"
+          ],
+          "pixels": 11232,
+          "different": 0,
+          "max_delta": 0
+        },
+        {
+          "engines": [
+            "pdfium",
+            "pdfjs"
+          ],
+          "pixels": 11232,
+          "different": 0,
+          "max_delta": 0
+        },
+        {
+          "engines": [
+            "mupdf",
+            "pdfjs"
+          ],
+          "pixels": 11232,
+          "different": 0,
+          "max_delta": 0
+        }
+      ],
+      "accepted": true
+    },
+    {
+      "id": "stencil-white-reuse-red-green",
+      "dpi": 144,
+      "analytic": {
+        "pdfium": {
+          "regions": [
+            {
+              "id": "draw-0-cell-0-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-0-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-0-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-left",
+              "pixels": 960,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-right",
+              "pixels": 960,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-bottom",
+              "pixels": 2240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-top",
+              "pixels": 2240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-0-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-1-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-2-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-3-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-4-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-5-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-6-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-7-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-8-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-0-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-1-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-2-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-3-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-4-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-5-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-6-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-7-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-8-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-0-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-1-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-2-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-3-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-4-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-5-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-6-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-7-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-8-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-white-frame-left",
+              "pixels": 960,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-white-frame-right",
+              "pixels": 960,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-white-frame-bottom",
+              "pixels": 2240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-white-frame-top",
+              "pixels": 2240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 1024,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 44928,
+          "wrong": 0,
+          "status": "passed"
+        },
+        "mupdf": {
+          "regions": [
+            {
+              "id": "draw-0-cell-0-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-0-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-0-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-left",
+              "pixels": 960,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-right",
+              "pixels": 960,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-bottom",
+              "pixels": 2240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-top",
+              "pixels": 2240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-0-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-1-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-2-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-3-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-4-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-5-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-6-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-7-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-8-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-0-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-1-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-2-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-3-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-4-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-5-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-6-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-7-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-8-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-0-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-1-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-2-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-3-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-4-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-5-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-6-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-7-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-8-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-white-frame-left",
+              "pixels": 960,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-white-frame-right",
+              "pixels": 960,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-white-frame-bottom",
+              "pixels": 2240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-white-frame-top",
+              "pixels": 2240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 1024,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 44928,
+          "wrong": 0,
+          "status": "passed"
+        },
+        "pdfjs": {
+          "regions": [
+            {
+              "id": "draw-0-cell-0-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-0-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-0-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-1-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-2-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-3-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-4-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-5-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-6-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-7-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-cell-8-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-left",
+              "pixels": 960,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-right",
+              "pixels": 960,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-bottom",
+              "pixels": 2240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-0-white-frame-top",
+              "pixels": 2240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-0-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-1-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-2-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-3-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-4-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-5-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-6-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-7-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-8-0",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-0-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-1-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-2-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-3-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-4-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-5-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-6-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-7-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-8-1",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-0-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-1-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-2-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-3-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-4-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-5-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-6-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-7-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-cell-8-2",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-white-frame-left",
+              "pixels": 960,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-white-frame-right",
+              "pixels": 960,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-white-frame-bottom",
+              "pixels": 2240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "draw-1-white-frame-top",
+              "pixels": 2240,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 1024,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 44928,
+          "wrong": 0,
+          "status": "passed"
+        }
+      },
+      "pairwise": [
+        {
+          "engines": [
+            "pdfium",
+            "mupdf"
+          ],
+          "pixels": 44928,
+          "different": 0,
+          "max_delta": 0
+        },
+        {
+          "engines": [
+            "pdfium",
+            "pdfjs"
+          ],
+          "pixels": 44928,
+          "different": 0,
+          "max_delta": 0
+        },
+        {
+          "engines": [
+            "mupdf",
+            "pdfjs"
+          ],
+          "pixels": 44928,
+          "different": 0,
+          "max_delta": 0
+        }
+      ],
+      "accepted": true
+    }
+  ]
+}

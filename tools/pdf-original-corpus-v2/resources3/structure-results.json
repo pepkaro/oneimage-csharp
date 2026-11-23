@@ -1,0 +1,149 @@
+{
+  "parser": "pypdf",
+  "parser_version": "6.21.4",
+  "unique_pdfs": 3,
+  "page_views": 5,
+  "passed": 5,
+  "failed": 0,
+  "fixtures": [
+    {
+      "fixture_id": "resource-inheritance-root",
+      "file": "inputs/resource-inheritance-root.pdf",
+      "page_count": 1,
+      "page_tree_nodes": [
+        {
+          "object": 2,
+          "count": 1,
+          "has_local_resources": true
+        }
+      ],
+      "parsed_pages": [
+        {
+          "page": 0,
+          "page_object": 3,
+          "resource_owner_object": 2,
+          "mark_leaf_object": 5,
+          "has_explicit_page_resources": false
+        }
+      ]
+    },
+    {
+      "fixture_id": "resource-inheritance-explicit",
+      "file": "inputs/resource-inheritance-explicit.pdf",
+      "page_count": 1,
+      "page_tree_nodes": [
+        {
+          "object": 2,
+          "count": 1,
+          "has_local_resources": true
+        }
+      ],
+      "parsed_pages": [
+        {
+          "page": 0,
+          "page_object": 3,
+          "resource_owner_object": 3,
+          "mark_leaf_object": 6,
+          "has_explicit_page_resources": true
+        }
+      ]
+    },
+    {
+      "fixture_id": "resource-inheritance-siblings",
+      "file": "inputs/resource-inheritance-siblings.pdf",
+      "page_count": 3,
+      "page_tree_nodes": [
+        {
+          "object": 7,
+          "count": 1,
+          "has_local_resources": true
+        },
+        {
+          "object": 2,
+          "count": 3,
+          "has_local_resources": true
+        }
+      ],
+      "parsed_pages": [
+        {
+          "page": 0,
+          "page_object": 3,
+          "resource_owner_object": 2,
+          "mark_leaf_object": 5,
+          "has_explicit_page_resources": false
+        },
+        {
+          "page": 1,
+          "page_object": 8,
+          "resource_owner_object": 7,
+          "mark_leaf_object": 6,
+          "has_explicit_page_resources": false
+        },
+        {
+          "page": 2,
+          "page_object": 9,
+          "resource_owner_object": 2,
+          "mark_leaf_object": 5,
+          "has_explicit_page_resources": false
+        }
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "id": "resource-inherit-root",
+      "fixture_id": "resource-inheritance-root",
+      "file": "inputs/resource-inheritance-root.pdf",
+      "page": 0,
+      "passed": true,
+      "page_object": 3,
+      "resource_owner_object": 2,
+      "mark_leaf_object": 5,
+      "has_explicit_page_resources": false
+    },
+    {
+      "id": "resource-explicit-page",
+      "fixture_id": "resource-inheritance-explicit",
+      "file": "inputs/resource-inheritance-explicit.pdf",
+      "page": 0,
+      "passed": true,
+      "page_object": 3,
+      "resource_owner_object": 3,
+      "mark_leaf_object": 6,
+      "has_explicit_page_resources": true
+    },
+    {
+      "id": "resource-sibling-root-before",
+      "fixture_id": "resource-inheritance-siblings",
+      "file": "inputs/resource-inheritance-siblings.pdf",
+      "page": 0,
+      "passed": true,
+      "page_object": 3,
+      "resource_owner_object": 2,
+      "mark_leaf_object": 5,
+      "has_explicit_page_resources": false
+    },
+    {
+      "id": "resource-nearest-ancestor",
+      "fixture_id": "resource-inheritance-siblings",
+      "file": "inputs/resource-inheritance-siblings.pdf",
+      "page": 1,
+      "passed": true,
+      "page_object": 8,
+      "resource_owner_object": 7,
+      "mark_leaf_object": 6,
+      "has_explicit_page_resources": false
+    },
+    {
+      "id": "resource-sibling-root-after",
+      "fixture_id": "resource-inheritance-siblings",
+      "file": "inputs/resource-inheritance-siblings.pdf",
+      "page": 2,
+      "passed": true,
+      "page_object": 9,
+      "resource_owner_object": 2,
+      "mark_leaf_object": 5,
+      "has_explicit_page_resources": false
+    }
+  ]
+}

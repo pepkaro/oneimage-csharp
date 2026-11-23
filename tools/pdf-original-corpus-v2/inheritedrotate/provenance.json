@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "slice": "ISO-PAGE-ATTRIBUTE-INHERIT-02",
+  "license": "MIT",
+  "independently_authored": true,
+  "authored_inputs": "Original numeric page tree and uncompressed endpoint rectangle content; rotation/origin transforms declared before capturing",
+  "external_pdf_font_image_fixture_bytes": 0,
+  "private_inputs": 0,
+  "upstream_ids": [],
+  "upstream_executed": 0,
+  "reuse": "Own prior MIT multipage adapters/scoring scaffolding copied read-only into new directory; earlier sources and global ledger untouched",
+  "baseline": {
+    "remote_checkpoint_parent_verified_prefix": "688d99e",
+    "instruction_local_head": "f4a7fe39f28e232654c8ca81c20dd47e9fdd34e5",
+    "instruction_tree": "a3b4932d73af4e3eee35b7d2cea1be11db5585a9"
+  },
+  "toolchain": {
+    "pdfium": "153.0.7999.0",
+    "pypdfium2": "5.13.0",
+    "mupdf": "1.26.11",
+    "pymupdf": "1.26.6",
+    "pdfjs": "6.5.438",
+    "pdfjs_build": "0a4153349",
+    "canvas": "@napi-rs/canvas1.1.1",
+    "node": "24.22.3",
+    "pypdf_structure_parser": "6.21.4",
+    "python": "3.12.14",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "pdfjs_root": "/workspace/scratch/ee1a2fb9052d/pdf-checkpoint-20261123/references/node_modules/pdfjs-dist"
+  },
+  "settings": {
+    "dpis": [
+      72,
+      144
+    ],
+    "background": "white",
+    "annotations": false,
+    "media_box": [
+      10,
+      20,
+      170,
+      120
+    ],
+    "crop_box": [
+      10,
+      20,
+      170,
+      120
+    ],
+    "user_unit": 1
+  },
+  "counts": {
+    "unique_pdfs": 3,
+    "page_views": 5,
+    "engine_render_calls": 30,
+    "retained_capture_paths": 30,
+    "png_byte_unique": 18,
+    "product_runs": 0
+  },
+  "fixtures": [
+    {
+      "id": "rotate-inheritance-root",
+      "file": "inputs/rotate-inheritance-root.pdf",
+      "sha256": "a93575e7dbebd059113d47cd5aff9929b41111f1a18e51655430ace9d0411e21",
+      "page_count": 1
+    },
+    {
+      "id": "rotate-inheritance-explicit",
+      "file": "inputs/rotate-inheritance-explicit.pdf",
+      "sha256": "29dede3832eb9f79636388391155685ae94d18a249ac2bb0069c21e34f060d7c",
+      "page_count": 1
+    },
+    {
+      "id": "rotate-inheritance-siblings",
+      "file": "inputs/rotate-inheritance-siblings.pdf",
+      "sha256": "e45e59df069e49dd20774547b4123681b385cb28bdd7d2e200bf39bf3faadbf5",
+      "page_count": 3
+    }
+  ]
+}

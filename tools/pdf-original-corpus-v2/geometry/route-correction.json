@@ -1,0 +1,16 @@
+{
+  "reason": "pypdfium2 scale is pixels per PDF canvas unit; primary pinned API documentation requires multiplying DPI by user_unit/72. The original declared UserUnit is independently known from the generator.",
+  "pypdfium2": "5.13.0",
+  "api": "PdfPage.render",
+  "initial_fixed_scale_route_outcomes": {
+    "passed": 46,
+    "dimension_mismatch": 2
+  },
+  "additional_native_renders": 2,
+  "resampling": false,
+  "expectations_changed": false,
+  "fixture_pdf_bytes_changed": false,
+  "final_selected_refs": 48,
+  "actual_reference_invocations": 50,
+  "source": "Installed pinned pypdfium2 PdfPage.render docstring, user_unit footnote; ISO 32000-1:2008 Table30 and8.3.2.3."
+}

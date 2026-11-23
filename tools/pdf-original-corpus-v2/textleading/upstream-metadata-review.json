@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "scope": "Metadata-only scene mapping review for ISO-TEXT-LEADING-01; no input/golden bytes read.",
+  "source_metadata": "pdf-lzw-matrix-20261123/coverage-matrix.json",
+  "metadata_sha256": "c1ba989e37fd33a661e82c1a8787d128bb0fd54e316ab9ea4f7b624b14586914",
+  "source_revision": "1f02bc7d908ab301fa2a2babd87226a19311ff38",
+  "source_urls": [
+    "https://pdfium.googlesource.com/pdfium/+/1f02bc7d908ab301fa2a2babd87226a19311ff38/testing/resources/pixel/"
+  ],
+  "snapshot_rows_reviewed": 150,
+  "keyword_topic_candidates": 12,
+  "font_scene_metadata_records_reviewed": [
+    {
+      "id": "pdfium-main:testing/resources/pixel/font_size.in",
+      "issue": 68,
+      "path": "testing/resources/pixel/font_size.in",
+      "input_blob_identity_only": "c4e21e235866f05cb805dcda3ae7ba5c537dcdd1",
+      "behavior_group": "geometric-text-size",
+      "scope_known": false,
+      "route_classification": "no-event-companion-observed",
+      "conclusion": "Unknown full scene intent; no TL/T*/TD or retained-leading assertion established, so no association."
+    },
+    {
+      "id": "pdfium-main:testing/resources/pixel/type3.in",
+      "issue": 69,
+      "path": "testing/resources/pixel/type3.in",
+      "input_blob_identity_only": "705390533e5f8b68301cdda4bbc87f5d3633b8d3",
+      "behavior_group": "type3",
+      "scope_known": false,
+      "route_classification": "no-event-companion-observed",
+      "conclusion": "Unknown full scene intent; no TL/T*/TD or retained-leading assertion established, so no association."
+    },
+    {
+      "id": "pdfium-main:testing/resources/pixel/type3_xobject.in",
+      "issue": 69,
+      "path": "testing/resources/pixel/type3_xobject.in",
+      "input_blob_identity_only": "fb1a82a06cad55d78b23100836893bf29608527b",
+      "behavior_group": "type3",
+      "scope_known": false,
+      "route_classification": "no-event-companion-observed",
+      "conclusion": "Unknown full scene intent; no TL/T*/TD or retained-leading assertion established, so no association."
+    }
+  ],
+  "other_topic_candidates": "Form focus/selection, FreeText and AcroForm scene metadata are different routes; no ordinary static-text leading association established.",
+  "exact_known_matches": 0,
+  "partial_associations_claimed": 0,
+  "upstream_credit": 0,
+  "upstream_fixture_bytes_read": 0,
+  "limitations": [
+    "Only this pinned150-entry snapshot was reviewed, not the full2811-row inventory.",
+    "Metadata names do not prove behavioral assertions, pages, settings or harmlessness of unseen inputs.",
+    "Need a precise independently available official scene/expectation description to establish an exact mapping; do not retrieve fixture bytes in this pass."
+  ]
+}

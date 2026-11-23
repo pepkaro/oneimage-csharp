@@ -1,0 +1,77 @@
+{
+  "command": "pipeline.py references --pdfjs /pinned/pdfjs-dist --output /new/outputdirectory",
+  "exit_code": 0,
+  "reference_runs": 294,
+  "passed": 280,
+  "failed": 14,
+  "skipped": 0,
+  "all294capture_bytes_match_canonical": true,
+  "families": [
+    {
+      "family": "alpha",
+      "runs": 42,
+      "passed": 30,
+      "failed": 12
+    },
+    {
+      "family": "colorkey",
+      "runs": 18,
+      "passed": 18,
+      "failed": 0
+    },
+    {
+      "family": "dash",
+      "runs": 18,
+      "passed": 18,
+      "failed": 0
+    },
+    {
+      "family": "filters",
+      "runs": 18,
+      "passed": 18,
+      "failed": 0
+    },
+    {
+      "family": "geometry",
+      "runs": 48,
+      "passed": 48,
+      "failed": 0
+    },
+    {
+      "family": "images",
+      "runs": 48,
+      "passed": 46,
+      "failed": 2
+    },
+    {
+      "family": "joins",
+      "runs": 18,
+      "passed": 18,
+      "failed": 0
+    },
+    {
+      "family": "predictors",
+      "runs": 24,
+      "passed": 24,
+      "failed": 0
+    },
+    {
+      "family": "resources",
+      "runs": 18,
+      "passed": 18,
+      "failed": 0
+    },
+    {
+      "family": "stroke",
+      "runs": 18,
+      "passed": 18,
+      "failed": 0
+    },
+    {
+      "family": "text",
+      "runs": 24,
+      "passed": 24,
+      "failed": 0
+    }
+  ]
+}

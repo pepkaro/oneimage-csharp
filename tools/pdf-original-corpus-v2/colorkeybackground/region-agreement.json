@@ -1,0 +1,1865 @@
+{
+  "rule": "Exact RGB on independently declared cell interiors inset2pt, frame and paper regions; boundaries unscored",
+  "accepted_fixture_ids": [
+    "img-colorkey-bg-control",
+    "img-colorkey-bg-exact",
+    "img-colorkey-bg-range"
+  ],
+  "held_fixture_ids": [],
+  "rows": [
+    {
+      "id": "img-colorkey-bg-control",
+      "dpi": 72,
+      "analytic": {
+        "pdfium": {
+          "regions": [
+            {
+              "id": "cell-0-0",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-0",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-0",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-0",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-0-1",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-1",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-1",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-1",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-0-2",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-2",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-2",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-2",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "frame",
+              "pixels": 4,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 4948,
+          "wrong": 0,
+          "passed": true
+        },
+        "pdfjs": {
+          "regions": [
+            {
+              "id": "cell-0-0",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-0",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-0",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-0",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-0-1",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-1",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-1",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-1",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-0-2",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-2",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-2",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-2",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "frame",
+              "pixels": 4,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 4948,
+          "wrong": 0,
+          "passed": true
+        },
+        "mupdf": {
+          "regions": [
+            {
+              "id": "cell-0-0",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-0",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-0",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-0",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-0-1",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-1",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-1",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-1",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-0-2",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-2",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-2",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-2",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "frame",
+              "pixels": 4,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 4948,
+          "wrong": 0,
+          "passed": true
+        }
+      },
+      "pairwise": [
+        {
+          "engines": [
+            "pdfium",
+            "pdfjs"
+          ],
+          "pixels": 4948,
+          "different": 0,
+          "max_delta": 0
+        },
+        {
+          "engines": [
+            "pdfium",
+            "mupdf"
+          ],
+          "pixels": 4948,
+          "different": 0,
+          "max_delta": 0
+        },
+        {
+          "engines": [
+            "pdfjs",
+            "mupdf"
+          ],
+          "pixels": 4948,
+          "different": 0,
+          "max_delta": 0
+        }
+      ],
+      "accepted": true
+    },
+    {
+      "id": "img-colorkey-bg-control",
+      "dpi": 144,
+      "analytic": {
+        "pdfium": {
+          "regions": [
+            {
+              "id": "cell-0-0",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-0",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-0",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-0",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-0-1",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-1",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-1",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-1",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-0-2",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-2",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-2",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-2",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "frame",
+              "pixels": 16,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 19792,
+          "wrong": 0,
+          "passed": true
+        },
+        "pdfjs": {
+          "regions": [
+            {
+              "id": "cell-0-0",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-0",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-0",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-0",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-0-1",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-1",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-1",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-1",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-0-2",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-2",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-2",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-2",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "frame",
+              "pixels": 16,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 19792,
+          "wrong": 0,
+          "passed": true
+        },
+        "mupdf": {
+          "regions": [
+            {
+              "id": "cell-0-0",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-0",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-0",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-0",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-0-1",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-1",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-1",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-1",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-0-2",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-2",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-2",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-2",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "frame",
+              "pixels": 16,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 19792,
+          "wrong": 0,
+          "passed": true
+        }
+      },
+      "pairwise": [
+        {
+          "engines": [
+            "pdfium",
+            "pdfjs"
+          ],
+          "pixels": 19792,
+          "different": 0,
+          "max_delta": 0
+        },
+        {
+          "engines": [
+            "pdfium",
+            "mupdf"
+          ],
+          "pixels": 19792,
+          "different": 0,
+          "max_delta": 0
+        },
+        {
+          "engines": [
+            "pdfjs",
+            "mupdf"
+          ],
+          "pixels": 19792,
+          "different": 0,
+          "max_delta": 0
+        }
+      ],
+      "accepted": true
+    },
+    {
+      "id": "img-colorkey-bg-exact",
+      "dpi": 72,
+      "analytic": {
+        "pdfium": {
+          "regions": [
+            {
+              "id": "cell-0-0",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-0",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-0",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-0",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-0-1",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-1",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-1",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-1",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-0-2",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-2",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-2",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-2",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "frame",
+              "pixels": 4,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 4948,
+          "wrong": 0,
+          "passed": true
+        },
+        "pdfjs": {
+          "regions": [
+            {
+              "id": "cell-0-0",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-0",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-0",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-0",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-0-1",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-1",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-1",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-1",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-0-2",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-2",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-2",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-2",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "frame",
+              "pixels": 4,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 4948,
+          "wrong": 0,
+          "passed": true
+        },
+        "mupdf": {
+          "regions": [
+            {
+              "id": "cell-0-0",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-0",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-0",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-0",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-0-1",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-1",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-1",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-1",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-0-2",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-2",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-2",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-2",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "frame",
+              "pixels": 4,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 4948,
+          "wrong": 0,
+          "passed": true
+        }
+      },
+      "pairwise": [
+        {
+          "engines": [
+            "pdfium",
+            "pdfjs"
+          ],
+          "pixels": 4948,
+          "different": 0,
+          "max_delta": 0
+        },
+        {
+          "engines": [
+            "pdfium",
+            "mupdf"
+          ],
+          "pixels": 4948,
+          "different": 0,
+          "max_delta": 0
+        },
+        {
+          "engines": [
+            "pdfjs",
+            "mupdf"
+          ],
+          "pixels": 4948,
+          "different": 0,
+          "max_delta": 0
+        }
+      ],
+      "accepted": true
+    },
+    {
+      "id": "img-colorkey-bg-exact",
+      "dpi": 144,
+      "analytic": {
+        "pdfium": {
+          "regions": [
+            {
+              "id": "cell-0-0",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-0",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-0",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-0",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-0-1",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-1",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-1",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-1",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-0-2",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-2",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-2",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-2",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "frame",
+              "pixels": 16,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 19792,
+          "wrong": 0,
+          "passed": true
+        },
+        "pdfjs": {
+          "regions": [
+            {
+              "id": "cell-0-0",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-0",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-0",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-0",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-0-1",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-1",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-1",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-1",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-0-2",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-2",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-2",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-2",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "frame",
+              "pixels": 16,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 19792,
+          "wrong": 0,
+          "passed": true
+        },
+        "mupdf": {
+          "regions": [
+            {
+              "id": "cell-0-0",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-0",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-0",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-0",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-0-1",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-1",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-1",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-1",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-0-2",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-2",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-2",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-2",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "frame",
+              "pixels": 16,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 19792,
+          "wrong": 0,
+          "passed": true
+        }
+      },
+      "pairwise": [
+        {
+          "engines": [
+            "pdfium",
+            "pdfjs"
+          ],
+          "pixels": 19792,
+          "different": 0,
+          "max_delta": 0
+        },
+        {
+          "engines": [
+            "pdfium",
+            "mupdf"
+          ],
+          "pixels": 19792,
+          "different": 0,
+          "max_delta": 0
+        },
+        {
+          "engines": [
+            "pdfjs",
+            "mupdf"
+          ],
+          "pixels": 19792,
+          "different": 0,
+          "max_delta": 0
+        }
+      ],
+      "accepted": true
+    },
+    {
+      "id": "img-colorkey-bg-range",
+      "dpi": 72,
+      "analytic": {
+        "pdfium": {
+          "regions": [
+            {
+              "id": "cell-0-0",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-0",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-0",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-0",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-0-1",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-1",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-1",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-1",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-0-2",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-2",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-2",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-2",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "frame",
+              "pixels": 4,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 4948,
+          "wrong": 0,
+          "passed": true
+        },
+        "pdfjs": {
+          "regions": [
+            {
+              "id": "cell-0-0",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-0",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-0",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-0",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-0-1",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-1",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-1",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-1",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-0-2",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-2",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-2",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-2",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "frame",
+              "pixels": 4,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 4948,
+          "wrong": 0,
+          "passed": true
+        },
+        "mupdf": {
+          "regions": [
+            {
+              "id": "cell-0-0",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-0",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-0",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-0",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-0-1",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-1",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-1",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-1",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-0-2",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-2",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-2",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-2",
+              "pixels": 400,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "frame",
+              "pixels": 4,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 144,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 4948,
+          "wrong": 0,
+          "passed": true
+        }
+      },
+      "pairwise": [
+        {
+          "engines": [
+            "pdfium",
+            "pdfjs"
+          ],
+          "pixels": 4948,
+          "different": 0,
+          "max_delta": 0
+        },
+        {
+          "engines": [
+            "pdfium",
+            "mupdf"
+          ],
+          "pixels": 4948,
+          "different": 0,
+          "max_delta": 0
+        },
+        {
+          "engines": [
+            "pdfjs",
+            "mupdf"
+          ],
+          "pixels": 4948,
+          "different": 0,
+          "max_delta": 0
+        }
+      ],
+      "accepted": true
+    },
+    {
+      "id": "img-colorkey-bg-range",
+      "dpi": 144,
+      "analytic": {
+        "pdfium": {
+          "regions": [
+            {
+              "id": "cell-0-0",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-0",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-0",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-0",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-0-1",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-1",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-1",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-1",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-0-2",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-2",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-2",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-2",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "frame",
+              "pixels": 16,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 19792,
+          "wrong": 0,
+          "passed": true
+        },
+        "pdfjs": {
+          "regions": [
+            {
+              "id": "cell-0-0",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-0",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-0",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-0",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-0-1",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-1",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-1",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-1",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-0-2",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-2",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-2",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-2",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "frame",
+              "pixels": 16,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 19792,
+          "wrong": 0,
+          "passed": true
+        },
+        "mupdf": {
+          "regions": [
+            {
+              "id": "cell-0-0",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-0",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-0",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-0",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-0-1",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-1",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-1",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-1",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-0-2",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-1-2",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-2-2",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "cell-3-2",
+              "pixels": 1600,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "frame",
+              "pixels": 16,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper",
+              "pixels": 576,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 19792,
+          "wrong": 0,
+          "passed": true
+        }
+      },
+      "pairwise": [
+        {
+          "engines": [
+            "pdfium",
+            "pdfjs"
+          ],
+          "pixels": 19792,
+          "different": 0,
+          "max_delta": 0
+        },
+        {
+          "engines": [
+            "pdfium",
+            "mupdf"
+          ],
+          "pixels": 19792,
+          "different": 0,
+          "max_delta": 0
+        },
+        {
+          "engines": [
+            "pdfjs",
+            "mupdf"
+          ],
+          "pixels": 19792,
+          "different": 0,
+          "max_delta": 0
+        }
+      ],
+      "accepted": true
+    }
+  ]
+}

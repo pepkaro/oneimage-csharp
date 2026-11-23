@@ -1,0 +1,2618 @@
+{
+  "unique_pdfs": 3,
+  "page_views": 3,
+  "reference_runs": 18,
+  "passed": 18,
+  "failed": 0,
+  "skipped": 0,
+  "sample_checks": 144,
+  "sample_passes": 144,
+  "rows": [
+    {
+      "id": "boxes-direct-control",
+      "fixture_id": "boxes-direct-control",
+      "page": 0,
+      "dpi": 72,
+      "engine": "pdfium",
+      "file": "references/boxes-direct-control-72-pdfium.png",
+      "input_sha256": "ca7bb11f0af2ab0ead6679024211868eb9e1eea29aa1a99c45b9b39e791fbed0",
+      "exit_code": 0,
+      "checks": [
+        {
+          "id": "blue-cropped-bottom",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "red-origin-marker",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "green-upper-marker",
+          "expected": [
+            0,
+            255,
+            0
+          ],
+          "actual": [
+            0,
+            255,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "yellow-clipped-right",
+          "expected": [
+            255,
+            255,
+            0
+          ],
+          "actual": [
+            255,
+            255,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-upper-left",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-center",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-right",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-upper-center",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ],
+      "renderer_metadata": {
+        "engine": "PDFium",
+        "version": "153.0.7999.0",
+        "binding": "5.13.0",
+        "dpi": 72.0,
+        "page": 0,
+        "annotations": "none",
+        "background": "white",
+        "page_bounds": "visibleCropBox",
+        "rotation": 0,
+        "user_unit": 1
+      },
+      "sha256": "943efdca328f61af86a815c2b72973f4d23ed459e82ad22695267fdd5185b078",
+      "dimensions": [
+        160,
+        120
+      ],
+      "dimensions_match": true,
+      "status": "passed"
+    },
+    {
+      "id": "boxes-direct-control",
+      "fixture_id": "boxes-direct-control",
+      "page": 0,
+      "dpi": 72,
+      "engine": "mupdf",
+      "file": "references/boxes-direct-control-72-mupdf.png",
+      "input_sha256": "ca7bb11f0af2ab0ead6679024211868eb9e1eea29aa1a99c45b9b39e791fbed0",
+      "exit_code": 0,
+      "checks": [
+        {
+          "id": "blue-cropped-bottom",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "red-origin-marker",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "green-upper-marker",
+          "expected": [
+            0,
+            255,
+            0
+          ],
+          "actual": [
+            0,
+            255,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "yellow-clipped-right",
+          "expected": [
+            255,
+            255,
+            0
+          ],
+          "actual": [
+            255,
+            255,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-upper-left",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-center",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-right",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-upper-center",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ],
+      "renderer_metadata": {
+        "engine": "MuPDF",
+        "version": "1.26.11",
+        "binding": "1.26.6",
+        "dpi": 72.0,
+        "page": 0,
+        "annotations": "none",
+        "background": "white",
+        "page_bounds": "visibleCropBox",
+        "rotation": 0,
+        "user_unit": 1
+      },
+      "sha256": "82b9fd6afbdfc249fa842613144b27a02cfc844931fc1f0b8fd79e8b1dc49938",
+      "dimensions": [
+        160,
+        120
+      ],
+      "dimensions_match": true,
+      "status": "passed"
+    },
+    {
+      "id": "boxes-direct-control",
+      "fixture_id": "boxes-direct-control",
+      "page": 0,
+      "dpi": 72,
+      "engine": "pdfjs",
+      "file": "references/boxes-direct-control-72-pdfjs.png",
+      "input_sha256": "ca7bb11f0af2ab0ead6679024211868eb9e1eea29aa1a99c45b9b39e791fbed0",
+      "exit_code": 0,
+      "checks": [
+        {
+          "id": "blue-cropped-bottom",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "red-origin-marker",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "green-upper-marker",
+          "expected": [
+            0,
+            255,
+            0
+          ],
+          "actual": [
+            0,
+            255,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "yellow-clipped-right",
+          "expected": [
+            255,
+            255,
+            0
+          ],
+          "actual": [
+            255,
+            255,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-upper-left",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-center",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-right",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-upper-center",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ],
+      "renderer_metadata": {
+        "engine": "PDF.js",
+        "version": "6.5.438",
+        "build": "0a4153349",
+        "canvas": "1.1.1",
+        "node": "v24.22.3",
+        "width": 160,
+        "height": 120,
+        "dpi": 72,
+        "page": 0,
+        "background": "white",
+        "annotations": "none",
+        "page_bounds": "visibleCropBox",
+        "rotation": 0,
+        "user_unit": 1,
+        "backend": "Node Canvas, not native browser"
+      },
+      "sha256": "272d7a93a92da536801c7d903f785a1ac00dbe08b842e3ab7c17847a55c81a2d",
+      "dimensions": [
+        160,
+        120
+      ],
+      "dimensions_match": true,
+      "status": "passed"
+    },
+    {
+      "id": "boxes-direct-control",
+      "fixture_id": "boxes-direct-control",
+      "page": 0,
+      "dpi": 144,
+      "engine": "pdfium",
+      "file": "references/boxes-direct-control-144-pdfium.png",
+      "input_sha256": "ca7bb11f0af2ab0ead6679024211868eb9e1eea29aa1a99c45b9b39e791fbed0",
+      "exit_code": 0,
+      "checks": [
+        {
+          "id": "blue-cropped-bottom",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "red-origin-marker",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "green-upper-marker",
+          "expected": [
+            0,
+            255,
+            0
+          ],
+          "actual": [
+            0,
+            255,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "yellow-clipped-right",
+          "expected": [
+            255,
+            255,
+            0
+          ],
+          "actual": [
+            255,
+            255,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-upper-left",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-center",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-right",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-upper-center",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ],
+      "renderer_metadata": {
+        "engine": "PDFium",
+        "version": "153.0.7999.0",
+        "binding": "5.13.0",
+        "dpi": 144.0,
+        "page": 0,
+        "annotations": "none",
+        "background": "white",
+        "page_bounds": "visibleCropBox",
+        "rotation": 0,
+        "user_unit": 1
+      },
+      "sha256": "e6f302f2c9cc40b91c663f6b2ce41f7d51c8cb04c3c7366d606eda8301e53f72",
+      "dimensions": [
+        320,
+        240
+      ],
+      "dimensions_match": true,
+      "status": "passed"
+    },
+    {
+      "id": "boxes-direct-control",
+      "fixture_id": "boxes-direct-control",
+      "page": 0,
+      "dpi": 144,
+      "engine": "mupdf",
+      "file": "references/boxes-direct-control-144-mupdf.png",
+      "input_sha256": "ca7bb11f0af2ab0ead6679024211868eb9e1eea29aa1a99c45b9b39e791fbed0",
+      "exit_code": 0,
+      "checks": [
+        {
+          "id": "blue-cropped-bottom",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "red-origin-marker",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "green-upper-marker",
+          "expected": [
+            0,
+            255,
+            0
+          ],
+          "actual": [
+            0,
+            255,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "yellow-clipped-right",
+          "expected": [
+            255,
+            255,
+            0
+          ],
+          "actual": [
+            255,
+            255,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-upper-left",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-center",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-right",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-upper-center",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ],
+      "renderer_metadata": {
+        "engine": "MuPDF",
+        "version": "1.26.11",
+        "binding": "1.26.6",
+        "dpi": 144.0,
+        "page": 0,
+        "annotations": "none",
+        "background": "white",
+        "page_bounds": "visibleCropBox",
+        "rotation": 0,
+        "user_unit": 1
+      },
+      "sha256": "189e88746977517d001c841d9899f9393ed46dcd5041d54fc3f911a0abf6d46f",
+      "dimensions": [
+        320,
+        240
+      ],
+      "dimensions_match": true,
+      "status": "passed"
+    },
+    {
+      "id": "boxes-direct-control",
+      "fixture_id": "boxes-direct-control",
+      "page": 0,
+      "dpi": 144,
+      "engine": "pdfjs",
+      "file": "references/boxes-direct-control-144-pdfjs.png",
+      "input_sha256": "ca7bb11f0af2ab0ead6679024211868eb9e1eea29aa1a99c45b9b39e791fbed0",
+      "exit_code": 0,
+      "checks": [
+        {
+          "id": "blue-cropped-bottom",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "red-origin-marker",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "green-upper-marker",
+          "expected": [
+            0,
+            255,
+            0
+          ],
+          "actual": [
+            0,
+            255,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "yellow-clipped-right",
+          "expected": [
+            255,
+            255,
+            0
+          ],
+          "actual": [
+            255,
+            255,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-upper-left",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-center",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-right",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-upper-center",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ],
+      "renderer_metadata": {
+        "engine": "PDF.js",
+        "version": "6.5.438",
+        "build": "0a4153349",
+        "canvas": "1.1.1",
+        "node": "v24.22.3",
+        "width": 320,
+        "height": 240,
+        "dpi": 144,
+        "page": 0,
+        "background": "white",
+        "annotations": "none",
+        "page_bounds": "visibleCropBox",
+        "rotation": 0,
+        "user_unit": 1,
+        "backend": "Node Canvas, not native browser"
+      },
+      "sha256": "2dc8ca5110862dedb72370085cdec04208f16aa76abcd95787381ae6c557d689",
+      "dimensions": [
+        320,
+        240
+      ],
+      "dimensions_match": true,
+      "status": "passed"
+    },
+    {
+      "id": "boxes-indirect-arrays",
+      "fixture_id": "boxes-indirect-arrays",
+      "page": 0,
+      "dpi": 72,
+      "engine": "pdfium",
+      "file": "references/boxes-indirect-arrays-72-pdfium.png",
+      "input_sha256": "f2c52860299854fc1fd6ecddff89d186246384ae01cbc0a01db5ee4ae786e704",
+      "exit_code": 0,
+      "checks": [
+        {
+          "id": "blue-cropped-bottom",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "red-origin-marker",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "green-upper-marker",
+          "expected": [
+            0,
+            255,
+            0
+          ],
+          "actual": [
+            0,
+            255,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "yellow-clipped-right",
+          "expected": [
+            255,
+            255,
+            0
+          ],
+          "actual": [
+            255,
+            255,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-upper-left",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-center",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-right",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-upper-center",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ],
+      "renderer_metadata": {
+        "engine": "PDFium",
+        "version": "153.0.7999.0",
+        "binding": "5.13.0",
+        "dpi": 72.0,
+        "page": 0,
+        "annotations": "none",
+        "background": "white",
+        "page_bounds": "visibleCropBox",
+        "rotation": 0,
+        "user_unit": 1
+      },
+      "sha256": "943efdca328f61af86a815c2b72973f4d23ed459e82ad22695267fdd5185b078",
+      "dimensions": [
+        160,
+        120
+      ],
+      "dimensions_match": true,
+      "status": "passed"
+    },
+    {
+      "id": "boxes-indirect-arrays",
+      "fixture_id": "boxes-indirect-arrays",
+      "page": 0,
+      "dpi": 72,
+      "engine": "mupdf",
+      "file": "references/boxes-indirect-arrays-72-mupdf.png",
+      "input_sha256": "f2c52860299854fc1fd6ecddff89d186246384ae01cbc0a01db5ee4ae786e704",
+      "exit_code": 0,
+      "checks": [
+        {
+          "id": "blue-cropped-bottom",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "red-origin-marker",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "green-upper-marker",
+          "expected": [
+            0,
+            255,
+            0
+          ],
+          "actual": [
+            0,
+            255,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "yellow-clipped-right",
+          "expected": [
+            255,
+            255,
+            0
+          ],
+          "actual": [
+            255,
+            255,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-upper-left",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-center",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-right",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-upper-center",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ],
+      "renderer_metadata": {
+        "engine": "MuPDF",
+        "version": "1.26.11",
+        "binding": "1.26.6",
+        "dpi": 72.0,
+        "page": 0,
+        "annotations": "none",
+        "background": "white",
+        "page_bounds": "visibleCropBox",
+        "rotation": 0,
+        "user_unit": 1
+      },
+      "sha256": "82b9fd6afbdfc249fa842613144b27a02cfc844931fc1f0b8fd79e8b1dc49938",
+      "dimensions": [
+        160,
+        120
+      ],
+      "dimensions_match": true,
+      "status": "passed"
+    },
+    {
+      "id": "boxes-indirect-arrays",
+      "fixture_id": "boxes-indirect-arrays",
+      "page": 0,
+      "dpi": 72,
+      "engine": "pdfjs",
+      "file": "references/boxes-indirect-arrays-72-pdfjs.png",
+      "input_sha256": "f2c52860299854fc1fd6ecddff89d186246384ae01cbc0a01db5ee4ae786e704",
+      "exit_code": 0,
+      "checks": [
+        {
+          "id": "blue-cropped-bottom",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "red-origin-marker",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "green-upper-marker",
+          "expected": [
+            0,
+            255,
+            0
+          ],
+          "actual": [
+            0,
+            255,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "yellow-clipped-right",
+          "expected": [
+            255,
+            255,
+            0
+          ],
+          "actual": [
+            255,
+            255,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-upper-left",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-center",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-right",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-upper-center",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ],
+      "renderer_metadata": {
+        "engine": "PDF.js",
+        "version": "6.5.438",
+        "build": "0a4153349",
+        "canvas": "1.1.1",
+        "node": "v24.22.3",
+        "width": 160,
+        "height": 120,
+        "dpi": 72,
+        "page": 0,
+        "background": "white",
+        "annotations": "none",
+        "page_bounds": "visibleCropBox",
+        "rotation": 0,
+        "user_unit": 1,
+        "backend": "Node Canvas, not native browser"
+      },
+      "sha256": "272d7a93a92da536801c7d903f785a1ac00dbe08b842e3ab7c17847a55c81a2d",
+      "dimensions": [
+        160,
+        120
+      ],
+      "dimensions_match": true,
+      "status": "passed"
+    },
+    {
+      "id": "boxes-indirect-arrays",
+      "fixture_id": "boxes-indirect-arrays",
+      "page": 0,
+      "dpi": 144,
+      "engine": "pdfium",
+      "file": "references/boxes-indirect-arrays-144-pdfium.png",
+      "input_sha256": "f2c52860299854fc1fd6ecddff89d186246384ae01cbc0a01db5ee4ae786e704",
+      "exit_code": 0,
+      "checks": [
+        {
+          "id": "blue-cropped-bottom",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "red-origin-marker",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "green-upper-marker",
+          "expected": [
+            0,
+            255,
+            0
+          ],
+          "actual": [
+            0,
+            255,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "yellow-clipped-right",
+          "expected": [
+            255,
+            255,
+            0
+          ],
+          "actual": [
+            255,
+            255,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-upper-left",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-center",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-right",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-upper-center",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ],
+      "renderer_metadata": {
+        "engine": "PDFium",
+        "version": "153.0.7999.0",
+        "binding": "5.13.0",
+        "dpi": 144.0,
+        "page": 0,
+        "annotations": "none",
+        "background": "white",
+        "page_bounds": "visibleCropBox",
+        "rotation": 0,
+        "user_unit": 1
+      },
+      "sha256": "e6f302f2c9cc40b91c663f6b2ce41f7d51c8cb04c3c7366d606eda8301e53f72",
+      "dimensions": [
+        320,
+        240
+      ],
+      "dimensions_match": true,
+      "status": "passed"
+    },
+    {
+      "id": "boxes-indirect-arrays",
+      "fixture_id": "boxes-indirect-arrays",
+      "page": 0,
+      "dpi": 144,
+      "engine": "mupdf",
+      "file": "references/boxes-indirect-arrays-144-mupdf.png",
+      "input_sha256": "f2c52860299854fc1fd6ecddff89d186246384ae01cbc0a01db5ee4ae786e704",
+      "exit_code": 0,
+      "checks": [
+        {
+          "id": "blue-cropped-bottom",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "red-origin-marker",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "green-upper-marker",
+          "expected": [
+            0,
+            255,
+            0
+          ],
+          "actual": [
+            0,
+            255,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "yellow-clipped-right",
+          "expected": [
+            255,
+            255,
+            0
+          ],
+          "actual": [
+            255,
+            255,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-upper-left",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-center",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-right",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-upper-center",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ],
+      "renderer_metadata": {
+        "engine": "MuPDF",
+        "version": "1.26.11",
+        "binding": "1.26.6",
+        "dpi": 144.0,
+        "page": 0,
+        "annotations": "none",
+        "background": "white",
+        "page_bounds": "visibleCropBox",
+        "rotation": 0,
+        "user_unit": 1
+      },
+      "sha256": "189e88746977517d001c841d9899f9393ed46dcd5041d54fc3f911a0abf6d46f",
+      "dimensions": [
+        320,
+        240
+      ],
+      "dimensions_match": true,
+      "status": "passed"
+    },
+    {
+      "id": "boxes-indirect-arrays",
+      "fixture_id": "boxes-indirect-arrays",
+      "page": 0,
+      "dpi": 144,
+      "engine": "pdfjs",
+      "file": "references/boxes-indirect-arrays-144-pdfjs.png",
+      "input_sha256": "f2c52860299854fc1fd6ecddff89d186246384ae01cbc0a01db5ee4ae786e704",
+      "exit_code": 0,
+      "checks": [
+        {
+          "id": "blue-cropped-bottom",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "red-origin-marker",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "green-upper-marker",
+          "expected": [
+            0,
+            255,
+            0
+          ],
+          "actual": [
+            0,
+            255,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "yellow-clipped-right",
+          "expected": [
+            255,
+            255,
+            0
+          ],
+          "actual": [
+            255,
+            255,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-upper-left",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-center",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-right",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-upper-center",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ],
+      "renderer_metadata": {
+        "engine": "PDF.js",
+        "version": "6.5.438",
+        "build": "0a4153349",
+        "canvas": "1.1.1",
+        "node": "v24.22.3",
+        "width": 320,
+        "height": 240,
+        "dpi": 144,
+        "page": 0,
+        "background": "white",
+        "annotations": "none",
+        "page_bounds": "visibleCropBox",
+        "rotation": 0,
+        "user_unit": 1,
+        "backend": "Node Canvas, not native browser"
+      },
+      "sha256": "2dc8ca5110862dedb72370085cdec04208f16aa76abcd95787381ae6c557d689",
+      "dimensions": [
+        320,
+        240
+      ],
+      "dimensions_match": true,
+      "status": "passed"
+    },
+    {
+      "id": "boxes-indirect-coordinates",
+      "fixture_id": "boxes-indirect-coordinates",
+      "page": 0,
+      "dpi": 72,
+      "engine": "pdfium",
+      "file": "references/boxes-indirect-coordinates-72-pdfium.png",
+      "input_sha256": "efce3a0a526cfee20e47ca82a2907397c98be571b9445fa891361912fd33a87f",
+      "exit_code": 0,
+      "checks": [
+        {
+          "id": "blue-cropped-bottom",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "red-origin-marker",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "green-upper-marker",
+          "expected": [
+            0,
+            255,
+            0
+          ],
+          "actual": [
+            0,
+            255,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "yellow-clipped-right",
+          "expected": [
+            255,
+            255,
+            0
+          ],
+          "actual": [
+            255,
+            255,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-upper-left",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-center",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-right",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-upper-center",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ],
+      "renderer_metadata": {
+        "engine": "PDFium",
+        "version": "153.0.7999.0",
+        "binding": "5.13.0",
+        "dpi": 72.0,
+        "page": 0,
+        "annotations": "none",
+        "background": "white",
+        "page_bounds": "visibleCropBox",
+        "rotation": 0,
+        "user_unit": 1
+      },
+      "sha256": "943efdca328f61af86a815c2b72973f4d23ed459e82ad22695267fdd5185b078",
+      "dimensions": [
+        160,
+        120
+      ],
+      "dimensions_match": true,
+      "status": "passed"
+    },
+    {
+      "id": "boxes-indirect-coordinates",
+      "fixture_id": "boxes-indirect-coordinates",
+      "page": 0,
+      "dpi": 72,
+      "engine": "mupdf",
+      "file": "references/boxes-indirect-coordinates-72-mupdf.png",
+      "input_sha256": "efce3a0a526cfee20e47ca82a2907397c98be571b9445fa891361912fd33a87f",
+      "exit_code": 0,
+      "checks": [
+        {
+          "id": "blue-cropped-bottom",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "red-origin-marker",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "green-upper-marker",
+          "expected": [
+            0,
+            255,
+            0
+          ],
+          "actual": [
+            0,
+            255,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "yellow-clipped-right",
+          "expected": [
+            255,
+            255,
+            0
+          ],
+          "actual": [
+            255,
+            255,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-upper-left",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-center",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-right",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-upper-center",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ],
+      "renderer_metadata": {
+        "engine": "MuPDF",
+        "version": "1.26.11",
+        "binding": "1.26.6",
+        "dpi": 72.0,
+        "page": 0,
+        "annotations": "none",
+        "background": "white",
+        "page_bounds": "visibleCropBox",
+        "rotation": 0,
+        "user_unit": 1
+      },
+      "sha256": "82b9fd6afbdfc249fa842613144b27a02cfc844931fc1f0b8fd79e8b1dc49938",
+      "dimensions": [
+        160,
+        120
+      ],
+      "dimensions_match": true,
+      "status": "passed"
+    },
+    {
+      "id": "boxes-indirect-coordinates",
+      "fixture_id": "boxes-indirect-coordinates",
+      "page": 0,
+      "dpi": 72,
+      "engine": "pdfjs",
+      "file": "references/boxes-indirect-coordinates-72-pdfjs.png",
+      "input_sha256": "efce3a0a526cfee20e47ca82a2907397c98be571b9445fa891361912fd33a87f",
+      "exit_code": 0,
+      "checks": [
+        {
+          "id": "blue-cropped-bottom",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "red-origin-marker",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "green-upper-marker",
+          "expected": [
+            0,
+            255,
+            0
+          ],
+          "actual": [
+            0,
+            255,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "yellow-clipped-right",
+          "expected": [
+            255,
+            255,
+            0
+          ],
+          "actual": [
+            255,
+            255,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-upper-left",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-center",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-right",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-upper-center",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ],
+      "renderer_metadata": {
+        "engine": "PDF.js",
+        "version": "6.5.438",
+        "build": "0a4153349",
+        "canvas": "1.1.1",
+        "node": "v24.22.3",
+        "width": 160,
+        "height": 120,
+        "dpi": 72,
+        "page": 0,
+        "background": "white",
+        "annotations": "none",
+        "page_bounds": "visibleCropBox",
+        "rotation": 0,
+        "user_unit": 1,
+        "backend": "Node Canvas, not native browser"
+      },
+      "sha256": "272d7a93a92da536801c7d903f785a1ac00dbe08b842e3ab7c17847a55c81a2d",
+      "dimensions": [
+        160,
+        120
+      ],
+      "dimensions_match": true,
+      "status": "passed"
+    },
+    {
+      "id": "boxes-indirect-coordinates",
+      "fixture_id": "boxes-indirect-coordinates",
+      "page": 0,
+      "dpi": 144,
+      "engine": "pdfium",
+      "file": "references/boxes-indirect-coordinates-144-pdfium.png",
+      "input_sha256": "efce3a0a526cfee20e47ca82a2907397c98be571b9445fa891361912fd33a87f",
+      "exit_code": 0,
+      "checks": [
+        {
+          "id": "blue-cropped-bottom",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "red-origin-marker",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "green-upper-marker",
+          "expected": [
+            0,
+            255,
+            0
+          ],
+          "actual": [
+            0,
+            255,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "yellow-clipped-right",
+          "expected": [
+            255,
+            255,
+            0
+          ],
+          "actual": [
+            255,
+            255,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-upper-left",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-center",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-right",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-upper-center",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ],
+      "renderer_metadata": {
+        "engine": "PDFium",
+        "version": "153.0.7999.0",
+        "binding": "5.13.0",
+        "dpi": 144.0,
+        "page": 0,
+        "annotations": "none",
+        "background": "white",
+        "page_bounds": "visibleCropBox",
+        "rotation": 0,
+        "user_unit": 1
+      },
+      "sha256": "e6f302f2c9cc40b91c663f6b2ce41f7d51c8cb04c3c7366d606eda8301e53f72",
+      "dimensions": [
+        320,
+        240
+      ],
+      "dimensions_match": true,
+      "status": "passed"
+    },
+    {
+      "id": "boxes-indirect-coordinates",
+      "fixture_id": "boxes-indirect-coordinates",
+      "page": 0,
+      "dpi": 144,
+      "engine": "mupdf",
+      "file": "references/boxes-indirect-coordinates-144-mupdf.png",
+      "input_sha256": "efce3a0a526cfee20e47ca82a2907397c98be571b9445fa891361912fd33a87f",
+      "exit_code": 0,
+      "checks": [
+        {
+          "id": "blue-cropped-bottom",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "red-origin-marker",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "green-upper-marker",
+          "expected": [
+            0,
+            255,
+            0
+          ],
+          "actual": [
+            0,
+            255,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "yellow-clipped-right",
+          "expected": [
+            255,
+            255,
+            0
+          ],
+          "actual": [
+            255,
+            255,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-upper-left",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-center",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-right",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-upper-center",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ],
+      "renderer_metadata": {
+        "engine": "MuPDF",
+        "version": "1.26.11",
+        "binding": "1.26.6",
+        "dpi": 144.0,
+        "page": 0,
+        "annotations": "none",
+        "background": "white",
+        "page_bounds": "visibleCropBox",
+        "rotation": 0,
+        "user_unit": 1
+      },
+      "sha256": "189e88746977517d001c841d9899f9393ed46dcd5041d54fc3f911a0abf6d46f",
+      "dimensions": [
+        320,
+        240
+      ],
+      "dimensions_match": true,
+      "status": "passed"
+    },
+    {
+      "id": "boxes-indirect-coordinates",
+      "fixture_id": "boxes-indirect-coordinates",
+      "page": 0,
+      "dpi": 144,
+      "engine": "pdfjs",
+      "file": "references/boxes-indirect-coordinates-144-pdfjs.png",
+      "input_sha256": "efce3a0a526cfee20e47ca82a2907397c98be571b9445fa891361912fd33a87f",
+      "exit_code": 0,
+      "checks": [
+        {
+          "id": "blue-cropped-bottom",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "red-origin-marker",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "green-upper-marker",
+          "expected": [
+            0,
+            255,
+            0
+          ],
+          "actual": [
+            0,
+            255,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "yellow-clipped-right",
+          "expected": [
+            255,
+            255,
+            0
+          ],
+          "actual": [
+            255,
+            255,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-upper-left",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-center",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-right",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-upper-center",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ],
+      "renderer_metadata": {
+        "engine": "PDF.js",
+        "version": "6.5.438",
+        "build": "0a4153349",
+        "canvas": "1.1.1",
+        "node": "v24.22.3",
+        "width": 320,
+        "height": 240,
+        "dpi": 144,
+        "page": 0,
+        "background": "white",
+        "annotations": "none",
+        "page_bounds": "visibleCropBox",
+        "rotation": 0,
+        "user_unit": 1,
+        "backend": "Node Canvas, not native browser"
+      },
+      "sha256": "2dc8ca5110862dedb72370085cdec04208f16aa76abcd95787381ae6c557d689",
+      "dimensions": [
+        320,
+        240
+      ],
+      "dimensions_match": true,
+      "status": "passed"
+    }
+  ],
+  "upstream_inputs_executed": 0,
+  "upstream_credited": 0
+}

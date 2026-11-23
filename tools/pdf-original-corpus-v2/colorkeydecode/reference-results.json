@@ -1,0 +1,5325 @@
+{
+  "fixture_count": 4,
+  "unique_pdfs": 4,
+  "reference_runs": 24,
+  "passed": 16,
+  "failed": 8,
+  "skipped": 0,
+  "unscored_edge_regions": "All inter-cell and outer image boundaries; only declared cell centers/background are scored.",
+  "rows": [
+    {
+      "id": "img-colorkey-decode-opaque",
+      "dpi": 72,
+      "engine": "pdfium",
+      "file": "references/img-colorkey-decode-opaque-72-pdfium.png",
+      "sha256": "1efbd489b743d7695c7b872b9c62f3110ebfc9c3c8fe5d946267abcc82420678",
+      "sample_count": 14,
+      "status": "failed",
+      "checks": [
+        {
+          "id": "cell-0-0",
+          "expected": [
+            215,
+            165,
+            115
+          ],
+          "actual": [
+            215,
+            165,
+            114
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-1-0",
+          "expected": [
+            40,
+            90,
+            140
+          ],
+          "actual": [
+            39,
+            89,
+            139
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-2-0",
+          "expected": [
+            185,
+            135,
+            85
+          ],
+          "actual": [
+            185,
+            134,
+            84
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-3-0",
+          "expected": [
+            70,
+            120,
+            170
+          ],
+          "actual": [
+            69,
+            119,
+            169
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-0-1",
+          "expected": [
+            216,
+            165,
+            115
+          ],
+          "actual": [
+            216,
+            165,
+            114
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-1-1",
+          "expected": [
+            184,
+            135,
+            85
+          ],
+          "actual": [
+            183,
+            134,
+            84
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-2-1",
+          "expected": [
+            215,
+            166,
+            115
+          ],
+          "actual": [
+            215,
+            165,
+            114
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-3-1",
+          "expected": [
+            185,
+            134,
+            85
+          ],
+          "actual": [
+            185,
+            133,
+            84
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-0-2",
+          "expected": [
+            215,
+            165,
+            116
+          ],
+          "actual": [
+            215,
+            165,
+            115
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-1-2",
+          "expected": [
+            185,
+            135,
+            84
+          ],
+          "actual": [
+            185,
+            134,
+            83
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-2-2",
+          "expected": [
+            200,
+            150,
+            100
+          ],
+          "actual": [
+            199,
+            149,
+            99
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-3-2",
+          "expected": [
+            55,
+            105,
+            155
+          ],
+          "actual": [
+            54,
+            104,
+            154
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "frame",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-opaque",
+      "dpi": 72,
+      "engine": "mupdf",
+      "file": "references/img-colorkey-decode-opaque-72-mupdf.png",
+      "sha256": "6a2311dffad199c4180cd8b9d322b1176a153f86840ea700bceb6c1266c3845b",
+      "sample_count": 14,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "cell-0-0",
+          "expected": [
+            215,
+            165,
+            115
+          ],
+          "actual": [
+            215,
+            165,
+            115
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-0",
+          "expected": [
+            40,
+            90,
+            140
+          ],
+          "actual": [
+            40,
+            90,
+            140
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-0",
+          "expected": [
+            185,
+            135,
+            85
+          ],
+          "actual": [
+            185,
+            135,
+            85
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-0",
+          "expected": [
+            70,
+            120,
+            170
+          ],
+          "actual": [
+            70,
+            120,
+            170
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-0-1",
+          "expected": [
+            216,
+            165,
+            115
+          ],
+          "actual": [
+            216,
+            165,
+            115
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-1",
+          "expected": [
+            184,
+            135,
+            85
+          ],
+          "actual": [
+            184,
+            135,
+            85
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-1",
+          "expected": [
+            215,
+            166,
+            115
+          ],
+          "actual": [
+            215,
+            166,
+            115
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-1",
+          "expected": [
+            185,
+            134,
+            85
+          ],
+          "actual": [
+            185,
+            134,
+            85
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-0-2",
+          "expected": [
+            215,
+            165,
+            116
+          ],
+          "actual": [
+            215,
+            165,
+            116
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-2",
+          "expected": [
+            185,
+            135,
+            84
+          ],
+          "actual": [
+            185,
+            135,
+            84
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-2",
+          "expected": [
+            200,
+            150,
+            100
+          ],
+          "actual": [
+            200,
+            150,
+            100
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-2",
+          "expected": [
+            55,
+            105,
+            155
+          ],
+          "actual": [
+            55,
+            105,
+            155
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "frame",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-opaque",
+      "dpi": 72,
+      "engine": "pdfjs",
+      "file": "references/img-colorkey-decode-opaque-72-pdfjs.png",
+      "sha256": "4b28c7be1691329814e25611042bf8869708e3848fe83caffac473a6feb673c5",
+      "sample_count": 14,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "cell-0-0",
+          "expected": [
+            215,
+            165,
+            115
+          ],
+          "actual": [
+            215,
+            165,
+            115
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-0",
+          "expected": [
+            40,
+            90,
+            140
+          ],
+          "actual": [
+            40,
+            90,
+            140
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-0",
+          "expected": [
+            185,
+            135,
+            85
+          ],
+          "actual": [
+            185,
+            135,
+            85
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-0",
+          "expected": [
+            70,
+            120,
+            170
+          ],
+          "actual": [
+            70,
+            120,
+            170
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-0-1",
+          "expected": [
+            216,
+            165,
+            115
+          ],
+          "actual": [
+            216,
+            165,
+            115
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-1",
+          "expected": [
+            184,
+            135,
+            85
+          ],
+          "actual": [
+            184,
+            135,
+            85
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-1",
+          "expected": [
+            215,
+            166,
+            115
+          ],
+          "actual": [
+            215,
+            166,
+            115
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-1",
+          "expected": [
+            185,
+            134,
+            85
+          ],
+          "actual": [
+            185,
+            134,
+            85
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-0-2",
+          "expected": [
+            215,
+            165,
+            116
+          ],
+          "actual": [
+            215,
+            165,
+            116
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-2",
+          "expected": [
+            185,
+            135,
+            84
+          ],
+          "actual": [
+            185,
+            135,
+            84
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-2",
+          "expected": [
+            200,
+            150,
+            100
+          ],
+          "actual": [
+            200,
+            150,
+            100
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-2",
+          "expected": [
+            55,
+            105,
+            155
+          ],
+          "actual": [
+            55,
+            105,
+            155
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "frame",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-opaque",
+      "dpi": 144,
+      "engine": "pdfium",
+      "file": "references/img-colorkey-decode-opaque-144-pdfium.png",
+      "sha256": "0ac35c88f1d5cbf90d1f820cff66d9a3360d1fcefc14b25bb15e72ee2b3dd2fc",
+      "sample_count": 14,
+      "status": "failed",
+      "checks": [
+        {
+          "id": "cell-0-0",
+          "expected": [
+            215,
+            165,
+            115
+          ],
+          "actual": [
+            215,
+            165,
+            114
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-1-0",
+          "expected": [
+            40,
+            90,
+            140
+          ],
+          "actual": [
+            39,
+            89,
+            139
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-2-0",
+          "expected": [
+            185,
+            135,
+            85
+          ],
+          "actual": [
+            185,
+            134,
+            84
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-3-0",
+          "expected": [
+            70,
+            120,
+            170
+          ],
+          "actual": [
+            69,
+            119,
+            169
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-0-1",
+          "expected": [
+            216,
+            165,
+            115
+          ],
+          "actual": [
+            216,
+            165,
+            114
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-1-1",
+          "expected": [
+            184,
+            135,
+            85
+          ],
+          "actual": [
+            183,
+            134,
+            84
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-2-1",
+          "expected": [
+            215,
+            166,
+            115
+          ],
+          "actual": [
+            215,
+            165,
+            114
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-3-1",
+          "expected": [
+            185,
+            134,
+            85
+          ],
+          "actual": [
+            185,
+            133,
+            84
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-0-2",
+          "expected": [
+            215,
+            165,
+            116
+          ],
+          "actual": [
+            215,
+            165,
+            115
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-1-2",
+          "expected": [
+            185,
+            135,
+            84
+          ],
+          "actual": [
+            185,
+            134,
+            83
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-2-2",
+          "expected": [
+            200,
+            150,
+            100
+          ],
+          "actual": [
+            199,
+            149,
+            99
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-3-2",
+          "expected": [
+            55,
+            105,
+            155
+          ],
+          "actual": [
+            54,
+            104,
+            154
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "frame",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-opaque",
+      "dpi": 144,
+      "engine": "mupdf",
+      "file": "references/img-colorkey-decode-opaque-144-mupdf.png",
+      "sha256": "127fbff67c3c9365b7e06f3322094c719083a11e8ce21ed247c6ffd41dc18d35",
+      "sample_count": 14,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "cell-0-0",
+          "expected": [
+            215,
+            165,
+            115
+          ],
+          "actual": [
+            215,
+            165,
+            115
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-0",
+          "expected": [
+            40,
+            90,
+            140
+          ],
+          "actual": [
+            40,
+            90,
+            140
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-0",
+          "expected": [
+            185,
+            135,
+            85
+          ],
+          "actual": [
+            185,
+            135,
+            85
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-0",
+          "expected": [
+            70,
+            120,
+            170
+          ],
+          "actual": [
+            70,
+            120,
+            170
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-0-1",
+          "expected": [
+            216,
+            165,
+            115
+          ],
+          "actual": [
+            216,
+            165,
+            115
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-1",
+          "expected": [
+            184,
+            135,
+            85
+          ],
+          "actual": [
+            184,
+            135,
+            85
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-1",
+          "expected": [
+            215,
+            166,
+            115
+          ],
+          "actual": [
+            215,
+            166,
+            115
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-1",
+          "expected": [
+            185,
+            134,
+            85
+          ],
+          "actual": [
+            185,
+            134,
+            85
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-0-2",
+          "expected": [
+            215,
+            165,
+            116
+          ],
+          "actual": [
+            215,
+            165,
+            116
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-2",
+          "expected": [
+            185,
+            135,
+            84
+          ],
+          "actual": [
+            185,
+            135,
+            84
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-2",
+          "expected": [
+            200,
+            150,
+            100
+          ],
+          "actual": [
+            200,
+            150,
+            100
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-2",
+          "expected": [
+            55,
+            105,
+            155
+          ],
+          "actual": [
+            55,
+            105,
+            155
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "frame",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-opaque",
+      "dpi": 144,
+      "engine": "pdfjs",
+      "file": "references/img-colorkey-decode-opaque-144-pdfjs.png",
+      "sha256": "2ac56ed055dcbb86d0398b3d5538c336b752d42a32b2d5cf9a0525cc278fc595",
+      "sample_count": 14,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "cell-0-0",
+          "expected": [
+            215,
+            165,
+            115
+          ],
+          "actual": [
+            215,
+            165,
+            115
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-0",
+          "expected": [
+            40,
+            90,
+            140
+          ],
+          "actual": [
+            40,
+            90,
+            140
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-0",
+          "expected": [
+            185,
+            135,
+            85
+          ],
+          "actual": [
+            185,
+            135,
+            85
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-0",
+          "expected": [
+            70,
+            120,
+            170
+          ],
+          "actual": [
+            70,
+            120,
+            170
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-0-1",
+          "expected": [
+            216,
+            165,
+            115
+          ],
+          "actual": [
+            216,
+            165,
+            115
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-1",
+          "expected": [
+            184,
+            135,
+            85
+          ],
+          "actual": [
+            184,
+            135,
+            85
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-1",
+          "expected": [
+            215,
+            166,
+            115
+          ],
+          "actual": [
+            215,
+            166,
+            115
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-1",
+          "expected": [
+            185,
+            134,
+            85
+          ],
+          "actual": [
+            185,
+            134,
+            85
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-0-2",
+          "expected": [
+            215,
+            165,
+            116
+          ],
+          "actual": [
+            215,
+            165,
+            116
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-2",
+          "expected": [
+            185,
+            135,
+            84
+          ],
+          "actual": [
+            185,
+            135,
+            84
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-2",
+          "expected": [
+            200,
+            150,
+            100
+          ],
+          "actual": [
+            200,
+            150,
+            100
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-2",
+          "expected": [
+            55,
+            105,
+            155
+          ],
+          "actual": [
+            55,
+            105,
+            155
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "frame",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-stored-key",
+      "dpi": 72,
+      "engine": "pdfium",
+      "file": "references/img-colorkey-decode-stored-key-72-pdfium.png",
+      "sha256": "39c662b44caef608dbf1655411fe785ea619e7f936e18182d085dce5f6d8065f",
+      "sample_count": 14,
+      "status": "failed",
+      "checks": [
+        {
+          "id": "cell-0-0",
+          "expected": [
+            0,
+            255,
+            0
+          ],
+          "actual": [
+            0,
+            255,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-0",
+          "expected": [
+            40,
+            90,
+            140
+          ],
+          "actual": [
+            39,
+            89,
+            139
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-2-0",
+          "expected": [
+            185,
+            135,
+            85
+          ],
+          "actual": [
+            185,
+            134,
+            84
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-3-0",
+          "expected": [
+            70,
+            120,
+            170
+          ],
+          "actual": [
+            69,
+            119,
+            169
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-0-1",
+          "expected": [
+            216,
+            165,
+            115
+          ],
+          "actual": [
+            216,
+            165,
+            114
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-1-1",
+          "expected": [
+            184,
+            135,
+            85
+          ],
+          "actual": [
+            183,
+            134,
+            84
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-2-1",
+          "expected": [
+            215,
+            166,
+            115
+          ],
+          "actual": [
+            215,
+            165,
+            114
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-3-1",
+          "expected": [
+            185,
+            134,
+            85
+          ],
+          "actual": [
+            185,
+            133,
+            84
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-0-2",
+          "expected": [
+            215,
+            165,
+            116
+          ],
+          "actual": [
+            215,
+            165,
+            115
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-1-2",
+          "expected": [
+            185,
+            135,
+            84
+          ],
+          "actual": [
+            185,
+            134,
+            83
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-2-2",
+          "expected": [
+            200,
+            150,
+            100
+          ],
+          "actual": [
+            199,
+            149,
+            99
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-3-2",
+          "expected": [
+            55,
+            105,
+            155
+          ],
+          "actual": [
+            54,
+            104,
+            154
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "frame",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-stored-key",
+      "dpi": 72,
+      "engine": "mupdf",
+      "file": "references/img-colorkey-decode-stored-key-72-mupdf.png",
+      "sha256": "e7b9b30e1e40dac57fd661da848c32e989ab86bfdc1a3f17bfcd7d803f191494",
+      "sample_count": 14,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "cell-0-0",
+          "expected": [
+            0,
+            255,
+            0
+          ],
+          "actual": [
+            0,
+            255,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-0",
+          "expected": [
+            40,
+            90,
+            140
+          ],
+          "actual": [
+            40,
+            90,
+            140
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-0",
+          "expected": [
+            185,
+            135,
+            85
+          ],
+          "actual": [
+            185,
+            135,
+            85
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-0",
+          "expected": [
+            70,
+            120,
+            170
+          ],
+          "actual": [
+            70,
+            120,
+            170
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-0-1",
+          "expected": [
+            216,
+            165,
+            115
+          ],
+          "actual": [
+            216,
+            165,
+            115
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-1",
+          "expected": [
+            184,
+            135,
+            85
+          ],
+          "actual": [
+            184,
+            135,
+            85
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-1",
+          "expected": [
+            215,
+            166,
+            115
+          ],
+          "actual": [
+            215,
+            166,
+            115
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-1",
+          "expected": [
+            185,
+            134,
+            85
+          ],
+          "actual": [
+            185,
+            134,
+            85
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-0-2",
+          "expected": [
+            215,
+            165,
+            116
+          ],
+          "actual": [
+            215,
+            165,
+            116
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-2",
+          "expected": [
+            185,
+            135,
+            84
+          ],
+          "actual": [
+            185,
+            135,
+            84
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-2",
+          "expected": [
+            200,
+            150,
+            100
+          ],
+          "actual": [
+            200,
+            150,
+            100
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-2",
+          "expected": [
+            55,
+            105,
+            155
+          ],
+          "actual": [
+            55,
+            105,
+            155
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "frame",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-stored-key",
+      "dpi": 72,
+      "engine": "pdfjs",
+      "file": "references/img-colorkey-decode-stored-key-72-pdfjs.png",
+      "sha256": "15a26213ae50fa7f69665250161e6414f8dc0eb11a2c920995c70cc3d21ad66d",
+      "sample_count": 14,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "cell-0-0",
+          "expected": [
+            0,
+            255,
+            0
+          ],
+          "actual": [
+            0,
+            255,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-0",
+          "expected": [
+            40,
+            90,
+            140
+          ],
+          "actual": [
+            40,
+            90,
+            140
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-0",
+          "expected": [
+            185,
+            135,
+            85
+          ],
+          "actual": [
+            185,
+            135,
+            85
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-0",
+          "expected": [
+            70,
+            120,
+            170
+          ],
+          "actual": [
+            70,
+            120,
+            170
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-0-1",
+          "expected": [
+            216,
+            165,
+            115
+          ],
+          "actual": [
+            216,
+            165,
+            115
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-1",
+          "expected": [
+            184,
+            135,
+            85
+          ],
+          "actual": [
+            184,
+            135,
+            85
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-1",
+          "expected": [
+            215,
+            166,
+            115
+          ],
+          "actual": [
+            215,
+            166,
+            115
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-1",
+          "expected": [
+            185,
+            134,
+            85
+          ],
+          "actual": [
+            185,
+            134,
+            85
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-0-2",
+          "expected": [
+            215,
+            165,
+            116
+          ],
+          "actual": [
+            215,
+            165,
+            116
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-2",
+          "expected": [
+            185,
+            135,
+            84
+          ],
+          "actual": [
+            185,
+            135,
+            84
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-2",
+          "expected": [
+            200,
+            150,
+            100
+          ],
+          "actual": [
+            200,
+            150,
+            100
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-2",
+          "expected": [
+            55,
+            105,
+            155
+          ],
+          "actual": [
+            55,
+            105,
+            155
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "frame",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-stored-key",
+      "dpi": 144,
+      "engine": "pdfium",
+      "file": "references/img-colorkey-decode-stored-key-144-pdfium.png",
+      "sha256": "f2e2d3fe5f9f34c690d2c49b75f58dc7438efa4e057678d7d20042269f6fbb88",
+      "sample_count": 14,
+      "status": "failed",
+      "checks": [
+        {
+          "id": "cell-0-0",
+          "expected": [
+            0,
+            255,
+            0
+          ],
+          "actual": [
+            0,
+            255,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-0",
+          "expected": [
+            40,
+            90,
+            140
+          ],
+          "actual": [
+            39,
+            89,
+            139
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-2-0",
+          "expected": [
+            185,
+            135,
+            85
+          ],
+          "actual": [
+            185,
+            134,
+            84
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-3-0",
+          "expected": [
+            70,
+            120,
+            170
+          ],
+          "actual": [
+            69,
+            119,
+            169
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-0-1",
+          "expected": [
+            216,
+            165,
+            115
+          ],
+          "actual": [
+            216,
+            165,
+            114
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-1-1",
+          "expected": [
+            184,
+            135,
+            85
+          ],
+          "actual": [
+            183,
+            134,
+            84
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-2-1",
+          "expected": [
+            215,
+            166,
+            115
+          ],
+          "actual": [
+            215,
+            165,
+            114
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-3-1",
+          "expected": [
+            185,
+            134,
+            85
+          ],
+          "actual": [
+            185,
+            133,
+            84
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-0-2",
+          "expected": [
+            215,
+            165,
+            116
+          ],
+          "actual": [
+            215,
+            165,
+            115
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-1-2",
+          "expected": [
+            185,
+            135,
+            84
+          ],
+          "actual": [
+            185,
+            134,
+            83
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-2-2",
+          "expected": [
+            200,
+            150,
+            100
+          ],
+          "actual": [
+            199,
+            149,
+            99
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-3-2",
+          "expected": [
+            55,
+            105,
+            155
+          ],
+          "actual": [
+            54,
+            104,
+            154
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "frame",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-stored-key",
+      "dpi": 144,
+      "engine": "mupdf",
+      "file": "references/img-colorkey-decode-stored-key-144-mupdf.png",
+      "sha256": "4b183042816b37415ee1240e78791780454abf57284b0170889cae2199107658",
+      "sample_count": 14,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "cell-0-0",
+          "expected": [
+            0,
+            255,
+            0
+          ],
+          "actual": [
+            0,
+            255,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-0",
+          "expected": [
+            40,
+            90,
+            140
+          ],
+          "actual": [
+            40,
+            90,
+            140
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-0",
+          "expected": [
+            185,
+            135,
+            85
+          ],
+          "actual": [
+            185,
+            135,
+            85
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-0",
+          "expected": [
+            70,
+            120,
+            170
+          ],
+          "actual": [
+            70,
+            120,
+            170
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-0-1",
+          "expected": [
+            216,
+            165,
+            115
+          ],
+          "actual": [
+            216,
+            165,
+            115
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-1",
+          "expected": [
+            184,
+            135,
+            85
+          ],
+          "actual": [
+            184,
+            135,
+            85
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-1",
+          "expected": [
+            215,
+            166,
+            115
+          ],
+          "actual": [
+            215,
+            166,
+            115
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-1",
+          "expected": [
+            185,
+            134,
+            85
+          ],
+          "actual": [
+            185,
+            134,
+            85
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-0-2",
+          "expected": [
+            215,
+            165,
+            116
+          ],
+          "actual": [
+            215,
+            165,
+            116
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-2",
+          "expected": [
+            185,
+            135,
+            84
+          ],
+          "actual": [
+            185,
+            135,
+            84
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-2",
+          "expected": [
+            200,
+            150,
+            100
+          ],
+          "actual": [
+            200,
+            150,
+            100
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-2",
+          "expected": [
+            55,
+            105,
+            155
+          ],
+          "actual": [
+            55,
+            105,
+            155
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "frame",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-stored-key",
+      "dpi": 144,
+      "engine": "pdfjs",
+      "file": "references/img-colorkey-decode-stored-key-144-pdfjs.png",
+      "sha256": "2fc8472454a5d6189f2f0cd90c0ec7d87c7ac618f7487949bbe507864af67557",
+      "sample_count": 14,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "cell-0-0",
+          "expected": [
+            0,
+            255,
+            0
+          ],
+          "actual": [
+            0,
+            255,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-0",
+          "expected": [
+            40,
+            90,
+            140
+          ],
+          "actual": [
+            40,
+            90,
+            140
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-0",
+          "expected": [
+            185,
+            135,
+            85
+          ],
+          "actual": [
+            185,
+            135,
+            85
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-0",
+          "expected": [
+            70,
+            120,
+            170
+          ],
+          "actual": [
+            70,
+            120,
+            170
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-0-1",
+          "expected": [
+            216,
+            165,
+            115
+          ],
+          "actual": [
+            216,
+            165,
+            115
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-1",
+          "expected": [
+            184,
+            135,
+            85
+          ],
+          "actual": [
+            184,
+            135,
+            85
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-1",
+          "expected": [
+            215,
+            166,
+            115
+          ],
+          "actual": [
+            215,
+            166,
+            115
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-1",
+          "expected": [
+            185,
+            134,
+            85
+          ],
+          "actual": [
+            185,
+            134,
+            85
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-0-2",
+          "expected": [
+            215,
+            165,
+            116
+          ],
+          "actual": [
+            215,
+            165,
+            116
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-2",
+          "expected": [
+            185,
+            135,
+            84
+          ],
+          "actual": [
+            185,
+            135,
+            84
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-2",
+          "expected": [
+            200,
+            150,
+            100
+          ],
+          "actual": [
+            200,
+            150,
+            100
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-2",
+          "expected": [
+            55,
+            105,
+            155
+          ],
+          "actual": [
+            55,
+            105,
+            155
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "frame",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-decoded-key-control",
+      "dpi": 72,
+      "engine": "pdfium",
+      "file": "references/img-colorkey-decode-decoded-key-control-72-pdfium.png",
+      "sha256": "5a699b130a4c3114f4ee841f8b32b634e07b89544c4c1ecd5788eb2daa0fc4b1",
+      "sample_count": 14,
+      "status": "failed",
+      "checks": [
+        {
+          "id": "cell-0-0",
+          "expected": [
+            215,
+            165,
+            115
+          ],
+          "actual": [
+            215,
+            165,
+            114
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-1-0",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-0",
+          "expected": [
+            185,
+            135,
+            85
+          ],
+          "actual": [
+            185,
+            134,
+            84
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-3-0",
+          "expected": [
+            70,
+            120,
+            170
+          ],
+          "actual": [
+            69,
+            119,
+            169
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-0-1",
+          "expected": [
+            216,
+            165,
+            115
+          ],
+          "actual": [
+            216,
+            165,
+            114
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-1-1",
+          "expected": [
+            184,
+            135,
+            85
+          ],
+          "actual": [
+            183,
+            134,
+            84
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-2-1",
+          "expected": [
+            215,
+            166,
+            115
+          ],
+          "actual": [
+            215,
+            165,
+            114
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-3-1",
+          "expected": [
+            185,
+            134,
+            85
+          ],
+          "actual": [
+            185,
+            133,
+            84
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-0-2",
+          "expected": [
+            215,
+            165,
+            116
+          ],
+          "actual": [
+            215,
+            165,
+            115
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-1-2",
+          "expected": [
+            185,
+            135,
+            84
+          ],
+          "actual": [
+            185,
+            134,
+            83
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-2-2",
+          "expected": [
+            200,
+            150,
+            100
+          ],
+          "actual": [
+            199,
+            149,
+            99
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-3-2",
+          "expected": [
+            55,
+            105,
+            155
+          ],
+          "actual": [
+            54,
+            104,
+            154
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "frame",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-decoded-key-control",
+      "dpi": 72,
+      "engine": "mupdf",
+      "file": "references/img-colorkey-decode-decoded-key-control-72-mupdf.png",
+      "sha256": "ce705d5134b27949c652a3821acedb52333ccee851f17791aa4af46b0982b572",
+      "sample_count": 14,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "cell-0-0",
+          "expected": [
+            215,
+            165,
+            115
+          ],
+          "actual": [
+            215,
+            165,
+            115
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-0",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-0",
+          "expected": [
+            185,
+            135,
+            85
+          ],
+          "actual": [
+            185,
+            135,
+            85
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-0",
+          "expected": [
+            70,
+            120,
+            170
+          ],
+          "actual": [
+            70,
+            120,
+            170
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-0-1",
+          "expected": [
+            216,
+            165,
+            115
+          ],
+          "actual": [
+            216,
+            165,
+            115
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-1",
+          "expected": [
+            184,
+            135,
+            85
+          ],
+          "actual": [
+            184,
+            135,
+            85
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-1",
+          "expected": [
+            215,
+            166,
+            115
+          ],
+          "actual": [
+            215,
+            166,
+            115
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-1",
+          "expected": [
+            185,
+            134,
+            85
+          ],
+          "actual": [
+            185,
+            134,
+            85
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-0-2",
+          "expected": [
+            215,
+            165,
+            116
+          ],
+          "actual": [
+            215,
+            165,
+            116
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-2",
+          "expected": [
+            185,
+            135,
+            84
+          ],
+          "actual": [
+            185,
+            135,
+            84
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-2",
+          "expected": [
+            200,
+            150,
+            100
+          ],
+          "actual": [
+            200,
+            150,
+            100
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-2",
+          "expected": [
+            55,
+            105,
+            155
+          ],
+          "actual": [
+            55,
+            105,
+            155
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "frame",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-decoded-key-control",
+      "dpi": 72,
+      "engine": "pdfjs",
+      "file": "references/img-colorkey-decode-decoded-key-control-72-pdfjs.png",
+      "sha256": "3826656f4ebd669c085085f9911d95a9c1ff8ac77a5e536ee8c4062ee0dbabcd",
+      "sample_count": 14,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "cell-0-0",
+          "expected": [
+            215,
+            165,
+            115
+          ],
+          "actual": [
+            215,
+            165,
+            115
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-0",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-0",
+          "expected": [
+            185,
+            135,
+            85
+          ],
+          "actual": [
+            185,
+            135,
+            85
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-0",
+          "expected": [
+            70,
+            120,
+            170
+          ],
+          "actual": [
+            70,
+            120,
+            170
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-0-1",
+          "expected": [
+            216,
+            165,
+            115
+          ],
+          "actual": [
+            216,
+            165,
+            115
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-1",
+          "expected": [
+            184,
+            135,
+            85
+          ],
+          "actual": [
+            184,
+            135,
+            85
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-1",
+          "expected": [
+            215,
+            166,
+            115
+          ],
+          "actual": [
+            215,
+            166,
+            115
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-1",
+          "expected": [
+            185,
+            134,
+            85
+          ],
+          "actual": [
+            185,
+            134,
+            85
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-0-2",
+          "expected": [
+            215,
+            165,
+            116
+          ],
+          "actual": [
+            215,
+            165,
+            116
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-2",
+          "expected": [
+            185,
+            135,
+            84
+          ],
+          "actual": [
+            185,
+            135,
+            84
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-2",
+          "expected": [
+            200,
+            150,
+            100
+          ],
+          "actual": [
+            200,
+            150,
+            100
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-2",
+          "expected": [
+            55,
+            105,
+            155
+          ],
+          "actual": [
+            55,
+            105,
+            155
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "frame",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-decoded-key-control",
+      "dpi": 144,
+      "engine": "pdfium",
+      "file": "references/img-colorkey-decode-decoded-key-control-144-pdfium.png",
+      "sha256": "66031fb311f818b660d3f75143aaf2d313eff78f7d9a68cc0b89cd9f04d138aa",
+      "sample_count": 14,
+      "status": "failed",
+      "checks": [
+        {
+          "id": "cell-0-0",
+          "expected": [
+            215,
+            165,
+            115
+          ],
+          "actual": [
+            215,
+            165,
+            114
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-1-0",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-0",
+          "expected": [
+            185,
+            135,
+            85
+          ],
+          "actual": [
+            185,
+            134,
+            84
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-3-0",
+          "expected": [
+            70,
+            120,
+            170
+          ],
+          "actual": [
+            69,
+            119,
+            169
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-0-1",
+          "expected": [
+            216,
+            165,
+            115
+          ],
+          "actual": [
+            216,
+            165,
+            114
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-1-1",
+          "expected": [
+            184,
+            135,
+            85
+          ],
+          "actual": [
+            183,
+            134,
+            84
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-2-1",
+          "expected": [
+            215,
+            166,
+            115
+          ],
+          "actual": [
+            215,
+            165,
+            114
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-3-1",
+          "expected": [
+            185,
+            134,
+            85
+          ],
+          "actual": [
+            185,
+            133,
+            84
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-0-2",
+          "expected": [
+            215,
+            165,
+            116
+          ],
+          "actual": [
+            215,
+            165,
+            115
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-1-2",
+          "expected": [
+            185,
+            135,
+            84
+          ],
+          "actual": [
+            185,
+            134,
+            83
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-2-2",
+          "expected": [
+            200,
+            150,
+            100
+          ],
+          "actual": [
+            199,
+            149,
+            99
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-3-2",
+          "expected": [
+            55,
+            105,
+            155
+          ],
+          "actual": [
+            54,
+            104,
+            154
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "frame",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-decoded-key-control",
+      "dpi": 144,
+      "engine": "mupdf",
+      "file": "references/img-colorkey-decode-decoded-key-control-144-mupdf.png",
+      "sha256": "e57d65761265a2d4e2160d5e7f7ba87a7f96981b9dd9ffcf3418d37800fd8a5f",
+      "sample_count": 14,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "cell-0-0",
+          "expected": [
+            215,
+            165,
+            115
+          ],
+          "actual": [
+            215,
+            165,
+            115
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-0",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-0",
+          "expected": [
+            185,
+            135,
+            85
+          ],
+          "actual": [
+            185,
+            135,
+            85
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-0",
+          "expected": [
+            70,
+            120,
+            170
+          ],
+          "actual": [
+            70,
+            120,
+            170
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-0-1",
+          "expected": [
+            216,
+            165,
+            115
+          ],
+          "actual": [
+            216,
+            165,
+            115
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-1",
+          "expected": [
+            184,
+            135,
+            85
+          ],
+          "actual": [
+            184,
+            135,
+            85
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-1",
+          "expected": [
+            215,
+            166,
+            115
+          ],
+          "actual": [
+            215,
+            166,
+            115
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-1",
+          "expected": [
+            185,
+            134,
+            85
+          ],
+          "actual": [
+            185,
+            134,
+            85
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-0-2",
+          "expected": [
+            215,
+            165,
+            116
+          ],
+          "actual": [
+            215,
+            165,
+            116
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-2",
+          "expected": [
+            185,
+            135,
+            84
+          ],
+          "actual": [
+            185,
+            135,
+            84
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-2",
+          "expected": [
+            200,
+            150,
+            100
+          ],
+          "actual": [
+            200,
+            150,
+            100
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-2",
+          "expected": [
+            55,
+            105,
+            155
+          ],
+          "actual": [
+            55,
+            105,
+            155
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "frame",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-decoded-key-control",
+      "dpi": 144,
+      "engine": "pdfjs",
+      "file": "references/img-colorkey-decode-decoded-key-control-144-pdfjs.png",
+      "sha256": "826b884cd9e76882517c1a0fbd64b7bdeb73a850edd32c74037bf4df7fc2998e",
+      "sample_count": 14,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "cell-0-0",
+          "expected": [
+            215,
+            165,
+            115
+          ],
+          "actual": [
+            215,
+            165,
+            115
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-0",
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-0",
+          "expected": [
+            185,
+            135,
+            85
+          ],
+          "actual": [
+            185,
+            135,
+            85
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-0",
+          "expected": [
+            70,
+            120,
+            170
+          ],
+          "actual": [
+            70,
+            120,
+            170
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-0-1",
+          "expected": [
+            216,
+            165,
+            115
+          ],
+          "actual": [
+            216,
+            165,
+            115
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-1",
+          "expected": [
+            184,
+            135,
+            85
+          ],
+          "actual": [
+            184,
+            135,
+            85
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-1",
+          "expected": [
+            215,
+            166,
+            115
+          ],
+          "actual": [
+            215,
+            166,
+            115
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-1",
+          "expected": [
+            185,
+            134,
+            85
+          ],
+          "actual": [
+            185,
+            134,
+            85
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-0-2",
+          "expected": [
+            215,
+            165,
+            116
+          ],
+          "actual": [
+            215,
+            165,
+            116
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-2",
+          "expected": [
+            185,
+            135,
+            84
+          ],
+          "actual": [
+            185,
+            135,
+            84
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-2",
+          "expected": [
+            200,
+            150,
+            100
+          ],
+          "actual": [
+            200,
+            150,
+            100
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-2",
+          "expected": [
+            55,
+            105,
+            155
+          ],
+          "actual": [
+            55,
+            105,
+            155
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "frame",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-stored-range",
+      "dpi": 72,
+      "engine": "pdfium",
+      "file": "references/img-colorkey-decode-stored-range-72-pdfium.png",
+      "sha256": "1b05f1dbd54717577c0fd6258126f72a5dc4a9a043e2f37992ae6bd8e8bb39b0",
+      "sample_count": 14,
+      "status": "failed",
+      "checks": [
+        {
+          "id": "cell-0-0",
+          "expected": [
+            0,
+            255,
+            0
+          ],
+          "actual": [
+            0,
+            255,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-0",
+          "expected": [
+            40,
+            90,
+            140
+          ],
+          "actual": [
+            39,
+            89,
+            139
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-2-0",
+          "expected": [
+            0,
+            255,
+            0
+          ],
+          "actual": [
+            0,
+            255,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-0",
+          "expected": [
+            70,
+            120,
+            170
+          ],
+          "actual": [
+            69,
+            119,
+            169
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-0-1",
+          "expected": [
+            216,
+            165,
+            115
+          ],
+          "actual": [
+            216,
+            165,
+            114
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-1-1",
+          "expected": [
+            184,
+            135,
+            85
+          ],
+          "actual": [
+            183,
+            134,
+            84
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-2-1",
+          "expected": [
+            215,
+            166,
+            115
+          ],
+          "actual": [
+            215,
+            165,
+            114
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-3-1",
+          "expected": [
+            185,
+            134,
+            85
+          ],
+          "actual": [
+            185,
+            133,
+            84
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-0-2",
+          "expected": [
+            215,
+            165,
+            116
+          ],
+          "actual": [
+            215,
+            165,
+            115
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-1-2",
+          "expected": [
+            185,
+            135,
+            84
+          ],
+          "actual": [
+            185,
+            134,
+            83
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-2-2",
+          "expected": [
+            0,
+            255,
+            0
+          ],
+          "actual": [
+            0,
+            255,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-2",
+          "expected": [
+            55,
+            105,
+            155
+          ],
+          "actual": [
+            54,
+            104,
+            154
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "frame",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-stored-range",
+      "dpi": 72,
+      "engine": "mupdf",
+      "file": "references/img-colorkey-decode-stored-range-72-mupdf.png",
+      "sha256": "38e281b869fb795577eae50cc19cdc7011e0f99df27160ae63331db5d438073c",
+      "sample_count": 14,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "cell-0-0",
+          "expected": [
+            0,
+            255,
+            0
+          ],
+          "actual": [
+            0,
+            255,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-0",
+          "expected": [
+            40,
+            90,
+            140
+          ],
+          "actual": [
+            40,
+            90,
+            140
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-0",
+          "expected": [
+            0,
+            255,
+            0
+          ],
+          "actual": [
+            0,
+            255,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-0",
+          "expected": [
+            70,
+            120,
+            170
+          ],
+          "actual": [
+            70,
+            120,
+            170
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-0-1",
+          "expected": [
+            216,
+            165,
+            115
+          ],
+          "actual": [
+            216,
+            165,
+            115
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-1",
+          "expected": [
+            184,
+            135,
+            85
+          ],
+          "actual": [
+            184,
+            135,
+            85
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-1",
+          "expected": [
+            215,
+            166,
+            115
+          ],
+          "actual": [
+            215,
+            166,
+            115
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-1",
+          "expected": [
+            185,
+            134,
+            85
+          ],
+          "actual": [
+            185,
+            134,
+            85
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-0-2",
+          "expected": [
+            215,
+            165,
+            116
+          ],
+          "actual": [
+            215,
+            165,
+            116
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-2",
+          "expected": [
+            185,
+            135,
+            84
+          ],
+          "actual": [
+            185,
+            135,
+            84
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-2",
+          "expected": [
+            0,
+            255,
+            0
+          ],
+          "actual": [
+            0,
+            255,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-2",
+          "expected": [
+            55,
+            105,
+            155
+          ],
+          "actual": [
+            55,
+            105,
+            155
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "frame",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-stored-range",
+      "dpi": 72,
+      "engine": "pdfjs",
+      "file": "references/img-colorkey-decode-stored-range-72-pdfjs.png",
+      "sha256": "6694328d873f13d6427e90fa2380d89b5f4959dd8869c14475805c932c6e5f41",
+      "sample_count": 14,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "cell-0-0",
+          "expected": [
+            0,
+            255,
+            0
+          ],
+          "actual": [
+            0,
+            255,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-0",
+          "expected": [
+            40,
+            90,
+            140
+          ],
+          "actual": [
+            40,
+            90,
+            140
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-0",
+          "expected": [
+            0,
+            255,
+            0
+          ],
+          "actual": [
+            0,
+            255,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-0",
+          "expected": [
+            70,
+            120,
+            170
+          ],
+          "actual": [
+            70,
+            120,
+            170
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-0-1",
+          "expected": [
+            216,
+            165,
+            115
+          ],
+          "actual": [
+            216,
+            165,
+            115
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-1",
+          "expected": [
+            184,
+            135,
+            85
+          ],
+          "actual": [
+            184,
+            135,
+            85
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-1",
+          "expected": [
+            215,
+            166,
+            115
+          ],
+          "actual": [
+            215,
+            166,
+            115
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-1",
+          "expected": [
+            185,
+            134,
+            85
+          ],
+          "actual": [
+            185,
+            134,
+            85
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-0-2",
+          "expected": [
+            215,
+            165,
+            116
+          ],
+          "actual": [
+            215,
+            165,
+            116
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-2",
+          "expected": [
+            185,
+            135,
+            84
+          ],
+          "actual": [
+            185,
+            135,
+            84
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-2",
+          "expected": [
+            0,
+            255,
+            0
+          ],
+          "actual": [
+            0,
+            255,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-2",
+          "expected": [
+            55,
+            105,
+            155
+          ],
+          "actual": [
+            55,
+            105,
+            155
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "frame",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-stored-range",
+      "dpi": 144,
+      "engine": "pdfium",
+      "file": "references/img-colorkey-decode-stored-range-144-pdfium.png",
+      "sha256": "13b78bb77867a7b1dd98153d657083bb943108f567776b5110224c3c79c99b8b",
+      "sample_count": 14,
+      "status": "failed",
+      "checks": [
+        {
+          "id": "cell-0-0",
+          "expected": [
+            0,
+            255,
+            0
+          ],
+          "actual": [
+            0,
+            255,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-0",
+          "expected": [
+            40,
+            90,
+            140
+          ],
+          "actual": [
+            39,
+            89,
+            139
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-2-0",
+          "expected": [
+            0,
+            255,
+            0
+          ],
+          "actual": [
+            0,
+            255,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-0",
+          "expected": [
+            70,
+            120,
+            170
+          ],
+          "actual": [
+            69,
+            119,
+            169
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-0-1",
+          "expected": [
+            216,
+            165,
+            115
+          ],
+          "actual": [
+            216,
+            165,
+            114
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-1-1",
+          "expected": [
+            184,
+            135,
+            85
+          ],
+          "actual": [
+            183,
+            134,
+            84
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-2-1",
+          "expected": [
+            215,
+            166,
+            115
+          ],
+          "actual": [
+            215,
+            165,
+            114
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-3-1",
+          "expected": [
+            185,
+            134,
+            85
+          ],
+          "actual": [
+            185,
+            133,
+            84
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-0-2",
+          "expected": [
+            215,
+            165,
+            116
+          ],
+          "actual": [
+            215,
+            165,
+            115
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-1-2",
+          "expected": [
+            185,
+            135,
+            84
+          ],
+          "actual": [
+            185,
+            134,
+            83
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "cell-2-2",
+          "expected": [
+            0,
+            255,
+            0
+          ],
+          "actual": [
+            0,
+            255,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-2",
+          "expected": [
+            55,
+            105,
+            155
+          ],
+          "actual": [
+            54,
+            104,
+            154
+          ],
+          "delta": 1,
+          "passed": false
+        },
+        {
+          "id": "frame",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-stored-range",
+      "dpi": 144,
+      "engine": "mupdf",
+      "file": "references/img-colorkey-decode-stored-range-144-mupdf.png",
+      "sha256": "a68f9490f66bc07eb446ba7f9453899ae8e32767c24ad2227b53ce24ae5c7636",
+      "sample_count": 14,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "cell-0-0",
+          "expected": [
+            0,
+            255,
+            0
+          ],
+          "actual": [
+            0,
+            255,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-0",
+          "expected": [
+            40,
+            90,
+            140
+          ],
+          "actual": [
+            40,
+            90,
+            140
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-0",
+          "expected": [
+            0,
+            255,
+            0
+          ],
+          "actual": [
+            0,
+            255,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-0",
+          "expected": [
+            70,
+            120,
+            170
+          ],
+          "actual": [
+            70,
+            120,
+            170
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-0-1",
+          "expected": [
+            216,
+            165,
+            115
+          ],
+          "actual": [
+            216,
+            165,
+            115
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-1",
+          "expected": [
+            184,
+            135,
+            85
+          ],
+          "actual": [
+            184,
+            135,
+            85
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-1",
+          "expected": [
+            215,
+            166,
+            115
+          ],
+          "actual": [
+            215,
+            166,
+            115
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-1",
+          "expected": [
+            185,
+            134,
+            85
+          ],
+          "actual": [
+            185,
+            134,
+            85
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-0-2",
+          "expected": [
+            215,
+            165,
+            116
+          ],
+          "actual": [
+            215,
+            165,
+            116
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-2",
+          "expected": [
+            185,
+            135,
+            84
+          ],
+          "actual": [
+            185,
+            135,
+            84
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-2",
+          "expected": [
+            0,
+            255,
+            0
+          ],
+          "actual": [
+            0,
+            255,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-2",
+          "expected": [
+            55,
+            105,
+            155
+          ],
+          "actual": [
+            55,
+            105,
+            155
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "frame",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-stored-range",
+      "dpi": 144,
+      "engine": "pdfjs",
+      "file": "references/img-colorkey-decode-stored-range-144-pdfjs.png",
+      "sha256": "fe3d8c9b0536c11d80e5b6340a3ffe959ee41bc6db9b3a0a6c7fce7d29a5b91b",
+      "sample_count": 14,
+      "status": "passed",
+      "checks": [
+        {
+          "id": "cell-0-0",
+          "expected": [
+            0,
+            255,
+            0
+          ],
+          "actual": [
+            0,
+            255,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-0",
+          "expected": [
+            40,
+            90,
+            140
+          ],
+          "actual": [
+            40,
+            90,
+            140
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-0",
+          "expected": [
+            0,
+            255,
+            0
+          ],
+          "actual": [
+            0,
+            255,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-0",
+          "expected": [
+            70,
+            120,
+            170
+          ],
+          "actual": [
+            70,
+            120,
+            170
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-0-1",
+          "expected": [
+            216,
+            165,
+            115
+          ],
+          "actual": [
+            216,
+            165,
+            115
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-1",
+          "expected": [
+            184,
+            135,
+            85
+          ],
+          "actual": [
+            184,
+            135,
+            85
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-1",
+          "expected": [
+            215,
+            166,
+            115
+          ],
+          "actual": [
+            215,
+            166,
+            115
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-1",
+          "expected": [
+            185,
+            134,
+            85
+          ],
+          "actual": [
+            185,
+            134,
+            85
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-0-2",
+          "expected": [
+            215,
+            165,
+            116
+          ],
+          "actual": [
+            215,
+            165,
+            116
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-1-2",
+          "expected": [
+            185,
+            135,
+            84
+          ],
+          "actual": [
+            185,
+            135,
+            84
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-2-2",
+          "expected": [
+            0,
+            255,
+            0
+          ],
+          "actual": [
+            0,
+            255,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "cell-3-2",
+          "expected": [
+            55,
+            105,
+            155
+          ],
+          "actual": [
+            55,
+            105,
+            155
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "frame",
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "delta": 0,
+          "passed": true
+        },
+        {
+          "id": "paper",
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "delta": 0,
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "versions": {
+    "pdfium": "153.0.7999.0",
+    "pypdfium2": "5.13.0",
+    "mupdf": "1.26.11",
+    "pymupdf": "1.26.6",
+    "pdfjs": "6.5.438",
+    "pdfjs_build": "0a4153349",
+    "node": "24.22.3",
+    "node_canvas": "1.1.1"
+  }
+}

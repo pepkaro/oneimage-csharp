@@ -1,0 +1,245 @@
+{
+  "schema_version": 1,
+  "slice": "ISO-PAGE-RESOURCE-01",
+  "owner": "mozilla_originals",
+  "state": "references-ready-for-root-product-grading",
+  "owned_path": "/workspace/scratch/ee1a2fb9052d/pdf-corpus-next-20261123/work/resources",
+  "target_head_parent_verified": "1caa785479982f7b1431a728cb14e89ae0bf21c8",
+  "local_instruction_tree": "04bde9471cef96ee9a454ef1ba4e18a020c46b9c",
+  "unique_pdfs": 3,
+  "unique_pdf_bytes": 4055,
+  "reference_calls": 18,
+  "selected_reference_outputs": 18,
+  "reference_passed": 18,
+  "reference_failed": 0,
+  "reference_skipped": 0,
+  "samples_passed": 108,
+  "pairwise_passed": 18,
+  "region_checks_passed": 108,
+  "upstream_inputs_executed": 0,
+  "upstream_entries_validated": 0,
+  "product_runs": 0,
+  "external_writes": 0,
+  "backlog": [
+    {
+      "id": "ISO-PAGE-RESOURCE-02",
+      "contract": "Same lexical resource name across XObject and ColorSpace category dictionaries",
+      "status": "proposed-unclaimed",
+      "acceptance": "Ordinary valid explicit dictionaries; independent opaque endpoint/rectangle controls; separately named references and3engines72/144DPI; no security/private/external inputs"
+    }
+  ],
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "8884cf00282bc69b1dbe5dead6e88b96c82c1bfc457daae48ce497e7c2588c3f"
+    },
+    {
+      "path": "README.md",
+      "sha256": "403d7a1d2bfb68086f2096c5070232ff69e09f1cc7d836b0f0394bfa20dd7e97"
+    },
+    {
+      "path": "analytic/resource-nested-form-restoration-144-expected.png",
+      "sha256": "1dfeb982d8e714124c19ce8fdb4666ba4741cde7d229e1693901fd9554a310e5"
+    },
+    {
+      "path": "analytic/resource-nested-form-restoration-144-score-mask.png",
+      "sha256": "46cd163473434c58e0cea60ae0cc78ecaead19ff8aa71bdb4b1914e8135dbcdc"
+    },
+    {
+      "path": "analytic/resource-nested-form-restoration-72-expected.png",
+      "sha256": "743d0b95459de10168b81335b5c58e0167e6d4a05d6c79fb380e4868897704a9"
+    },
+    {
+      "path": "analytic/resource-nested-form-restoration-72-score-mask.png",
+      "sha256": "6e509dbe8de4db1fb14507cacd9ea51de2350760ee42c0582a8b0a08f1ef475a"
+    },
+    {
+      "path": "analytic/resource-page-form-isolation-144-expected.png",
+      "sha256": "649912ece4d89523ca4cf4a26623ea1c885871993291a1d8dd07aae3bed6c566"
+    },
+    {
+      "path": "analytic/resource-page-form-isolation-144-score-mask.png",
+      "sha256": "4e68cbf85421182d935bfcb0501684cd83fa0c76c742c2ec8b29909d2f14e958"
+    },
+    {
+      "path": "analytic/resource-page-form-isolation-72-expected.png",
+      "sha256": "29fbc6f0f8d78c5e852c7858fb42bd2d7ddc904fed3afa971ac58627d32b55ba"
+    },
+    {
+      "path": "analytic/resource-page-form-isolation-72-score-mask.png",
+      "sha256": "366f3a43de5c544b5230621b27c5568e485078e1d5bb1f81a01c5fa2acef3520"
+    },
+    {
+      "path": "analytic/resource-sibling-form-isolation-144-expected.png",
+      "sha256": "ef61179fea51ff3eae61a2c880f69ced8cc4500572cb798ce0cc28406cb8db17"
+    },
+    {
+      "path": "analytic/resource-sibling-form-isolation-144-score-mask.png",
+      "sha256": "94a9046b15b174b2b5369899139d8e3168a2fd7b736e8fc0d594b69554cef881"
+    },
+    {
+      "path": "analytic/resource-sibling-form-isolation-72-expected.png",
+      "sha256": "29d46b9284935dbf0f02c745c17f891f734779fc827be683b5b505da8dc1515a"
+    },
+    {
+      "path": "analytic/resource-sibling-form-isolation-72-score-mask.png",
+      "sha256": "cc5c629ea20d774142d714d63b4347961ccf06d147f472103b1b20aa39364122"
+    },
+    {
+      "path": "clause-index.json",
+      "sha256": "c11121882c9153d24690bab03dc1909ec798c9feb3910952ffcc3b45fe2c80dc"
+    },
+    {
+      "path": "generator.py",
+      "sha256": "081f55e8b0466c0d3ed169c7cdac70271b044138e4a8c4bc7064a8eba94466f6"
+    },
+    {
+      "path": "inputs/resource-nested-form-restoration.pdf",
+      "sha256": "8d6796bdabad875b42e319a3dc3baac8db2d34a58dec4681719bcc1a39413f46"
+    },
+    {
+      "path": "inputs/resource-page-form-isolation.pdf",
+      "sha256": "210cf04423a235649de2432b4ce4e764109e51e5173c1bd82ca37fa32a09ea48"
+    },
+    {
+      "path": "inputs/resource-sibling-form-isolation.pdf",
+      "sha256": "be854a992790eb05368e81ab7b1222ef56459e4373c6d3ea03e18b727ea7572e"
+    },
+    {
+      "path": "manifest.json",
+      "sha256": "d766ca141fa5a4a513c5708b22922038fb417fa22a75ae3b521bf267709f30e0"
+    },
+    {
+      "path": "reference-renders.json",
+      "sha256": "5cc5d30af987a94ded9a02ccc6354978ec422f0c5e22d66ed8bc774ac9f4e9fd"
+    },
+    {
+      "path": "reference-results.json",
+      "sha256": "b59c18e6ddafb405c19ec4a6cdabb22f8676fd84455a0a780428d61d3cebf308"
+    },
+    {
+      "path": "references/resource-nested-form-restoration-144-mupdf.png",
+      "sha256": "512a143719f7d971ff2cde641defd9c428f94a9d692bc4f22fa9f0daa051871e"
+    },
+    {
+      "path": "references/resource-nested-form-restoration-144-pdfium.png",
+      "sha256": "1dfeb982d8e714124c19ce8fdb4666ba4741cde7d229e1693901fd9554a310e5"
+    },
+    {
+      "path": "references/resource-nested-form-restoration-144-pdfjs.png",
+      "sha256": "3688342ca5c3264782010ec3c36e9e2f1d63bee886c5602dc66d4b9e33c82205"
+    },
+    {
+      "path": "references/resource-nested-form-restoration-144-pdfjs.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "references/resource-nested-form-restoration-72-mupdf.png",
+      "sha256": "8ce56f156df96073871702333d82df25a6f8283fd8ef791c57afb884285a63a8"
+    },
+    {
+      "path": "references/resource-nested-form-restoration-72-pdfium.png",
+      "sha256": "743d0b95459de10168b81335b5c58e0167e6d4a05d6c79fb380e4868897704a9"
+    },
+    {
+      "path": "references/resource-nested-form-restoration-72-pdfjs.png",
+      "sha256": "f257046ea40eba7d1653f7aacb63d610acc16819542cc9bc4a28774878f43ba5"
+    },
+    {
+      "path": "references/resource-nested-form-restoration-72-pdfjs.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "references/resource-page-form-isolation-144-mupdf.png",
+      "sha256": "b90884caed6874f677f3fc11b2ee13d00a3c6f74a3c8649a557bc9183db881ce"
+    },
+    {
+      "path": "references/resource-page-form-isolation-144-pdfium.png",
+      "sha256": "649912ece4d89523ca4cf4a26623ea1c885871993291a1d8dd07aae3bed6c566"
+    },
+    {
+      "path": "references/resource-page-form-isolation-144-pdfjs.png",
+      "sha256": "e7533cc422e54f7f362686a31da9e3a34dd9c24553f7089dd7318e87a6dad85c"
+    },
+    {
+      "path": "references/resource-page-form-isolation-144-pdfjs.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "references/resource-page-form-isolation-72-mupdf.png",
+      "sha256": "8e985c50dc908509ff93374d0c465bb0d0186453dce9381b19370a46255ad282"
+    },
+    {
+      "path": "references/resource-page-form-isolation-72-pdfium.png",
+      "sha256": "29fbc6f0f8d78c5e852c7858fb42bd2d7ddc904fed3afa971ac58627d32b55ba"
+    },
+    {
+      "path": "references/resource-page-form-isolation-72-pdfjs.png",
+      "sha256": "33c3f5612a544bfc1c84c9a9c84c60359bc52519d565057c3205b31be78de118"
+    },
+    {
+      "path": "references/resource-page-form-isolation-72-pdfjs.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "references/resource-sibling-form-isolation-144-mupdf.png",
+      "sha256": "7e0d000941051ea3d079d2e4d6d01ded40494e08727a5344a44e93a7a61e6c8b"
+    },
+    {
+      "path": "references/resource-sibling-form-isolation-144-pdfium.png",
+      "sha256": "ef61179fea51ff3eae61a2c880f69ced8cc4500572cb798ce0cc28406cb8db17"
+    },
+    {
+      "path": "references/resource-sibling-form-isolation-144-pdfjs.png",
+      "sha256": "35f9de95fe8a7f076439107905392a9ec6a43791fb0abcc1e3c980473842a290"
+    },
+    {
+      "path": "references/resource-sibling-form-isolation-144-pdfjs.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "references/resource-sibling-form-isolation-72-mupdf.png",
+      "sha256": "e5ad7c4ff3f78a46ddc1c454cfb50ab9353079407a0dae42c5efb91e2d9abb59"
+    },
+    {
+      "path": "references/resource-sibling-form-isolation-72-pdfium.png",
+      "sha256": "29d46b9284935dbf0f02c745c17f891f734779fc827be683b5b505da8dc1515a"
+    },
+    {
+      "path": "references/resource-sibling-form-isolation-72-pdfjs.png",
+      "sha256": "1ee32126da24a0e9f6ed21d0d43042aa2f261f4ee2bfe534319a9466ab025637"
+    },
+    {
+      "path": "references/resource-sibling-form-isolation-72-pdfjs.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "references.py",
+      "sha256": "d0fe5e520bea8aa521bbf2b8b8a5b2ddb076635c2dcdbe3a3c248e4865e70d59"
+    },
+    {
+      "path": "region-agreement.json",
+      "sha256": "8da1cb1ac5ba2a7d4e24a8e6c803f29fb4913d0303a66cd6af62bbbae2f8a8b1"
+    },
+    {
+      "path": "render-pdfjs.mjs",
+      "sha256": "7f6d7e7a2e35d5676ce73863ee74dc48f38341191dad9c8d493d99b7e2af4a51"
+    },
+    {
+      "path": "reproduce.sh",
+      "sha256": "e70407f7aa1ed6ba30f9d09c8fe9333082c0fe4c2bd350eae4206e5ab08346bb"
+    },
+    {
+      "path": "score.py",
+      "sha256": "4bc4de0e7c0a39631f8899d6ffe5a37459cc37f3b2ac763620ae31d3f8ba1412"
+    },
+    {
+      "path": "verify-regions.py",
+      "sha256": "df2d2cfda7dff05b61b4e61129992ebc04ae7bd8a8d28da76310cd85ca229a82"
+    },
+    {
+      "path": "verify.py",
+      "sha256": "7a9dcc80b609f4d614bf1eb313c9ac4855db6544b9176eac59d26f55b6e55f02"
+    }
+  ]
+}

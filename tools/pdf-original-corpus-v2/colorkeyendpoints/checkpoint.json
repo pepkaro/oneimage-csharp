@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "batch": "ISO-IMAGE-COLORKEY-DECODE-03-ENDPOINT-CONTROLS",
+  "logical_parent_family": "ISO-IMAGE-COLORKEY-DECODE-03",
+  "state": "complete-local-reference-qualified-endpoint-only",
+  "generated_unique_pdfs": 3,
+  "single_page_cases": 3,
+  "unique_case_dpi_views": 6,
+  "qualified_case_dpi_views": 6,
+  "held_case_dpi_views": 0,
+  "reference_png_files": 18,
+  "reference_png_unique_bytes": 18,
+  "references_executed": 18,
+  "reference_passed": 18,
+  "reference_failed": 0,
+  "reference_skipped": 0,
+  "analytic_sample_checks": 666,
+  "analytic_sample_passed": 666,
+  "interior_pixels_per_engine": 38400,
+  "analytic_reference_pixel_checks": 115200,
+  "interior_tolerance": 0,
+  "structural_stored_cell_mask_checks": 27,
+  "decoded_only_match_case_cell_controls": 5,
+  "masked_cells_by_case": {
+    "img-colorkey-endpoint-control": 0,
+    "img-colorkey-endpoint-stored-red": 2,
+    "img-colorkey-endpoint-stored-red-magenta-range": 4
+  },
+  "qualified_fixture_ids": [
+    "img-colorkey-endpoint-control",
+    "img-colorkey-endpoint-stored-red",
+    "img-colorkey-endpoint-stored-red-magenta-range"
+  ],
+  "held_fixture_ids": [],
+  "parent_nonendpoint_cases_closed": 0,
+  "scope_limit": "Endpoint-only. All four parent non-endpoint holds and frozen expectations remain separate and unchanged.",
+  "named_visual_assertions_outside_regions": [],
+  "unscored": [
+    "All image/cell/checker edges and undeclared page pixels.",
+    "General RGB8/non-endpoint quantization and other color spaces."
+  ],
+  "upstream_entry_validated": 0,
+  "upstream_mappings": [],
+  "product_runs": 0,
+  "selected_expected_images_created": 0,
+  "selected_expected_candidates": [
+    "references/img-colorkey-endpoint-control-72-mupdf.png",
+    "references/img-colorkey-endpoint-control-144-mupdf.png",
+    "references/img-colorkey-endpoint-stored-red-72-mupdf.png",
+    "references/img-colorkey-endpoint-stored-red-144-mupdf.png",
+    "references/img-colorkey-endpoint-stored-red-magenta-range-72-mupdf.png",
+    "references/img-colorkey-endpoint-stored-red-magenta-range-144-mupdf.png"
+  ],
+  "regeneration": "Exactly3 PDFs and manifest byte-identical on final generator rerun.",
+  "commands": [
+    "python generate.py",
+    "python run-references.py /path/to/node_modules/pdfjs-dist",
+    "python verify-regions.py",
+    "python verify.py"
+  ],
+  "worker_global_writes": 0,
+  "worker_remote_writes": 0,
+  "observed_worker_reference_script_invocations": 1,
+  "observed_worker_engine_invocations": {
+    "pdfium": 6,
+    "mupdf": 6,
+    "pdfjs": 6,
+    "total": 18
+  },
+  "worker_post_namespace_renderer_invocations": 0,
+  "root_replays_included": false
+}

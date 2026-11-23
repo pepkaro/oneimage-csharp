@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "evidence_source": "Observed executed tool-command history for this worker; counts are not inferred from retained paths. No synthetic per-render timestamps/events are asserted.",
+  "scope_exclusion": "Root independent clean replays and all earlier unrelated cohorts are excluded.",
+  "cohorts": [
+    {
+      "cohort": "ISO-TEXT-QUOTE-01",
+      "path": "pdf-corpus-fifth-20261123/work/textquote",
+      "run_references_script_invocations_observed": 1,
+      "engine_subprocess_invocations_observed": {
+        "pdfium": 8,
+        "mupdf": 8,
+        "pdfjs": 8
+      },
+      "total_engine_invocations_observed": 24,
+      "retained_reference_paths": 24,
+      "additional_worker_renderer_invocations_after_capture": 0
+    },
+    {
+      "cohort": "ISO-IMAGE-COLORKEY-DECODE-03-ENDPOINT-CONTROLS",
+      "path": "pdf-corpus-fifth-20261123/work/colorkeyendpoints",
+      "run_references_script_invocations_observed": 1,
+      "engine_subprocess_invocations_observed": {
+        "pdfium": 6,
+        "mupdf": 6,
+        "pdfjs": 6
+      },
+      "total_engine_invocations_observed": 18,
+      "retained_reference_paths": 18,
+      "additional_worker_renderer_invocations_after_capture": 0,
+      "post_namespace_or_alias_change_renderer_invocations": 0,
+      "normalization_actions": "Only file/JSON ID renames, source-hash linkage, numeric regeneration and Pillow/pypdf/region verification; exact PDF and PNG bytes preserved."
+    }
+  ],
+  "combined_worker_engine_invocations_for_these_two_cohorts": 42,
+  "root_independent_replay_invocations": "not counted or inferred by this worker"
+}

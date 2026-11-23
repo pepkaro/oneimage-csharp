@@ -1,0 +1,847 @@
+{
+  "render_count": 30,
+  "unique_fixture_count": 3,
+  "page_view_count": 5,
+  "records": [
+    {
+      "id": "rotate-inherit-root90",
+      "fixture_id": "rotate-inheritance-root",
+      "engine": "pdfium",
+      "dpi": 72,
+      "page": 0,
+      "settings": {
+        "background": "white",
+        "annotations": "none",
+        "page_box": "CropBox falling back to MediaBox",
+        "physical_scale": "dpi/72 with declared page transform"
+      },
+      "input_sha256": "a93575e7dbebd059113d47cd5aff9929b41111f1a18e51655430ace9d0411e21",
+      "output": "references/rotate-inherit-root90-72-pdfium.png",
+      "sha256": "8b981a8939ee87ba07a7117ac990e0cf7b7fd996a1cac5d705e7a8f550824473",
+      "metadata": {
+        "engine": "PDFium",
+        "version": "153.0.7999.0",
+        "binding": "5.13.0",
+        "width": 100,
+        "height": 160,
+        "rotation": "page-declared",
+        "pixels_per_canvas_unit": 1.0,
+        "authored_user_unit": 1
+      }
+    },
+    {
+      "id": "rotate-inherit-root90",
+      "fixture_id": "rotate-inheritance-root",
+      "engine": "mupdf",
+      "dpi": 72,
+      "page": 0,
+      "settings": {
+        "background": "white",
+        "annotations": "none",
+        "page_box": "CropBox falling back to MediaBox",
+        "physical_scale": "dpi/72 with declared page transform"
+      },
+      "input_sha256": "a93575e7dbebd059113d47cd5aff9929b41111f1a18e51655430ace9d0411e21",
+      "output": "references/rotate-inherit-root90-72-mupdf.png",
+      "sha256": "4b99dd27b076ece52665ce195b62fc05e196d5b96e94302506ab3e3878cf70ea",
+      "metadata": {
+        "engine": "MuPDF",
+        "version": "1.26.11",
+        "binding": "1.26.6",
+        "width": 100,
+        "height": 160,
+        "rotation": "page-declared"
+      }
+    },
+    {
+      "id": "rotate-inherit-root90",
+      "fixture_id": "rotate-inheritance-root",
+      "engine": "pdfjs",
+      "dpi": 72,
+      "page": 0,
+      "settings": {
+        "background": "white",
+        "annotations": "none",
+        "page_box": "CropBox falling back to MediaBox",
+        "physical_scale": "dpi/72 with declared page transform"
+      },
+      "input_sha256": "a93575e7dbebd059113d47cd5aff9929b41111f1a18e51655430ace9d0411e21",
+      "output": "references/rotate-inherit-root90-72-pdfjs.png",
+      "sha256": "35e72f8509b2d0c5a771d536ce2ec8a449f5d4e121badca8936c5f5a353b4469",
+      "metadata": {
+        "engine": "PDF.js",
+        "version": "6.5.438",
+        "build": "0a4153349",
+        "canvas": "@napi-rs/canvas1.1.1",
+        "runtime": "v24.22.3",
+        "backend": "Node Canvas, not native browser",
+        "width": 100,
+        "height": 160,
+        "dpi": 72,
+        "page": 0,
+        "annotations": "none",
+        "background": "white",
+        "rotation": "page-declared",
+        "systemFonts": false,
+        "xfa": false,
+        "eval": false
+      }
+    },
+    {
+      "id": "rotate-inherit-root90",
+      "fixture_id": "rotate-inheritance-root",
+      "engine": "pdfium",
+      "dpi": 144,
+      "page": 0,
+      "settings": {
+        "background": "white",
+        "annotations": "none",
+        "page_box": "CropBox falling back to MediaBox",
+        "physical_scale": "dpi/72 with declared page transform"
+      },
+      "input_sha256": "a93575e7dbebd059113d47cd5aff9929b41111f1a18e51655430ace9d0411e21",
+      "output": "references/rotate-inherit-root90-144-pdfium.png",
+      "sha256": "4af1f994837966b8057f6b26ae42a7e115d36aa4df64d31ef265af45a41a9bea",
+      "metadata": {
+        "engine": "PDFium",
+        "version": "153.0.7999.0",
+        "binding": "5.13.0",
+        "width": 200,
+        "height": 320,
+        "rotation": "page-declared",
+        "pixels_per_canvas_unit": 2.0,
+        "authored_user_unit": 1
+      }
+    },
+    {
+      "id": "rotate-inherit-root90",
+      "fixture_id": "rotate-inheritance-root",
+      "engine": "mupdf",
+      "dpi": 144,
+      "page": 0,
+      "settings": {
+        "background": "white",
+        "annotations": "none",
+        "page_box": "CropBox falling back to MediaBox",
+        "physical_scale": "dpi/72 with declared page transform"
+      },
+      "input_sha256": "a93575e7dbebd059113d47cd5aff9929b41111f1a18e51655430ace9d0411e21",
+      "output": "references/rotate-inherit-root90-144-mupdf.png",
+      "sha256": "ca7159ba63664abe45cb189edfe03073bef92f661a1da9ab5e8c0485d769d770",
+      "metadata": {
+        "engine": "MuPDF",
+        "version": "1.26.11",
+        "binding": "1.26.6",
+        "width": 200,
+        "height": 320,
+        "rotation": "page-declared"
+      }
+    },
+    {
+      "id": "rotate-inherit-root90",
+      "fixture_id": "rotate-inheritance-root",
+      "engine": "pdfjs",
+      "dpi": 144,
+      "page": 0,
+      "settings": {
+        "background": "white",
+        "annotations": "none",
+        "page_box": "CropBox falling back to MediaBox",
+        "physical_scale": "dpi/72 with declared page transform"
+      },
+      "input_sha256": "a93575e7dbebd059113d47cd5aff9929b41111f1a18e51655430ace9d0411e21",
+      "output": "references/rotate-inherit-root90-144-pdfjs.png",
+      "sha256": "02aa9cfa5bd5a27c26079b4c33b8288c0beb6f78724e34e574bd1e71078d786e",
+      "metadata": {
+        "engine": "PDF.js",
+        "version": "6.5.438",
+        "build": "0a4153349",
+        "canvas": "@napi-rs/canvas1.1.1",
+        "runtime": "v24.22.3",
+        "backend": "Node Canvas, not native browser",
+        "width": 200,
+        "height": 320,
+        "dpi": 144,
+        "page": 0,
+        "annotations": "none",
+        "background": "white",
+        "rotation": "page-declared",
+        "systemFonts": false,
+        "xfa": false,
+        "eval": false
+      }
+    },
+    {
+      "id": "rotate-explicit-page0",
+      "fixture_id": "rotate-inheritance-explicit",
+      "engine": "pdfium",
+      "dpi": 72,
+      "page": 0,
+      "settings": {
+        "background": "white",
+        "annotations": "none",
+        "page_box": "CropBox falling back to MediaBox",
+        "physical_scale": "dpi/72 with declared page transform"
+      },
+      "input_sha256": "29dede3832eb9f79636388391155685ae94d18a249ac2bb0069c21e34f060d7c",
+      "output": "references/rotate-explicit-page0-72-pdfium.png",
+      "sha256": "cd85621f96c7473dd1d5abe84753c646547a9b2572d714376e3819fb75bdbde4",
+      "metadata": {
+        "engine": "PDFium",
+        "version": "153.0.7999.0",
+        "binding": "5.13.0",
+        "width": 160,
+        "height": 100,
+        "rotation": "page-declared",
+        "pixels_per_canvas_unit": 1.0,
+        "authored_user_unit": 1
+      }
+    },
+    {
+      "id": "rotate-explicit-page0",
+      "fixture_id": "rotate-inheritance-explicit",
+      "engine": "mupdf",
+      "dpi": 72,
+      "page": 0,
+      "settings": {
+        "background": "white",
+        "annotations": "none",
+        "page_box": "CropBox falling back to MediaBox",
+        "physical_scale": "dpi/72 with declared page transform"
+      },
+      "input_sha256": "29dede3832eb9f79636388391155685ae94d18a249ac2bb0069c21e34f060d7c",
+      "output": "references/rotate-explicit-page0-72-mupdf.png",
+      "sha256": "7d1333419eb1fa6c6f1a3ff3b92e59b6e59eeb8f97ee97374ac62652b03b4333",
+      "metadata": {
+        "engine": "MuPDF",
+        "version": "1.26.11",
+        "binding": "1.26.6",
+        "width": 160,
+        "height": 100,
+        "rotation": "page-declared"
+      }
+    },
+    {
+      "id": "rotate-explicit-page0",
+      "fixture_id": "rotate-inheritance-explicit",
+      "engine": "pdfjs",
+      "dpi": 72,
+      "page": 0,
+      "settings": {
+        "background": "white",
+        "annotations": "none",
+        "page_box": "CropBox falling back to MediaBox",
+        "physical_scale": "dpi/72 with declared page transform"
+      },
+      "input_sha256": "29dede3832eb9f79636388391155685ae94d18a249ac2bb0069c21e34f060d7c",
+      "output": "references/rotate-explicit-page0-72-pdfjs.png",
+      "sha256": "9f0d2abd45ef92794dbc8881b564abb96693bc8d1979b0ca81880cd680f5a20a",
+      "metadata": {
+        "engine": "PDF.js",
+        "version": "6.5.438",
+        "build": "0a4153349",
+        "canvas": "@napi-rs/canvas1.1.1",
+        "runtime": "v24.22.3",
+        "backend": "Node Canvas, not native browser",
+        "width": 160,
+        "height": 100,
+        "dpi": 72,
+        "page": 0,
+        "annotations": "none",
+        "background": "white",
+        "rotation": "page-declared",
+        "systemFonts": false,
+        "xfa": false,
+        "eval": false
+      }
+    },
+    {
+      "id": "rotate-explicit-page0",
+      "fixture_id": "rotate-inheritance-explicit",
+      "engine": "pdfium",
+      "dpi": 144,
+      "page": 0,
+      "settings": {
+        "background": "white",
+        "annotations": "none",
+        "page_box": "CropBox falling back to MediaBox",
+        "physical_scale": "dpi/72 with declared page transform"
+      },
+      "input_sha256": "29dede3832eb9f79636388391155685ae94d18a249ac2bb0069c21e34f060d7c",
+      "output": "references/rotate-explicit-page0-144-pdfium.png",
+      "sha256": "c6825eab3c5b2520d30da7257af5a2ef1e98500f5dad74918b99bb0a26dbb9a3",
+      "metadata": {
+        "engine": "PDFium",
+        "version": "153.0.7999.0",
+        "binding": "5.13.0",
+        "width": 320,
+        "height": 200,
+        "rotation": "page-declared",
+        "pixels_per_canvas_unit": 2.0,
+        "authored_user_unit": 1
+      }
+    },
+    {
+      "id": "rotate-explicit-page0",
+      "fixture_id": "rotate-inheritance-explicit",
+      "engine": "mupdf",
+      "dpi": 144,
+      "page": 0,
+      "settings": {
+        "background": "white",
+        "annotations": "none",
+        "page_box": "CropBox falling back to MediaBox",
+        "physical_scale": "dpi/72 with declared page transform"
+      },
+      "input_sha256": "29dede3832eb9f79636388391155685ae94d18a249ac2bb0069c21e34f060d7c",
+      "output": "references/rotate-explicit-page0-144-mupdf.png",
+      "sha256": "e4b5b7b4a059f6938bcbbf069af5dbb14673cb03c902dc7a23d771a1784d3432",
+      "metadata": {
+        "engine": "MuPDF",
+        "version": "1.26.11",
+        "binding": "1.26.6",
+        "width": 320,
+        "height": 200,
+        "rotation": "page-declared"
+      }
+    },
+    {
+      "id": "rotate-explicit-page0",
+      "fixture_id": "rotate-inheritance-explicit",
+      "engine": "pdfjs",
+      "dpi": 144,
+      "page": 0,
+      "settings": {
+        "background": "white",
+        "annotations": "none",
+        "page_box": "CropBox falling back to MediaBox",
+        "physical_scale": "dpi/72 with declared page transform"
+      },
+      "input_sha256": "29dede3832eb9f79636388391155685ae94d18a249ac2bb0069c21e34f060d7c",
+      "output": "references/rotate-explicit-page0-144-pdfjs.png",
+      "sha256": "7c95e3f2dcd4101c6a49d7fb5ae569b0d64e51df989404889c32fcb3025c8253",
+      "metadata": {
+        "engine": "PDF.js",
+        "version": "6.5.438",
+        "build": "0a4153349",
+        "canvas": "@napi-rs/canvas1.1.1",
+        "runtime": "v24.22.3",
+        "backend": "Node Canvas, not native browser",
+        "width": 320,
+        "height": 200,
+        "dpi": 144,
+        "page": 0,
+        "annotations": "none",
+        "background": "white",
+        "rotation": "page-declared",
+        "systemFonts": false,
+        "xfa": false,
+        "eval": false
+      }
+    },
+    {
+      "id": "rotate-sibling-root-before",
+      "fixture_id": "rotate-inheritance-siblings",
+      "engine": "pdfium",
+      "dpi": 72,
+      "page": 0,
+      "settings": {
+        "background": "white",
+        "annotations": "none",
+        "page_box": "CropBox falling back to MediaBox",
+        "physical_scale": "dpi/72 with declared page transform"
+      },
+      "input_sha256": "e45e59df069e49dd20774547b4123681b385cb28bdd7d2e200bf39bf3faadbf5",
+      "output": "references/rotate-sibling-root-before-72-pdfium.png",
+      "sha256": "8b981a8939ee87ba07a7117ac990e0cf7b7fd996a1cac5d705e7a8f550824473",
+      "metadata": {
+        "engine": "PDFium",
+        "version": "153.0.7999.0",
+        "binding": "5.13.0",
+        "width": 100,
+        "height": 160,
+        "rotation": "page-declared",
+        "pixels_per_canvas_unit": 1.0,
+        "authored_user_unit": 1
+      }
+    },
+    {
+      "id": "rotate-sibling-root-before",
+      "fixture_id": "rotate-inheritance-siblings",
+      "engine": "mupdf",
+      "dpi": 72,
+      "page": 0,
+      "settings": {
+        "background": "white",
+        "annotations": "none",
+        "page_box": "CropBox falling back to MediaBox",
+        "physical_scale": "dpi/72 with declared page transform"
+      },
+      "input_sha256": "e45e59df069e49dd20774547b4123681b385cb28bdd7d2e200bf39bf3faadbf5",
+      "output": "references/rotate-sibling-root-before-72-mupdf.png",
+      "sha256": "4b99dd27b076ece52665ce195b62fc05e196d5b96e94302506ab3e3878cf70ea",
+      "metadata": {
+        "engine": "MuPDF",
+        "version": "1.26.11",
+        "binding": "1.26.6",
+        "width": 100,
+        "height": 160,
+        "rotation": "page-declared"
+      }
+    },
+    {
+      "id": "rotate-sibling-root-before",
+      "fixture_id": "rotate-inheritance-siblings",
+      "engine": "pdfjs",
+      "dpi": 72,
+      "page": 0,
+      "settings": {
+        "background": "white",
+        "annotations": "none",
+        "page_box": "CropBox falling back to MediaBox",
+        "physical_scale": "dpi/72 with declared page transform"
+      },
+      "input_sha256": "e45e59df069e49dd20774547b4123681b385cb28bdd7d2e200bf39bf3faadbf5",
+      "output": "references/rotate-sibling-root-before-72-pdfjs.png",
+      "sha256": "35e72f8509b2d0c5a771d536ce2ec8a449f5d4e121badca8936c5f5a353b4469",
+      "metadata": {
+        "engine": "PDF.js",
+        "version": "6.5.438",
+        "build": "0a4153349",
+        "canvas": "@napi-rs/canvas1.1.1",
+        "runtime": "v24.22.3",
+        "backend": "Node Canvas, not native browser",
+        "width": 100,
+        "height": 160,
+        "dpi": 72,
+        "page": 0,
+        "annotations": "none",
+        "background": "white",
+        "rotation": "page-declared",
+        "systemFonts": false,
+        "xfa": false,
+        "eval": false
+      }
+    },
+    {
+      "id": "rotate-sibling-root-before",
+      "fixture_id": "rotate-inheritance-siblings",
+      "engine": "pdfium",
+      "dpi": 144,
+      "page": 0,
+      "settings": {
+        "background": "white",
+        "annotations": "none",
+        "page_box": "CropBox falling back to MediaBox",
+        "physical_scale": "dpi/72 with declared page transform"
+      },
+      "input_sha256": "e45e59df069e49dd20774547b4123681b385cb28bdd7d2e200bf39bf3faadbf5",
+      "output": "references/rotate-sibling-root-before-144-pdfium.png",
+      "sha256": "4af1f994837966b8057f6b26ae42a7e115d36aa4df64d31ef265af45a41a9bea",
+      "metadata": {
+        "engine": "PDFium",
+        "version": "153.0.7999.0",
+        "binding": "5.13.0",
+        "width": 200,
+        "height": 320,
+        "rotation": "page-declared",
+        "pixels_per_canvas_unit": 2.0,
+        "authored_user_unit": 1
+      }
+    },
+    {
+      "id": "rotate-sibling-root-before",
+      "fixture_id": "rotate-inheritance-siblings",
+      "engine": "mupdf",
+      "dpi": 144,
+      "page": 0,
+      "settings": {
+        "background": "white",
+        "annotations": "none",
+        "page_box": "CropBox falling back to MediaBox",
+        "physical_scale": "dpi/72 with declared page transform"
+      },
+      "input_sha256": "e45e59df069e49dd20774547b4123681b385cb28bdd7d2e200bf39bf3faadbf5",
+      "output": "references/rotate-sibling-root-before-144-mupdf.png",
+      "sha256": "ca7159ba63664abe45cb189edfe03073bef92f661a1da9ab5e8c0485d769d770",
+      "metadata": {
+        "engine": "MuPDF",
+        "version": "1.26.11",
+        "binding": "1.26.6",
+        "width": 200,
+        "height": 320,
+        "rotation": "page-declared"
+      }
+    },
+    {
+      "id": "rotate-sibling-root-before",
+      "fixture_id": "rotate-inheritance-siblings",
+      "engine": "pdfjs",
+      "dpi": 144,
+      "page": 0,
+      "settings": {
+        "background": "white",
+        "annotations": "none",
+        "page_box": "CropBox falling back to MediaBox",
+        "physical_scale": "dpi/72 with declared page transform"
+      },
+      "input_sha256": "e45e59df069e49dd20774547b4123681b385cb28bdd7d2e200bf39bf3faadbf5",
+      "output": "references/rotate-sibling-root-before-144-pdfjs.png",
+      "sha256": "02aa9cfa5bd5a27c26079b4c33b8288c0beb6f78724e34e574bd1e71078d786e",
+      "metadata": {
+        "engine": "PDF.js",
+        "version": "6.5.438",
+        "build": "0a4153349",
+        "canvas": "@napi-rs/canvas1.1.1",
+        "runtime": "v24.22.3",
+        "backend": "Node Canvas, not native browser",
+        "width": 200,
+        "height": 320,
+        "dpi": 144,
+        "page": 0,
+        "annotations": "none",
+        "background": "white",
+        "rotation": "page-declared",
+        "systemFonts": false,
+        "xfa": false,
+        "eval": false
+      }
+    },
+    {
+      "id": "rotate-nearest-ancestor270",
+      "fixture_id": "rotate-inheritance-siblings",
+      "engine": "pdfium",
+      "dpi": 72,
+      "page": 1,
+      "settings": {
+        "background": "white",
+        "annotations": "none",
+        "page_box": "CropBox falling back to MediaBox",
+        "physical_scale": "dpi/72 with declared page transform"
+      },
+      "input_sha256": "e45e59df069e49dd20774547b4123681b385cb28bdd7d2e200bf39bf3faadbf5",
+      "output": "references/rotate-nearest-ancestor270-72-pdfium.png",
+      "sha256": "8cb31491352e59389f7420b2c47d3d76d4bf97644be8fa3a44ab918c7373d109",
+      "metadata": {
+        "engine": "PDFium",
+        "version": "153.0.7999.0",
+        "binding": "5.13.0",
+        "width": 100,
+        "height": 160,
+        "rotation": "page-declared",
+        "pixels_per_canvas_unit": 1.0,
+        "authored_user_unit": 1
+      }
+    },
+    {
+      "id": "rotate-nearest-ancestor270",
+      "fixture_id": "rotate-inheritance-siblings",
+      "engine": "mupdf",
+      "dpi": 72,
+      "page": 1,
+      "settings": {
+        "background": "white",
+        "annotations": "none",
+        "page_box": "CropBox falling back to MediaBox",
+        "physical_scale": "dpi/72 with declared page transform"
+      },
+      "input_sha256": "e45e59df069e49dd20774547b4123681b385cb28bdd7d2e200bf39bf3faadbf5",
+      "output": "references/rotate-nearest-ancestor270-72-mupdf.png",
+      "sha256": "f697d17b278e31c4bd5afa3fadbaff8f2ebd853f632f52430c3e56c14a32850b",
+      "metadata": {
+        "engine": "MuPDF",
+        "version": "1.26.11",
+        "binding": "1.26.6",
+        "width": 100,
+        "height": 160,
+        "rotation": "page-declared"
+      }
+    },
+    {
+      "id": "rotate-nearest-ancestor270",
+      "fixture_id": "rotate-inheritance-siblings",
+      "engine": "pdfjs",
+      "dpi": 72,
+      "page": 1,
+      "settings": {
+        "background": "white",
+        "annotations": "none",
+        "page_box": "CropBox falling back to MediaBox",
+        "physical_scale": "dpi/72 with declared page transform"
+      },
+      "input_sha256": "e45e59df069e49dd20774547b4123681b385cb28bdd7d2e200bf39bf3faadbf5",
+      "output": "references/rotate-nearest-ancestor270-72-pdfjs.png",
+      "sha256": "9479919e4cdfa53065fc510b1e9ce2b3bf10039901d8ccf587303f36cd0ff1ea",
+      "metadata": {
+        "engine": "PDF.js",
+        "version": "6.5.438",
+        "build": "0a4153349",
+        "canvas": "@napi-rs/canvas1.1.1",
+        "runtime": "v24.22.3",
+        "backend": "Node Canvas, not native browser",
+        "width": 100,
+        "height": 160,
+        "dpi": 72,
+        "page": 1,
+        "annotations": "none",
+        "background": "white",
+        "rotation": "page-declared",
+        "systemFonts": false,
+        "xfa": false,
+        "eval": false
+      }
+    },
+    {
+      "id": "rotate-nearest-ancestor270",
+      "fixture_id": "rotate-inheritance-siblings",
+      "engine": "pdfium",
+      "dpi": 144,
+      "page": 1,
+      "settings": {
+        "background": "white",
+        "annotations": "none",
+        "page_box": "CropBox falling back to MediaBox",
+        "physical_scale": "dpi/72 with declared page transform"
+      },
+      "input_sha256": "e45e59df069e49dd20774547b4123681b385cb28bdd7d2e200bf39bf3faadbf5",
+      "output": "references/rotate-nearest-ancestor270-144-pdfium.png",
+      "sha256": "7df73c120efc4a212d51a4a7303a8b6b05bb796e7f64bf3a64cfcccb0de3f508",
+      "metadata": {
+        "engine": "PDFium",
+        "version": "153.0.7999.0",
+        "binding": "5.13.0",
+        "width": 200,
+        "height": 320,
+        "rotation": "page-declared",
+        "pixels_per_canvas_unit": 2.0,
+        "authored_user_unit": 1
+      }
+    },
+    {
+      "id": "rotate-nearest-ancestor270",
+      "fixture_id": "rotate-inheritance-siblings",
+      "engine": "mupdf",
+      "dpi": 144,
+      "page": 1,
+      "settings": {
+        "background": "white",
+        "annotations": "none",
+        "page_box": "CropBox falling back to MediaBox",
+        "physical_scale": "dpi/72 with declared page transform"
+      },
+      "input_sha256": "e45e59df069e49dd20774547b4123681b385cb28bdd7d2e200bf39bf3faadbf5",
+      "output": "references/rotate-nearest-ancestor270-144-mupdf.png",
+      "sha256": "fe2692247f1bd22739a3e0ec584926406a9a82182db08a44b60a6abc05e801f8",
+      "metadata": {
+        "engine": "MuPDF",
+        "version": "1.26.11",
+        "binding": "1.26.6",
+        "width": 200,
+        "height": 320,
+        "rotation": "page-declared"
+      }
+    },
+    {
+      "id": "rotate-nearest-ancestor270",
+      "fixture_id": "rotate-inheritance-siblings",
+      "engine": "pdfjs",
+      "dpi": 144,
+      "page": 1,
+      "settings": {
+        "background": "white",
+        "annotations": "none",
+        "page_box": "CropBox falling back to MediaBox",
+        "physical_scale": "dpi/72 with declared page transform"
+      },
+      "input_sha256": "e45e59df069e49dd20774547b4123681b385cb28bdd7d2e200bf39bf3faadbf5",
+      "output": "references/rotate-nearest-ancestor270-144-pdfjs.png",
+      "sha256": "44345409f13e64052f6e6aa9b35d914d9b698e0efa830e6610de5668b0069365",
+      "metadata": {
+        "engine": "PDF.js",
+        "version": "6.5.438",
+        "build": "0a4153349",
+        "canvas": "@napi-rs/canvas1.1.1",
+        "runtime": "v24.22.3",
+        "backend": "Node Canvas, not native browser",
+        "width": 200,
+        "height": 320,
+        "dpi": 144,
+        "page": 1,
+        "annotations": "none",
+        "background": "white",
+        "rotation": "page-declared",
+        "systemFonts": false,
+        "xfa": false,
+        "eval": false
+      }
+    },
+    {
+      "id": "rotate-sibling-root-after",
+      "fixture_id": "rotate-inheritance-siblings",
+      "engine": "pdfium",
+      "dpi": 72,
+      "page": 2,
+      "settings": {
+        "background": "white",
+        "annotations": "none",
+        "page_box": "CropBox falling back to MediaBox",
+        "physical_scale": "dpi/72 with declared page transform"
+      },
+      "input_sha256": "e45e59df069e49dd20774547b4123681b385cb28bdd7d2e200bf39bf3faadbf5",
+      "output": "references/rotate-sibling-root-after-72-pdfium.png",
+      "sha256": "8b981a8939ee87ba07a7117ac990e0cf7b7fd996a1cac5d705e7a8f550824473",
+      "metadata": {
+        "engine": "PDFium",
+        "version": "153.0.7999.0",
+        "binding": "5.13.0",
+        "width": 100,
+        "height": 160,
+        "rotation": "page-declared",
+        "pixels_per_canvas_unit": 1.0,
+        "authored_user_unit": 1
+      }
+    },
+    {
+      "id": "rotate-sibling-root-after",
+      "fixture_id": "rotate-inheritance-siblings",
+      "engine": "mupdf",
+      "dpi": 72,
+      "page": 2,
+      "settings": {
+        "background": "white",
+        "annotations": "none",
+        "page_box": "CropBox falling back to MediaBox",
+        "physical_scale": "dpi/72 with declared page transform"
+      },
+      "input_sha256": "e45e59df069e49dd20774547b4123681b385cb28bdd7d2e200bf39bf3faadbf5",
+      "output": "references/rotate-sibling-root-after-72-mupdf.png",
+      "sha256": "4b99dd27b076ece52665ce195b62fc05e196d5b96e94302506ab3e3878cf70ea",
+      "metadata": {
+        "engine": "MuPDF",
+        "version": "1.26.11",
+        "binding": "1.26.6",
+        "width": 100,
+        "height": 160,
+        "rotation": "page-declared"
+      }
+    },
+    {
+      "id": "rotate-sibling-root-after",
+      "fixture_id": "rotate-inheritance-siblings",
+      "engine": "pdfjs",
+      "dpi": 72,
+      "page": 2,
+      "settings": {
+        "background": "white",
+        "annotations": "none",
+        "page_box": "CropBox falling back to MediaBox",
+        "physical_scale": "dpi/72 with declared page transform"
+      },
+      "input_sha256": "e45e59df069e49dd20774547b4123681b385cb28bdd7d2e200bf39bf3faadbf5",
+      "output": "references/rotate-sibling-root-after-72-pdfjs.png",
+      "sha256": "35e72f8509b2d0c5a771d536ce2ec8a449f5d4e121badca8936c5f5a353b4469",
+      "metadata": {
+        "engine": "PDF.js",
+        "version": "6.5.438",
+        "build": "0a4153349",
+        "canvas": "@napi-rs/canvas1.1.1",
+        "runtime": "v24.22.3",
+        "backend": "Node Canvas, not native browser",
+        "width": 100,
+        "height": 160,
+        "dpi": 72,
+        "page": 2,
+        "annotations": "none",
+        "background": "white",
+        "rotation": "page-declared",
+        "systemFonts": false,
+        "xfa": false,
+        "eval": false
+      }
+    },
+    {
+      "id": "rotate-sibling-root-after",
+      "fixture_id": "rotate-inheritance-siblings",
+      "engine": "pdfium",
+      "dpi": 144,
+      "page": 2,
+      "settings": {
+        "background": "white",
+        "annotations": "none",
+        "page_box": "CropBox falling back to MediaBox",
+        "physical_scale": "dpi/72 with declared page transform"
+      },
+      "input_sha256": "e45e59df069e49dd20774547b4123681b385cb28bdd7d2e200bf39bf3faadbf5",
+      "output": "references/rotate-sibling-root-after-144-pdfium.png",
+      "sha256": "4af1f994837966b8057f6b26ae42a7e115d36aa4df64d31ef265af45a41a9bea",
+      "metadata": {
+        "engine": "PDFium",
+        "version": "153.0.7999.0",
+        "binding": "5.13.0",
+        "width": 200,
+        "height": 320,
+        "rotation": "page-declared",
+        "pixels_per_canvas_unit": 2.0,
+        "authored_user_unit": 1
+      }
+    },
+    {
+      "id": "rotate-sibling-root-after",
+      "fixture_id": "rotate-inheritance-siblings",
+      "engine": "mupdf",
+      "dpi": 144,
+      "page": 2,
+      "settings": {
+        "background": "white",
+        "annotations": "none",
+        "page_box": "CropBox falling back to MediaBox",
+        "physical_scale": "dpi/72 with declared page transform"
+      },
+      "input_sha256": "e45e59df069e49dd20774547b4123681b385cb28bdd7d2e200bf39bf3faadbf5",
+      "output": "references/rotate-sibling-root-after-144-mupdf.png",
+      "sha256": "ca7159ba63664abe45cb189edfe03073bef92f661a1da9ab5e8c0485d769d770",
+      "metadata": {
+        "engine": "MuPDF",
+        "version": "1.26.11",
+        "binding": "1.26.6",
+        "width": 200,
+        "height": 320,
+        "rotation": "page-declared"
+      }
+    },
+    {
+      "id": "rotate-sibling-root-after",
+      "fixture_id": "rotate-inheritance-siblings",
+      "engine": "pdfjs",
+      "dpi": 144,
+      "page": 2,
+      "settings": {
+        "background": "white",
+        "annotations": "none",
+        "page_box": "CropBox falling back to MediaBox",
+        "physical_scale": "dpi/72 with declared page transform"
+      },
+      "input_sha256": "e45e59df069e49dd20774547b4123681b385cb28bdd7d2e200bf39bf3faadbf5",
+      "output": "references/rotate-sibling-root-after-144-pdfjs.png",
+      "sha256": "02aa9cfa5bd5a27c26079b4c33b8288c0beb6f78724e34e574bd1e71078d786e",
+      "metadata": {
+        "engine": "PDF.js",
+        "version": "6.5.438",
+        "build": "0a4153349",
+        "canvas": "@napi-rs/canvas1.1.1",
+        "runtime": "v24.22.3",
+        "backend": "Node Canvas, not native browser",
+        "width": 200,
+        "height": 320,
+        "dpi": 144,
+        "page": 2,
+        "annotations": "none",
+        "background": "white",
+        "rotation": "page-declared",
+        "systemFonts": false,
+        "xfa": false,
+        "eval": false
+      }
+    }
+  ]
+}

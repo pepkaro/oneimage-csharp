@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "owner": "pdfium_originals",
+  "slice": "ISO-TEXT-QUOTE-01",
+  "path": "work/textquote",
+  "state": "complete-local-reference-qualified-awaiting-root-review",
+  "actual": {
+    "generated_unique_pdfs": 4,
+    "unique_case_dpi_views": 8,
+    "reused_original_fonts": 1,
+    "named_contracts": 4,
+    "references_executed": 24,
+    "reference_passed": 24,
+    "reference_failed": 0,
+    "reference_skipped": 0,
+    "qualified_cases": 4,
+    "held_cases": 0,
+    "upstream_entry_passes": 0,
+    "product_runs": 0,
+    "published_by_worker": 0
+  },
+  "next_unclaimed_slice": {
+    "id": "ISO-TEXT-INVISIBLE-01",
+    "state": "proposed-unclaimed-not-started",
+    "scope": "Ordinary rendering-mode3 controls with the owned original Type3 font: invisible glyphs preserve text advancement before later visible text.",
+    "acceptance_criteria": [
+      "Confirm disjoint ownership before assignment.",
+      "Inspect governing Type3 rendering-mode limitation and available official2020 matrix-update correction.",
+      "Freeze white/ink interiors and independent post-invisible glyph positions before fresh three-reference72/144 captures.",
+      "Keep ordinary valid rendering only; no borrowed/private inputs, security reproductions or filename-based mapping credit."
+    ]
+  }
+}

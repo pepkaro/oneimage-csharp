@@ -1,0 +1,609 @@
+{
+  "parser": "pypdf",
+  "parser_version": "6.21.4",
+  "unique_pdfs": 3,
+  "page_views": 5,
+  "passed": 5,
+  "failed": 0,
+  "fixtures": [
+    {
+      "fixture_id": "rotate-inheritance-root",
+      "file": "inputs/rotate-inheritance-root.pdf",
+      "page_count": 1,
+      "page_tree_nodes": [
+        {
+          "object": 2,
+          "count": 1,
+          "local_rotation": 90
+        }
+      ],
+      "parsed_pages": [
+        {
+          "page": 0,
+          "page_object": 3,
+          "rotate_owner_object": 2,
+          "rotation": 90,
+          "media_box": [
+            10.0,
+            20.0,
+            170.0,
+            120.0
+          ],
+          "crop_box": [
+            10.0,
+            20.0,
+            170.0,
+            120.0
+          ],
+          "width": 100.0,
+          "height": 160.0,
+          "has_explicit_page_rotation": false,
+          "transformed_rectangles": [
+            [
+              20.0,
+              120.0,
+              15.0,
+              20.0,
+              [
+                255,
+                0,
+                0
+              ]
+            ],
+            [
+              60.0,
+              20.0,
+              20.0,
+              30.0,
+              [
+                0,
+                0,
+                255
+              ]
+            ]
+          ],
+          "device_transform_72": [
+            0,
+            1,
+            1,
+            0,
+            -20.0,
+            -10.0
+          ]
+        }
+      ]
+    },
+    {
+      "fixture_id": "rotate-inheritance-explicit",
+      "file": "inputs/rotate-inheritance-explicit.pdf",
+      "page_count": 1,
+      "page_tree_nodes": [
+        {
+          "object": 2,
+          "count": 1,
+          "local_rotation": 90
+        }
+      ],
+      "parsed_pages": [
+        {
+          "page": 0,
+          "page_object": 3,
+          "rotate_owner_object": 3,
+          "rotation": 0,
+          "media_box": [
+            10.0,
+            20.0,
+            170.0,
+            120.0
+          ],
+          "crop_box": [
+            10.0,
+            20.0,
+            170.0,
+            120.0
+          ],
+          "width": 160.0,
+          "height": 100.0,
+          "has_explicit_page_rotation": true,
+          "transformed_rectangles": [
+            [
+              20.0,
+              20.0,
+              20.0,
+              15.0,
+              [
+                255,
+                0,
+                0
+              ]
+            ],
+            [
+              110.0,
+              60.0,
+              30.0,
+              20.0,
+              [
+                0,
+                0,
+                255
+              ]
+            ]
+          ],
+          "device_transform_72": [
+            1,
+            0,
+            0,
+            -1,
+            -10.0,
+            120.0
+          ]
+        }
+      ]
+    },
+    {
+      "fixture_id": "rotate-inheritance-siblings",
+      "file": "inputs/rotate-inheritance-siblings.pdf",
+      "page_count": 3,
+      "page_tree_nodes": [
+        {
+          "object": 5,
+          "count": 1,
+          "local_rotation": 270
+        },
+        {
+          "object": 2,
+          "count": 3,
+          "local_rotation": 90
+        }
+      ],
+      "parsed_pages": [
+        {
+          "page": 0,
+          "page_object": 3,
+          "rotate_owner_object": 2,
+          "rotation": 90,
+          "media_box": [
+            10.0,
+            20.0,
+            170.0,
+            120.0
+          ],
+          "crop_box": [
+            10.0,
+            20.0,
+            170.0,
+            120.0
+          ],
+          "width": 100.0,
+          "height": 160.0,
+          "has_explicit_page_rotation": false,
+          "transformed_rectangles": [
+            [
+              20.0,
+              120.0,
+              15.0,
+              20.0,
+              [
+                255,
+                0,
+                0
+              ]
+            ],
+            [
+              60.0,
+              20.0,
+              20.0,
+              30.0,
+              [
+                0,
+                0,
+                255
+              ]
+            ]
+          ],
+          "device_transform_72": [
+            0,
+            1,
+            1,
+            0,
+            -20.0,
+            -10.0
+          ]
+        },
+        {
+          "page": 1,
+          "page_object": 6,
+          "rotate_owner_object": 5,
+          "rotation": 270,
+          "media_box": [
+            10.0,
+            20.0,
+            170.0,
+            120.0
+          ],
+          "crop_box": [
+            10.0,
+            20.0,
+            170.0,
+            120.0
+          ],
+          "width": 100.0,
+          "height": 160.0,
+          "has_explicit_page_rotation": false,
+          "transformed_rectangles": [
+            [
+              65.0,
+              20.0,
+              15.0,
+              20.0,
+              [
+                255,
+                0,
+                0
+              ]
+            ],
+            [
+              20.0,
+              110.0,
+              20.0,
+              30.0,
+              [
+                0,
+                0,
+                255
+              ]
+            ]
+          ],
+          "device_transform_72": [
+            0,
+            -1,
+            -1,
+            0,
+            120.0,
+            170.0
+          ]
+        },
+        {
+          "page": 2,
+          "page_object": 7,
+          "rotate_owner_object": 2,
+          "rotation": 90,
+          "media_box": [
+            10.0,
+            20.0,
+            170.0,
+            120.0
+          ],
+          "crop_box": [
+            10.0,
+            20.0,
+            170.0,
+            120.0
+          ],
+          "width": 100.0,
+          "height": 160.0,
+          "has_explicit_page_rotation": false,
+          "transformed_rectangles": [
+            [
+              20.0,
+              120.0,
+              15.0,
+              20.0,
+              [
+                255,
+                0,
+                0
+              ]
+            ],
+            [
+              60.0,
+              20.0,
+              20.0,
+              30.0,
+              [
+                0,
+                0,
+                255
+              ]
+            ]
+          ],
+          "device_transform_72": [
+            0,
+            1,
+            1,
+            0,
+            -20.0,
+            -10.0
+          ]
+        }
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "id": "rotate-inherit-root90",
+      "fixture_id": "rotate-inheritance-root",
+      "file": "inputs/rotate-inheritance-root.pdf",
+      "page": 0,
+      "passed": true,
+      "page_object": 3,
+      "rotate_owner_object": 2,
+      "rotation": 90,
+      "media_box": [
+        10.0,
+        20.0,
+        170.0,
+        120.0
+      ],
+      "crop_box": [
+        10.0,
+        20.0,
+        170.0,
+        120.0
+      ],
+      "width": 100.0,
+      "height": 160.0,
+      "has_explicit_page_rotation": false,
+      "transformed_rectangles": [
+        [
+          20.0,
+          120.0,
+          15.0,
+          20.0,
+          [
+            255,
+            0,
+            0
+          ]
+        ],
+        [
+          60.0,
+          20.0,
+          20.0,
+          30.0,
+          [
+            0,
+            0,
+            255
+          ]
+        ]
+      ],
+      "device_transform_72": [
+        0,
+        1,
+        1,
+        0,
+        -20.0,
+        -10.0
+      ]
+    },
+    {
+      "id": "rotate-explicit-page0",
+      "fixture_id": "rotate-inheritance-explicit",
+      "file": "inputs/rotate-inheritance-explicit.pdf",
+      "page": 0,
+      "passed": true,
+      "page_object": 3,
+      "rotate_owner_object": 3,
+      "rotation": 0,
+      "media_box": [
+        10.0,
+        20.0,
+        170.0,
+        120.0
+      ],
+      "crop_box": [
+        10.0,
+        20.0,
+        170.0,
+        120.0
+      ],
+      "width": 160.0,
+      "height": 100.0,
+      "has_explicit_page_rotation": true,
+      "transformed_rectangles": [
+        [
+          20.0,
+          20.0,
+          20.0,
+          15.0,
+          [
+            255,
+            0,
+            0
+          ]
+        ],
+        [
+          110.0,
+          60.0,
+          30.0,
+          20.0,
+          [
+            0,
+            0,
+            255
+          ]
+        ]
+      ],
+      "device_transform_72": [
+        1,
+        0,
+        0,
+        -1,
+        -10.0,
+        120.0
+      ]
+    },
+    {
+      "id": "rotate-sibling-root-before",
+      "fixture_id": "rotate-inheritance-siblings",
+      "file": "inputs/rotate-inheritance-siblings.pdf",
+      "page": 0,
+      "passed": true,
+      "page_object": 3,
+      "rotate_owner_object": 2,
+      "rotation": 90,
+      "media_box": [
+        10.0,
+        20.0,
+        170.0,
+        120.0
+      ],
+      "crop_box": [
+        10.0,
+        20.0,
+        170.0,
+        120.0
+      ],
+      "width": 100.0,
+      "height": 160.0,
+      "has_explicit_page_rotation": false,
+      "transformed_rectangles": [
+        [
+          20.0,
+          120.0,
+          15.0,
+          20.0,
+          [
+            255,
+            0,
+            0
+          ]
+        ],
+        [
+          60.0,
+          20.0,
+          20.0,
+          30.0,
+          [
+            0,
+            0,
+            255
+          ]
+        ]
+      ],
+      "device_transform_72": [
+        0,
+        1,
+        1,
+        0,
+        -20.0,
+        -10.0
+      ]
+    },
+    {
+      "id": "rotate-nearest-ancestor270",
+      "fixture_id": "rotate-inheritance-siblings",
+      "file": "inputs/rotate-inheritance-siblings.pdf",
+      "page": 1,
+      "passed": true,
+      "page_object": 6,
+      "rotate_owner_object": 5,
+      "rotation": 270,
+      "media_box": [
+        10.0,
+        20.0,
+        170.0,
+        120.0
+      ],
+      "crop_box": [
+        10.0,
+        20.0,
+        170.0,
+        120.0
+      ],
+      "width": 100.0,
+      "height": 160.0,
+      "has_explicit_page_rotation": false,
+      "transformed_rectangles": [
+        [
+          65.0,
+          20.0,
+          15.0,
+          20.0,
+          [
+            255,
+            0,
+            0
+          ]
+        ],
+        [
+          20.0,
+          110.0,
+          20.0,
+          30.0,
+          [
+            0,
+            0,
+            255
+          ]
+        ]
+      ],
+      "device_transform_72": [
+        0,
+        -1,
+        -1,
+        0,
+        120.0,
+        170.0
+      ]
+    },
+    {
+      "id": "rotate-sibling-root-after",
+      "fixture_id": "rotate-inheritance-siblings",
+      "file": "inputs/rotate-inheritance-siblings.pdf",
+      "page": 2,
+      "passed": true,
+      "page_object": 7,
+      "rotate_owner_object": 2,
+      "rotation": 90,
+      "media_box": [
+        10.0,
+        20.0,
+        170.0,
+        120.0
+      ],
+      "crop_box": [
+        10.0,
+        20.0,
+        170.0,
+        120.0
+      ],
+      "width": 100.0,
+      "height": 160.0,
+      "has_explicit_page_rotation": false,
+      "transformed_rectangles": [
+        [
+          20.0,
+          120.0,
+          15.0,
+          20.0,
+          [
+            255,
+            0,
+            0
+          ]
+        ],
+        [
+          60.0,
+          20.0,
+          20.0,
+          30.0,
+          [
+            0,
+            0,
+            255
+          ]
+        ]
+      ],
+      "device_transform_72": [
+        0,
+        1,
+        1,
+        0,
+        -20.0,
+        -10.0
+      ]
+    }
+  ]
+}

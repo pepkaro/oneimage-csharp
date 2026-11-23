@@ -1,0 +1,674 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-11-23 UTC",
+  "completion_rule": "Every applicable scoped semanticrule has committed independentlyvalidatedfixture+assertion or explicitreviewedexception; inventory completion is not behavior completion",
+  "scope_limit": "Initial manuallyscopedordinaryvisualrules only; fullstandard ruleenumeration incomplete pendingfull2020text and furthermanualqualification; no claim everyapplicablePDFbehaviorislisted",
+  "recovery_rule": "ReadthisbacklogandGitHEAD; verifypriorcheckpoint;claimoneunclaimeddisjointslice; neverrerunblockedAOTIPC; checkpointblockedreasonandcontinueindependenteligible work; no newapprovalneededwithin authorizedscope",
+  "current_publication": "Verified draft94 acceptance f2cce2ff49883aca9a9c1152af6a1a195a50113f; measured sixth-batch evidence follows",
+  "slices": [
+    {
+      "slice_id": "ISO-PAGE-BOX-INDIRECT-02",
+      "iso_2020_order": "07.03.10",
+      "verified_coarse_title": "Indirect objects",
+      "state": "unclaimed",
+      "owner": null,
+      "case_ids": [],
+      "upstream_ids": [],
+      "acceptance_criteria": "Own direct control versus both whole box arrays and their coordinates indirect; resolve small acyclic object graph, CropBox origin/dimensions and vector placement;3refs72/144; discovery source remains unqualified"
+    },
+    {
+      "slice_id": "ISO-FILTER-BASE-01",
+      "iso_2020_order": "07.04.01",
+      "verified_coarse_title": "General",
+      "state": "complete-product-mask-pass",
+      "owner": "pdfium_originals",
+      "case_ids": [
+        "img-filter-equivalence-raw",
+        "img-filter-equivalence-flate",
+        "img-filter-equivalence-runlength"
+      ],
+      "acceptance_criteria": "Decode same54authoredbytes and compare18freshcaptures on predefinedinteriors",
+      "upstream_ids": [],
+      "fine_rule_citations": "Seecaseclause records;pendingfull2020textwhereunavailable",
+      "checkpoint": "cases.json and worker checkpoint wherecompleted",
+      "exclusivity": "oneownerperactive slice; workdirectoriesdisjoint"
+    },
+    {
+      "slice_id": "ISO-IMAGE-PREDICTOR-CONTROL-01",
+      "iso_2020_order": "07.04.04.03",
+      "verified_coarse_title": "LZWDecode and FlateDecode parameters",
+      "state": "complete-product-mask-pass",
+      "owner": "pdfium_originals",
+      "case_ids": [
+        "img-predictor-none",
+        "img-predictor-tiff-sub",
+        "img-predictor-png-sub",
+        "img-predictor-png-up"
+      ],
+      "acceptance_criteria": "Small validRGB rows: no predictor/TIFF2/PNGSub/Up; independent decoder equals authored bytes;3refs at2DPIs and exactdeclaredinteriors",
+      "upstream_ids": [],
+      "fine_rule_citations": "Seecaseclause records;pendingfull2020textwhereunavailable",
+      "checkpoint": "cases.json and worker checkpoint wherecompleted",
+      "exclusivity": "oneownerperactive slice; workdirectoriesdisjoint"
+    },
+    {
+      "slice_id": "ISO-PAGE-BOX-INDIRECT-01",
+      "iso_2020_order": "07.07.03.03",
+      "verified_coarse_title": "Page objects",
+      "state": "complete-product-mask-and-named-assertions-pass",
+      "owner": "upstream_match5",
+      "case_ids": [
+        "boxes-direct-control",
+        "boxes-indirect-arrays",
+        "boxes-indirect-coordinates"
+      ],
+      "upstream_ids": [],
+      "candidate_source_id": "mozilla:issue7872",
+      "source_qualification": "Partial intent only; no association/credit. Indirection form, source pages/settings unknown.",
+      "acceptance_criteria": "Original direct control plus whole-array and coordinate-element indirect MediaBox/CropBox controls; independently resolve arrays, visible dimensions/origin and named inset geometry; three pinned refs before product; state tested variants and leave unseen source scene unqualified",
+      "reference_agreed_cases": [
+        "boxes-direct-control",
+        "boxes-indirect-arrays",
+        "boxes-indirect-coordinates"
+      ],
+      "held_cases": [],
+      "unique_pdfs": 3,
+      "evidence": "product-batch6-strict-results.json"
+    },
+    {
+      "slice_id": "ISO-PAGE-GEOMETRY-01",
+      "iso_2020_order": "07.07.03.03",
+      "verified_coarse_title": "Page objects",
+      "state": "complete-product-pass",
+      "owner": "root",
+      "case_ids": [
+        "geometry-cropbox-offset",
+        "geometry-rotate-90",
+        "geometry-user-unit-2"
+      ],
+      "acceptance_criteria": "Visible dimensions and transformed colorrectangles exact at72/144DPI",
+      "upstream_ids": [],
+      "fine_rule_citations": "Seecaseclause records;pendingfull2020textwhereunavailable",
+      "checkpoint": "cases.json and worker checkpoint wherecompleted",
+      "exclusivity": "oneownerperactive slice; workdirectoriesdisjoint"
+    },
+    {
+      "slice_id": "ISO-PAGE-ATTRIBUTE-INHERIT-01",
+      "iso_2020_order": "07.07.03.04",
+      "verified_coarse_title": "Inheritance of page attributes (cross-reference; finer2020 text pending)",
+      "state": "complete-product-mask-and-named-assertions-pass",
+      "owner": "mozilla_originals",
+      "case_ids": [
+        "mediabox-inherit-root",
+        "mediabox-explicit-page",
+        "mediabox-sibling-root-before",
+        "mediabox-nearest-ancestor",
+        "mediabox-sibling-root-after"
+      ],
+      "upstream_ids": [],
+      "acceptance_criteria": "Original valid parent/page MediaBox controls, local override and sibling restoration; exact visible dimensions and inset color placements at72/144DPI; three pinned refs; retain page-view accounting",
+      "work_checkpoint": "pdf-corpus-fifth-20261123/work",
+      "reference_agreed_cases": [
+        "mediabox-inherit-root",
+        "mediabox-explicit-page",
+        "mediabox-sibling-root-before",
+        "mediabox-nearest-ancestor",
+        "mediabox-sibling-root-after"
+      ],
+      "held_cases": [],
+      "unique_pdfs": 3,
+      "evidence": "product-batch5-strict-results.json"
+    },
+    {
+      "slice_id": "ISO-PAGE-ATTRIBUTE-INHERIT-02",
+      "iso_2020_order": "07.07.03.04",
+      "verified_coarse_title": "Inheritance of page attributes",
+      "state": "complete-product-mask-and-named-assertions-pass",
+      "owner": "mozilla_originals",
+      "case_ids": [
+        "rotate-inherit-root90",
+        "rotate-explicit-page0",
+        "rotate-sibling-root-before",
+        "rotate-nearest-ancestor270",
+        "rotate-sibling-root-after"
+      ],
+      "upstream_ids": [],
+      "acceptance_criteria": "Ordinary inherited Rotate with explicit page override and sibling scope; independently compute visible dimensions and transformed endpoint rectangles; verified clauses,72/144DPI and three refs",
+      "reference_agreed_cases": [
+        "rotate-inherit-root90",
+        "rotate-explicit-page0",
+        "rotate-sibling-root-before",
+        "rotate-nearest-ancestor270",
+        "rotate-sibling-root-after"
+      ],
+      "held_cases": [],
+      "unique_pdfs": 3,
+      "evidence": "product-batch6-strict-results.json"
+    },
+    {
+      "slice_id": "ISO-PAGE-ATTRIBUTE-INHERIT-03",
+      "iso_2020_order": "07.07.03.04",
+      "verified_coarse_title": "Inheritance of page attributes",
+      "state": "unclaimed",
+      "owner": null,
+      "case_ids": [],
+      "upstream_ids": [],
+      "acceptance_criteria": "Valid inherited CropBox inside explicit MediaBox, local override/nearest ancestor/sibling scope; independent viewport/origin and endpoint vectors; rawtree and3refs72/144"
+    },
+    {
+      "slice_id": "ISO-PAGE-RESOURCE-01",
+      "iso_2020_order": "07.08.03",
+      "verified_coarse_title": "Resource dictionaries",
+      "state": "complete-product-mask-and-named-assertions-pass",
+      "owner": "mozilla_originals",
+      "case_ids": [
+        "resource-page-form-isolation",
+        "resource-sibling-form-isolation",
+        "resource-nested-form-restoration"
+      ],
+      "acceptance_criteria": "OriginalForm/page resource-name isolation with nofontorimage dependency; semanticallydistinct namedcolors; no upstreamassociation without reviewedscene metadata",
+      "upstream_ids": [],
+      "fine_rule_citations": "Seecaseclause records;pendingfull2020textwhereunavailable",
+      "checkpoint": "cases.json and worker checkpoint wherecompleted",
+      "exclusivity": "oneownerperactive slice; workdirectoriesdisjoint",
+      "reference_agreed_cases": [
+        "resource-page-form-isolation",
+        "resource-sibling-form-isolation",
+        "resource-nested-form-restoration"
+      ],
+      "held_cases": [],
+      "evidence": "product-continuation-strict-results.json"
+    },
+    {
+      "slice_id": "ISO-PAGE-RESOURCE-02",
+      "iso_2020_order": "07.08.03",
+      "verified_coarse_title": "Resource dictionaries",
+      "state": "complete-product-mask-and-named-assertions-pass",
+      "owner": "mozilla_originals",
+      "case_ids": [
+        "resource-category-page",
+        "resource-category-page-form",
+        "resource-category-sibling-forms"
+      ],
+      "upstream_ids": [],
+      "acceptance_criteria": "Originalpage/Formscenes reuseone name acrossXObjectandColorSpacecategories; independentcolor/placementcontrols; threepinnedrefs72/144; nofont/imageexternalassets",
+      "reference_agreed_cases": [
+        "resource-category-page",
+        "resource-category-page-form",
+        "resource-category-sibling-forms"
+      ],
+      "held_cases": [],
+      "evidence": "product-batch3-strict-results.json"
+    },
+    {
+      "slice_id": "ISO-PAGE-RESOURCE-03",
+      "iso_2020_order": "07.08.03",
+      "verified_coarse_title": "Resource dictionaries",
+      "state": "complete-product-mask-and-named-assertions-pass",
+      "owner": "mozilla_originals",
+      "case_ids": [
+        "resource-inherit-root",
+        "resource-explicit-page",
+        "resource-sibling-root-before",
+        "resource-nearest-ancestor",
+        "resource-sibling-root-after"
+      ],
+      "upstream_ids": [],
+      "acceptance_criteria": "ValidparentPagetreeResourcesinheritance versus explicitcompletepageResources; independentcoloredFormlookup; no invalidFormfallback or upstreaminputrecreation; threepinnedrefs2DPI",
+      "reference_agreed_cases": [
+        "resource-inherit-root",
+        "resource-explicit-page",
+        "resource-sibling-root-before",
+        "resource-nearest-ancestor",
+        "resource-sibling-root-after"
+      ],
+      "held_cases": [],
+      "unique_pdfs": 3,
+      "evidence": "product-batch4-strict-results.json"
+    },
+    {
+      "slice_id": "ISO-STATE-STACK-01",
+      "iso_2020_order": "08.04.02",
+      "verified_coarse_title": "Graphics state stack",
+      "state": "complete-product-pass",
+      "owner": "root",
+      "case_ids": [
+        "geometry-saved-clip"
+      ],
+      "acceptance_criteria": "Balanced q/Q restoresclip with laterpaintoutside oldclip",
+      "upstream_ids": [],
+      "fine_rule_citations": "Seecaseclause records;pendingfull2020textwhereunavailable",
+      "checkpoint": "cases.json and worker checkpoint wherecompleted",
+      "exclusivity": "oneownerperactive slice; workdirectoriesdisjoint"
+    },
+    {
+      "slice_id": "ISO-CTM-01",
+      "iso_2020_order": "08.04.04",
+      "verified_coarse_title": "Graphics state operators",
+      "state": "complete-product-pass",
+      "owner": "root",
+      "case_ids": [
+        "geometry-concat-order"
+      ],
+      "acceptance_criteria": "Independentmatrix arithmetic distinguishes concatenateorder; exactinteriorcolorrectangles",
+      "upstream_ids": [],
+      "fine_rule_citations": "Seecaseclause records;pendingfull2020textwhereunavailable",
+      "checkpoint": "cases.json and worker checkpoint wherecompleted",
+      "exclusivity": "oneownerperactive slice; workdirectoriesdisjoint"
+    },
+    {
+      "slice_id": "ISO-GEOMETRY-DASH-01",
+      "iso_2020_order": "08.05",
+      "verified_coarse_title": "Path construction and painting",
+      "state": "complete-product-mask-pass",
+      "owner": "mozilla_originals",
+      "case_ids": [
+        "stroke-dash-pair-phase0",
+        "stroke-dash-pair-phase5",
+        "stroke-dash-four-phase2"
+      ],
+      "acceptance_criteria": "Smallpositive dashlengths and nonzero phase onordinaryhorizontalstroke;analyticintervals;nozero/degeneratedashcases",
+      "upstream_ids": [],
+      "fine_rule_citations": "Seecaseclause records;pendingfull2020textwhereunavailable",
+      "checkpoint": "cases.json and worker checkpoint wherecompleted",
+      "exclusivity": "oneownerperactive slice; workdirectoriesdisjoint"
+    },
+    {
+      "slice_id": "ISO-GEOMETRY-DASH-02",
+      "iso_2020_order": "08.05",
+      "verified_coarse_title": "Path construction and painting",
+      "state": "unclaimed",
+      "owner": null,
+      "case_ids": [],
+      "upstream_ids": [],
+      "acceptance_criteria": "Positive dashpattern phase resets on separateopensubpaths; authoredintervalcontrolsand3pinnedrefs at72/144; nozero/degeneratecases"
+    },
+    {
+      "slice_id": "ISO-GEOMETRY-STROKE-01",
+      "iso_2020_order": "08.05",
+      "verified_coarse_title": "Path construction and painting",
+      "state": "mask-pass-strict-boundaryprobe-mismatch",
+      "owner": "mozilla_originals",
+      "case_ids": [
+        "stroke-cap-butt",
+        "stroke-cap-round",
+        "stroke-cap-projecting-square"
+      ],
+      "acceptance_criteria": "Threecapstyles; exactindependentrectangle/capsuleinteriors; boundarybandunscored",
+      "upstream_ids": [],
+      "fine_rule_citations": "Seecaseclause records;pendingfull2020textwhereunavailable",
+      "checkpoint": "cases.json and worker checkpoint wherecompleted",
+      "exclusivity": "oneownerperactive slice; workdirectoriesdisjoint",
+      "exception": "See stroke/boundary-classification.json; no normative defect or owner inferred"
+    },
+    {
+      "slice_id": "ISO-GEOMETRY-STROKE-02",
+      "iso_2020_order": "08.05",
+      "verified_coarse_title": "Path construction and painting",
+      "state": "complete-product-mask-pass",
+      "owner": "mozilla_originals",
+      "case_ids": [
+        "stroke-join-miter",
+        "stroke-join-round",
+        "stroke-join-bevel"
+      ],
+      "acceptance_criteria": "Round/bevel/miter ordinary90degreecorner; three analytic shapes;3refs72/144;buttcapsremote fromjoin",
+      "upstream_ids": [],
+      "fine_rule_citations": "Seecaseclause records;pendingfull2020textwhereunavailable",
+      "checkpoint": "cases.json and worker checkpoint wherecompleted",
+      "exclusivity": "oneownerperactive slice; workdirectoriesdisjoint"
+    },
+    {
+      "slice_id": "ISO-PATH-BASE-01",
+      "iso_2020_order": "08.05",
+      "verified_coarse_title": "Path construction and painting",
+      "state": "complete-product-pass",
+      "owner": "root",
+      "case_ids": [
+        "geometry-fill-rules",
+        "geometry-clip-intersection",
+        "geometry-clip-path-reset"
+      ],
+      "acceptance_criteria": "Separatenamedfillrule,clipintersection,pathresetassertions",
+      "upstream_ids": [],
+      "fine_rule_citations": "Seecaseclause records;pendingfull2020textwhereunavailable",
+      "checkpoint": "cases.json and worker checkpoint wherecompleted",
+      "exclusivity": "oneownerperactive slice; workdirectoriesdisjoint"
+    },
+    {
+      "slice_id": "ISO-IMAGE-COLORKEY-01",
+      "iso_2020_order": "08.09",
+      "verified_coarse_title": "Images",
+      "state": "complete-product-mask-pass",
+      "owner": "pdfium_originals",
+      "case_ids": [
+        "img-colorkey-control",
+        "img-colorkey-exact",
+        "img-colorkey-range"
+      ],
+      "acceptance_criteria": "SmallvalidRGB8maskranges+unmaskedcontrol;independentcomponentinclusionlogic and3refs2DPI",
+      "upstream_ids": [],
+      "fine_rule_citations": "2008verifiedwhereavailable;2020finepending",
+      "checkpoint": "work/pdfium-colorkey",
+      "exclusivity": "disjointfromallotheractive slices"
+    },
+    {
+      "slice_id": "ISO-IMAGE-DECODE-DISPUTE-01",
+      "iso_2020_order": "08.09.05.01",
+      "verified_coarse_title": "General",
+      "state": "held-reference-disagreement",
+      "owner": "root",
+      "case_ids": [
+        "img-rgb8-channel-decode"
+      ],
+      "acceptance_criteria": "ResolvePDFiumonevaluequantization withofficialnormativeconversionor classifyobservedcompatibility; no majoritygolden orproductgrade",
+      "upstream_ids": [],
+      "fine_rule_citations": "Seecaseclause records;pendingfull2020textwhereunavailable",
+      "checkpoint": "cases.json and worker checkpoint wherecompleted",
+      "exclusivity": "oneownerperactive slice; workdirectoriesdisjoint"
+    },
+    {
+      "slice_id": "ISO-IMAGE-SAMPLES-01",
+      "iso_2020_order": "08.09.05.01",
+      "verified_coarse_title": "General",
+      "state": "complete-product-pass",
+      "owner": "root",
+      "case_ids": [
+        "img-gray2-packed-padding",
+        "img-gray4-inverted-decode",
+        "img-gray8-restricted-decode",
+        "img-indexed2-lookup-padding",
+        "img-indexed4-reversed-decode",
+        "img-rgb16-big-endian",
+        "img-rgb8-mirrored-placement"
+      ],
+      "acceptance_criteria": "Validpacked/indexed/16bitsamples andposition expected independently;3refs2DPI",
+      "upstream_ids": [],
+      "fine_rule_citations": "Seecaseclause records;pendingfull2020textwhereunavailable",
+      "checkpoint": "cases.json and worker checkpoint wherecompleted",
+      "exclusivity": "oneownerperactive slice; workdirectoriesdisjoint"
+    },
+    {
+      "slice_id": "ISO-IMAGE-COLORKEY-COMPOSITE-02",
+      "iso_2020_order": "08.09.06",
+      "verified_coarse_title": "Masked images",
+      "state": "complete-product-mask-and-named-assertions-pass",
+      "owner": "root",
+      "case_ids": [
+        "img-colorkey-bg-control",
+        "img-colorkey-bg-exact",
+        "img-colorkey-bg-range"
+      ],
+      "upstream_ids": [],
+      "acceptance_criteria": "Valid color-keymask reveals independentlycoloredpagebackground; separatelyscopeDecodeinteraction;3refsanalyticexactinteriors,white-onlyexistingcase insufficient",
+      "reference_agreed_cases": [
+        "img-colorkey-bg-control",
+        "img-colorkey-bg-exact",
+        "img-colorkey-bg-range"
+      ],
+      "held_cases": [],
+      "unique_pdfs": 3,
+      "evidence": "product-batch4-strict-results.json"
+    },
+    {
+      "slice_id": "ISO-IMAGE-STENCIL-01",
+      "iso_2020_order": "08.09.06.02",
+      "verified_coarse_title": "Stencil masking",
+      "state": "white-backed-cases-pass-checkerboard-reference-held",
+      "owner": "root",
+      "case_ids": [
+        "stencil-default-red",
+        "stencil-inverse-red",
+        "stencil-current-color-reuse",
+        "stencil-white-default-red",
+        "stencil-white-inverse-red",
+        "stencil-white-reuse-red-green"
+      ],
+      "upstream_ids": [],
+      "acceptance_criteria": "Small valid original1bpc ImageMask grid, default versus reversed Decode, current nonstroking endpoint color and opaque backdrop; independently unpack authored bits/padding and assert paint/leave-background cells; no alpha/interpolation edge claims",
+      "reference_agreed_cases": [
+        "stencil-white-default-red",
+        "stencil-white-inverse-red",
+        "stencil-white-reuse-red-green"
+      ],
+      "held_cases": [
+        "stencil-default-red",
+        "stencil-inverse-red",
+        "stencil-current-color-reuse"
+      ],
+      "unique_pdfs": 6,
+      "evidence": "stencil/classification-results.json",
+      "exception": "Three white-backed full cases pass; three checkerboard full cases remain held without goldens/product grades"
+    },
+    {
+      "slice_id": "ISO-IMAGE-EXPLICIT-MASK-01",
+      "iso_2020_order": "08.09.06.03",
+      "verified_coarse_title": "Explicit masking; verify2020 heading before assignment",
+      "state": "unclaimed",
+      "owner": null,
+      "case_ids": [],
+      "upstream_ids": [],
+      "acceptance_criteria": "Small valid original endpoint RGB image and separate1bit ImageMask referenced through Mask; independent bits/opaque-white backdrop and exact decoded sample controls; verify polarity/governing clauses,3refs; no softalpha or boundary assertion"
+    },
+    {
+      "slice_id": "ISO-IMAGE-COLORKEY-DECODE-03",
+      "iso_2020_order": "08.09.06.04",
+      "verified_coarse_title": "Colour key masking (verified cross-reference)",
+      "state": "endpoint-cases-pass-nonendpoint-reference-held",
+      "owner": "root",
+      "case_ids": [
+        "img-colorkey-decode-opaque",
+        "img-colorkey-decode-stored-key",
+        "img-colorkey-decode-decoded-key-control",
+        "img-colorkey-decode-stored-range",
+        "img-colorkey-endpoint-control",
+        "img-colorkey-endpoint-stored-red",
+        "img-colorkey-endpoint-stored-red-magenta-range"
+      ],
+      "upstream_ids": [],
+      "acceptance_criteria": "Original smallRGB8 valid image; nondefault reversed Decode and raw-sample key controls over opaque checkerboard; independent decoded byte arithmetic; three pinned refs at72/144DPI; prove encoded-sample masking versus decoded appearance; hold any disagreement",
+      "work_checkpoint": "pdf-corpus-fifth-20261123/work",
+      "reference_agreed_cases": [
+        "img-colorkey-endpoint-control",
+        "img-colorkey-endpoint-stored-red",
+        "img-colorkey-endpoint-stored-red-magenta-range"
+      ],
+      "held_cases": [
+        "img-colorkey-decode-opaque",
+        "img-colorkey-decode-stored-key",
+        "img-colorkey-decode-decoded-key-control",
+        "img-colorkey-decode-stored-range"
+      ],
+      "unique_pdfs": 7,
+      "evidence": "colorkeydecode/classification-results.json",
+      "exception": "Three endpoint-only full cases pass; four non-endpoint full cases remain held without goldens/product grades"
+    },
+    {
+      "slice_id": "ISO-TEXT-POSITION-01",
+      "iso_2020_order": "09",
+      "verified_coarse_title": "Text",
+      "state": "complete-product-mask-and-named-assertions-pass",
+      "owner": "pdfium_originals",
+      "case_ids": [
+        "text-td-line-origin",
+        "text-tc-tw-spacing",
+        "text-tj-signed-adjustment",
+        "text-tm-rotate-replace"
+      ],
+      "acceptance_criteria": "OriginalMITfontandlayout withindependentadvances/textmatrix; three matchedrefs; verifyexactfiner2020clausebeforeassignment",
+      "upstream_ids": [],
+      "fine_rule_citations": "Seecaseclause records;pendingfull2020textwhereunavailable",
+      "checkpoint": "cases.json and worker checkpoint wherecompleted",
+      "exclusivity": "oneownerperactive slice; workdirectoriesdisjoint",
+      "reference_agreed_cases": [
+        "text-td-line-origin",
+        "text-tc-tw-spacing",
+        "text-tj-signed-adjustment",
+        "text-tm-rotate-replace"
+      ],
+      "held_cases": [],
+      "evidence": "product-continuation-strict-results.json"
+    },
+    {
+      "slice_id": "ISO-TEXT-INVISIBLE-01",
+      "iso_2020_order": "09.03",
+      "verified_coarse_title": "Text state parameters and operators; finer heading must be reverified",
+      "state": "complete-product-mask-and-named-assertions-pass",
+      "owner": "pdfium_originals",
+      "case_ids": [
+        "text-invisible-advance",
+        "text-invisible-spacing-tj",
+        "text-invisible-object-state",
+        "text-invisible-no-clip"
+      ],
+      "upstream_ids": [],
+      "acceptance_criteria": "Own Type3 font: invisible text creates no ink but still advances text state; later visible glyphs and nontext controls independently located; predeclared RGB interiors/positions; no extraction/weight claim",
+      "reference_agreed_cases": [
+        "text-invisible-advance",
+        "text-invisible-spacing-tj",
+        "text-invisible-object-state",
+        "text-invisible-no-clip"
+      ],
+      "held_cases": [],
+      "unique_pdfs": 4,
+      "evidence": "product-batch6-strict-results.json"
+    },
+    {
+      "slice_id": "ISO-TEXT-SCALE-RISE-01",
+      "iso_2020_order": "09.03",
+      "verified_coarse_title": "Text state parameters and operators",
+      "state": "complete-product-mask-and-named-assertions-pass",
+      "owner": "pdfium_originals",
+      "case_ids": [
+        "textscale-tz-shape-advance",
+        "textscale-ts-baselines",
+        "textscale-tz-spacing",
+        "textscale-tz-tj-rise"
+      ],
+      "upstream_ids": [],
+      "acceptance_criteria": "OriginalType3font independentTz shape/advance plusTs baselinecontrols; separatelyscoredspacinginteractions; threepinnedrefs72/144; nativefontweightuntested",
+      "reference_agreed_cases": [
+        "textscale-tz-shape-advance",
+        "textscale-ts-baselines",
+        "textscale-tz-spacing",
+        "textscale-tz-tj-rise"
+      ],
+      "held_cases": [],
+      "evidence": "product-batch3-strict-results.json"
+    },
+    {
+      "slice_id": "ISO-TEXT-LEADING-01",
+      "iso_2020_order": "09.04.02",
+      "verified_coarse_title": "Text-positioning operators",
+      "state": "complete-product-mask-and-named-assertions-pass",
+      "owner": "pdfium_originals",
+      "case_ids": [
+        "textleading-tl-nextline",
+        "textleading-td-sets-leading",
+        "textleading-td-preserves-leading",
+        "textleading-bt-reset-leading-persists"
+      ],
+      "upstream_ids": [],
+      "acceptance_criteria": "OwnedType3font; independentTL/T*/TD line-originmath withTj advances andnamedinteriors; verifiedclausereferences; threepinnedrefs2DPI",
+      "reference_agreed_cases": [
+        "textleading-tl-nextline",
+        "textleading-td-sets-leading",
+        "textleading-td-preserves-leading",
+        "textleading-bt-reset-leading-persists"
+      ],
+      "held_cases": [],
+      "unique_pdfs": 4,
+      "evidence": "product-batch4-strict-results.json"
+    },
+    {
+      "slice_id": "ISO-TEXT-QUOTE-01",
+      "iso_2020_order": "09.04.03",
+      "verified_coarse_title": "Text-showing operators (heading to reverify before assignment)",
+      "state": "complete-product-mask-and-named-assertions-pass",
+      "owner": "pdfium_originals",
+      "case_ids": [
+        "textquote-single-equivalent",
+        "textquote-double-equivalent",
+        "textquote-spacing-persists",
+        "textquote-shift-and-object-state"
+      ],
+      "upstream_ids": [],
+      "acceptance_criteria": "Own Type3 font only; separate quote and double-quote controls equivalent to explicit T*/Tw/Tc/Tj; independently compute glyph matrices/state persistence and score ink/counters at72/144DPI",
+      "work_checkpoint": "pdf-corpus-fifth-20261123/work",
+      "reference_agreed_cases": [
+        "textquote-single-equivalent",
+        "textquote-double-equivalent",
+        "textquote-spacing-persists",
+        "textquote-shift-and-object-state"
+      ],
+      "held_cases": [],
+      "unique_pdfs": 4,
+      "evidence": "product-batch5-strict-results.json"
+    },
+    {
+      "slice_id": "ISO-TEXT-CTM-01",
+      "iso_2020_order": "09.04.04",
+      "verified_coarse_title": "Text space details; verify exact fine citation before assignment",
+      "state": "unclaimed",
+      "owner": null,
+      "case_ids": [],
+      "upstream_ids": [],
+      "acceptance_criteria": "OwnType3 font under outer page CTM scale/rotation/translation; independently distinguish page CTM from text matrix order, glyph positions and named interiors; parsed matrices+3refs beforegrade"
+    },
+    {
+      "slice_id": "ISO-TRANSPARENCY-01",
+      "iso_2020_order": "11",
+      "verified_coarse_title": "Transparency",
+      "state": "endpoint-and-state-contracts-pass-fractional-contracts-reference-held",
+      "owner": "root",
+      "case_ids": [
+        "alpha-fill-endpoints",
+        "alpha-stroke-endpoints",
+        "alpha-ca-state-restore",
+        "alpha-fill-fraction06",
+        "alpha-stroke-fraction06",
+        "alpha-fill-fraction025",
+        "alpha-stroke-fraction025"
+      ],
+      "acceptance_criteria": "Ordinaryopaqueendpoint/constantalphaRGBrectangles;independentblendmath and3refs; keepprivateMattecandidateexcluded",
+      "upstream_ids": [],
+      "fine_rule_citations": "Seecaseclause records;pendingfull2020textwhereunavailable",
+      "checkpoint": "cases.json and worker checkpoint wherecompleted",
+      "exclusivity": "oneownerperactive slice; workdirectoriesdisjoint",
+      "reference_agreed_cases": [
+        "alpha-fill-endpoints",
+        "alpha-stroke-endpoints",
+        "alpha-ca-state-restore"
+      ],
+      "held_cases": [
+        "alpha-fill-fraction06",
+        "alpha-stroke-fraction06",
+        "alpha-fill-fraction025",
+        "alpha-stroke-fraction025"
+      ],
+      "evidence": "alpha/region-agreement.json and product-continuation-strict-results.json",
+      "exception": "Fourfractionalcontrols held; endpoints/state passes must notbecreditedascompletefractionalcompositingcoverage"
+    },
+    {
+      "slice_id": "ISO-ALPHA-QUANTIZATION-CLASSIFY-01",
+      "iso_2020_order": "11.06",
+      "verified_coarse_title": "Specifying transparency in PDF",
+      "state": "classification-complete-oracle-unresolved-held",
+      "owner": "root",
+      "case_ids": [
+        "alpha-fill-fraction06",
+        "alpha-stroke-fraction06",
+        "alpha-fill-fraction025",
+        "alpha-stroke-fraction025"
+      ],
+      "upstream_ids": [],
+      "acceptance_criteria": "Source-backedclassificationofexact8bitroutingdifferencesusingoriginalcontrols; preserveallcaptures, no majorityvoting, no posthoc tolerance/golden changes",
+      "evidence": "alpha-classify/classification-results.json",
+      "exception": "Implementationarithmeticexplained; no normativebyteoracleor productfix;fourcasesremainheld"
+    }
+  ],
+  "checkpoint_state": "Four owned slices checkpointed:15 new page views pass;3 new full cases held; no upstream credit",
+  "acceptance_commit_remote": "f2cce2ff49883aca9a9c1152af6a1a195a50113f",
+  "acceptance_tree": "be06cd2735e34afac59e74df455cb1057ea5423e",
+  "publication_target": "https://github.com/pepkaro/oneimage-csharp/pull/94"
+}

@@ -1,0 +1,1235 @@
+{
+  "rule": "Exact analytic and pairwise RGB on eight independently declared inset regions; exact160x120pt viewport; all boundaries unscored",
+  "accepted_fixture_ids": [
+    "boxes-direct-control",
+    "boxes-indirect-arrays",
+    "boxes-indirect-coordinates"
+  ],
+  "held_fixture_ids": [],
+  "rows": [
+    {
+      "id": "boxes-direct-control",
+      "dpi": 72,
+      "analytic": {
+        "pdfium": {
+          "regions": [
+            {
+              "id": "blue-cropped-bottom",
+              "pixels": 936,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "red-origin-marker",
+              "pixels": 384,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "green-upper-marker",
+              "pixels": 792,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "yellow-clipped-right",
+              "pixels": 140,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-upper-left",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-center",
+              "pixels": 320,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-right",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-upper-center",
+              "pixels": 128,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 2828,
+          "wrong": 0,
+          "passed": true
+        },
+        "pdfjs": {
+          "regions": [
+            {
+              "id": "blue-cropped-bottom",
+              "pixels": 936,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "red-origin-marker",
+              "pixels": 384,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "green-upper-marker",
+              "pixels": 792,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "yellow-clipped-right",
+              "pixels": 140,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-upper-left",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-center",
+              "pixels": 320,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-right",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-upper-center",
+              "pixels": 128,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 2828,
+          "wrong": 0,
+          "passed": true
+        },
+        "mupdf": {
+          "regions": [
+            {
+              "id": "blue-cropped-bottom",
+              "pixels": 936,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "red-origin-marker",
+              "pixels": 384,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "green-upper-marker",
+              "pixels": 792,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "yellow-clipped-right",
+              "pixels": 140,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-upper-left",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-center",
+              "pixels": 320,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-right",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-upper-center",
+              "pixels": 128,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 2828,
+          "wrong": 0,
+          "passed": true
+        }
+      },
+      "pairwise": [
+        {
+          "engines": [
+            "pdfium",
+            "pdfjs"
+          ],
+          "pixels": 2828,
+          "different": 0,
+          "max_delta": 0,
+          "passed": true
+        },
+        {
+          "engines": [
+            "pdfium",
+            "mupdf"
+          ],
+          "pixels": 2828,
+          "different": 0,
+          "max_delta": 0,
+          "passed": true
+        },
+        {
+          "engines": [
+            "pdfjs",
+            "mupdf"
+          ],
+          "pixels": 2828,
+          "different": 0,
+          "max_delta": 0,
+          "passed": true
+        }
+      ],
+      "accepted": true
+    },
+    {
+      "id": "boxes-direct-control",
+      "dpi": 144,
+      "analytic": {
+        "pdfium": {
+          "regions": [
+            {
+              "id": "blue-cropped-bottom",
+              "pixels": 3744,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "red-origin-marker",
+              "pixels": 1536,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "green-upper-marker",
+              "pixels": 3168,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "yellow-clipped-right",
+              "pixels": 560,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-upper-left",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-center",
+              "pixels": 1280,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-right",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-upper-center",
+              "pixels": 512,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 11312,
+          "wrong": 0,
+          "passed": true
+        },
+        "pdfjs": {
+          "regions": [
+            {
+              "id": "blue-cropped-bottom",
+              "pixels": 3744,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "red-origin-marker",
+              "pixels": 1536,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "green-upper-marker",
+              "pixels": 3168,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "yellow-clipped-right",
+              "pixels": 560,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-upper-left",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-center",
+              "pixels": 1280,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-right",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-upper-center",
+              "pixels": 512,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 11312,
+          "wrong": 0,
+          "passed": true
+        },
+        "mupdf": {
+          "regions": [
+            {
+              "id": "blue-cropped-bottom",
+              "pixels": 3744,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "red-origin-marker",
+              "pixels": 1536,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "green-upper-marker",
+              "pixels": 3168,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "yellow-clipped-right",
+              "pixels": 560,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-upper-left",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-center",
+              "pixels": 1280,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-right",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-upper-center",
+              "pixels": 512,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 11312,
+          "wrong": 0,
+          "passed": true
+        }
+      },
+      "pairwise": [
+        {
+          "engines": [
+            "pdfium",
+            "pdfjs"
+          ],
+          "pixels": 11312,
+          "different": 0,
+          "max_delta": 0,
+          "passed": true
+        },
+        {
+          "engines": [
+            "pdfium",
+            "mupdf"
+          ],
+          "pixels": 11312,
+          "different": 0,
+          "max_delta": 0,
+          "passed": true
+        },
+        {
+          "engines": [
+            "pdfjs",
+            "mupdf"
+          ],
+          "pixels": 11312,
+          "different": 0,
+          "max_delta": 0,
+          "passed": true
+        }
+      ],
+      "accepted": true
+    },
+    {
+      "id": "boxes-indirect-arrays",
+      "dpi": 72,
+      "analytic": {
+        "pdfium": {
+          "regions": [
+            {
+              "id": "blue-cropped-bottom",
+              "pixels": 936,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "red-origin-marker",
+              "pixels": 384,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "green-upper-marker",
+              "pixels": 792,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "yellow-clipped-right",
+              "pixels": 140,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-upper-left",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-center",
+              "pixels": 320,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-right",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-upper-center",
+              "pixels": 128,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 2828,
+          "wrong": 0,
+          "passed": true
+        },
+        "pdfjs": {
+          "regions": [
+            {
+              "id": "blue-cropped-bottom",
+              "pixels": 936,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "red-origin-marker",
+              "pixels": 384,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "green-upper-marker",
+              "pixels": 792,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "yellow-clipped-right",
+              "pixels": 140,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-upper-left",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-center",
+              "pixels": 320,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-right",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-upper-center",
+              "pixels": 128,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 2828,
+          "wrong": 0,
+          "passed": true
+        },
+        "mupdf": {
+          "regions": [
+            {
+              "id": "blue-cropped-bottom",
+              "pixels": 936,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "red-origin-marker",
+              "pixels": 384,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "green-upper-marker",
+              "pixels": 792,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "yellow-clipped-right",
+              "pixels": 140,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-upper-left",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-center",
+              "pixels": 320,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-right",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-upper-center",
+              "pixels": 128,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 2828,
+          "wrong": 0,
+          "passed": true
+        }
+      },
+      "pairwise": [
+        {
+          "engines": [
+            "pdfium",
+            "pdfjs"
+          ],
+          "pixels": 2828,
+          "different": 0,
+          "max_delta": 0,
+          "passed": true
+        },
+        {
+          "engines": [
+            "pdfium",
+            "mupdf"
+          ],
+          "pixels": 2828,
+          "different": 0,
+          "max_delta": 0,
+          "passed": true
+        },
+        {
+          "engines": [
+            "pdfjs",
+            "mupdf"
+          ],
+          "pixels": 2828,
+          "different": 0,
+          "max_delta": 0,
+          "passed": true
+        }
+      ],
+      "accepted": true
+    },
+    {
+      "id": "boxes-indirect-arrays",
+      "dpi": 144,
+      "analytic": {
+        "pdfium": {
+          "regions": [
+            {
+              "id": "blue-cropped-bottom",
+              "pixels": 3744,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "red-origin-marker",
+              "pixels": 1536,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "green-upper-marker",
+              "pixels": 3168,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "yellow-clipped-right",
+              "pixels": 560,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-upper-left",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-center",
+              "pixels": 1280,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-right",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-upper-center",
+              "pixels": 512,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 11312,
+          "wrong": 0,
+          "passed": true
+        },
+        "pdfjs": {
+          "regions": [
+            {
+              "id": "blue-cropped-bottom",
+              "pixels": 3744,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "red-origin-marker",
+              "pixels": 1536,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "green-upper-marker",
+              "pixels": 3168,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "yellow-clipped-right",
+              "pixels": 560,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-upper-left",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-center",
+              "pixels": 1280,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-right",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-upper-center",
+              "pixels": 512,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 11312,
+          "wrong": 0,
+          "passed": true
+        },
+        "mupdf": {
+          "regions": [
+            {
+              "id": "blue-cropped-bottom",
+              "pixels": 3744,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "red-origin-marker",
+              "pixels": 1536,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "green-upper-marker",
+              "pixels": 3168,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "yellow-clipped-right",
+              "pixels": 560,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-upper-left",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-center",
+              "pixels": 1280,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-right",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-upper-center",
+              "pixels": 512,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 11312,
+          "wrong": 0,
+          "passed": true
+        }
+      },
+      "pairwise": [
+        {
+          "engines": [
+            "pdfium",
+            "pdfjs"
+          ],
+          "pixels": 11312,
+          "different": 0,
+          "max_delta": 0,
+          "passed": true
+        },
+        {
+          "engines": [
+            "pdfium",
+            "mupdf"
+          ],
+          "pixels": 11312,
+          "different": 0,
+          "max_delta": 0,
+          "passed": true
+        },
+        {
+          "engines": [
+            "pdfjs",
+            "mupdf"
+          ],
+          "pixels": 11312,
+          "different": 0,
+          "max_delta": 0,
+          "passed": true
+        }
+      ],
+      "accepted": true
+    },
+    {
+      "id": "boxes-indirect-coordinates",
+      "dpi": 72,
+      "analytic": {
+        "pdfium": {
+          "regions": [
+            {
+              "id": "blue-cropped-bottom",
+              "pixels": 936,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "red-origin-marker",
+              "pixels": 384,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "green-upper-marker",
+              "pixels": 792,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "yellow-clipped-right",
+              "pixels": 140,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-upper-left",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-center",
+              "pixels": 320,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-right",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-upper-center",
+              "pixels": 128,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 2828,
+          "wrong": 0,
+          "passed": true
+        },
+        "pdfjs": {
+          "regions": [
+            {
+              "id": "blue-cropped-bottom",
+              "pixels": 936,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "red-origin-marker",
+              "pixels": 384,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "green-upper-marker",
+              "pixels": 792,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "yellow-clipped-right",
+              "pixels": 140,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-upper-left",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-center",
+              "pixels": 320,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-right",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-upper-center",
+              "pixels": 128,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 2828,
+          "wrong": 0,
+          "passed": true
+        },
+        "mupdf": {
+          "regions": [
+            {
+              "id": "blue-cropped-bottom",
+              "pixels": 936,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "red-origin-marker",
+              "pixels": 384,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "green-upper-marker",
+              "pixels": 792,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "yellow-clipped-right",
+              "pixels": 140,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-upper-left",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-center",
+              "pixels": 320,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-right",
+              "pixels": 64,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-upper-center",
+              "pixels": 128,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 2828,
+          "wrong": 0,
+          "passed": true
+        }
+      },
+      "pairwise": [
+        {
+          "engines": [
+            "pdfium",
+            "pdfjs"
+          ],
+          "pixels": 2828,
+          "different": 0,
+          "max_delta": 0,
+          "passed": true
+        },
+        {
+          "engines": [
+            "pdfium",
+            "mupdf"
+          ],
+          "pixels": 2828,
+          "different": 0,
+          "max_delta": 0,
+          "passed": true
+        },
+        {
+          "engines": [
+            "pdfjs",
+            "mupdf"
+          ],
+          "pixels": 2828,
+          "different": 0,
+          "max_delta": 0,
+          "passed": true
+        }
+      ],
+      "accepted": true
+    },
+    {
+      "id": "boxes-indirect-coordinates",
+      "dpi": 144,
+      "analytic": {
+        "pdfium": {
+          "regions": [
+            {
+              "id": "blue-cropped-bottom",
+              "pixels": 3744,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "red-origin-marker",
+              "pixels": 1536,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "green-upper-marker",
+              "pixels": 3168,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "yellow-clipped-right",
+              "pixels": 560,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-upper-left",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-center",
+              "pixels": 1280,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-right",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-upper-center",
+              "pixels": 512,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 11312,
+          "wrong": 0,
+          "passed": true
+        },
+        "pdfjs": {
+          "regions": [
+            {
+              "id": "blue-cropped-bottom",
+              "pixels": 3744,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "red-origin-marker",
+              "pixels": 1536,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "green-upper-marker",
+              "pixels": 3168,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "yellow-clipped-right",
+              "pixels": 560,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-upper-left",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-center",
+              "pixels": 1280,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-right",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-upper-center",
+              "pixels": 512,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 11312,
+          "wrong": 0,
+          "passed": true
+        },
+        "mupdf": {
+          "regions": [
+            {
+              "id": "blue-cropped-bottom",
+              "pixels": 3744,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "red-origin-marker",
+              "pixels": 1536,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "green-upper-marker",
+              "pixels": 3168,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "yellow-clipped-right",
+              "pixels": 560,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-upper-left",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-center",
+              "pixels": 1280,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-right",
+              "pixels": 256,
+              "wrong": 0,
+              "max_delta": 0
+            },
+            {
+              "id": "paper-upper-center",
+              "pixels": 512,
+              "wrong": 0,
+              "max_delta": 0
+            }
+          ],
+          "pixels": 11312,
+          "wrong": 0,
+          "passed": true
+        }
+      },
+      "pairwise": [
+        {
+          "engines": [
+            "pdfium",
+            "pdfjs"
+          ],
+          "pixels": 11312,
+          "different": 0,
+          "max_delta": 0,
+          "passed": true
+        },
+        {
+          "engines": [
+            "pdfium",
+            "mupdf"
+          ],
+          "pixels": 11312,
+          "different": 0,
+          "max_delta": 0,
+          "passed": true
+        },
+        {
+          "engines": [
+            "pdfjs",
+            "mupdf"
+          ],
+          "pixels": 11312,
+          "different": 0,
+          "max_delta": 0,
+          "passed": true
+        }
+      ],
+      "accepted": true
+    }
+  ]
+}
