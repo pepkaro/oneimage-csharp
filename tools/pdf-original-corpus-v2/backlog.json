@@ -4,7 +4,7 @@
   "completion_rule": "Every applicable scoped semanticrule has committed independentlyvalidatedfixture+assertion or explicitreviewedexception; inventory completion is not behavior completion",
   "scope_limit": "Initial manuallyscopedordinaryvisualrules only; fullstandard ruleenumeration incomplete pendingfull2020text and furthermanualqualification; no claim everyapplicablePDFbehaviorislisted",
   "recovery_rule": "ReadthisbacklogandGitHEAD; verifypriorcheckpoint;claimoneunclaimeddisjointslice; neverrerunblockedAOTIPC; checkpointblockedreasonandcontinueindependenteligible work; no newapprovalneededwithin authorizedscope",
-  "current_publication": "Continuation from#94 head1caa785479982f7b1431a728cb14e89ae0bf21c8; newacceptancepending",
+  "current_publication": "Draft94 continuation acceptance 25d38f0699e6add5a948ea074927c1d3ef74c45d",
   "slices": [
     {
       "slice_id": "ISO-FILTER-BASE-01",
@@ -62,7 +62,7 @@
       "slice_id": "ISO-PAGE-RESOURCE-01",
       "iso_2020_order": "07.08.03",
       "verified_coarse_title": "Resource dictionaries",
-      "state": "reference-agreed-awaiting-commit-and-product",
+      "state": "complete-product-mask-and-named-assertions-pass",
       "owner": "mozilla_originals",
       "case_ids": [
         "resource-page-form-isolation",
@@ -79,7 +79,18 @@
         "resource-sibling-form-isolation",
         "resource-nested-form-restoration"
       ],
-      "held_cases": []
+      "held_cases": [],
+      "evidence": "product-continuation-strict-results.json"
+    },
+    {
+      "slice_id": "ISO-PAGE-RESOURCE-02",
+      "iso_2020_order": "07.08.03",
+      "verified_coarse_title": "Resource dictionaries",
+      "state": "unclaimed",
+      "owner": null,
+      "case_ids": [],
+      "upstream_ids": [],
+      "acceptance_criteria": "Originalpage/Formscenes reuseone name acrossXObjectandColorSpacecategories; independentcolor/placementcontrols; threepinnedrefs72/144; nofont/imageexternalassets"
     },
     {
       "slice_id": "ISO-STATE-STACK-01",
@@ -257,7 +268,7 @@
       "slice_id": "ISO-TEXT-POSITION-01",
       "iso_2020_order": "09",
       "verified_coarse_title": "Text",
-      "state": "reference-agreed-awaiting-commit-and-product",
+      "state": "complete-product-mask-and-named-assertions-pass",
       "owner": "pdfium_originals",
       "case_ids": [
         "text-td-line-origin",
@@ -276,13 +287,24 @@
         "text-tj-signed-adjustment",
         "text-tm-rotate-replace"
       ],
-      "held_cases": []
+      "held_cases": [],
+      "evidence": "product-continuation-strict-results.json"
+    },
+    {
+      "slice_id": "ISO-TEXT-SCALE-RISE-01",
+      "iso_2020_order": "09.03",
+      "verified_coarse_title": "Text state parameters and operators",
+      "state": "unclaimed",
+      "owner": null,
+      "case_ids": [],
+      "upstream_ids": [],
+      "acceptance_criteria": "OriginalType3font independentTz shape/advance plusTs baselinecontrols; separatelyscoredspacinginteractions; threepinnedrefs72/144; nativefontweightuntested"
     },
     {
       "slice_id": "ISO-TRANSPARENCY-01",
       "iso_2020_order": "11",
       "verified_coarse_title": "Transparency",
-      "state": "partial-reference-agreement-fractional-controls-held",
+      "state": "endpoint-and-state-contracts-pass-fractional-contracts-reference-held",
       "owner": "root",
       "case_ids": [
         "alpha-fill-endpoints",
@@ -308,8 +330,25 @@
         "alpha-stroke-fraction06",
         "alpha-fill-fraction025",
         "alpha-stroke-fraction025"
-      ]
+      ],
+      "evidence": "alpha/region-agreement.json and product-continuation-strict-results.json",
+      "exception": "Fourfractionalcontrols held; endpoints/state passes must notbecreditedascompletefractionalcompositingcoverage"
+    },
+    {
+      "slice_id": "ISO-ALPHA-QUANTIZATION-CLASSIFY-01",
+      "iso_2020_order": "11.06",
+      "verified_coarse_title": "Specifying transparency in PDF",
+      "state": "unclaimed-classification",
+      "owner": null,
+      "case_ids": [
+        "alpha-fill-fraction06",
+        "alpha-stroke-fraction06",
+        "alpha-fill-fraction025",
+        "alpha-stroke-fraction025"
+      ],
+      "upstream_ids": [],
+      "acceptance_criteria": "Source-backedclassificationofexact8bitroutingdifferencesusingoriginalcontrols; preserveallcaptures, no majorityvoting, no posthoc tolerance/golden changes"
     }
   ],
-  "checkpoint_state": "All assignedauthoring slices complete; rootfinalizing evidencepublication. No workerclaimedrunningaftercompletion."
+  "checkpoint_state": "Allthreeassignedslicescheckpointed; resources/textandalphaendpointsgraded; fractionalalphaheld; nextslicesunclaimed"
 }

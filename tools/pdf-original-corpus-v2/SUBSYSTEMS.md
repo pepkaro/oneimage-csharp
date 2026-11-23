@@ -20,16 +20,16 @@ Cross-tags describe pipeline participation, not proven root-cause ownership. Cas
 - [geometry-cropbox-offset](CATALOG.md#geometry-cropbox-offset) — pass; owner unresolved.
 - [geometry-rotate-90](CATALOG.md#geometry-rotate-90) — pass; owner unresolved.
 - [geometry-user-unit-2](CATALOG.md#geometry-user-unit-2) — pass; owner unresolved.
-- [resource-page-form-isolation](CATALOG.md#resource-page-form-isolation) — agreed; owner unresolved.
-- [resource-sibling-form-isolation](CATALOG.md#resource-sibling-form-isolation) — agreed; owner unresolved.
-- [resource-nested-form-restoration](CATALOG.md#resource-nested-form-restoration) — agreed; owner unresolved.
+- [resource-page-form-isolation](CATALOG.md#resource-page-form-isolation) — pass; owner unresolved.
+- [resource-sibling-form-isolation](CATALOG.md#resource-sibling-form-isolation) — pass; owner unresolved.
+- [resource-nested-form-restoration](CATALOG.md#resource-nested-form-restoration) — pass; owner unresolved.
 
 ## OnePDF/font-text-interpretation
 
-- [text-td-line-origin](CATALOG.md#text-td-line-origin) — agreed; owner unresolved.
-- [text-tc-tw-spacing](CATALOG.md#text-tc-tw-spacing) — agreed; owner unresolved.
-- [text-tj-signed-adjustment](CATALOG.md#text-tj-signed-adjustment) — agreed; owner unresolved.
-- [text-tm-rotate-replace](CATALOG.md#text-tm-rotate-replace) — agreed; owner unresolved.
+- [text-td-line-origin](CATALOG.md#text-td-line-origin) — pass; owner unresolved.
+- [text-tc-tw-spacing](CATALOG.md#text-tc-tw-spacing) — pass; owner unresolved.
+- [text-tj-signed-adjustment](CATALOG.md#text-tj-signed-adjustment) — pass; owner unresolved.
+- [text-tm-rotate-replace](CATALOG.md#text-tm-rotate-replace) — pass; owner unresolved.
 
 ## OnePDF/content-interpretation
 
@@ -47,23 +47,23 @@ Cross-tags describe pipeline participation, not proven root-cause ownership. Cas
 - [stroke-dash-pair-phase0](CATALOG.md#stroke-dash-pair-phase0) — pass; owner unresolved.
 - [stroke-dash-pair-phase5](CATALOG.md#stroke-dash-pair-phase5) — pass; owner unresolved.
 - [stroke-dash-four-phase2](CATALOG.md#stroke-dash-four-phase2) — pass; owner unresolved.
-- [resource-page-form-isolation](CATALOG.md#resource-page-form-isolation) — agreed; owner unresolved.
-- [resource-sibling-form-isolation](CATALOG.md#resource-sibling-form-isolation) — agreed; owner unresolved.
-- [resource-nested-form-restoration](CATALOG.md#resource-nested-form-restoration) — agreed; owner unresolved.
-- [alpha-fill-endpoints](CATALOG.md#alpha-fill-endpoints) — agreed; owner unresolved.
-- [alpha-stroke-endpoints](CATALOG.md#alpha-stroke-endpoints) — agreed; owner unresolved.
-- [alpha-ca-state-restore](CATALOG.md#alpha-ca-state-restore) — agreed; owner unresolved.
-- [alpha-fill-fraction06](CATALOG.md#alpha-fill-fraction06) — generated; owner unresolved.
-- [alpha-stroke-fraction06](CATALOG.md#alpha-stroke-fraction06) — generated; owner unresolved.
-- [alpha-fill-fraction025](CATALOG.md#alpha-fill-fraction025) — generated; owner unresolved.
-- [alpha-stroke-fraction025](CATALOG.md#alpha-stroke-fraction025) — generated; owner unresolved.
+- [resource-page-form-isolation](CATALOG.md#resource-page-form-isolation) — pass; owner unresolved.
+- [resource-sibling-form-isolation](CATALOG.md#resource-sibling-form-isolation) — pass; owner unresolved.
+- [resource-nested-form-restoration](CATALOG.md#resource-nested-form-restoration) — pass; owner unresolved.
+- [alpha-fill-endpoints](CATALOG.md#alpha-fill-endpoints) — pass; owner unresolved.
+- [alpha-stroke-endpoints](CATALOG.md#alpha-stroke-endpoints) — pass; owner unresolved.
+- [alpha-ca-state-restore](CATALOG.md#alpha-ca-state-restore) — pass; owner unresolved.
+- [alpha-fill-fraction06](CATALOG.md#alpha-fill-fraction06) — mismatch; owner unresolved.
+- [alpha-stroke-fraction06](CATALOG.md#alpha-stroke-fraction06) — mismatch; owner unresolved.
+- [alpha-fill-fraction025](CATALOG.md#alpha-fill-fraction025) — mismatch; owner unresolved.
+- [alpha-stroke-fraction025](CATALOG.md#alpha-stroke-fraction025) — mismatch; owner unresolved.
 
 ## OnePDF/image-color-decoding
 
 - [img-gray2-packed-padding](CATALOG.md#img-gray2-packed-padding) — pass; owner unresolved.
 - [img-gray4-inverted-decode](CATALOG.md#img-gray4-inverted-decode) — pass; owner unresolved.
 - [img-gray8-restricted-decode](CATALOG.md#img-gray8-restricted-decode) — pass; owner unresolved.
-- [img-rgb8-channel-decode](CATALOG.md#img-rgb8-channel-decode) — generated; owner unresolved.
+- [img-rgb8-channel-decode](CATALOG.md#img-rgb8-channel-decode) — mismatch; owner unresolved.
 - [img-indexed2-lookup-padding](CATALOG.md#img-indexed2-lookup-padding) — pass; owner unresolved.
 - [img-indexed4-reversed-decode](CATALOG.md#img-indexed4-reversed-decode) — pass; owner unresolved.
 - [img-rgb16-big-endian](CATALOG.md#img-rgb16-big-endian) — pass; owner unresolved.
@@ -95,27 +95,27 @@ Cross-tags describe pipeline participation, not proven root-cause ownership. Cas
 - [stroke-dash-pair-phase0](CATALOG.md#stroke-dash-pair-phase0) — pass; owner unresolved.
 - [stroke-dash-pair-phase5](CATALOG.md#stroke-dash-pair-phase5) — pass; owner unresolved.
 - [stroke-dash-four-phase2](CATALOG.md#stroke-dash-four-phase2) — pass; owner unresolved.
-- [resource-page-form-isolation](CATALOG.md#resource-page-form-isolation) — agreed; owner unresolved.
-- [resource-sibling-form-isolation](CATALOG.md#resource-sibling-form-isolation) — agreed; owner unresolved.
-- [resource-nested-form-restoration](CATALOG.md#resource-nested-form-restoration) — agreed; owner unresolved.
-- [text-td-line-origin](CATALOG.md#text-td-line-origin) — agreed; owner unresolved.
-- [text-tc-tw-spacing](CATALOG.md#text-tc-tw-spacing) — agreed; owner unresolved.
-- [text-tj-signed-adjustment](CATALOG.md#text-tj-signed-adjustment) — agreed; owner unresolved.
-- [text-tm-rotate-replace](CATALOG.md#text-tm-rotate-replace) — agreed; owner unresolved.
+- [resource-page-form-isolation](CATALOG.md#resource-page-form-isolation) — pass; owner unresolved.
+- [resource-sibling-form-isolation](CATALOG.md#resource-sibling-form-isolation) — pass; owner unresolved.
+- [resource-nested-form-restoration](CATALOG.md#resource-nested-form-restoration) — pass; owner unresolved.
+- [text-td-line-origin](CATALOG.md#text-td-line-origin) — pass; owner unresolved.
+- [text-tc-tw-spacing](CATALOG.md#text-tc-tw-spacing) — pass; owner unresolved.
+- [text-tj-signed-adjustment](CATALOG.md#text-tj-signed-adjustment) — pass; owner unresolved.
+- [text-tm-rotate-replace](CATALOG.md#text-tm-rotate-replace) — pass; owner unresolved.
 
 ## OneImage/glyph-rasterization
 
-- [text-td-line-origin](CATALOG.md#text-td-line-origin) — agreed; owner unresolved.
-- [text-tc-tw-spacing](CATALOG.md#text-tc-tw-spacing) — agreed; owner unresolved.
-- [text-tj-signed-adjustment](CATALOG.md#text-tj-signed-adjustment) — agreed; owner unresolved.
-- [text-tm-rotate-replace](CATALOG.md#text-tm-rotate-replace) — agreed; owner unresolved.
+- [text-td-line-origin](CATALOG.md#text-td-line-origin) — pass; owner unresolved.
+- [text-tc-tw-spacing](CATALOG.md#text-tc-tw-spacing) — pass; owner unresolved.
+- [text-tj-signed-adjustment](CATALOG.md#text-tj-signed-adjustment) — pass; owner unresolved.
+- [text-tm-rotate-replace](CATALOG.md#text-tm-rotate-replace) — pass; owner unresolved.
 
 ## OneImage/image-sampling
 
 - [img-gray2-packed-padding](CATALOG.md#img-gray2-packed-padding) — pass; owner unresolved.
 - [img-gray4-inverted-decode](CATALOG.md#img-gray4-inverted-decode) — pass; owner unresolved.
 - [img-gray8-restricted-decode](CATALOG.md#img-gray8-restricted-decode) — pass; owner unresolved.
-- [img-rgb8-channel-decode](CATALOG.md#img-rgb8-channel-decode) — generated; owner unresolved.
+- [img-rgb8-channel-decode](CATALOG.md#img-rgb8-channel-decode) — mismatch; owner unresolved.
 - [img-indexed2-lookup-padding](CATALOG.md#img-indexed2-lookup-padding) — pass; owner unresolved.
 - [img-indexed4-reversed-decode](CATALOG.md#img-indexed4-reversed-decode) — pass; owner unresolved.
 - [img-rgb16-big-endian](CATALOG.md#img-rgb16-big-endian) — pass; owner unresolved.
@@ -137,13 +137,13 @@ No focused case in this batch.
 
 ## OneImage/transparency-compositing
 
-- [alpha-fill-endpoints](CATALOG.md#alpha-fill-endpoints) — agreed; owner unresolved.
-- [alpha-stroke-endpoints](CATALOG.md#alpha-stroke-endpoints) — agreed; owner unresolved.
-- [alpha-ca-state-restore](CATALOG.md#alpha-ca-state-restore) — agreed; owner unresolved.
-- [alpha-fill-fraction06](CATALOG.md#alpha-fill-fraction06) — generated; owner unresolved.
-- [alpha-stroke-fraction06](CATALOG.md#alpha-stroke-fraction06) — generated; owner unresolved.
-- [alpha-fill-fraction025](CATALOG.md#alpha-fill-fraction025) — generated; owner unresolved.
-- [alpha-stroke-fraction025](CATALOG.md#alpha-stroke-fraction025) — generated; owner unresolved.
+- [alpha-fill-endpoints](CATALOG.md#alpha-fill-endpoints) — pass; owner unresolved.
+- [alpha-stroke-endpoints](CATALOG.md#alpha-stroke-endpoints) — pass; owner unresolved.
+- [alpha-ca-state-restore](CATALOG.md#alpha-ca-state-restore) — pass; owner unresolved.
+- [alpha-fill-fraction06](CATALOG.md#alpha-fill-fraction06) — mismatch; owner unresolved.
+- [alpha-stroke-fraction06](CATALOG.md#alpha-stroke-fraction06) — mismatch; owner unresolved.
+- [alpha-fill-fraction025](CATALOG.md#alpha-fill-fraction025) — mismatch; owner unresolved.
+- [alpha-stroke-fraction025](CATALOG.md#alpha-stroke-fraction025) — mismatch; owner unresolved.
 
 ## OneImage.Pdf/bridge-integration
 
@@ -158,7 +158,7 @@ No focused case in this batch.
 - [img-gray2-packed-padding](CATALOG.md#img-gray2-packed-padding) — pass; owner unresolved.
 - [img-gray4-inverted-decode](CATALOG.md#img-gray4-inverted-decode) — pass; owner unresolved.
 - [img-gray8-restricted-decode](CATALOG.md#img-gray8-restricted-decode) — pass; owner unresolved.
-- [img-rgb8-channel-decode](CATALOG.md#img-rgb8-channel-decode) — generated; owner unresolved.
+- [img-rgb8-channel-decode](CATALOG.md#img-rgb8-channel-decode) — mismatch; owner unresolved.
 - [img-indexed2-lookup-padding](CATALOG.md#img-indexed2-lookup-padding) — pass; owner unresolved.
 - [img-indexed4-reversed-decode](CATALOG.md#img-indexed4-reversed-decode) — pass; owner unresolved.
 - [img-rgb16-big-endian](CATALOG.md#img-rgb16-big-endian) — pass; owner unresolved.
@@ -182,17 +182,17 @@ No focused case in this batch.
 - [img-colorkey-control](CATALOG.md#img-colorkey-control) — pass; owner unresolved.
 - [img-colorkey-exact](CATALOG.md#img-colorkey-exact) — pass; owner unresolved.
 - [img-colorkey-range](CATALOG.md#img-colorkey-range) — pass; owner unresolved.
-- [resource-page-form-isolation](CATALOG.md#resource-page-form-isolation) — agreed; owner unresolved.
-- [resource-sibling-form-isolation](CATALOG.md#resource-sibling-form-isolation) — agreed; owner unresolved.
-- [resource-nested-form-restoration](CATALOG.md#resource-nested-form-restoration) — agreed; owner unresolved.
-- [text-td-line-origin](CATALOG.md#text-td-line-origin) — agreed; owner unresolved.
-- [text-tc-tw-spacing](CATALOG.md#text-tc-tw-spacing) — agreed; owner unresolved.
-- [text-tj-signed-adjustment](CATALOG.md#text-tj-signed-adjustment) — agreed; owner unresolved.
-- [text-tm-rotate-replace](CATALOG.md#text-tm-rotate-replace) — agreed; owner unresolved.
-- [alpha-fill-endpoints](CATALOG.md#alpha-fill-endpoints) — agreed; owner unresolved.
-- [alpha-stroke-endpoints](CATALOG.md#alpha-stroke-endpoints) — agreed; owner unresolved.
-- [alpha-ca-state-restore](CATALOG.md#alpha-ca-state-restore) — agreed; owner unresolved.
-- [alpha-fill-fraction06](CATALOG.md#alpha-fill-fraction06) — generated; owner unresolved.
-- [alpha-stroke-fraction06](CATALOG.md#alpha-stroke-fraction06) — generated; owner unresolved.
-- [alpha-fill-fraction025](CATALOG.md#alpha-fill-fraction025) — generated; owner unresolved.
-- [alpha-stroke-fraction025](CATALOG.md#alpha-stroke-fraction025) — generated; owner unresolved.
+- [resource-page-form-isolation](CATALOG.md#resource-page-form-isolation) — pass; owner unresolved.
+- [resource-sibling-form-isolation](CATALOG.md#resource-sibling-form-isolation) — pass; owner unresolved.
+- [resource-nested-form-restoration](CATALOG.md#resource-nested-form-restoration) — pass; owner unresolved.
+- [text-td-line-origin](CATALOG.md#text-td-line-origin) — pass; owner unresolved.
+- [text-tc-tw-spacing](CATALOG.md#text-tc-tw-spacing) — pass; owner unresolved.
+- [text-tj-signed-adjustment](CATALOG.md#text-tj-signed-adjustment) — pass; owner unresolved.
+- [text-tm-rotate-replace](CATALOG.md#text-tm-rotate-replace) — pass; owner unresolved.
+- [alpha-fill-endpoints](CATALOG.md#alpha-fill-endpoints) — pass; owner unresolved.
+- [alpha-stroke-endpoints](CATALOG.md#alpha-stroke-endpoints) — pass; owner unresolved.
+- [alpha-ca-state-restore](CATALOG.md#alpha-ca-state-restore) — pass; owner unresolved.
+- [alpha-fill-fraction06](CATALOG.md#alpha-fill-fraction06) — mismatch; owner unresolved.
+- [alpha-stroke-fraction06](CATALOG.md#alpha-stroke-fraction06) — mismatch; owner unresolved.
+- [alpha-fill-fraction025](CATALOG.md#alpha-fill-fraction025) — mismatch; owner unresolved.
+- [alpha-stroke-fraction025](CATALOG.md#alpha-stroke-fraction025) — mismatch; owner unresolved.

@@ -5,7 +5,7 @@
   "passed": 30,
   "failed": 12,
   "skipped": 0,
-  "unscored_edge_regions": "All inter-cell and outer image boundaries; only declared cell centers/background are scored.",
+  "unscored_edge_regions": "Named point probes during capture; authored interiors verified separately; outside-mask regions unscored.",
   "rows": [
     {
       "id": "alpha-fill-endpoints",

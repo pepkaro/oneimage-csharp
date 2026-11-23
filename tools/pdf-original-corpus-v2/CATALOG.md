@@ -116,7 +116,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 Page and Form bind /Mark independently; page binding survives the Form call
 
-Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-page-form-isolation/original.pdf); [clause evidence](resources/clause-index.json).
+Stage: **pass**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-page-form-isolation/original.pdf); [clause evidence](resources/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-page-form-isolation/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-page-form-isolation/expected-144.png).
 
@@ -126,7 +126,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 Sibling Forms reuse /Mark for different leaf Forms without cross-contamination; page binding remains independent
 
-Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-sibling-form-isolation/original.pdf); [clause evidence](resources/clause-index.json).
+Stage: **pass**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-sibling-form-isolation/original.pdf); [clause evidence](resources/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-sibling-form-isolation/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-sibling-form-isolation/expected-144.png).
 
@@ -136,7 +136,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 Nested Form resolves its own /Mark, then restores outer and page name bindings
 
-Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-nested-form-restoration/original.pdf); [clause evidence](resources/clause-index.json).
+Stage: **pass**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-nested-form-restoration/original.pdf); [clause evidence](resources/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-nested-form-restoration/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-nested-form-restoration/expected-144.png).
 
@@ -324,7 +324,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 RGB Decode independently reverses red/blue while preserving green; samples stay interleaved RGB.
 
-Stage: **generated**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General/img-rgb8-channel-decode/original.pdf); [clause evidence](images/clause-index.json).
+Stage: **mismatch**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General/img-rgb8-channel-decode/original.pdf); [clause evidence](images/clause-index.json).
 
 Expected: withheld: reference disagreement.
 
@@ -408,7 +408,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 Independent default/Tc/Tw controls distinguish character advancement from single-byte space advancement.
 
-Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/text-tc-tw-spacing/original.pdf); [clause evidence](text/clause-index.json).
+Stage: **pass**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/text-tc-tw-spacing/original.pdf); [clause evidence](text/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/text-tc-tw-spacing/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/text-tc-tw-spacing/expected-144.png).
 
@@ -420,7 +420,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 Td restores the line origin after Tj advances the text matrix.
 
-Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.02-Text-positioning-operators/text-td-line-origin/original.pdf); [clause evidence](text/clause-index.json).
+Stage: **pass**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.02-Text-positioning-operators/text-td-line-origin/original.pdf); [clause evidence](text/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.02-Text-positioning-operators/text-td-line-origin/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.02-Text-positioning-operators/text-td-line-origin/expected-144.png).
 
@@ -430,7 +430,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 Tm rotates glyph shape/advance, then replaces both text matrices with a new ordinary matrix.
 
-Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.02-Text-positioning-operators/text-tm-rotate-replace/original.pdf); [clause evidence](text/clause-index.json).
+Stage: **pass**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.02-Text-positioning-operators/text-tm-rotate-replace/original.pdf); [clause evidence](text/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.02-Text-positioning-operators/text-tm-rotate-replace/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.02-Text-positioning-operators/text-tm-rotate-replace/expected-144.png).
 
@@ -442,7 +442,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 TJ positive/negative adjustments subtract their thousandths-of-font-size displacement, separate from Tc.
 
-Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/text-tj-signed-adjustment/original.pdf); [clause evidence](text/clause-index.json).
+Stage: **pass**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/text-tj-signed-adjustment/original.pdf); [clause evidence](text/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/text-tj-signed-adjustment/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/text-tj-signed-adjustment/expected-144.png).
 
@@ -454,7 +454,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 Nonstroking ca0 leaves the opaque backdrop unchanged; ca1 replaces it.
 
-Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/11-Transparency/11.06-Specifying-transparency-in-PDF/alpha-fill-endpoints/original.pdf); [clause evidence](alpha/clause-index.json).
+Stage: **pass**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/11-Transparency/11.06-Specifying-transparency-in-PDF/alpha-fill-endpoints/original.pdf); [clause evidence](alpha/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/11-Transparency/11.06-Specifying-transparency-in-PDF/alpha-fill-endpoints/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/11-Transparency/11.06-Specifying-transparency-in-PDF/alpha-fill-endpoints/expected-144.png).
 
@@ -464,7 +464,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 Stroking CA0 is invisible; CA1 is opaque, and CA does not suppress an ordinary fill.
 
-Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/11-Transparency/11.06-Specifying-transparency-in-PDF/alpha-stroke-endpoints/original.pdf); [clause evidence](alpha/clause-index.json).
+Stage: **pass**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/11-Transparency/11.06-Specifying-transparency-in-PDF/alpha-stroke-endpoints/original.pdf); [clause evidence](alpha/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/11-Transparency/11.06-Specifying-transparency-in-PDF/alpha-stroke-endpoints/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/11-Transparency/11.06-Specifying-transparency-in-PDF/alpha-stroke-endpoints/expected-144.png).
 
@@ -474,7 +474,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 Balanced q/Q restores the prior nonstroking alpha after a ca0 scope.
 
-Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/11-Transparency/11.06-Specifying-transparency-in-PDF/alpha-ca-state-restore/original.pdf); [clause evidence](alpha/clause-index.json).
+Stage: **pass**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/11-Transparency/11.06-Specifying-transparency-in-PDF/alpha-ca-state-restore/original.pdf); [clause evidence](alpha/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/11-Transparency/11.06-Specifying-transparency-in-PDF/alpha-ca-state-restore/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/11-Transparency/11.06-Specifying-transparency-in-PDF/alpha-ca-state-restore/expected-144.png).
 
@@ -484,7 +484,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 Normal nonstroking alpha0.6 composites an ordinary red fill over white; byte quantization is measured separately from normative real-valued blending.
 
-Stage: **generated**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/11-Transparency/11.06-Specifying-transparency-in-PDF/alpha-fill-fraction06/original.pdf); [clause evidence](alpha/clause-index.json).
+Stage: **mismatch**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/11-Transparency/11.06-Specifying-transparency-in-PDF/alpha-fill-fraction06/original.pdf); [clause evidence](alpha/clause-index.json).
 
 Expected: withheld: reference disagreement.
 
@@ -494,7 +494,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 Normal stroking alpha0.6 composites an ordinary blue stroke over white while a nonstroking fill remains opaque.
 
-Stage: **generated**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/11-Transparency/11.06-Specifying-transparency-in-PDF/alpha-stroke-fraction06/original.pdf); [clause evidence](alpha/clause-index.json).
+Stage: **mismatch**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/11-Transparency/11.06-Specifying-transparency-in-PDF/alpha-stroke-fraction06/original.pdf); [clause evidence](alpha/clause-index.json).
 
 Expected: withheld: reference disagreement.
 
@@ -504,7 +504,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 A separate binary-exact ca0.25 control composites red over white; nearest8bit analytic samples are191 for the backdrop channels.
 
-Stage: **generated**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/11-Transparency/11.06-Specifying-transparency-in-PDF/alpha-fill-fraction025/original.pdf); [clause evidence](alpha/clause-index.json).
+Stage: **mismatch**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/11-Transparency/11.06-Specifying-transparency-in-PDF/alpha-fill-fraction025/original.pdf); [clause evidence](alpha/clause-index.json).
 
 Expected: withheld: reference disagreement.
 
@@ -514,7 +514,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 A separate binary-exact CA0.25 control composites blue over white while the ordinary fill remains opaque.
 
-Stage: **generated**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/11-Transparency/11.06-Specifying-transparency-in-PDF/alpha-stroke-fraction025/original.pdf); [clause evidence](alpha/clause-index.json).
+Stage: **mismatch**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/11-Transparency/11.06-Specifying-transparency-in-PDF/alpha-stroke-fraction025/original.pdf); [clause evidence](alpha/clause-index.json).
 
 Expected: withheld: reference disagreement.
 
