@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "batch": "ISO-IMAGE-PREDICTOR-CONTROL-01",
+  "state": "complete-local-reference-qualified",
+  "generated_unique_pdfs": 4,
+  "shared_decoded_sample_grids": 1,
+  "decoded_bytes_per_grid": 60,
+  "contract_families": 1,
+  "reference_png_files": 24,
+  "reference_png_unique_bytes": 6,
+  "references_executed": 24,
+  "reference_passed": 24,
+  "reference_failed": 0,
+  "reference_skipped": 0,
+  "analytic_sample_checks": 504,
+  "analytic_sample_passed": 504,
+  "interior_pixels_per_engine": 165120,
+  "analytic_reference_pixel_checks": 495360,
+  "interior_tolerance": 0,
+  "qualified_fixture_ids": [
+    "img-predictor-none",
+    "img-predictor-tiff-sub",
+    "img-predictor-png-sub",
+    "img-predictor-png-up"
+  ],
+  "held_fixture_ids": [],
+  "independent_decoding": "4/4 exact using separate predictor reconstruction and pypdf",
+  "unscored": "All cell and outer boundary bands.",
+  "upstream_inputs_executed": 0,
+  "upstream_entry_validated": 0,
+  "product_runs": 0,
+  "selected_expected_images_created": 0,
+  "selected_expected_candidates": [
+    "references/img-predictor-none-72-mupdf.png",
+    "references/img-predictor-none-144-mupdf.png",
+    "references/img-predictor-tiff-sub-72-mupdf.png",
+    "references/img-predictor-tiff-sub-144-mupdf.png",
+    "references/img-predictor-png-sub-72-mupdf.png",
+    "references/img-predictor-png-sub-144-mupdf.png",
+    "references/img-predictor-png-up-72-mupdf.png",
+    "references/img-predictor-png-up-144-mupdf.png"
+  ],
+  "regeneration": "Four PDFs and manifest byte-identical after generator rerun.",
+  "commands": [
+    "python generate.py",
+    "python run-references.py /path/to/node_modules/pdfjs-dist",
+    "python verify-regions.py",
+    "python verify.py"
+  ],
+  "worker_remote_writes": 0
+}

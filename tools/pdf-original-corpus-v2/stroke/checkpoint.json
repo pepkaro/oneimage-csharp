@@ -1,0 +1,239 @@
+{
+  "schema_version": 1,
+  "slice": "ISO-GEOMETRY-STROKE-01",
+  "owner": "mozilla_originals",
+  "state": "references-ready-for-root-product-grading",
+  "owned_path": "/workspace/scratch/ee1a2fb9052d/pdf-corpus-scale-20261123/work/mozilla-next",
+  "scope": "ordinary line-cap geometry only",
+  "unique_pdfs": 3,
+  "unique_pdf_bytes": 1401,
+  "reference_calls": 18,
+  "selected_reference_outputs": 18,
+  "reference_passed": 18,
+  "reference_failed": 0,
+  "reference_skipped": 0,
+  "samples_passed": 108,
+  "pairwise_passed": 18,
+  "upstream_inputs_executed": 0,
+  "upstream_entries_validated": 0,
+  "product_runs": 0,
+  "external_writes": 0,
+  "backlog": [
+    {
+      "id": "ISO-GEOMETRY-STROKE-02",
+      "contract": "Ordinary line-join geometry: bevel, round, miter at a nondegenerate corner",
+      "status": "proposed-unclaimed",
+      "acceptance": "Independent shape controls; three original valid variants; pinned3engine captures at72/144DPI; solid regions scored with predeclared boundary mask; disagreements remain unscored or independently classified"
+    }
+  ],
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "8884cf00282bc69b1dbe5dead6e88b96c82c1bfc457daae48ce497e7c2588c3f"
+    },
+    {
+      "path": "README.md",
+      "sha256": "1b3c24ff9f6cd69e5cfcc29d389cef36711b4ccd19e35e76264e4a5700995330"
+    },
+    {
+      "path": "analytic/stroke-cap-butt-144-expected.png",
+      "sha256": "9b958956adc1b37ada9d0da3d526da674795d3422a90e98c35cf5a5f30503480"
+    },
+    {
+      "path": "analytic/stroke-cap-butt-144-score-mask.png",
+      "sha256": "8bd82651d127421c56d962464d81c6239e4d210db02c54b9068dacded75dbea1"
+    },
+    {
+      "path": "analytic/stroke-cap-butt-72-expected.png",
+      "sha256": "713e3b01553f9b8ab9e58b0e5b24fac6ceede8e7e1759d33cb85a01fdfc8eb34"
+    },
+    {
+      "path": "analytic/stroke-cap-butt-72-score-mask.png",
+      "sha256": "5d746771b6e180dff0f9c9f548e11165aa48d3a9fabdb3ef408f7a201b517505"
+    },
+    {
+      "path": "analytic/stroke-cap-projecting-square-144-expected.png",
+      "sha256": "9c3c776ed6450d9c187497218637d9712b377d83d46dca6ed8e029b22dd5c2fd"
+    },
+    {
+      "path": "analytic/stroke-cap-projecting-square-144-score-mask.png",
+      "sha256": "9f4e5ccad648b13d31b554b9f15e060b7e4781522b7299abbdbd616039ba7ce3"
+    },
+    {
+      "path": "analytic/stroke-cap-projecting-square-72-expected.png",
+      "sha256": "78d4110da01de231626bed2029521acf4c01e5bf8739f5c0ee5475d61aa92305"
+    },
+    {
+      "path": "analytic/stroke-cap-projecting-square-72-score-mask.png",
+      "sha256": "42f8d28fe5bf8c29e68c2eca099b49180b76b2e4459c91f8abb1b84644078c96"
+    },
+    {
+      "path": "analytic/stroke-cap-round-144-expected.png",
+      "sha256": "e0bfe19ea1c424f19e1a3615be438797b76fdfe85cb994c3ece9d49d19e62246"
+    },
+    {
+      "path": "analytic/stroke-cap-round-144-score-mask.png",
+      "sha256": "3c60e1e0d9c07f24466b758d84dd0bcb8078937d967bc03d56704e84996c4804"
+    },
+    {
+      "path": "analytic/stroke-cap-round-72-expected.png",
+      "sha256": "3a981d4961bf4c78591bac8d02fbd7502ddfb9ee91d6c8bb5165da145416b405"
+    },
+    {
+      "path": "analytic/stroke-cap-round-72-score-mask.png",
+      "sha256": "1c0b91f95dcb252c55bdfbbae79e05a99b7fe28ee14f05923399525b5bc46a61"
+    },
+    {
+      "path": "expectation-correction.json",
+      "sha256": "085c63f3eb12e5d47e52eca4178b9b007969d7b2812e011c391b80fa1f8dce11"
+    },
+    {
+      "path": "exploratory/initial-score.json",
+      "sha256": "aaabf274bf817766bb40f72b8b16185e054b58c1ac93ac03651f24d230f7b24c"
+    },
+    {
+      "path": "generate.py",
+      "sha256": "2d8fa4ee755731bd3dfed2725416f2e73ddf37198a65c2a025214e20c8851eba"
+    },
+    {
+      "path": "inputs/stroke-cap-butt.pdf",
+      "sha256": "a277fc74b1558ba83733c8da363f631bb0fb369e0458e03c5f5b101280177eec"
+    },
+    {
+      "path": "inputs/stroke-cap-projecting-square.pdf",
+      "sha256": "3ec1aa84d1e480ffb7eba6f238bb890bff17eaf62e094ae439e8de307d244ff8"
+    },
+    {
+      "path": "inputs/stroke-cap-round.pdf",
+      "sha256": "97739123af59d323e49cf71b27aa3a66b5a488404e0fa4bf9c399222fd55b367"
+    },
+    {
+      "path": "manifest.json",
+      "sha256": "3d57854f45706d24335cb302081558e28f6bcaa174f634e7549501644574e6d7"
+    },
+    {
+      "path": "reference-renders.json",
+      "sha256": "da72c7fa4ce41f4c5d4489180fcaaeb27bfae3342c256b4e79294de2b778a0a9"
+    },
+    {
+      "path": "reference-results.json",
+      "sha256": "d702daf8f2d813f2dd072bf9f5a086e3de19206375564f628d58e0ae03959b05"
+    },
+    {
+      "path": "references/stroke-cap-butt-144-mupdf.png",
+      "sha256": "1676ba6cf97f794f1c0ace1541eeec69e216d2025bbe798e22ea70c2dd7d3991"
+    },
+    {
+      "path": "references/stroke-cap-butt-144-pdfium.png",
+      "sha256": "9b958956adc1b37ada9d0da3d526da674795d3422a90e98c35cf5a5f30503480"
+    },
+    {
+      "path": "references/stroke-cap-butt-144-pdfjs.png",
+      "sha256": "957fb286e78e933af42a9af0e63b828fbcc9b775d4020f1dfd9e167d73462e0b"
+    },
+    {
+      "path": "references/stroke-cap-butt-144-pdfjs.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "references/stroke-cap-butt-72-mupdf.png",
+      "sha256": "8409f0b8eb0da38669bf197fde3d4e1357d5b191cb42b31c3bf04d6eb5001d4a"
+    },
+    {
+      "path": "references/stroke-cap-butt-72-pdfium.png",
+      "sha256": "713e3b01553f9b8ab9e58b0e5b24fac6ceede8e7e1759d33cb85a01fdfc8eb34"
+    },
+    {
+      "path": "references/stroke-cap-butt-72-pdfjs.png",
+      "sha256": "548d1973cc6828f4399bfce0062304980791194cf85a0c5b0d84d59b5940e943"
+    },
+    {
+      "path": "references/stroke-cap-butt-72-pdfjs.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "references/stroke-cap-projecting-square-144-mupdf.png",
+      "sha256": "02118a537eea003e7186c1ffa12e875e941443abcbe2b54fa2f31c38971faa7f"
+    },
+    {
+      "path": "references/stroke-cap-projecting-square-144-pdfium.png",
+      "sha256": "9c3c776ed6450d9c187497218637d9712b377d83d46dca6ed8e029b22dd5c2fd"
+    },
+    {
+      "path": "references/stroke-cap-projecting-square-144-pdfjs.png",
+      "sha256": "00f79a5c045854215f3baa1545c3d685e96ffe7dbace530f6d2708e62547ccde"
+    },
+    {
+      "path": "references/stroke-cap-projecting-square-144-pdfjs.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "references/stroke-cap-projecting-square-72-mupdf.png",
+      "sha256": "0bc36bac4e5b396cae1570e129e03638c14309e39dc4e86d29ee550c21932f16"
+    },
+    {
+      "path": "references/stroke-cap-projecting-square-72-pdfium.png",
+      "sha256": "78d4110da01de231626bed2029521acf4c01e5bf8739f5c0ee5475d61aa92305"
+    },
+    {
+      "path": "references/stroke-cap-projecting-square-72-pdfjs.png",
+      "sha256": "39f1212384b4c34bcac5f01ac2bd680d9a9a306c62d33d4f9b1f472bd1700e2c"
+    },
+    {
+      "path": "references/stroke-cap-projecting-square-72-pdfjs.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "references/stroke-cap-round-144-mupdf.png",
+      "sha256": "68a9826d7b503b53dd44cf7c1c60380232b6c72f48a53693c6a96191ba826e75"
+    },
+    {
+      "path": "references/stroke-cap-round-144-pdfium.png",
+      "sha256": "65701d43c2bee3e11d117ff61f9f395dd5dbeef057d6f7ae815a7b1f7423b1d4"
+    },
+    {
+      "path": "references/stroke-cap-round-144-pdfjs.png",
+      "sha256": "f59cfac022d4fc69c1990146331fd7841c93972d22caacbef1267f875b3d551d"
+    },
+    {
+      "path": "references/stroke-cap-round-144-pdfjs.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "references/stroke-cap-round-72-mupdf.png",
+      "sha256": "a1787e23926026067a679d1a9dfbb738f746789e6b0e656a1906ab64b1459a77"
+    },
+    {
+      "path": "references/stroke-cap-round-72-pdfium.png",
+      "sha256": "c6bd9af80090d2caadfe465ee6d46db3c4e5a60aaa2a1e6effc600f7e6a1a6ee"
+    },
+    {
+      "path": "references/stroke-cap-round-72-pdfjs.png",
+      "sha256": "7fb27a80e40c2c804b4d91868a7556f3c0b79eab59dfa5ca35543f824ebaed6d"
+    },
+    {
+      "path": "references/stroke-cap-round-72-pdfjs.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "references.py",
+      "sha256": "d0fe5e520bea8aa521bbf2b8b8a5b2ddb076635c2dcdbe3a3c248e4865e70d59"
+    },
+    {
+      "path": "render-pdfjs.mjs",
+      "sha256": "7f6d7e7a2e35d5676ce73863ee74dc48f38341191dad9c8d493d99b7e2af4a51"
+    },
+    {
+      "path": "reproduce.sh",
+      "sha256": "19460f2ffeca8a8d84ef988de8cc65f907a0e4770aaa44fca94426dfd9135ea0"
+    },
+    {
+      "path": "score.py",
+      "sha256": "807d3daa891115460a2e19769669c10db59170ec38785ed34280d2ff91a5d972"
+    },
+    {
+      "path": "verify.py",
+      "sha256": "5ae4595990db9c6c39ace94da2d60b478e52875cfbb59dc0cd9611aaa1a59b08"
+    }
+  ]
+}

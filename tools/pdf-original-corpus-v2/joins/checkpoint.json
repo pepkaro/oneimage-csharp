@@ -1,0 +1,232 @@
+{
+  "schema_version": 1,
+  "slice": "ISO-GEOMETRY-STROKE-02",
+  "owner": "mozilla_originals",
+  "state": "references-ready-for-root-product-grading",
+  "owned_path": "/workspace/scratch/ee1a2fb9052d/pdf-corpus-scale-20261123/work/mozilla-joins",
+  "scope": "ordinary nondegenerate90degree joins only",
+  "unique_pdfs": 3,
+  "unique_pdf_bytes": 1452,
+  "reference_calls": 18,
+  "selected_reference_outputs": 18,
+  "reference_passed": 18,
+  "reference_failed": 0,
+  "reference_skipped": 0,
+  "samples_passed": 108,
+  "pairwise_passed": 18,
+  "upstream_inputs_executed": 0,
+  "upstream_entries_validated": 0,
+  "product_runs": 0,
+  "external_writes": 0,
+  "edge_antialiasing_scored": false,
+  "backlog": [
+    {
+      "id": "ISO-GEOMETRY-STROKE-03",
+      "contract": "Ordinary positive dash arrays and phase on a straight butt-cap stroke",
+      "status": "proposed-unclaimed",
+      "acceptance": "Three independently authored valid variants; finite analytic start/stop intervals and gap samples;72/144DPI; pinned3engine reference agreement on predeclared interior mask; no malformed/resource cases"
+    }
+  ],
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "8884cf00282bc69b1dbe5dead6e88b96c82c1bfc457daae48ce497e7c2588c3f"
+    },
+    {
+      "path": "README.md",
+      "sha256": "07cdd637f8028e01a83ff169b4b4eb2cece56d2210cc2bac9e3dff4f17273e94"
+    },
+    {
+      "path": "analytic/stroke-join-bevel-144-expected.png",
+      "sha256": "343a622210e204124e11dd2571c60d4a37ec917deb66b5ea4b11a569f74f795e"
+    },
+    {
+      "path": "analytic/stroke-join-bevel-144-score-mask.png",
+      "sha256": "17576edd173d4d66348f8036974aa5714195b30db00b8706a7708e438907bb0c"
+    },
+    {
+      "path": "analytic/stroke-join-bevel-72-expected.png",
+      "sha256": "8eca8d62bba8c5d5264bd0aa759a9a8cf4fc05bcb20a23ed86c9b1f9e58432d8"
+    },
+    {
+      "path": "analytic/stroke-join-bevel-72-score-mask.png",
+      "sha256": "e76fd6b316b3ae11da7c742061e897f25025e818183e0c177ab385dac3235346"
+    },
+    {
+      "path": "analytic/stroke-join-miter-144-expected.png",
+      "sha256": "6ac038fb0eca474b8ba973a139861798b904bf009348fed163f7fdd6b42444b1"
+    },
+    {
+      "path": "analytic/stroke-join-miter-144-score-mask.png",
+      "sha256": "17576edd173d4d66348f8036974aa5714195b30db00b8706a7708e438907bb0c"
+    },
+    {
+      "path": "analytic/stroke-join-miter-72-expected.png",
+      "sha256": "251372624c4a6b8a8948e903cfec4ad1d275bd0e6bf29559ef014fec43f4a930"
+    },
+    {
+      "path": "analytic/stroke-join-miter-72-score-mask.png",
+      "sha256": "e76fd6b316b3ae11da7c742061e897f25025e818183e0c177ab385dac3235346"
+    },
+    {
+      "path": "analytic/stroke-join-round-144-expected.png",
+      "sha256": "e2353358e917a2d3516dd5e7d188f1d7484ce8929528adf53e46b70f63be80ac"
+    },
+    {
+      "path": "analytic/stroke-join-round-144-score-mask.png",
+      "sha256": "17576edd173d4d66348f8036974aa5714195b30db00b8706a7708e438907bb0c"
+    },
+    {
+      "path": "analytic/stroke-join-round-72-expected.png",
+      "sha256": "ffc0445286593c02e80b8d73fb011a6eb942a7f94f45f2b777189d8504d63405"
+    },
+    {
+      "path": "analytic/stroke-join-round-72-score-mask.png",
+      "sha256": "e76fd6b316b3ae11da7c742061e897f25025e818183e0c177ab385dac3235346"
+    },
+    {
+      "path": "generate.py",
+      "sha256": "ff9ffcce6eb16a5ca7276150d068a6ae70de7193124c92ea1cbfa2828d54eb52"
+    },
+    {
+      "path": "inputs/stroke-join-bevel.pdf",
+      "sha256": "c1d56ee1a66fff74138775de5dc85ab37bf5444530c4392450a9e55fa6e94ca1"
+    },
+    {
+      "path": "inputs/stroke-join-miter.pdf",
+      "sha256": "42afb8824a296ff8b10e455543de6aefddefa8bcd95188333241030a25d8631b"
+    },
+    {
+      "path": "inputs/stroke-join-round.pdf",
+      "sha256": "e210f03e9aeb6e23c2486c164472f728ed8846dfb146e551fb0a61cb76eb7eed"
+    },
+    {
+      "path": "manifest.json",
+      "sha256": "3e4d21aaa185ea983797143b86be411955d6c5f6cb2202cf8a504d2eed4f9388"
+    },
+    {
+      "path": "reference-renders.json",
+      "sha256": "3e4c5c0233f325ea43d82b333bb2da5ec11c967ad9ddeb4b59056ea62f71b979"
+    },
+    {
+      "path": "reference-results.json",
+      "sha256": "87e5c675bc7e47623d66535e53be7ccb75d88d281c25044da35f3d8521ffe16a"
+    },
+    {
+      "path": "references/stroke-join-bevel-144-mupdf.png",
+      "sha256": "f7374b99f76ac689e7f384fdcd7151e4af4bdc6dc09b744d25105dd1de62fbe0"
+    },
+    {
+      "path": "references/stroke-join-bevel-144-pdfium.png",
+      "sha256": "ffa728468673f051dc8b1c9550436cd706f124c324edad8b724d89306a662843"
+    },
+    {
+      "path": "references/stroke-join-bevel-144-pdfjs.png",
+      "sha256": "ddb3a8c149341ba3e43310cc2aed0023b52e00039ae08a657163da8c57891665"
+    },
+    {
+      "path": "references/stroke-join-bevel-144-pdfjs.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "references/stroke-join-bevel-72-mupdf.png",
+      "sha256": "beb8c192dd3a8a3cdcd6a1e7d4fad3507e77ce4048f3f7cc324f4152c6e1bd5d"
+    },
+    {
+      "path": "references/stroke-join-bevel-72-pdfium.png",
+      "sha256": "2fabd30b99bfaed569143f5e4b19a7763d650f6e0a04aa9ca3e4befa65e74afe"
+    },
+    {
+      "path": "references/stroke-join-bevel-72-pdfjs.png",
+      "sha256": "31ca8570441974242fabb6555e861a5471dea94fad2b6f81f7cc09ff40023698"
+    },
+    {
+      "path": "references/stroke-join-bevel-72-pdfjs.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "references/stroke-join-miter-144-mupdf.png",
+      "sha256": "af78e4fd3984bd5ac16a59914f4800f270a680a6cb8c28fe792d589fd50496e4"
+    },
+    {
+      "path": "references/stroke-join-miter-144-pdfium.png",
+      "sha256": "6ac038fb0eca474b8ba973a139861798b904bf009348fed163f7fdd6b42444b1"
+    },
+    {
+      "path": "references/stroke-join-miter-144-pdfjs.png",
+      "sha256": "5933528f46406b6ca75d5174ba35cb57fbfce95475cc1505bb74c5ef1d998154"
+    },
+    {
+      "path": "references/stroke-join-miter-144-pdfjs.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "references/stroke-join-miter-72-mupdf.png",
+      "sha256": "7681590f5105ce0dd83a7d2a4ca8d567c75645e628766950c08510b689e94c21"
+    },
+    {
+      "path": "references/stroke-join-miter-72-pdfium.png",
+      "sha256": "251372624c4a6b8a8948e903cfec4ad1d275bd0e6bf29559ef014fec43f4a930"
+    },
+    {
+      "path": "references/stroke-join-miter-72-pdfjs.png",
+      "sha256": "65dc7ed85186038c225ca8176bb6de1214dbec01551b0998e09b296e35927458"
+    },
+    {
+      "path": "references/stroke-join-miter-72-pdfjs.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "references/stroke-join-round-144-mupdf.png",
+      "sha256": "e62cf9332249ec98409dcd8016f5a2d27eb0c9a236148c0c0985abd4904fbad3"
+    },
+    {
+      "path": "references/stroke-join-round-144-pdfium.png",
+      "sha256": "a927a6db50ab74d945698a1d2b7ba4dc2f37c19e8e15cbf1afac8c00af275827"
+    },
+    {
+      "path": "references/stroke-join-round-144-pdfjs.png",
+      "sha256": "0483a21f53de33a0d52e544f418a5e3ced3442448e62332b5db189dcbe9c7db3"
+    },
+    {
+      "path": "references/stroke-join-round-144-pdfjs.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "references/stroke-join-round-72-mupdf.png",
+      "sha256": "71d234989d0222b65b74625167c51ff337e944ab69e85bf721458704d0bc36eb"
+    },
+    {
+      "path": "references/stroke-join-round-72-pdfium.png",
+      "sha256": "dbd24e9897d85c069fc79b8184d32c9f0098e62c5ac5d71d615f270049e5621e"
+    },
+    {
+      "path": "references/stroke-join-round-72-pdfjs.png",
+      "sha256": "f5a0eff81e06b4af33117cfbd73194f52132af4474d9071af0a62195868cb7c1"
+    },
+    {
+      "path": "references/stroke-join-round-72-pdfjs.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "references.py",
+      "sha256": "d0fe5e520bea8aa521bbf2b8b8a5b2ddb076635c2dcdbe3a3c248e4865e70d59"
+    },
+    {
+      "path": "render-pdfjs.mjs",
+      "sha256": "7f6d7e7a2e35d5676ce73863ee74dc48f38341191dad9c8d493d99b7e2af4a51"
+    },
+    {
+      "path": "reproduce.sh",
+      "sha256": "19460f2ffeca8a8d84ef988de8cc65f907a0e4770aaa44fca94426dfd9135ea0"
+    },
+    {
+      "path": "score.py",
+      "sha256": "efa9409caf98aac5d36b5e24768d1f3bedd0c0fedcc5d6737a2b2010d69f07b0"
+    },
+    {
+      "path": "verify.py",
+      "sha256": "5ae4595990db9c6c39ace94da2d60b478e52875cfbb59dc0cd9611aaa1a59b08"
+    }
+  ]
+}

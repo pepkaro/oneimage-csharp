@@ -1,0 +1,236 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-11-23 UTC",
+  "completion_rule": "Every applicable scoped semanticrule has committed independentlyvalidatedfixture+assertion or explicitreviewedexception; inventory completion is not behavior completion",
+  "scope_limit": "Initial manuallyscopedordinaryvisualrules only; fullstandard ruleenumeration incomplete pendingfull2020text and furthermanualqualification; no claim everyapplicablePDFbehaviorislisted",
+  "recovery_rule": "ReadthisbacklogandGitHEAD; verifypriorcheckpoint;claimoneunclaimeddisjointslice; neverrerunblockedAOTIPC; checkpointblockedreasonandcontinueindependenteligible work; no newapprovalneededwithin authorizedscope",
+  "current_publication": "DraftPR94 initialcommitbcfdffa66cc67084b776b510d05f0a85f2c26d32; lateracceptancecheckpoints localpendingpublication",
+  "slices": [
+    {
+      "slice_id": "ISO-FILTER-BASE-01",
+      "iso_2020_order": "07.04.01",
+      "verified_coarse_title": "General",
+      "state": "complete-reference-agreed",
+      "owner": "pdfium_originals",
+      "case_ids": [
+        "img-filter-equivalence-raw",
+        "img-filter-equivalence-flate",
+        "img-filter-equivalence-runlength"
+      ],
+      "acceptance_criteria": "Decode same54authoredbytes and compare18freshcaptures on predefinedinteriors",
+      "upstream_ids": [],
+      "fine_rule_citations": "Seecaseclause records;pendingfull2020textwhereunavailable",
+      "checkpoint": "cases.json and worker checkpoint wherecompleted",
+      "exclusivity": "oneownerperactive slice; workdirectoriesdisjoint"
+    },
+    {
+      "slice_id": "ISO-IMAGE-PREDICTOR-CONTROL-01",
+      "iso_2020_order": "07.04.04.03",
+      "verified_coarse_title": "LZWDecode and FlateDecode parameters",
+      "state": "complete-reference-agreed",
+      "owner": "pdfium_originals",
+      "case_ids": [],
+      "acceptance_criteria": "Small validRGB rows: no predictor/TIFF2/PNGSub/Up; independent decoder equals authored bytes;3refs at2DPIs and exactdeclaredinteriors",
+      "upstream_ids": [],
+      "fine_rule_citations": "Seecaseclause records;pendingfull2020textwhereunavailable",
+      "checkpoint": "cases.json and worker checkpoint wherecompleted",
+      "exclusivity": "oneownerperactive slice; workdirectoriesdisjoint"
+    },
+    {
+      "slice_id": "ISO-PAGE-GEOMETRY-01",
+      "iso_2020_order": "07.07.03.03",
+      "verified_coarse_title": "Page objects",
+      "state": "complete-product-pass",
+      "owner": "root",
+      "case_ids": [
+        "geometry-cropbox-offset",
+        "geometry-rotate-90",
+        "geometry-user-unit-2"
+      ],
+      "acceptance_criteria": "Visible dimensions and transformed colorrectangles exact at72/144DPI",
+      "upstream_ids": [],
+      "fine_rule_citations": "Seecaseclause records;pendingfull2020textwhereunavailable",
+      "checkpoint": "cases.json and worker checkpoint wherecompleted",
+      "exclusivity": "oneownerperactive slice; workdirectoriesdisjoint"
+    },
+    {
+      "slice_id": "ISO-PAGE-RESOURCE-01",
+      "iso_2020_order": "07.08.03",
+      "verified_coarse_title": "Resource dictionaries",
+      "state": "unclaimed",
+      "owner": null,
+      "case_ids": [],
+      "acceptance_criteria": "OriginalForm/page resource-name isolation with nofontorimage dependency; semanticallydistinct namedcolors; no upstreamassociation without reviewedscene metadata",
+      "upstream_ids": [],
+      "fine_rule_citations": "Seecaseclause records;pendingfull2020textwhereunavailable",
+      "checkpoint": "cases.json and worker checkpoint wherecompleted",
+      "exclusivity": "oneownerperactive slice; workdirectoriesdisjoint"
+    },
+    {
+      "slice_id": "ISO-STATE-STACK-01",
+      "iso_2020_order": "08.04.02",
+      "verified_coarse_title": "Graphics state stack",
+      "state": "complete-product-pass",
+      "owner": "root",
+      "case_ids": [
+        "geometry-saved-clip"
+      ],
+      "acceptance_criteria": "Balanced q/Q restoresclip with laterpaintoutside oldclip",
+      "upstream_ids": [],
+      "fine_rule_citations": "Seecaseclause records;pendingfull2020textwhereunavailable",
+      "checkpoint": "cases.json and worker checkpoint wherecompleted",
+      "exclusivity": "oneownerperactive slice; workdirectoriesdisjoint"
+    },
+    {
+      "slice_id": "ISO-CTM-01",
+      "iso_2020_order": "08.04.04",
+      "verified_coarse_title": "Graphics state operators",
+      "state": "complete-product-pass",
+      "owner": "root",
+      "case_ids": [
+        "geometry-concat-order"
+      ],
+      "acceptance_criteria": "Independentmatrix arithmetic distinguishes concatenateorder; exactinteriorcolorrectangles",
+      "upstream_ids": [],
+      "fine_rule_citations": "Seecaseclause records;pendingfull2020textwhereunavailable",
+      "checkpoint": "cases.json and worker checkpoint wherecompleted",
+      "exclusivity": "oneownerperactive slice; workdirectoriesdisjoint"
+    },
+    {
+      "slice_id": "ISO-PATH-BASE-01",
+      "iso_2020_order": "08.05",
+      "verified_coarse_title": "Path construction and painting",
+      "state": "complete-product-pass",
+      "owner": "root",
+      "case_ids": [
+        "geometry-fill-rules",
+        "geometry-clip-intersection",
+        "geometry-clip-path-reset"
+      ],
+      "acceptance_criteria": "Separatenamedfillrule,clipintersection,pathresetassertions",
+      "upstream_ids": [],
+      "fine_rule_citations": "Seecaseclause records;pendingfull2020textwhereunavailable",
+      "checkpoint": "cases.json and worker checkpoint wherecompleted",
+      "exclusivity": "oneownerperactive slice; workdirectoriesdisjoint"
+    },
+    {
+      "slice_id": "ISO-GEOMETRY-STROKE-01",
+      "iso_2020_order": "08.05",
+      "verified_coarse_title": "Path construction and painting",
+      "state": "mask-pass-strict-boundaryprobe-mismatch",
+      "owner": "mozilla_originals",
+      "case_ids": [
+        "stroke-cap-butt",
+        "stroke-cap-round",
+        "stroke-cap-projecting-square"
+      ],
+      "acceptance_criteria": "Threecapstyles; exactindependentrectangle/capsuleinteriors; boundarybandunscored",
+      "upstream_ids": [],
+      "fine_rule_citations": "Seecaseclause records;pendingfull2020textwhereunavailable",
+      "checkpoint": "cases.json and worker checkpoint wherecompleted",
+      "exclusivity": "oneownerperactive slice; workdirectoriesdisjoint",
+      "exception": "See stroke/boundary-classification.json; no normative defect or owner inferred"
+    },
+    {
+      "slice_id": "ISO-GEOMETRY-STROKE-02",
+      "iso_2020_order": "08.05",
+      "verified_coarse_title": "Path construction and painting",
+      "state": "complete-reference-agreed",
+      "owner": "mozilla_originals",
+      "case_ids": [],
+      "acceptance_criteria": "Round/bevel/miter ordinary90degreecorner; three analytic shapes;3refs72/144;buttcapsremote fromjoin",
+      "upstream_ids": [],
+      "fine_rule_citations": "Seecaseclause records;pendingfull2020textwhereunavailable",
+      "checkpoint": "cases.json and worker checkpoint wherecompleted",
+      "exclusivity": "oneownerperactive slice; workdirectoriesdisjoint"
+    },
+    {
+      "slice_id": "ISO-GEOMETRY-DASH-01",
+      "iso_2020_order": "08.05",
+      "verified_coarse_title": "Path construction and painting",
+      "state": "active",
+      "owner": "mozilla_originals",
+      "case_ids": [],
+      "acceptance_criteria": "Smallpositive dashlengths and nonzero phase onordinaryhorizontalstroke;analyticintervals;nozero/degeneratedashcases",
+      "upstream_ids": [],
+      "fine_rule_citations": "Seecaseclause records;pendingfull2020textwhereunavailable",
+      "checkpoint": "cases.json and worker checkpoint wherecompleted",
+      "exclusivity": "oneownerperactive slice; workdirectoriesdisjoint"
+    },
+    {
+      "slice_id": "ISO-IMAGE-COLORKEY-01",
+      "iso_2020_order": "08.09",
+      "verified_coarse_title": "Images",
+      "state": "active",
+      "owner": "pdfium_originals",
+      "case_ids": [],
+      "acceptance_criteria": "SmallvalidRGB8maskranges+unmaskedcontrol;independentcomponentinclusionlogic and3refs2DPI",
+      "upstream_ids": [],
+      "fine_rule_citations": "2008verifiedwhereavailable;2020finepending",
+      "checkpoint": "work/pdfium-colorkey",
+      "exclusivity": "disjointfromallotheractive slices"
+    },
+    {
+      "slice_id": "ISO-IMAGE-SAMPLES-01",
+      "iso_2020_order": "08.09.05.01",
+      "verified_coarse_title": "General",
+      "state": "complete-product-pass",
+      "owner": "root",
+      "case_ids": [
+        "img-gray2-packed-padding",
+        "img-gray4-inverted-decode",
+        "img-gray8-restricted-decode",
+        "img-indexed2-lookup-padding",
+        "img-indexed4-reversed-decode",
+        "img-rgb16-big-endian",
+        "img-rgb8-mirrored-placement"
+      ],
+      "acceptance_criteria": "Validpacked/indexed/16bitsamples andposition expected independently;3refs2DPI",
+      "upstream_ids": [],
+      "fine_rule_citations": "Seecaseclause records;pendingfull2020textwhereunavailable",
+      "checkpoint": "cases.json and worker checkpoint wherecompleted",
+      "exclusivity": "oneownerperactive slice; workdirectoriesdisjoint"
+    },
+    {
+      "slice_id": "ISO-IMAGE-DECODE-DISPUTE-01",
+      "iso_2020_order": "08.09.05.01",
+      "verified_coarse_title": "General",
+      "state": "held-reference-disagreement",
+      "owner": "root",
+      "case_ids": [
+        "img-rgb8-channel-decode"
+      ],
+      "acceptance_criteria": "ResolvePDFiumonevaluequantization withofficialnormativeconversionor classifyobservedcompatibility; no majoritygolden orproductgrade",
+      "upstream_ids": [],
+      "fine_rule_citations": "Seecaseclause records;pendingfull2020textwhereunavailable",
+      "checkpoint": "cases.json and worker checkpoint wherecompleted",
+      "exclusivity": "oneownerperactive slice; workdirectoriesdisjoint"
+    },
+    {
+      "slice_id": "ISO-TEXT-POSITION-01",
+      "iso_2020_order": "09",
+      "verified_coarse_title": "Text",
+      "state": "unclaimed",
+      "owner": null,
+      "case_ids": [],
+      "acceptance_criteria": "OriginalMITfontandlayout withindependentadvances/textmatrix; three matchedrefs; verifyexactfiner2020clausebeforeassignment",
+      "upstream_ids": [],
+      "fine_rule_citations": "Seecaseclause records;pendingfull2020textwhereunavailable",
+      "checkpoint": "cases.json and worker checkpoint wherecompleted",
+      "exclusivity": "oneownerperactive slice; workdirectoriesdisjoint"
+    },
+    {
+      "slice_id": "ISO-TRANSPARENCY-01",
+      "iso_2020_order": "11",
+      "verified_coarse_title": "Transparency",
+      "state": "unclaimed",
+      "owner": null,
+      "case_ids": [],
+      "acceptance_criteria": "Ordinaryopaqueendpoint/constantalphaRGBrectangles;independentblendmath and3refs; keepprivateMattecandidateexcluded",
+      "upstream_ids": [],
+      "fine_rule_citations": "Seecaseclause records;pendingfull2020textwhereunavailable",
+      "checkpoint": "cases.json and worker checkpoint wherecompleted",
+      "exclusivity": "oneownerperactive slice; workdirectoriesdisjoint"
+    }
+  ]
+}

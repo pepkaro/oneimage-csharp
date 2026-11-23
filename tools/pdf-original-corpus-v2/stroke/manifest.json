@@ -1,0 +1,391 @@
+{
+  "schema_version": 1,
+  "slice": "ISO-GEOMETRY-STROKE-01",
+  "owner": "mozilla_originals",
+  "independently_authored": true,
+  "upstream_fixture_bytes_read": 0,
+  "case_count": 3,
+  "cases": [
+    {
+      "id": "stroke-cap-butt",
+      "file": "inputs/stroke-cap-butt.pdf",
+      "sha256": "a277fc74b1558ba83733c8da363f631bb0fb369e0458e03c5f5b101280177eec",
+      "license": "MIT",
+      "fixture_version": "1.7",
+      "contract": "Open horizontal subpath line cap butt",
+      "cap_style": 0,
+      "segment": [
+        [
+          30,
+          50
+        ],
+        [
+          90,
+          50
+        ]
+      ],
+      "line_width": 20,
+      "analytic_shape": "rectangle [30,40,90,60]",
+      "display_width_points": 120,
+      "display_height_points": 100,
+      "user_unit": 1,
+      "rotation": 0,
+      "pages": [
+        0
+      ],
+      "page_count": 1,
+      "dpis": [
+        72,
+        144
+      ],
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "stroke_rgb": [
+        255,
+        0,
+        0
+      ],
+      "annotations": "none",
+      "sample_coordinates": "upright display points x right/y up; image row=floor((100-y)*dpi/72)",
+      "samples": [
+        {
+          "id": "body",
+          "x": 60,
+          "y": 50,
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "outside",
+          "x": 15,
+          "y": 50,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "beyond-end",
+          "x": 22,
+          "y": 50,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "extension-corner",
+          "x": 22,
+          "y": 58,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "above",
+          "x": 60,
+          "y": 65,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "right-extension",
+          "x": 98,
+          "y": 50,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "predeclared_mask": "Exclude all pixel centers within 1 device pixel of analytic shape boundary; score every remaining interior and exterior pixel",
+      "legacy_verified_clause": "ISO 32000-1:2008 8.4.3.3, Table 54 Line Cap Styles",
+      "official_2020_coarse_index": "8.5 Path construction and painting; 8.5.3.1 Path-painting operators, general",
+      "narrow_2020_rule_status": "Pending full official 2020 text access; no claim line-cap clause or wording verified from errata",
+      "source_urls": [
+        "https://pdfa.org/resource/iso-32000-2",
+        "https://pdf-issues.pdfa.org/32000-2-2020/clause08.html"
+      ],
+      "upstream_association": {
+        "upstream_id": null,
+        "scope": "standard-contract-only",
+        "exact_upstream_scope_established": false,
+        "upstream_input_executed": false
+      }
+    },
+    {
+      "id": "stroke-cap-round",
+      "file": "inputs/stroke-cap-round.pdf",
+      "sha256": "97739123af59d323e49cf71b27aa3a66b5a488404e0fa4bf9c399222fd55b367",
+      "license": "MIT",
+      "fixture_version": "1.7",
+      "contract": "Open horizontal subpath line cap round",
+      "cap_style": 1,
+      "segment": [
+        [
+          30,
+          50
+        ],
+        [
+          90,
+          50
+        ]
+      ],
+      "line_width": 20,
+      "analytic_shape": "capsule: distance to segment <=10",
+      "display_width_points": 120,
+      "display_height_points": 100,
+      "user_unit": 1,
+      "rotation": 0,
+      "pages": [
+        0
+      ],
+      "page_count": 1,
+      "dpis": [
+        72,
+        144
+      ],
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "stroke_rgb": [
+        255,
+        0,
+        0
+      ],
+      "annotations": "none",
+      "sample_coordinates": "upright display points x right/y up; image row=floor((100-y)*dpi/72)",
+      "samples": [
+        {
+          "id": "body",
+          "x": 60,
+          "y": 50,
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "outside",
+          "x": 15,
+          "y": 50,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "beyond-end",
+          "x": 22,
+          "y": 50,
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "extension-corner",
+          "x": 22,
+          "y": 58,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "above",
+          "x": 60,
+          "y": 65,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "right-extension",
+          "x": 98,
+          "y": 50,
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        }
+      ],
+      "predeclared_mask": "Exclude all pixel centers within 1 device pixel of analytic shape boundary; score every remaining interior and exterior pixel",
+      "legacy_verified_clause": "ISO 32000-1:2008 8.4.3.3, Table 54 Line Cap Styles",
+      "official_2020_coarse_index": "8.5 Path construction and painting; 8.5.3.1 Path-painting operators, general",
+      "narrow_2020_rule_status": "Pending full official 2020 text access; no claim line-cap clause or wording verified from errata",
+      "source_urls": [
+        "https://pdfa.org/resource/iso-32000-2",
+        "https://pdf-issues.pdfa.org/32000-2-2020/clause08.html"
+      ],
+      "upstream_association": {
+        "upstream_id": null,
+        "scope": "standard-contract-only",
+        "exact_upstream_scope_established": false,
+        "upstream_input_executed": false
+      }
+    },
+    {
+      "id": "stroke-cap-projecting-square",
+      "file": "inputs/stroke-cap-projecting-square.pdf",
+      "sha256": "3ec1aa84d1e480ffb7eba6f238bb890bff17eaf62e094ae439e8de307d244ff8",
+      "license": "MIT",
+      "fixture_version": "1.7",
+      "contract": "Open horizontal subpath line cap projecting-square",
+      "cap_style": 2,
+      "segment": [
+        [
+          30,
+          50
+        ],
+        [
+          90,
+          50
+        ]
+      ],
+      "line_width": 20,
+      "analytic_shape": "rectangle [20,40,100,60]",
+      "display_width_points": 120,
+      "display_height_points": 100,
+      "user_unit": 1,
+      "rotation": 0,
+      "pages": [
+        0
+      ],
+      "page_count": 1,
+      "dpis": [
+        72,
+        144
+      ],
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "stroke_rgb": [
+        255,
+        0,
+        0
+      ],
+      "annotations": "none",
+      "sample_coordinates": "upright display points x right/y up; image row=floor((100-y)*dpi/72)",
+      "samples": [
+        {
+          "id": "body",
+          "x": 60,
+          "y": 50,
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "outside",
+          "x": 15,
+          "y": 50,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "beyond-end",
+          "x": 22,
+          "y": 50,
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "extension-corner",
+          "x": 22,
+          "y": 58,
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "above",
+          "x": 60,
+          "y": 65,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "right-extension",
+          "x": 98,
+          "y": 50,
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        }
+      ],
+      "predeclared_mask": "Exclude all pixel centers within 1 device pixel of analytic shape boundary; score every remaining interior and exterior pixel",
+      "legacy_verified_clause": "ISO 32000-1:2008 8.4.3.3, Table 54 Line Cap Styles",
+      "official_2020_coarse_index": "8.5 Path construction and painting; 8.5.3.1 Path-painting operators, general",
+      "narrow_2020_rule_status": "Pending full official 2020 text access; no claim line-cap clause or wording verified from errata",
+      "source_urls": [
+        "https://pdfa.org/resource/iso-32000-2",
+        "https://pdf-issues.pdfa.org/32000-2-2020/clause08.html"
+      ],
+      "upstream_association": {
+        "upstream_id": null,
+        "scope": "standard-contract-only",
+        "exact_upstream_scope_established": false,
+        "upstream_input_executed": false
+      }
+    }
+  ]
+}

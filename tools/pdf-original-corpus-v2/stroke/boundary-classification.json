@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "id": "stroke-cap-round-72-extension-corner",
+  "classification": "boundary-compatibility-probe-outside-accepted-mask",
+  "accepted_mask_result": "passed: zero differing scored pixels",
+  "strict_result": "failed: preserve named sample mismatch",
+  "original_strict_ledger": {
+    "executed": 42,
+    "passed": 41,
+    "failed": 1,
+    "skipped": 2,
+    "skip_reason": "Held RGB8 Decode reference disagreement: both DPIs ungraded"
+  },
+  "separate_masked_ledger": {
+    "executed": 42,
+    "passed": 42,
+    "failed": 0,
+    "skipped": 2,
+    "scope": "Existing declared masks only; no assertion expectation changed"
+  },
+  "report": {
+    "path": "/workspace/scratch/ee1a2fb9052d/pdf-corpus-scale-20261123/product-expanded/results.json",
+    "sha256": "5d53a33e04f4300c2842bfba687fa9d96b7df0507a7a3f5a16c35a1b7e9b8b73",
+    "acceptance_commit": "b64f27f55f68dadb49644cde7db2652c5385f9b3"
+  },
+  "probe": {
+    "declared_pdf_position": [
+      22,
+      58
+    ],
+    "device_pixel_index": [
+      22,
+      42
+    ],
+    "pdf_space_pixel_center": [
+      22.5,
+      57.5
+    ],
+    "pdf_space_pixel_footprint": [
+      22,
+      57,
+      23,
+      58
+    ],
+    "ideal_left_cap_center": [
+      30,
+      50
+    ],
+    "radius": 10,
+    "center_distance": 10.606601717798213,
+    "signed_center_distance": 0.6066017177982133,
+    "exclusion_band_device_pixels": 1,
+    "accepted_mask": false,
+    "product_rgb": [
+      255,
+      253,
+      253
+    ],
+    "expected_rgb": [
+      255,
+      255,
+      255
+    ],
+    "product_png_sha256": "56189ee07c92410f380c7c22b7fd7ffc5a453f7afa5c2cc7f82c1d827e03ce6c",
+    "references": [
+      {
+        "engine": "pdfium",
+        "path": "/workspace/scratch/ee1a2fb9052d/pdf-corpus-scale-20261123/work/mozilla-next/references/stroke-cap-round-72-pdfium.png",
+        "sha256": "c6bd9af80090d2caadfe465ee6d46db3c4e5a60aaa2a1e6effc600f7e6a1a6ee",
+        "rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "engine": "mupdf",
+        "path": "/workspace/scratch/ee1a2fb9052d/pdf-corpus-scale-20261123/work/mozilla-next/references/stroke-cap-round-72-mupdf.png",
+        "sha256": "a1787e23926026067a679d1a9dfbb738f746789e6b0e656a1906ab64b1459a77",
+        "rgb": [
+          255,
+          255,
+          255
+        ]
+      },
+      {
+        "engine": "pdfjs",
+        "path": "/workspace/scratch/ee1a2fb9052d/pdf-corpus-scale-20261123/work/mozilla-next/references/stroke-cap-round-72-pdfjs.png",
+        "sha256": "7fb27a80e40c2c804b4d91868a7556f3c0b79eab59dfa5ca35543f824ebaed6d",
+        "rgb": [
+          255,
+          255,
+          255
+        ]
+      }
+    ]
+  },
+  "independent_area_control": {
+    "method": "Integrate sqrt(100-x*x)-7 for local x from -sqrt(51) to -7 over the unit pixel footprint",
+    "ideal_circle_covered_area": 0.010067678869589258,
+    "interpretation": "Pixel center is exterior, but its finite area intersects the ideal circle. Pixel-center binary expectation is not an ISO-mandated antialiasing rule. This area calculation classifies the probe; it does not replace the preserved RGB expectation or claim exact product coverage."
+  },
+  "source_participation": [
+    {
+      "commit": "eb47d5a0155bdb38f6fc7b08a5fa7279fd004a12",
+      "path": "src/OneImage.Pdf/Render/CanvasDevice.cs",
+      "line_start": 157,
+      "line_end": 180,
+      "file_sha256": "0eb32952d127eb48a748d5d761bee980b3221e9cb97e80e266cd8438496d8970",
+      "participation": "Converts the ordinary PDF path to a stroke outline; nondegenerate round-cap path uses StrokeUserPath."
+    },
+    {
+      "commit": "eb47d5a0155bdb38f6fc7b08a5fa7279fd004a12",
+      "path": "src/OneImage.Pdf/Render/CanvasDevice.cs",
+      "line_start": 257,
+      "line_end": 270,
+      "file_sha256": "0eb32952d127eb48a748d5d761bee980b3221e9cb97e80e266cd8438496d8970",
+      "participation": "Maps state.LineCap1 to StrokeCap.Round, calls StrokeBuilder.Build, then transforms the outline."
+    },
+    {
+      "commit": "eb47d5a0155bdb38f6fc7b08a5fa7279fd004a12",
+      "path": "src/OneImage/Drawing/StrokeBuilder.cs",
+      "line_start": 341,
+      "line_end": 393,
+      "file_sha256": "59a17def3e3c17a14adbae8e703c9cbd68315f386252b406d000bb4bc834d3c9",
+      "participation": "Builds round caps with Arc; Arc emits cubic pieces of at most90degrees."
+    },
+    {
+      "commit": "eb47d5a0155bdb38f6fc7b08a5fa7279fd004a12",
+      "path": "src/OneImage/Drawing/FillPlan.cs",
+      "line_start": 222,
+      "line_end": 245,
+      "file_sha256": "5a558b7d8efeb9ebf7f040ce76414ceadd0270d363f1b6b640c37fc5a54c9cb8",
+      "participation": "Consumes raster coverage and dispatches RGB/RGBA painting. Exact discrepancy attribution was not instrumented."
+    }
+  ],
+  "parser_assessment": {
+    "declared_dependency": "RecursiveAI.OnePdf/Fonts1.18.0",
+    "scope": "The PDF parser/interpreter necessarily supplies path and line-cap state, but exact package source/instrumented parse state were not audited here. Actual OneImage main maps cap1 to round and constructs its outline. Interior and style controls pass. No evidence establishes a parser fault; no definitive ownership is assigned."
+  },
+  "limits": [
+    "No antialiasing or quantization conformance verdict from this unscored pixel",
+    "No renderer fix proposed",
+    "No product, PDF, manifest, expectation, reference, prior score or checkpoint modified",
+    "No upstream fixture input executed or upstream parity claimed"
+  ],
+  "next_action": "Retain strict probe mismatch beside42masked passes. A future independently scoped edge study would require subpixel area/curve approximation and compositing controls before any implementation diagnosis."
+}

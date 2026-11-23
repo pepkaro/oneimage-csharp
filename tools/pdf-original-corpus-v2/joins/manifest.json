@@ -1,0 +1,409 @@
+{
+  "schema_version": 1,
+  "slice": "ISO-GEOMETRY-STROKE-02",
+  "owner": "mozilla_originals",
+  "independently_authored": true,
+  "upstream_fixture_bytes_read": 0,
+  "case_count": 3,
+  "cases": [
+    {
+      "id": "stroke-join-miter",
+      "file": "inputs/stroke-join-miter.pdf",
+      "sha256": "42afb8824a296ff8b10e455543de6aefddefa8bcd95188333241030a25d8631b",
+      "license": "MIT",
+      "fixture_version": "1.7",
+      "contract": "Ordinary 90-degree miter line join",
+      "join_style": 0,
+      "cap_style": 0,
+      "path_points": [
+        [
+          30,
+          30
+        ],
+        [
+          70,
+          30
+        ],
+        [
+          70,
+          70
+        ]
+      ],
+      "line_width": 20,
+      "miter_limit": 10,
+      "analytic_shape": "Union of stroke rectangles [30,20,70,40] and [60,30,80,70], plus southeast join sector: square/miter, radius10 quarter-circle/round, or dx-dy<=10 triangle/bevel",
+      "display_width_points": 120,
+      "display_height_points": 100,
+      "user_unit": 1,
+      "rotation": 0,
+      "pages": [
+        0
+      ],
+      "page_count": 1,
+      "dpis": [
+        72,
+        144
+      ],
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "stroke_rgb": [
+        255,
+        0,
+        0
+      ],
+      "annotations": "none",
+      "sample_coordinates": "upright display points x right/y up; image row=floor((100-y)*dpi/72)",
+      "samples": [
+        {
+          "id": "horizontal-body",
+          "x": 45,
+          "y": 30,
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "vertical-body",
+          "x": 70,
+          "y": 55,
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "outside",
+          "x": 90,
+          "y": 20,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "miter-only-corner",
+          "x": 78,
+          "y": 22,
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "round-or-miter",
+          "x": 76,
+          "y": 24,
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "all-join-interior",
+          "x": 73,
+          "y": 27,
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        }
+      ],
+      "predeclared_mask": "Common conservative mask: exclude one-device-pixel bands around constituent rectangle edges, southeast square edges, radius10 circle and bevel diagonal before any renderer is read",
+      "legacy_verified_clause": "ISO 32000-1:2008 8.4.3.4/Table55 Line Join Styles; 8.4.3.5 Miter Limit; 8.4.3.3 butt caps",
+      "official_2020_coarse_index": "8.5 Path construction and painting; 8.5.3.1 Path-painting operators, general",
+      "narrow_2020_rule_status": "Pending full official 2020 text access; no exact line-join clause or wording verified from errata",
+      "source_urls": [
+        "https://pdfa.org/resource/iso-32000-2",
+        "https://pdf-issues.pdfa.org/32000-2-2020/clause08.html"
+      ],
+      "upstream_association": {
+        "upstream_id": null,
+        "scope": "standard-contract-only",
+        "exact_upstream_scope_established": false,
+        "upstream_input_executed": false
+      }
+    },
+    {
+      "id": "stroke-join-round",
+      "file": "inputs/stroke-join-round.pdf",
+      "sha256": "e210f03e9aeb6e23c2486c164472f728ed8846dfb146e551fb0a61cb76eb7eed",
+      "license": "MIT",
+      "fixture_version": "1.7",
+      "contract": "Ordinary 90-degree round line join",
+      "join_style": 1,
+      "cap_style": 0,
+      "path_points": [
+        [
+          30,
+          30
+        ],
+        [
+          70,
+          30
+        ],
+        [
+          70,
+          70
+        ]
+      ],
+      "line_width": 20,
+      "miter_limit": 10,
+      "analytic_shape": "Union of stroke rectangles [30,20,70,40] and [60,30,80,70], plus southeast join sector: square/miter, radius10 quarter-circle/round, or dx-dy<=10 triangle/bevel",
+      "display_width_points": 120,
+      "display_height_points": 100,
+      "user_unit": 1,
+      "rotation": 0,
+      "pages": [
+        0
+      ],
+      "page_count": 1,
+      "dpis": [
+        72,
+        144
+      ],
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "stroke_rgb": [
+        255,
+        0,
+        0
+      ],
+      "annotations": "none",
+      "sample_coordinates": "upright display points x right/y up; image row=floor((100-y)*dpi/72)",
+      "samples": [
+        {
+          "id": "horizontal-body",
+          "x": 45,
+          "y": 30,
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "vertical-body",
+          "x": 70,
+          "y": 55,
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "outside",
+          "x": 90,
+          "y": 20,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "miter-only-corner",
+          "x": 78,
+          "y": 22,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "round-or-miter",
+          "x": 76,
+          "y": 24,
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "all-join-interior",
+          "x": 73,
+          "y": 27,
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        }
+      ],
+      "predeclared_mask": "Common conservative mask: exclude one-device-pixel bands around constituent rectangle edges, southeast square edges, radius10 circle and bevel diagonal before any renderer is read",
+      "legacy_verified_clause": "ISO 32000-1:2008 8.4.3.4/Table55 Line Join Styles; 8.4.3.5 Miter Limit; 8.4.3.3 butt caps",
+      "official_2020_coarse_index": "8.5 Path construction and painting; 8.5.3.1 Path-painting operators, general",
+      "narrow_2020_rule_status": "Pending full official 2020 text access; no exact line-join clause or wording verified from errata",
+      "source_urls": [
+        "https://pdfa.org/resource/iso-32000-2",
+        "https://pdf-issues.pdfa.org/32000-2-2020/clause08.html"
+      ],
+      "upstream_association": {
+        "upstream_id": null,
+        "scope": "standard-contract-only",
+        "exact_upstream_scope_established": false,
+        "upstream_input_executed": false
+      }
+    },
+    {
+      "id": "stroke-join-bevel",
+      "file": "inputs/stroke-join-bevel.pdf",
+      "sha256": "c1d56ee1a66fff74138775de5dc85ab37bf5444530c4392450a9e55fa6e94ca1",
+      "license": "MIT",
+      "fixture_version": "1.7",
+      "contract": "Ordinary 90-degree bevel line join",
+      "join_style": 2,
+      "cap_style": 0,
+      "path_points": [
+        [
+          30,
+          30
+        ],
+        [
+          70,
+          30
+        ],
+        [
+          70,
+          70
+        ]
+      ],
+      "line_width": 20,
+      "miter_limit": 10,
+      "analytic_shape": "Union of stroke rectangles [30,20,70,40] and [60,30,80,70], plus southeast join sector: square/miter, radius10 quarter-circle/round, or dx-dy<=10 triangle/bevel",
+      "display_width_points": 120,
+      "display_height_points": 100,
+      "user_unit": 1,
+      "rotation": 0,
+      "pages": [
+        0
+      ],
+      "page_count": 1,
+      "dpis": [
+        72,
+        144
+      ],
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "stroke_rgb": [
+        255,
+        0,
+        0
+      ],
+      "annotations": "none",
+      "sample_coordinates": "upright display points x right/y up; image row=floor((100-y)*dpi/72)",
+      "samples": [
+        {
+          "id": "horizontal-body",
+          "x": 45,
+          "y": 30,
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "vertical-body",
+          "x": 70,
+          "y": 55,
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "outside",
+          "x": 90,
+          "y": 20,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "miter-only-corner",
+          "x": 78,
+          "y": 22,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "round-or-miter",
+          "x": 76,
+          "y": 24,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "all-join-interior",
+          "x": 73,
+          "y": 27,
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        }
+      ],
+      "predeclared_mask": "Common conservative mask: exclude one-device-pixel bands around constituent rectangle edges, southeast square edges, radius10 circle and bevel diagonal before any renderer is read",
+      "legacy_verified_clause": "ISO 32000-1:2008 8.4.3.4/Table55 Line Join Styles; 8.4.3.5 Miter Limit; 8.4.3.3 butt caps",
+      "official_2020_coarse_index": "8.5 Path construction and painting; 8.5.3.1 Path-painting operators, general",
+      "narrow_2020_rule_status": "Pending full official 2020 text access; no exact line-join clause or wording verified from errata",
+      "source_urls": [
+        "https://pdfa.org/resource/iso-32000-2",
+        "https://pdf-issues.pdfa.org/32000-2-2020/clause08.html"
+      ],
+      "upstream_association": {
+        "upstream_id": null,
+        "scope": "standard-contract-only",
+        "exact_upstream_scope_established": false,
+        "upstream_input_executed": false
+      }
+    }
+  ]
+}

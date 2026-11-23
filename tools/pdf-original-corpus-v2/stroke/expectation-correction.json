@@ -1,0 +1,11 @@
+{
+  "reason": "Authored sample-coordinate error caught by independent analytic shape: (24,57) is sqrt(85) from (30,50), inside round radius10. Corrected sample (22,58) is sqrt(128)>10, outside round and inside square.",
+  "initial_score": "exploratory/initial-score.json",
+  "initial_passed": 12,
+  "initial_failed": 6,
+  "all_initial_pairwise_passed": 18,
+  "all_initial_analytic_masks_passed": 18,
+  "input_bytes_changed": false,
+  "references_changed": false,
+  "renderer_defect_claimed": false
+}

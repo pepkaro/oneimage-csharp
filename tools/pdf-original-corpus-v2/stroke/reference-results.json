@@ -1,0 +1,1925 @@
+{
+  "unique_original_pdfs": 3,
+  "executed": 18,
+  "passed": 18,
+  "failed": 0,
+  "skipped": 0,
+  "sample_checks": 108,
+  "sample_passes": 108,
+  "pairwise_passes": 18,
+  "pairwise_failures": 0,
+  "upstream_inputs_executed": 0,
+  "upstream_entries_validated": 0,
+  "rows": [
+    {
+      "id": "stroke-cap-butt",
+      "engine": "pdfium",
+      "dpi": 72,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 11680,
+      "unscored_boundary_pixels": 320,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "body",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "outside",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "beyond-end",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "extension-corner",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "above",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-extension",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "stroke-cap-butt",
+      "engine": "mupdf",
+      "dpi": 72,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 11680,
+      "unscored_boundary_pixels": 320,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "body",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "outside",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "beyond-end",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "extension-corner",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "above",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-extension",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "stroke-cap-butt",
+      "engine": "pdfjs",
+      "dpi": 72,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 11680,
+      "unscored_boundary_pixels": 320,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "body",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "outside",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "beyond-end",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "extension-corner",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "above",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-extension",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "stroke-cap-butt",
+      "engine": "pdfium",
+      "dpi": 144,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 47360,
+      "unscored_boundary_pixels": 640,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "body",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "outside",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "beyond-end",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "extension-corner",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "above",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-extension",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "stroke-cap-butt",
+      "engine": "mupdf",
+      "dpi": 144,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 47360,
+      "unscored_boundary_pixels": 640,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "body",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "outside",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "beyond-end",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "extension-corner",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "above",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-extension",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "stroke-cap-butt",
+      "engine": "pdfjs",
+      "dpi": 144,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 47360,
+      "unscored_boundary_pixels": 640,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "body",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "outside",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "beyond-end",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "extension-corner",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "above",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-extension",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "stroke-cap-round",
+      "engine": "pdfium",
+      "dpi": 72,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 11632,
+      "unscored_boundary_pixels": 368,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "body",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "outside",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "beyond-end",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "extension-corner",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "above",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-extension",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "stroke-cap-round",
+      "engine": "mupdf",
+      "dpi": 72,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 11632,
+      "unscored_boundary_pixels": 368,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "body",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "outside",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "beyond-end",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "extension-corner",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "above",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-extension",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "stroke-cap-round",
+      "engine": "pdfjs",
+      "dpi": 72,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 11632,
+      "unscored_boundary_pixels": 368,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "body",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "outside",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "beyond-end",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "extension-corner",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "above",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-extension",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "stroke-cap-round",
+      "engine": "pdfium",
+      "dpi": 144,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 47248,
+      "unscored_boundary_pixels": 752,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "body",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "outside",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "beyond-end",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "extension-corner",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "above",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-extension",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "stroke-cap-round",
+      "engine": "mupdf",
+      "dpi": 144,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 47248,
+      "unscored_boundary_pixels": 752,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "body",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "outside",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "beyond-end",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "extension-corner",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "above",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-extension",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "stroke-cap-round",
+      "engine": "pdfjs",
+      "dpi": 144,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 47248,
+      "unscored_boundary_pixels": 752,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "body",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "outside",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "beyond-end",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "extension-corner",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "above",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-extension",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "stroke-cap-projecting-square",
+      "engine": "pdfium",
+      "dpi": 72,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 11600,
+      "unscored_boundary_pixels": 400,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "body",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "outside",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "beyond-end",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "extension-corner",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "above",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-extension",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "stroke-cap-projecting-square",
+      "engine": "mupdf",
+      "dpi": 72,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 11600,
+      "unscored_boundary_pixels": 400,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "body",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "outside",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "beyond-end",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "extension-corner",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "above",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-extension",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "stroke-cap-projecting-square",
+      "engine": "pdfjs",
+      "dpi": 72,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 11600,
+      "unscored_boundary_pixels": 400,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "body",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "outside",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "beyond-end",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "extension-corner",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "above",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-extension",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "stroke-cap-projecting-square",
+      "engine": "pdfium",
+      "dpi": 144,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 47200,
+      "unscored_boundary_pixels": 800,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "body",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "outside",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "beyond-end",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "extension-corner",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "above",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-extension",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "stroke-cap-projecting-square",
+      "engine": "mupdf",
+      "dpi": 144,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 47200,
+      "unscored_boundary_pixels": 800,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "body",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "outside",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "beyond-end",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "extension-corner",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "above",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-extension",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "stroke-cap-projecting-square",
+      "engine": "pdfjs",
+      "dpi": 144,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 47200,
+      "unscored_boundary_pixels": 800,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "body",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "outside",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "beyond-end",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "extension-corner",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "above",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-extension",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "pairwise": [
+    {
+      "id": "stroke-cap-butt",
+      "dpi": 72,
+      "engines": [
+        "pdfium",
+        "mupdf"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "stroke-cap-butt",
+      "dpi": 72,
+      "engines": [
+        "pdfium",
+        "pdfjs"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "stroke-cap-butt",
+      "dpi": 72,
+      "engines": [
+        "mupdf",
+        "pdfjs"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "stroke-cap-butt",
+      "dpi": 144,
+      "engines": [
+        "pdfium",
+        "mupdf"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "stroke-cap-butt",
+      "dpi": 144,
+      "engines": [
+        "pdfium",
+        "pdfjs"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "stroke-cap-butt",
+      "dpi": 144,
+      "engines": [
+        "mupdf",
+        "pdfjs"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "stroke-cap-round",
+      "dpi": 72,
+      "engines": [
+        "pdfium",
+        "mupdf"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "stroke-cap-round",
+      "dpi": 72,
+      "engines": [
+        "pdfium",
+        "pdfjs"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "stroke-cap-round",
+      "dpi": 72,
+      "engines": [
+        "mupdf",
+        "pdfjs"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "stroke-cap-round",
+      "dpi": 144,
+      "engines": [
+        "pdfium",
+        "mupdf"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "stroke-cap-round",
+      "dpi": 144,
+      "engines": [
+        "pdfium",
+        "pdfjs"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "stroke-cap-round",
+      "dpi": 144,
+      "engines": [
+        "mupdf",
+        "pdfjs"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "stroke-cap-projecting-square",
+      "dpi": 72,
+      "engines": [
+        "pdfium",
+        "mupdf"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "stroke-cap-projecting-square",
+      "dpi": 72,
+      "engines": [
+        "pdfium",
+        "pdfjs"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "stroke-cap-projecting-square",
+      "dpi": 72,
+      "engines": [
+        "mupdf",
+        "pdfjs"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "stroke-cap-projecting-square",
+      "dpi": 144,
+      "engines": [
+        "pdfium",
+        "mupdf"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "stroke-cap-projecting-square",
+      "dpi": 144,
+      "engines": [
+        "pdfium",
+        "pdfjs"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "stroke-cap-projecting-square",
+      "dpi": 144,
+      "engines": [
+        "mupdf",
+        "pdfjs"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    }
+  ]
+}

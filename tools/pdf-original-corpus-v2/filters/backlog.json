@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "owner": "pdfium_originals",
+  "slice": "ISO-IMAGE-FILTER-CONTROL-01",
+  "path": "work/pdfium-next",
+  "state": "complete-local-reference-qualified-awaiting-root-review",
+  "actual": {
+    "generated_unique_pdfs": 3,
+    "contract_families": 1,
+    "references_executed": 18,
+    "reference_passed": 18,
+    "reference_failed": 0,
+    "reference_skipped": 0,
+    "qualified_variants": 3,
+    "held_variants": 0,
+    "upstream_entry_passes": 0,
+    "product_runs": 0,
+    "published_by_worker": 0
+  },
+  "next_unclaimed_slice": {
+    "id": "ISO-IMAGE-PREDICTOR-CONTROL-01",
+    "state": "proposed-unclaimed-not-started",
+    "scope": "Small valid Flate image grids with explicit no-predictor control versus ordinary TIFF horizontal predictor; independently authored Gray8 and RGB8 rows.",
+    "acceptance_criteria": [
+      "Verify governing predictor clauses before authoring; finer 2020 wording may remain explicit pending.",
+      "Freeze original numeric samples and row geometry; independently verify encoded predictor residuals and exact decoded bytes.",
+      "Fresh pinned PDFium/MuPDF/PDF.js references at 72/144 DPI must agree on every declared interior pixel and analytic RGB before golden acceptance.",
+      "Keep encoded variants in one family and all unknown upstream scene associations null; no malformed streams or boundary-stress cases."
+    ],
+    "dependency": "Root confirms no overlapping owned predictor slice before assignment."
+  }
+}

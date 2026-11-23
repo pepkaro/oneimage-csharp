@@ -29,11 +29,15 @@
       ],
       "source_case_ids": [],
       "associations": [],
-      "stage": "agreed",
+      "stage": "pass",
       "reference_status": "three-engine-agreement-on-declared-mask",
       "assertion": "exact RGB on independently declared interiors; dimensions exact; outside mask unscored",
       "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
-      "product_result": "not-run-before-reference-acceptance-commit",
+      "product_result": {
+        "executed": 2,
+        "passed": 2,
+        "result_path": "tools/pdf-original-corpus-v2/product-main-results.json"
+      },
       "subsystems": [
         "OnePDF/content-interpretation",
         "OneImage.Pdf/bridge-integration",
@@ -53,7 +57,9 @@
         "ISO 32000-1:2008 8.5.3.3"
       ],
       "review": "draft corpus review; no renderer ownership proven",
-      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6"
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
+      "acceptance_commit_local": "bf8ada20d008847eea07a7178e46782f5b9abab1",
+      "selected_reference_engine": "pdfium"
     },
     {
       "use_case_id": "geometry-clip-intersection",
@@ -80,11 +86,15 @@
       ],
       "source_case_ids": [],
       "associations": [],
-      "stage": "agreed",
+      "stage": "pass",
       "reference_status": "three-engine-agreement-on-declared-mask",
       "assertion": "exact RGB on independently declared interiors; dimensions exact; outside mask unscored",
       "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
-      "product_result": "not-run-before-reference-acceptance-commit",
+      "product_result": {
+        "executed": 2,
+        "passed": 2,
+        "result_path": "tools/pdf-original-corpus-v2/product-main-results.json"
+      },
       "subsystems": [
         "OnePDF/content-interpretation",
         "OneImage.Pdf/bridge-integration",
@@ -103,7 +113,9 @@
         "ISO 32000-1:2008 8.5.4"
       ],
       "review": "draft corpus review; no renderer ownership proven",
-      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6"
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
+      "acceptance_commit_local": "bf8ada20d008847eea07a7178e46782f5b9abab1",
+      "selected_reference_engine": "pdfium"
     },
     {
       "use_case_id": "geometry-saved-clip",
@@ -130,11 +142,15 @@
       ],
       "source_case_ids": [],
       "associations": [],
-      "stage": "agreed",
+      "stage": "pass",
       "reference_status": "three-engine-agreement-on-declared-mask",
       "assertion": "exact RGB on independently declared interiors; dimensions exact; outside mask unscored",
       "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
-      "product_result": "not-run-before-reference-acceptance-commit",
+      "product_result": {
+        "executed": 2,
+        "passed": 2,
+        "result_path": "tools/pdf-original-corpus-v2/product-main-results.json"
+      },
       "subsystems": [
         "OnePDF/content-interpretation",
         "OneImage.Pdf/bridge-integration",
@@ -154,7 +170,9 @@
         "ISO 32000-1:2008 8.5.4"
       ],
       "review": "draft corpus review; no renderer ownership proven",
-      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6"
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
+      "acceptance_commit_local": "bf8ada20d008847eea07a7178e46782f5b9abab1",
+      "selected_reference_engine": "pdfium"
     },
     {
       "use_case_id": "geometry-clip-path-reset",
@@ -181,11 +199,15 @@
       ],
       "source_case_ids": [],
       "associations": [],
-      "stage": "agreed",
+      "stage": "pass",
       "reference_status": "three-engine-agreement-on-declared-mask",
       "assertion": "exact RGB on independently declared interiors; dimensions exact; outside mask unscored",
       "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
-      "product_result": "not-run-before-reference-acceptance-commit",
+      "product_result": {
+        "executed": 2,
+        "passed": 2,
+        "result_path": "tools/pdf-original-corpus-v2/product-main-results.json"
+      },
       "subsystems": [
         "OnePDF/content-interpretation",
         "OneImage.Pdf/bridge-integration",
@@ -205,7 +227,9 @@
         "ISO 32000-1:2008 8.5.4"
       ],
       "review": "draft corpus review; no renderer ownership proven",
-      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6"
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
+      "acceptance_commit_local": "bf8ada20d008847eea07a7178e46782f5b9abab1",
+      "selected_reference_engine": "pdfium"
     },
     {
       "use_case_id": "geometry-concat-order",
@@ -232,11 +256,15 @@
       ],
       "source_case_ids": [],
       "associations": [],
-      "stage": "agreed",
+      "stage": "pass",
       "reference_status": "three-engine-agreement-on-declared-mask",
       "assertion": "exact RGB on independently declared interiors; dimensions exact; outside mask unscored",
       "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
-      "product_result": "not-run-before-reference-acceptance-commit",
+      "product_result": {
+        "executed": 2,
+        "passed": 2,
+        "result_path": "tools/pdf-original-corpus-v2/product-main-results.json"
+      },
       "subsystems": [
         "OnePDF/content-interpretation",
         "OneImage.Pdf/bridge-integration",
@@ -256,7 +284,9 @@
         "ISO 32000-1:2008 8.4.4"
       ],
       "review": "draft corpus review; no renderer ownership proven",
-      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6"
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
+      "acceptance_commit_local": "bf8ada20d008847eea07a7178e46782f5b9abab1",
+      "selected_reference_engine": "pdfium"
     },
     {
       "use_case_id": "geometry-cropbox-offset",
@@ -283,11 +313,15 @@
       ],
       "source_case_ids": [],
       "associations": [],
-      "stage": "agreed",
+      "stage": "pass",
       "reference_status": "three-engine-agreement-on-declared-mask",
       "assertion": "exact RGB on independently declared interiors; dimensions exact; outside mask unscored",
       "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
-      "product_result": "not-run-before-reference-acceptance-commit",
+      "product_result": {
+        "executed": 2,
+        "passed": 2,
+        "result_path": "tools/pdf-original-corpus-v2/product-main-results.json"
+      },
       "subsystems": [
         "OnePDF/page-resources",
         "OneImage.Pdf/bridge-integration"
@@ -306,7 +340,9 @@
         "ISO 32000-1:2008 14.11.2"
       ],
       "review": "draft corpus review; no renderer ownership proven",
-      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6"
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
+      "acceptance_commit_local": "bf8ada20d008847eea07a7178e46782f5b9abab1",
+      "selected_reference_engine": "pdfium"
     },
     {
       "use_case_id": "geometry-rotate-90",
@@ -333,11 +369,15 @@
       ],
       "source_case_ids": [],
       "associations": [],
-      "stage": "agreed",
+      "stage": "pass",
       "reference_status": "three-engine-agreement-on-declared-mask",
       "assertion": "exact RGB on independently declared interiors; dimensions exact; outside mask unscored",
       "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
-      "product_result": "not-run-before-reference-acceptance-commit",
+      "product_result": {
+        "executed": 2,
+        "passed": 2,
+        "result_path": "tools/pdf-original-corpus-v2/product-main-results.json"
+      },
       "subsystems": [
         "OnePDF/page-resources",
         "OneImage.Pdf/bridge-integration"
@@ -355,7 +395,9 @@
         "ISO 32000-1:2008 Table 30 Rotate"
       ],
       "review": "draft corpus review; no renderer ownership proven",
-      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6"
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
+      "acceptance_commit_local": "bf8ada20d008847eea07a7178e46782f5b9abab1",
+      "selected_reference_engine": "pdfium"
     },
     {
       "use_case_id": "geometry-user-unit-2",
@@ -382,11 +424,15 @@
       ],
       "source_case_ids": [],
       "associations": [],
-      "stage": "agreed",
+      "stage": "pass",
       "reference_status": "three-engine-agreement-on-declared-mask",
       "assertion": "exact RGB on independently declared interiors; dimensions exact; outside mask unscored",
       "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
-      "product_result": "not-run-before-reference-acceptance-commit",
+      "product_result": {
+        "executed": 2,
+        "passed": 2,
+        "result_path": "tools/pdf-original-corpus-v2/product-main-results.json"
+      },
       "subsystems": [
         "OnePDF/page-resources",
         "OneImage.Pdf/bridge-integration"
@@ -405,7 +451,9 @@
         "ISO 32000-1:2008 8.3.2.3"
       ],
       "review": "draft corpus review; no renderer ownership proven",
-      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6"
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
+      "acceptance_commit_local": "bf8ada20d008847eea07a7178e46782f5b9abab1",
+      "selected_reference_engine": "pdfium"
     },
     {
       "use_case_id": "img-gray2-packed-padding",
@@ -432,11 +480,15 @@
       ],
       "source_case_ids": [],
       "associations": [],
-      "stage": "agreed",
+      "stage": "pass",
       "reference_status": "three-engine-agreement-on-declared-mask",
       "assertion": "exact RGB on independently declared interiors; dimensions exact; outside mask unscored",
       "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
-      "product_result": "not-run-before-reference-acceptance-commit",
+      "product_result": {
+        "executed": 2,
+        "passed": 2,
+        "result_path": "tools/pdf-original-corpus-v2/product-main-results.json"
+      },
       "subsystems": [
         "OnePDF/image-color-decoding",
         "OneImage.Pdf/bridge-integration",
@@ -463,7 +515,9 @@
         "8.9.5.1 Image Dictionaries, Table 89"
       ],
       "review": "draft corpus review; no renderer ownership proven",
-      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6"
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
+      "acceptance_commit_local": "bf8ada20d008847eea07a7178e46782f5b9abab1",
+      "selected_reference_engine": "mupdf"
     },
     {
       "use_case_id": "img-gray4-inverted-decode",
@@ -490,11 +544,15 @@
       ],
       "source_case_ids": [],
       "associations": [],
-      "stage": "agreed",
+      "stage": "pass",
       "reference_status": "three-engine-agreement-on-declared-mask",
       "assertion": "exact RGB on independently declared interiors; dimensions exact; outside mask unscored",
       "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
-      "product_result": "not-run-before-reference-acceptance-commit",
+      "product_result": {
+        "executed": 2,
+        "passed": 2,
+        "result_path": "tools/pdf-original-corpus-v2/product-main-results.json"
+      },
       "subsystems": [
         "OnePDF/image-color-decoding",
         "OneImage.Pdf/bridge-integration",
@@ -525,7 +583,9 @@
         "8.9.5.2 Decode Arrays"
       ],
       "review": "draft corpus review; no renderer ownership proven",
-      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6"
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
+      "acceptance_commit_local": "bf8ada20d008847eea07a7178e46782f5b9abab1",
+      "selected_reference_engine": "mupdf"
     },
     {
       "use_case_id": "img-gray8-restricted-decode",
@@ -552,11 +612,15 @@
       ],
       "source_case_ids": [],
       "associations": [],
-      "stage": "agreed",
+      "stage": "pass",
       "reference_status": "three-engine-agreement-on-declared-mask",
       "assertion": "exact RGB on independently declared interiors; dimensions exact; outside mask unscored",
       "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
-      "product_result": "not-run-before-reference-acceptance-commit",
+      "product_result": {
+        "executed": 2,
+        "passed": 2,
+        "result_path": "tools/pdf-original-corpus-v2/product-main-results.json"
+      },
       "subsystems": [
         "OnePDF/image-color-decoding",
         "OneImage.Pdf/bridge-integration",
@@ -580,7 +644,9 @@
         "8.9.5.2 Decode Arrays, Table 90"
       ],
       "review": "draft corpus review; no renderer ownership proven",
-      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6"
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
+      "acceptance_commit_local": "bf8ada20d008847eea07a7178e46782f5b9abab1",
+      "selected_reference_engine": "mupdf"
     },
     {
       "use_case_id": "img-rgb8-channel-decode",
@@ -631,7 +697,8 @@
         "8.9.5.2 Decode Arrays"
       ],
       "review": "draft corpus review; no renderer ownership proven",
-      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6"
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
+      "selected_reference_engine": null
     },
     {
       "use_case_id": "img-indexed2-lookup-padding",
@@ -658,11 +725,15 @@
       ],
       "source_case_ids": [],
       "associations": [],
-      "stage": "agreed",
+      "stage": "pass",
       "reference_status": "three-engine-agreement-on-declared-mask",
       "assertion": "exact RGB on independently declared interiors; dimensions exact; outside mask unscored",
       "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
-      "product_result": "not-run-before-reference-acceptance-commit",
+      "product_result": {
+        "executed": 2,
+        "passed": 2,
+        "result_path": "tools/pdf-original-corpus-v2/product-main-results.json"
+      },
       "subsystems": [
         "OnePDF/image-color-decoding",
         "OneImage.Pdf/bridge-integration",
@@ -695,7 +766,9 @@
         "8.9.5.2 Table 90 default Indexed Decode"
       ],
       "review": "draft corpus review; no renderer ownership proven",
-      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6"
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
+      "acceptance_commit_local": "bf8ada20d008847eea07a7178e46782f5b9abab1",
+      "selected_reference_engine": "mupdf"
     },
     {
       "use_case_id": "img-indexed4-reversed-decode",
@@ -722,11 +795,15 @@
       ],
       "source_case_ids": [],
       "associations": [],
-      "stage": "agreed",
+      "stage": "pass",
       "reference_status": "three-engine-agreement-on-declared-mask",
       "assertion": "exact RGB on independently declared interiors; dimensions exact; outside mask unscored",
       "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
-      "product_result": "not-run-before-reference-acceptance-commit",
+      "product_result": {
+        "executed": 2,
+        "passed": 2,
+        "result_path": "tools/pdf-original-corpus-v2/product-main-results.json"
+      },
       "subsystems": [
         "OnePDF/image-color-decoding",
         "OneImage.Pdf/bridge-integration",
@@ -751,7 +828,9 @@
         "8.9.5.2 Decode Arrays"
       ],
       "review": "draft corpus review; no renderer ownership proven",
-      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6"
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
+      "acceptance_commit_local": "bf8ada20d008847eea07a7178e46782f5b9abab1",
+      "selected_reference_engine": "mupdf"
     },
     {
       "use_case_id": "img-rgb16-big-endian",
@@ -778,11 +857,15 @@
       ],
       "source_case_ids": [],
       "associations": [],
-      "stage": "agreed",
+      "stage": "pass",
       "reference_status": "three-engine-agreement-on-declared-mask",
       "assertion": "exact RGB on independently declared interiors; dimensions exact; outside mask unscored",
       "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
-      "product_result": "not-run-before-reference-acceptance-commit",
+      "product_result": {
+        "executed": 2,
+        "passed": 2,
+        "result_path": "tools/pdf-original-corpus-v2/product-main-results.json"
+      },
       "subsystems": [
         "OnePDF/image-color-decoding",
         "OneImage.Pdf/bridge-integration",
@@ -805,7 +888,9 @@
         "8.9.5.1 Image Dictionaries, Table 89"
       ],
       "review": "draft corpus review; no renderer ownership proven",
-      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6"
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
+      "acceptance_commit_local": "bf8ada20d008847eea07a7178e46782f5b9abab1",
+      "selected_reference_engine": "mupdf"
     },
     {
       "use_case_id": "img-rgb8-mirrored-placement",
@@ -832,11 +917,15 @@
       ],
       "source_case_ids": [],
       "associations": [],
-      "stage": "agreed",
+      "stage": "pass",
       "reference_status": "three-engine-agreement-on-declared-mask",
       "assertion": "exact RGB on independently declared interiors; dimensions exact; outside mask unscored",
       "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
-      "product_result": "not-run-before-reference-acceptance-commit",
+      "product_result": {
+        "executed": 2,
+        "passed": 2,
+        "result_path": "tools/pdf-original-corpus-v2/product-main-results.json"
+      },
       "subsystems": [
         "OnePDF/image-color-decoding",
         "OneImage.Pdf/bridge-integration",
@@ -857,7 +946,793 @@
         "8.9.5.3 Image Interpolation"
       ],
       "review": "draft corpus review; no renderer ownership proven",
-      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6"
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
+      "acceptance_commit_local": "bf8ada20d008847eea07a7178e46782f5b9abab1",
+      "selected_reference_engine": "mupdf"
+    },
+    {
+      "use_case_id": "stroke-cap-butt",
+      "family": "stroke",
+      "primary_iso_2020_directory": "08-Graphics/08.05-Path-construction-and-painting",
+      "primary_citation_status": "verified coarse public official2020 heading; fine rule pending full2020text",
+      "clause_detail": "tools/pdf-original-corpus-v2/stroke/clause-index.json",
+      "expected_behavior": "Open horizontal subpath line cap butt",
+      "fixture": "tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-cap-butt/original.pdf",
+      "fixture_sha256": "a277fc74b1558ba83733c8da363f631bb0fb369e0458e03c5f5b101280177eec",
+      "pdf_version": "1.7",
+      "license": "MIT",
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "page_bounds": "visible CropBox",
+      "background": "white",
+      "annotations": false,
+      "expected_images": [
+        "tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-cap-butt/expected-72.png",
+        "tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-cap-butt/expected-144.png"
+      ],
+      "source_case_ids": [],
+      "associations": [],
+      "stage": "agreed",
+      "reference_status": "three-engine-agreement-on-declared-mask",
+      "assertion": "exact analytic RGB and all3pairs on declared mask, dimensions exact",
+      "assertion_ids": [
+        "body",
+        "outside",
+        "beyond-end",
+        "extension-corner",
+        "above",
+        "right-extension"
+      ],
+      "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
+      "product_result": "not-run-before-next-acceptance-commit",
+      "subsystems": [
+        "OnePDF/content-interpretation",
+        "OneImage.Pdf/bridge-integration",
+        "OneImage/paths-clipping"
+      ],
+      "proven_root_cause_owner": null,
+      "exception_reason": null,
+      "normative_status": "PDF1.7 semantic contract; exact8bit quantization is route acceptance criterion",
+      "secondary_clause_tags": [],
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
+      "selected_reference_engine": "pdfium"
+    },
+    {
+      "use_case_id": "stroke-cap-round",
+      "family": "stroke",
+      "primary_iso_2020_directory": "08-Graphics/08.05-Path-construction-and-painting",
+      "primary_citation_status": "verified coarse public official2020 heading; fine rule pending full2020text",
+      "clause_detail": "tools/pdf-original-corpus-v2/stroke/clause-index.json",
+      "expected_behavior": "Open horizontal subpath line cap round",
+      "fixture": "tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-cap-round/original.pdf",
+      "fixture_sha256": "97739123af59d323e49cf71b27aa3a66b5a488404e0fa4bf9c399222fd55b367",
+      "pdf_version": "1.7",
+      "license": "MIT",
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "page_bounds": "visible CropBox",
+      "background": "white",
+      "annotations": false,
+      "expected_images": [
+        "tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-cap-round/expected-72.png",
+        "tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-cap-round/expected-144.png"
+      ],
+      "source_case_ids": [],
+      "associations": [],
+      "stage": "agreed",
+      "reference_status": "three-engine-agreement-on-declared-mask",
+      "assertion": "exact analytic RGB and all3pairs on declared mask, dimensions exact",
+      "assertion_ids": [
+        "body",
+        "outside",
+        "beyond-end",
+        "extension-corner",
+        "above",
+        "right-extension"
+      ],
+      "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
+      "product_result": "not-run-before-next-acceptance-commit",
+      "subsystems": [
+        "OnePDF/content-interpretation",
+        "OneImage.Pdf/bridge-integration",
+        "OneImage/paths-clipping"
+      ],
+      "proven_root_cause_owner": null,
+      "exception_reason": null,
+      "normative_status": "PDF1.7 semantic contract; exact8bit quantization is route acceptance criterion",
+      "secondary_clause_tags": [],
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
+      "selected_reference_engine": "pdfium"
+    },
+    {
+      "use_case_id": "stroke-cap-projecting-square",
+      "family": "stroke",
+      "primary_iso_2020_directory": "08-Graphics/08.05-Path-construction-and-painting",
+      "primary_citation_status": "verified coarse public official2020 heading; fine rule pending full2020text",
+      "clause_detail": "tools/pdf-original-corpus-v2/stroke/clause-index.json",
+      "expected_behavior": "Open horizontal subpath line cap projecting-square",
+      "fixture": "tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-cap-projecting-square/original.pdf",
+      "fixture_sha256": "3ec1aa84d1e480ffb7eba6f238bb890bff17eaf62e094ae439e8de307d244ff8",
+      "pdf_version": "1.7",
+      "license": "MIT",
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "page_bounds": "visible CropBox",
+      "background": "white",
+      "annotations": false,
+      "expected_images": [
+        "tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-cap-projecting-square/expected-72.png",
+        "tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-cap-projecting-square/expected-144.png"
+      ],
+      "source_case_ids": [],
+      "associations": [],
+      "stage": "agreed",
+      "reference_status": "three-engine-agreement-on-declared-mask",
+      "assertion": "exact analytic RGB and all3pairs on declared mask, dimensions exact",
+      "assertion_ids": [
+        "body",
+        "outside",
+        "beyond-end",
+        "extension-corner",
+        "above",
+        "right-extension"
+      ],
+      "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
+      "product_result": "not-run-before-next-acceptance-commit",
+      "subsystems": [
+        "OnePDF/content-interpretation",
+        "OneImage.Pdf/bridge-integration",
+        "OneImage/paths-clipping"
+      ],
+      "proven_root_cause_owner": null,
+      "exception_reason": null,
+      "normative_status": "PDF1.7 semantic contract; exact8bit quantization is route acceptance criterion",
+      "secondary_clause_tags": [],
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
+      "selected_reference_engine": "pdfium"
+    },
+    {
+      "use_case_id": "img-filter-equivalence-raw",
+      "family": "filters",
+      "primary_iso_2020_directory": "07-Syntax/07.04-Filters/07.04.01-General",
+      "primary_citation_status": "verified coarse public official2020 heading; fine rule pending full2020text",
+      "clause_detail": "tools/pdf-original-corpus-v2/filters/clause-index.json",
+      "expected_behavior": "Identical authored RGB sample grid survives the raw image stream route unchanged.",
+      "fixture": "tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.01-General/img-filter-equivalence-raw/original.pdf",
+      "fixture_sha256": "a7e472963f98fe770cf37f4edab566dc0f9e4c760b89887fdd1e3cb3377b5c98",
+      "pdf_version": "1.7",
+      "license": "MIT",
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "page_bounds": "visible CropBox",
+      "background": "white",
+      "annotations": false,
+      "expected_images": [
+        "tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.01-General/img-filter-equivalence-raw/expected-72.png",
+        "tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.01-General/img-filter-equivalence-raw/expected-144.png"
+      ],
+      "source_case_ids": [],
+      "associations": [],
+      "stage": "agreed",
+      "reference_status": "three-engine-agreement-on-declared-mask",
+      "assertion": "exact analytic RGB and all3pairs on declared mask, dimensions exact",
+      "assertion_ids": [
+        "cell-0-0",
+        "cell-1-0",
+        "cell-2-0",
+        "cell-3-0",
+        "cell-4-0",
+        "cell-5-0",
+        "cell-0-1",
+        "cell-1-1",
+        "cell-2-1",
+        "cell-3-1",
+        "cell-4-1",
+        "cell-5-1",
+        "cell-0-2",
+        "cell-1-2",
+        "cell-2-2",
+        "cell-3-2",
+        "cell-4-2",
+        "cell-5-2",
+        "paper"
+      ],
+      "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
+      "product_result": "not-run-before-next-acceptance-commit",
+      "subsystems": [
+        "OnePDF/object-xref-streams",
+        "OnePDF/image-color-decoding",
+        "OneImage.Pdf/bridge-integration",
+        "OneImage/image-sampling"
+      ],
+      "proven_root_cause_owner": null,
+      "exception_reason": null,
+      "normative_status": "PDF1.7 semantic contract; exact8bit quantization is route acceptance criterion",
+      "secondary_clause_tags": [
+        "8.9.3 Sample Representation",
+        "8.9.5.1 General",
+        "7.3.8 Stream Objects"
+      ],
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
+      "selected_reference_engine": "pdfium"
+    },
+    {
+      "use_case_id": "img-filter-equivalence-flate",
+      "family": "filters",
+      "primary_iso_2020_directory": "07-Syntax/07.04-Filters/07.04.01-General",
+      "primary_citation_status": "verified coarse public official2020 heading; fine rule pending full2020text",
+      "clause_detail": "tools/pdf-original-corpus-v2/filters/clause-index.json",
+      "expected_behavior": "Identical authored RGB sample grid survives the flate image stream route unchanged.",
+      "fixture": "tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.01-General/img-filter-equivalence-flate/original.pdf",
+      "fixture_sha256": "fc1012080c678c4dd9e163d95c151735a69021f2e17b8fc521c047f0f8b1db34",
+      "pdf_version": "1.7",
+      "license": "MIT",
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "page_bounds": "visible CropBox",
+      "background": "white",
+      "annotations": false,
+      "expected_images": [
+        "tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.01-General/img-filter-equivalence-flate/expected-72.png",
+        "tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.01-General/img-filter-equivalence-flate/expected-144.png"
+      ],
+      "source_case_ids": [],
+      "associations": [],
+      "stage": "agreed",
+      "reference_status": "three-engine-agreement-on-declared-mask",
+      "assertion": "exact analytic RGB and all3pairs on declared mask, dimensions exact",
+      "assertion_ids": [
+        "cell-0-0",
+        "cell-1-0",
+        "cell-2-0",
+        "cell-3-0",
+        "cell-4-0",
+        "cell-5-0",
+        "cell-0-1",
+        "cell-1-1",
+        "cell-2-1",
+        "cell-3-1",
+        "cell-4-1",
+        "cell-5-1",
+        "cell-0-2",
+        "cell-1-2",
+        "cell-2-2",
+        "cell-3-2",
+        "cell-4-2",
+        "cell-5-2",
+        "paper"
+      ],
+      "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
+      "product_result": "not-run-before-next-acceptance-commit",
+      "subsystems": [
+        "OnePDF/object-xref-streams",
+        "OnePDF/image-color-decoding",
+        "OneImage.Pdf/bridge-integration",
+        "OneImage/image-sampling"
+      ],
+      "proven_root_cause_owner": null,
+      "exception_reason": null,
+      "normative_status": "PDF1.7 semantic contract; exact8bit quantization is route acceptance criterion",
+      "secondary_clause_tags": [
+        "8.9.3 Sample Representation",
+        "8.9.5.1 General",
+        "7.4.4.1 General (Flate)"
+      ],
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
+      "selected_reference_engine": "pdfium"
+    },
+    {
+      "use_case_id": "img-filter-equivalence-runlength",
+      "family": "filters",
+      "primary_iso_2020_directory": "07-Syntax/07.04-Filters/07.04.01-General",
+      "primary_citation_status": "verified coarse public official2020 heading; fine rule pending full2020text",
+      "clause_detail": "tools/pdf-original-corpus-v2/filters/clause-index.json",
+      "expected_behavior": "Identical authored RGB sample grid survives the runlength image stream route unchanged.",
+      "fixture": "tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.01-General/img-filter-equivalence-runlength/original.pdf",
+      "fixture_sha256": "dfcd9950ea2ecb690d47f3f477999f64da67498dc7801909e203b6c6f5a82af3",
+      "pdf_version": "1.7",
+      "license": "MIT",
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "page_bounds": "visible CropBox",
+      "background": "white",
+      "annotations": false,
+      "expected_images": [
+        "tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.01-General/img-filter-equivalence-runlength/expected-72.png",
+        "tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.01-General/img-filter-equivalence-runlength/expected-144.png"
+      ],
+      "source_case_ids": [],
+      "associations": [],
+      "stage": "agreed",
+      "reference_status": "three-engine-agreement-on-declared-mask",
+      "assertion": "exact analytic RGB and all3pairs on declared mask, dimensions exact",
+      "assertion_ids": [
+        "cell-0-0",
+        "cell-1-0",
+        "cell-2-0",
+        "cell-3-0",
+        "cell-4-0",
+        "cell-5-0",
+        "cell-0-1",
+        "cell-1-1",
+        "cell-2-1",
+        "cell-3-1",
+        "cell-4-1",
+        "cell-5-1",
+        "cell-0-2",
+        "cell-1-2",
+        "cell-2-2",
+        "cell-3-2",
+        "cell-4-2",
+        "cell-5-2",
+        "paper"
+      ],
+      "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
+      "product_result": "not-run-before-next-acceptance-commit",
+      "subsystems": [
+        "OnePDF/object-xref-streams",
+        "OnePDF/image-color-decoding",
+        "OneImage.Pdf/bridge-integration",
+        "OneImage/image-sampling"
+      ],
+      "proven_root_cause_owner": null,
+      "exception_reason": null,
+      "normative_status": "PDF1.7 semantic contract; exact8bit quantization is route acceptance criterion",
+      "secondary_clause_tags": [
+        "8.9.3 Sample Representation",
+        "8.9.5.1 General",
+        "7.4.5 RunLengthDecode Filter"
+      ],
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
+      "selected_reference_engine": "pdfium"
+    },
+    {
+      "use_case_id": "stroke-join-miter",
+      "family": "joins",
+      "primary_iso_2020_directory": "08-Graphics/08.05-Path-construction-and-painting",
+      "primary_citation_status": "verified public official heading; finer rule text pending full2020spec",
+      "clause_detail": "tools/pdf-original-corpus-v2/joins/clause-index.json",
+      "expected_behavior": "Ordinary 90-degree miter line join",
+      "fixture": "tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-join-miter/original.pdf",
+      "fixture_sha256": "42afb8824a296ff8b10e455543de6aefddefa8bcd95188333241030a25d8631b",
+      "pdf_version": "1.7",
+      "license": "MIT",
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "page_bounds": "visible CropBox",
+      "background": "white",
+      "annotations": false,
+      "expected_images": [
+        "tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-join-miter/expected-72.png",
+        "tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-join-miter/expected-144.png"
+      ],
+      "source_case_ids": [],
+      "associations": [],
+      "stage": "agreed",
+      "reference_status": "three-engine-agreement-on-declared-mask",
+      "assertion": "exact analytic RGB and all3pairs on declared mask, dimensions exact",
+      "assertion_ids": [
+        "horizontal-body",
+        "vertical-body",
+        "outside",
+        "miter-only-corner",
+        "round-or-miter",
+        "all-join-interior"
+      ],
+      "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
+      "product_result": "not-run-before-next-acceptance-commit",
+      "subsystems": [
+        "OnePDF/content-interpretation",
+        "OneImage.Pdf/bridge-integration",
+        "OneImage/paths-clipping"
+      ],
+      "proven_root_cause_owner": null,
+      "exception_reason": null,
+      "normative_status": "PDF1.7 semantic contract; exact8bit quantization is observed route acceptance criterion",
+      "secondary_clause_tags": [],
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
+      "selected_reference_engine": "pdfium"
+    },
+    {
+      "use_case_id": "stroke-join-round",
+      "family": "joins",
+      "primary_iso_2020_directory": "08-Graphics/08.05-Path-construction-and-painting",
+      "primary_citation_status": "verified public official heading; finer rule text pending full2020spec",
+      "clause_detail": "tools/pdf-original-corpus-v2/joins/clause-index.json",
+      "expected_behavior": "Ordinary 90-degree round line join",
+      "fixture": "tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-join-round/original.pdf",
+      "fixture_sha256": "e210f03e9aeb6e23c2486c164472f728ed8846dfb146e551fb0a61cb76eb7eed",
+      "pdf_version": "1.7",
+      "license": "MIT",
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "page_bounds": "visible CropBox",
+      "background": "white",
+      "annotations": false,
+      "expected_images": [
+        "tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-join-round/expected-72.png",
+        "tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-join-round/expected-144.png"
+      ],
+      "source_case_ids": [],
+      "associations": [],
+      "stage": "agreed",
+      "reference_status": "three-engine-agreement-on-declared-mask",
+      "assertion": "exact analytic RGB and all3pairs on declared mask, dimensions exact",
+      "assertion_ids": [
+        "horizontal-body",
+        "vertical-body",
+        "outside",
+        "miter-only-corner",
+        "round-or-miter",
+        "all-join-interior"
+      ],
+      "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
+      "product_result": "not-run-before-next-acceptance-commit",
+      "subsystems": [
+        "OnePDF/content-interpretation",
+        "OneImage.Pdf/bridge-integration",
+        "OneImage/paths-clipping"
+      ],
+      "proven_root_cause_owner": null,
+      "exception_reason": null,
+      "normative_status": "PDF1.7 semantic contract; exact8bit quantization is observed route acceptance criterion",
+      "secondary_clause_tags": [],
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
+      "selected_reference_engine": "pdfium"
+    },
+    {
+      "use_case_id": "stroke-join-bevel",
+      "family": "joins",
+      "primary_iso_2020_directory": "08-Graphics/08.05-Path-construction-and-painting",
+      "primary_citation_status": "verified public official heading; finer rule text pending full2020spec",
+      "clause_detail": "tools/pdf-original-corpus-v2/joins/clause-index.json",
+      "expected_behavior": "Ordinary 90-degree bevel line join",
+      "fixture": "tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-join-bevel/original.pdf",
+      "fixture_sha256": "c1d56ee1a66fff74138775de5dc85ab37bf5444530c4392450a9e55fa6e94ca1",
+      "pdf_version": "1.7",
+      "license": "MIT",
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "page_bounds": "visible CropBox",
+      "background": "white",
+      "annotations": false,
+      "expected_images": [
+        "tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-join-bevel/expected-72.png",
+        "tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-join-bevel/expected-144.png"
+      ],
+      "source_case_ids": [],
+      "associations": [],
+      "stage": "agreed",
+      "reference_status": "three-engine-agreement-on-declared-mask",
+      "assertion": "exact analytic RGB and all3pairs on declared mask, dimensions exact",
+      "assertion_ids": [
+        "horizontal-body",
+        "vertical-body",
+        "outside",
+        "miter-only-corner",
+        "round-or-miter",
+        "all-join-interior"
+      ],
+      "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
+      "product_result": "not-run-before-next-acceptance-commit",
+      "subsystems": [
+        "OnePDF/content-interpretation",
+        "OneImage.Pdf/bridge-integration",
+        "OneImage/paths-clipping"
+      ],
+      "proven_root_cause_owner": null,
+      "exception_reason": null,
+      "normative_status": "PDF1.7 semantic contract; exact8bit quantization is observed route acceptance criterion",
+      "secondary_clause_tags": [],
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
+      "selected_reference_engine": "pdfium"
+    },
+    {
+      "use_case_id": "img-predictor-none",
+      "family": "predictors",
+      "primary_iso_2020_directory": "07-Syntax/07.04-Filters/07.04.04-LZWDecode-and-FlateDecode-filters/07.04.04.03-LZWDecode-and-FlateDecode-parameters",
+      "primary_citation_status": "verified public official heading; finer rule text pending full2020spec",
+      "clause_detail": "tools/pdf-original-corpus-v2/predictors/clause-index.json",
+      "expected_behavior": "Authored RGB8 sample rows recover exactly through Flate with none prediction.",
+      "fixture": "tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.04-LZWDecode-and-FlateDecode-filters/07.04.04.03-LZWDecode-and-FlateDecode-parameters/img-predictor-none/original.pdf",
+      "fixture_sha256": "7dcdb5d60e1abb45d0336f4a370189606e4333db08e9a029ab3b1c320c80e2d4",
+      "pdf_version": "1.7",
+      "license": "MIT",
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "page_bounds": "visible CropBox",
+      "background": "white",
+      "annotations": false,
+      "expected_images": [
+        "tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.04-LZWDecode-and-FlateDecode-filters/07.04.04.03-LZWDecode-and-FlateDecode-parameters/img-predictor-none/expected-72.png",
+        "tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.04-LZWDecode-and-FlateDecode-filters/07.04.04.03-LZWDecode-and-FlateDecode-parameters/img-predictor-none/expected-144.png"
+      ],
+      "source_case_ids": [],
+      "associations": [],
+      "stage": "agreed",
+      "reference_status": "three-engine-agreement-on-declared-mask",
+      "assertion": "exact analytic RGB and all3pairs on declared mask, dimensions exact",
+      "assertion_ids": [
+        "cell-0-0",
+        "cell-1-0",
+        "cell-2-0",
+        "cell-3-0",
+        "cell-4-0",
+        "cell-0-1",
+        "cell-1-1",
+        "cell-2-1",
+        "cell-3-1",
+        "cell-4-1",
+        "cell-0-2",
+        "cell-1-2",
+        "cell-2-2",
+        "cell-3-2",
+        "cell-4-2",
+        "cell-0-3",
+        "cell-1-3",
+        "cell-2-3",
+        "cell-3-3",
+        "cell-4-3",
+        "paper"
+      ],
+      "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
+      "product_result": "not-run-before-next-acceptance-commit",
+      "subsystems": [
+        "OnePDF/object-xref-streams",
+        "OnePDF/image-color-decoding",
+        "OneImage.Pdf/bridge-integration",
+        "OneImage/image-sampling"
+      ],
+      "proven_root_cause_owner": null,
+      "exception_reason": null,
+      "normative_status": "PDF1.7 semantic contract; exact8bit quantization is observed route acceptance criterion",
+      "secondary_clause_tags": [
+        "7.4.4.3 LZWDecode and FlateDecode Parameters, Table 8",
+        "7.4.4.4 LZW and Flate Predictor Functions, Tables 9 and 10",
+        "8.9.3 Sample Representation"
+      ],
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
+      "selected_reference_engine": "pdfium"
+    },
+    {
+      "use_case_id": "img-predictor-tiff-sub",
+      "family": "predictors",
+      "primary_iso_2020_directory": "07-Syntax/07.04-Filters/07.04.04-LZWDecode-and-FlateDecode-filters/07.04.04.03-LZWDecode-and-FlateDecode-parameters",
+      "primary_citation_status": "verified public official heading; finer rule text pending full2020spec",
+      "clause_detail": "tools/pdf-original-corpus-v2/predictors/clause-index.json",
+      "expected_behavior": "Authored RGB8 sample rows recover exactly through Flate with tiff-sub prediction.",
+      "fixture": "tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.04-LZWDecode-and-FlateDecode-filters/07.04.04.03-LZWDecode-and-FlateDecode-parameters/img-predictor-tiff-sub/original.pdf",
+      "fixture_sha256": "60d42843939833a3b3917ea561e08eb6ff06557430a8659b66121041802e57a2",
+      "pdf_version": "1.7",
+      "license": "MIT",
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "page_bounds": "visible CropBox",
+      "background": "white",
+      "annotations": false,
+      "expected_images": [
+        "tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.04-LZWDecode-and-FlateDecode-filters/07.04.04.03-LZWDecode-and-FlateDecode-parameters/img-predictor-tiff-sub/expected-72.png",
+        "tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.04-LZWDecode-and-FlateDecode-filters/07.04.04.03-LZWDecode-and-FlateDecode-parameters/img-predictor-tiff-sub/expected-144.png"
+      ],
+      "source_case_ids": [],
+      "associations": [],
+      "stage": "agreed",
+      "reference_status": "three-engine-agreement-on-declared-mask",
+      "assertion": "exact analytic RGB and all3pairs on declared mask, dimensions exact",
+      "assertion_ids": [
+        "cell-0-0",
+        "cell-1-0",
+        "cell-2-0",
+        "cell-3-0",
+        "cell-4-0",
+        "cell-0-1",
+        "cell-1-1",
+        "cell-2-1",
+        "cell-3-1",
+        "cell-4-1",
+        "cell-0-2",
+        "cell-1-2",
+        "cell-2-2",
+        "cell-3-2",
+        "cell-4-2",
+        "cell-0-3",
+        "cell-1-3",
+        "cell-2-3",
+        "cell-3-3",
+        "cell-4-3",
+        "paper"
+      ],
+      "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
+      "product_result": "not-run-before-next-acceptance-commit",
+      "subsystems": [
+        "OnePDF/object-xref-streams",
+        "OnePDF/image-color-decoding",
+        "OneImage.Pdf/bridge-integration",
+        "OneImage/image-sampling"
+      ],
+      "proven_root_cause_owner": null,
+      "exception_reason": null,
+      "normative_status": "PDF1.7 semantic contract; exact8bit quantization is observed route acceptance criterion",
+      "secondary_clause_tags": [
+        "7.4.4.3 LZWDecode and FlateDecode Parameters, Table 8",
+        "7.4.4.4 LZW and Flate Predictor Functions, Tables 9 and 10",
+        "8.9.3 Sample Representation"
+      ],
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
+      "selected_reference_engine": "pdfium"
+    },
+    {
+      "use_case_id": "img-predictor-png-sub",
+      "family": "predictors",
+      "primary_iso_2020_directory": "07-Syntax/07.04-Filters/07.04.04-LZWDecode-and-FlateDecode-filters/07.04.04.03-LZWDecode-and-FlateDecode-parameters",
+      "primary_citation_status": "verified public official heading; finer rule text pending full2020spec",
+      "clause_detail": "tools/pdf-original-corpus-v2/predictors/clause-index.json",
+      "expected_behavior": "Authored RGB8 sample rows recover exactly through Flate with png-sub prediction.",
+      "fixture": "tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.04-LZWDecode-and-FlateDecode-filters/07.04.04.03-LZWDecode-and-FlateDecode-parameters/img-predictor-png-sub/original.pdf",
+      "fixture_sha256": "3100f6ac28029275939e9d473efa8803e88ebf879795334916369f5e18ba4ac1",
+      "pdf_version": "1.7",
+      "license": "MIT",
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "page_bounds": "visible CropBox",
+      "background": "white",
+      "annotations": false,
+      "expected_images": [
+        "tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.04-LZWDecode-and-FlateDecode-filters/07.04.04.03-LZWDecode-and-FlateDecode-parameters/img-predictor-png-sub/expected-72.png",
+        "tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.04-LZWDecode-and-FlateDecode-filters/07.04.04.03-LZWDecode-and-FlateDecode-parameters/img-predictor-png-sub/expected-144.png"
+      ],
+      "source_case_ids": [],
+      "associations": [],
+      "stage": "agreed",
+      "reference_status": "three-engine-agreement-on-declared-mask",
+      "assertion": "exact analytic RGB and all3pairs on declared mask, dimensions exact",
+      "assertion_ids": [
+        "cell-0-0",
+        "cell-1-0",
+        "cell-2-0",
+        "cell-3-0",
+        "cell-4-0",
+        "cell-0-1",
+        "cell-1-1",
+        "cell-2-1",
+        "cell-3-1",
+        "cell-4-1",
+        "cell-0-2",
+        "cell-1-2",
+        "cell-2-2",
+        "cell-3-2",
+        "cell-4-2",
+        "cell-0-3",
+        "cell-1-3",
+        "cell-2-3",
+        "cell-3-3",
+        "cell-4-3",
+        "paper"
+      ],
+      "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
+      "product_result": "not-run-before-next-acceptance-commit",
+      "subsystems": [
+        "OnePDF/object-xref-streams",
+        "OnePDF/image-color-decoding",
+        "OneImage.Pdf/bridge-integration",
+        "OneImage/image-sampling"
+      ],
+      "proven_root_cause_owner": null,
+      "exception_reason": null,
+      "normative_status": "PDF1.7 semantic contract; exact8bit quantization is observed route acceptance criterion",
+      "secondary_clause_tags": [
+        "7.4.4.3 LZWDecode and FlateDecode Parameters, Table 8",
+        "7.4.4.4 LZW and Flate Predictor Functions, Tables 9 and 10",
+        "8.9.3 Sample Representation"
+      ],
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
+      "selected_reference_engine": "pdfium"
+    },
+    {
+      "use_case_id": "img-predictor-png-up",
+      "family": "predictors",
+      "primary_iso_2020_directory": "07-Syntax/07.04-Filters/07.04.04-LZWDecode-and-FlateDecode-filters/07.04.04.03-LZWDecode-and-FlateDecode-parameters",
+      "primary_citation_status": "verified public official heading; finer rule text pending full2020spec",
+      "clause_detail": "tools/pdf-original-corpus-v2/predictors/clause-index.json",
+      "expected_behavior": "Authored RGB8 sample rows recover exactly through Flate with png-up prediction.",
+      "fixture": "tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.04-LZWDecode-and-FlateDecode-filters/07.04.04.03-LZWDecode-and-FlateDecode-parameters/img-predictor-png-up/original.pdf",
+      "fixture_sha256": "d6cc1c25f7e7742eb14f4ef9c7910ac61b4bddd041820d2e4463cca54b8e36c7",
+      "pdf_version": "1.7",
+      "license": "MIT",
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "page_bounds": "visible CropBox",
+      "background": "white",
+      "annotations": false,
+      "expected_images": [
+        "tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.04-LZWDecode-and-FlateDecode-filters/07.04.04.03-LZWDecode-and-FlateDecode-parameters/img-predictor-png-up/expected-72.png",
+        "tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.04-LZWDecode-and-FlateDecode-filters/07.04.04.03-LZWDecode-and-FlateDecode-parameters/img-predictor-png-up/expected-144.png"
+      ],
+      "source_case_ids": [],
+      "associations": [],
+      "stage": "agreed",
+      "reference_status": "three-engine-agreement-on-declared-mask",
+      "assertion": "exact analytic RGB and all3pairs on declared mask, dimensions exact",
+      "assertion_ids": [
+        "cell-0-0",
+        "cell-1-0",
+        "cell-2-0",
+        "cell-3-0",
+        "cell-4-0",
+        "cell-0-1",
+        "cell-1-1",
+        "cell-2-1",
+        "cell-3-1",
+        "cell-4-1",
+        "cell-0-2",
+        "cell-1-2",
+        "cell-2-2",
+        "cell-3-2",
+        "cell-4-2",
+        "cell-0-3",
+        "cell-1-3",
+        "cell-2-3",
+        "cell-3-3",
+        "cell-4-3",
+        "paper"
+      ],
+      "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
+      "product_result": "not-run-before-next-acceptance-commit",
+      "subsystems": [
+        "OnePDF/object-xref-streams",
+        "OnePDF/image-color-decoding",
+        "OneImage.Pdf/bridge-integration",
+        "OneImage/image-sampling"
+      ],
+      "proven_root_cause_owner": null,
+      "exception_reason": null,
+      "normative_status": "PDF1.7 semantic contract; exact8bit quantization is observed route acceptance criterion",
+      "secondary_clause_tags": [
+        "7.4.4.3 LZWDecode and FlateDecode Parameters, Table 8",
+        "7.4.4.4 LZW and Flate Predictor Functions, Tables 9 and 10",
+        "8.9.3 Sample Representation"
+      ],
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
+      "selected_reference_engine": "pdfium"
     }
   ]
 }
