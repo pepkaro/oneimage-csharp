@@ -11,6 +11,9 @@ Cross-tags describe pipeline participation, not proven root-cause ownership. Cas
 - [img-predictor-tiff-sub](CATALOG.md#img-predictor-tiff-sub) — agreed; owner unresolved.
 - [img-predictor-png-sub](CATALOG.md#img-predictor-png-sub) — agreed; owner unresolved.
 - [img-predictor-png-up](CATALOG.md#img-predictor-png-up) — agreed; owner unresolved.
+- [img-colorkey-control](CATALOG.md#img-colorkey-control) — agreed; owner unresolved.
+- [img-colorkey-exact](CATALOG.md#img-colorkey-exact) — agreed; owner unresolved.
+- [img-colorkey-range](CATALOG.md#img-colorkey-range) — agreed; owner unresolved.
 
 ## OnePDF/page-resources
 
@@ -35,6 +38,9 @@ No focused case in this batch.
 - [stroke-join-miter](CATALOG.md#stroke-join-miter) — agreed; owner unresolved.
 - [stroke-join-round](CATALOG.md#stroke-join-round) — agreed; owner unresolved.
 - [stroke-join-bevel](CATALOG.md#stroke-join-bevel) — agreed; owner unresolved.
+- [stroke-dash-pair-phase0](CATALOG.md#stroke-dash-pair-phase0) — agreed; owner unresolved.
+- [stroke-dash-pair-phase5](CATALOG.md#stroke-dash-pair-phase5) — agreed; owner unresolved.
+- [stroke-dash-four-phase2](CATALOG.md#stroke-dash-four-phase2) — agreed; owner unresolved.
 
 ## OnePDF/image-color-decoding
 
@@ -53,6 +59,9 @@ No focused case in this batch.
 - [img-predictor-tiff-sub](CATALOG.md#img-predictor-tiff-sub) — agreed; owner unresolved.
 - [img-predictor-png-sub](CATALOG.md#img-predictor-png-sub) — agreed; owner unresolved.
 - [img-predictor-png-up](CATALOG.md#img-predictor-png-up) — agreed; owner unresolved.
+- [img-colorkey-control](CATALOG.md#img-colorkey-control) — agreed; owner unresolved.
+- [img-colorkey-exact](CATALOG.md#img-colorkey-exact) — agreed; owner unresolved.
+- [img-colorkey-range](CATALOG.md#img-colorkey-range) — agreed; owner unresolved.
 
 ## OneImage/paths-clipping
 
@@ -67,6 +76,9 @@ No focused case in this batch.
 - [stroke-join-miter](CATALOG.md#stroke-join-miter) — agreed; owner unresolved.
 - [stroke-join-round](CATALOG.md#stroke-join-round) — agreed; owner unresolved.
 - [stroke-join-bevel](CATALOG.md#stroke-join-bevel) — agreed; owner unresolved.
+- [stroke-dash-pair-phase0](CATALOG.md#stroke-dash-pair-phase0) — agreed; owner unresolved.
+- [stroke-dash-pair-phase5](CATALOG.md#stroke-dash-pair-phase5) — agreed; owner unresolved.
+- [stroke-dash-four-phase2](CATALOG.md#stroke-dash-four-phase2) — agreed; owner unresolved.
 
 ## OneImage/glyph-rasterization
 
@@ -89,6 +101,9 @@ No focused case in this batch.
 - [img-predictor-tiff-sub](CATALOG.md#img-predictor-tiff-sub) — agreed; owner unresolved.
 - [img-predictor-png-sub](CATALOG.md#img-predictor-png-sub) — agreed; owner unresolved.
 - [img-predictor-png-up](CATALOG.md#img-predictor-png-up) — agreed; owner unresolved.
+- [img-colorkey-control](CATALOG.md#img-colorkey-control) — agreed; owner unresolved.
+- [img-colorkey-exact](CATALOG.md#img-colorkey-exact) — agreed; owner unresolved.
+- [img-colorkey-range](CATALOG.md#img-colorkey-range) — agreed; owner unresolved.
 
 ## OneImage/color-conversion
 
@@ -129,3 +144,9 @@ No focused case in this batch.
 - [img-predictor-tiff-sub](CATALOG.md#img-predictor-tiff-sub) — agreed; owner unresolved.
 - [img-predictor-png-sub](CATALOG.md#img-predictor-png-sub) — agreed; owner unresolved.
 - [img-predictor-png-up](CATALOG.md#img-predictor-png-up) — agreed; owner unresolved.
+- [stroke-dash-pair-phase0](CATALOG.md#stroke-dash-pair-phase0) — agreed; owner unresolved.
+- [stroke-dash-pair-phase5](CATALOG.md#stroke-dash-pair-phase5) — agreed; owner unresolved.
+- [stroke-dash-four-phase2](CATALOG.md#stroke-dash-four-phase2) — agreed; owner unresolved.
+- [img-colorkey-control](CATALOG.md#img-colorkey-control) — agreed; owner unresolved.
+- [img-colorkey-exact](CATALOG.md#img-colorkey-exact) — agreed; owner unresolved.
+- [img-colorkey-range](CATALOG.md#img-colorkey-range) — agreed; owner unresolved.

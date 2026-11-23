@@ -1,9 +1,9 @@
 {
-  "originals": 29,
-  "agreed": 28,
+  "originals": 35,
+  "agreed": 34,
   "held": 1,
-  "reference_runs": 174,
-  "passed": 172,
+  "reference_runs": 210,
+  "passed": 208,
   "failed": 2,
   "skipped": 0,
   "upstream_executed": 0,
@@ -2576,6 +2576,546 @@
     },
     {
       "id": "img-predictor-png-up",
+      "dpi": 144,
+      "accepted": true,
+      "analytic": {
+        "pdfium": {
+          "passed": true,
+          "scored_pixels": 33024,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "pdfjs": {
+          "passed": true,
+          "scored_pixels": 33024,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "mupdf": {
+          "passed": true,
+          "scored_pixels": 33024,
+          "different_pixels": 0,
+          "max_delta": 0
+        }
+      },
+      "pairwise": {
+        "pdfium-pdfjs": {
+          "passed": true,
+          "scored_pixels": 33024,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "pdfium-mupdf": {
+          "passed": true,
+          "scored_pixels": 33024,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "pdfjs-mupdf": {
+          "passed": true,
+          "scored_pixels": 33024,
+          "different_pixels": 0,
+          "max_delta": 0
+        }
+      }
+    },
+    {
+      "id": "stroke-dash-pair-phase0",
+      "dpi": 72,
+      "accepted": true,
+      "analytic": {
+        "pdfium": {
+          "passed": true,
+          "scored_pixels": 13520,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "pdfjs": {
+          "passed": true,
+          "scored_pixels": 13520,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "mupdf": {
+          "passed": true,
+          "scored_pixels": 13520,
+          "different_pixels": 0,
+          "max_delta": 0
+        }
+      },
+      "pairwise": {
+        "pdfium-pdfjs": {
+          "passed": true,
+          "scored_pixels": 13520,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "pdfium-mupdf": {
+          "passed": true,
+          "scored_pixels": 13520,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "pdfjs-mupdf": {
+          "passed": true,
+          "scored_pixels": 13520,
+          "different_pixels": 0,
+          "max_delta": 0
+        }
+      }
+    },
+    {
+      "id": "stroke-dash-pair-phase0",
+      "dpi": 144,
+      "accepted": true,
+      "analytic": {
+        "pdfium": {
+          "passed": true,
+          "scored_pixels": 55040,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "pdfjs": {
+          "passed": true,
+          "scored_pixels": 55040,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "mupdf": {
+          "passed": true,
+          "scored_pixels": 55040,
+          "different_pixels": 0,
+          "max_delta": 0
+        }
+      },
+      "pairwise": {
+        "pdfium-pdfjs": {
+          "passed": true,
+          "scored_pixels": 55040,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "pdfium-mupdf": {
+          "passed": true,
+          "scored_pixels": 55040,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "pdfjs-mupdf": {
+          "passed": true,
+          "scored_pixels": 55040,
+          "different_pixels": 0,
+          "max_delta": 0
+        }
+      }
+    },
+    {
+      "id": "stroke-dash-pair-phase5",
+      "dpi": 72,
+      "accepted": true,
+      "analytic": {
+        "pdfium": {
+          "passed": true,
+          "scored_pixels": 13472,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "pdfjs": {
+          "passed": true,
+          "scored_pixels": 13472,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "mupdf": {
+          "passed": true,
+          "scored_pixels": 13472,
+          "different_pixels": 0,
+          "max_delta": 0
+        }
+      },
+      "pairwise": {
+        "pdfium-pdfjs": {
+          "passed": true,
+          "scored_pixels": 13472,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "pdfium-mupdf": {
+          "passed": true,
+          "scored_pixels": 13472,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "pdfjs-mupdf": {
+          "passed": true,
+          "scored_pixels": 13472,
+          "different_pixels": 0,
+          "max_delta": 0
+        }
+      }
+    },
+    {
+      "id": "stroke-dash-pair-phase5",
+      "dpi": 144,
+      "accepted": true,
+      "analytic": {
+        "pdfium": {
+          "passed": true,
+          "scored_pixels": 54944,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "pdfjs": {
+          "passed": true,
+          "scored_pixels": 54944,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "mupdf": {
+          "passed": true,
+          "scored_pixels": 54944,
+          "different_pixels": 0,
+          "max_delta": 0
+        }
+      },
+      "pairwise": {
+        "pdfium-pdfjs": {
+          "passed": true,
+          "scored_pixels": 54944,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "pdfium-mupdf": {
+          "passed": true,
+          "scored_pixels": 54944,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "pdfjs-mupdf": {
+          "passed": true,
+          "scored_pixels": 54944,
+          "different_pixels": 0,
+          "max_delta": 0
+        }
+      }
+    },
+    {
+      "id": "stroke-dash-four-phase2",
+      "dpi": 72,
+      "accepted": true,
+      "analytic": {
+        "pdfium": {
+          "passed": true,
+          "scored_pixels": 13252,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "pdfjs": {
+          "passed": true,
+          "scored_pixels": 13252,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "mupdf": {
+          "passed": true,
+          "scored_pixels": 13252,
+          "different_pixels": 0,
+          "max_delta": 0
+        }
+      },
+      "pairwise": {
+        "pdfium-pdfjs": {
+          "passed": true,
+          "scored_pixels": 13252,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "pdfium-mupdf": {
+          "passed": true,
+          "scored_pixels": 13252,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "pdfjs-mupdf": {
+          "passed": true,
+          "scored_pixels": 13252,
+          "different_pixels": 0,
+          "max_delta": 0
+        }
+      }
+    },
+    {
+      "id": "stroke-dash-four-phase2",
+      "dpi": 144,
+      "accepted": true,
+      "analytic": {
+        "pdfium": {
+          "passed": true,
+          "scored_pixels": 54504,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "pdfjs": {
+          "passed": true,
+          "scored_pixels": 54504,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "mupdf": {
+          "passed": true,
+          "scored_pixels": 54504,
+          "different_pixels": 0,
+          "max_delta": 0
+        }
+      },
+      "pairwise": {
+        "pdfium-pdfjs": {
+          "passed": true,
+          "scored_pixels": 54504,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "pdfium-mupdf": {
+          "passed": true,
+          "scored_pixels": 54504,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "pdfjs-mupdf": {
+          "passed": true,
+          "scored_pixels": 54504,
+          "different_pixels": 0,
+          "max_delta": 0
+        }
+      }
+    },
+    {
+      "id": "img-colorkey-control",
+      "dpi": 72,
+      "accepted": true,
+      "analytic": {
+        "pdfium": {
+          "passed": true,
+          "scored_pixels": 8256,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "pdfjs": {
+          "passed": true,
+          "scored_pixels": 8256,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "mupdf": {
+          "passed": true,
+          "scored_pixels": 8256,
+          "different_pixels": 0,
+          "max_delta": 0
+        }
+      },
+      "pairwise": {
+        "pdfium-pdfjs": {
+          "passed": true,
+          "scored_pixels": 8256,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "pdfium-mupdf": {
+          "passed": true,
+          "scored_pixels": 8256,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "pdfjs-mupdf": {
+          "passed": true,
+          "scored_pixels": 8256,
+          "different_pixels": 0,
+          "max_delta": 0
+        }
+      }
+    },
+    {
+      "id": "img-colorkey-control",
+      "dpi": 144,
+      "accepted": true,
+      "analytic": {
+        "pdfium": {
+          "passed": true,
+          "scored_pixels": 33024,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "pdfjs": {
+          "passed": true,
+          "scored_pixels": 33024,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "mupdf": {
+          "passed": true,
+          "scored_pixels": 33024,
+          "different_pixels": 0,
+          "max_delta": 0
+        }
+      },
+      "pairwise": {
+        "pdfium-pdfjs": {
+          "passed": true,
+          "scored_pixels": 33024,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "pdfium-mupdf": {
+          "passed": true,
+          "scored_pixels": 33024,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "pdfjs-mupdf": {
+          "passed": true,
+          "scored_pixels": 33024,
+          "different_pixels": 0,
+          "max_delta": 0
+        }
+      }
+    },
+    {
+      "id": "img-colorkey-exact",
+      "dpi": 72,
+      "accepted": true,
+      "analytic": {
+        "pdfium": {
+          "passed": true,
+          "scored_pixels": 8256,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "pdfjs": {
+          "passed": true,
+          "scored_pixels": 8256,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "mupdf": {
+          "passed": true,
+          "scored_pixels": 8256,
+          "different_pixels": 0,
+          "max_delta": 0
+        }
+      },
+      "pairwise": {
+        "pdfium-pdfjs": {
+          "passed": true,
+          "scored_pixels": 8256,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "pdfium-mupdf": {
+          "passed": true,
+          "scored_pixels": 8256,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "pdfjs-mupdf": {
+          "passed": true,
+          "scored_pixels": 8256,
+          "different_pixels": 0,
+          "max_delta": 0
+        }
+      }
+    },
+    {
+      "id": "img-colorkey-exact",
+      "dpi": 144,
+      "accepted": true,
+      "analytic": {
+        "pdfium": {
+          "passed": true,
+          "scored_pixels": 33024,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "pdfjs": {
+          "passed": true,
+          "scored_pixels": 33024,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "mupdf": {
+          "passed": true,
+          "scored_pixels": 33024,
+          "different_pixels": 0,
+          "max_delta": 0
+        }
+      },
+      "pairwise": {
+        "pdfium-pdfjs": {
+          "passed": true,
+          "scored_pixels": 33024,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "pdfium-mupdf": {
+          "passed": true,
+          "scored_pixels": 33024,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "pdfjs-mupdf": {
+          "passed": true,
+          "scored_pixels": 33024,
+          "different_pixels": 0,
+          "max_delta": 0
+        }
+      }
+    },
+    {
+      "id": "img-colorkey-range",
+      "dpi": 72,
+      "accepted": true,
+      "analytic": {
+        "pdfium": {
+          "passed": true,
+          "scored_pixels": 8256,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "pdfjs": {
+          "passed": true,
+          "scored_pixels": 8256,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "mupdf": {
+          "passed": true,
+          "scored_pixels": 8256,
+          "different_pixels": 0,
+          "max_delta": 0
+        }
+      },
+      "pairwise": {
+        "pdfium-pdfjs": {
+          "passed": true,
+          "scored_pixels": 8256,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "pdfium-mupdf": {
+          "passed": true,
+          "scored_pixels": 8256,
+          "different_pixels": 0,
+          "max_delta": 0
+        },
+        "pdfjs-mupdf": {
+          "passed": true,
+          "scored_pixels": 8256,
+          "different_pixels": 0,
+          "max_delta": 0
+        }
+      }
+    },
+    {
+      "id": "img-colorkey-range",
       "dpi": 144,
       "accepted": true,
       "analytic": {

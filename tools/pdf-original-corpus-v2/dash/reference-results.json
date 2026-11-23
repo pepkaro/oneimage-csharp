@@ -1,0 +1,1925 @@
+{
+  "unique_original_pdfs": 3,
+  "executed": 18,
+  "passed": 18,
+  "failed": 0,
+  "skipped": 0,
+  "sample_checks": 108,
+  "sample_passes": 108,
+  "pairwise_passes": 18,
+  "pairwise_failures": 0,
+  "upstream_inputs_executed": 0,
+  "upstream_entries_validated": 0,
+  "rows": [
+    {
+      "id": "stroke-dash-pair-phase0",
+      "engine": "pdfium",
+      "dpi": 72,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 13520,
+      "unscored_boundary_pixels": 480,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "interval-control-0",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-2",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-4",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-5",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "stroke-dash-pair-phase0",
+      "engine": "mupdf",
+      "dpi": 72,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 13520,
+      "unscored_boundary_pixels": 480,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "interval-control-0",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-2",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-4",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-5",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "stroke-dash-pair-phase0",
+      "engine": "pdfjs",
+      "dpi": 72,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 13520,
+      "unscored_boundary_pixels": 480,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "interval-control-0",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-2",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-4",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-5",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "stroke-dash-pair-phase0",
+      "engine": "pdfium",
+      "dpi": 144,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 55040,
+      "unscored_boundary_pixels": 960,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "interval-control-0",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-2",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-4",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-5",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "stroke-dash-pair-phase0",
+      "engine": "mupdf",
+      "dpi": 144,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 55040,
+      "unscored_boundary_pixels": 960,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "interval-control-0",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-2",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-4",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-5",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "stroke-dash-pair-phase0",
+      "engine": "pdfjs",
+      "dpi": 144,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 55040,
+      "unscored_boundary_pixels": 960,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "interval-control-0",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-2",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-4",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-5",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "stroke-dash-pair-phase5",
+      "engine": "pdfium",
+      "dpi": 72,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 13472,
+      "unscored_boundary_pixels": 528,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "interval-control-0",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-2",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-4",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-5",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "stroke-dash-pair-phase5",
+      "engine": "mupdf",
+      "dpi": 72,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 13472,
+      "unscored_boundary_pixels": 528,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "interval-control-0",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-2",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-4",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-5",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "stroke-dash-pair-phase5",
+      "engine": "pdfjs",
+      "dpi": 72,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 13472,
+      "unscored_boundary_pixels": 528,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "interval-control-0",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-2",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-4",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-5",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "stroke-dash-pair-phase5",
+      "engine": "pdfium",
+      "dpi": 144,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 54944,
+      "unscored_boundary_pixels": 1056,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "interval-control-0",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-2",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-4",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-5",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "stroke-dash-pair-phase5",
+      "engine": "mupdf",
+      "dpi": 144,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 54944,
+      "unscored_boundary_pixels": 1056,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "interval-control-0",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-2",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-4",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-5",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "stroke-dash-pair-phase5",
+      "engine": "pdfjs",
+      "dpi": 144,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 54944,
+      "unscored_boundary_pixels": 1056,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "interval-control-0",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-2",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-4",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-5",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "stroke-dash-four-phase2",
+      "engine": "pdfium",
+      "dpi": 72,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 13252,
+      "unscored_boundary_pixels": 748,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "interval-control-0",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-2",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-4",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-5",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "stroke-dash-four-phase2",
+      "engine": "mupdf",
+      "dpi": 72,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 13252,
+      "unscored_boundary_pixels": 748,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "interval-control-0",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-2",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-4",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-5",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "stroke-dash-four-phase2",
+      "engine": "pdfjs",
+      "dpi": 72,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 13252,
+      "unscored_boundary_pixels": 748,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "interval-control-0",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-2",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-4",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-5",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "stroke-dash-four-phase2",
+      "engine": "pdfium",
+      "dpi": 144,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 54504,
+      "unscored_boundary_pixels": 1496,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "interval-control-0",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-2",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-4",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-5",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "stroke-dash-four-phase2",
+      "engine": "mupdf",
+      "dpi": 144,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 54504,
+      "unscored_boundary_pixels": 1496,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "interval-control-0",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-2",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-4",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-5",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "stroke-dash-four-phase2",
+      "engine": "pdfjs",
+      "dpi": 144,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 54504,
+      "unscored_boundary_pixels": 1496,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "interval-control-0",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-2",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-4",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "interval-control-5",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "pairwise": [
+    {
+      "id": "stroke-dash-pair-phase0",
+      "dpi": 72,
+      "engines": [
+        "pdfium",
+        "mupdf"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "stroke-dash-pair-phase0",
+      "dpi": 72,
+      "engines": [
+        "pdfium",
+        "pdfjs"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "stroke-dash-pair-phase0",
+      "dpi": 72,
+      "engines": [
+        "mupdf",
+        "pdfjs"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "stroke-dash-pair-phase0",
+      "dpi": 144,
+      "engines": [
+        "pdfium",
+        "mupdf"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "stroke-dash-pair-phase0",
+      "dpi": 144,
+      "engines": [
+        "pdfium",
+        "pdfjs"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "stroke-dash-pair-phase0",
+      "dpi": 144,
+      "engines": [
+        "mupdf",
+        "pdfjs"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "stroke-dash-pair-phase5",
+      "dpi": 72,
+      "engines": [
+        "pdfium",
+        "mupdf"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "stroke-dash-pair-phase5",
+      "dpi": 72,
+      "engines": [
+        "pdfium",
+        "pdfjs"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "stroke-dash-pair-phase5",
+      "dpi": 72,
+      "engines": [
+        "mupdf",
+        "pdfjs"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "stroke-dash-pair-phase5",
+      "dpi": 144,
+      "engines": [
+        "pdfium",
+        "mupdf"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "stroke-dash-pair-phase5",
+      "dpi": 144,
+      "engines": [
+        "pdfium",
+        "pdfjs"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "stroke-dash-pair-phase5",
+      "dpi": 144,
+      "engines": [
+        "mupdf",
+        "pdfjs"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "stroke-dash-four-phase2",
+      "dpi": 72,
+      "engines": [
+        "pdfium",
+        "mupdf"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "stroke-dash-four-phase2",
+      "dpi": 72,
+      "engines": [
+        "pdfium",
+        "pdfjs"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "stroke-dash-four-phase2",
+      "dpi": 72,
+      "engines": [
+        "mupdf",
+        "pdfjs"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "stroke-dash-four-phase2",
+      "dpi": 144,
+      "engines": [
+        "pdfium",
+        "mupdf"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "stroke-dash-four-phase2",
+      "dpi": 144,
+      "engines": [
+        "pdfium",
+        "pdfjs"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "stroke-dash-four-phase2",
+      "dpi": 144,
+      "engines": [
+        "mupdf",
+        "pdfjs"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    }
+  ]
+}

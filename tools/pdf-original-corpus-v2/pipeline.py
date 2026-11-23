@@ -10,6 +10,7 @@ sys.path.insert(0,str(T/'geometry'))
 from score import expected
 spec=importlib.util.spec_from_file_location('stroke_score',T/'stroke/score.py');stroke=importlib.util.module_from_spec(spec);spec.loader.exec_module(stroke)
 jspec=importlib.util.spec_from_file_location('join_score',T/'joins/score.py');joins=importlib.util.module_from_spec(jspec);jspec.loader.exec_module(joins)
+dspec=importlib.util.spec_from_file_location('dash_score',T/'dash/score.py');dash=importlib.util.module_from_spec(dspec);dspec.loader.exec_module(dash)
 read=lambda p:json.loads(p.read_text())
 write=lambda p,d:p.write_text(json.dumps(d,indent=2)+'\n')
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
@@ -19,6 +20,7 @@ def mask_for(r,dpi):
  if r['family']=='geometry':return expected(c,dpi)
  if r['family']=='stroke':return stroke.expected(c,dpi)
  if r['family']=='joins':return joins.expected(c,dpi)
+ if r['family']=='dash':return dash.expected(c,dpi)
  scale=dpi/72;w=c['width']*dpi//72;h=c['height']*dpi//72;a=np.full((h,w,3),255,np.uint8);mask=np.zeros((h,w),bool);yy,xx=np.mgrid[:h,:w];xp=(xx+.5)/scale;yp=c['height']-(yy+.5)/scale
  for reg in c['expected_regions']:
   x,y,rw,rh=reg['rect'];m=(xp>=x)&(xp<x+rw)&(yp>=y)&(yp<y+rh);a[m]=reg['rgb'];mask|=m
@@ -61,7 +63,7 @@ def references(out,pdfjs):
   d=out/family;shutil.copytree(T/family,d);(d/'inputs').mkdir(exist_ok=True)
   for r in [r for r in read(T/'routes.json') if r['family']==family]:shutil.copy(REPO/r['canonical_dir']/'original.pdf',d/r['manifest']['file'])
   env=dict(os.environ,PDFJS_ROOT=str(pdfjs.resolve()))
-  commands=[['references.py'],['score.py'],['verify.py']] if family in ['geometry','stroke','joins'] else [['run-references.py',str(pdfjs.resolve())],['verify.py'],['verify-regions.py']]
+  commands=[['references.py'],['score.py'],['verify.py']] if family in ['geometry','stroke','joins','dash'] else [['run-references.py',str(pdfjs.resolve())],['verify.py'],['verify-regions.py']]
   for cmd in commands:subprocess.run([sys.executable,str(d/cmd[0]),*cmd[1:]],check=True,env=env)
  return {'captures':sum(len(r['manifest']['dpis'])*3 for r in read(T/'routes.json')),'output':str(out),'promotion':'manual review required; disagreement never auto-promotes'}
 

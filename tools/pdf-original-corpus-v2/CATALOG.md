@@ -226,6 +226,36 @@ Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.
 
 Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
 
+### stroke-dash-pair-phase0
+
+Positive even-length dash array and ordinary phase on a straight butt-cap stroke
+
+Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-dash-pair-phase0/original.pdf); [clause evidence](dash/clause-index.json).
+
+Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-dash-pair-phase0/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-dash-pair-phase0/expected-144.png).
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
+### stroke-dash-pair-phase5
+
+Positive even-length dash array and ordinary phase on a straight butt-cap stroke
+
+Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-dash-pair-phase5/original.pdf); [clause evidence](dash/clause-index.json).
+
+Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-dash-pair-phase5/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-dash-pair-phase5/expected-144.png).
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
+### stroke-dash-four-phase2
+
+Positive even-length dash array and ordinary phase on a straight butt-cap stroke
+
+Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-dash-four-phase2/original.pdf); [clause evidence](dash/clause-index.json).
+
+Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-dash-four-phase2/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-dash-four-phase2/expected-144.png).
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
 ## 08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General
 
 ### img-gray2-packed-padding
@@ -305,5 +335,37 @@ A negative-x image CTM mirrors columns once while retaining top-to-bottom source
 Stage: **pass**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General/img-rgb8-mirrored-placement/original.pdf); [clause evidence](images/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General/img-rgb8-mirrored-placement/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.05-Image-dictionaries/08.09.05.01-General/img-rgb8-mirrored-placement/expected-144.png).
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
+## 08-Graphics/08.09-Images/08.09.06-Masked-images
+
+### img-colorkey-control
+
+Original RGB8 control color-key masking; inclusive per-component intersection over authored source samples, composited on white.
+
+Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/img-colorkey-control/original.pdf); [clause evidence](colorkey/clause-index.json).
+
+Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/img-colorkey-control/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/img-colorkey-control/expected-144.png).
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
+### img-colorkey-exact
+
+Original RGB8 exact color-key masking; inclusive per-component intersection over authored source samples, composited on white.
+
+Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/img-colorkey-exact/original.pdf); [clause evidence](colorkey/clause-index.json).
+
+Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/img-colorkey-exact/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/img-colorkey-exact/expected-144.png).
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
+### img-colorkey-range
+
+Original RGB8 range color-key masking; inclusive per-component intersection over authored source samples, composited on white.
+
+Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/img-colorkey-range/original.pdf); [clause evidence](colorkey/clause-index.json).
+
+Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/img-colorkey-range/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/img-colorkey-range/expected-144.png).
 
 Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
