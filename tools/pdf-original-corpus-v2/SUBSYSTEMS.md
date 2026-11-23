@@ -23,9 +23,9 @@ Cross-tags describe pipeline participation, not proven root-cause ownership. Cas
 - [resource-page-form-isolation](CATALOG.md#resource-page-form-isolation) — pass; owner unresolved.
 - [resource-sibling-form-isolation](CATALOG.md#resource-sibling-form-isolation) — pass; owner unresolved.
 - [resource-nested-form-restoration](CATALOG.md#resource-nested-form-restoration) — pass; owner unresolved.
-- [resource-category-page](CATALOG.md#resource-category-page) — agreed; owner unresolved.
-- [resource-category-page-form](CATALOG.md#resource-category-page-form) — agreed; owner unresolved.
-- [resource-category-sibling-forms](CATALOG.md#resource-category-sibling-forms) — agreed; owner unresolved.
+- [resource-category-page](CATALOG.md#resource-category-page) — pass; owner unresolved.
+- [resource-category-page-form](CATALOG.md#resource-category-page-form) — pass; owner unresolved.
+- [resource-category-sibling-forms](CATALOG.md#resource-category-sibling-forms) — pass; owner unresolved.
 
 ## OnePDF/font-text-interpretation
 
@@ -33,10 +33,10 @@ Cross-tags describe pipeline participation, not proven root-cause ownership. Cas
 - [text-tc-tw-spacing](CATALOG.md#text-tc-tw-spacing) — pass; owner unresolved.
 - [text-tj-signed-adjustment](CATALOG.md#text-tj-signed-adjustment) — pass; owner unresolved.
 - [text-tm-rotate-replace](CATALOG.md#text-tm-rotate-replace) — pass; owner unresolved.
-- [textscale-tz-shape-advance](CATALOG.md#textscale-tz-shape-advance) — agreed; owner unresolved.
-- [textscale-ts-baselines](CATALOG.md#textscale-ts-baselines) — agreed; owner unresolved.
-- [textscale-tz-spacing](CATALOG.md#textscale-tz-spacing) — agreed; owner unresolved.
-- [textscale-tz-tj-rise](CATALOG.md#textscale-tz-tj-rise) — agreed; owner unresolved.
+- [textscale-tz-shape-advance](CATALOG.md#textscale-tz-shape-advance) — pass; owner unresolved.
+- [textscale-ts-baselines](CATALOG.md#textscale-ts-baselines) — pass; owner unresolved.
+- [textscale-tz-spacing](CATALOG.md#textscale-tz-spacing) — pass; owner unresolved.
+- [textscale-tz-tj-rise](CATALOG.md#textscale-tz-tj-rise) — pass; owner unresolved.
 
 ## OnePDF/content-interpretation
 
@@ -64,9 +64,9 @@ Cross-tags describe pipeline participation, not proven root-cause ownership. Cas
 - [alpha-stroke-fraction06](CATALOG.md#alpha-stroke-fraction06) — mismatch; owner unresolved.
 - [alpha-fill-fraction025](CATALOG.md#alpha-fill-fraction025) — mismatch; owner unresolved.
 - [alpha-stroke-fraction025](CATALOG.md#alpha-stroke-fraction025) — mismatch; owner unresolved.
-- [resource-category-page](CATALOG.md#resource-category-page) — agreed; owner unresolved.
-- [resource-category-page-form](CATALOG.md#resource-category-page-form) — agreed; owner unresolved.
-- [resource-category-sibling-forms](CATALOG.md#resource-category-sibling-forms) — agreed; owner unresolved.
+- [resource-category-page](CATALOG.md#resource-category-page) — pass; owner unresolved.
+- [resource-category-page-form](CATALOG.md#resource-category-page-form) — pass; owner unresolved.
+- [resource-category-sibling-forms](CATALOG.md#resource-category-sibling-forms) — pass; owner unresolved.
 
 ## OnePDF/image-color-decoding
 
@@ -112,13 +112,13 @@ Cross-tags describe pipeline participation, not proven root-cause ownership. Cas
 - [text-tc-tw-spacing](CATALOG.md#text-tc-tw-spacing) — pass; owner unresolved.
 - [text-tj-signed-adjustment](CATALOG.md#text-tj-signed-adjustment) — pass; owner unresolved.
 - [text-tm-rotate-replace](CATALOG.md#text-tm-rotate-replace) — pass; owner unresolved.
-- [resource-category-page](CATALOG.md#resource-category-page) — agreed; owner unresolved.
-- [resource-category-page-form](CATALOG.md#resource-category-page-form) — agreed; owner unresolved.
-- [resource-category-sibling-forms](CATALOG.md#resource-category-sibling-forms) — agreed; owner unresolved.
-- [textscale-tz-shape-advance](CATALOG.md#textscale-tz-shape-advance) — agreed; owner unresolved.
-- [textscale-ts-baselines](CATALOG.md#textscale-ts-baselines) — agreed; owner unresolved.
-- [textscale-tz-spacing](CATALOG.md#textscale-tz-spacing) — agreed; owner unresolved.
-- [textscale-tz-tj-rise](CATALOG.md#textscale-tz-tj-rise) — agreed; owner unresolved.
+- [resource-category-page](CATALOG.md#resource-category-page) — pass; owner unresolved.
+- [resource-category-page-form](CATALOG.md#resource-category-page-form) — pass; owner unresolved.
+- [resource-category-sibling-forms](CATALOG.md#resource-category-sibling-forms) — pass; owner unresolved.
+- [textscale-tz-shape-advance](CATALOG.md#textscale-tz-shape-advance) — pass; owner unresolved.
+- [textscale-ts-baselines](CATALOG.md#textscale-ts-baselines) — pass; owner unresolved.
+- [textscale-tz-spacing](CATALOG.md#textscale-tz-spacing) — pass; owner unresolved.
+- [textscale-tz-tj-rise](CATALOG.md#textscale-tz-tj-rise) — pass; owner unresolved.
 
 ## OneImage/glyph-rasterization
 
@@ -126,10 +126,10 @@ Cross-tags describe pipeline participation, not proven root-cause ownership. Cas
 - [text-tc-tw-spacing](CATALOG.md#text-tc-tw-spacing) — pass; owner unresolved.
 - [text-tj-signed-adjustment](CATALOG.md#text-tj-signed-adjustment) — pass; owner unresolved.
 - [text-tm-rotate-replace](CATALOG.md#text-tm-rotate-replace) — pass; owner unresolved.
-- [textscale-tz-shape-advance](CATALOG.md#textscale-tz-shape-advance) — agreed; owner unresolved.
-- [textscale-ts-baselines](CATALOG.md#textscale-ts-baselines) — agreed; owner unresolved.
-- [textscale-tz-spacing](CATALOG.md#textscale-tz-spacing) — agreed; owner unresolved.
-- [textscale-tz-tj-rise](CATALOG.md#textscale-tz-tj-rise) — agreed; owner unresolved.
+- [textscale-tz-shape-advance](CATALOG.md#textscale-tz-shape-advance) — pass; owner unresolved.
+- [textscale-ts-baselines](CATALOG.md#textscale-ts-baselines) — pass; owner unresolved.
+- [textscale-tz-spacing](CATALOG.md#textscale-tz-spacing) — pass; owner unresolved.
+- [textscale-tz-tj-rise](CATALOG.md#textscale-tz-tj-rise) — pass; owner unresolved.
 
 ## OneImage/image-sampling
 
@@ -217,10 +217,10 @@ No focused case in this batch.
 - [alpha-stroke-fraction06](CATALOG.md#alpha-stroke-fraction06) — mismatch; owner unresolved.
 - [alpha-fill-fraction025](CATALOG.md#alpha-fill-fraction025) — mismatch; owner unresolved.
 - [alpha-stroke-fraction025](CATALOG.md#alpha-stroke-fraction025) — mismatch; owner unresolved.
-- [resource-category-page](CATALOG.md#resource-category-page) — agreed; owner unresolved.
-- [resource-category-page-form](CATALOG.md#resource-category-page-form) — agreed; owner unresolved.
-- [resource-category-sibling-forms](CATALOG.md#resource-category-sibling-forms) — agreed; owner unresolved.
-- [textscale-tz-shape-advance](CATALOG.md#textscale-tz-shape-advance) — agreed; owner unresolved.
-- [textscale-ts-baselines](CATALOG.md#textscale-ts-baselines) — agreed; owner unresolved.
-- [textscale-tz-spacing](CATALOG.md#textscale-tz-spacing) — agreed; owner unresolved.
-- [textscale-tz-tj-rise](CATALOG.md#textscale-tz-tj-rise) — agreed; owner unresolved.
+- [resource-category-page](CATALOG.md#resource-category-page) — pass; owner unresolved.
+- [resource-category-page-form](CATALOG.md#resource-category-page-form) — pass; owner unresolved.
+- [resource-category-sibling-forms](CATALOG.md#resource-category-sibling-forms) — pass; owner unresolved.
+- [textscale-tz-shape-advance](CATALOG.md#textscale-tz-shape-advance) — pass; owner unresolved.
+- [textscale-ts-baselines](CATALOG.md#textscale-ts-baselines) — pass; owner unresolved.
+- [textscale-tz-spacing](CATALOG.md#textscale-tz-spacing) — pass; owner unresolved.
+- [textscale-tz-tj-rise](CATALOG.md#textscale-tz-tj-rise) — pass; owner unresolved.

@@ -4,7 +4,7 @@
   "completion_rule": "Every applicable scoped semanticrule has committed independentlyvalidatedfixture+assertion or explicitreviewedexception; inventory completion is not behavior completion",
   "scope_limit": "Initial manuallyscopedordinaryvisualrules only; fullstandard ruleenumeration incomplete pendingfull2020text and furthermanualqualification; no claim everyapplicablePDFbehaviorislisted",
   "recovery_rule": "ReadthisbacklogandGitHEAD; verifypriorcheckpoint;claimoneunclaimeddisjointslice; neverrerunblockedAOTIPC; checkpointblockedreasonandcontinueindependenteligible work; no newapprovalneededwithin authorizedscope",
-  "current_publication": "Continuation from#94 head5dc41855d08a08192ba66c250f787bbe33ac5707; newacceptancepending",
+  "current_publication": "Draft94 acceptance 30c3fce95e2a6c62b9b39fef8914423c5cb9e849; local test results verified; final evidence publication follows",
   "slices": [
     {
       "slice_id": "ISO-FILTER-BASE-01",
@@ -86,7 +86,7 @@
       "slice_id": "ISO-PAGE-RESOURCE-02",
       "iso_2020_order": "07.08.03",
       "verified_coarse_title": "Resource dictionaries",
-      "state": "reference-agreed-awaiting-commit-and-product",
+      "state": "complete-product-mask-and-named-assertions-pass",
       "owner": "mozilla_originals",
       "case_ids": [
         "resource-category-page",
@@ -100,7 +100,18 @@
         "resource-category-page-form",
         "resource-category-sibling-forms"
       ],
-      "held_cases": []
+      "held_cases": [],
+      "evidence": "product-batch3-strict-results.json"
+    },
+    {
+      "slice_id": "ISO-PAGE-RESOURCE-03",
+      "iso_2020_order": "07.08.03",
+      "verified_coarse_title": "Resource dictionaries",
+      "state": "unclaimed",
+      "owner": null,
+      "case_ids": [],
+      "upstream_ids": [],
+      "acceptance_criteria": "ValidparentPagetreeResourcesinheritance versus explicitcompletepageResources; independentcoloredFormlookup; no invalidFormfallback or upstreaminputrecreation; threepinnedrefs2DPI"
     },
     {
       "slice_id": "ISO-STATE-STACK-01",
@@ -304,7 +315,7 @@
       "slice_id": "ISO-TEXT-SCALE-RISE-01",
       "iso_2020_order": "09.03",
       "verified_coarse_title": "Text state parameters and operators",
-      "state": "reference-agreed-awaiting-commit-and-product",
+      "state": "complete-product-mask-and-named-assertions-pass",
       "owner": "pdfium_originals",
       "case_ids": [
         "textscale-tz-shape-advance",
@@ -320,7 +331,18 @@
         "textscale-tz-spacing",
         "textscale-tz-tj-rise"
       ],
-      "held_cases": []
+      "held_cases": [],
+      "evidence": "product-batch3-strict-results.json"
+    },
+    {
+      "slice_id": "ISO-TEXT-LEADING-01",
+      "iso_2020_order": "09.04.02",
+      "verified_coarse_title": "Text-positioning operators",
+      "state": "unclaimed",
+      "owner": null,
+      "case_ids": [],
+      "upstream_ids": [],
+      "acceptance_criteria": "OwnedType3font; independentTL/T*/TD line-originmath withTj advances andnamedinteriors; verifiedclausereferences; threepinnedrefs2DPI"
     },
     {
       "slice_id": "ISO-TRANSPARENCY-01",
@@ -374,5 +396,5 @@
       "exception": "Implementationarithmeticexplained; no normativebyteoracleor productfix;fourcasesremainheld"
     }
   ],
-  "checkpoint_state": "Allthreeassignedslicescheckpointed; resources/textandalphaendpointsgraded; fractionalalphaheld; nextslicesunclaimed"
+  "checkpoint_state": "Allthreeassignedslicescheckpointed; sevennewcasesproduct-pass; alpha implementationclassificationcompletebutpixeloracleunresolved"
 }

@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "credited_ids": 0,
+  "upstream_inputs_downloaded": 0,
+  "source_revision": "d4da7f6542bfdf7f256db30f28fa7057c9006ca3",
+  "source_url": "https://raw.githubusercontent.com/mozilla/pdf.js/d4da7f6542bfdf7f256db30f28fa7057c9006ca3/test/test_manifest.json",
+  "reviews": [
+    {
+      "source_case_id": "mozilla:alphatrans",
+      "official_metadata": {
+        "id": "alphatrans",
+        "file": "pdfs/alphatrans.pdf",
+        "md5": "5ca2d3da0c5f20b3a5a14e895ad24b65",
+        "link": false,
+        "rounds": 1,
+        "type": "eq"
+      },
+      "qualification": "unknown-exact-contract",
+      "use_case_ids": [],
+      "credit": false,
+      "missing": "No described exact alpha/geometry/page/settings or independently asserted source contract."
+    },
+    {
+      "source_case_id": "mozilla:type3_d0_alpha",
+      "official_metadata": {
+        "id": "type3_d0_alpha",
+        "file": "pdfs/type3_d0_alpha.pdf",
+        "md5": "f0273a0ba9c41b5f5033ca86fff062f0",
+        "rounds": 1,
+        "type": "eq",
+        "about": "Colored Type3 glyph followed by a semi-transparent stroke and fill."
+      },
+      "qualification": "partial-intent-known-not-covered-by-current-scene",
+      "use_case_ids": [],
+      "credit": false,
+      "missing": "A colored d0 glyph followed by semi-transparent stroke/fill is described. Current positioning font is uncolored d1 and current alpha controls are separate paths; the specific interaction is untested. Exact values, geometry, pages/settings are not established."
+    },
+    {
+      "source_case_id": "mozilla:issue4461-load",
+      "official_metadata": {
+        "id": "issue4461-load",
+        "file": "pdfs/issue4461.pdf",
+        "md5": "9df4ecaae429adb5dc93d9342a53159d",
+        "rounds": 1,
+        "type": "load",
+        "about": "Document without /Resources entry in page dictionary"
+      },
+      "qualification": "different-route-not-current-visual-comparison",
+      "use_case_ids": [],
+      "credit": false,
+      "missing": "A missing page Resources entry does not establish valid parent inheritance. Load success is a different route; no corresponding input is recreated."
+    }
+  ],
+  "pdfium_review": {
+    "source_case_id": "pdfium-main:testing/resources/pixel/alpha_composite.in",
+    "revision": "1f02bc7d908ab301fa2a2babd87226a19311ff38",
+    "metadata": "template input; route unqualified",
+    "qualification": "unknown-exact-contract",
+    "credit": false,
+    "use_case_ids": [],
+    "missing": "Filename and inventory route do not establish alpha values, compositing stack, geometry, pages or expected behavior."
+  },
+  "decision": "No exact upstream credit. New resource/text controls remain spec-derived; source implementation inspection is not upstream test execution."
+}
