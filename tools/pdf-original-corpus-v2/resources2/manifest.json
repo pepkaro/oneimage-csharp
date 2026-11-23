@@ -1,0 +1,1020 @@
+{
+  "schema_version": 1,
+  "batch": "ISO-PAGE-RESOURCE-02",
+  "owner": "mozilla_originals",
+  "purpose": "Independent lexical resource names across categories and page/Form resource dictionaries",
+  "fixture_count": 3,
+  "case_count": 3,
+  "independently_authored": true,
+  "upstream_fixture_bytes_read": 0,
+  "cases": [
+    {
+      "id": "resource-category-page",
+      "file": "inputs/resource-category-page.pdf",
+      "sha256": "0cbe7418fd018784198af175b42781f3e80b64697dc904d2705bfb075f227031",
+      "license": "MIT",
+      "fixture_version": "1.7",
+      "contract": "The page resolves /Shared independently in its ColorSpace and XObject categories",
+      "spec": "ISO 32000-1:2008",
+      "spec_clauses": [
+        "7.8.3/Table33 Resource Dictionaries",
+        "8.6.8/Table74 Colour Operators",
+        "8.10.2/Table95 Resources"
+      ],
+      "primary_iso_2020": "7.8.3/Table34 Resource dictionaries",
+      "secondary_iso_2020": [
+        "8.10.2/Table93 Resources",
+        "8.6.8 Colour operators: heading verified, exact cs/scn rows pending"
+      ],
+      "citation_status": "2020 resource-association, Table34 ColorSpace mapping and Form-independence text verified in official public errata; unreproduced operator/category rows pending full text",
+      "route": "page/Form /Shared cs ... scn and /Shared Do resolved through explicit ColorSpace and XObject category subdictionaries",
+      "width": 160,
+      "height": 100,
+      "display_width_points": 160,
+      "display_height_points": 100,
+      "user_unit": 1,
+      "rotation": 0,
+      "page": 0,
+      "pages": [
+        0
+      ],
+      "page_count": 1,
+      "dpis": [
+        72,
+        144
+      ],
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "annotations": "none",
+      "shape_rectangles": [
+        [
+          10,
+          10,
+          30,
+          25,
+          [
+            0,
+            0,
+            255
+          ]
+        ],
+        [
+          70,
+          10,
+          30,
+          25,
+          [
+            255,
+            0,
+            0
+          ]
+        ],
+        [
+          10,
+          60,
+          30,
+          25,
+          [
+            0,
+            255,
+            0
+          ]
+        ]
+      ],
+      "samples": [
+        {
+          "id": "binding-0",
+          "x": 25,
+          "y": 22,
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-1",
+          "x": 85,
+          "y": 22,
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-2",
+          "x": 25,
+          "y": 72,
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-0",
+          "x": 120,
+          "y": 20,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-1",
+          "x": 70,
+          "y": 70,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-2",
+          "x": 50,
+          "y": 50,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_samples": [
+        {
+          "id": "binding-0",
+          "point": [
+            25,
+            22
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-1",
+          "point": [
+            85,
+            22
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-2",
+          "point": [
+            25,
+            72
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-0",
+          "point": [
+            120,
+            20
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-1",
+          "point": [
+            70,
+            70
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-2",
+          "point": [
+            50,
+            50
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_regions": [
+        {
+          "id": "binding-0",
+          "rect": [
+            12,
+            12,
+            26,
+            21
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-1",
+          "rect": [
+            72,
+            12,
+            26,
+            21
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-2",
+          "rect": [
+            12,
+            62,
+            26,
+            21
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-0",
+          "rect": [
+            118,
+            18,
+            4,
+            4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-1",
+          "rect": [
+            68,
+            68,
+            4,
+            4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-2",
+          "rect": [
+            48,
+            48,
+            4,
+            4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "sample_coordinates": "PDF page points x right/y up; image row=floor((100-y)*dpi/72)",
+      "mask": "All pixels except predeclared one-device-pixel bands around shape rectangle boundaries; expected_regions are separate inset exact controls",
+      "upstream_association": {
+        "upstream_id": null,
+        "scope": "standard-contract-only",
+        "exact_upstream_scope_established": false,
+        "upstream_input_executed": false
+      }
+    },
+    {
+      "id": "resource-category-page-form",
+      "file": "inputs/resource-category-page-form.pdf",
+      "sha256": "09e1ccd850b49e37614b8a7b79b6ee85742f9c0729c632c0f3cc23eccad082ef",
+      "license": "MIT",
+      "fixture_version": "1.7",
+      "contract": "A Form binds /Shared to DeviceRGB and its red leaf while the page binds it to DeviceGray and a blue leaf; postForm calls use page bindings",
+      "spec": "ISO 32000-1:2008",
+      "spec_clauses": [
+        "7.8.3/Table33 Resource Dictionaries",
+        "8.6.8/Table74 Colour Operators",
+        "8.10.2/Table95 Resources"
+      ],
+      "primary_iso_2020": "7.8.3/Table34 Resource dictionaries",
+      "secondary_iso_2020": [
+        "8.10.2/Table93 Resources",
+        "8.6.8 Colour operators: heading verified, exact cs/scn rows pending"
+      ],
+      "citation_status": "2020 resource-association, Table34 ColorSpace mapping and Form-independence text verified in official public errata; unreproduced operator/category rows pending full text",
+      "route": "page/Form /Shared cs ... scn and /Shared Do resolved through explicit ColorSpace and XObject category subdictionaries",
+      "width": 160,
+      "height": 100,
+      "display_width_points": 160,
+      "display_height_points": 100,
+      "user_unit": 1,
+      "rotation": 0,
+      "page": 0,
+      "pages": [
+        0
+      ],
+      "page_count": 1,
+      "dpis": [
+        72,
+        144
+      ],
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "annotations": "none",
+      "shape_rectangles": [
+        [
+          10,
+          10,
+          30,
+          25,
+          [
+            0,
+            0,
+            255
+          ]
+        ],
+        [
+          50,
+          10,
+          30,
+          25,
+          [
+            255,
+            0,
+            0
+          ]
+        ],
+        [
+          10,
+          50,
+          30,
+          25,
+          [
+            0,
+            255,
+            0
+          ]
+        ],
+        [
+          110,
+          10,
+          30,
+          25,
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          110,
+          60,
+          30,
+          25,
+          [
+            0,
+            0,
+            255
+          ]
+        ]
+      ],
+      "samples": [
+        {
+          "id": "binding-0",
+          "x": 25,
+          "y": 22,
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-1",
+          "x": 65,
+          "y": 22,
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-2",
+          "x": 25,
+          "y": 62,
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-3",
+          "x": 125,
+          "y": 22,
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-4",
+          "x": 125,
+          "y": 72,
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-0",
+          "x": 90,
+          "y": 70,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_samples": [
+        {
+          "id": "binding-0",
+          "point": [
+            25,
+            22
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-1",
+          "point": [
+            65,
+            22
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-2",
+          "point": [
+            25,
+            62
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-3",
+          "point": [
+            125,
+            22
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-4",
+          "point": [
+            125,
+            72
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-0",
+          "point": [
+            90,
+            70
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_regions": [
+        {
+          "id": "binding-0",
+          "rect": [
+            12,
+            12,
+            26,
+            21
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-1",
+          "rect": [
+            52,
+            12,
+            26,
+            21
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-2",
+          "rect": [
+            12,
+            52,
+            26,
+            21
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-3",
+          "rect": [
+            112,
+            12,
+            26,
+            21
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-4",
+          "rect": [
+            112,
+            62,
+            26,
+            21
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-0",
+          "rect": [
+            88,
+            68,
+            4,
+            4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "sample_coordinates": "PDF page points x right/y up; image row=floor((100-y)*dpi/72)",
+      "mask": "All pixels except predeclared one-device-pixel bands around shape rectangle boundaries; expected_regions are separate inset exact controls",
+      "upstream_association": {
+        "upstream_id": null,
+        "scope": "standard-contract-only",
+        "exact_upstream_scope_established": false,
+        "upstream_input_executed": false
+      }
+    },
+    {
+      "id": "resource-category-sibling-forms",
+      "file": "inputs/resource-category-sibling-forms.pdf",
+      "sha256": "399e78af44e0577153209994730c9663a23abc351ad715fff8006109cf55476e",
+      "license": "MIT",
+      "fixture_version": "1.7",
+      "contract": "Two sibling Forms each resolve /Shared in separate ColorSpace and XObject categories with RGB versus Gray and different leaf colors",
+      "spec": "ISO 32000-1:2008",
+      "spec_clauses": [
+        "7.8.3/Table33 Resource Dictionaries",
+        "8.6.8/Table74 Colour Operators",
+        "8.10.2/Table95 Resources"
+      ],
+      "primary_iso_2020": "7.8.3/Table34 Resource dictionaries",
+      "secondary_iso_2020": [
+        "8.10.2/Table93 Resources",
+        "8.6.8 Colour operators: heading verified, exact cs/scn rows pending"
+      ],
+      "citation_status": "2020 resource-association, Table34 ColorSpace mapping and Form-independence text verified in official public errata; unreproduced operator/category rows pending full text",
+      "route": "page/Form /Shared cs ... scn and /Shared Do resolved through explicit ColorSpace and XObject category subdictionaries",
+      "width": 160,
+      "height": 100,
+      "display_width_points": 160,
+      "display_height_points": 100,
+      "user_unit": 1,
+      "rotation": 0,
+      "page": 0,
+      "pages": [
+        0
+      ],
+      "page_count": 1,
+      "dpis": [
+        72,
+        144
+      ],
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "annotations": "none",
+      "shape_rectangles": [
+        [
+          10,
+          10,
+          30,
+          25,
+          [
+            0,
+            255,
+            0
+          ]
+        ],
+        [
+          10,
+          50,
+          30,
+          25,
+          [
+            0,
+            0,
+            255
+          ]
+        ],
+        [
+          90,
+          10,
+          30,
+          25,
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          90,
+          50,
+          30,
+          25,
+          [
+            255,
+            0,
+            0
+          ]
+        ]
+      ],
+      "samples": [
+        {
+          "id": "binding-0",
+          "x": 25,
+          "y": 22,
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-1",
+          "x": 25,
+          "y": 62,
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-2",
+          "x": 105,
+          "y": 22,
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-3",
+          "x": 105,
+          "y": 62,
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-0",
+          "x": 65,
+          "y": 25,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-1",
+          "x": 140,
+          "y": 70,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_samples": [
+        {
+          "id": "binding-0",
+          "point": [
+            25,
+            22
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-1",
+          "point": [
+            25,
+            62
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-2",
+          "point": [
+            105,
+            22
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-3",
+          "point": [
+            105,
+            62
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-0",
+          "point": [
+            65,
+            25
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-1",
+          "point": [
+            140,
+            70
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_regions": [
+        {
+          "id": "binding-0",
+          "rect": [
+            12,
+            12,
+            26,
+            21
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-1",
+          "rect": [
+            12,
+            52,
+            26,
+            21
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-2",
+          "rect": [
+            92,
+            12,
+            26,
+            21
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-3",
+          "rect": [
+            92,
+            52,
+            26,
+            21
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-0",
+          "rect": [
+            63,
+            23,
+            4,
+            4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-1",
+          "rect": [
+            138,
+            68,
+            4,
+            4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "sample_coordinates": "PDF page points x right/y up; image row=floor((100-y)*dpi/72)",
+      "mask": "All pixels except predeclared one-device-pixel bands around shape rectangle boundaries; expected_regions are separate inset exact controls",
+      "upstream_association": {
+        "upstream_id": null,
+        "scope": "standard-contract-only",
+        "exact_upstream_scope_established": false,
+        "upstream_input_executed": false
+      }
+    }
+  ]
+}

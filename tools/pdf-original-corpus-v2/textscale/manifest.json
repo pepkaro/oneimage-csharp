@@ -1,0 +1,3543 @@
+{
+  "schema_version": 1,
+  "batch": "ISO-TEXT-SCALE-RISE-01",
+  "fixture_count": 4,
+  "cases": [
+    {
+      "id": "textscale-tz-shape-advance",
+      "file": "inputs/textscale-tz-shape-advance.pdf",
+      "license": "MIT",
+      "contract": "Tz scales original glyph width and horizontal advancement, retaining vertical size.",
+      "layout_math": [
+        "At 100%, AB x origins=30,54; glyph ink has normal horizontal size.",
+        "At 150%, AB x origins=30,30+24*1.5=66; all glyph x distances scale1.5 and y distances remain unchanged."
+      ],
+      "spec": "ISO 32000-1:2008",
+      "spec_clauses": [
+        "9.3.4 Horizontal Scaling",
+        "9.4.4 Text Space Details",
+        "9.6.5 Type 3 Fonts"
+      ],
+      "route": "page BT/ET owned original Type3 CharProcs, Tz/Ts and named positioning controls",
+      "width": 240,
+      "height": 180,
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "rotation": 0,
+      "annotations": "none",
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "sha256": "fb6827985dde6217e0eaf7b1ceceefb2dfdd404972d6659b2bae6a1e3c761460",
+      "font": {
+        "kind": "Type3",
+        "original_design_reused": true,
+        "external_font_bytes": 0,
+        "size": 40,
+        "font_matrix": [
+          0.001,
+          0,
+          0,
+          0.001,
+          0,
+          0
+        ],
+        "glyph_stream_sha256": {
+          "A": "4b73f4c8379a88f4ca7a2c9d79c08e29f74ad580115b3d9bf53c8f01b7938392",
+          "B": "d6a2fb8e0102dbfe8cd862334fc05442bfb45d1f63c17fcbd33eff4341927e48",
+          "space": "ab7650175034cf35fac613c21f726a2d4bf45ce5c3cc557c8623936875018536"
+        }
+      },
+      "expected_glyphs": [
+        {
+          "glyph": "A",
+          "text_matrix": [
+            1,
+            0,
+            0,
+            1,
+            30,
+            120
+          ],
+          "glyph_matrix": [
+            1,
+            0,
+            0,
+            1,
+            30,
+            120
+          ],
+          "horizontal_scale": 1,
+          "text_rise": 0
+        },
+        {
+          "glyph": "B",
+          "text_matrix": [
+            1,
+            0,
+            0,
+            1,
+            54,
+            120
+          ],
+          "glyph_matrix": [
+            1,
+            0,
+            0,
+            1,
+            54,
+            120
+          ],
+          "horizontal_scale": 1,
+          "text_rise": 0
+        },
+        {
+          "glyph": "A",
+          "text_matrix": [
+            1,
+            0,
+            0,
+            1,
+            30,
+            60
+          ],
+          "glyph_matrix": [
+            1.5,
+            0,
+            0,
+            1,
+            30,
+            60
+          ],
+          "horizontal_scale": 1.5,
+          "text_rise": 0
+        },
+        {
+          "glyph": "B",
+          "text_matrix": [
+            1,
+            0,
+            0,
+            1,
+            66,
+            60
+          ],
+          "glyph_matrix": [
+            1.5,
+            0,
+            0,
+            1,
+            66,
+            60
+          ],
+          "horizontal_scale": 1.5,
+          "text_rise": 0
+        }
+      ],
+      "expected_samples": [
+        {
+          "id": "glyph-0-A-ink-0",
+          "point": [
+            32.4,
+            131.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-0-A-ink-1",
+          "point": [
+            51.6,
+            131.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-0-A-ink-2",
+          "point": [
+            42.0,
+            145.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-0-A-counter-0",
+          "point": [
+            42.0,
+            131.6
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-0",
+          "point": [
+            56.4,
+            134.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-1",
+          "point": [
+            66.0,
+            122.4
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-2",
+          "point": [
+            66.0,
+            134.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-3",
+          "point": [
+            66.0,
+            145.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-counter-0",
+          "point": [
+            66.0,
+            128.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-counter-1",
+          "point": [
+            66.0,
+            139.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-A-ink-0",
+          "point": [
+            33.6,
+            71.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-A-ink-1",
+          "point": [
+            62.4,
+            71.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-A-ink-2",
+          "point": [
+            48.0,
+            85.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-A-counter-0",
+          "point": [
+            48.0,
+            71.6
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-ink-0",
+          "point": [
+            69.6,
+            74.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-ink-1",
+          "point": [
+            84.0,
+            62.4
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-ink-2",
+          "point": [
+            84.0,
+            74.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-ink-3",
+          "point": [
+            84.0,
+            85.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-counter-0",
+          "point": [
+            84.0,
+            68.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-counter-1",
+          "point": [
+            84.0,
+            79.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "point": [
+            12.0,
+            12.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_regions": [
+        {
+          "id": "glyph-0-A-ink-0",
+          "rect": [
+            31.0,
+            121.0,
+            2.8,
+            21.2
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-0-A-ink-1",
+          "rect": [
+            50.2,
+            121.0,
+            2.8,
+            21.2
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-0-A-ink-2",
+          "rect": [
+            31.0,
+            144.2,
+            22.0,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-0-A-counter-0",
+          "rect": [
+            35.8,
+            121.0,
+            12.4,
+            21.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-0",
+          "rect": [
+            55.0,
+            121.0,
+            2.8,
+            26.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-1",
+          "rect": [
+            59.8,
+            121.0,
+            12.4,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-2",
+          "rect": [
+            59.8,
+            132.6,
+            12.4,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-3",
+          "rect": [
+            59.8,
+            144.2,
+            12.4,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-counter-0",
+          "rect": [
+            59.8,
+            125.8,
+            12.4,
+            4.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-counter-1",
+          "rect": [
+            59.8,
+            137.4,
+            12.4,
+            4.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-A-ink-0",
+          "rect": [
+            31.0,
+            61.0,
+            5.2,
+            21.2
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-A-ink-1",
+          "rect": [
+            59.8,
+            61.0,
+            5.2,
+            21.2
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-A-ink-2",
+          "rect": [
+            31.0,
+            84.2,
+            34.0,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-A-counter-0",
+          "rect": [
+            38.2,
+            61.0,
+            19.6,
+            21.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-ink-0",
+          "rect": [
+            67.0,
+            61.0,
+            5.2,
+            26.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-ink-1",
+          "rect": [
+            74.2,
+            61.0,
+            19.6,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-ink-2",
+          "rect": [
+            74.2,
+            72.6,
+            19.6,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-ink-3",
+          "rect": [
+            74.2,
+            84.2,
+            19.6,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-counter-0",
+          "rect": [
+            74.2,
+            65.8,
+            19.6,
+            4.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-counter-1",
+          "rect": [
+            74.2,
+            77.4,
+            19.6,
+            4.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "rect": [
+            4,
+            4,
+            16,
+            16
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "region_rule": "Original glyph ink/counter rectangles transformed from explicit effective glyph matrices, inset 1 PDF point before references; boundaries unscored.",
+      "association": {
+        "scope": "standard-contract-only",
+        "upstream_id": null,
+        "upstream_entry_validated": false,
+        "reason": "No matching upstream scene scope established."
+      }
+    },
+    {
+      "id": "textscale-ts-baselines",
+      "file": "inputs/textscale-ts-baselines.pdf",
+      "license": "MIT",
+      "contract": "Positive/negative Ts shifts glyph baselines without changing text-matrix origins or horizontal advances.",
+      "layout_math": [
+        "All raw text baselines are y80; rise0/+12/-8 paints at y80/92/72.",
+        "A-to-B x advance remains24 for every rise."
+      ],
+      "spec": "ISO 32000-1:2008",
+      "spec_clauses": [
+        "9.3.7 Text Rise",
+        "9.4.4 Text Space Details",
+        "9.6.5 Type 3 Fonts"
+      ],
+      "route": "page BT/ET owned original Type3 CharProcs, Tz/Ts and named positioning controls",
+      "width": 240,
+      "height": 180,
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "rotation": 0,
+      "annotations": "none",
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "sha256": "06d7756c3c964afb9ad971659f698a426ddb35b2e9cba034e9e8e1f6ef778d7c",
+      "font": {
+        "kind": "Type3",
+        "original_design_reused": true,
+        "external_font_bytes": 0,
+        "size": 40,
+        "font_matrix": [
+          0.001,
+          0,
+          0,
+          0.001,
+          0,
+          0
+        ],
+        "glyph_stream_sha256": {
+          "A": "4b73f4c8379a88f4ca7a2c9d79c08e29f74ad580115b3d9bf53c8f01b7938392",
+          "B": "d6a2fb8e0102dbfe8cd862334fc05442bfb45d1f63c17fcbd33eff4341927e48",
+          "space": "ab7650175034cf35fac613c21f726a2d4bf45ce5c3cc557c8623936875018536"
+        }
+      },
+      "expected_glyphs": [
+        {
+          "glyph": "A",
+          "text_matrix": [
+            1,
+            0,
+            0,
+            1,
+            30,
+            80
+          ],
+          "glyph_matrix": [
+            1,
+            0,
+            0,
+            1,
+            30,
+            80
+          ],
+          "horizontal_scale": 1,
+          "text_rise": 0
+        },
+        {
+          "glyph": "B",
+          "text_matrix": [
+            1,
+            0,
+            0,
+            1,
+            54,
+            80
+          ],
+          "glyph_matrix": [
+            1,
+            0,
+            0,
+            1,
+            54,
+            80
+          ],
+          "horizontal_scale": 1,
+          "text_rise": 0
+        },
+        {
+          "glyph": "A",
+          "text_matrix": [
+            1,
+            0,
+            0,
+            1,
+            110,
+            80
+          ],
+          "glyph_matrix": [
+            1,
+            0,
+            0,
+            1,
+            110,
+            92
+          ],
+          "horizontal_scale": 1,
+          "text_rise": 12
+        },
+        {
+          "glyph": "B",
+          "text_matrix": [
+            1,
+            0,
+            0,
+            1,
+            134,
+            80
+          ],
+          "glyph_matrix": [
+            1,
+            0,
+            0,
+            1,
+            134,
+            92
+          ],
+          "horizontal_scale": 1,
+          "text_rise": 12
+        },
+        {
+          "glyph": "A",
+          "text_matrix": [
+            1,
+            0,
+            0,
+            1,
+            170,
+            80
+          ],
+          "glyph_matrix": [
+            1,
+            0,
+            0,
+            1,
+            170,
+            72
+          ],
+          "horizontal_scale": 1,
+          "text_rise": -8
+        },
+        {
+          "glyph": "B",
+          "text_matrix": [
+            1,
+            0,
+            0,
+            1,
+            194,
+            80
+          ],
+          "glyph_matrix": [
+            1,
+            0,
+            0,
+            1,
+            194,
+            72
+          ],
+          "horizontal_scale": 1,
+          "text_rise": -8
+        }
+      ],
+      "expected_samples": [
+        {
+          "id": "glyph-0-A-ink-0",
+          "point": [
+            32.4,
+            91.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-0-A-ink-1",
+          "point": [
+            51.6,
+            91.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-0-A-ink-2",
+          "point": [
+            42.0,
+            105.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-0-A-counter-0",
+          "point": [
+            42.0,
+            91.6
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-0",
+          "point": [
+            56.4,
+            94.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-1",
+          "point": [
+            66.0,
+            82.4
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-2",
+          "point": [
+            66.0,
+            94.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-3",
+          "point": [
+            66.0,
+            105.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-counter-0",
+          "point": [
+            66.0,
+            88.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-counter-1",
+          "point": [
+            66.0,
+            99.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-A-ink-0",
+          "point": [
+            112.4,
+            103.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-A-ink-1",
+          "point": [
+            131.6,
+            103.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-A-ink-2",
+          "point": [
+            122.0,
+            117.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-A-counter-0",
+          "point": [
+            122.0,
+            103.6
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-ink-0",
+          "point": [
+            136.4,
+            106.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-ink-1",
+          "point": [
+            146.0,
+            94.4
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-ink-2",
+          "point": [
+            146.0,
+            106.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-ink-3",
+          "point": [
+            146.0,
+            117.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-counter-0",
+          "point": [
+            146.0,
+            100.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-counter-1",
+          "point": [
+            146.0,
+            111.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-4-A-ink-0",
+          "point": [
+            172.4,
+            83.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-4-A-ink-1",
+          "point": [
+            191.6,
+            83.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-4-A-ink-2",
+          "point": [
+            182.0,
+            97.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-4-A-counter-0",
+          "point": [
+            182.0,
+            83.6
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-5-B-ink-0",
+          "point": [
+            196.4,
+            86.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-5-B-ink-1",
+          "point": [
+            206.0,
+            74.4
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-5-B-ink-2",
+          "point": [
+            206.0,
+            86.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-5-B-ink-3",
+          "point": [
+            206.0,
+            97.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-5-B-counter-0",
+          "point": [
+            206.0,
+            80.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-5-B-counter-1",
+          "point": [
+            206.0,
+            91.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "point": [
+            12.0,
+            12.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_regions": [
+        {
+          "id": "glyph-0-A-ink-0",
+          "rect": [
+            31.0,
+            81.0,
+            2.8,
+            21.2
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-0-A-ink-1",
+          "rect": [
+            50.2,
+            81.0,
+            2.8,
+            21.2
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-0-A-ink-2",
+          "rect": [
+            31.0,
+            104.2,
+            22.0,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-0-A-counter-0",
+          "rect": [
+            35.8,
+            81.0,
+            12.4,
+            21.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-0",
+          "rect": [
+            55.0,
+            81.0,
+            2.8,
+            26.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-1",
+          "rect": [
+            59.8,
+            81.0,
+            12.4,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-2",
+          "rect": [
+            59.8,
+            92.6,
+            12.4,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-3",
+          "rect": [
+            59.8,
+            104.2,
+            12.4,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-counter-0",
+          "rect": [
+            59.8,
+            85.8,
+            12.4,
+            4.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-counter-1",
+          "rect": [
+            59.8,
+            97.4,
+            12.4,
+            4.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-A-ink-0",
+          "rect": [
+            111.0,
+            93.0,
+            2.8,
+            21.2
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-A-ink-1",
+          "rect": [
+            130.2,
+            93.0,
+            2.8,
+            21.2
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-A-ink-2",
+          "rect": [
+            111.0,
+            116.2,
+            22.0,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-A-counter-0",
+          "rect": [
+            115.8,
+            93.0,
+            12.4,
+            21.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-ink-0",
+          "rect": [
+            135.0,
+            93.0,
+            2.8,
+            26.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-ink-1",
+          "rect": [
+            139.8,
+            93.0,
+            12.4,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-ink-2",
+          "rect": [
+            139.8,
+            104.6,
+            12.4,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-ink-3",
+          "rect": [
+            139.8,
+            116.2,
+            12.4,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-counter-0",
+          "rect": [
+            139.8,
+            97.8,
+            12.4,
+            4.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-counter-1",
+          "rect": [
+            139.8,
+            109.4,
+            12.4,
+            4.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-4-A-ink-0",
+          "rect": [
+            171.0,
+            73.0,
+            2.8,
+            21.2
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-4-A-ink-1",
+          "rect": [
+            190.2,
+            73.0,
+            2.8,
+            21.2
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-4-A-ink-2",
+          "rect": [
+            171.0,
+            96.2,
+            22.0,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-4-A-counter-0",
+          "rect": [
+            175.8,
+            73.0,
+            12.4,
+            21.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-5-B-ink-0",
+          "rect": [
+            195.0,
+            73.0,
+            2.8,
+            26.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-5-B-ink-1",
+          "rect": [
+            199.8,
+            73.0,
+            12.4,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-5-B-ink-2",
+          "rect": [
+            199.8,
+            84.6,
+            12.4,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-5-B-ink-3",
+          "rect": [
+            199.8,
+            96.2,
+            12.4,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-5-B-counter-0",
+          "rect": [
+            199.8,
+            77.8,
+            12.4,
+            4.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-5-B-counter-1",
+          "rect": [
+            199.8,
+            89.4,
+            12.4,
+            4.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "rect": [
+            4,
+            4,
+            16,
+            16
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "region_rule": "Original glyph ink/counter rectangles transformed from explicit effective glyph matrices, inset 1 PDF point before references; boundaries unscored.",
+      "association": {
+        "scope": "standard-contract-only",
+        "upstream_id": null,
+        "upstream_entry_validated": false,
+        "reason": "No matching upstream scene scope established."
+      }
+    },
+    {
+      "id": "textscale-tz-spacing",
+      "file": "inputs/textscale-tz-spacing.pdf",
+      "license": "MIT",
+      "contract": "Tz scales character spacing and single-byte word spacing together with glyph advancement.",
+      "layout_math": [
+        "Normal A-space-B second visible origin x=30+(24+3)+(10+3+7)=77.",
+        "At150%, x=30+((24+3)+(10+3+7))*1.5=100.5."
+      ],
+      "spec": "ISO 32000-1:2008",
+      "spec_clauses": [
+        "9.3.4 Horizontal Scaling",
+        "9.3.2 Character Spacing",
+        "9.3.3 Word Spacing",
+        "9.6.5 Type 3 Fonts"
+      ],
+      "route": "page BT/ET owned original Type3 CharProcs, Tz/Ts and named positioning controls",
+      "width": 240,
+      "height": 180,
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "rotation": 0,
+      "annotations": "none",
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "sha256": "068ef5ebacde3325b33b8ebf7233255fb72b137e24a51bdc03ab9c1b0a182c19",
+      "font": {
+        "kind": "Type3",
+        "original_design_reused": true,
+        "external_font_bytes": 0,
+        "size": 40,
+        "font_matrix": [
+          0.001,
+          0,
+          0,
+          0.001,
+          0,
+          0
+        ],
+        "glyph_stream_sha256": {
+          "A": "4b73f4c8379a88f4ca7a2c9d79c08e29f74ad580115b3d9bf53c8f01b7938392",
+          "B": "d6a2fb8e0102dbfe8cd862334fc05442bfb45d1f63c17fcbd33eff4341927e48",
+          "space": "ab7650175034cf35fac613c21f726a2d4bf45ce5c3cc557c8623936875018536"
+        }
+      },
+      "expected_glyphs": [
+        {
+          "glyph": "A",
+          "text_matrix": [
+            1,
+            0,
+            0,
+            1,
+            30,
+            120
+          ],
+          "glyph_matrix": [
+            1,
+            0,
+            0,
+            1,
+            30,
+            120
+          ],
+          "horizontal_scale": 1,
+          "text_rise": 0
+        },
+        {
+          "glyph": "B",
+          "text_matrix": [
+            1,
+            0,
+            0,
+            1,
+            77,
+            120
+          ],
+          "glyph_matrix": [
+            1,
+            0,
+            0,
+            1,
+            77,
+            120
+          ],
+          "horizontal_scale": 1,
+          "text_rise": 0
+        },
+        {
+          "glyph": "A",
+          "text_matrix": [
+            1,
+            0,
+            0,
+            1,
+            30,
+            60
+          ],
+          "glyph_matrix": [
+            1.5,
+            0,
+            0,
+            1,
+            30,
+            60
+          ],
+          "horizontal_scale": 1.5,
+          "text_rise": 0
+        },
+        {
+          "glyph": "B",
+          "text_matrix": [
+            1,
+            0,
+            0,
+            1,
+            100.5,
+            60
+          ],
+          "glyph_matrix": [
+            1.5,
+            0,
+            0,
+            1,
+            100.5,
+            60
+          ],
+          "horizontal_scale": 1.5,
+          "text_rise": 0
+        }
+      ],
+      "expected_samples": [
+        {
+          "id": "glyph-0-A-ink-0",
+          "point": [
+            32.4,
+            131.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-0-A-ink-1",
+          "point": [
+            51.6,
+            131.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-0-A-ink-2",
+          "point": [
+            42.0,
+            145.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-0-A-counter-0",
+          "point": [
+            42.0,
+            131.6
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-0",
+          "point": [
+            79.4,
+            134.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-1",
+          "point": [
+            89.0,
+            122.4
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-2",
+          "point": [
+            89.0,
+            134.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-3",
+          "point": [
+            89.0,
+            145.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-counter-0",
+          "point": [
+            89.0,
+            128.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-counter-1",
+          "point": [
+            89.0,
+            139.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-A-ink-0",
+          "point": [
+            33.6,
+            71.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-A-ink-1",
+          "point": [
+            62.4,
+            71.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-A-ink-2",
+          "point": [
+            48.0,
+            85.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-A-counter-0",
+          "point": [
+            48.0,
+            71.6
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-ink-0",
+          "point": [
+            104.1,
+            74.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-ink-1",
+          "point": [
+            118.5,
+            62.4
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-ink-2",
+          "point": [
+            118.5,
+            74.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-ink-3",
+          "point": [
+            118.5,
+            85.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-counter-0",
+          "point": [
+            118.5,
+            68.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-counter-1",
+          "point": [
+            118.5,
+            79.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "point": [
+            12.0,
+            12.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_regions": [
+        {
+          "id": "glyph-0-A-ink-0",
+          "rect": [
+            31.0,
+            121.0,
+            2.8,
+            21.2
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-0-A-ink-1",
+          "rect": [
+            50.2,
+            121.0,
+            2.8,
+            21.2
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-0-A-ink-2",
+          "rect": [
+            31.0,
+            144.2,
+            22.0,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-0-A-counter-0",
+          "rect": [
+            35.8,
+            121.0,
+            12.4,
+            21.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-0",
+          "rect": [
+            78.0,
+            121.0,
+            2.8,
+            26.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-1",
+          "rect": [
+            82.8,
+            121.0,
+            12.4,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-2",
+          "rect": [
+            82.8,
+            132.6,
+            12.4,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-3",
+          "rect": [
+            82.8,
+            144.2,
+            12.4,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-counter-0",
+          "rect": [
+            82.8,
+            125.8,
+            12.4,
+            4.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-counter-1",
+          "rect": [
+            82.8,
+            137.4,
+            12.4,
+            4.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-A-ink-0",
+          "rect": [
+            31.0,
+            61.0,
+            5.2,
+            21.2
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-A-ink-1",
+          "rect": [
+            59.8,
+            61.0,
+            5.2,
+            21.2
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-A-ink-2",
+          "rect": [
+            31.0,
+            84.2,
+            34.0,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-A-counter-0",
+          "rect": [
+            38.2,
+            61.0,
+            19.6,
+            21.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-ink-0",
+          "rect": [
+            101.5,
+            61.0,
+            5.2,
+            26.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-ink-1",
+          "rect": [
+            108.7,
+            61.0,
+            19.6,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-ink-2",
+          "rect": [
+            108.7,
+            72.6,
+            19.6,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-ink-3",
+          "rect": [
+            108.7,
+            84.2,
+            19.6,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-counter-0",
+          "rect": [
+            108.7,
+            65.8,
+            19.6,
+            4.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-counter-1",
+          "rect": [
+            108.7,
+            77.4,
+            19.6,
+            4.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "rect": [
+            4,
+            4,
+            16,
+            16
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "region_rule": "Original glyph ink/counter rectangles transformed from explicit effective glyph matrices, inset 1 PDF point before references; boundaries unscored.",
+      "association": {
+        "scope": "standard-contract-only",
+        "upstream_id": null,
+        "upstream_entry_validated": false,
+        "reason": "No matching upstream scene scope established."
+      }
+    },
+    {
+      "id": "textscale-tz-tj-rise",
+      "file": "inputs/textscale-tz-tj-rise.pdf",
+      "license": "MIT",
+      "contract": "Tz scales signed TJ displacements and character spacing; Ts shifts painting independently.",
+      "layout_math": [
+        "Normal row origins x30,58,96 with Tc8 and TJ100/-250.",
+        "At150%, Bx=30+(24+8-4)*1.5=72; Ax=72+(20+8+10)*1.5=129.",
+        "Second text baseline y60, painted y70 due to rise10; horizontal scale does not multiply rise."
+      ],
+      "spec": "ISO 32000-1:2008",
+      "spec_clauses": [
+        "9.3.4 Horizontal Scaling",
+        "9.3.7 Text Rise",
+        "9.4.3 Text-Showing Operators",
+        "9.4.4 Text Space Details",
+        "9.6.5 Type 3 Fonts"
+      ],
+      "route": "page BT/ET owned original Type3 CharProcs, Tz/Ts and named positioning controls",
+      "width": 240,
+      "height": 180,
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "rotation": 0,
+      "annotations": "none",
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "sha256": "e9962c4b16c297745b9d25932329e6c30871cbaddaaf900e0e33ec3806ae13a7",
+      "font": {
+        "kind": "Type3",
+        "original_design_reused": true,
+        "external_font_bytes": 0,
+        "size": 40,
+        "font_matrix": [
+          0.001,
+          0,
+          0,
+          0.001,
+          0,
+          0
+        ],
+        "glyph_stream_sha256": {
+          "A": "4b73f4c8379a88f4ca7a2c9d79c08e29f74ad580115b3d9bf53c8f01b7938392",
+          "B": "d6a2fb8e0102dbfe8cd862334fc05442bfb45d1f63c17fcbd33eff4341927e48",
+          "space": "ab7650175034cf35fac613c21f726a2d4bf45ce5c3cc557c8623936875018536"
+        }
+      },
+      "expected_glyphs": [
+        {
+          "glyph": "A",
+          "text_matrix": [
+            1,
+            0,
+            0,
+            1,
+            30,
+            120
+          ],
+          "glyph_matrix": [
+            1,
+            0,
+            0,
+            1,
+            30,
+            120
+          ],
+          "horizontal_scale": 1,
+          "text_rise": 0
+        },
+        {
+          "glyph": "B",
+          "text_matrix": [
+            1,
+            0,
+            0,
+            1,
+            58,
+            120
+          ],
+          "glyph_matrix": [
+            1,
+            0,
+            0,
+            1,
+            58,
+            120
+          ],
+          "horizontal_scale": 1,
+          "text_rise": 0
+        },
+        {
+          "glyph": "A",
+          "text_matrix": [
+            1,
+            0,
+            0,
+            1,
+            96,
+            120
+          ],
+          "glyph_matrix": [
+            1,
+            0,
+            0,
+            1,
+            96,
+            120
+          ],
+          "horizontal_scale": 1,
+          "text_rise": 0
+        },
+        {
+          "glyph": "A",
+          "text_matrix": [
+            1,
+            0,
+            0,
+            1,
+            30,
+            60
+          ],
+          "glyph_matrix": [
+            1.5,
+            0,
+            0,
+            1,
+            30,
+            70
+          ],
+          "horizontal_scale": 1.5,
+          "text_rise": 10
+        },
+        {
+          "glyph": "B",
+          "text_matrix": [
+            1,
+            0,
+            0,
+            1,
+            72,
+            60
+          ],
+          "glyph_matrix": [
+            1.5,
+            0,
+            0,
+            1,
+            72,
+            70
+          ],
+          "horizontal_scale": 1.5,
+          "text_rise": 10
+        },
+        {
+          "glyph": "A",
+          "text_matrix": [
+            1,
+            0,
+            0,
+            1,
+            129,
+            60
+          ],
+          "glyph_matrix": [
+            1.5,
+            0,
+            0,
+            1,
+            129,
+            70
+          ],
+          "horizontal_scale": 1.5,
+          "text_rise": 10
+        }
+      ],
+      "expected_samples": [
+        {
+          "id": "glyph-0-A-ink-0",
+          "point": [
+            32.4,
+            131.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-0-A-ink-1",
+          "point": [
+            51.6,
+            131.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-0-A-ink-2",
+          "point": [
+            42.0,
+            145.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-0-A-counter-0",
+          "point": [
+            42.0,
+            131.6
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-0",
+          "point": [
+            60.4,
+            134.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-1",
+          "point": [
+            70.0,
+            122.4
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-2",
+          "point": [
+            70.0,
+            134.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-3",
+          "point": [
+            70.0,
+            145.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-counter-0",
+          "point": [
+            70.0,
+            128.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-counter-1",
+          "point": [
+            70.0,
+            139.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-A-ink-0",
+          "point": [
+            98.4,
+            131.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-A-ink-1",
+          "point": [
+            117.6,
+            131.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-A-ink-2",
+          "point": [
+            108.0,
+            145.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-A-counter-0",
+          "point": [
+            108.0,
+            131.6
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-A-ink-0",
+          "point": [
+            33.6,
+            81.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-A-ink-1",
+          "point": [
+            62.4,
+            81.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-A-ink-2",
+          "point": [
+            48.0,
+            95.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-A-counter-0",
+          "point": [
+            48.0,
+            81.6
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-4-B-ink-0",
+          "point": [
+            75.6,
+            84.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-4-B-ink-1",
+          "point": [
+            90.0,
+            72.4
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-4-B-ink-2",
+          "point": [
+            90.0,
+            84.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-4-B-ink-3",
+          "point": [
+            90.0,
+            95.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-4-B-counter-0",
+          "point": [
+            90.0,
+            78.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-4-B-counter-1",
+          "point": [
+            90.0,
+            89.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-5-A-ink-0",
+          "point": [
+            132.6,
+            81.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-5-A-ink-1",
+          "point": [
+            161.4,
+            81.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-5-A-ink-2",
+          "point": [
+            147.0,
+            95.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-5-A-counter-0",
+          "point": [
+            147.0,
+            81.6
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "point": [
+            12.0,
+            12.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_regions": [
+        {
+          "id": "glyph-0-A-ink-0",
+          "rect": [
+            31.0,
+            121.0,
+            2.8,
+            21.2
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-0-A-ink-1",
+          "rect": [
+            50.2,
+            121.0,
+            2.8,
+            21.2
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-0-A-ink-2",
+          "rect": [
+            31.0,
+            144.2,
+            22.0,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-0-A-counter-0",
+          "rect": [
+            35.8,
+            121.0,
+            12.4,
+            21.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-0",
+          "rect": [
+            59.0,
+            121.0,
+            2.8,
+            26.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-1",
+          "rect": [
+            63.8,
+            121.0,
+            12.4,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-2",
+          "rect": [
+            63.8,
+            132.6,
+            12.4,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-3",
+          "rect": [
+            63.8,
+            144.2,
+            12.4,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-counter-0",
+          "rect": [
+            63.8,
+            125.8,
+            12.4,
+            4.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-counter-1",
+          "rect": [
+            63.8,
+            137.4,
+            12.4,
+            4.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-A-ink-0",
+          "rect": [
+            97.0,
+            121.0,
+            2.8,
+            21.2
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-A-ink-1",
+          "rect": [
+            116.2,
+            121.0,
+            2.8,
+            21.2
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-A-ink-2",
+          "rect": [
+            97.0,
+            144.2,
+            22.0,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-A-counter-0",
+          "rect": [
+            101.8,
+            121.0,
+            12.4,
+            21.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-A-ink-0",
+          "rect": [
+            31.0,
+            71.0,
+            5.2,
+            21.2
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-A-ink-1",
+          "rect": [
+            59.8,
+            71.0,
+            5.2,
+            21.2
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-A-ink-2",
+          "rect": [
+            31.0,
+            94.2,
+            34.0,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-A-counter-0",
+          "rect": [
+            38.2,
+            71.0,
+            19.6,
+            21.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-4-B-ink-0",
+          "rect": [
+            73.0,
+            71.0,
+            5.2,
+            26.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-4-B-ink-1",
+          "rect": [
+            80.2,
+            71.0,
+            19.6,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-4-B-ink-2",
+          "rect": [
+            80.2,
+            82.6,
+            19.6,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-4-B-ink-3",
+          "rect": [
+            80.2,
+            94.2,
+            19.6,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-4-B-counter-0",
+          "rect": [
+            80.2,
+            75.8,
+            19.6,
+            4.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-4-B-counter-1",
+          "rect": [
+            80.2,
+            87.4,
+            19.6,
+            4.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-5-A-ink-0",
+          "rect": [
+            130.0,
+            71.0,
+            5.2,
+            21.2
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-5-A-ink-1",
+          "rect": [
+            158.8,
+            71.0,
+            5.2,
+            21.2
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-5-A-ink-2",
+          "rect": [
+            130.0,
+            94.2,
+            34.0,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-5-A-counter-0",
+          "rect": [
+            137.2,
+            71.0,
+            19.6,
+            21.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "rect": [
+            4,
+            4,
+            16,
+            16
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "region_rule": "Original glyph ink/counter rectangles transformed from explicit effective glyph matrices, inset 1 PDF point before references; boundaries unscored.",
+      "association": {
+        "scope": "standard-contract-only",
+        "upstream_id": null,
+        "upstream_entry_validated": false,
+        "reason": "No matching upstream scene scope established."
+      }
+    }
+  ]
+}

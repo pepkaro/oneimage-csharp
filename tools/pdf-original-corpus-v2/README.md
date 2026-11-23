@@ -1,6 +1,6 @@
 # Original PDF behavior corpus
 
-The canonical fixture root is `tests/testdata/pdf-original-v2`, ordered by verified ISO 32000-2:2020 clause headings. It contains 49 independently authored MIT PDFs, 88 selected expected PNG paths for 44 reference-agreed cases, and five held cases. The expected PNGs contain 78 byte-unique images; 294 independent capture paths contain 264 byte-unique images. Encoding variants are separate routes, not extra global behaviors.
+The canonical fixture root is `tests/testdata/pdf-original-v2`, ordered by verified ISO 32000-2:2020 clause headings. It contains 56 independently authored MIT PDFs, 102 selected expected PNG paths for 51 reference-agreed cases, and five held cases. The expected PNGs contain 78 byte-unique images; 294 independent capture paths contain 264 byte-unique images. Encoding variants are separate routes, not extra global behaviors.
 
 [Behavior catalog](CATALOG.md), [subsystem view](SUBSYSTEMS.md), [case ledger](cases.json), [clause backlog](backlog.json), [suite gaps](suite-coverage.json), [source inventory](inventory.json), and [artifact audit](reconciliation.json) all refer to the same canonical assets. No fixtures are duplicated between views. Source IDs are metadata only: zero upstream inputs executed and zero upstream IDs credited. No filename-based or speculative mapping earns coverage.
 
@@ -47,3 +47,7 @@ The grader verifies that accepted PDFs/goldens match an existing commit before e
 No upstream/private PDF, font, golden, test source, vulnerability, malformed/crash/stress reproducer or private patch is included. The scoped behavior backlog is incomplete; inventory completion is not suite parity. Windows execution, WebView speed, native text weight and speech remain untested here.
 
 Checkpoint attestation: Codex, 2026-11-23 UTC. Independently authored sources and generated assets are MIT. GitHub API commits are unsigned; Signed-off-by is an authorship attestation, not a cryptographic signature.
+
+## Third batch, before product grading
+
+Seven new originals cover resource-category isolation and horizontal scaling/text rise. All42new reference variants pass;14new expected PNGs are accepted. Alpha classification creates noPDFs or goldens: source-backedmodels match24freshheld-PDFrenders and138240interiorpixels;8directCanvascontrols reproducePDF.jsbackendvalues. Thefourfractionalalphacasesstayheld because no normativebyteoracleisestablished. See alpha-classify/README.md and batch3-checkpoint.json. Product grading follows this acceptancecommit.

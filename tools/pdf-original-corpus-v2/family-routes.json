@@ -133,6 +133,23 @@
       ]
     ]
   },
+  "resources2": {
+    "generator": "generator.py",
+    "reference_steps": [
+      [
+        "references.py"
+      ],
+      [
+        "score.py"
+      ],
+      [
+        "verify-regions.py"
+      ],
+      [
+        "verify.py"
+      ]
+    ]
+  },
   "stroke": {
     "generator": "generate.py",
     "reference_steps": [
@@ -148,6 +165,21 @@
     ]
   },
   "text": {
+    "generator": "generate.py",
+    "reference_steps": [
+      [
+        "run-references.py",
+        "{pdfjs}"
+      ],
+      [
+        "verify-regions.py"
+      ],
+      [
+        "verify.py"
+      ]
+    ]
+  },
+  "textscale": {
     "generator": "generate.py",
     "reference_steps": [
       [

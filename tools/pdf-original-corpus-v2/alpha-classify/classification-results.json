@@ -1,0 +1,670 @@
+{
+  "slice": "ISO-ALPHA-QUANTIZATION-CLASSIFY-01",
+  "existing_original_pdfs": 4,
+  "new_original_pdfs": 0,
+  "new_goldens": 0,
+  "fresh_pdf_reference_calls": 24,
+  "predictions_matched": 24,
+  "predictions_failed": 0,
+  "pdf_reference_capture_bytes_unchanged": 24,
+  "direct_canvas_controls": 8,
+  "normative_oracle_established": false,
+  "held_cases_remain_held": true,
+  "upstream_credited": 0,
+  "product_runs": 0,
+  "scope": "Opaque uniform RGB interiors on white; no edge/group/color-management/other-alpha conclusions",
+  "rows": [
+    {
+      "id": "alpha-fill-fraction06",
+      "engine": "pdfium",
+      "dpi": 72,
+      "alpha": 0.6,
+      "modeled_alpha_byte": 153,
+      "source": [
+        255,
+        0,
+        0
+      ],
+      "observed": [
+        255,
+        102,
+        102
+      ],
+      "predicted": [
+        255,
+        102,
+        102
+      ],
+      "prediction_matches": true,
+      "capture_bytes_match_prior": true,
+      "pdf_sha256": "2c7bc20eff979b0713adaae7ee31c4232272e8c7cc0924df717c9047b4281d45",
+      "scored_interior_pixels": 3744,
+      "different_interior_pixels": 0
+    },
+    {
+      "id": "alpha-fill-fraction06",
+      "engine": "mupdf",
+      "dpi": 72,
+      "alpha": 0.6,
+      "modeled_alpha_byte": 153,
+      "source": [
+        255,
+        0,
+        0
+      ],
+      "observed": [
+        255,
+        101,
+        101
+      ],
+      "predicted": [
+        255,
+        101,
+        101
+      ],
+      "prediction_matches": true,
+      "capture_bytes_match_prior": true,
+      "pdf_sha256": "2c7bc20eff979b0713adaae7ee31c4232272e8c7cc0924df717c9047b4281d45",
+      "scored_interior_pixels": 3744,
+      "different_interior_pixels": 0
+    },
+    {
+      "id": "alpha-fill-fraction06",
+      "engine": "pdfjs",
+      "dpi": 72,
+      "alpha": 0.6,
+      "modeled_alpha_byte": 153,
+      "source": [
+        255,
+        0,
+        0
+      ],
+      "observed": [
+        255,
+        102,
+        102
+      ],
+      "predicted": [
+        255,
+        102,
+        102
+      ],
+      "prediction_matches": true,
+      "capture_bytes_match_prior": true,
+      "pdf_sha256": "2c7bc20eff979b0713adaae7ee31c4232272e8c7cc0924df717c9047b4281d45",
+      "scored_interior_pixels": 3744,
+      "different_interior_pixels": 0
+    },
+    {
+      "id": "alpha-fill-fraction06",
+      "engine": "pdfium",
+      "dpi": 144,
+      "alpha": 0.6,
+      "modeled_alpha_byte": 153,
+      "source": [
+        255,
+        0,
+        0
+      ],
+      "observed": [
+        255,
+        102,
+        102
+      ],
+      "predicted": [
+        255,
+        102,
+        102
+      ],
+      "prediction_matches": true,
+      "capture_bytes_match_prior": true,
+      "pdf_sha256": "2c7bc20eff979b0713adaae7ee31c4232272e8c7cc0924df717c9047b4281d45",
+      "scored_interior_pixels": 14976,
+      "different_interior_pixels": 0
+    },
+    {
+      "id": "alpha-fill-fraction06",
+      "engine": "mupdf",
+      "dpi": 144,
+      "alpha": 0.6,
+      "modeled_alpha_byte": 153,
+      "source": [
+        255,
+        0,
+        0
+      ],
+      "observed": [
+        255,
+        101,
+        101
+      ],
+      "predicted": [
+        255,
+        101,
+        101
+      ],
+      "prediction_matches": true,
+      "capture_bytes_match_prior": true,
+      "pdf_sha256": "2c7bc20eff979b0713adaae7ee31c4232272e8c7cc0924df717c9047b4281d45",
+      "scored_interior_pixels": 14976,
+      "different_interior_pixels": 0
+    },
+    {
+      "id": "alpha-fill-fraction06",
+      "engine": "pdfjs",
+      "dpi": 144,
+      "alpha": 0.6,
+      "modeled_alpha_byte": 153,
+      "source": [
+        255,
+        0,
+        0
+      ],
+      "observed": [
+        255,
+        102,
+        102
+      ],
+      "predicted": [
+        255,
+        102,
+        102
+      ],
+      "prediction_matches": true,
+      "capture_bytes_match_prior": true,
+      "pdf_sha256": "2c7bc20eff979b0713adaae7ee31c4232272e8c7cc0924df717c9047b4281d45",
+      "scored_interior_pixels": 14976,
+      "different_interior_pixels": 0
+    },
+    {
+      "id": "alpha-stroke-fraction06",
+      "engine": "pdfium",
+      "dpi": 72,
+      "alpha": 0.6,
+      "modeled_alpha_byte": 153,
+      "source": [
+        0,
+        0,
+        255
+      ],
+      "observed": [
+        102,
+        102,
+        255
+      ],
+      "predicted": [
+        102,
+        102,
+        255
+      ],
+      "prediction_matches": true,
+      "capture_bytes_match_prior": true,
+      "pdf_sha256": "de8613f491f0223d25d52b04c189e4f965980b9e8575b695b79e05ade5057aa6",
+      "scored_interior_pixels": 864,
+      "different_interior_pixels": 0
+    },
+    {
+      "id": "alpha-stroke-fraction06",
+      "engine": "mupdf",
+      "dpi": 72,
+      "alpha": 0.6,
+      "modeled_alpha_byte": 153,
+      "source": [
+        0,
+        0,
+        255
+      ],
+      "observed": [
+        101,
+        101,
+        255
+      ],
+      "predicted": [
+        101,
+        101,
+        255
+      ],
+      "prediction_matches": true,
+      "capture_bytes_match_prior": true,
+      "pdf_sha256": "de8613f491f0223d25d52b04c189e4f965980b9e8575b695b79e05ade5057aa6",
+      "scored_interior_pixels": 864,
+      "different_interior_pixels": 0
+    },
+    {
+      "id": "alpha-stroke-fraction06",
+      "engine": "pdfjs",
+      "dpi": 72,
+      "alpha": 0.6,
+      "modeled_alpha_byte": 153,
+      "source": [
+        0,
+        0,
+        255
+      ],
+      "observed": [
+        102,
+        102,
+        255
+      ],
+      "predicted": [
+        102,
+        102,
+        255
+      ],
+      "prediction_matches": true,
+      "capture_bytes_match_prior": true,
+      "pdf_sha256": "de8613f491f0223d25d52b04c189e4f965980b9e8575b695b79e05ade5057aa6",
+      "scored_interior_pixels": 864,
+      "different_interior_pixels": 0
+    },
+    {
+      "id": "alpha-stroke-fraction06",
+      "engine": "pdfium",
+      "dpi": 144,
+      "alpha": 0.6,
+      "modeled_alpha_byte": 153,
+      "source": [
+        0,
+        0,
+        255
+      ],
+      "observed": [
+        102,
+        102,
+        255
+      ],
+      "predicted": [
+        102,
+        102,
+        255
+      ],
+      "prediction_matches": true,
+      "capture_bytes_match_prior": true,
+      "pdf_sha256": "de8613f491f0223d25d52b04c189e4f965980b9e8575b695b79e05ade5057aa6",
+      "scored_interior_pixels": 3456,
+      "different_interior_pixels": 0
+    },
+    {
+      "id": "alpha-stroke-fraction06",
+      "engine": "mupdf",
+      "dpi": 144,
+      "alpha": 0.6,
+      "modeled_alpha_byte": 153,
+      "source": [
+        0,
+        0,
+        255
+      ],
+      "observed": [
+        101,
+        101,
+        255
+      ],
+      "predicted": [
+        101,
+        101,
+        255
+      ],
+      "prediction_matches": true,
+      "capture_bytes_match_prior": true,
+      "pdf_sha256": "de8613f491f0223d25d52b04c189e4f965980b9e8575b695b79e05ade5057aa6",
+      "scored_interior_pixels": 3456,
+      "different_interior_pixels": 0
+    },
+    {
+      "id": "alpha-stroke-fraction06",
+      "engine": "pdfjs",
+      "dpi": 144,
+      "alpha": 0.6,
+      "modeled_alpha_byte": 153,
+      "source": [
+        0,
+        0,
+        255
+      ],
+      "observed": [
+        102,
+        102,
+        255
+      ],
+      "predicted": [
+        102,
+        102,
+        255
+      ],
+      "prediction_matches": true,
+      "capture_bytes_match_prior": true,
+      "pdf_sha256": "de8613f491f0223d25d52b04c189e4f965980b9e8575b695b79e05ade5057aa6",
+      "scored_interior_pixels": 3456,
+      "different_interior_pixels": 0
+    },
+    {
+      "id": "alpha-fill-fraction025",
+      "engine": "pdfium",
+      "dpi": 72,
+      "alpha": 0.25,
+      "modeled_alpha_byte": 63,
+      "source": [
+        255,
+        0,
+        0
+      ],
+      "observed": [
+        255,
+        192,
+        192
+      ],
+      "predicted": [
+        255,
+        192,
+        192
+      ],
+      "prediction_matches": true,
+      "capture_bytes_match_prior": true,
+      "pdf_sha256": "149513d262c02c440ba2c4d3c3170e146a886323b0a11073ea73535dab3d7a1f",
+      "scored_interior_pixels": 3744,
+      "different_interior_pixels": 0
+    },
+    {
+      "id": "alpha-fill-fraction025",
+      "engine": "mupdf",
+      "dpi": 72,
+      "alpha": 0.25,
+      "modeled_alpha_byte": 63,
+      "source": [
+        255,
+        0,
+        0
+      ],
+      "observed": [
+        255,
+        192,
+        192
+      ],
+      "predicted": [
+        255,
+        192,
+        192
+      ],
+      "prediction_matches": true,
+      "capture_bytes_match_prior": true,
+      "pdf_sha256": "149513d262c02c440ba2c4d3c3170e146a886323b0a11073ea73535dab3d7a1f",
+      "scored_interior_pixels": 3744,
+      "different_interior_pixels": 0
+    },
+    {
+      "id": "alpha-fill-fraction025",
+      "engine": "pdfjs",
+      "dpi": 72,
+      "alpha": 0.25,
+      "modeled_alpha_byte": 63,
+      "source": [
+        255,
+        0,
+        0
+      ],
+      "observed": [
+        255,
+        191,
+        191
+      ],
+      "predicted": [
+        255,
+        191,
+        191
+      ],
+      "prediction_matches": true,
+      "capture_bytes_match_prior": true,
+      "pdf_sha256": "149513d262c02c440ba2c4d3c3170e146a886323b0a11073ea73535dab3d7a1f",
+      "scored_interior_pixels": 3744,
+      "different_interior_pixels": 0
+    },
+    {
+      "id": "alpha-fill-fraction025",
+      "engine": "pdfium",
+      "dpi": 144,
+      "alpha": 0.25,
+      "modeled_alpha_byte": 63,
+      "source": [
+        255,
+        0,
+        0
+      ],
+      "observed": [
+        255,
+        192,
+        192
+      ],
+      "predicted": [
+        255,
+        192,
+        192
+      ],
+      "prediction_matches": true,
+      "capture_bytes_match_prior": true,
+      "pdf_sha256": "149513d262c02c440ba2c4d3c3170e146a886323b0a11073ea73535dab3d7a1f",
+      "scored_interior_pixels": 14976,
+      "different_interior_pixels": 0
+    },
+    {
+      "id": "alpha-fill-fraction025",
+      "engine": "mupdf",
+      "dpi": 144,
+      "alpha": 0.25,
+      "modeled_alpha_byte": 63,
+      "source": [
+        255,
+        0,
+        0
+      ],
+      "observed": [
+        255,
+        192,
+        192
+      ],
+      "predicted": [
+        255,
+        192,
+        192
+      ],
+      "prediction_matches": true,
+      "capture_bytes_match_prior": true,
+      "pdf_sha256": "149513d262c02c440ba2c4d3c3170e146a886323b0a11073ea73535dab3d7a1f",
+      "scored_interior_pixels": 14976,
+      "different_interior_pixels": 0
+    },
+    {
+      "id": "alpha-fill-fraction025",
+      "engine": "pdfjs",
+      "dpi": 144,
+      "alpha": 0.25,
+      "modeled_alpha_byte": 63,
+      "source": [
+        255,
+        0,
+        0
+      ],
+      "observed": [
+        255,
+        191,
+        191
+      ],
+      "predicted": [
+        255,
+        191,
+        191
+      ],
+      "prediction_matches": true,
+      "capture_bytes_match_prior": true,
+      "pdf_sha256": "149513d262c02c440ba2c4d3c3170e146a886323b0a11073ea73535dab3d7a1f",
+      "scored_interior_pixels": 14976,
+      "different_interior_pixels": 0
+    },
+    {
+      "id": "alpha-stroke-fraction025",
+      "engine": "pdfium",
+      "dpi": 72,
+      "alpha": 0.25,
+      "modeled_alpha_byte": 63,
+      "source": [
+        0,
+        0,
+        255
+      ],
+      "observed": [
+        192,
+        192,
+        255
+      ],
+      "predicted": [
+        192,
+        192,
+        255
+      ],
+      "prediction_matches": true,
+      "capture_bytes_match_prior": true,
+      "pdf_sha256": "e04d501fbaa658a078ed8364cf869485ff125027c02b4668c91318e09328fd13",
+      "scored_interior_pixels": 864,
+      "different_interior_pixels": 0
+    },
+    {
+      "id": "alpha-stroke-fraction025",
+      "engine": "mupdf",
+      "dpi": 72,
+      "alpha": 0.25,
+      "modeled_alpha_byte": 63,
+      "source": [
+        0,
+        0,
+        255
+      ],
+      "observed": [
+        192,
+        192,
+        255
+      ],
+      "predicted": [
+        192,
+        192,
+        255
+      ],
+      "prediction_matches": true,
+      "capture_bytes_match_prior": true,
+      "pdf_sha256": "e04d501fbaa658a078ed8364cf869485ff125027c02b4668c91318e09328fd13",
+      "scored_interior_pixels": 864,
+      "different_interior_pixels": 0
+    },
+    {
+      "id": "alpha-stroke-fraction025",
+      "engine": "pdfjs",
+      "dpi": 72,
+      "alpha": 0.25,
+      "modeled_alpha_byte": 63,
+      "source": [
+        0,
+        0,
+        255
+      ],
+      "observed": [
+        191,
+        191,
+        255
+      ],
+      "predicted": [
+        191,
+        191,
+        255
+      ],
+      "prediction_matches": true,
+      "capture_bytes_match_prior": true,
+      "pdf_sha256": "e04d501fbaa658a078ed8364cf869485ff125027c02b4668c91318e09328fd13",
+      "scored_interior_pixels": 864,
+      "different_interior_pixels": 0
+    },
+    {
+      "id": "alpha-stroke-fraction025",
+      "engine": "pdfium",
+      "dpi": 144,
+      "alpha": 0.25,
+      "modeled_alpha_byte": 63,
+      "source": [
+        0,
+        0,
+        255
+      ],
+      "observed": [
+        192,
+        192,
+        255
+      ],
+      "predicted": [
+        192,
+        192,
+        255
+      ],
+      "prediction_matches": true,
+      "capture_bytes_match_prior": true,
+      "pdf_sha256": "e04d501fbaa658a078ed8364cf869485ff125027c02b4668c91318e09328fd13",
+      "scored_interior_pixels": 3456,
+      "different_interior_pixels": 0
+    },
+    {
+      "id": "alpha-stroke-fraction025",
+      "engine": "mupdf",
+      "dpi": 144,
+      "alpha": 0.25,
+      "modeled_alpha_byte": 63,
+      "source": [
+        0,
+        0,
+        255
+      ],
+      "observed": [
+        192,
+        192,
+        255
+      ],
+      "predicted": [
+        192,
+        192,
+        255
+      ],
+      "prediction_matches": true,
+      "capture_bytes_match_prior": true,
+      "pdf_sha256": "e04d501fbaa658a078ed8364cf869485ff125027c02b4668c91318e09328fd13",
+      "scored_interior_pixels": 3456,
+      "different_interior_pixels": 0
+    },
+    {
+      "id": "alpha-stroke-fraction025",
+      "engine": "pdfjs",
+      "dpi": 144,
+      "alpha": 0.25,
+      "modeled_alpha_byte": 63,
+      "source": [
+        0,
+        0,
+        255
+      ],
+      "observed": [
+        191,
+        191,
+        255
+      ],
+      "predicted": [
+        191,
+        191,
+        255
+      ],
+      "prediction_matches": true,
+      "capture_bytes_match_prior": true,
+      "pdf_sha256": "e04d501fbaa658a078ed8364cf869485ff125027c02b4668c91318e09328fd13",
+      "scored_interior_pixels": 3456,
+      "different_interior_pixels": 0
+    }
+  ],
+  "interior_pixel_checks": 138240,
+  "interior_pixel_mismatches": 0,
+  "source_backed_explanation": "Different8bitalphaweightsandintegerblendroutespredictallmeasureduniforminteriors; directCanvasreproducesPDF.jsbackendvalues",
+  "oracle_status": "Unresolved normativepixeloracle; allfourcasesstillheld"
+}

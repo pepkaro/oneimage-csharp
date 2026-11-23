@@ -1,0 +1,45 @@
+{
+  "license": "MIT",
+  "copyright": "Original font numeric outlines/metrics, generated PDFs and source are owned MIT; reused adapters retain own earlier headers.",
+  "font_provenance": {
+    "kind": "Type3",
+    "source_slice": "ISO-TEXT-POSITION-01",
+    "original_design_reused": true,
+    "new_font_designs": 0,
+    "external_font_bytes": 0,
+    "glyph_stream_sha256": {
+      "A": "4b73f4c8379a88f4ca7a2c9d79c08e29f74ad580115b3d9bf53c8f01b7938392",
+      "B": "d6a2fb8e0102dbfe8cd862334fc05442bfb45d1f63c17fcbd33eff4341927e48",
+      "space": "ab7650175034cf35fac613c21f726a2d4bf45ce5c3cc557c8623936875018536"
+    },
+    "verification": "All glyph procedure fingerprints match the previous original-font manifest."
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "pypdf": "6.21.4",
+  "references": {
+    "pdfium": "153.0.7999.0",
+    "pypdfium2": "5.13.0",
+    "mupdf": "1.26.11",
+    "pymupdf": "1.26.6",
+    "pdfjs": "6.5.438",
+    "pdfjs_build": "0a4153349",
+    "node": "24.22.3",
+    "node_canvas": "1.1.1"
+  },
+  "adapter_origin": "Owned MIT prior corpus batches; no upstream test harness.",
+  "expected_oracle": "Explicit independent raw/effective glyph matrices and numeric outlines, verified by a separate text-operator parser and matched against three fresh renders.",
+  "target": {
+    "draft_pr": 94,
+    "remote_review_head": "5dc41855d08a08192ba66c250f787bbe33ac5707",
+    "materialized_local_head": "f2ded896d779dd16c2bdb968b57ae2e12be618b9",
+    "materialized_tree": "ad282a527e2d44c34c8c2fffeafed065e4efaa89",
+    "verification": "Root verified equal remote/local trees; worker rechecked local HEAD/tree without fetching."
+  },
+  "upstream_fixture_fetches": 0,
+  "upstream_inputs_executed": 0,
+  "upstream_entry_passes": 0,
+  "product_tests": 0,
+  "remote_writes": 0,
+  "previous_checkpoints_preserved": true,
+  "net_new_global_behavior_count": null
+}

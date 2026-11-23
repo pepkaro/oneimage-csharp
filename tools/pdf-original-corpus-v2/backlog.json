@@ -4,7 +4,7 @@
   "completion_rule": "Every applicable scoped semanticrule has committed independentlyvalidatedfixture+assertion or explicitreviewedexception; inventory completion is not behavior completion",
   "scope_limit": "Initial manuallyscopedordinaryvisualrules only; fullstandard ruleenumeration incomplete pendingfull2020text and furthermanualqualification; no claim everyapplicablePDFbehaviorislisted",
   "recovery_rule": "ReadthisbacklogandGitHEAD; verifypriorcheckpoint;claimoneunclaimeddisjointslice; neverrerunblockedAOTIPC; checkpointblockedreasonandcontinueindependenteligible work; no newapprovalneededwithin authorizedscope",
-  "current_publication": "Draft94 continuation acceptance 25d38f0699e6add5a948ea074927c1d3ef74c45d",
+  "current_publication": "Continuation from#94 head5dc41855d08a08192ba66c250f787bbe33ac5707; newacceptancepending",
   "slices": [
     {
       "slice_id": "ISO-FILTER-BASE-01",
@@ -86,11 +86,21 @@
       "slice_id": "ISO-PAGE-RESOURCE-02",
       "iso_2020_order": "07.08.03",
       "verified_coarse_title": "Resource dictionaries",
-      "state": "unclaimed",
-      "owner": null,
-      "case_ids": [],
+      "state": "reference-agreed-awaiting-commit-and-product",
+      "owner": "mozilla_originals",
+      "case_ids": [
+        "resource-category-page",
+        "resource-category-page-form",
+        "resource-category-sibling-forms"
+      ],
       "upstream_ids": [],
-      "acceptance_criteria": "Originalpage/Formscenes reuseone name acrossXObjectandColorSpacecategories; independentcolor/placementcontrols; threepinnedrefs72/144; nofont/imageexternalassets"
+      "acceptance_criteria": "Originalpage/Formscenes reuseone name acrossXObjectandColorSpacecategories; independentcolor/placementcontrols; threepinnedrefs72/144; nofont/imageexternalassets",
+      "reference_agreed_cases": [
+        "resource-category-page",
+        "resource-category-page-form",
+        "resource-category-sibling-forms"
+      ],
+      "held_cases": []
     },
     {
       "slice_id": "ISO-STATE-STACK-01",
@@ -294,11 +304,23 @@
       "slice_id": "ISO-TEXT-SCALE-RISE-01",
       "iso_2020_order": "09.03",
       "verified_coarse_title": "Text state parameters and operators",
-      "state": "unclaimed",
-      "owner": null,
-      "case_ids": [],
+      "state": "reference-agreed-awaiting-commit-and-product",
+      "owner": "pdfium_originals",
+      "case_ids": [
+        "textscale-tz-shape-advance",
+        "textscale-ts-baselines",
+        "textscale-tz-spacing",
+        "textscale-tz-tj-rise"
+      ],
       "upstream_ids": [],
-      "acceptance_criteria": "OriginalType3font independentTz shape/advance plusTs baselinecontrols; separatelyscoredspacinginteractions; threepinnedrefs72/144; nativefontweightuntested"
+      "acceptance_criteria": "OriginalType3font independentTz shape/advance plusTs baselinecontrols; separatelyscoredspacinginteractions; threepinnedrefs72/144; nativefontweightuntested",
+      "reference_agreed_cases": [
+        "textscale-tz-shape-advance",
+        "textscale-ts-baselines",
+        "textscale-tz-spacing",
+        "textscale-tz-tj-rise"
+      ],
+      "held_cases": []
     },
     {
       "slice_id": "ISO-TRANSPARENCY-01",
@@ -338,8 +360,8 @@
       "slice_id": "ISO-ALPHA-QUANTIZATION-CLASSIFY-01",
       "iso_2020_order": "11.06",
       "verified_coarse_title": "Specifying transparency in PDF",
-      "state": "unclaimed-classification",
-      "owner": null,
+      "state": "classification-complete-oracle-unresolved-held",
+      "owner": "root",
       "case_ids": [
         "alpha-fill-fraction06",
         "alpha-stroke-fraction06",
@@ -347,7 +369,9 @@
         "alpha-stroke-fraction025"
       ],
       "upstream_ids": [],
-      "acceptance_criteria": "Source-backedclassificationofexact8bitroutingdifferencesusingoriginalcontrols; preserveallcaptures, no majorityvoting, no posthoc tolerance/golden changes"
+      "acceptance_criteria": "Source-backedclassificationofexact8bitroutingdifferencesusingoriginalcontrols; preserveallcaptures, no majorityvoting, no posthoc tolerance/golden changes",
+      "evidence": "alpha-classify/classification-results.json",
+      "exception": "Implementationarithmeticexplained; no normativebyteoracleor productfix;fourcasesremainheld"
     }
   ],
   "checkpoint_state": "Allthreeassignedslicescheckpointed; resources/textandalphaendpointsgraded; fractionalalphaheld; nextslicesunclaimed"

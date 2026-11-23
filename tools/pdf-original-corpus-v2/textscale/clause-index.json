@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "batch": "ISO-TEXT-SCALE-RISE-01",
+  "verified_date": "2026-11-23",
+  "fixture_pdf_version": "1.7",
+  "governing_edition": "ISO 32000-1:2008",
+  "governing_document_sha256": "9de0ca9e8570d6209e8bd48a355be8eb6ec376acfc3fc3ae97cd8730351417ff",
+  "governing_document_redistributed": false,
+  "clauses": {
+    "2008-scale": {
+      "clause": "9.3.4",
+      "heading": "Horizontal Scaling",
+      "verification": "local full text inspected"
+    },
+    "2008-rise": {
+      "clause": "9.3.7",
+      "heading": "Text Rise",
+      "verification": "local full text inspected"
+    },
+    "2008-space": {
+      "clause": "9.4.4",
+      "heading": "Text Space Details",
+      "verification": "local full text inspected"
+    },
+    "2008-tc": {
+      "clause": "9.3.2",
+      "heading": "Character Spacing",
+      "verification": "previous slice local full text inspected"
+    },
+    "2008-tw": {
+      "clause": "9.3.3",
+      "heading": "Word Spacing",
+      "verification": "previous slice local full text inspected"
+    },
+    "2008-show": {
+      "clause": "9.4.3",
+      "heading": "Text-Showing Operators",
+      "verification": "previous slice local full text inspected"
+    },
+    "2008-type3": {
+      "clause": "9.6.5",
+      "table": "112",
+      "heading": "Type 3 Fonts",
+      "verification": "previous slice local full text inspected"
+    },
+    "2020-scale": {
+      "clause": "9.3.4",
+      "heading": "Horizontal scaling",
+      "verification": "official full corrected paragraph inspected",
+      "url": "https://pdf-issues.pdfa.org/32000-2-2020/clause09.html",
+      "scope": "Tz percentage normalized to scale; glyph dimensions/advances and Tc/Tw/TJ displacements are scaled."
+    },
+    "2020-space": {
+      "clause": "9.4.4",
+      "heading": "Text space details",
+      "verification": "official normative rendering-matrix equation and paragraph inspected",
+      "url": "https://pdf-issues.pdfa.org/32000-2-2020/clause09.html",
+      "scope": "Rendering transform includes font size, horizontal scale and rise before the text matrix and CTM."
+    },
+    "2020-type3": {
+      "clause": "9.6.4",
+      "heading": "Type 3 fonts",
+      "verification": "official errata Type 3 entries inspected in previous slice",
+      "url": "https://pdf-issues.pdfa.org/32000-2-2020/clause09.html"
+    }
+  },
+  "cases": [
+    {
+      "fixture_id": "textscale-tz-shape-advance",
+      "primary_2008_clause_ids": [
+        "2008-scale"
+      ],
+      "secondary_2008_clause_ids": [
+        "2008-type3"
+      ],
+      "verified_2020_clause_ids": [
+        "2020-scale",
+        "2020-space",
+        "2020-type3"
+      ],
+      "upstream_id": null
+    },
+    {
+      "fixture_id": "textscale-ts-baselines",
+      "primary_2008_clause_ids": [
+        "2008-rise",
+        "2008-space"
+      ],
+      "secondary_2008_clause_ids": [
+        "2008-type3"
+      ],
+      "verified_2020_clause_ids": [
+        "2020-scale",
+        "2020-space",
+        "2020-type3"
+      ],
+      "upstream_id": null
+    },
+    {
+      "fixture_id": "textscale-tz-spacing",
+      "primary_2008_clause_ids": [
+        "2008-scale",
+        "2008-tc",
+        "2008-tw"
+      ],
+      "secondary_2008_clause_ids": [
+        "2008-type3"
+      ],
+      "verified_2020_clause_ids": [
+        "2020-scale",
+        "2020-space",
+        "2020-type3"
+      ],
+      "upstream_id": null
+    },
+    {
+      "fixture_id": "textscale-tz-tj-rise",
+      "primary_2008_clause_ids": [
+        "2008-scale",
+        "2008-rise",
+        "2008-show"
+      ],
+      "secondary_2008_clause_ids": [
+        "2008-type3"
+      ],
+      "verified_2020_clause_ids": [
+        "2020-scale",
+        "2020-space",
+        "2020-type3"
+      ],
+      "upstream_id": null
+    }
+  ],
+  "limitations": [
+    "Specific 2020 text-rise subsection heading/full text unavailable from this errata page; no number inferred.",
+    "Full 2020 standard not downloaded; no cart/forms submitted.",
+    "No exact renderer edge-position or native font-weight claim."
+  ],
+  "subsystem_tags": [
+    {
+      "repo": "pepkaro/onepdf-csharp",
+      "inspected_head": "2d1928d5ee67bf4526903d3d44ae37792b1f27b8",
+      "path": "src/OnePdf/Content/ContentInterpreter.Text.cs",
+      "symbols": [
+        "Horizontal scale/rise text state",
+        "TJ numeric displacement",
+        "ShowString advancement"
+      ],
+      "scope": "Horizontal text state and displacements."
+    },
+    {
+      "repo": "pepkaro/onepdf-csharp",
+      "inspected_head": "2d1928d5ee67bf4526903d3d44ae37792b1f27b8",
+      "path": "src/OnePdf/Content/ContentInterpreter.Type3.cs",
+      "symbol": "ShowType3Glyphs",
+      "line": 39,
+      "scope": "Combines font size/horizontal scale/rise with original glyph procedures and text matrix."
+    }
+  ],
+  "source_navigation_limitation": "Previously inspected source navigation only; no product run or defect ownership inference."
+}

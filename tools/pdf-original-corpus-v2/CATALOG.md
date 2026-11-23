@@ -142,6 +142,36 @@ Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.08
 
 Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
 
+### resource-category-page
+
+The page resolves /Shared independently in its ColorSpace and XObject categories
+
+Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-category-page/original.pdf); [clause evidence](resources2/clause-index.json).
+
+Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-category-page/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-category-page/expected-144.png).
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
+### resource-category-page-form
+
+A Form binds /Shared to DeviceRGB and its red leaf while the page binds it to DeviceGray and a blue leaf; postForm calls use page bindings
+
+Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-category-page-form/original.pdf); [clause evidence](resources2/clause-index.json).
+
+Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-category-page-form/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-category-page-form/expected-144.png).
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
+### resource-category-sibling-forms
+
+Two sibling Forms each resolve /Shared in separate ColorSpace and XObject categories with RGB versus Gray and different leaf colors
+
+Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-category-sibling-forms/original.pdf); [clause evidence](resources2/clause-index.json).
+
+Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-category-sibling-forms/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-category-sibling-forms/expected-144.png).
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
 ## 08-Graphics/08.04-Graphics-state/08.04.02-Graphics-state-stack
 
 ### geometry-saved-clip
@@ -411,6 +441,48 @@ Independent default/Tc/Tw controls distinguish character advancement from single
 Stage: **pass**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/text-tc-tw-spacing/original.pdf); [clause evidence](text/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/text-tc-tw-spacing/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/text-tc-tw-spacing/expected-144.png).
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
+### textscale-ts-baselines
+
+Positive/negative Ts shifts glyph baselines without changing text-matrix origins or horizontal advances.
+
+Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/textscale-ts-baselines/original.pdf); [clause evidence](textscale/clause-index.json).
+
+Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/textscale-ts-baselines/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/textscale-ts-baselines/expected-144.png).
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
+## 09-Text/09.03-Text-state-parameters-and-operators/09.03.04-Horizontal-scaling
+
+### textscale-tz-shape-advance
+
+Tz scales original glyph width and horizontal advancement, retaining vertical size.
+
+Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/09.03.04-Horizontal-scaling/textscale-tz-shape-advance/original.pdf); [clause evidence](textscale/clause-index.json).
+
+Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/09.03.04-Horizontal-scaling/textscale-tz-shape-advance/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/09.03.04-Horizontal-scaling/textscale-tz-shape-advance/expected-144.png).
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
+### textscale-tz-spacing
+
+Tz scales character spacing and single-byte word spacing together with glyph advancement.
+
+Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/09.03.04-Horizontal-scaling/textscale-tz-spacing/original.pdf); [clause evidence](textscale/clause-index.json).
+
+Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/09.03.04-Horizontal-scaling/textscale-tz-spacing/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/09.03.04-Horizontal-scaling/textscale-tz-spacing/expected-144.png).
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
+### textscale-tz-tj-rise
+
+Tz scales signed TJ displacements and character spacing; Ts shifts painting independently.
+
+Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/09.03.04-Horizontal-scaling/textscale-tz-tj-rise/original.pdf); [clause evidence](textscale/clause-index.json).
+
+Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/09.03.04-Horizontal-scaling/textscale-tz-tj-rise/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/09.03.04-Horizontal-scaling/textscale-tz-tj-rise/expected-144.png).
 
 Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
 

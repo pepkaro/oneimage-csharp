@@ -1,0 +1,111 @@
+{
+  "runtime": "v24.22.3",
+  "canvas": "1.1.1",
+  "pdf_used": false,
+  "records": [
+    {
+      "alpha": 0.25,
+      "kind": "fill",
+      "dpi": 72,
+      "actual": [
+        255,
+        191,
+        191,
+        255
+      ],
+      "file": "canvas-fill-0.25-72.png",
+      "scope": "direct backend control; not a PDF golden or upstream case"
+    },
+    {
+      "alpha": 0.25,
+      "kind": "fill",
+      "dpi": 144,
+      "actual": [
+        255,
+        191,
+        191,
+        255
+      ],
+      "file": "canvas-fill-0.25-144.png",
+      "scope": "direct backend control; not a PDF golden or upstream case"
+    },
+    {
+      "alpha": 0.25,
+      "kind": "stroke",
+      "dpi": 72,
+      "actual": [
+        191,
+        191,
+        255,
+        255
+      ],
+      "file": "canvas-stroke-0.25-72.png",
+      "scope": "direct backend control; not a PDF golden or upstream case"
+    },
+    {
+      "alpha": 0.25,
+      "kind": "stroke",
+      "dpi": 144,
+      "actual": [
+        191,
+        191,
+        255,
+        255
+      ],
+      "file": "canvas-stroke-0.25-144.png",
+      "scope": "direct backend control; not a PDF golden or upstream case"
+    },
+    {
+      "alpha": 0.6,
+      "kind": "fill",
+      "dpi": 72,
+      "actual": [
+        255,
+        102,
+        102,
+        255
+      ],
+      "file": "canvas-fill-0.6-72.png",
+      "scope": "direct backend control; not a PDF golden or upstream case"
+    },
+    {
+      "alpha": 0.6,
+      "kind": "fill",
+      "dpi": 144,
+      "actual": [
+        255,
+        102,
+        102,
+        255
+      ],
+      "file": "canvas-fill-0.6-144.png",
+      "scope": "direct backend control; not a PDF golden or upstream case"
+    },
+    {
+      "alpha": 0.6,
+      "kind": "stroke",
+      "dpi": 72,
+      "actual": [
+        102,
+        102,
+        255,
+        255
+      ],
+      "file": "canvas-stroke-0.6-72.png",
+      "scope": "direct backend control; not a PDF golden or upstream case"
+    },
+    {
+      "alpha": 0.6,
+      "kind": "stroke",
+      "dpi": 144,
+      "actual": [
+        102,
+        102,
+        255,
+        255
+      ],
+      "file": "canvas-stroke-0.6-144.png",
+      "scope": "direct backend control; not a PDF golden or upstream case"
+    }
+  ]
+}

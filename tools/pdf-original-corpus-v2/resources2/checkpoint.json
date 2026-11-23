@@ -1,0 +1,243 @@
+{
+  "schema_version": 1,
+  "slice": "ISO-PAGE-RESOURCE-02",
+  "owner": "mozilla_originals",
+  "state": "references-ready-for-root-product-grading",
+  "owned_path": "/workspace/scratch/ee1a2fb9052d/pdf-corpus-third-20261123/work/resources2",
+  "target_head_parent_verified": "5dc41855d08a08192ba66c250f787bbe33ac5707",
+  "instruction_repository_head": "f2ded896d779dd16c2bdb968b57ae2e12be618b9",
+  "instruction_tree": "ad282a527e2d44c34c8c2fffeafed065e4efaa89",
+  "unique_pdfs": 3,
+  "unique_pdf_bytes": 3480,
+  "reference_calls": 18,
+  "selected_reference_outputs": 18,
+  "reference_passed": 18,
+  "reference_failed": 0,
+  "reference_skipped": 0,
+  "samples_passed": 108,
+  "pairwise_passed": 18,
+  "region_checks_passed": 108,
+  "upstream_inputs_executed": 0,
+  "upstream_entries_validated": 0,
+  "product_runs": 0,
+  "external_writes": 0,
+  "backlog": "backlog.json",
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "8884cf00282bc69b1dbe5dead6e88b96c82c1bfc457daae48ce497e7c2588c3f"
+    },
+    {
+      "path": "README.md",
+      "sha256": "8279a5e94349c82d332161b8d91d3d42f97685aeeae527eb11b11285de3c62ec"
+    },
+    {
+      "path": "analytic/resource-category-page-144-expected.png",
+      "sha256": "fc2f1b143d2aed7f101d57a7e6da61d26d5588812fb4e35a367501edfd70b90f"
+    },
+    {
+      "path": "analytic/resource-category-page-144-score-mask.png",
+      "sha256": "4e68cbf85421182d935bfcb0501684cd83fa0c76c742c2ec8b29909d2f14e958"
+    },
+    {
+      "path": "analytic/resource-category-page-72-expected.png",
+      "sha256": "bec5d115e14c85f6b65252e0231bc73703766e5a747ed2a46f393be7745b30b1"
+    },
+    {
+      "path": "analytic/resource-category-page-72-score-mask.png",
+      "sha256": "366f3a43de5c544b5230621b27c5568e485078e1d5bb1f81a01c5fa2acef3520"
+    },
+    {
+      "path": "analytic/resource-category-page-form-144-expected.png",
+      "sha256": "6570997bfb234eaf4ed4142ff0b10a0e3cc6a437e650eda84e667f63138e24ad"
+    },
+    {
+      "path": "analytic/resource-category-page-form-144-score-mask.png",
+      "sha256": "c9b26def065aa47694123bb35b5d065bcf0cb34770b1ab63960881afed72467c"
+    },
+    {
+      "path": "analytic/resource-category-page-form-72-expected.png",
+      "sha256": "071d98c9ce6bc13575e86f211330ff100ea8fe005f7683fa70cea6373ca8e11b"
+    },
+    {
+      "path": "analytic/resource-category-page-form-72-score-mask.png",
+      "sha256": "8c6937ce0d3956aab2dac89d2ba1a9e4ac16a5ba5d89060d68aeaa50dd546267"
+    },
+    {
+      "path": "analytic/resource-category-sibling-forms-144-expected.png",
+      "sha256": "41d6995d6e8d8394cdfc31c2dae5b99ef32a6976c235d18072bbf7d348983200"
+    },
+    {
+      "path": "analytic/resource-category-sibling-forms-144-score-mask.png",
+      "sha256": "406a8f59f7a059fda99535444c6ab95e7f78c316f66a9d8f6fa9b5a0dfb1b0d9"
+    },
+    {
+      "path": "analytic/resource-category-sibling-forms-72-expected.png",
+      "sha256": "c26d94a2bae8683ab335244963cc83523650f46919060a1d7fd5776b5d768030"
+    },
+    {
+      "path": "analytic/resource-category-sibling-forms-72-score-mask.png",
+      "sha256": "5bae628873a3f42ccf1429b5fcc5da2265ced779a6e714424d5a1b666b09fefa"
+    },
+    {
+      "path": "backlog.json",
+      "sha256": "c6ab62fc30fd64eba6a7f16f5815ddef0d390062fa327b28821fb7b6c0874183"
+    },
+    {
+      "path": "clause-index.json",
+      "sha256": "bf5b8f10acdb4d20185eef54f80befd8e48081563e2fae1c7c697ce09492d651"
+    },
+    {
+      "path": "generator.py",
+      "sha256": "e12ed4d6760b38ba4b6a38ca2982564b0ea1209cdaab3481e858a624786e8fa6"
+    },
+    {
+      "path": "inputs/resource-category-page-form.pdf",
+      "sha256": "09e1ccd850b49e37614b8a7b79b6ee85742f9c0729c632c0f3cc23eccad082ef"
+    },
+    {
+      "path": "inputs/resource-category-page.pdf",
+      "sha256": "0cbe7418fd018784198af175b42781f3e80b64697dc904d2705bfb075f227031"
+    },
+    {
+      "path": "inputs/resource-category-sibling-forms.pdf",
+      "sha256": "399e78af44e0577153209994730c9663a23abc351ad715fff8006109cf55476e"
+    },
+    {
+      "path": "manifest.json",
+      "sha256": "7e2e0af22e45793326ada21eb803fec1cd59ee8626efcc0b8c6fb73ae06b8fe7"
+    },
+    {
+      "path": "reference-renders.json",
+      "sha256": "745a73301efcb3f37506d9ed3255af6eb74feee3b7a4edddd1b89409be32b58b"
+    },
+    {
+      "path": "reference-results.json",
+      "sha256": "3eb7954b02a1c6df170223482118727a67600b0b866702a7cd4743fd850ad1cf"
+    },
+    {
+      "path": "references/resource-category-page-144-mupdf.png",
+      "sha256": "ce3d0e4385c7e21ab2a29c7f97e1bcaa73cd3ce498fe96757fd8de5626968974"
+    },
+    {
+      "path": "references/resource-category-page-144-pdfium.png",
+      "sha256": "fc2f1b143d2aed7f101d57a7e6da61d26d5588812fb4e35a367501edfd70b90f"
+    },
+    {
+      "path": "references/resource-category-page-144-pdfjs.png",
+      "sha256": "55b28960e95780f8a8be110c4ebae7bd14d0d36e0b77cba8c2a5566a6bc8db34"
+    },
+    {
+      "path": "references/resource-category-page-144-pdfjs.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "references/resource-category-page-72-mupdf.png",
+      "sha256": "18a1137851f87bccb27cc96c56c15da50da27759d2d34e47f8038824079d22c3"
+    },
+    {
+      "path": "references/resource-category-page-72-pdfium.png",
+      "sha256": "bec5d115e14c85f6b65252e0231bc73703766e5a747ed2a46f393be7745b30b1"
+    },
+    {
+      "path": "references/resource-category-page-72-pdfjs.png",
+      "sha256": "2d35d6d3e889e09a1e204e12eae1f5d3b923a9bcc810dc42812ac9bf4541537e"
+    },
+    {
+      "path": "references/resource-category-page-72-pdfjs.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "references/resource-category-page-form-144-mupdf.png",
+      "sha256": "7179bc45cab896216c064a8a43b2cfee871a3acf922f32a22e269b58cbaa165b"
+    },
+    {
+      "path": "references/resource-category-page-form-144-pdfium.png",
+      "sha256": "6570997bfb234eaf4ed4142ff0b10a0e3cc6a437e650eda84e667f63138e24ad"
+    },
+    {
+      "path": "references/resource-category-page-form-144-pdfjs.png",
+      "sha256": "e306db95db553d45eb0ce14ce6dfe85ea340a7d146bba59d66633462cb1af2f4"
+    },
+    {
+      "path": "references/resource-category-page-form-144-pdfjs.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "references/resource-category-page-form-72-mupdf.png",
+      "sha256": "d2494b5b5ef3593ab0fbffef3e3641b8b8a985d245d2c9a15b8d7f10461e6d3f"
+    },
+    {
+      "path": "references/resource-category-page-form-72-pdfium.png",
+      "sha256": "071d98c9ce6bc13575e86f211330ff100ea8fe005f7683fa70cea6373ca8e11b"
+    },
+    {
+      "path": "references/resource-category-page-form-72-pdfjs.png",
+      "sha256": "677afda6ae4b39092ade80657c7ba3c453ba9c25c923d15da5d1bd6770820d9e"
+    },
+    {
+      "path": "references/resource-category-page-form-72-pdfjs.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "references/resource-category-sibling-forms-144-mupdf.png",
+      "sha256": "294ea9cdba351656042eaa934b927ce62dd38fe278ad7147270a27cfaa5646a0"
+    },
+    {
+      "path": "references/resource-category-sibling-forms-144-pdfium.png",
+      "sha256": "41d6995d6e8d8394cdfc31c2dae5b99ef32a6976c235d18072bbf7d348983200"
+    },
+    {
+      "path": "references/resource-category-sibling-forms-144-pdfjs.png",
+      "sha256": "b8b81ad6839524c5032ce86209a9ada9300dfb5059b29c1ff6fe9c3b210686a7"
+    },
+    {
+      "path": "references/resource-category-sibling-forms-144-pdfjs.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "references/resource-category-sibling-forms-72-mupdf.png",
+      "sha256": "105bd134c51fe17ca9d4e6b26c89285c7e69bd1bcf280c523862ea2693f8c93e"
+    },
+    {
+      "path": "references/resource-category-sibling-forms-72-pdfium.png",
+      "sha256": "c26d94a2bae8683ab335244963cc83523650f46919060a1d7fd5776b5d768030"
+    },
+    {
+      "path": "references/resource-category-sibling-forms-72-pdfjs.png",
+      "sha256": "9567abdb519d667132db497f0de6bd9151519d8219fe861445e07ea9d413b794"
+    },
+    {
+      "path": "references/resource-category-sibling-forms-72-pdfjs.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "references.py",
+      "sha256": "d0fe5e520bea8aa521bbf2b8b8a5b2ddb076635c2dcdbe3a3c248e4865e70d59"
+    },
+    {
+      "path": "region-agreement.json",
+      "sha256": "f66d77c5a567d30d3e44912bc30a0e4fb8c4bc154c2ca5ec2beb17362e239571"
+    },
+    {
+      "path": "render-pdfjs.mjs",
+      "sha256": "7f6d7e7a2e35d5676ce73863ee74dc48f38341191dad9c8d493d99b7e2af4a51"
+    },
+    {
+      "path": "reproduce.sh",
+      "sha256": "e70407f7aa1ed6ba30f9d09c8fe9333082c0fe4c2bd350eae4206e5ab08346bb"
+    },
+    {
+      "path": "score.py",
+      "sha256": "4bc4de0e7c0a39631f8899d6ffe5a37459cc37f3b2ac763620ae31d3f8ba1412"
+    },
+    {
+      "path": "verify-regions.py",
+      "sha256": "df2d2cfda7dff05b61b4e61129992ebc04ae7bd8a8d28da76310cd85ca229a82"
+    },
+    {
+      "path": "verify.py",
+      "sha256": "7a9dcc80b609f4d614bf1eb313c9ac4855db6544b9176eac59d26f55b6e55f02"
+    }
+  ]
+}
