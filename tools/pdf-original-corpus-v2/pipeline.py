@@ -53,7 +53,7 @@ def verify():
 def generate():
  for family in sorted({r['family'] for r in read(T/'routes.json')}):
   with tempfile.TemporaryDirectory() as tmp:
-   dest=Path(tmp);shutil.copy(T/family/'generate.py',dest/'generate.py');subprocess.run([sys.executable,str(dest/'generate.py')],check=True)
+   dest=Path(tmp);name=read(T/'family-routes.json')[family]['generator'];shutil.copy(T/family/name,dest/name);subprocess.run([sys.executable,str(dest/name)],check=True)
    produced=read(dest/'manifest.json')
    for r in [r for r in read(T/'routes.json') if r['family']==family]:
     c=next(c for c in produced['cases'] if c['id']==r['id']);assert sha(dest/c['file'])==sha(REPO/r['canonical_dir']/'original.pdf')
@@ -66,7 +66,7 @@ def references(out,pdfjs):
   d=out/family;shutil.copytree(T/family,d);(d/'inputs').mkdir(exist_ok=True)
   for r in [r for r in read(T/'routes.json') if r['family']==family]:shutil.copy(REPO/r['canonical_dir']/'original.pdf',d/r['manifest']['file'])
   env=dict(os.environ,PDFJS_ROOT=str(pdfjs.resolve()))
-  commands=[['references.py'],['score.py'],['verify.py']] if family in ['geometry','stroke','joins','dash'] else [['run-references.py',str(pdfjs.resolve())],['verify.py'],['verify-regions.py']]
+  commands=[[v.replace('{pdfjs}',str(pdfjs.resolve())) for v in step] for step in read(T/'family-routes.json')[family]['reference_steps']]
   for cmd in commands:subprocess.run([sys.executable,str(d/cmd[0]),*cmd[1:]],check=True,env=env)
  return {'captures':sum(len(r['manifest']['dpis'])*3 for r in read(T/'routes.json')),'output':str(out),'promotion':'manual review required; disagreement never auto-promotes'}
 
@@ -91,7 +91,7 @@ def grade(args):
     row['passed']=row['passed'] and all(v['passed'] for v in row['assertions'])
    else:row.update(passed=False,reason='renderer execution failed')
    rows.append(row)
- result=dict(acceptance_commit=commit,oneimage_source_head=args.source_head,onepdf_declared_package='RecursiveAI.OnePdf/Fonts1.18.0',executed=len(rows),passed=sum(r['passed'] for r in rows),failed=sum(not r['passed'] for r in rows),skipped=sum(len(r['manifest']['dpis']) for r in read(T/'routes.json') if not r['accepted']),skip_reason='Held RGB8 Decode reference disagreement: both DPIs ungraded',rows=rows)
+ result=dict(acceptance_commit=commit,oneimage_source_head=args.source_head,onepdf_declared_package='RecursiveAI.OnePdf/Fonts1.18.0',executed=len(rows),passed=sum(r['passed'] for r in rows),failed=sum(not r['passed'] for r in rows),skipped=sum(len(r['manifest']['dpis']) for r in read(T/'routes.json') if not r['accepted']),skip_reason='Reference-disputed cases are not graded',held_cases=[r['id'] for r in read(T/'routes.json') if not r['accepted']],rows=rows)
  write(out/'results.json',result);return result
 
 def catalog():

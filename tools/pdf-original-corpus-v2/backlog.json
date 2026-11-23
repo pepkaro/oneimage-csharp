@@ -4,7 +4,7 @@
   "completion_rule": "Every applicable scoped semanticrule has committed independentlyvalidatedfixture+assertion or explicitreviewedexception; inventory completion is not behavior completion",
   "scope_limit": "Initial manuallyscopedordinaryvisualrules only; fullstandard ruleenumeration incomplete pendingfull2020text and furthermanualqualification; no claim everyapplicablePDFbehaviorislisted",
   "recovery_rule": "ReadthisbacklogandGitHEAD; verifypriorcheckpoint;claimoneunclaimeddisjointslice; neverrerunblockedAOTIPC; checkpointblockedreasonandcontinueindependenteligible work; no newapprovalneededwithin authorizedscope",
-  "current_publication": "DraftPR94;35originals/68selectedexpectedPNGpaths acceptedinremotecommitc9f19ef5dab2153338bdc6d575fc8381be54345c",
+  "current_publication": "Continuation from#94 head1caa785479982f7b1431a728cb14e89ae0bf21c8; newacceptancepending",
   "slices": [
     {
       "slice_id": "ISO-FILTER-BASE-01",
@@ -62,14 +62,24 @@
       "slice_id": "ISO-PAGE-RESOURCE-01",
       "iso_2020_order": "07.08.03",
       "verified_coarse_title": "Resource dictionaries",
-      "state": "unclaimed",
-      "owner": null,
-      "case_ids": [],
+      "state": "reference-agreed-awaiting-commit-and-product",
+      "owner": "mozilla_originals",
+      "case_ids": [
+        "resource-page-form-isolation",
+        "resource-sibling-form-isolation",
+        "resource-nested-form-restoration"
+      ],
       "acceptance_criteria": "OriginalForm/page resource-name isolation with nofontorimage dependency; semanticallydistinct namedcolors; no upstreamassociation without reviewedscene metadata",
       "upstream_ids": [],
       "fine_rule_citations": "Seecaseclause records;pendingfull2020textwhereunavailable",
       "checkpoint": "cases.json and worker checkpoint wherecompleted",
-      "exclusivity": "oneownerperactive slice; workdirectoriesdisjoint"
+      "exclusivity": "oneownerperactive slice; workdirectoriesdisjoint",
+      "reference_agreed_cases": [
+        "resource-page-form-isolation",
+        "resource-sibling-form-isolation",
+        "resource-nested-form-restoration"
+      ],
+      "held_cases": []
     },
     {
       "slice_id": "ISO-STATE-STACK-01",
@@ -247,27 +257,58 @@
       "slice_id": "ISO-TEXT-POSITION-01",
       "iso_2020_order": "09",
       "verified_coarse_title": "Text",
-      "state": "unclaimed",
-      "owner": null,
-      "case_ids": [],
+      "state": "reference-agreed-awaiting-commit-and-product",
+      "owner": "pdfium_originals",
+      "case_ids": [
+        "text-td-line-origin",
+        "text-tc-tw-spacing",
+        "text-tj-signed-adjustment",
+        "text-tm-rotate-replace"
+      ],
       "acceptance_criteria": "OriginalMITfontandlayout withindependentadvances/textmatrix; three matchedrefs; verifyexactfiner2020clausebeforeassignment",
       "upstream_ids": [],
       "fine_rule_citations": "Seecaseclause records;pendingfull2020textwhereunavailable",
       "checkpoint": "cases.json and worker checkpoint wherecompleted",
-      "exclusivity": "oneownerperactive slice; workdirectoriesdisjoint"
+      "exclusivity": "oneownerperactive slice; workdirectoriesdisjoint",
+      "reference_agreed_cases": [
+        "text-td-line-origin",
+        "text-tc-tw-spacing",
+        "text-tj-signed-adjustment",
+        "text-tm-rotate-replace"
+      ],
+      "held_cases": []
     },
     {
       "slice_id": "ISO-TRANSPARENCY-01",
       "iso_2020_order": "11",
       "verified_coarse_title": "Transparency",
-      "state": "unclaimed",
-      "owner": null,
-      "case_ids": [],
+      "state": "partial-reference-agreement-fractional-controls-held",
+      "owner": "root",
+      "case_ids": [
+        "alpha-fill-endpoints",
+        "alpha-stroke-endpoints",
+        "alpha-ca-state-restore",
+        "alpha-fill-fraction06",
+        "alpha-stroke-fraction06",
+        "alpha-fill-fraction025",
+        "alpha-stroke-fraction025"
+      ],
       "acceptance_criteria": "Ordinaryopaqueendpoint/constantalphaRGBrectangles;independentblendmath and3refs; keepprivateMattecandidateexcluded",
       "upstream_ids": [],
       "fine_rule_citations": "Seecaseclause records;pendingfull2020textwhereunavailable",
       "checkpoint": "cases.json and worker checkpoint wherecompleted",
-      "exclusivity": "oneownerperactive slice; workdirectoriesdisjoint"
+      "exclusivity": "oneownerperactive slice; workdirectoriesdisjoint",
+      "reference_agreed_cases": [
+        "alpha-fill-endpoints",
+        "alpha-stroke-endpoints",
+        "alpha-ca-state-restore"
+      ],
+      "held_cases": [
+        "alpha-fill-fraction06",
+        "alpha-stroke-fraction06",
+        "alpha-fill-fraction025",
+        "alpha-stroke-fraction025"
+      ]
     }
   ],
   "checkpoint_state": "All assignedauthoring slices complete; rootfinalizing evidencepublication. No workerclaimedrunningaftercompletion."

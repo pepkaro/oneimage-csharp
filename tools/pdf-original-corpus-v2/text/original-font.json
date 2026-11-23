@@ -1,0 +1,97 @@
+{
+  "license": "MIT",
+  "authoring": "All vector rectangles and metrics independently defined from numeric constants. No font file or external glyph outline read.",
+  "glyphs": {
+    "A": {
+      "name": "gA",
+      "code": 65,
+      "width": 600,
+      "bbox": [
+        0,
+        0,
+        600,
+        700
+      ],
+      "ink": [
+        [
+          0,
+          0,
+          120,
+          580
+        ],
+        [
+          480,
+          0,
+          120,
+          580
+        ],
+        [
+          0,
+          580,
+          600,
+          120
+        ]
+      ],
+      "counter": [
+        [
+          120,
+          0,
+          360,
+          580
+        ]
+      ]
+    },
+    "B": {
+      "name": "gB",
+      "code": 66,
+      "width": 500,
+      "bbox": [
+        0,
+        0,
+        480,
+        700
+      ],
+      "ink": [
+        [
+          0,
+          0,
+          120,
+          700
+        ],
+        [
+          120,
+          0,
+          360,
+          120
+        ],
+        [
+          120,
+          290,
+          360,
+          120
+        ],
+        [
+          120,
+          580,
+          360,
+          120
+        ]
+      ],
+      "counter": [
+        [
+          120,
+          120,
+          360,
+          170
+        ],
+        [
+          120,
+          410,
+          360,
+          170
+        ]
+      ]
+    }
+  },
+  "space_width": 250
+}

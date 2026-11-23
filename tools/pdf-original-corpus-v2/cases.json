@@ -2271,6 +2271,813 @@
       "selected_reference_engine": "pdfium",
       "acceptance_commit_remote": "c9f19ef5dab2153338bdc6d575fc8381be54345c",
       "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94"
+    },
+    {
+      "use_case_id": "resource-page-form-isolation",
+      "family": "resources",
+      "primary_iso_2020_directory": "07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries",
+      "primary_citation_status": "Verified official PDF Association errata heading; rule wording verification/limits in clause record",
+      "clause_detail": "tools/pdf-original-corpus-v2/resources/clause-index.json",
+      "expected_behavior": "Page and Form bind /Mark independently; page binding survives the Form call",
+      "fixture": "tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-page-form-isolation/original.pdf",
+      "fixture_sha256": "210cf04423a235649de2432b4ce4e764109e51e5173c1bd82ca37fa32a09ea48",
+      "pdf_version": "1.7",
+      "license": "MIT",
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "page_bounds": "visibleCropBox",
+      "background": "white",
+      "annotations": false,
+      "expected_images": [
+        "tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-page-form-isolation/expected-72.png",
+        "tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-page-form-isolation/expected-144.png"
+      ],
+      "source_case_ids": [],
+      "associations": [],
+      "stage": "agreed",
+      "reference_status": "three-engine-agreement-on-predeclared-interiors",
+      "assertion": "ExactRGB on independent authored interiors; exact dimensions; boundaries unscored",
+      "assertion_ids": [
+        "binding-0",
+        "binding-1",
+        "binding-2",
+        "paper-0",
+        "paper-1",
+        "paper-2"
+      ],
+      "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
+      "product_result": "not-run-before-acceptance-commit",
+      "subsystems": [
+        "OnePDF/page-resources",
+        "OnePDF/content-interpretation",
+        "OneImage.Pdf/bridge-integration",
+        "OneImage/paths-clipping"
+      ],
+      "proven_root_cause_owner": null,
+      "exception_reason": null,
+      "normative_status": "Standard-defined semantic contract; exact8bitrounding is a measured acceptancecriterion",
+      "secondary_clause_tags": [
+        "7.8.3 Resource Dictionaries",
+        "8.10.2/Table95 Resources"
+      ],
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
+      "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
+      "selected_reference_engine": "pdfium"
+    },
+    {
+      "use_case_id": "resource-sibling-form-isolation",
+      "family": "resources",
+      "primary_iso_2020_directory": "07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries",
+      "primary_citation_status": "Verified official PDF Association errata heading; rule wording verification/limits in clause record",
+      "clause_detail": "tools/pdf-original-corpus-v2/resources/clause-index.json",
+      "expected_behavior": "Sibling Forms reuse /Mark for different leaf Forms without cross-contamination; page binding remains independent",
+      "fixture": "tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-sibling-form-isolation/original.pdf",
+      "fixture_sha256": "be854a992790eb05368e81ab7b1222ef56459e4373c6d3ea03e18b727ea7572e",
+      "pdf_version": "1.7",
+      "license": "MIT",
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "page_bounds": "visibleCropBox",
+      "background": "white",
+      "annotations": false,
+      "expected_images": [
+        "tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-sibling-form-isolation/expected-72.png",
+        "tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-sibling-form-isolation/expected-144.png"
+      ],
+      "source_case_ids": [],
+      "associations": [],
+      "stage": "agreed",
+      "reference_status": "three-engine-agreement-on-predeclared-interiors",
+      "assertion": "ExactRGB on independent authored interiors; exact dimensions; boundaries unscored",
+      "assertion_ids": [
+        "binding-0",
+        "binding-1",
+        "binding-2",
+        "binding-3",
+        "paper-0",
+        "paper-1"
+      ],
+      "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
+      "product_result": "not-run-before-acceptance-commit",
+      "subsystems": [
+        "OnePDF/page-resources",
+        "OnePDF/content-interpretation",
+        "OneImage.Pdf/bridge-integration",
+        "OneImage/paths-clipping"
+      ],
+      "proven_root_cause_owner": null,
+      "exception_reason": null,
+      "normative_status": "Standard-defined semantic contract; exact8bitrounding is a measured acceptancecriterion",
+      "secondary_clause_tags": [
+        "7.8.3 Resource Dictionaries",
+        "8.10.2/Table95 Resources"
+      ],
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
+      "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
+      "selected_reference_engine": "pdfium"
+    },
+    {
+      "use_case_id": "resource-nested-form-restoration",
+      "family": "resources",
+      "primary_iso_2020_directory": "07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries",
+      "primary_citation_status": "Verified official PDF Association errata heading; rule wording verification/limits in clause record",
+      "clause_detail": "tools/pdf-original-corpus-v2/resources/clause-index.json",
+      "expected_behavior": "Nested Form resolves its own /Mark, then restores outer and page name bindings",
+      "fixture": "tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-nested-form-restoration/original.pdf",
+      "fixture_sha256": "8d6796bdabad875b42e319a3dc3baac8db2d34a58dec4681719bcc1a39413f46",
+      "pdf_version": "1.7",
+      "license": "MIT",
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "page_bounds": "visibleCropBox",
+      "background": "white",
+      "annotations": false,
+      "expected_images": [
+        "tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-nested-form-restoration/expected-72.png",
+        "tests/testdata/pdf-original-v2/07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries/resource-nested-form-restoration/expected-144.png"
+      ],
+      "source_case_ids": [],
+      "associations": [],
+      "stage": "agreed",
+      "reference_status": "three-engine-agreement-on-predeclared-interiors",
+      "assertion": "ExactRGB on independent authored interiors; exact dimensions; boundaries unscored",
+      "assertion_ids": [
+        "binding-0",
+        "binding-1",
+        "binding-2",
+        "binding-3",
+        "paper-0",
+        "paper-1"
+      ],
+      "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
+      "product_result": "not-run-before-acceptance-commit",
+      "subsystems": [
+        "OnePDF/page-resources",
+        "OnePDF/content-interpretation",
+        "OneImage.Pdf/bridge-integration",
+        "OneImage/paths-clipping"
+      ],
+      "proven_root_cause_owner": null,
+      "exception_reason": null,
+      "normative_status": "Standard-defined semantic contract; exact8bitrounding is a measured acceptancecriterion",
+      "secondary_clause_tags": [
+        "7.8.3 Resource Dictionaries",
+        "8.10.2/Table95 Resources"
+      ],
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
+      "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
+      "selected_reference_engine": "pdfium"
+    },
+    {
+      "use_case_id": "text-td-line-origin",
+      "family": "text",
+      "primary_iso_2020_directory": "09-Text/09.04-Text-objects/09.04.02-Text-positioning-operators",
+      "primary_citation_status": "Verified official PDF Association errata heading; rule wording verification/limits in clause record",
+      "clause_detail": "tools/pdf-original-corpus-v2/text/clause-index.json",
+      "expected_behavior": "Td restores the line origin after Tj advances the text matrix.",
+      "fixture": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.02-Text-positioning-operators/text-td-line-origin/original.pdf",
+      "fixture_sha256": "59cf354aba73ec5f3cdcae636ad1129c16a48954d508e8578cd5aaad29897198",
+      "pdf_version": "1.7",
+      "license": "MIT",
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "page_bounds": "visibleCropBox",
+      "background": "white",
+      "annotations": false,
+      "expected_images": [
+        "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.02-Text-positioning-operators/text-td-line-origin/expected-72.png",
+        "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.02-Text-positioning-operators/text-td-line-origin/expected-144.png"
+      ],
+      "source_case_ids": [],
+      "associations": [],
+      "stage": "agreed",
+      "reference_status": "three-engine-agreement-on-predeclared-interiors",
+      "assertion": "ExactRGB on independent authored interiors; exact dimensions; boundaries unscored",
+      "assertion_ids": [
+        "glyph-0-A-ink-0",
+        "glyph-0-A-ink-1",
+        "glyph-0-A-ink-2",
+        "glyph-0-A-counter-0",
+        "glyph-1-B-ink-0",
+        "glyph-1-B-ink-1",
+        "glyph-1-B-ink-2",
+        "glyph-1-B-ink-3",
+        "glyph-1-B-counter-0",
+        "glyph-1-B-counter-1",
+        "glyph-2-B-ink-0",
+        "glyph-2-B-ink-1",
+        "glyph-2-B-ink-2",
+        "glyph-2-B-ink-3",
+        "glyph-2-B-counter-0",
+        "glyph-2-B-counter-1",
+        "glyph-3-A-ink-0",
+        "glyph-3-A-ink-1",
+        "glyph-3-A-ink-2",
+        "glyph-3-A-counter-0",
+        "paper"
+      ],
+      "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
+      "product_result": "not-run-before-acceptance-commit",
+      "subsystems": [
+        "OnePDF/font-text-interpretation",
+        "OneImage.Pdf/bridge-integration",
+        "OneImage/glyph-rasterization",
+        "OneImage/paths-clipping"
+      ],
+      "proven_root_cause_owner": null,
+      "exception_reason": null,
+      "normative_status": "Standard-defined semantic contract; exact8bitrounding is a measured acceptancecriterion",
+      "secondary_clause_tags": [
+        "9.4.2 Text-Positioning Operators, Table 108",
+        "9.4.3 Text-Showing Operators",
+        "9.6.5 Type 3 Fonts"
+      ],
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
+      "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
+      "selected_reference_engine": "pdfium"
+    },
+    {
+      "use_case_id": "text-tc-tw-spacing",
+      "family": "text",
+      "primary_iso_2020_directory": "09-Text/09.03-Text-state-parameters-and-operators",
+      "primary_citation_status": "Verified official PDF Association errata heading; rule wording verification/limits in clause record",
+      "clause_detail": "tools/pdf-original-corpus-v2/text/clause-index.json",
+      "expected_behavior": "Independent default/Tc/Tw controls distinguish character advancement from single-byte space advancement.",
+      "fixture": "tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/text-tc-tw-spacing/original.pdf",
+      "fixture_sha256": "ec4f58da6a0e92aa16153509cf1db2fb39dc1ad193a5fa1d7adf7afbf80835a1",
+      "pdf_version": "1.7",
+      "license": "MIT",
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "page_bounds": "visibleCropBox",
+      "background": "white",
+      "annotations": false,
+      "expected_images": [
+        "tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/text-tc-tw-spacing/expected-72.png",
+        "tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/text-tc-tw-spacing/expected-144.png"
+      ],
+      "source_case_ids": [],
+      "associations": [],
+      "stage": "agreed",
+      "reference_status": "three-engine-agreement-on-predeclared-interiors",
+      "assertion": "ExactRGB on independent authored interiors; exact dimensions; boundaries unscored",
+      "assertion_ids": [
+        "glyph-0-A-ink-0",
+        "glyph-0-A-ink-1",
+        "glyph-0-A-ink-2",
+        "glyph-0-A-counter-0",
+        "glyph-1-B-ink-0",
+        "glyph-1-B-ink-1",
+        "glyph-1-B-ink-2",
+        "glyph-1-B-ink-3",
+        "glyph-1-B-counter-0",
+        "glyph-1-B-counter-1",
+        "glyph-2-A-ink-0",
+        "glyph-2-A-ink-1",
+        "glyph-2-A-ink-2",
+        "glyph-2-A-counter-0",
+        "glyph-3-B-ink-0",
+        "glyph-3-B-ink-1",
+        "glyph-3-B-ink-2",
+        "glyph-3-B-ink-3",
+        "glyph-3-B-counter-0",
+        "glyph-3-B-counter-1",
+        "glyph-4-A-ink-0",
+        "glyph-4-A-ink-1",
+        "glyph-4-A-ink-2",
+        "glyph-4-A-counter-0",
+        "glyph-5-B-ink-0",
+        "glyph-5-B-ink-1",
+        "glyph-5-B-ink-2",
+        "glyph-5-B-ink-3",
+        "glyph-5-B-counter-0",
+        "glyph-5-B-counter-1",
+        "paper"
+      ],
+      "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
+      "product_result": "not-run-before-acceptance-commit",
+      "subsystems": [
+        "OnePDF/font-text-interpretation",
+        "OneImage.Pdf/bridge-integration",
+        "OneImage/glyph-rasterization",
+        "OneImage/paths-clipping"
+      ],
+      "proven_root_cause_owner": null,
+      "exception_reason": null,
+      "normative_status": "Standard-defined semantic contract; exact8bitrounding is a measured acceptancecriterion",
+      "secondary_clause_tags": [
+        "9.3.2 Character Spacing",
+        "9.3.3 Word Spacing",
+        "9.4.2 Text-Positioning Operators",
+        "9.6.5 Type 3 Fonts"
+      ],
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
+      "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
+      "selected_reference_engine": "pdfium"
+    },
+    {
+      "use_case_id": "text-tj-signed-adjustment",
+      "family": "text",
+      "primary_iso_2020_directory": "09-Text/09.04-Text-objects/09.04.03-Text-showing-operators",
+      "primary_citation_status": "Verified official PDF Association errata heading; rule wording verification/limits in clause record",
+      "clause_detail": "tools/pdf-original-corpus-v2/text/clause-index.json",
+      "expected_behavior": "TJ positive/negative adjustments subtract their thousandths-of-font-size displacement, separate from Tc.",
+      "fixture": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/text-tj-signed-adjustment/original.pdf",
+      "fixture_sha256": "fe68519ed5a45e3013e1b2edae9329577097d4503600725bde10b911a3c98122",
+      "pdf_version": "1.7",
+      "license": "MIT",
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "page_bounds": "visibleCropBox",
+      "background": "white",
+      "annotations": false,
+      "expected_images": [
+        "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/text-tj-signed-adjustment/expected-72.png",
+        "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/text-tj-signed-adjustment/expected-144.png"
+      ],
+      "source_case_ids": [],
+      "associations": [],
+      "stage": "agreed",
+      "reference_status": "three-engine-agreement-on-predeclared-interiors",
+      "assertion": "ExactRGB on independent authored interiors; exact dimensions; boundaries unscored",
+      "assertion_ids": [
+        "glyph-0-A-ink-0",
+        "glyph-0-A-ink-1",
+        "glyph-0-A-ink-2",
+        "glyph-0-A-counter-0",
+        "glyph-1-B-ink-0",
+        "glyph-1-B-ink-1",
+        "glyph-1-B-ink-2",
+        "glyph-1-B-ink-3",
+        "glyph-1-B-counter-0",
+        "glyph-1-B-counter-1",
+        "glyph-2-A-ink-0",
+        "glyph-2-A-ink-1",
+        "glyph-2-A-ink-2",
+        "glyph-2-A-counter-0",
+        "paper"
+      ],
+      "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
+      "product_result": "not-run-before-acceptance-commit",
+      "subsystems": [
+        "OnePDF/font-text-interpretation",
+        "OneImage.Pdf/bridge-integration",
+        "OneImage/glyph-rasterization",
+        "OneImage/paths-clipping"
+      ],
+      "proven_root_cause_owner": null,
+      "exception_reason": null,
+      "normative_status": "Standard-defined semantic contract; exact8bitrounding is a measured acceptancecriterion",
+      "secondary_clause_tags": [
+        "9.4.3 Text-Showing Operators, Table 109",
+        "9.3.2 Character Spacing",
+        "9.6.5 Type 3 Fonts"
+      ],
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
+      "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
+      "selected_reference_engine": "pdfium"
+    },
+    {
+      "use_case_id": "text-tm-rotate-replace",
+      "family": "text",
+      "primary_iso_2020_directory": "09-Text/09.04-Text-objects/09.04.02-Text-positioning-operators",
+      "primary_citation_status": "Verified official PDF Association errata heading; rule wording verification/limits in clause record",
+      "clause_detail": "tools/pdf-original-corpus-v2/text/clause-index.json",
+      "expected_behavior": "Tm rotates glyph shape/advance, then replaces both text matrices with a new ordinary matrix.",
+      "fixture": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.02-Text-positioning-operators/text-tm-rotate-replace/original.pdf",
+      "fixture_sha256": "0ff800091bef242d816f2ec5bc0e3a00387198e472989d2b50e7b7aeef0e60cb",
+      "pdf_version": "1.7",
+      "license": "MIT",
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "page_bounds": "visibleCropBox",
+      "background": "white",
+      "annotations": false,
+      "expected_images": [
+        "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.02-Text-positioning-operators/text-tm-rotate-replace/expected-72.png",
+        "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.02-Text-positioning-operators/text-tm-rotate-replace/expected-144.png"
+      ],
+      "source_case_ids": [],
+      "associations": [],
+      "stage": "agreed",
+      "reference_status": "three-engine-agreement-on-predeclared-interiors",
+      "assertion": "ExactRGB on independent authored interiors; exact dimensions; boundaries unscored",
+      "assertion_ids": [
+        "glyph-0-A-ink-0",
+        "glyph-0-A-ink-1",
+        "glyph-0-A-ink-2",
+        "glyph-0-A-counter-0",
+        "glyph-1-B-ink-0",
+        "glyph-1-B-ink-1",
+        "glyph-1-B-ink-2",
+        "glyph-1-B-ink-3",
+        "glyph-1-B-counter-0",
+        "glyph-1-B-counter-1",
+        "glyph-2-B-ink-0",
+        "glyph-2-B-ink-1",
+        "glyph-2-B-ink-2",
+        "glyph-2-B-ink-3",
+        "glyph-2-B-counter-0",
+        "glyph-2-B-counter-1",
+        "glyph-3-A-ink-0",
+        "glyph-3-A-ink-1",
+        "glyph-3-A-ink-2",
+        "glyph-3-A-counter-0",
+        "paper"
+      ],
+      "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
+      "product_result": "not-run-before-acceptance-commit",
+      "subsystems": [
+        "OnePDF/font-text-interpretation",
+        "OneImage.Pdf/bridge-integration",
+        "OneImage/glyph-rasterization",
+        "OneImage/paths-clipping"
+      ],
+      "proven_root_cause_owner": null,
+      "exception_reason": null,
+      "normative_status": "Standard-defined semantic contract; exact8bitrounding is a measured acceptancecriterion",
+      "secondary_clause_tags": [
+        "9.4.2 Text-Positioning Operators, Table 108",
+        "9.4.4 Text Space Details",
+        "9.6.5 Type 3 Fonts"
+      ],
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
+      "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
+      "selected_reference_engine": "pdfium"
+    },
+    {
+      "use_case_id": "alpha-fill-endpoints",
+      "family": "alpha",
+      "primary_iso_2020_directory": "11-Transparency/11.06-Specifying-transparency-in-PDF",
+      "primary_citation_status": "Verified official PDF Association errata heading; rule wording verification/limits in clause record",
+      "clause_detail": "tools/pdf-original-corpus-v2/alpha/clause-index.json",
+      "expected_behavior": "Nonstroking ca0 leaves the opaque backdrop unchanged; ca1 replaces it.",
+      "fixture": "tests/testdata/pdf-original-v2/11-Transparency/11.06-Specifying-transparency-in-PDF/alpha-fill-endpoints/original.pdf",
+      "fixture_sha256": "76b0c94955ecf50229f686af4a9e428a82123a25fac5f012776947f90f3ccb5a",
+      "pdf_version": "1.7",
+      "license": "MIT",
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "page_bounds": "visibleCropBox",
+      "background": "white",
+      "annotations": false,
+      "expected_images": [
+        "tests/testdata/pdf-original-v2/11-Transparency/11.06-Specifying-transparency-in-PDF/alpha-fill-endpoints/expected-72.png",
+        "tests/testdata/pdf-original-v2/11-Transparency/11.06-Specifying-transparency-in-PDF/alpha-fill-endpoints/expected-144.png"
+      ],
+      "source_case_ids": [],
+      "associations": [],
+      "stage": "agreed",
+      "reference_status": "three-engine-agreement-on-predeclared-interiors",
+      "assertion": "ExactRGB on independent authored interiors; exact dimensions; boundaries unscored",
+      "assertion_ids": [
+        "ca-zero-preserves-blue",
+        "ca-one-opaque-red",
+        "paper"
+      ],
+      "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
+      "product_result": "not-run-before-acceptance-commit",
+      "subsystems": [
+        "OnePDF/content-interpretation",
+        "OneImage.Pdf/bridge-integration",
+        "OneImage/transparency-compositing"
+      ],
+      "proven_root_cause_owner": null,
+      "exception_reason": null,
+      "normative_status": "Standard-defined semantic contract; exact8bitrounding is a measured acceptancecriterion",
+      "secondary_clause_tags": [
+        "11.6.4.4 Constant Shape and Opacity",
+        "8.4.5 Graphics State Parameter Dictionaries, Table57 CA/ca",
+        "11.3.3 Basic Compositing Formula"
+      ],
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
+      "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
+      "selected_reference_engine": "pdfium"
+    },
+    {
+      "use_case_id": "alpha-stroke-endpoints",
+      "family": "alpha",
+      "primary_iso_2020_directory": "11-Transparency/11.06-Specifying-transparency-in-PDF",
+      "primary_citation_status": "Verified official PDF Association errata heading; rule wording verification/limits in clause record",
+      "clause_detail": "tools/pdf-original-corpus-v2/alpha/clause-index.json",
+      "expected_behavior": "Stroking CA0 is invisible; CA1 is opaque, and CA does not suppress an ordinary fill.",
+      "fixture": "tests/testdata/pdf-original-v2/11-Transparency/11.06-Specifying-transparency-in-PDF/alpha-stroke-endpoints/original.pdf",
+      "fixture_sha256": "329c367b91b4ceeee25ef18058ad0857e6a068440b79448a3fc1021549709a7c",
+      "pdf_version": "1.7",
+      "license": "MIT",
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "page_bounds": "visibleCropBox",
+      "background": "white",
+      "annotations": false,
+      "expected_images": [
+        "tests/testdata/pdf-original-v2/11-Transparency/11.06-Specifying-transparency-in-PDF/alpha-stroke-endpoints/expected-72.png",
+        "tests/testdata/pdf-original-v2/11-Transparency/11.06-Specifying-transparency-in-PDF/alpha-stroke-endpoints/expected-144.png"
+      ],
+      "source_case_ids": [],
+      "associations": [],
+      "stage": "agreed",
+      "reference_status": "three-engine-agreement-on-predeclared-interiors",
+      "assertion": "ExactRGB on independent authored interiors; exact dimensions; boundaries unscored",
+      "assertion_ids": [
+        "CA-zero-invisible",
+        "CA-one-opaque",
+        "fill-independent-of-CA",
+        "paper"
+      ],
+      "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
+      "product_result": "not-run-before-acceptance-commit",
+      "subsystems": [
+        "OnePDF/content-interpretation",
+        "OneImage.Pdf/bridge-integration",
+        "OneImage/transparency-compositing"
+      ],
+      "proven_root_cause_owner": null,
+      "exception_reason": null,
+      "normative_status": "Standard-defined semantic contract; exact8bitrounding is a measured acceptancecriterion",
+      "secondary_clause_tags": [
+        "11.6.4.4 Constant Shape and Opacity",
+        "8.4.5 Graphics State Parameter Dictionaries, Table57 CA/ca",
+        "11.3.3 Basic Compositing Formula"
+      ],
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
+      "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
+      "selected_reference_engine": "pdfium"
+    },
+    {
+      "use_case_id": "alpha-ca-state-restore",
+      "family": "alpha",
+      "primary_iso_2020_directory": "11-Transparency/11.06-Specifying-transparency-in-PDF",
+      "primary_citation_status": "Verified official PDF Association errata heading; rule wording verification/limits in clause record",
+      "clause_detail": "tools/pdf-original-corpus-v2/alpha/clause-index.json",
+      "expected_behavior": "Balanced q/Q restores the prior nonstroking alpha after a ca0 scope.",
+      "fixture": "tests/testdata/pdf-original-v2/11-Transparency/11.06-Specifying-transparency-in-PDF/alpha-ca-state-restore/original.pdf",
+      "fixture_sha256": "284bd0ab2c9d6ad31b0e8326b87f8a1bf46911a513af92b0c07e681f649ea8ce",
+      "pdf_version": "1.7",
+      "license": "MIT",
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "page_bounds": "visibleCropBox",
+      "background": "white",
+      "annotations": false,
+      "expected_images": [
+        "tests/testdata/pdf-original-v2/11-Transparency/11.06-Specifying-transparency-in-PDF/alpha-ca-state-restore/expected-72.png",
+        "tests/testdata/pdf-original-v2/11-Transparency/11.06-Specifying-transparency-in-PDF/alpha-ca-state-restore/expected-144.png"
+      ],
+      "source_case_ids": [],
+      "associations": [],
+      "stage": "agreed",
+      "reference_status": "three-engine-agreement-on-predeclared-interiors",
+      "assertion": "ExactRGB on independent authored interiors; exact dimensions; boundaries unscored",
+      "assertion_ids": [
+        "scoped-transparent-fill",
+        "restored-opaque-fill",
+        "paper"
+      ],
+      "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
+      "product_result": "not-run-before-acceptance-commit",
+      "subsystems": [
+        "OnePDF/content-interpretation",
+        "OneImage.Pdf/bridge-integration",
+        "OneImage/transparency-compositing"
+      ],
+      "proven_root_cause_owner": null,
+      "exception_reason": null,
+      "normative_status": "Standard-defined semantic contract; exact8bitrounding is a measured acceptancecriterion",
+      "secondary_clause_tags": [
+        "11.6.4.4 Constant Shape and Opacity",
+        "8.4.5 Graphics State Parameter Dictionaries, Table57 CA/ca",
+        "11.3.3 Basic Compositing Formula"
+      ],
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
+      "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
+      "selected_reference_engine": "pdfium"
+    },
+    {
+      "use_case_id": "alpha-fill-fraction06",
+      "family": "alpha",
+      "primary_iso_2020_directory": "11-Transparency/11.06-Specifying-transparency-in-PDF",
+      "primary_citation_status": "Verified official PDF Association errata heading; rule wording verification/limits in clause record",
+      "clause_detail": "tools/pdf-original-corpus-v2/alpha/clause-index.json",
+      "expected_behavior": "Normal nonstroking alpha0.6 composites an ordinary red fill over white; byte quantization is measured separately from normative real-valued blending.",
+      "fixture": "tests/testdata/pdf-original-v2/11-Transparency/11.06-Specifying-transparency-in-PDF/alpha-fill-fraction06/original.pdf",
+      "fixture_sha256": "2c7bc20eff979b0713adaae7ee31c4232272e8c7cc0924df717c9047b4281d45",
+      "pdf_version": "1.7",
+      "license": "MIT",
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "page_bounds": "visibleCropBox",
+      "background": "white",
+      "annotations": false,
+      "expected_images": [],
+      "source_case_ids": [],
+      "associations": [],
+      "stage": "generated",
+      "reference_status": "mismatch",
+      "assertion": "ExactRGB on independent authored interiors; exact dimensions; boundaries unscored",
+      "assertion_ids": [
+        "fractional-red",
+        "opaque-blue-control",
+        "paper"
+      ],
+      "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
+      "product_result": "withheld-reference-disagreement",
+      "subsystems": [
+        "OnePDF/content-interpretation",
+        "OneImage.Pdf/bridge-integration",
+        "OneImage/transparency-compositing"
+      ],
+      "proven_root_cause_owner": null,
+      "exception_reason": "Fractional alpha8bitquantization differs between pinned references; no majoritygolden or productgrade",
+      "normative_status": "Standard-defined semantic contract; exact8bitrounding is a measured acceptancecriterion",
+      "secondary_clause_tags": [
+        "11.6.4.4 Constant Shape and Opacity",
+        "8.4.5 Graphics State Parameter Dictionaries, Table57 CA/ca",
+        "11.3.3 Basic Compositing Formula"
+      ],
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
+      "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
+      "selected_reference_engine": null
+    },
+    {
+      "use_case_id": "alpha-stroke-fraction06",
+      "family": "alpha",
+      "primary_iso_2020_directory": "11-Transparency/11.06-Specifying-transparency-in-PDF",
+      "primary_citation_status": "Verified official PDF Association errata heading; rule wording verification/limits in clause record",
+      "clause_detail": "tools/pdf-original-corpus-v2/alpha/clause-index.json",
+      "expected_behavior": "Normal stroking alpha0.6 composites an ordinary blue stroke over white while a nonstroking fill remains opaque.",
+      "fixture": "tests/testdata/pdf-original-v2/11-Transparency/11.06-Specifying-transparency-in-PDF/alpha-stroke-fraction06/original.pdf",
+      "fixture_sha256": "de8613f491f0223d25d52b04c189e4f965980b9e8575b695b79e05ade5057aa6",
+      "pdf_version": "1.7",
+      "license": "MIT",
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "page_bounds": "visibleCropBox",
+      "background": "white",
+      "annotations": false,
+      "expected_images": [],
+      "source_case_ids": [],
+      "associations": [],
+      "stage": "generated",
+      "reference_status": "mismatch",
+      "assertion": "ExactRGB on independent authored interiors; exact dimensions; boundaries unscored",
+      "assertion_ids": [
+        "fractional-blue",
+        "opaque-red-independent-ca",
+        "paper"
+      ],
+      "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
+      "product_result": "withheld-reference-disagreement",
+      "subsystems": [
+        "OnePDF/content-interpretation",
+        "OneImage.Pdf/bridge-integration",
+        "OneImage/transparency-compositing"
+      ],
+      "proven_root_cause_owner": null,
+      "exception_reason": "Fractional alpha8bitquantization differs between pinned references; no majoritygolden or productgrade",
+      "normative_status": "Standard-defined semantic contract; exact8bitrounding is a measured acceptancecriterion",
+      "secondary_clause_tags": [
+        "11.6.4.4 Constant Shape and Opacity",
+        "8.4.5 Graphics State Parameter Dictionaries, Table57 CA/ca",
+        "11.3.3 Basic Compositing Formula"
+      ],
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
+      "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
+      "selected_reference_engine": null
+    },
+    {
+      "use_case_id": "alpha-fill-fraction025",
+      "family": "alpha",
+      "primary_iso_2020_directory": "11-Transparency/11.06-Specifying-transparency-in-PDF",
+      "primary_citation_status": "Verified official PDF Association errata heading; rule wording verification/limits in clause record",
+      "clause_detail": "tools/pdf-original-corpus-v2/alpha/clause-index.json",
+      "expected_behavior": "A separate binary-exact ca0.25 control composites red over white; nearest8bit analytic samples are191 for the backdrop channels.",
+      "fixture": "tests/testdata/pdf-original-v2/11-Transparency/11.06-Specifying-transparency-in-PDF/alpha-fill-fraction025/original.pdf",
+      "fixture_sha256": "149513d262c02c440ba2c4d3c3170e146a886323b0a11073ea73535dab3d7a1f",
+      "pdf_version": "1.7",
+      "license": "MIT",
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "page_bounds": "visibleCropBox",
+      "background": "white",
+      "annotations": false,
+      "expected_images": [],
+      "source_case_ids": [],
+      "associations": [],
+      "stage": "generated",
+      "reference_status": "mismatch",
+      "assertion": "ExactRGB on independent authored interiors; exact dimensions; boundaries unscored",
+      "assertion_ids": [
+        "quarter-red",
+        "opaque-blue-control",
+        "paper"
+      ],
+      "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
+      "product_result": "withheld-reference-disagreement",
+      "subsystems": [
+        "OnePDF/content-interpretation",
+        "OneImage.Pdf/bridge-integration",
+        "OneImage/transparency-compositing"
+      ],
+      "proven_root_cause_owner": null,
+      "exception_reason": "Fractional alpha8bitquantization differs between pinned references; no majoritygolden or productgrade",
+      "normative_status": "Standard-defined semantic contract; exact8bitrounding is a measured acceptancecriterion",
+      "secondary_clause_tags": [
+        "11.6.4.4 Constant Shape and Opacity",
+        "8.4.5 Graphics State Parameter Dictionaries, Table57 CA/ca",
+        "11.3.3 Basic Compositing Formula"
+      ],
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
+      "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
+      "selected_reference_engine": null
+    },
+    {
+      "use_case_id": "alpha-stroke-fraction025",
+      "family": "alpha",
+      "primary_iso_2020_directory": "11-Transparency/11.06-Specifying-transparency-in-PDF",
+      "primary_citation_status": "Verified official PDF Association errata heading; rule wording verification/limits in clause record",
+      "clause_detail": "tools/pdf-original-corpus-v2/alpha/clause-index.json",
+      "expected_behavior": "A separate binary-exact CA0.25 control composites blue over white while the ordinary fill remains opaque.",
+      "fixture": "tests/testdata/pdf-original-v2/11-Transparency/11.06-Specifying-transparency-in-PDF/alpha-stroke-fraction025/original.pdf",
+      "fixture_sha256": "e04d501fbaa658a078ed8364cf869485ff125027c02b4668c91318e09328fd13",
+      "pdf_version": "1.7",
+      "license": "MIT",
+      "page": 0,
+      "dpis": [
+        72,
+        144
+      ],
+      "page_bounds": "visibleCropBox",
+      "background": "white",
+      "annotations": false,
+      "expected_images": [],
+      "source_case_ids": [],
+      "associations": [],
+      "stage": "generated",
+      "reference_status": "mismatch",
+      "assertion": "ExactRGB on independent authored interiors; exact dimensions; boundaries unscored",
+      "assertion_ids": [
+        "quarter-blue",
+        "opaque-red-independent-ca",
+        "paper"
+      ],
+      "automated_command": "python tools/pdf-original-corpus-v2/pipeline.py verify",
+      "product_result": "withheld-reference-disagreement",
+      "subsystems": [
+        "OnePDF/content-interpretation",
+        "OneImage.Pdf/bridge-integration",
+        "OneImage/transparency-compositing"
+      ],
+      "proven_root_cause_owner": null,
+      "exception_reason": "Fractional alpha8bitquantization differs between pinned references; no majoritygolden or productgrade",
+      "normative_status": "Standard-defined semantic contract; exact8bitrounding is a measured acceptancecriterion",
+      "secondary_clause_tags": [
+        "11.6.4.4 Constant Shape and Opacity",
+        "8.4.5 Graphics State Parameter Dictionaries, Table57 CA/ca",
+        "11.3.3 Basic Compositing Formula"
+      ],
+      "issue": "https://github.com/pepkaro/oneimage-csharp/issues/6",
+      "pr": "https://github.com/pepkaro/oneimage-csharp/pull/94",
+      "selected_reference_engine": null
     }
   ]
 }

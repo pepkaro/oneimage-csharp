@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "slice": "ISO-PAGE-RESOURCE-01",
+  "verified_on": "2026-11-23",
+  "primary": {
+    "standard": "ISO32000-2:2020",
+    "clause": "7.8.3 Resource dictionaries",
+    "verified_scope": "Official amended bullets associate page content with page Resources and require explicit Resources for Form content streams.",
+    "url": "https://pdf-issues.pdfa.org/32000-2-2020/clause07.html"
+  },
+  "secondary": {
+    "standard": "ISO32000-2:2020",
+    "clause": "8.10.2/Table93 Resources",
+    "verified_scope": "Official amended entry requires independent Form resources in PDF2.0, containing all named resources used by the Form, without promotion to outer resources.",
+    "url": "https://pdf-issues.pdfa.org/32000-2-2020/clause08.html"
+  },
+  "governing_legacy": {
+    "standard": "ISO32000-1:2008",
+    "fixture_version": "1.7",
+    "verified_clauses": [
+      "7.8.3 Resource Dictionaries",
+      "8.10.2/Table95 Resources"
+    ],
+    "verified_scope": "Existing official text inspected: resource names are local to content-stream scope; explicit independent Form dictionaries contain their named resources without promotion to callers."
+  },
+  "limitation": "Full2020 standard not acquired; public ratified errata only inspected. The unamended2020 name-locality paragraph and details beyond the reproduced resource-association/Form-independence rules remain pending full-text access. Exact RGB raster values are analytic route criteria, not ISO quantization mandates.",
+  "resource": "https://pdfa.org/resource/iso-32000-2",
+  "upstream_mappings": [],
+  "entries": [
+    {
+      "id": "resource-page-form-isolation",
+      "primary": "7.8.3",
+      "secondary": [
+        "8.10.2/Table93 Resources"
+      ],
+      "normative_behavior": "Page and Form bind /Mark independently; page binding survives the Form call",
+      "observed_criterion": "Exact analytic rectangles/inset regions and white paper at72/144DPI; one-device-pixel geometry boundaries excluded"
+    },
+    {
+      "id": "resource-sibling-form-isolation",
+      "primary": "7.8.3",
+      "secondary": [
+        "8.10.2/Table93 Resources"
+      ],
+      "normative_behavior": "Sibling Forms reuse /Mark for different leaf Forms without cross-contamination; page binding remains independent",
+      "observed_criterion": "Exact analytic rectangles/inset regions and white paper at72/144DPI; one-device-pixel geometry boundaries excluded"
+    },
+    {
+      "id": "resource-nested-form-restoration",
+      "primary": "7.8.3",
+      "secondary": [
+        "8.10.2/Table93 Resources"
+      ],
+      "normative_behavior": "Nested Form resolves its own /Mark, then restores outer and page name bindings",
+      "observed_criterion": "Exact analytic rectangles/inset regions and white paper at72/144DPI; one-device-pixel geometry boundaries excluded"
+    }
+  ]
+}

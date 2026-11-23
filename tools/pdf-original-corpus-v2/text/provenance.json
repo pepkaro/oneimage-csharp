@@ -1,0 +1,43 @@
+{
+  "license": "MIT",
+  "copyright": "Copyright (c) 2026 Original PDF corpus contributors; original font outlines, metrics, PDFs and generator are MIT. Reused adapters preserve own earlier copyright headers.",
+  "font_provenance": {
+    "kind": "Type3",
+    "original_glyphs": [
+      "A/gA",
+      "B/gB",
+      "space"
+    ],
+    "construction": "Independent numeric rectangles and widths; original ToUnicode/encoding tables. No external/system font data or upstream glyph outlines.",
+    "external_font_bytes": 0,
+    "original_font_design_file": "original-font.json"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "pypdf": "6.21.4",
+  "references": {
+    "pdfium": "153.0.7999.0",
+    "pypdfium2": "5.13.0",
+    "mupdf": "1.26.11",
+    "pymupdf": "1.26.6",
+    "pdfjs": "6.5.438",
+    "pdfjs_build": "0a4153349",
+    "node": "24.22.3",
+    "node_canvas": "1.1.1"
+  },
+  "adapter_origin": "Owned MIT preceding corpus batches; no upstream test harness.",
+  "expected_oracle": "Explicit independently calculated glyph matrices and original numeric shapes; independent text-operator parser verifies layout intent; three fresh reference renders qualify visual regions.",
+  "target": {
+    "remote_draft_pr": 94,
+    "remote_review_head": "1caa785479982f7b1431a728cb14e89ae0bf21c8",
+    "materialized_local_head": "6f8060d33bb6043034247a730a5570ce541b54de",
+    "materialized_tree": "04bde9471cef96ee9a454ef1ba4e18a020c46b9c",
+    "verification": "Root confirmed equal remote/local trees and remote exact head; worker rechecked local HEAD/tree. No product execution by worker."
+  },
+  "upstream_fixture_fetches": 0,
+  "upstream_inputs_executed": 0,
+  "upstream_entry_passes": 0,
+  "product_tests": 0,
+  "remote_writes": 0,
+  "previous_checkpoints_preserved": true,
+  "net_new_global_behavior_count": null
+}

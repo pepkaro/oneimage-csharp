@@ -1,0 +1,997 @@
+{
+  "schema_version": 1,
+  "batch": "ISO-PAGE-RESOURCE-01",
+  "owner": "mozilla_originals",
+  "purpose": "Independent local resource-name bindings in page, sibling and nested Form content streams",
+  "fixture_count": 3,
+  "case_count": 3,
+  "independently_authored": true,
+  "upstream_fixture_bytes_read": 0,
+  "cases": [
+    {
+      "id": "resource-page-form-isolation",
+      "file": "inputs/resource-page-form-isolation.pdf",
+      "sha256": "210cf04423a235649de2432b4ce4e764109e51e5173c1bd82ca37fa32a09ea48",
+      "license": "MIT",
+      "fixture_version": "1.7",
+      "contract": "Page and Form bind /Mark independently; page binding survives the Form call",
+      "spec": "ISO 32000-1:2008",
+      "spec_clauses": [
+        "7.8.3 Resource Dictionaries",
+        "8.10.2/Table95 Resources"
+      ],
+      "primary_iso_2020": "7.8.3 Resource dictionaries",
+      "secondary_iso_2020": "8.10.2/Table93 Resources",
+      "citation_status": "Relevant2020 amended resource-association and Form-independence text verified in official public errata; complete standard not inspected",
+      "route": "page content /Do invoking independent Form XObjects with explicit local /Resources /XObject dictionaries",
+      "width": 160,
+      "height": 100,
+      "display_width_points": 160,
+      "display_height_points": 100,
+      "user_unit": 1,
+      "rotation": 0,
+      "page": 0,
+      "pages": [
+        0
+      ],
+      "page_count": 1,
+      "dpis": [
+        72,
+        144
+      ],
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "annotations": "none",
+      "shape_rectangles": [
+        [
+          10,
+          10,
+          30,
+          25,
+          [
+            255,
+            0,
+            0
+          ]
+        ],
+        [
+          70,
+          10,
+          30,
+          25,
+          [
+            0,
+            0,
+            255
+          ]
+        ],
+        [
+          10,
+          60,
+          30,
+          25,
+          [
+            255,
+            0,
+            0
+          ]
+        ]
+      ],
+      "samples": [
+        {
+          "id": "binding-0",
+          "x": 25,
+          "y": 22,
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-1",
+          "x": 85,
+          "y": 22,
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-2",
+          "x": 25,
+          "y": 72,
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-0",
+          "x": 120,
+          "y": 20,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-1",
+          "x": 70,
+          "y": 70,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-2",
+          "x": 50,
+          "y": 50,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_samples": [
+        {
+          "id": "binding-0",
+          "point": [
+            25,
+            22
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-1",
+          "point": [
+            85,
+            22
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-2",
+          "point": [
+            25,
+            72
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-0",
+          "point": [
+            120,
+            20
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-1",
+          "point": [
+            70,
+            70
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-2",
+          "point": [
+            50,
+            50
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_regions": [
+        {
+          "id": "binding-0",
+          "rect": [
+            12,
+            12,
+            26,
+            21
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-1",
+          "rect": [
+            72,
+            12,
+            26,
+            21
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-2",
+          "rect": [
+            12,
+            62,
+            26,
+            21
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-0",
+          "rect": [
+            118,
+            18,
+            4,
+            4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-1",
+          "rect": [
+            68,
+            68,
+            4,
+            4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-2",
+          "rect": [
+            48,
+            48,
+            4,
+            4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "sample_coordinates": "PDF page points x right/y up; image row=floor((100-y)*dpi/72)",
+      "mask": "All pixels except predeclared one-device-pixel bands around shape rectangle boundaries; expected_regions are separate inset exact controls",
+      "upstream_association": {
+        "upstream_id": null,
+        "scope": "standard-contract-only",
+        "exact_upstream_scope_established": false,
+        "upstream_input_executed": false
+      }
+    },
+    {
+      "id": "resource-sibling-form-isolation",
+      "file": "inputs/resource-sibling-form-isolation.pdf",
+      "sha256": "be854a992790eb05368e81ab7b1222ef56459e4373c6d3ea03e18b727ea7572e",
+      "license": "MIT",
+      "fixture_version": "1.7",
+      "contract": "Sibling Forms reuse /Mark for different leaf Forms without cross-contamination; page binding remains independent",
+      "spec": "ISO 32000-1:2008",
+      "spec_clauses": [
+        "7.8.3 Resource Dictionaries",
+        "8.10.2/Table95 Resources"
+      ],
+      "primary_iso_2020": "7.8.3 Resource dictionaries",
+      "secondary_iso_2020": "8.10.2/Table93 Resources",
+      "citation_status": "Relevant2020 amended resource-association and Form-independence text verified in official public errata; complete standard not inspected",
+      "route": "page content /Do invoking independent Form XObjects with explicit local /Resources /XObject dictionaries",
+      "width": 160,
+      "height": 100,
+      "display_width_points": 160,
+      "display_height_points": 100,
+      "user_unit": 1,
+      "rotation": 0,
+      "page": 0,
+      "pages": [
+        0
+      ],
+      "page_count": 1,
+      "dpis": [
+        72,
+        144
+      ],
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "annotations": "none",
+      "shape_rectangles": [
+        [
+          10,
+          10,
+          30,
+          25,
+          [
+            255,
+            0,
+            0
+          ]
+        ],
+        [
+          70,
+          10,
+          30,
+          25,
+          [
+            0,
+            255,
+            0
+          ]
+        ],
+        [
+          10,
+          60,
+          30,
+          25,
+          [
+            255,
+            0,
+            0
+          ]
+        ],
+        [
+          70,
+          60,
+          30,
+          25,
+          [
+            0,
+            0,
+            255
+          ]
+        ]
+      ],
+      "samples": [
+        {
+          "id": "binding-0",
+          "x": 25,
+          "y": 22,
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-1",
+          "x": 85,
+          "y": 22,
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-2",
+          "x": 25,
+          "y": 72,
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-3",
+          "x": 85,
+          "y": 72,
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-0",
+          "x": 120,
+          "y": 20,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-1",
+          "x": 50,
+          "y": 50,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_samples": [
+        {
+          "id": "binding-0",
+          "point": [
+            25,
+            22
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-1",
+          "point": [
+            85,
+            22
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-2",
+          "point": [
+            25,
+            72
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-3",
+          "point": [
+            85,
+            72
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-0",
+          "point": [
+            120,
+            20
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-1",
+          "point": [
+            50,
+            50
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_regions": [
+        {
+          "id": "binding-0",
+          "rect": [
+            12,
+            12,
+            26,
+            21
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-1",
+          "rect": [
+            72,
+            12,
+            26,
+            21
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-2",
+          "rect": [
+            12,
+            62,
+            26,
+            21
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-3",
+          "rect": [
+            72,
+            62,
+            26,
+            21
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-0",
+          "rect": [
+            118,
+            18,
+            4,
+            4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-1",
+          "rect": [
+            48,
+            48,
+            4,
+            4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "sample_coordinates": "PDF page points x right/y up; image row=floor((100-y)*dpi/72)",
+      "mask": "All pixels except predeclared one-device-pixel bands around shape rectangle boundaries; expected_regions are separate inset exact controls",
+      "upstream_association": {
+        "upstream_id": null,
+        "scope": "standard-contract-only",
+        "exact_upstream_scope_established": false,
+        "upstream_input_executed": false
+      }
+    },
+    {
+      "id": "resource-nested-form-restoration",
+      "file": "inputs/resource-nested-form-restoration.pdf",
+      "sha256": "8d6796bdabad875b42e319a3dc3baac8db2d34a58dec4681719bcc1a39413f46",
+      "license": "MIT",
+      "fixture_version": "1.7",
+      "contract": "Nested Form resolves its own /Mark, then restores outer and page name bindings",
+      "spec": "ISO 32000-1:2008",
+      "spec_clauses": [
+        "7.8.3 Resource Dictionaries",
+        "8.10.2/Table95 Resources"
+      ],
+      "primary_iso_2020": "7.8.3 Resource dictionaries",
+      "secondary_iso_2020": "8.10.2/Table93 Resources",
+      "citation_status": "Relevant2020 amended resource-association and Form-independence text verified in official public errata; complete standard not inspected",
+      "route": "page content /Do invoking independent Form XObjects with explicit local /Resources /XObject dictionaries",
+      "width": 160,
+      "height": 100,
+      "display_width_points": 160,
+      "display_height_points": 100,
+      "user_unit": 1,
+      "rotation": 0,
+      "page": 0,
+      "pages": [
+        0
+      ],
+      "page_count": 1,
+      "dpis": [
+        72,
+        144
+      ],
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "annotations": "none",
+      "shape_rectangles": [
+        [
+          10,
+          10,
+          30,
+          25,
+          [
+            0,
+            0,
+            255
+          ]
+        ],
+        [
+          50,
+          10,
+          30,
+          25,
+          [
+            0,
+            255,
+            0
+          ]
+        ],
+        [
+          10,
+          50,
+          30,
+          25,
+          [
+            0,
+            0,
+            255
+          ]
+        ],
+        [
+          110,
+          10,
+          30,
+          25,
+          [
+            255,
+            0,
+            0
+          ]
+        ]
+      ],
+      "samples": [
+        {
+          "id": "binding-0",
+          "x": 25,
+          "y": 22,
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-1",
+          "x": 65,
+          "y": 22,
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-2",
+          "x": 25,
+          "y": 62,
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-3",
+          "x": 125,
+          "y": 22,
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-0",
+          "x": 95,
+          "y": 25,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-1",
+          "x": 70,
+          "y": 70,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_samples": [
+        {
+          "id": "binding-0",
+          "point": [
+            25,
+            22
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-1",
+          "point": [
+            65,
+            22
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-2",
+          "point": [
+            25,
+            62
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-3",
+          "point": [
+            125,
+            22
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-0",
+          "point": [
+            95,
+            25
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-1",
+          "point": [
+            70,
+            70
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_regions": [
+        {
+          "id": "binding-0",
+          "rect": [
+            12,
+            12,
+            26,
+            21
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-1",
+          "rect": [
+            52,
+            12,
+            26,
+            21
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-2",
+          "rect": [
+            12,
+            52,
+            26,
+            21
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "binding-3",
+          "rect": [
+            112,
+            12,
+            26,
+            21
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-0",
+          "rect": [
+            93,
+            23,
+            4,
+            4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-1",
+          "rect": [
+            68,
+            68,
+            4,
+            4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "sample_coordinates": "PDF page points x right/y up; image row=floor((100-y)*dpi/72)",
+      "mask": "All pixels except predeclared one-device-pixel bands around shape rectangle boundaries; expected_regions are separate inset exact controls",
+      "upstream_association": {
+        "upstream_id": null,
+        "scope": "standard-contract-only",
+        "exact_upstream_scope_established": false,
+        "upstream_input_executed": false
+      }
+    }
+  ]
+}

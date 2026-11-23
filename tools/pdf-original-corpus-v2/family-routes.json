@@ -1,0 +1,165 @@
+{
+  "alpha": {
+    "generator": "generate.py",
+    "reference_steps": [
+      [
+        "run-references.py",
+        "{pdfjs}"
+      ],
+      [
+        "verify-regions.py"
+      ],
+      [
+        "verify.py"
+      ]
+    ]
+  },
+  "colorkey": {
+    "generator": "generate.py",
+    "reference_steps": [
+      [
+        "run-references.py",
+        "{pdfjs}"
+      ],
+      [
+        "verify-regions.py"
+      ],
+      [
+        "verify.py"
+      ]
+    ]
+  },
+  "dash": {
+    "generator": "generate.py",
+    "reference_steps": [
+      [
+        "references.py"
+      ],
+      [
+        "score.py"
+      ],
+      [
+        "verify.py"
+      ]
+    ]
+  },
+  "filters": {
+    "generator": "generate.py",
+    "reference_steps": [
+      [
+        "run-references.py",
+        "{pdfjs}"
+      ],
+      [
+        "verify-regions.py"
+      ],
+      [
+        "verify.py"
+      ]
+    ]
+  },
+  "geometry": {
+    "generator": "generate.py",
+    "reference_steps": [
+      [
+        "references.py"
+      ],
+      [
+        "score.py"
+      ],
+      [
+        "verify.py"
+      ]
+    ]
+  },
+  "images": {
+    "generator": "generate.py",
+    "reference_steps": [
+      [
+        "run-references.py",
+        "{pdfjs}"
+      ],
+      [
+        "verify-regions.py"
+      ],
+      [
+        "verify.py"
+      ]
+    ]
+  },
+  "joins": {
+    "generator": "generate.py",
+    "reference_steps": [
+      [
+        "references.py"
+      ],
+      [
+        "score.py"
+      ],
+      [
+        "verify.py"
+      ]
+    ]
+  },
+  "predictors": {
+    "generator": "generate.py",
+    "reference_steps": [
+      [
+        "run-references.py",
+        "{pdfjs}"
+      ],
+      [
+        "verify-regions.py"
+      ],
+      [
+        "verify.py"
+      ]
+    ]
+  },
+  "resources": {
+    "generator": "generator.py",
+    "reference_steps": [
+      [
+        "references.py"
+      ],
+      [
+        "score.py"
+      ],
+      [
+        "verify-regions.py"
+      ],
+      [
+        "verify.py"
+      ]
+    ]
+  },
+  "stroke": {
+    "generator": "generate.py",
+    "reference_steps": [
+      [
+        "references.py"
+      ],
+      [
+        "score.py"
+      ],
+      [
+        "verify.py"
+      ]
+    ]
+  },
+  "text": {
+    "generator": "generate.py",
+    "reference_steps": [
+      [
+        "run-references.py",
+        "{pdfjs}"
+      ],
+      [
+        "verify-regions.py"
+      ],
+      [
+        "verify.py"
+      ]
+    ]
+  }
+}
