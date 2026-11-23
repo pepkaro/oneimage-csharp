@@ -4,16 +4,16 @@ Cross-tags describe pipeline participation, not proven root-cause ownership. Cas
 
 ## OnePDF/object-xref-streams
 
-- [img-filter-equivalence-raw](CATALOG.md#img-filter-equivalence-raw) — agreed; owner unresolved.
-- [img-filter-equivalence-flate](CATALOG.md#img-filter-equivalence-flate) — agreed; owner unresolved.
-- [img-filter-equivalence-runlength](CATALOG.md#img-filter-equivalence-runlength) — agreed; owner unresolved.
-- [img-predictor-none](CATALOG.md#img-predictor-none) — agreed; owner unresolved.
-- [img-predictor-tiff-sub](CATALOG.md#img-predictor-tiff-sub) — agreed; owner unresolved.
-- [img-predictor-png-sub](CATALOG.md#img-predictor-png-sub) — agreed; owner unresolved.
-- [img-predictor-png-up](CATALOG.md#img-predictor-png-up) — agreed; owner unresolved.
-- [img-colorkey-control](CATALOG.md#img-colorkey-control) — agreed; owner unresolved.
-- [img-colorkey-exact](CATALOG.md#img-colorkey-exact) — agreed; owner unresolved.
-- [img-colorkey-range](CATALOG.md#img-colorkey-range) — agreed; owner unresolved.
+- [img-filter-equivalence-raw](CATALOG.md#img-filter-equivalence-raw) — pass; owner unresolved.
+- [img-filter-equivalence-flate](CATALOG.md#img-filter-equivalence-flate) — pass; owner unresolved.
+- [img-filter-equivalence-runlength](CATALOG.md#img-filter-equivalence-runlength) — pass; owner unresolved.
+- [img-predictor-none](CATALOG.md#img-predictor-none) — pass; owner unresolved.
+- [img-predictor-tiff-sub](CATALOG.md#img-predictor-tiff-sub) — pass; owner unresolved.
+- [img-predictor-png-sub](CATALOG.md#img-predictor-png-sub) — pass; owner unresolved.
+- [img-predictor-png-up](CATALOG.md#img-predictor-png-up) — pass; owner unresolved.
+- [img-colorkey-control](CATALOG.md#img-colorkey-control) — pass; owner unresolved.
+- [img-colorkey-exact](CATALOG.md#img-colorkey-exact) — pass; owner unresolved.
+- [img-colorkey-range](CATALOG.md#img-colorkey-range) — pass; owner unresolved.
 
 ## OnePDF/page-resources
 
@@ -32,15 +32,15 @@ No focused case in this batch.
 - [geometry-saved-clip](CATALOG.md#geometry-saved-clip) — pass; owner unresolved.
 - [geometry-clip-path-reset](CATALOG.md#geometry-clip-path-reset) — pass; owner unresolved.
 - [geometry-concat-order](CATALOG.md#geometry-concat-order) — pass; owner unresolved.
-- [stroke-cap-butt](CATALOG.md#stroke-cap-butt) — agreed; owner unresolved.
-- [stroke-cap-round](CATALOG.md#stroke-cap-round) — agreed; owner unresolved.
-- [stroke-cap-projecting-square](CATALOG.md#stroke-cap-projecting-square) — agreed; owner unresolved.
-- [stroke-join-miter](CATALOG.md#stroke-join-miter) — agreed; owner unresolved.
-- [stroke-join-round](CATALOG.md#stroke-join-round) — agreed; owner unresolved.
-- [stroke-join-bevel](CATALOG.md#stroke-join-bevel) — agreed; owner unresolved.
-- [stroke-dash-pair-phase0](CATALOG.md#stroke-dash-pair-phase0) — agreed; owner unresolved.
-- [stroke-dash-pair-phase5](CATALOG.md#stroke-dash-pair-phase5) — agreed; owner unresolved.
-- [stroke-dash-four-phase2](CATALOG.md#stroke-dash-four-phase2) — agreed; owner unresolved.
+- [stroke-cap-butt](CATALOG.md#stroke-cap-butt) — pass; owner unresolved.
+- [stroke-cap-round](CATALOG.md#stroke-cap-round) — mismatch; owner unresolved.
+- [stroke-cap-projecting-square](CATALOG.md#stroke-cap-projecting-square) — pass; owner unresolved.
+- [stroke-join-miter](CATALOG.md#stroke-join-miter) — pass; owner unresolved.
+- [stroke-join-round](CATALOG.md#stroke-join-round) — pass; owner unresolved.
+- [stroke-join-bevel](CATALOG.md#stroke-join-bevel) — pass; owner unresolved.
+- [stroke-dash-pair-phase0](CATALOG.md#stroke-dash-pair-phase0) — pass; owner unresolved.
+- [stroke-dash-pair-phase5](CATALOG.md#stroke-dash-pair-phase5) — pass; owner unresolved.
+- [stroke-dash-four-phase2](CATALOG.md#stroke-dash-four-phase2) — pass; owner unresolved.
 
 ## OnePDF/image-color-decoding
 
@@ -52,16 +52,16 @@ No focused case in this batch.
 - [img-indexed4-reversed-decode](CATALOG.md#img-indexed4-reversed-decode) — pass; owner unresolved.
 - [img-rgb16-big-endian](CATALOG.md#img-rgb16-big-endian) — pass; owner unresolved.
 - [img-rgb8-mirrored-placement](CATALOG.md#img-rgb8-mirrored-placement) — pass; owner unresolved.
-- [img-filter-equivalence-raw](CATALOG.md#img-filter-equivalence-raw) — agreed; owner unresolved.
-- [img-filter-equivalence-flate](CATALOG.md#img-filter-equivalence-flate) — agreed; owner unresolved.
-- [img-filter-equivalence-runlength](CATALOG.md#img-filter-equivalence-runlength) — agreed; owner unresolved.
-- [img-predictor-none](CATALOG.md#img-predictor-none) — agreed; owner unresolved.
-- [img-predictor-tiff-sub](CATALOG.md#img-predictor-tiff-sub) — agreed; owner unresolved.
-- [img-predictor-png-sub](CATALOG.md#img-predictor-png-sub) — agreed; owner unresolved.
-- [img-predictor-png-up](CATALOG.md#img-predictor-png-up) — agreed; owner unresolved.
-- [img-colorkey-control](CATALOG.md#img-colorkey-control) — agreed; owner unresolved.
-- [img-colorkey-exact](CATALOG.md#img-colorkey-exact) — agreed; owner unresolved.
-- [img-colorkey-range](CATALOG.md#img-colorkey-range) — agreed; owner unresolved.
+- [img-filter-equivalence-raw](CATALOG.md#img-filter-equivalence-raw) — pass; owner unresolved.
+- [img-filter-equivalence-flate](CATALOG.md#img-filter-equivalence-flate) — pass; owner unresolved.
+- [img-filter-equivalence-runlength](CATALOG.md#img-filter-equivalence-runlength) — pass; owner unresolved.
+- [img-predictor-none](CATALOG.md#img-predictor-none) — pass; owner unresolved.
+- [img-predictor-tiff-sub](CATALOG.md#img-predictor-tiff-sub) — pass; owner unresolved.
+- [img-predictor-png-sub](CATALOG.md#img-predictor-png-sub) — pass; owner unresolved.
+- [img-predictor-png-up](CATALOG.md#img-predictor-png-up) — pass; owner unresolved.
+- [img-colorkey-control](CATALOG.md#img-colorkey-control) — pass; owner unresolved.
+- [img-colorkey-exact](CATALOG.md#img-colorkey-exact) — pass; owner unresolved.
+- [img-colorkey-range](CATALOG.md#img-colorkey-range) — pass; owner unresolved.
 
 ## OneImage/paths-clipping
 
@@ -70,15 +70,15 @@ No focused case in this batch.
 - [geometry-saved-clip](CATALOG.md#geometry-saved-clip) — pass; owner unresolved.
 - [geometry-clip-path-reset](CATALOG.md#geometry-clip-path-reset) — pass; owner unresolved.
 - [geometry-concat-order](CATALOG.md#geometry-concat-order) — pass; owner unresolved.
-- [stroke-cap-butt](CATALOG.md#stroke-cap-butt) — agreed; owner unresolved.
-- [stroke-cap-round](CATALOG.md#stroke-cap-round) — agreed; owner unresolved.
-- [stroke-cap-projecting-square](CATALOG.md#stroke-cap-projecting-square) — agreed; owner unresolved.
-- [stroke-join-miter](CATALOG.md#stroke-join-miter) — agreed; owner unresolved.
-- [stroke-join-round](CATALOG.md#stroke-join-round) — agreed; owner unresolved.
-- [stroke-join-bevel](CATALOG.md#stroke-join-bevel) — agreed; owner unresolved.
-- [stroke-dash-pair-phase0](CATALOG.md#stroke-dash-pair-phase0) — agreed; owner unresolved.
-- [stroke-dash-pair-phase5](CATALOG.md#stroke-dash-pair-phase5) — agreed; owner unresolved.
-- [stroke-dash-four-phase2](CATALOG.md#stroke-dash-four-phase2) — agreed; owner unresolved.
+- [stroke-cap-butt](CATALOG.md#stroke-cap-butt) — pass; owner unresolved.
+- [stroke-cap-round](CATALOG.md#stroke-cap-round) — mismatch; owner unresolved.
+- [stroke-cap-projecting-square](CATALOG.md#stroke-cap-projecting-square) — pass; owner unresolved.
+- [stroke-join-miter](CATALOG.md#stroke-join-miter) — pass; owner unresolved.
+- [stroke-join-round](CATALOG.md#stroke-join-round) — pass; owner unresolved.
+- [stroke-join-bevel](CATALOG.md#stroke-join-bevel) — pass; owner unresolved.
+- [stroke-dash-pair-phase0](CATALOG.md#stroke-dash-pair-phase0) — pass; owner unresolved.
+- [stroke-dash-pair-phase5](CATALOG.md#stroke-dash-pair-phase5) — pass; owner unresolved.
+- [stroke-dash-four-phase2](CATALOG.md#stroke-dash-four-phase2) — pass; owner unresolved.
 
 ## OneImage/glyph-rasterization
 
@@ -94,16 +94,16 @@ No focused case in this batch.
 - [img-indexed4-reversed-decode](CATALOG.md#img-indexed4-reversed-decode) — pass; owner unresolved.
 - [img-rgb16-big-endian](CATALOG.md#img-rgb16-big-endian) — pass; owner unresolved.
 - [img-rgb8-mirrored-placement](CATALOG.md#img-rgb8-mirrored-placement) — pass; owner unresolved.
-- [img-filter-equivalence-raw](CATALOG.md#img-filter-equivalence-raw) — agreed; owner unresolved.
-- [img-filter-equivalence-flate](CATALOG.md#img-filter-equivalence-flate) — agreed; owner unresolved.
-- [img-filter-equivalence-runlength](CATALOG.md#img-filter-equivalence-runlength) — agreed; owner unresolved.
-- [img-predictor-none](CATALOG.md#img-predictor-none) — agreed; owner unresolved.
-- [img-predictor-tiff-sub](CATALOG.md#img-predictor-tiff-sub) — agreed; owner unresolved.
-- [img-predictor-png-sub](CATALOG.md#img-predictor-png-sub) — agreed; owner unresolved.
-- [img-predictor-png-up](CATALOG.md#img-predictor-png-up) — agreed; owner unresolved.
-- [img-colorkey-control](CATALOG.md#img-colorkey-control) — agreed; owner unresolved.
-- [img-colorkey-exact](CATALOG.md#img-colorkey-exact) — agreed; owner unresolved.
-- [img-colorkey-range](CATALOG.md#img-colorkey-range) — agreed; owner unresolved.
+- [img-filter-equivalence-raw](CATALOG.md#img-filter-equivalence-raw) — pass; owner unresolved.
+- [img-filter-equivalence-flate](CATALOG.md#img-filter-equivalence-flate) — pass; owner unresolved.
+- [img-filter-equivalence-runlength](CATALOG.md#img-filter-equivalence-runlength) — pass; owner unresolved.
+- [img-predictor-none](CATALOG.md#img-predictor-none) — pass; owner unresolved.
+- [img-predictor-tiff-sub](CATALOG.md#img-predictor-tiff-sub) — pass; owner unresolved.
+- [img-predictor-png-sub](CATALOG.md#img-predictor-png-sub) — pass; owner unresolved.
+- [img-predictor-png-up](CATALOG.md#img-predictor-png-up) — pass; owner unresolved.
+- [img-colorkey-control](CATALOG.md#img-colorkey-control) — pass; owner unresolved.
+- [img-colorkey-exact](CATALOG.md#img-colorkey-exact) — pass; owner unresolved.
+- [img-colorkey-range](CATALOG.md#img-colorkey-range) — pass; owner unresolved.
 
 ## OneImage/color-conversion
 
@@ -131,22 +131,22 @@ No focused case in this batch.
 - [img-indexed4-reversed-decode](CATALOG.md#img-indexed4-reversed-decode) — pass; owner unresolved.
 - [img-rgb16-big-endian](CATALOG.md#img-rgb16-big-endian) — pass; owner unresolved.
 - [img-rgb8-mirrored-placement](CATALOG.md#img-rgb8-mirrored-placement) — pass; owner unresolved.
-- [stroke-cap-butt](CATALOG.md#stroke-cap-butt) — agreed; owner unresolved.
-- [stroke-cap-round](CATALOG.md#stroke-cap-round) — agreed; owner unresolved.
-- [stroke-cap-projecting-square](CATALOG.md#stroke-cap-projecting-square) — agreed; owner unresolved.
-- [img-filter-equivalence-raw](CATALOG.md#img-filter-equivalence-raw) — agreed; owner unresolved.
-- [img-filter-equivalence-flate](CATALOG.md#img-filter-equivalence-flate) — agreed; owner unresolved.
-- [img-filter-equivalence-runlength](CATALOG.md#img-filter-equivalence-runlength) — agreed; owner unresolved.
-- [stroke-join-miter](CATALOG.md#stroke-join-miter) — agreed; owner unresolved.
-- [stroke-join-round](CATALOG.md#stroke-join-round) — agreed; owner unresolved.
-- [stroke-join-bevel](CATALOG.md#stroke-join-bevel) — agreed; owner unresolved.
-- [img-predictor-none](CATALOG.md#img-predictor-none) — agreed; owner unresolved.
-- [img-predictor-tiff-sub](CATALOG.md#img-predictor-tiff-sub) — agreed; owner unresolved.
-- [img-predictor-png-sub](CATALOG.md#img-predictor-png-sub) — agreed; owner unresolved.
-- [img-predictor-png-up](CATALOG.md#img-predictor-png-up) — agreed; owner unresolved.
-- [stroke-dash-pair-phase0](CATALOG.md#stroke-dash-pair-phase0) — agreed; owner unresolved.
-- [stroke-dash-pair-phase5](CATALOG.md#stroke-dash-pair-phase5) — agreed; owner unresolved.
-- [stroke-dash-four-phase2](CATALOG.md#stroke-dash-four-phase2) — agreed; owner unresolved.
-- [img-colorkey-control](CATALOG.md#img-colorkey-control) — agreed; owner unresolved.
-- [img-colorkey-exact](CATALOG.md#img-colorkey-exact) — agreed; owner unresolved.
-- [img-colorkey-range](CATALOG.md#img-colorkey-range) — agreed; owner unresolved.
+- [stroke-cap-butt](CATALOG.md#stroke-cap-butt) — pass; owner unresolved.
+- [stroke-cap-round](CATALOG.md#stroke-cap-round) — mismatch; owner unresolved.
+- [stroke-cap-projecting-square](CATALOG.md#stroke-cap-projecting-square) — pass; owner unresolved.
+- [img-filter-equivalence-raw](CATALOG.md#img-filter-equivalence-raw) — pass; owner unresolved.
+- [img-filter-equivalence-flate](CATALOG.md#img-filter-equivalence-flate) — pass; owner unresolved.
+- [img-filter-equivalence-runlength](CATALOG.md#img-filter-equivalence-runlength) — pass; owner unresolved.
+- [stroke-join-miter](CATALOG.md#stroke-join-miter) — pass; owner unresolved.
+- [stroke-join-round](CATALOG.md#stroke-join-round) — pass; owner unresolved.
+- [stroke-join-bevel](CATALOG.md#stroke-join-bevel) — pass; owner unresolved.
+- [img-predictor-none](CATALOG.md#img-predictor-none) — pass; owner unresolved.
+- [img-predictor-tiff-sub](CATALOG.md#img-predictor-tiff-sub) — pass; owner unresolved.
+- [img-predictor-png-sub](CATALOG.md#img-predictor-png-sub) — pass; owner unresolved.
+- [img-predictor-png-up](CATALOG.md#img-predictor-png-up) — pass; owner unresolved.
+- [stroke-dash-pair-phase0](CATALOG.md#stroke-dash-pair-phase0) — pass; owner unresolved.
+- [stroke-dash-pair-phase5](CATALOG.md#stroke-dash-pair-phase5) — pass; owner unresolved.
+- [stroke-dash-four-phase2](CATALOG.md#stroke-dash-four-phase2) — pass; owner unresolved.
+- [img-colorkey-control](CATALOG.md#img-colorkey-control) — pass; owner unresolved.
+- [img-colorkey-exact](CATALOG.md#img-colorkey-exact) — pass; owner unresolved.
+- [img-colorkey-range](CATALOG.md#img-colorkey-range) — pass; owner unresolved.

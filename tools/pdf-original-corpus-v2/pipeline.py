@@ -32,6 +32,9 @@ def compare(a,b,m):
 def verify():
  routes=read(T/'routes.json');ledger=read(T/'cases.json');assert len(routes)==len(ledger['cases'])
  assert len(read(T/'inventory.json')['rows'])==2811;assert len({r['manifest']['sha256'] for r in routes})==len(routes)
+ captures=read(T/'captures.json')['captures'];assert len(captures)==sum(len(r['manifest']['dpis'])*3 for r in routes)
+ for capture in captures:
+  assert sha(REPO/capture['path'])==capture['sha256'];assert any(r['id']==capture['use_case_id'] and r['manifest']['sha256']==capture['input_sha256'] for r in routes)
  rows=[]
  for r in routes:
   folder=REPO/r['canonical_dir'];assert sha(folder/'original.pdf')==r['manifest']['sha256']
@@ -88,7 +91,7 @@ def grade(args):
     row['passed']=row['passed'] and all(v['passed'] for v in row['assertions'])
    else:row.update(passed=False,reason='renderer execution failed')
    rows.append(row)
- result=dict(acceptance_commit=commit,oneimage_source_head=args.source_head,onepdf_declared_package='RecursiveAI.OnePdf/Fonts1.18.0',executed=len(rows),passed=sum(r['passed'] for r in rows),failed=sum(not r['passed'] for r in rows),skipped=2,skip_reason='Held RGB8 Decode reference disagreement: both DPIs ungraded',rows=rows)
+ result=dict(acceptance_commit=commit,oneimage_source_head=args.source_head,onepdf_declared_package='RecursiveAI.OnePdf/Fonts1.18.0',executed=len(rows),passed=sum(r['passed'] for r in rows),failed=sum(not r['passed'] for r in rows),skipped=sum(len(r['manifest']['dpis']) for r in read(T/'routes.json') if not r['accepted']),skip_reason='Held RGB8 Decode reference disagreement: both DPIs ungraded',rows=rows)
  write(out/'results.json',result);return result
 
 def catalog():

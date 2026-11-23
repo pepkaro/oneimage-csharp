@@ -229,5 +229,18 @@
   "reference_runs_failed": 2,
   "reference_runs_skipped": 0,
   "exploratory_adapter_calls": 2,
-  "new_merged": 0
+  "new_merged": 0,
+  "default_branch_raw_asset_paths": {
+    "OneImage": {
+      "pdf": 2,
+      "png": 2038
+    },
+    "OnePDF": {
+      "pdf": 355,
+      "png": 35
+    }
+  },
+  "default_asset_caveat": "Filename/treeinventoryonly; no assetcontentexecutionorlicensequalification; knownoriginalcorpusmanifestabsent; notzeroexistingtests",
+  "new_progress": "batch-progress.json",
+  "mozilla_manifest_pin_note": "d4da7f isbatchrepositoryrevision;45a902ismanifestlast-change revision. Cachedofficialmanifesttextsbyteidentical356617characters,1505rows."
 }

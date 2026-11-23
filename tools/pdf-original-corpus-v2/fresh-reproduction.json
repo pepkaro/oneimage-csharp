@@ -1,0 +1,64 @@
+{
+  "command": "python tools/pdf-original-corpus-v2/pipeline.py references --pdfjs /absolute/pinned/pdfjs-dist --output /new/output/directory",
+  "exit_code": 0,
+  "complete": true,
+  "families": [
+    {
+      "family": "colorkey",
+      "runs": 18,
+      "passed": 18,
+      "failed": 0
+    },
+    {
+      "family": "dash",
+      "runs": 18,
+      "passed": 18,
+      "failed": 0
+    },
+    {
+      "family": "filters",
+      "runs": 18,
+      "passed": 18,
+      "failed": 0
+    },
+    {
+      "family": "geometry",
+      "runs": 48,
+      "passed": 48,
+      "failed": 0
+    },
+    {
+      "family": "images",
+      "runs": 48,
+      "passed": 46,
+      "failed": 2
+    },
+    {
+      "family": "joins",
+      "runs": 18,
+      "passed": 18,
+      "failed": 0
+    },
+    {
+      "family": "predictors",
+      "runs": 24,
+      "passed": 24,
+      "failed": 0
+    },
+    {
+      "family": "stroke",
+      "runs": 18,
+      "passed": 18,
+      "failed": 0
+    }
+  ],
+  "total_runs": 210,
+  "passed": 208,
+  "failed": 2,
+  "skipped": 0,
+  "initial_unique_capture_runs": 210,
+  "fresh_reproduction_calls": 210,
+  "prior_exploratory_adapter_calls": 2,
+  "known_disagreement": "RGB8channelDecodePDFiumbothDPI; noacceptedgolden",
+  "no_product_outputs_used_as_reference": true
+}

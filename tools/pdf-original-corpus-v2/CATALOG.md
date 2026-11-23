@@ -10,7 +10,7 @@ One canonical fixture root; no duplicated fixture copies. Boundaries outside dec
 
 Identical authored RGB sample grid survives the raw image stream route unchanged.
 
-Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.01-General/img-filter-equivalence-raw/original.pdf); [clause evidence](filters/clause-index.json).
+Stage: **pass**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.01-General/img-filter-equivalence-raw/original.pdf); [clause evidence](filters/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.01-General/img-filter-equivalence-raw/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.01-General/img-filter-equivalence-raw/expected-144.png).
 
@@ -20,7 +20,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 Identical authored RGB sample grid survives the flate image stream route unchanged.
 
-Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.01-General/img-filter-equivalence-flate/original.pdf); [clause evidence](filters/clause-index.json).
+Stage: **pass**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.01-General/img-filter-equivalence-flate/original.pdf); [clause evidence](filters/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.01-General/img-filter-equivalence-flate/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.01-General/img-filter-equivalence-flate/expected-144.png).
 
@@ -30,7 +30,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 Identical authored RGB sample grid survives the runlength image stream route unchanged.
 
-Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.01-General/img-filter-equivalence-runlength/original.pdf); [clause evidence](filters/clause-index.json).
+Stage: **pass**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.01-General/img-filter-equivalence-runlength/original.pdf); [clause evidence](filters/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.01-General/img-filter-equivalence-runlength/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.01-General/img-filter-equivalence-runlength/expected-144.png).
 
@@ -42,7 +42,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 Authored RGB8 sample rows recover exactly through Flate with none prediction.
 
-Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.04-LZWDecode-and-FlateDecode-filters/07.04.04.03-LZWDecode-and-FlateDecode-parameters/img-predictor-none/original.pdf); [clause evidence](predictors/clause-index.json).
+Stage: **pass**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.04-LZWDecode-and-FlateDecode-filters/07.04.04.03-LZWDecode-and-FlateDecode-parameters/img-predictor-none/original.pdf); [clause evidence](predictors/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.04-LZWDecode-and-FlateDecode-filters/07.04.04.03-LZWDecode-and-FlateDecode-parameters/img-predictor-none/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.04-LZWDecode-and-FlateDecode-filters/07.04.04.03-LZWDecode-and-FlateDecode-parameters/img-predictor-none/expected-144.png).
 
@@ -52,7 +52,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 Authored RGB8 sample rows recover exactly through Flate with tiff-sub prediction.
 
-Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.04-LZWDecode-and-FlateDecode-filters/07.04.04.03-LZWDecode-and-FlateDecode-parameters/img-predictor-tiff-sub/original.pdf); [clause evidence](predictors/clause-index.json).
+Stage: **pass**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.04-LZWDecode-and-FlateDecode-filters/07.04.04.03-LZWDecode-and-FlateDecode-parameters/img-predictor-tiff-sub/original.pdf); [clause evidence](predictors/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.04-LZWDecode-and-FlateDecode-filters/07.04.04.03-LZWDecode-and-FlateDecode-parameters/img-predictor-tiff-sub/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.04-LZWDecode-and-FlateDecode-filters/07.04.04.03-LZWDecode-and-FlateDecode-parameters/img-predictor-tiff-sub/expected-144.png).
 
@@ -62,7 +62,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 Authored RGB8 sample rows recover exactly through Flate with png-sub prediction.
 
-Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.04-LZWDecode-and-FlateDecode-filters/07.04.04.03-LZWDecode-and-FlateDecode-parameters/img-predictor-png-sub/original.pdf); [clause evidence](predictors/clause-index.json).
+Stage: **pass**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.04-LZWDecode-and-FlateDecode-filters/07.04.04.03-LZWDecode-and-FlateDecode-parameters/img-predictor-png-sub/original.pdf); [clause evidence](predictors/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.04-LZWDecode-and-FlateDecode-filters/07.04.04.03-LZWDecode-and-FlateDecode-parameters/img-predictor-png-sub/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.04-LZWDecode-and-FlateDecode-filters/07.04.04.03-LZWDecode-and-FlateDecode-parameters/img-predictor-png-sub/expected-144.png).
 
@@ -72,7 +72,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 Authored RGB8 sample rows recover exactly through Flate with png-up prediction.
 
-Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.04-LZWDecode-and-FlateDecode-filters/07.04.04.03-LZWDecode-and-FlateDecode-parameters/img-predictor-png-up/original.pdf); [clause evidence](predictors/clause-index.json).
+Stage: **pass**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.04-LZWDecode-and-FlateDecode-filters/07.04.04.03-LZWDecode-and-FlateDecode-parameters/img-predictor-png-up/original.pdf); [clause evidence](predictors/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.04-LZWDecode-and-FlateDecode-filters/07.04.04.03-LZWDecode-and-FlateDecode-parameters/img-predictor-png-up/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.04-Filters/07.04.04-LZWDecode-and-FlateDecode-filters/07.04.04.03-LZWDecode-and-FlateDecode-parameters/img-predictor-png-up/expected-144.png).
 
@@ -170,7 +170,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 Open horizontal subpath line cap butt
 
-Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-cap-butt/original.pdf); [clause evidence](stroke/clause-index.json).
+Stage: **pass**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-cap-butt/original.pdf); [clause evidence](stroke/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-cap-butt/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-cap-butt/expected-144.png).
 
@@ -180,7 +180,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 Open horizontal subpath line cap round
 
-Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-cap-round/original.pdf); [clause evidence](stroke/clause-index.json).
+Stage: **mismatch**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-cap-round/original.pdf); [clause evidence](stroke/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-cap-round/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-cap-round/expected-144.png).
 
@@ -190,7 +190,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 Open horizontal subpath line cap projecting-square
 
-Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-cap-projecting-square/original.pdf); [clause evidence](stroke/clause-index.json).
+Stage: **pass**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-cap-projecting-square/original.pdf); [clause evidence](stroke/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-cap-projecting-square/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-cap-projecting-square/expected-144.png).
 
@@ -200,7 +200,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 Ordinary 90-degree miter line join
 
-Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-join-miter/original.pdf); [clause evidence](joins/clause-index.json).
+Stage: **pass**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-join-miter/original.pdf); [clause evidence](joins/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-join-miter/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-join-miter/expected-144.png).
 
@@ -210,7 +210,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 Ordinary 90-degree round line join
 
-Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-join-round/original.pdf); [clause evidence](joins/clause-index.json).
+Stage: **pass**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-join-round/original.pdf); [clause evidence](joins/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-join-round/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-join-round/expected-144.png).
 
@@ -220,7 +220,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 Ordinary 90-degree bevel line join
 
-Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-join-bevel/original.pdf); [clause evidence](joins/clause-index.json).
+Stage: **pass**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-join-bevel/original.pdf); [clause evidence](joins/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-join-bevel/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-join-bevel/expected-144.png).
 
@@ -230,7 +230,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 Positive even-length dash array and ordinary phase on a straight butt-cap stroke
 
-Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-dash-pair-phase0/original.pdf); [clause evidence](dash/clause-index.json).
+Stage: **pass**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-dash-pair-phase0/original.pdf); [clause evidence](dash/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-dash-pair-phase0/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-dash-pair-phase0/expected-144.png).
 
@@ -240,7 +240,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 Positive even-length dash array and ordinary phase on a straight butt-cap stroke
 
-Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-dash-pair-phase5/original.pdf); [clause evidence](dash/clause-index.json).
+Stage: **pass**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-dash-pair-phase5/original.pdf); [clause evidence](dash/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-dash-pair-phase5/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-dash-pair-phase5/expected-144.png).
 
@@ -250,7 +250,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 Positive even-length dash array and ordinary phase on a straight butt-cap stroke
 
-Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-dash-four-phase2/original.pdf); [clause evidence](dash/clause-index.json).
+Stage: **pass**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-dash-four-phase2/original.pdf); [clause evidence](dash/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-dash-four-phase2/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.05-Path-construction-and-painting/stroke-dash-four-phase2/expected-144.png).
 
@@ -344,7 +344,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 Original RGB8 control color-key masking; inclusive per-component intersection over authored source samples, composited on white.
 
-Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/img-colorkey-control/original.pdf); [clause evidence](colorkey/clause-index.json).
+Stage: **pass**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/img-colorkey-control/original.pdf); [clause evidence](colorkey/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/img-colorkey-control/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/img-colorkey-control/expected-144.png).
 
@@ -354,7 +354,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 Original RGB8 exact color-key masking; inclusive per-component intersection over authored source samples, composited on white.
 
-Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/img-colorkey-exact/original.pdf); [clause evidence](colorkey/clause-index.json).
+Stage: **pass**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/img-colorkey-exact/original.pdf); [clause evidence](colorkey/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/img-colorkey-exact/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/img-colorkey-exact/expected-144.png).
 
@@ -364,7 +364,7 @@ Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream p
 
 Original RGB8 range color-key masking; inclusive per-component intersection over authored source samples, composited on white.
 
-Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/img-colorkey-range/original.pdf); [clause evidence](colorkey/clause-index.json).
+Stage: **pass**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/img-colorkey-range/original.pdf); [clause evidence](colorkey/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/img-colorkey-range/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/img-colorkey-range/expected-144.png).
 
