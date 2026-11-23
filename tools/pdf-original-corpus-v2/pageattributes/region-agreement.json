@@ -1,0 +1,1389 @@
+{
+  "executed_reference_variants": 30,
+  "passed": 30,
+  "failed": 0,
+  "region_checks": 180,
+  "region_passes": 180,
+  "rows": [
+    {
+      "id": "mediabox-inherit-root",
+      "fixture_id": "mediabox-inheritance-root",
+      "page": 0,
+      "dpi": 72,
+      "engine": "pdfium",
+      "passed": true,
+      "regions": [
+        {
+          "id": "red-placement",
+          "pixels": 176,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "blue-placement",
+          "pixels": 176,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "mediabox-inherit-root",
+      "fixture_id": "mediabox-inheritance-root",
+      "page": 0,
+      "dpi": 72,
+      "engine": "mupdf",
+      "passed": true,
+      "regions": [
+        {
+          "id": "red-placement",
+          "pixels": 176,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "blue-placement",
+          "pixels": 176,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "mediabox-inherit-root",
+      "fixture_id": "mediabox-inheritance-root",
+      "page": 0,
+      "dpi": 72,
+      "engine": "pdfjs",
+      "passed": true,
+      "regions": [
+        {
+          "id": "red-placement",
+          "pixels": 176,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "blue-placement",
+          "pixels": 176,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "mediabox-inherit-root",
+      "fixture_id": "mediabox-inheritance-root",
+      "page": 0,
+      "dpi": 144,
+      "engine": "pdfium",
+      "passed": true,
+      "regions": [
+        {
+          "id": "red-placement",
+          "pixels": 704,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "blue-placement",
+          "pixels": 704,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "mediabox-inherit-root",
+      "fixture_id": "mediabox-inheritance-root",
+      "page": 0,
+      "dpi": 144,
+      "engine": "mupdf",
+      "passed": true,
+      "regions": [
+        {
+          "id": "red-placement",
+          "pixels": 704,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "blue-placement",
+          "pixels": 704,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "mediabox-inherit-root",
+      "fixture_id": "mediabox-inheritance-root",
+      "page": 0,
+      "dpi": 144,
+      "engine": "pdfjs",
+      "passed": true,
+      "regions": [
+        {
+          "id": "red-placement",
+          "pixels": 704,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "blue-placement",
+          "pixels": 704,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "mediabox-explicit-page",
+      "fixture_id": "mediabox-inheritance-explicit",
+      "page": 0,
+      "dpi": 72,
+      "engine": "pdfium",
+      "passed": true,
+      "regions": [
+        {
+          "id": "red-placement",
+          "pixels": 176,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "blue-placement",
+          "pixels": 176,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "mediabox-explicit-page",
+      "fixture_id": "mediabox-inheritance-explicit",
+      "page": 0,
+      "dpi": 72,
+      "engine": "mupdf",
+      "passed": true,
+      "regions": [
+        {
+          "id": "red-placement",
+          "pixels": 176,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "blue-placement",
+          "pixels": 176,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "mediabox-explicit-page",
+      "fixture_id": "mediabox-inheritance-explicit",
+      "page": 0,
+      "dpi": 72,
+      "engine": "pdfjs",
+      "passed": true,
+      "regions": [
+        {
+          "id": "red-placement",
+          "pixels": 176,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "blue-placement",
+          "pixels": 176,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "mediabox-explicit-page",
+      "fixture_id": "mediabox-inheritance-explicit",
+      "page": 0,
+      "dpi": 144,
+      "engine": "pdfium",
+      "passed": true,
+      "regions": [
+        {
+          "id": "red-placement",
+          "pixels": 704,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "blue-placement",
+          "pixels": 704,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "mediabox-explicit-page",
+      "fixture_id": "mediabox-inheritance-explicit",
+      "page": 0,
+      "dpi": 144,
+      "engine": "mupdf",
+      "passed": true,
+      "regions": [
+        {
+          "id": "red-placement",
+          "pixels": 704,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "blue-placement",
+          "pixels": 704,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "mediabox-explicit-page",
+      "fixture_id": "mediabox-inheritance-explicit",
+      "page": 0,
+      "dpi": 144,
+      "engine": "pdfjs",
+      "passed": true,
+      "regions": [
+        {
+          "id": "red-placement",
+          "pixels": 704,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "blue-placement",
+          "pixels": 704,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "mediabox-sibling-root-before",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "page": 0,
+      "dpi": 72,
+      "engine": "pdfium",
+      "passed": true,
+      "regions": [
+        {
+          "id": "red-placement",
+          "pixels": 176,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "blue-placement",
+          "pixels": 176,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "mediabox-sibling-root-before",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "page": 0,
+      "dpi": 72,
+      "engine": "mupdf",
+      "passed": true,
+      "regions": [
+        {
+          "id": "red-placement",
+          "pixels": 176,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "blue-placement",
+          "pixels": 176,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "mediabox-sibling-root-before",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "page": 0,
+      "dpi": 72,
+      "engine": "pdfjs",
+      "passed": true,
+      "regions": [
+        {
+          "id": "red-placement",
+          "pixels": 176,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "blue-placement",
+          "pixels": 176,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "mediabox-sibling-root-before",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "page": 0,
+      "dpi": 144,
+      "engine": "pdfium",
+      "passed": true,
+      "regions": [
+        {
+          "id": "red-placement",
+          "pixels": 704,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "blue-placement",
+          "pixels": 704,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "mediabox-sibling-root-before",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "page": 0,
+      "dpi": 144,
+      "engine": "mupdf",
+      "passed": true,
+      "regions": [
+        {
+          "id": "red-placement",
+          "pixels": 704,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "blue-placement",
+          "pixels": 704,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "mediabox-sibling-root-before",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "page": 0,
+      "dpi": 144,
+      "engine": "pdfjs",
+      "passed": true,
+      "regions": [
+        {
+          "id": "red-placement",
+          "pixels": 704,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "blue-placement",
+          "pixels": 704,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "mediabox-nearest-ancestor",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "page": 1,
+      "dpi": 72,
+      "engine": "pdfium",
+      "passed": true,
+      "regions": [
+        {
+          "id": "red-placement",
+          "pixels": 176,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "blue-placement",
+          "pixels": 176,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "mediabox-nearest-ancestor",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "page": 1,
+      "dpi": 72,
+      "engine": "mupdf",
+      "passed": true,
+      "regions": [
+        {
+          "id": "red-placement",
+          "pixels": 176,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "blue-placement",
+          "pixels": 176,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "mediabox-nearest-ancestor",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "page": 1,
+      "dpi": 72,
+      "engine": "pdfjs",
+      "passed": true,
+      "regions": [
+        {
+          "id": "red-placement",
+          "pixels": 176,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "blue-placement",
+          "pixels": 176,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "mediabox-nearest-ancestor",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "page": 1,
+      "dpi": 144,
+      "engine": "pdfium",
+      "passed": true,
+      "regions": [
+        {
+          "id": "red-placement",
+          "pixels": 704,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "blue-placement",
+          "pixels": 704,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "mediabox-nearest-ancestor",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "page": 1,
+      "dpi": 144,
+      "engine": "mupdf",
+      "passed": true,
+      "regions": [
+        {
+          "id": "red-placement",
+          "pixels": 704,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "blue-placement",
+          "pixels": 704,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "mediabox-nearest-ancestor",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "page": 1,
+      "dpi": 144,
+      "engine": "pdfjs",
+      "passed": true,
+      "regions": [
+        {
+          "id": "red-placement",
+          "pixels": 704,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "blue-placement",
+          "pixels": 704,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "mediabox-sibling-root-after",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "page": 2,
+      "dpi": 72,
+      "engine": "pdfium",
+      "passed": true,
+      "regions": [
+        {
+          "id": "red-placement",
+          "pixels": 176,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "blue-placement",
+          "pixels": 176,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "mediabox-sibling-root-after",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "page": 2,
+      "dpi": 72,
+      "engine": "mupdf",
+      "passed": true,
+      "regions": [
+        {
+          "id": "red-placement",
+          "pixels": 176,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "blue-placement",
+          "pixels": 176,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "mediabox-sibling-root-after",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "page": 2,
+      "dpi": 72,
+      "engine": "pdfjs",
+      "passed": true,
+      "regions": [
+        {
+          "id": "red-placement",
+          "pixels": 176,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "blue-placement",
+          "pixels": 176,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "pixels": 16,
+          "wrong_pixels": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "mediabox-sibling-root-after",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "page": 2,
+      "dpi": 144,
+      "engine": "pdfium",
+      "passed": true,
+      "regions": [
+        {
+          "id": "red-placement",
+          "pixels": 704,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "blue-placement",
+          "pixels": 704,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "mediabox-sibling-root-after",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "page": 2,
+      "dpi": 144,
+      "engine": "mupdf",
+      "passed": true,
+      "regions": [
+        {
+          "id": "red-placement",
+          "pixels": 704,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "blue-placement",
+          "pixels": 704,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "mediabox-sibling-root-after",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "page": 2,
+      "dpi": 144,
+      "engine": "pdfjs",
+      "passed": true,
+      "regions": [
+        {
+          "id": "red-placement",
+          "pixels": 704,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "blue-placement",
+          "pixels": 704,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "pixels": 64,
+          "wrong_pixels": 0,
+          "passed": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "slice": "ISO-PAGE-ATTRIBUTE-INHERIT-01",
+  "verified_on": "2026-11-23",
+  "primary": {
+    "standard": "ISO32000-2:2020",
+    "clause": "7.7.3.4 Inheritance of page attributes",
+    "verification": "Exact clause number/title cross-reference verified in official public7.8.3; complete MediaBox/nearest-ancestor rule text not reproduced and remains pending",
+    "url": "https://pdf-issues.pdfa.org/32000-2-2020/clause07.html"
+  },
+  "secondary": [
+    {
+      "clause": "7.7.3.3/Table31 Page objects",
+      "verification": "Heading/table index verified; full unchanged MediaBox and CropBox entries not reproduced"
+    },
+    {
+      "clause": "7.7.3.2/Table30 Page tree nodes",
+      "verification": "Official public Count correction verifies consistency with descendant traversal"
+    }
+  ],
+  "governing_legacy": {
+    "standard": "ISO32000-1:2008",
+    "fixture_version": "1.7",
+    "verified_clauses": [
+      "7.7.3.3/Table30 MediaBox: required/inheritable; CropBox defaults to MediaBox",
+      "7.7.3.4 Inheritance of Page Attributes: omitted attributes inherit, page values override",
+      "8.3.2.3 User Space: visible rectangle and axes"
+    ],
+    "source": "Existing official PDF32000_2008.pdf inspected locally; no standard bytes included in deliverable"
+  },
+  "limit": "Full2020 standard not acquired through checkout. Public ratified errata is not the full normative document. Cases use verified2008 PDF1.7 semantics; exact raster RGB/rounding is an analytic route criterion, not an ISO-mandated renderer algorithm.",
+  "resource": "https://pdfa.org/resource/iso-32000-2",
+  "entries": [
+    {
+      "id": "mediabox-inherit-root",
+      "fixture_id": "mediabox-inheritance-root",
+      "page": 0,
+      "contract": "Page inherits offset root MediaBox",
+      "upstream_ids": []
+    },
+    {
+      "id": "mediabox-explicit-page",
+      "fixture_id": "mediabox-inheritance-explicit",
+      "page": 0,
+      "contract": "Explicit local MediaBox overrides inherited root dimensions and origin",
+      "upstream_ids": []
+    },
+    {
+      "id": "mediabox-sibling-root-before",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "page": 0,
+      "contract": "First sibling inherits root MediaBox",
+      "upstream_ids": []
+    },
+    {
+      "id": "mediabox-nearest-ancestor",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "page": 1,
+      "contract": "Nested page inherits the nearer Pages MediaBox",
+      "upstream_ids": []
+    },
+    {
+      "id": "mediabox-sibling-root-after",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "page": 2,
+      "contract": "Later sibling keeps root dimensions after the nested subtree",
+      "upstream_ids": []
+    }
+  ]
+}

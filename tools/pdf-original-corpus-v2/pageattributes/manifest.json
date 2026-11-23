@@ -1,0 +1,1707 @@
+{
+  "schema_version": 1,
+  "batch": "ISO-PAGE-ATTRIBUTE-INHERIT-01",
+  "owner": "mozilla_originals",
+  "fixture_count": 3,
+  "case_count": 5,
+  "page_view_count": 5,
+  "independently_authored": true,
+  "upstream_fixture_bytes_read": 0,
+  "fixtures": [
+    {
+      "id": "mediabox-inheritance-root",
+      "file": "inputs/mediabox-inheritance-root.pdf",
+      "sha256": "01566e8bf3b49202281569d9b3a3c6ed59341fa1e398b1b118fe31d994a41979",
+      "page_count": 1
+    },
+    {
+      "id": "mediabox-inheritance-explicit",
+      "file": "inputs/mediabox-inheritance-explicit.pdf",
+      "sha256": "33d17249bbe8621b1b28ae772c55c6d657dec671d8f51c297ee3d704ef8559eb",
+      "page_count": 1
+    },
+    {
+      "id": "mediabox-inheritance-siblings",
+      "file": "inputs/mediabox-inheritance-siblings.pdf",
+      "sha256": "f20dba8f25f4821db8fb0656ab6c39f3adabc5edd6a3f3807925e8d80d38fedc",
+      "page_count": 3
+    }
+  ],
+  "cases": [
+    {
+      "id": "mediabox-inherit-root",
+      "fixture_id": "mediabox-inheritance-root",
+      "file": "inputs/mediabox-inheritance-root.pdf",
+      "sha256": "01566e8bf3b49202281569d9b3a3c6ed59341fa1e398b1b118fe31d994a41979",
+      "license": "MIT",
+      "fixture_version": "1.7",
+      "contract": "Page inherits offset root MediaBox",
+      "spec": "ISO32000-1:2008",
+      "spec_clauses": [
+        "7.7.3.3/Table30 MediaBox and CropBox",
+        "7.7.3.4 Inheritance of Page Attributes",
+        "8.3.2.3 User Space"
+      ],
+      "primary_iso_2020": "7.7.3.4 Inheritance of page attributes (cross-reference verified; full rule text pending)",
+      "secondary_iso_2020": [
+        "7.7.3.3/Table31 Page objects: heading verified; MediaBox row pending",
+        "7.8.3 cross-reference to inheritance verified"
+      ],
+      "route": "Direct numeric vector page content; inherited or explicit MediaBox; absent CropBox defaults to effective MediaBox; explicit empty Resources",
+      "width": 160,
+      "height": 100,
+      "display_width_points": 160,
+      "display_height_points": 100,
+      "user_unit": 1,
+      "rotation": 0,
+      "page": 0,
+      "pages": [
+        0
+      ],
+      "page_count": 1,
+      "dpis": [
+        72,
+        144
+      ],
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "annotations": "none",
+      "expected_media_box": [
+        10,
+        20,
+        170,
+        120
+      ],
+      "expected_media_owner_object": 2,
+      "expected_visible_box": [
+        10,
+        20,
+        170,
+        120
+      ],
+      "expected_device_transform_at_72": [
+        1,
+        0,
+        0,
+        -1,
+        -10,
+        120
+      ],
+      "shape_rectangles": [
+        [
+          20,
+          20,
+          20,
+          15,
+          [
+            255,
+            0,
+            0
+          ]
+        ],
+        [
+          70,
+          40,
+          20,
+          15,
+          [
+            0,
+            0,
+            255
+          ]
+        ]
+      ],
+      "samples": [
+        {
+          "id": "red-placement",
+          "x": 30,
+          "y": 27,
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "blue-placement",
+          "x": 80,
+          "y": 47,
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-0",
+          "x": 5,
+          "y": 5,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-1",
+          "x": 155,
+          "y": 5,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-2",
+          "x": 5,
+          "y": 95,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-3",
+          "x": 155,
+          "y": 95,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_samples": [
+        {
+          "id": "red-placement",
+          "point": [
+            30,
+            27
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "blue-placement",
+          "point": [
+            80,
+            47
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-0",
+          "point": [
+            5,
+            5
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-1",
+          "point": [
+            155,
+            5
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-2",
+          "point": [
+            5,
+            95
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-3",
+          "point": [
+            155,
+            95
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_regions": [
+        {
+          "id": "red-placement",
+          "rect": [
+            22,
+            22,
+            16,
+            11
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "blue-placement",
+          "rect": [
+            72,
+            42,
+            16,
+            11
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-0",
+          "rect": [
+            3,
+            3,
+            4,
+            4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-1",
+          "rect": [
+            153,
+            3,
+            4,
+            4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-2",
+          "rect": [
+            3,
+            93,
+            4,
+            4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-3",
+          "rect": [
+            153,
+            93,
+            4,
+            4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "sample_coordinates": "Upright visible page points after subtracting MediaBox lower-left; x right/y up; row=floor((height-y)*dpi/72)",
+      "mask": "One-device-pixel band around analytic rectangle boundaries excluded before images read",
+      "upstream_association": {
+        "upstream_id": null,
+        "scope": "standard-contract-only",
+        "exact_upstream_scope_established": false,
+        "upstream_input_executed": false
+      }
+    },
+    {
+      "id": "mediabox-explicit-page",
+      "fixture_id": "mediabox-inheritance-explicit",
+      "file": "inputs/mediabox-inheritance-explicit.pdf",
+      "sha256": "33d17249bbe8621b1b28ae772c55c6d657dec671d8f51c297ee3d704ef8559eb",
+      "license": "MIT",
+      "fixture_version": "1.7",
+      "contract": "Explicit local MediaBox overrides inherited root dimensions and origin",
+      "spec": "ISO32000-1:2008",
+      "spec_clauses": [
+        "7.7.3.3/Table30 MediaBox and CropBox",
+        "7.7.3.4 Inheritance of Page Attributes",
+        "8.3.2.3 User Space"
+      ],
+      "primary_iso_2020": "7.7.3.4 Inheritance of page attributes (cross-reference verified; full rule text pending)",
+      "secondary_iso_2020": [
+        "7.7.3.3/Table31 Page objects: heading verified; MediaBox row pending",
+        "7.8.3 cross-reference to inheritance verified"
+      ],
+      "route": "Direct numeric vector page content; inherited or explicit MediaBox; absent CropBox defaults to effective MediaBox; explicit empty Resources",
+      "width": 120,
+      "height": 80,
+      "display_width_points": 120,
+      "display_height_points": 80,
+      "user_unit": 1,
+      "rotation": 0,
+      "page": 0,
+      "pages": [
+        0
+      ],
+      "page_count": 1,
+      "dpis": [
+        72,
+        144
+      ],
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "annotations": "none",
+      "expected_media_box": [
+        0,
+        0,
+        120,
+        80
+      ],
+      "expected_media_owner_object": 3,
+      "expected_visible_box": [
+        0,
+        0,
+        120,
+        80
+      ],
+      "expected_device_transform_at_72": [
+        1,
+        0,
+        0,
+        -1,
+        0,
+        80
+      ],
+      "shape_rectangles": [
+        [
+          30,
+          40,
+          20,
+          15,
+          [
+            255,
+            0,
+            0
+          ]
+        ],
+        [
+          80,
+          60,
+          20,
+          15,
+          [
+            0,
+            0,
+            255
+          ]
+        ]
+      ],
+      "samples": [
+        {
+          "id": "red-placement",
+          "x": 40,
+          "y": 47,
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "blue-placement",
+          "x": 90,
+          "y": 67,
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-0",
+          "x": 5,
+          "y": 5,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-1",
+          "x": 115,
+          "y": 5,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-2",
+          "x": 5,
+          "y": 75,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-3",
+          "x": 115,
+          "y": 75,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_samples": [
+        {
+          "id": "red-placement",
+          "point": [
+            40,
+            47
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "blue-placement",
+          "point": [
+            90,
+            67
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-0",
+          "point": [
+            5,
+            5
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-1",
+          "point": [
+            115,
+            5
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-2",
+          "point": [
+            5,
+            75
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-3",
+          "point": [
+            115,
+            75
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_regions": [
+        {
+          "id": "red-placement",
+          "rect": [
+            32,
+            42,
+            16,
+            11
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "blue-placement",
+          "rect": [
+            82,
+            62,
+            16,
+            11
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-0",
+          "rect": [
+            3,
+            3,
+            4,
+            4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-1",
+          "rect": [
+            113,
+            3,
+            4,
+            4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-2",
+          "rect": [
+            3,
+            73,
+            4,
+            4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-3",
+          "rect": [
+            113,
+            73,
+            4,
+            4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "sample_coordinates": "Upright visible page points after subtracting MediaBox lower-left; x right/y up; row=floor((height-y)*dpi/72)",
+      "mask": "One-device-pixel band around analytic rectangle boundaries excluded before images read",
+      "upstream_association": {
+        "upstream_id": null,
+        "scope": "standard-contract-only",
+        "exact_upstream_scope_established": false,
+        "upstream_input_executed": false
+      }
+    },
+    {
+      "id": "mediabox-sibling-root-before",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "file": "inputs/mediabox-inheritance-siblings.pdf",
+      "sha256": "f20dba8f25f4821db8fb0656ab6c39f3adabc5edd6a3f3807925e8d80d38fedc",
+      "license": "MIT",
+      "fixture_version": "1.7",
+      "contract": "First sibling inherits root MediaBox",
+      "spec": "ISO32000-1:2008",
+      "spec_clauses": [
+        "7.7.3.3/Table30 MediaBox and CropBox",
+        "7.7.3.4 Inheritance of Page Attributes",
+        "8.3.2.3 User Space"
+      ],
+      "primary_iso_2020": "7.7.3.4 Inheritance of page attributes (cross-reference verified; full rule text pending)",
+      "secondary_iso_2020": [
+        "7.7.3.3/Table31 Page objects: heading verified; MediaBox row pending",
+        "7.8.3 cross-reference to inheritance verified"
+      ],
+      "route": "Direct numeric vector page content; inherited or explicit MediaBox; absent CropBox defaults to effective MediaBox; explicit empty Resources",
+      "width": 160,
+      "height": 100,
+      "display_width_points": 160,
+      "display_height_points": 100,
+      "user_unit": 1,
+      "rotation": 0,
+      "page": 0,
+      "pages": [
+        0
+      ],
+      "page_count": 3,
+      "dpis": [
+        72,
+        144
+      ],
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "annotations": "none",
+      "expected_media_box": [
+        10,
+        20,
+        170,
+        120
+      ],
+      "expected_media_owner_object": 2,
+      "expected_visible_box": [
+        10,
+        20,
+        170,
+        120
+      ],
+      "expected_device_transform_at_72": [
+        1,
+        0,
+        0,
+        -1,
+        -10,
+        120
+      ],
+      "shape_rectangles": [
+        [
+          20,
+          20,
+          20,
+          15,
+          [
+            255,
+            0,
+            0
+          ]
+        ],
+        [
+          70,
+          40,
+          20,
+          15,
+          [
+            0,
+            0,
+            255
+          ]
+        ]
+      ],
+      "samples": [
+        {
+          "id": "red-placement",
+          "x": 30,
+          "y": 27,
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "blue-placement",
+          "x": 80,
+          "y": 47,
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-0",
+          "x": 5,
+          "y": 5,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-1",
+          "x": 155,
+          "y": 5,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-2",
+          "x": 5,
+          "y": 95,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-3",
+          "x": 155,
+          "y": 95,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_samples": [
+        {
+          "id": "red-placement",
+          "point": [
+            30,
+            27
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "blue-placement",
+          "point": [
+            80,
+            47
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-0",
+          "point": [
+            5,
+            5
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-1",
+          "point": [
+            155,
+            5
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-2",
+          "point": [
+            5,
+            95
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-3",
+          "point": [
+            155,
+            95
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_regions": [
+        {
+          "id": "red-placement",
+          "rect": [
+            22,
+            22,
+            16,
+            11
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "blue-placement",
+          "rect": [
+            72,
+            42,
+            16,
+            11
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-0",
+          "rect": [
+            3,
+            3,
+            4,
+            4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-1",
+          "rect": [
+            153,
+            3,
+            4,
+            4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-2",
+          "rect": [
+            3,
+            93,
+            4,
+            4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-3",
+          "rect": [
+            153,
+            93,
+            4,
+            4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "sample_coordinates": "Upright visible page points after subtracting MediaBox lower-left; x right/y up; row=floor((height-y)*dpi/72)",
+      "mask": "One-device-pixel band around analytic rectangle boundaries excluded before images read",
+      "upstream_association": {
+        "upstream_id": null,
+        "scope": "standard-contract-only",
+        "exact_upstream_scope_established": false,
+        "upstream_input_executed": false
+      }
+    },
+    {
+      "id": "mediabox-nearest-ancestor",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "file": "inputs/mediabox-inheritance-siblings.pdf",
+      "sha256": "f20dba8f25f4821db8fb0656ab6c39f3adabc5edd6a3f3807925e8d80d38fedc",
+      "license": "MIT",
+      "fixture_version": "1.7",
+      "contract": "Nested page inherits the nearer Pages MediaBox",
+      "spec": "ISO32000-1:2008",
+      "spec_clauses": [
+        "7.7.3.3/Table30 MediaBox and CropBox",
+        "7.7.3.4 Inheritance of Page Attributes",
+        "8.3.2.3 User Space"
+      ],
+      "primary_iso_2020": "7.7.3.4 Inheritance of page attributes (cross-reference verified; full rule text pending)",
+      "secondary_iso_2020": [
+        "7.7.3.3/Table31 Page objects: heading verified; MediaBox row pending",
+        "7.8.3 cross-reference to inheritance verified"
+      ],
+      "route": "Direct numeric vector page content; inherited or explicit MediaBox; absent CropBox defaults to effective MediaBox; explicit empty Resources",
+      "width": 140,
+      "height": 90,
+      "display_width_points": 140,
+      "display_height_points": 90,
+      "user_unit": 1,
+      "rotation": 0,
+      "page": 1,
+      "pages": [
+        1
+      ],
+      "page_count": 3,
+      "dpis": [
+        72,
+        144
+      ],
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "annotations": "none",
+      "expected_media_box": [
+        -10,
+        -10,
+        130,
+        80
+      ],
+      "expected_media_owner_object": 5,
+      "expected_visible_box": [
+        -10,
+        -10,
+        130,
+        80
+      ],
+      "expected_device_transform_at_72": [
+        1,
+        0,
+        0,
+        -1,
+        10,
+        80
+      ],
+      "shape_rectangles": [
+        [
+          40,
+          50,
+          20,
+          15,
+          [
+            255,
+            0,
+            0
+          ]
+        ],
+        [
+          90,
+          70,
+          20,
+          15,
+          [
+            0,
+            0,
+            255
+          ]
+        ]
+      ],
+      "samples": [
+        {
+          "id": "red-placement",
+          "x": 50,
+          "y": 57,
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "blue-placement",
+          "x": 100,
+          "y": 77,
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-0",
+          "x": 5,
+          "y": 5,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-1",
+          "x": 135,
+          "y": 5,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-2",
+          "x": 5,
+          "y": 85,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-3",
+          "x": 135,
+          "y": 85,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_samples": [
+        {
+          "id": "red-placement",
+          "point": [
+            50,
+            57
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "blue-placement",
+          "point": [
+            100,
+            77
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-0",
+          "point": [
+            5,
+            5
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-1",
+          "point": [
+            135,
+            5
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-2",
+          "point": [
+            5,
+            85
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-3",
+          "point": [
+            135,
+            85
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_regions": [
+        {
+          "id": "red-placement",
+          "rect": [
+            42,
+            52,
+            16,
+            11
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "blue-placement",
+          "rect": [
+            92,
+            72,
+            16,
+            11
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-0",
+          "rect": [
+            3,
+            3,
+            4,
+            4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-1",
+          "rect": [
+            133,
+            3,
+            4,
+            4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-2",
+          "rect": [
+            3,
+            83,
+            4,
+            4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-3",
+          "rect": [
+            133,
+            83,
+            4,
+            4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "sample_coordinates": "Upright visible page points after subtracting MediaBox lower-left; x right/y up; row=floor((height-y)*dpi/72)",
+      "mask": "One-device-pixel band around analytic rectangle boundaries excluded before images read",
+      "upstream_association": {
+        "upstream_id": null,
+        "scope": "standard-contract-only",
+        "exact_upstream_scope_established": false,
+        "upstream_input_executed": false
+      }
+    },
+    {
+      "id": "mediabox-sibling-root-after",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "file": "inputs/mediabox-inheritance-siblings.pdf",
+      "sha256": "f20dba8f25f4821db8fb0656ab6c39f3adabc5edd6a3f3807925e8d80d38fedc",
+      "license": "MIT",
+      "fixture_version": "1.7",
+      "contract": "Later sibling keeps root dimensions after the nested subtree",
+      "spec": "ISO32000-1:2008",
+      "spec_clauses": [
+        "7.7.3.3/Table30 MediaBox and CropBox",
+        "7.7.3.4 Inheritance of Page Attributes",
+        "8.3.2.3 User Space"
+      ],
+      "primary_iso_2020": "7.7.3.4 Inheritance of page attributes (cross-reference verified; full rule text pending)",
+      "secondary_iso_2020": [
+        "7.7.3.3/Table31 Page objects: heading verified; MediaBox row pending",
+        "7.8.3 cross-reference to inheritance verified"
+      ],
+      "route": "Direct numeric vector page content; inherited or explicit MediaBox; absent CropBox defaults to effective MediaBox; explicit empty Resources",
+      "width": 160,
+      "height": 100,
+      "display_width_points": 160,
+      "display_height_points": 100,
+      "user_unit": 1,
+      "rotation": 0,
+      "page": 2,
+      "pages": [
+        2
+      ],
+      "page_count": 3,
+      "dpis": [
+        72,
+        144
+      ],
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "annotations": "none",
+      "expected_media_box": [
+        10,
+        20,
+        170,
+        120
+      ],
+      "expected_media_owner_object": 2,
+      "expected_visible_box": [
+        10,
+        20,
+        170,
+        120
+      ],
+      "expected_device_transform_at_72": [
+        1,
+        0,
+        0,
+        -1,
+        -10,
+        120
+      ],
+      "shape_rectangles": [
+        [
+          20,
+          20,
+          20,
+          15,
+          [
+            255,
+            0,
+            0
+          ]
+        ],
+        [
+          70,
+          40,
+          20,
+          15,
+          [
+            0,
+            0,
+            255
+          ]
+        ]
+      ],
+      "samples": [
+        {
+          "id": "red-placement",
+          "x": 30,
+          "y": 27,
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "blue-placement",
+          "x": 80,
+          "y": 47,
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-0",
+          "x": 5,
+          "y": 5,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-1",
+          "x": 155,
+          "y": 5,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-2",
+          "x": 5,
+          "y": 95,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-3",
+          "x": 155,
+          "y": 95,
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_samples": [
+        {
+          "id": "red-placement",
+          "point": [
+            30,
+            27
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "blue-placement",
+          "point": [
+            80,
+            47
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-0",
+          "point": [
+            5,
+            5
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-1",
+          "point": [
+            155,
+            5
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-2",
+          "point": [
+            5,
+            95
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-3",
+          "point": [
+            155,
+            95
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_regions": [
+        {
+          "id": "red-placement",
+          "rect": [
+            22,
+            22,
+            16,
+            11
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "blue-placement",
+          "rect": [
+            72,
+            42,
+            16,
+            11
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-0",
+          "rect": [
+            3,
+            3,
+            4,
+            4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-1",
+          "rect": [
+            153,
+            3,
+            4,
+            4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-2",
+          "rect": [
+            3,
+            93,
+            4,
+            4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper-3",
+          "rect": [
+            153,
+            93,
+            4,
+            4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "sample_coordinates": "Upright visible page points after subtracting MediaBox lower-left; x right/y up; row=floor((height-y)*dpi/72)",
+      "mask": "One-device-pixel band around analytic rectangle boundaries excluded before images read",
+      "upstream_association": {
+        "upstream_id": null,
+        "scope": "standard-contract-only",
+        "exact_upstream_scope_established": false,
+        "upstream_input_executed": false
+      }
+    }
+  ]
+}

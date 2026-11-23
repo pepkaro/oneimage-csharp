@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "batch": "ISO-TEXT-QUOTE-01",
+  "state": "complete-local-reference-qualified",
+  "generated_unique_pdfs": 4,
+  "single_page_cases": 4,
+  "unique_case_dpi_views": 8,
+  "qualified_case_dpi_views": 8,
+  "held_case_dpi_views": 0,
+  "reused_original_font_designs": 1,
+  "new_font_designs": 0,
+  "named_text_contracts": 4,
+  "authored_quote_operator_counts": {
+    "single_quote": 2,
+    "double_quote": 3
+  },
+  "reference_png_files": 24,
+  "reference_png_unique_bytes": 24,
+  "references_executed": 24,
+  "reference_passed": 24,
+  "reference_failed": 0,
+  "reference_skipped": 0,
+  "analytic_sample_checks": 924,
+  "analytic_sample_passed": 924,
+  "interior_pixels_per_engine": 60470,
+  "analytic_reference_pixel_checks": 181410,
+  "interior_tolerance": 0,
+  "independently_parsed_visible_glyphs": 30,
+  "independently_checked": [
+    "text_matrix",
+    "line_matrix",
+    "effective glyph_matrix",
+    "Tc/Tw/leading state at every visible glyph"
+  ],
+  "analytic_layout_assertion_scope": "Authored PDF operator intent; not exact renderer edge measurement.",
+  "qualified_fixture_ids": [
+    "textquote-single-equivalent",
+    "textquote-double-equivalent",
+    "textquote-spacing-persists",
+    "textquote-shift-and-object-state"
+  ],
+  "held_fixture_ids": [],
+  "named_visual_assertions_outside_regions": [],
+  "unscored": [
+    "All glyph boundaries and undeclared page pixels; strict full-page equality.",
+    "Native typeface/font weight, hinting, shaping, extraction, vertical/rotated text and external CTM interactions."
+  ],
+  "upstream_entry_validated": 0,
+  "upstream_mappings": [],
+  "product_runs": 0,
+  "selected_expected_images_created": 0,
+  "selected_expected_candidates": [
+    "references/textquote-single-equivalent-72-mupdf.png",
+    "references/textquote-single-equivalent-144-mupdf.png",
+    "references/textquote-double-equivalent-72-mupdf.png",
+    "references/textquote-double-equivalent-144-mupdf.png",
+    "references/textquote-spacing-persists-72-mupdf.png",
+    "references/textquote-spacing-persists-144-mupdf.png",
+    "references/textquote-shift-and-object-state-72-mupdf.png",
+    "references/textquote-shift-and-object-state-144-mupdf.png"
+  ],
+  "regeneration": "Four PDFs and manifest byte-identical on generator rerun.",
+  "commands": [
+    "python generate.py",
+    "python run-references.py /path/to/node_modules/pdfjs-dist",
+    "python verify-regions.py",
+    "python verify.py"
+  ],
+  "worker_remote_writes": 0,
+  "preserved_baseline_head_prefix": "1cd8573",
+  "preserved_baseline_tree": "22257be8ecf9bc14a30db43c721db374e0da7fd0"
+}

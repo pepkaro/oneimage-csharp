@@ -7426,6 +7426,1830 @@
         "user_unit": "authored-pagevalue"
       },
       "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "mediabox-inherit-root",
+      "fixture_id": "mediabox-inheritance-root",
+      "engine": "pdfium",
+      "dpi": 72,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-root/references/pdfium-72.png",
+      "sha256": "953d53ef58b2349e98fc1c666be1eb653a9d53ac7e8a1f68c1ca08377027f806",
+      "input_sha256": "01566e8bf3b49202281569d9b3a3c6ed59341fa1e398b1b118fe31d994a41979",
+      "original_capture_record": "tools/pdf-original-corpus-v2/pageattributes/reference-renders.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "mediabox-inherit-root",
+      "fixture_id": "mediabox-inheritance-root",
+      "engine": "pdfjs",
+      "dpi": 72,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-root/references/pdfjs-72.png",
+      "sha256": "0f54e89be240f80b6afe5cf34447eb8dc5947d1d4914523a3bb308bb8dd6d0e8",
+      "input_sha256": "01566e8bf3b49202281569d9b3a3c6ed59341fa1e398b1b118fe31d994a41979",
+      "original_capture_record": "tools/pdf-original-corpus-v2/pageattributes/reference-renders.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "mediabox-inherit-root",
+      "fixture_id": "mediabox-inheritance-root",
+      "engine": "mupdf",
+      "dpi": 72,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-root/references/mupdf-72.png",
+      "sha256": "e62404c59f297f806a0cc433c13e74cf1cb0cfeb5ec2f50d7109b4c8b0f26317",
+      "input_sha256": "01566e8bf3b49202281569d9b3a3c6ed59341fa1e398b1b118fe31d994a41979",
+      "original_capture_record": "tools/pdf-original-corpus-v2/pageattributes/reference-renders.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "mediabox-inherit-root",
+      "fixture_id": "mediabox-inheritance-root",
+      "engine": "pdfium",
+      "dpi": 144,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-root/references/pdfium-144.png",
+      "sha256": "037a2f0bfd3602d4d9c6748735ab0590748898d319e97425f39c723872bbcdd6",
+      "input_sha256": "01566e8bf3b49202281569d9b3a3c6ed59341fa1e398b1b118fe31d994a41979",
+      "original_capture_record": "tools/pdf-original-corpus-v2/pageattributes/reference-renders.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "mediabox-inherit-root",
+      "fixture_id": "mediabox-inheritance-root",
+      "engine": "pdfjs",
+      "dpi": 144,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-root/references/pdfjs-144.png",
+      "sha256": "8745ed739baac178ef5b0ae53659fe6ecf94095576287aee75b79efc641c7cd6",
+      "input_sha256": "01566e8bf3b49202281569d9b3a3c6ed59341fa1e398b1b118fe31d994a41979",
+      "original_capture_record": "tools/pdf-original-corpus-v2/pageattributes/reference-renders.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "mediabox-inherit-root",
+      "fixture_id": "mediabox-inheritance-root",
+      "engine": "mupdf",
+      "dpi": 144,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-root/references/mupdf-144.png",
+      "sha256": "65bbef750c4ac07fb13a567c6d1cb57005fa66d5d94a36bdaafbad83570c0fbc",
+      "input_sha256": "01566e8bf3b49202281569d9b3a3c6ed59341fa1e398b1b118fe31d994a41979",
+      "original_capture_record": "tools/pdf-original-corpus-v2/pageattributes/reference-renders.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "mediabox-explicit-page",
+      "fixture_id": "mediabox-inheritance-explicit",
+      "engine": "pdfium",
+      "dpi": 72,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-explicit/references/pdfium-72.png",
+      "sha256": "b5e09633c8c3b568ed380d85d019372dd9b4f780651da6f28e319aa7fac05952",
+      "input_sha256": "33d17249bbe8621b1b28ae772c55c6d657dec671d8f51c297ee3d704ef8559eb",
+      "original_capture_record": "tools/pdf-original-corpus-v2/pageattributes/reference-renders.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "mediabox-explicit-page",
+      "fixture_id": "mediabox-inheritance-explicit",
+      "engine": "pdfjs",
+      "dpi": 72,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-explicit/references/pdfjs-72.png",
+      "sha256": "a45d684c2ef23a4dc956d3933c6483b2b5117111a0050798c36247a075684983",
+      "input_sha256": "33d17249bbe8621b1b28ae772c55c6d657dec671d8f51c297ee3d704ef8559eb",
+      "original_capture_record": "tools/pdf-original-corpus-v2/pageattributes/reference-renders.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "mediabox-explicit-page",
+      "fixture_id": "mediabox-inheritance-explicit",
+      "engine": "mupdf",
+      "dpi": 72,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-explicit/references/mupdf-72.png",
+      "sha256": "897edc399b60f2f967cb7a22c89dd112452cf1efa2a014c8021ed5ccfacb588e",
+      "input_sha256": "33d17249bbe8621b1b28ae772c55c6d657dec671d8f51c297ee3d704ef8559eb",
+      "original_capture_record": "tools/pdf-original-corpus-v2/pageattributes/reference-renders.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "mediabox-explicit-page",
+      "fixture_id": "mediabox-inheritance-explicit",
+      "engine": "pdfium",
+      "dpi": 144,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-explicit/references/pdfium-144.png",
+      "sha256": "90ced831b87e5a9a41a8d5319dc3349290693e476dafacd2607d9191b120e3b8",
+      "input_sha256": "33d17249bbe8621b1b28ae772c55c6d657dec671d8f51c297ee3d704ef8559eb",
+      "original_capture_record": "tools/pdf-original-corpus-v2/pageattributes/reference-renders.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "mediabox-explicit-page",
+      "fixture_id": "mediabox-inheritance-explicit",
+      "engine": "pdfjs",
+      "dpi": 144,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-explicit/references/pdfjs-144.png",
+      "sha256": "5ea7b0c70df826a9c49c4572b04e0259a0fc71f5980644afe8a5584ab43a5f5c",
+      "input_sha256": "33d17249bbe8621b1b28ae772c55c6d657dec671d8f51c297ee3d704ef8559eb",
+      "original_capture_record": "tools/pdf-original-corpus-v2/pageattributes/reference-renders.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "mediabox-explicit-page",
+      "fixture_id": "mediabox-inheritance-explicit",
+      "engine": "mupdf",
+      "dpi": 144,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-explicit/references/mupdf-144.png",
+      "sha256": "63de762416440dce3af0d655b652f20212253dfff081a40c8297ee85ef497ebb",
+      "input_sha256": "33d17249bbe8621b1b28ae772c55c6d657dec671d8f51c297ee3d704ef8559eb",
+      "original_capture_record": "tools/pdf-original-corpus-v2/pageattributes/reference-renders.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "mediabox-sibling-root-before",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "engine": "pdfium",
+      "dpi": 72,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-siblings/page-0-mediabox-sibling-root-before/references/pdfium-72.png",
+      "sha256": "953d53ef58b2349e98fc1c666be1eb653a9d53ac7e8a1f68c1ca08377027f806",
+      "input_sha256": "f20dba8f25f4821db8fb0656ab6c39f3adabc5edd6a3f3807925e8d80d38fedc",
+      "original_capture_record": "tools/pdf-original-corpus-v2/pageattributes/reference-renders.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "mediabox-sibling-root-before",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "engine": "pdfjs",
+      "dpi": 72,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-siblings/page-0-mediabox-sibling-root-before/references/pdfjs-72.png",
+      "sha256": "0f54e89be240f80b6afe5cf34447eb8dc5947d1d4914523a3bb308bb8dd6d0e8",
+      "input_sha256": "f20dba8f25f4821db8fb0656ab6c39f3adabc5edd6a3f3807925e8d80d38fedc",
+      "original_capture_record": "tools/pdf-original-corpus-v2/pageattributes/reference-renders.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "mediabox-sibling-root-before",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "engine": "mupdf",
+      "dpi": 72,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-siblings/page-0-mediabox-sibling-root-before/references/mupdf-72.png",
+      "sha256": "e62404c59f297f806a0cc433c13e74cf1cb0cfeb5ec2f50d7109b4c8b0f26317",
+      "input_sha256": "f20dba8f25f4821db8fb0656ab6c39f3adabc5edd6a3f3807925e8d80d38fedc",
+      "original_capture_record": "tools/pdf-original-corpus-v2/pageattributes/reference-renders.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "mediabox-sibling-root-before",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "engine": "pdfium",
+      "dpi": 144,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-siblings/page-0-mediabox-sibling-root-before/references/pdfium-144.png",
+      "sha256": "037a2f0bfd3602d4d9c6748735ab0590748898d319e97425f39c723872bbcdd6",
+      "input_sha256": "f20dba8f25f4821db8fb0656ab6c39f3adabc5edd6a3f3807925e8d80d38fedc",
+      "original_capture_record": "tools/pdf-original-corpus-v2/pageattributes/reference-renders.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "mediabox-sibling-root-before",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "engine": "pdfjs",
+      "dpi": 144,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-siblings/page-0-mediabox-sibling-root-before/references/pdfjs-144.png",
+      "sha256": "8745ed739baac178ef5b0ae53659fe6ecf94095576287aee75b79efc641c7cd6",
+      "input_sha256": "f20dba8f25f4821db8fb0656ab6c39f3adabc5edd6a3f3807925e8d80d38fedc",
+      "original_capture_record": "tools/pdf-original-corpus-v2/pageattributes/reference-renders.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "mediabox-sibling-root-before",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "engine": "mupdf",
+      "dpi": 144,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-siblings/page-0-mediabox-sibling-root-before/references/mupdf-144.png",
+      "sha256": "65bbef750c4ac07fb13a567c6d1cb57005fa66d5d94a36bdaafbad83570c0fbc",
+      "input_sha256": "f20dba8f25f4821db8fb0656ab6c39f3adabc5edd6a3f3807925e8d80d38fedc",
+      "original_capture_record": "tools/pdf-original-corpus-v2/pageattributes/reference-renders.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "mediabox-nearest-ancestor",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "engine": "pdfium",
+      "dpi": 72,
+      "page": 1,
+      "path": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-siblings/page-1-mediabox-nearest-ancestor/references/pdfium-72.png",
+      "sha256": "79d9ba4abe166fc197a8333289613da28886d507902f2c8e7e81aea9eaefc01a",
+      "input_sha256": "f20dba8f25f4821db8fb0656ab6c39f3adabc5edd6a3f3807925e8d80d38fedc",
+      "original_capture_record": "tools/pdf-original-corpus-v2/pageattributes/reference-renders.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "mediabox-nearest-ancestor",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "engine": "pdfjs",
+      "dpi": 72,
+      "page": 1,
+      "path": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-siblings/page-1-mediabox-nearest-ancestor/references/pdfjs-72.png",
+      "sha256": "b868b48178f64fdc88101b29d31965c68d61fecb8b32d9e7148a3cf73d877cd1",
+      "input_sha256": "f20dba8f25f4821db8fb0656ab6c39f3adabc5edd6a3f3807925e8d80d38fedc",
+      "original_capture_record": "tools/pdf-original-corpus-v2/pageattributes/reference-renders.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "mediabox-nearest-ancestor",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "engine": "mupdf",
+      "dpi": 72,
+      "page": 1,
+      "path": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-siblings/page-1-mediabox-nearest-ancestor/references/mupdf-72.png",
+      "sha256": "198892c2368ba636495099914a5c81663ea6bf9c36b6064038fdc2f744eea07d",
+      "input_sha256": "f20dba8f25f4821db8fb0656ab6c39f3adabc5edd6a3f3807925e8d80d38fedc",
+      "original_capture_record": "tools/pdf-original-corpus-v2/pageattributes/reference-renders.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "mediabox-nearest-ancestor",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "engine": "pdfium",
+      "dpi": 144,
+      "page": 1,
+      "path": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-siblings/page-1-mediabox-nearest-ancestor/references/pdfium-144.png",
+      "sha256": "c9b39c207b0ab858948fab80f99b65efc72ee185f65367f45433e711c11dbbe6",
+      "input_sha256": "f20dba8f25f4821db8fb0656ab6c39f3adabc5edd6a3f3807925e8d80d38fedc",
+      "original_capture_record": "tools/pdf-original-corpus-v2/pageattributes/reference-renders.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "mediabox-nearest-ancestor",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "engine": "pdfjs",
+      "dpi": 144,
+      "page": 1,
+      "path": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-siblings/page-1-mediabox-nearest-ancestor/references/pdfjs-144.png",
+      "sha256": "1860ccdb3d6b0e55e35f17588842db2cf3685268a0bd0280766878f1f3dc006a",
+      "input_sha256": "f20dba8f25f4821db8fb0656ab6c39f3adabc5edd6a3f3807925e8d80d38fedc",
+      "original_capture_record": "tools/pdf-original-corpus-v2/pageattributes/reference-renders.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "mediabox-nearest-ancestor",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "engine": "mupdf",
+      "dpi": 144,
+      "page": 1,
+      "path": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-siblings/page-1-mediabox-nearest-ancestor/references/mupdf-144.png",
+      "sha256": "89577754df0b4e566efe4a5bba00eb0ab748d9c62eb0b38070f9e9770a43bbd0",
+      "input_sha256": "f20dba8f25f4821db8fb0656ab6c39f3adabc5edd6a3f3807925e8d80d38fedc",
+      "original_capture_record": "tools/pdf-original-corpus-v2/pageattributes/reference-renders.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "mediabox-sibling-root-after",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "engine": "pdfium",
+      "dpi": 72,
+      "page": 2,
+      "path": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-siblings/page-2-mediabox-sibling-root-after/references/pdfium-72.png",
+      "sha256": "953d53ef58b2349e98fc1c666be1eb653a9d53ac7e8a1f68c1ca08377027f806",
+      "input_sha256": "f20dba8f25f4821db8fb0656ab6c39f3adabc5edd6a3f3807925e8d80d38fedc",
+      "original_capture_record": "tools/pdf-original-corpus-v2/pageattributes/reference-renders.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "mediabox-sibling-root-after",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "engine": "pdfjs",
+      "dpi": 72,
+      "page": 2,
+      "path": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-siblings/page-2-mediabox-sibling-root-after/references/pdfjs-72.png",
+      "sha256": "0f54e89be240f80b6afe5cf34447eb8dc5947d1d4914523a3bb308bb8dd6d0e8",
+      "input_sha256": "f20dba8f25f4821db8fb0656ab6c39f3adabc5edd6a3f3807925e8d80d38fedc",
+      "original_capture_record": "tools/pdf-original-corpus-v2/pageattributes/reference-renders.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "mediabox-sibling-root-after",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "engine": "mupdf",
+      "dpi": 72,
+      "page": 2,
+      "path": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-siblings/page-2-mediabox-sibling-root-after/references/mupdf-72.png",
+      "sha256": "e62404c59f297f806a0cc433c13e74cf1cb0cfeb5ec2f50d7109b4c8b0f26317",
+      "input_sha256": "f20dba8f25f4821db8fb0656ab6c39f3adabc5edd6a3f3807925e8d80d38fedc",
+      "original_capture_record": "tools/pdf-original-corpus-v2/pageattributes/reference-renders.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "mediabox-sibling-root-after",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "engine": "pdfium",
+      "dpi": 144,
+      "page": 2,
+      "path": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-siblings/page-2-mediabox-sibling-root-after/references/pdfium-144.png",
+      "sha256": "037a2f0bfd3602d4d9c6748735ab0590748898d319e97425f39c723872bbcdd6",
+      "input_sha256": "f20dba8f25f4821db8fb0656ab6c39f3adabc5edd6a3f3807925e8d80d38fedc",
+      "original_capture_record": "tools/pdf-original-corpus-v2/pageattributes/reference-renders.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "mediabox-sibling-root-after",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "engine": "pdfjs",
+      "dpi": 144,
+      "page": 2,
+      "path": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-siblings/page-2-mediabox-sibling-root-after/references/pdfjs-144.png",
+      "sha256": "8745ed739baac178ef5b0ae53659fe6ecf94095576287aee75b79efc641c7cd6",
+      "input_sha256": "f20dba8f25f4821db8fb0656ab6c39f3adabc5edd6a3f3807925e8d80d38fedc",
+      "original_capture_record": "tools/pdf-original-corpus-v2/pageattributes/reference-renders.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "mediabox-sibling-root-after",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "engine": "mupdf",
+      "dpi": 144,
+      "page": 2,
+      "path": "tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-siblings/page-2-mediabox-sibling-root-after/references/mupdf-144.png",
+      "sha256": "65bbef750c4ac07fb13a567c6d1cb57005fa66d5d94a36bdaafbad83570c0fbc",
+      "input_sha256": "f20dba8f25f4821db8fb0656ab6c39f3adabc5edd6a3f3807925e8d80d38fedc",
+      "original_capture_record": "tools/pdf-original-corpus-v2/pageattributes/reference-renders.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "textquote-single-equivalent",
+      "fixture_id": "textquote-single-equivalent",
+      "engine": "pdfium",
+      "dpi": 72,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/textquote-single-equivalent/references/pdfium-72.png",
+      "sha256": "30c6738ebaaa57b4b7fa47b163a9bbfca9dececf8264aa2a9cdebff50783e0ba",
+      "input_sha256": "ab7690aef97ad67e931059a985b73adede399b5af46708a18a8009a356027968",
+      "original_capture_record": "tools/pdf-original-corpus-v2/textquote/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "textquote-single-equivalent",
+      "fixture_id": "textquote-single-equivalent",
+      "engine": "pdfjs",
+      "dpi": 72,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/textquote-single-equivalent/references/pdfjs-72.png",
+      "sha256": "33a1f6e55d6f3fe5f86ad8b9924786dbf2624c4848c585288c49776964cec51b",
+      "input_sha256": "ab7690aef97ad67e931059a985b73adede399b5af46708a18a8009a356027968",
+      "original_capture_record": "tools/pdf-original-corpus-v2/textquote/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "textquote-single-equivalent",
+      "fixture_id": "textquote-single-equivalent",
+      "engine": "mupdf",
+      "dpi": 72,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/textquote-single-equivalent/references/mupdf-72.png",
+      "sha256": "6f249763209c75ca800c7dbbabc729ac8f863940f6157b7e80cb216c870e59ad",
+      "input_sha256": "ab7690aef97ad67e931059a985b73adede399b5af46708a18a8009a356027968",
+      "original_capture_record": "tools/pdf-original-corpus-v2/textquote/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "textquote-single-equivalent",
+      "fixture_id": "textquote-single-equivalent",
+      "engine": "pdfium",
+      "dpi": 144,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/textquote-single-equivalent/references/pdfium-144.png",
+      "sha256": "f2ea679d1e81eb906c66345e7507c38123adcb41d76c2a837331a67556c48bde",
+      "input_sha256": "ab7690aef97ad67e931059a985b73adede399b5af46708a18a8009a356027968",
+      "original_capture_record": "tools/pdf-original-corpus-v2/textquote/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "textquote-single-equivalent",
+      "fixture_id": "textquote-single-equivalent",
+      "engine": "pdfjs",
+      "dpi": 144,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/textquote-single-equivalent/references/pdfjs-144.png",
+      "sha256": "f752b419b286788e6999d535cb317db005fd69ca3302795cb679cbf9e7406704",
+      "input_sha256": "ab7690aef97ad67e931059a985b73adede399b5af46708a18a8009a356027968",
+      "original_capture_record": "tools/pdf-original-corpus-v2/textquote/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "textquote-single-equivalent",
+      "fixture_id": "textquote-single-equivalent",
+      "engine": "mupdf",
+      "dpi": 144,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/textquote-single-equivalent/references/mupdf-144.png",
+      "sha256": "15e1a35b1a869ff117fbd3694ba1752713c8670f3d4c9a18ebc93eff89dc5359",
+      "input_sha256": "ab7690aef97ad67e931059a985b73adede399b5af46708a18a8009a356027968",
+      "original_capture_record": "tools/pdf-original-corpus-v2/textquote/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "textquote-double-equivalent",
+      "fixture_id": "textquote-double-equivalent",
+      "engine": "pdfium",
+      "dpi": 72,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/textquote-double-equivalent/references/pdfium-72.png",
+      "sha256": "8f1282aa2db4d5692d1056f81827bc6592b0450dacb99a10f2971a5bd6dc87f9",
+      "input_sha256": "9615593b7dfd27eedab2468005698e5b124cbdf8581e812d45ca6a8ea937f81c",
+      "original_capture_record": "tools/pdf-original-corpus-v2/textquote/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "textquote-double-equivalent",
+      "fixture_id": "textquote-double-equivalent",
+      "engine": "pdfjs",
+      "dpi": 72,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/textquote-double-equivalent/references/pdfjs-72.png",
+      "sha256": "3c9ce7ace93bc6ad64095c0daa8381cb613073c49ff8f623a982b6c26c7e3157",
+      "input_sha256": "9615593b7dfd27eedab2468005698e5b124cbdf8581e812d45ca6a8ea937f81c",
+      "original_capture_record": "tools/pdf-original-corpus-v2/textquote/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "textquote-double-equivalent",
+      "fixture_id": "textquote-double-equivalent",
+      "engine": "mupdf",
+      "dpi": 72,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/textquote-double-equivalent/references/mupdf-72.png",
+      "sha256": "61935118a948d4a5b05f9c4e92d42de865895f35bdeba5b69b8620babb440ab0",
+      "input_sha256": "9615593b7dfd27eedab2468005698e5b124cbdf8581e812d45ca6a8ea937f81c",
+      "original_capture_record": "tools/pdf-original-corpus-v2/textquote/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "textquote-double-equivalent",
+      "fixture_id": "textquote-double-equivalent",
+      "engine": "pdfium",
+      "dpi": 144,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/textquote-double-equivalent/references/pdfium-144.png",
+      "sha256": "875074f16f16bd168c9d538916c162ef96a58c03dca869a6e2c0a7c9dc3ff712",
+      "input_sha256": "9615593b7dfd27eedab2468005698e5b124cbdf8581e812d45ca6a8ea937f81c",
+      "original_capture_record": "tools/pdf-original-corpus-v2/textquote/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "textquote-double-equivalent",
+      "fixture_id": "textquote-double-equivalent",
+      "engine": "pdfjs",
+      "dpi": 144,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/textquote-double-equivalent/references/pdfjs-144.png",
+      "sha256": "4904705871c4c12048562bbd5f1c41f1ada59dbf0bc2eb36c114b26efb704897",
+      "input_sha256": "9615593b7dfd27eedab2468005698e5b124cbdf8581e812d45ca6a8ea937f81c",
+      "original_capture_record": "tools/pdf-original-corpus-v2/textquote/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "textquote-double-equivalent",
+      "fixture_id": "textquote-double-equivalent",
+      "engine": "mupdf",
+      "dpi": 144,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/textquote-double-equivalent/references/mupdf-144.png",
+      "sha256": "2d27783c486324834e2738b529e47f5a18eec7029e4dc30657b05fe34fe62c70",
+      "input_sha256": "9615593b7dfd27eedab2468005698e5b124cbdf8581e812d45ca6a8ea937f81c",
+      "original_capture_record": "tools/pdf-original-corpus-v2/textquote/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "textquote-spacing-persists",
+      "fixture_id": "textquote-spacing-persists",
+      "engine": "pdfium",
+      "dpi": 72,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/textquote-spacing-persists/references/pdfium-72.png",
+      "sha256": "053fc008b164a9fee7c5554df937f6452fa29d28fab132be202ee455529fe145",
+      "input_sha256": "ba38d3e1efa1b6fb0d53eb905c9fddec3ec2d303d43f75a4548a441cb09ee17b",
+      "original_capture_record": "tools/pdf-original-corpus-v2/textquote/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "textquote-spacing-persists",
+      "fixture_id": "textquote-spacing-persists",
+      "engine": "pdfjs",
+      "dpi": 72,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/textquote-spacing-persists/references/pdfjs-72.png",
+      "sha256": "743e7d1a417d9059c66d6dd3595be60784a5d6c6f368bbaf15c4869e79138f0a",
+      "input_sha256": "ba38d3e1efa1b6fb0d53eb905c9fddec3ec2d303d43f75a4548a441cb09ee17b",
+      "original_capture_record": "tools/pdf-original-corpus-v2/textquote/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "textquote-spacing-persists",
+      "fixture_id": "textquote-spacing-persists",
+      "engine": "mupdf",
+      "dpi": 72,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/textquote-spacing-persists/references/mupdf-72.png",
+      "sha256": "d8cbb84610394bea5ed85605788b588cd0b4a1d4bab756644b0e10467924b082",
+      "input_sha256": "ba38d3e1efa1b6fb0d53eb905c9fddec3ec2d303d43f75a4548a441cb09ee17b",
+      "original_capture_record": "tools/pdf-original-corpus-v2/textquote/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "textquote-spacing-persists",
+      "fixture_id": "textquote-spacing-persists",
+      "engine": "pdfium",
+      "dpi": 144,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/textquote-spacing-persists/references/pdfium-144.png",
+      "sha256": "db050b527153ae55989f8b8348a997f983848963f8e9a7c53f479cfe74c462de",
+      "input_sha256": "ba38d3e1efa1b6fb0d53eb905c9fddec3ec2d303d43f75a4548a441cb09ee17b",
+      "original_capture_record": "tools/pdf-original-corpus-v2/textquote/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "textquote-spacing-persists",
+      "fixture_id": "textquote-spacing-persists",
+      "engine": "pdfjs",
+      "dpi": 144,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/textquote-spacing-persists/references/pdfjs-144.png",
+      "sha256": "93dcf219299a94ebfe0c233dfca309bac2f8c1ce70cb562c3f5b03e92b1ae6c1",
+      "input_sha256": "ba38d3e1efa1b6fb0d53eb905c9fddec3ec2d303d43f75a4548a441cb09ee17b",
+      "original_capture_record": "tools/pdf-original-corpus-v2/textquote/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "textquote-spacing-persists",
+      "fixture_id": "textquote-spacing-persists",
+      "engine": "mupdf",
+      "dpi": 144,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/textquote-spacing-persists/references/mupdf-144.png",
+      "sha256": "b2aa18f19d1b115226e5d5b7f4a5c96248b199d2e69d9f0a9d2aa8f50c4d41d0",
+      "input_sha256": "ba38d3e1efa1b6fb0d53eb905c9fddec3ec2d303d43f75a4548a441cb09ee17b",
+      "original_capture_record": "tools/pdf-original-corpus-v2/textquote/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "textquote-shift-and-object-state",
+      "fixture_id": "textquote-shift-and-object-state",
+      "engine": "pdfium",
+      "dpi": 72,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/textquote-shift-and-object-state/references/pdfium-72.png",
+      "sha256": "aed4613d6702fa16520043fa1cbf0fe7c7449591d59b0306e1f4c0eedf80d969",
+      "input_sha256": "efcd6958c6d5a21ef0c5dd9f300d85cf7fc0a285e5c13406b7d178eda3d78965",
+      "original_capture_record": "tools/pdf-original-corpus-v2/textquote/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "textquote-shift-and-object-state",
+      "fixture_id": "textquote-shift-and-object-state",
+      "engine": "pdfjs",
+      "dpi": 72,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/textquote-shift-and-object-state/references/pdfjs-72.png",
+      "sha256": "20ee1ffd237d1900dcb7c059f4ca3e581c231ebfee76b1e05aa1fe937a8c97f8",
+      "input_sha256": "efcd6958c6d5a21ef0c5dd9f300d85cf7fc0a285e5c13406b7d178eda3d78965",
+      "original_capture_record": "tools/pdf-original-corpus-v2/textquote/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "textquote-shift-and-object-state",
+      "fixture_id": "textquote-shift-and-object-state",
+      "engine": "mupdf",
+      "dpi": 72,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/textquote-shift-and-object-state/references/mupdf-72.png",
+      "sha256": "7b9e8f94ce87d65988e4d5f9bc5b2d61c3f2c4310dc9a1b724d0d47811fca1b0",
+      "input_sha256": "efcd6958c6d5a21ef0c5dd9f300d85cf7fc0a285e5c13406b7d178eda3d78965",
+      "original_capture_record": "tools/pdf-original-corpus-v2/textquote/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "textquote-shift-and-object-state",
+      "fixture_id": "textquote-shift-and-object-state",
+      "engine": "pdfium",
+      "dpi": 144,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/textquote-shift-and-object-state/references/pdfium-144.png",
+      "sha256": "26d781c1c21790d750fad2204f86cbb0654b1b5cbdf56e1931bc7c9178fc637e",
+      "input_sha256": "efcd6958c6d5a21ef0c5dd9f300d85cf7fc0a285e5c13406b7d178eda3d78965",
+      "original_capture_record": "tools/pdf-original-corpus-v2/textquote/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "textquote-shift-and-object-state",
+      "fixture_id": "textquote-shift-and-object-state",
+      "engine": "pdfjs",
+      "dpi": 144,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/textquote-shift-and-object-state/references/pdfjs-144.png",
+      "sha256": "797ec7e5e1eaa288efbc295f696836362d7ce2d7b19f322fc7aad77f042930b1",
+      "input_sha256": "efcd6958c6d5a21ef0c5dd9f300d85cf7fc0a285e5c13406b7d178eda3d78965",
+      "original_capture_record": "tools/pdf-original-corpus-v2/textquote/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "textquote-shift-and-object-state",
+      "fixture_id": "textquote-shift-and-object-state",
+      "engine": "mupdf",
+      "dpi": 144,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/textquote-shift-and-object-state/references/mupdf-144.png",
+      "sha256": "9be4b182dcaf4528599e35d6c0441b8cd0f7e011c1962bd241294e08707b9820",
+      "input_sha256": "efcd6958c6d5a21ef0c5dd9f300d85cf7fc0a285e5c13406b7d178eda3d78965",
+      "original_capture_record": "tools/pdf-original-corpus-v2/textquote/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "img-colorkey-decode-opaque",
+      "fixture_id": "img-colorkey-decode-opaque",
+      "engine": "pdfium",
+      "dpi": 72,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-decode-opaque/references/pdfium-72.png",
+      "sha256": "1efbd489b743d7695c7b872b9c62f3110ebfc9c3c8fe5d946267abcc82420678",
+      "input_sha256": "2c8ec63da97e5e5ff8be4e6331fc8b0cdcdcc75fc8978deffceaec0c993d8761",
+      "original_capture_record": "tools/pdf-original-corpus-v2/colorkeydecode/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "img-colorkey-decode-opaque",
+      "fixture_id": "img-colorkey-decode-opaque",
+      "engine": "pdfjs",
+      "dpi": 72,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-decode-opaque/references/pdfjs-72.png",
+      "sha256": "4b28c7be1691329814e25611042bf8869708e3848fe83caffac473a6feb673c5",
+      "input_sha256": "2c8ec63da97e5e5ff8be4e6331fc8b0cdcdcc75fc8978deffceaec0c993d8761",
+      "original_capture_record": "tools/pdf-original-corpus-v2/colorkeydecode/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "img-colorkey-decode-opaque",
+      "fixture_id": "img-colorkey-decode-opaque",
+      "engine": "mupdf",
+      "dpi": 72,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-decode-opaque/references/mupdf-72.png",
+      "sha256": "6a2311dffad199c4180cd8b9d322b1176a153f86840ea700bceb6c1266c3845b",
+      "input_sha256": "2c8ec63da97e5e5ff8be4e6331fc8b0cdcdcc75fc8978deffceaec0c993d8761",
+      "original_capture_record": "tools/pdf-original-corpus-v2/colorkeydecode/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "img-colorkey-decode-opaque",
+      "fixture_id": "img-colorkey-decode-opaque",
+      "engine": "pdfium",
+      "dpi": 144,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-decode-opaque/references/pdfium-144.png",
+      "sha256": "0ac35c88f1d5cbf90d1f820cff66d9a3360d1fcefc14b25bb15e72ee2b3dd2fc",
+      "input_sha256": "2c8ec63da97e5e5ff8be4e6331fc8b0cdcdcc75fc8978deffceaec0c993d8761",
+      "original_capture_record": "tools/pdf-original-corpus-v2/colorkeydecode/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "img-colorkey-decode-opaque",
+      "fixture_id": "img-colorkey-decode-opaque",
+      "engine": "pdfjs",
+      "dpi": 144,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-decode-opaque/references/pdfjs-144.png",
+      "sha256": "2ac56ed055dcbb86d0398b3d5538c336b752d42a32b2d5cf9a0525cc278fc595",
+      "input_sha256": "2c8ec63da97e5e5ff8be4e6331fc8b0cdcdcc75fc8978deffceaec0c993d8761",
+      "original_capture_record": "tools/pdf-original-corpus-v2/colorkeydecode/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "img-colorkey-decode-opaque",
+      "fixture_id": "img-colorkey-decode-opaque",
+      "engine": "mupdf",
+      "dpi": 144,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-decode-opaque/references/mupdf-144.png",
+      "sha256": "127fbff67c3c9365b7e06f3322094c719083a11e8ce21ed247c6ffd41dc18d35",
+      "input_sha256": "2c8ec63da97e5e5ff8be4e6331fc8b0cdcdcc75fc8978deffceaec0c993d8761",
+      "original_capture_record": "tools/pdf-original-corpus-v2/colorkeydecode/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "img-colorkey-decode-stored-key",
+      "fixture_id": "img-colorkey-decode-stored-key",
+      "engine": "pdfium",
+      "dpi": 72,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-decode-stored-key/references/pdfium-72.png",
+      "sha256": "39c662b44caef608dbf1655411fe785ea619e7f936e18182d085dce5f6d8065f",
+      "input_sha256": "57f37df19a83c1afe9b51c01d6ffdba3c4a2a33c14e833c451f21c516db30396",
+      "original_capture_record": "tools/pdf-original-corpus-v2/colorkeydecode/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "img-colorkey-decode-stored-key",
+      "fixture_id": "img-colorkey-decode-stored-key",
+      "engine": "pdfjs",
+      "dpi": 72,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-decode-stored-key/references/pdfjs-72.png",
+      "sha256": "15a26213ae50fa7f69665250161e6414f8dc0eb11a2c920995c70cc3d21ad66d",
+      "input_sha256": "57f37df19a83c1afe9b51c01d6ffdba3c4a2a33c14e833c451f21c516db30396",
+      "original_capture_record": "tools/pdf-original-corpus-v2/colorkeydecode/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "img-colorkey-decode-stored-key",
+      "fixture_id": "img-colorkey-decode-stored-key",
+      "engine": "mupdf",
+      "dpi": 72,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-decode-stored-key/references/mupdf-72.png",
+      "sha256": "e7b9b30e1e40dac57fd661da848c32e989ab86bfdc1a3f17bfcd7d803f191494",
+      "input_sha256": "57f37df19a83c1afe9b51c01d6ffdba3c4a2a33c14e833c451f21c516db30396",
+      "original_capture_record": "tools/pdf-original-corpus-v2/colorkeydecode/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "img-colorkey-decode-stored-key",
+      "fixture_id": "img-colorkey-decode-stored-key",
+      "engine": "pdfium",
+      "dpi": 144,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-decode-stored-key/references/pdfium-144.png",
+      "sha256": "f2e2d3fe5f9f34c690d2c49b75f58dc7438efa4e057678d7d20042269f6fbb88",
+      "input_sha256": "57f37df19a83c1afe9b51c01d6ffdba3c4a2a33c14e833c451f21c516db30396",
+      "original_capture_record": "tools/pdf-original-corpus-v2/colorkeydecode/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "img-colorkey-decode-stored-key",
+      "fixture_id": "img-colorkey-decode-stored-key",
+      "engine": "pdfjs",
+      "dpi": 144,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-decode-stored-key/references/pdfjs-144.png",
+      "sha256": "2fc8472454a5d6189f2f0cd90c0ec7d87c7ac618f7487949bbe507864af67557",
+      "input_sha256": "57f37df19a83c1afe9b51c01d6ffdba3c4a2a33c14e833c451f21c516db30396",
+      "original_capture_record": "tools/pdf-original-corpus-v2/colorkeydecode/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "img-colorkey-decode-stored-key",
+      "fixture_id": "img-colorkey-decode-stored-key",
+      "engine": "mupdf",
+      "dpi": 144,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-decode-stored-key/references/mupdf-144.png",
+      "sha256": "4b183042816b37415ee1240e78791780454abf57284b0170889cae2199107658",
+      "input_sha256": "57f37df19a83c1afe9b51c01d6ffdba3c4a2a33c14e833c451f21c516db30396",
+      "original_capture_record": "tools/pdf-original-corpus-v2/colorkeydecode/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "img-colorkey-decode-decoded-key-control",
+      "fixture_id": "img-colorkey-decode-decoded-key-control",
+      "engine": "pdfium",
+      "dpi": 72,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-decode-decoded-key-control/references/pdfium-72.png",
+      "sha256": "5a699b130a4c3114f4ee841f8b32b634e07b89544c4c1ecd5788eb2daa0fc4b1",
+      "input_sha256": "848ff79442ea79ab07c40f0ad350995fb20e33b758f9032f62b20536e7e2b3b0",
+      "original_capture_record": "tools/pdf-original-corpus-v2/colorkeydecode/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "img-colorkey-decode-decoded-key-control",
+      "fixture_id": "img-colorkey-decode-decoded-key-control",
+      "engine": "pdfjs",
+      "dpi": 72,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-decode-decoded-key-control/references/pdfjs-72.png",
+      "sha256": "3826656f4ebd669c085085f9911d95a9c1ff8ac77a5e536ee8c4062ee0dbabcd",
+      "input_sha256": "848ff79442ea79ab07c40f0ad350995fb20e33b758f9032f62b20536e7e2b3b0",
+      "original_capture_record": "tools/pdf-original-corpus-v2/colorkeydecode/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "img-colorkey-decode-decoded-key-control",
+      "fixture_id": "img-colorkey-decode-decoded-key-control",
+      "engine": "mupdf",
+      "dpi": 72,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-decode-decoded-key-control/references/mupdf-72.png",
+      "sha256": "ce705d5134b27949c652a3821acedb52333ccee851f17791aa4af46b0982b572",
+      "input_sha256": "848ff79442ea79ab07c40f0ad350995fb20e33b758f9032f62b20536e7e2b3b0",
+      "original_capture_record": "tools/pdf-original-corpus-v2/colorkeydecode/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "img-colorkey-decode-decoded-key-control",
+      "fixture_id": "img-colorkey-decode-decoded-key-control",
+      "engine": "pdfium",
+      "dpi": 144,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-decode-decoded-key-control/references/pdfium-144.png",
+      "sha256": "66031fb311f818b660d3f75143aaf2d313eff78f7d9a68cc0b89cd9f04d138aa",
+      "input_sha256": "848ff79442ea79ab07c40f0ad350995fb20e33b758f9032f62b20536e7e2b3b0",
+      "original_capture_record": "tools/pdf-original-corpus-v2/colorkeydecode/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "img-colorkey-decode-decoded-key-control",
+      "fixture_id": "img-colorkey-decode-decoded-key-control",
+      "engine": "pdfjs",
+      "dpi": 144,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-decode-decoded-key-control/references/pdfjs-144.png",
+      "sha256": "826b884cd9e76882517c1a0fbd64b7bdeb73a850edd32c74037bf4df7fc2998e",
+      "input_sha256": "848ff79442ea79ab07c40f0ad350995fb20e33b758f9032f62b20536e7e2b3b0",
+      "original_capture_record": "tools/pdf-original-corpus-v2/colorkeydecode/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "img-colorkey-decode-decoded-key-control",
+      "fixture_id": "img-colorkey-decode-decoded-key-control",
+      "engine": "mupdf",
+      "dpi": 144,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-decode-decoded-key-control/references/mupdf-144.png",
+      "sha256": "e57d65761265a2d4e2160d5e7f7ba87a7f96981b9dd9ffcf3418d37800fd8a5f",
+      "input_sha256": "848ff79442ea79ab07c40f0ad350995fb20e33b758f9032f62b20536e7e2b3b0",
+      "original_capture_record": "tools/pdf-original-corpus-v2/colorkeydecode/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "img-colorkey-decode-stored-range",
+      "fixture_id": "img-colorkey-decode-stored-range",
+      "engine": "pdfium",
+      "dpi": 72,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-decode-stored-range/references/pdfium-72.png",
+      "sha256": "1b05f1dbd54717577c0fd6258126f72a5dc4a9a043e2f37992ae6bd8e8bb39b0",
+      "input_sha256": "0f7523bbf8a697a7b83a14b4eef74d21a30c82309cbfc67ad38419b0a96bdb23",
+      "original_capture_record": "tools/pdf-original-corpus-v2/colorkeydecode/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "img-colorkey-decode-stored-range",
+      "fixture_id": "img-colorkey-decode-stored-range",
+      "engine": "pdfjs",
+      "dpi": 72,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-decode-stored-range/references/pdfjs-72.png",
+      "sha256": "6694328d873f13d6427e90fa2380d89b5f4959dd8869c14475805c932c6e5f41",
+      "input_sha256": "0f7523bbf8a697a7b83a14b4eef74d21a30c82309cbfc67ad38419b0a96bdb23",
+      "original_capture_record": "tools/pdf-original-corpus-v2/colorkeydecode/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "img-colorkey-decode-stored-range",
+      "fixture_id": "img-colorkey-decode-stored-range",
+      "engine": "mupdf",
+      "dpi": 72,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-decode-stored-range/references/mupdf-72.png",
+      "sha256": "38e281b869fb795577eae50cc19cdc7011e0f99df27160ae63331db5d438073c",
+      "input_sha256": "0f7523bbf8a697a7b83a14b4eef74d21a30c82309cbfc67ad38419b0a96bdb23",
+      "original_capture_record": "tools/pdf-original-corpus-v2/colorkeydecode/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "img-colorkey-decode-stored-range",
+      "fixture_id": "img-colorkey-decode-stored-range",
+      "engine": "pdfium",
+      "dpi": 144,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-decode-stored-range/references/pdfium-144.png",
+      "sha256": "13b78bb77867a7b1dd98153d657083bb943108f567776b5110224c3c79c99b8b",
+      "input_sha256": "0f7523bbf8a697a7b83a14b4eef74d21a30c82309cbfc67ad38419b0a96bdb23",
+      "original_capture_record": "tools/pdf-original-corpus-v2/colorkeydecode/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "img-colorkey-decode-stored-range",
+      "fixture_id": "img-colorkey-decode-stored-range",
+      "engine": "pdfjs",
+      "dpi": 144,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-decode-stored-range/references/pdfjs-144.png",
+      "sha256": "fe3d8c9b0536c11d80e5b6340a3ffe959ee41bc6db9b3a0a6c7fce7d29a5b91b",
+      "input_sha256": "0f7523bbf8a697a7b83a14b4eef74d21a30c82309cbfc67ad38419b0a96bdb23",
+      "original_capture_record": "tools/pdf-original-corpus-v2/colorkeydecode/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "img-colorkey-decode-stored-range",
+      "fixture_id": "img-colorkey-decode-stored-range",
+      "engine": "mupdf",
+      "dpi": 144,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-decode-stored-range/references/mupdf-144.png",
+      "sha256": "a68f9490f66bc07eb446ba7f9453899ae8e32767c24ad2227b53ce24ae5c7636",
+      "input_sha256": "0f7523bbf8a697a7b83a14b4eef74d21a30c82309cbfc67ad38419b0a96bdb23",
+      "original_capture_record": "tools/pdf-original-corpus-v2/colorkeydecode/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "img-colorkey-endpoint-control",
+      "fixture_id": "img-colorkey-endpoint-control",
+      "engine": "pdfium",
+      "dpi": 72,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-endpoint-control/references/pdfium-72.png",
+      "sha256": "b98be856d8dc733cc009fd3615c44c8c7bdd6f9c391a7f300386cf6136657fec",
+      "input_sha256": "51d3bcf1429aa743930a1657674c54c1a7a0107d7bc808d9d428bfa20daa415c",
+      "original_capture_record": "tools/pdf-original-corpus-v2/colorkeyendpoints/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "img-colorkey-endpoint-control",
+      "fixture_id": "img-colorkey-endpoint-control",
+      "engine": "pdfjs",
+      "dpi": 72,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-endpoint-control/references/pdfjs-72.png",
+      "sha256": "897578a1025d0603c7bf8ce2b5066bdd6674e88f4852177c67651d2710de6e98",
+      "input_sha256": "51d3bcf1429aa743930a1657674c54c1a7a0107d7bc808d9d428bfa20daa415c",
+      "original_capture_record": "tools/pdf-original-corpus-v2/colorkeyendpoints/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "img-colorkey-endpoint-control",
+      "fixture_id": "img-colorkey-endpoint-control",
+      "engine": "mupdf",
+      "dpi": 72,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-endpoint-control/references/mupdf-72.png",
+      "sha256": "3cceabbd7943a49d144bcf1fb33a1cc36a38afec637b99c50ee6047640a8355d",
+      "input_sha256": "51d3bcf1429aa743930a1657674c54c1a7a0107d7bc808d9d428bfa20daa415c",
+      "original_capture_record": "tools/pdf-original-corpus-v2/colorkeyendpoints/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "img-colorkey-endpoint-control",
+      "fixture_id": "img-colorkey-endpoint-control",
+      "engine": "pdfium",
+      "dpi": 144,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-endpoint-control/references/pdfium-144.png",
+      "sha256": "0c58e599aac4fb94526847d4095f5d4010e3b30fe07f31fdc18712ba158bf4fd",
+      "input_sha256": "51d3bcf1429aa743930a1657674c54c1a7a0107d7bc808d9d428bfa20daa415c",
+      "original_capture_record": "tools/pdf-original-corpus-v2/colorkeyendpoints/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "img-colorkey-endpoint-control",
+      "fixture_id": "img-colorkey-endpoint-control",
+      "engine": "pdfjs",
+      "dpi": 144,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-endpoint-control/references/pdfjs-144.png",
+      "sha256": "0c70c2d303469ad04e732176131089e8f32d2b9eaf0dcc306cef830d8614c219",
+      "input_sha256": "51d3bcf1429aa743930a1657674c54c1a7a0107d7bc808d9d428bfa20daa415c",
+      "original_capture_record": "tools/pdf-original-corpus-v2/colorkeyendpoints/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "img-colorkey-endpoint-control",
+      "fixture_id": "img-colorkey-endpoint-control",
+      "engine": "mupdf",
+      "dpi": 144,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-endpoint-control/references/mupdf-144.png",
+      "sha256": "35c3cdff576ab7c3f49a2f339f62bc8ee94daa16348f63e38b2230d67ddee5d3",
+      "input_sha256": "51d3bcf1429aa743930a1657674c54c1a7a0107d7bc808d9d428bfa20daa415c",
+      "original_capture_record": "tools/pdf-original-corpus-v2/colorkeyendpoints/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "img-colorkey-endpoint-stored-red",
+      "fixture_id": "img-colorkey-endpoint-stored-red",
+      "engine": "pdfium",
+      "dpi": 72,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-endpoint-stored-red/references/pdfium-72.png",
+      "sha256": "d1d75859765f981a8e13a3328d18f8a583f052306582f82f4e1d48dded077d68",
+      "input_sha256": "9c5de24b5f5a24edbbebe22b6e439ed2816de3be0a0e8e4e1f70b83508c5c8bb",
+      "original_capture_record": "tools/pdf-original-corpus-v2/colorkeyendpoints/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "img-colorkey-endpoint-stored-red",
+      "fixture_id": "img-colorkey-endpoint-stored-red",
+      "engine": "pdfjs",
+      "dpi": 72,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-endpoint-stored-red/references/pdfjs-72.png",
+      "sha256": "8d01a5747d054a57e7e64aaac136924c6d6e871df6ed89678565fb2636841f71",
+      "input_sha256": "9c5de24b5f5a24edbbebe22b6e439ed2816de3be0a0e8e4e1f70b83508c5c8bb",
+      "original_capture_record": "tools/pdf-original-corpus-v2/colorkeyendpoints/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "img-colorkey-endpoint-stored-red",
+      "fixture_id": "img-colorkey-endpoint-stored-red",
+      "engine": "mupdf",
+      "dpi": 72,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-endpoint-stored-red/references/mupdf-72.png",
+      "sha256": "4b123e8882669a303032690397a6bd7b4d02e9559e77a808eb9a811e3bc62e4a",
+      "input_sha256": "9c5de24b5f5a24edbbebe22b6e439ed2816de3be0a0e8e4e1f70b83508c5c8bb",
+      "original_capture_record": "tools/pdf-original-corpus-v2/colorkeyendpoints/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "img-colorkey-endpoint-stored-red",
+      "fixture_id": "img-colorkey-endpoint-stored-red",
+      "engine": "pdfium",
+      "dpi": 144,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-endpoint-stored-red/references/pdfium-144.png",
+      "sha256": "9616fdac831e87c6b48bb27b1a9f9ba1bfeeef012e3d80289d22cee0459d861d",
+      "input_sha256": "9c5de24b5f5a24edbbebe22b6e439ed2816de3be0a0e8e4e1f70b83508c5c8bb",
+      "original_capture_record": "tools/pdf-original-corpus-v2/colorkeyendpoints/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "img-colorkey-endpoint-stored-red",
+      "fixture_id": "img-colorkey-endpoint-stored-red",
+      "engine": "pdfjs",
+      "dpi": 144,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-endpoint-stored-red/references/pdfjs-144.png",
+      "sha256": "96ab811694808237304f1cc7abdd92be68bb527ade7aa8a3eafa023e3404f664",
+      "input_sha256": "9c5de24b5f5a24edbbebe22b6e439ed2816de3be0a0e8e4e1f70b83508c5c8bb",
+      "original_capture_record": "tools/pdf-original-corpus-v2/colorkeyendpoints/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "img-colorkey-endpoint-stored-red",
+      "fixture_id": "img-colorkey-endpoint-stored-red",
+      "engine": "mupdf",
+      "dpi": 144,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-endpoint-stored-red/references/mupdf-144.png",
+      "sha256": "f9bc04abc10107ad97fd9f729e4094f46eed05f3fa5ea7695d801f0d1564e4b4",
+      "input_sha256": "9c5de24b5f5a24edbbebe22b6e439ed2816de3be0a0e8e4e1f70b83508c5c8bb",
+      "original_capture_record": "tools/pdf-original-corpus-v2/colorkeyendpoints/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "img-colorkey-endpoint-stored-red-magenta-range",
+      "fixture_id": "img-colorkey-endpoint-stored-red-magenta-range",
+      "engine": "pdfium",
+      "dpi": 72,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-endpoint-stored-red-magenta-range/references/pdfium-72.png",
+      "sha256": "2ec14d6bd72a2758c2bdd23cd3517c00e8e8b822966afd4088fedf011e9a4216",
+      "input_sha256": "9baaefe9687c141dca46a86f842842d02b47f79f8c5c85fa064e992e9e71487d",
+      "original_capture_record": "tools/pdf-original-corpus-v2/colorkeyendpoints/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "img-colorkey-endpoint-stored-red-magenta-range",
+      "fixture_id": "img-colorkey-endpoint-stored-red-magenta-range",
+      "engine": "pdfjs",
+      "dpi": 72,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-endpoint-stored-red-magenta-range/references/pdfjs-72.png",
+      "sha256": "e63d99720d51f7a4fae8d4bbe4c53e2c17ed9c39775d9484741614eb5b3db030",
+      "input_sha256": "9baaefe9687c141dca46a86f842842d02b47f79f8c5c85fa064e992e9e71487d",
+      "original_capture_record": "tools/pdf-original-corpus-v2/colorkeyendpoints/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "img-colorkey-endpoint-stored-red-magenta-range",
+      "fixture_id": "img-colorkey-endpoint-stored-red-magenta-range",
+      "engine": "mupdf",
+      "dpi": 72,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-endpoint-stored-red-magenta-range/references/mupdf-72.png",
+      "sha256": "9c76b482ce987aa8dbfef3d5cbb48116f3b2c9c6abfe52f209ceb03f395826de",
+      "input_sha256": "9baaefe9687c141dca46a86f842842d02b47f79f8c5c85fa064e992e9e71487d",
+      "original_capture_record": "tools/pdf-original-corpus-v2/colorkeyendpoints/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "img-colorkey-endpoint-stored-red-magenta-range",
+      "fixture_id": "img-colorkey-endpoint-stored-red-magenta-range",
+      "engine": "pdfium",
+      "dpi": 144,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-endpoint-stored-red-magenta-range/references/pdfium-144.png",
+      "sha256": "6bf2f856120de9aa5ecd6b9054181a747d7c49dce67ef1336f8ae969289bed41",
+      "input_sha256": "9baaefe9687c141dca46a86f842842d02b47f79f8c5c85fa064e992e9e71487d",
+      "original_capture_record": "tools/pdf-original-corpus-v2/colorkeyendpoints/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "img-colorkey-endpoint-stored-red-magenta-range",
+      "fixture_id": "img-colorkey-endpoint-stored-red-magenta-range",
+      "engine": "pdfjs",
+      "dpi": 144,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-endpoint-stored-red-magenta-range/references/pdfjs-144.png",
+      "sha256": "938f8ace055bc8ff1200db39126a75545ca0450c2fe5fab158459bff80cd451a",
+      "input_sha256": "9baaefe9687c141dca46a86f842842d02b47f79f8c5c85fa064e992e9e71487d",
+      "original_capture_record": "tools/pdf-original-corpus-v2/colorkeyendpoints/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
+    },
+    {
+      "use_case_id": "img-colorkey-endpoint-stored-red-magenta-range",
+      "fixture_id": "img-colorkey-endpoint-stored-red-magenta-range",
+      "engine": "mupdf",
+      "dpi": 144,
+      "page": 0,
+      "path": "tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-endpoint-stored-red-magenta-range/references/mupdf-144.png",
+      "sha256": "2ad8f6a570ca033b822cf9d1ba5530e36076511369f753457833587edaae88be",
+      "input_sha256": "9baaefe9687c141dca46a86f842842d02b47f79f8c5c85fa064e992e9e71487d",
+      "original_capture_record": "tools/pdf-original-corpus-v2/colorkeyendpoints/reference-results.json",
+      "settings": {
+        "background": "white",
+        "annotations": false,
+        "bounds": "visibleCropBox",
+        "rotation": "page-declared",
+        "user_unit": "authored-pagevalue"
+      },
+      "provenance": "Fresh independently rendered original MIT PDF"
     }
   ]
 }

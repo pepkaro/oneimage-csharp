@@ -1,0 +1,6820 @@
+{
+  "schema_version": 1,
+  "batch": "ISO-IMAGE-COLORKEY-DECODE-03-ENDPOINT-CONTROLS",
+  "fixture_count": 3,
+  "scope": "Endpoint-only control sub-slice, separate from all held non-endpoint fixtures.",
+  "raw_sample_bytes_hex": "ff000000ffffff00ff00ff000000ffffff0000ffffff0000ff00ff",
+  "color_names": [
+    [
+      "red",
+      "cyan",
+      "magenta"
+    ],
+    [
+      "green",
+      "blue",
+      "yellow"
+    ],
+    [
+      "cyan",
+      "red",
+      "magenta"
+    ]
+  ],
+  "cases": [
+    {
+      "id": "img-colorkey-endpoint-control",
+      "fixture_id": "img-colorkey-endpoint-control",
+      "file": "inputs/img-colorkey-endpoint-control.pdf",
+      "license": "MIT",
+      "contract": "Endpoint-only reversed RGB Decode; unmasked control over an opaque checkerboard.",
+      "scope": "Endpoint-only RGB8 components0/255; does not resolve non-endpoint quantization holds.",
+      "spec": "ISO 32000-1:2008",
+      "spec_clauses": [
+        "8.9.6.4 Colour Key Masking",
+        "8.9.5.2 Decode Arrays"
+      ],
+      "route": "page RGB8 image XObject, lossless Flate, reversed Decode and optional color-key array; opaque checkerboard page graphics",
+      "width": 240,
+      "height": 180,
+      "page": 0,
+      "page_count": 1,
+      "dpis": [
+        72,
+        144
+      ],
+      "rotation": 0,
+      "annotations": "none",
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "sha256": "51d3bcf1429aa743930a1657674c54c1a7a0107d7bc808d9d428bfa20daa415c",
+      "sha": "51d3bcf1429aa743930a1657674c54c1a7a0107d7bc808d9d428bfa20daa415c",
+      "image": {
+        "width": 3,
+        "height": 3,
+        "bpc": 8,
+        "color_space": "/DeviceRGB",
+        "filter": "FlateDecode",
+        "decode": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "mask": null,
+        "ctm": [
+          72,
+          0,
+          0,
+          72,
+          32,
+          40
+        ],
+        "raw_sha256": "f268d294eeeb6c462b6d8a0600aa03fd2baea69a0d2fde303d17cf040b07ffc5",
+        "encoded_sha256": "80ecf277486568a538dbf7a56fd7d20a091bccfa45f1243ef8f41f6ca1b357da"
+      },
+      "cells": [
+        {
+          "id": "cell-0-0",
+          "color": "red",
+          "stored_rgb": [
+            255,
+            0,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            255
+          ],
+          "masked": false,
+          "decoded_key_match": false
+        },
+        {
+          "id": "cell-1-0",
+          "color": "cyan",
+          "stored_rgb": [
+            0,
+            255,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            0
+          ],
+          "masked": false,
+          "decoded_key_match": false
+        },
+        {
+          "id": "cell-2-0",
+          "color": "magenta",
+          "stored_rgb": [
+            255,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            0
+          ],
+          "masked": false,
+          "decoded_key_match": false
+        },
+        {
+          "id": "cell-0-1",
+          "color": "green",
+          "stored_rgb": [
+            0,
+            255,
+            0
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            255
+          ],
+          "masked": false,
+          "decoded_key_match": false
+        },
+        {
+          "id": "cell-1-1",
+          "color": "blue",
+          "stored_rgb": [
+            0,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            255,
+            0
+          ],
+          "masked": false,
+          "decoded_key_match": false
+        },
+        {
+          "id": "cell-2-1",
+          "color": "yellow",
+          "stored_rgb": [
+            255,
+            255,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            0,
+            255
+          ],
+          "masked": false,
+          "decoded_key_match": false
+        },
+        {
+          "id": "cell-0-2",
+          "color": "cyan",
+          "stored_rgb": [
+            0,
+            255,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            0
+          ],
+          "masked": false,
+          "decoded_key_match": false
+        },
+        {
+          "id": "cell-1-2",
+          "color": "red",
+          "stored_rgb": [
+            255,
+            0,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            255
+          ],
+          "masked": false,
+          "decoded_key_match": false
+        },
+        {
+          "id": "cell-2-2",
+          "color": "magenta",
+          "stored_rgb": [
+            255,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            0
+          ],
+          "masked": false,
+          "decoded_key_match": false
+        }
+      ],
+      "checkerboard": [
+        {
+          "top_row": 0,
+          "column": 0,
+          "gray": 0,
+          "rect": [
+            32,
+            100,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 0,
+          "column": 1,
+          "gray": 1,
+          "rect": [
+            44,
+            100,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 0,
+          "column": 2,
+          "gray": 0,
+          "rect": [
+            56,
+            100,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 0,
+          "column": 3,
+          "gray": 1,
+          "rect": [
+            68,
+            100,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 0,
+          "column": 4,
+          "gray": 0,
+          "rect": [
+            80,
+            100,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 0,
+          "column": 5,
+          "gray": 1,
+          "rect": [
+            92,
+            100,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 1,
+          "column": 0,
+          "gray": 1,
+          "rect": [
+            32,
+            88,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 1,
+          "column": 1,
+          "gray": 0,
+          "rect": [
+            44,
+            88,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 1,
+          "column": 2,
+          "gray": 1,
+          "rect": [
+            56,
+            88,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 1,
+          "column": 3,
+          "gray": 0,
+          "rect": [
+            68,
+            88,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 1,
+          "column": 4,
+          "gray": 1,
+          "rect": [
+            80,
+            88,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 1,
+          "column": 5,
+          "gray": 0,
+          "rect": [
+            92,
+            88,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 2,
+          "column": 0,
+          "gray": 0,
+          "rect": [
+            32,
+            76,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 2,
+          "column": 1,
+          "gray": 1,
+          "rect": [
+            44,
+            76,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 2,
+          "column": 2,
+          "gray": 0,
+          "rect": [
+            56,
+            76,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 2,
+          "column": 3,
+          "gray": 1,
+          "rect": [
+            68,
+            76,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 2,
+          "column": 4,
+          "gray": 0,
+          "rect": [
+            80,
+            76,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 2,
+          "column": 5,
+          "gray": 1,
+          "rect": [
+            92,
+            76,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 3,
+          "column": 0,
+          "gray": 1,
+          "rect": [
+            32,
+            64,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 3,
+          "column": 1,
+          "gray": 0,
+          "rect": [
+            44,
+            64,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 3,
+          "column": 2,
+          "gray": 1,
+          "rect": [
+            56,
+            64,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 3,
+          "column": 3,
+          "gray": 0,
+          "rect": [
+            68,
+            64,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 3,
+          "column": 4,
+          "gray": 1,
+          "rect": [
+            80,
+            64,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 3,
+          "column": 5,
+          "gray": 0,
+          "rect": [
+            92,
+            64,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 4,
+          "column": 0,
+          "gray": 0,
+          "rect": [
+            32,
+            52,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 4,
+          "column": 1,
+          "gray": 1,
+          "rect": [
+            44,
+            52,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 4,
+          "column": 2,
+          "gray": 0,
+          "rect": [
+            56,
+            52,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 4,
+          "column": 3,
+          "gray": 1,
+          "rect": [
+            68,
+            52,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 4,
+          "column": 4,
+          "gray": 0,
+          "rect": [
+            80,
+            52,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 4,
+          "column": 5,
+          "gray": 1,
+          "rect": [
+            92,
+            52,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 5,
+          "column": 0,
+          "gray": 1,
+          "rect": [
+            32,
+            40,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 5,
+          "column": 1,
+          "gray": 0,
+          "rect": [
+            44,
+            40,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 5,
+          "column": 2,
+          "gray": 1,
+          "rect": [
+            56,
+            40,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 5,
+          "column": 3,
+          "gray": 0,
+          "rect": [
+            68,
+            40,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 5,
+          "column": 4,
+          "gray": 1,
+          "rect": [
+            80,
+            40,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 5,
+          "column": 5,
+          "gray": 0,
+          "rect": [
+            92,
+            40,
+            12,
+            12
+          ]
+        }
+      ],
+      "expected_samples": [
+        {
+          "id": "cell-0-0-NW",
+          "point": [
+            38,
+            106
+          ],
+          "rgb": [
+            0,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-0-0",
+          "stored_rgb": [
+            255,
+            0,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            255
+          ],
+          "masked": false,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-0-0-NE",
+          "point": [
+            50,
+            106
+          ],
+          "rgb": [
+            0,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-0-0",
+          "stored_rgb": [
+            255,
+            0,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            255
+          ],
+          "masked": false,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-0-0-SW",
+          "point": [
+            38,
+            94
+          ],
+          "rgb": [
+            0,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-0-0",
+          "stored_rgb": [
+            255,
+            0,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            255
+          ],
+          "masked": false,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-0-0-SE",
+          "point": [
+            50,
+            94
+          ],
+          "rgb": [
+            0,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-0-0",
+          "stored_rgb": [
+            255,
+            0,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            255
+          ],
+          "masked": false,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-1-0-NW",
+          "point": [
+            62,
+            106
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-1-0",
+          "stored_rgb": [
+            0,
+            255,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-1-0-NE",
+          "point": [
+            74,
+            106
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-1-0",
+          "stored_rgb": [
+            0,
+            255,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-1-0-SW",
+          "point": [
+            62,
+            94
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-1-0",
+          "stored_rgb": [
+            0,
+            255,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-1-0-SE",
+          "point": [
+            74,
+            94
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-1-0",
+          "stored_rgb": [
+            0,
+            255,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-2-0-NW",
+          "point": [
+            86,
+            106
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-2-0",
+          "stored_rgb": [
+            255,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-2-0-NE",
+          "point": [
+            98,
+            106
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-2-0",
+          "stored_rgb": [
+            255,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-2-0-SW",
+          "point": [
+            86,
+            94
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-2-0",
+          "stored_rgb": [
+            255,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-2-0-SE",
+          "point": [
+            98,
+            94
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-2-0",
+          "stored_rgb": [
+            255,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-0-1-NW",
+          "point": [
+            38,
+            82
+          ],
+          "rgb": [
+            255,
+            0,
+            255
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-0-1",
+          "stored_rgb": [
+            0,
+            255,
+            0
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            255
+          ],
+          "masked": false,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-0-1-NE",
+          "point": [
+            50,
+            82
+          ],
+          "rgb": [
+            255,
+            0,
+            255
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-0-1",
+          "stored_rgb": [
+            0,
+            255,
+            0
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            255
+          ],
+          "masked": false,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-0-1-SW",
+          "point": [
+            38,
+            70
+          ],
+          "rgb": [
+            255,
+            0,
+            255
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-0-1",
+          "stored_rgb": [
+            0,
+            255,
+            0
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            255
+          ],
+          "masked": false,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-0-1-SE",
+          "point": [
+            50,
+            70
+          ],
+          "rgb": [
+            255,
+            0,
+            255
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-0-1",
+          "stored_rgb": [
+            0,
+            255,
+            0
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            255
+          ],
+          "masked": false,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-1-1-NW",
+          "point": [
+            62,
+            82
+          ],
+          "rgb": [
+            255,
+            255,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-1-1",
+          "stored_rgb": [
+            0,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            255,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-1-1-NE",
+          "point": [
+            74,
+            82
+          ],
+          "rgb": [
+            255,
+            255,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-1-1",
+          "stored_rgb": [
+            0,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            255,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-1-1-SW",
+          "point": [
+            62,
+            70
+          ],
+          "rgb": [
+            255,
+            255,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-1-1",
+          "stored_rgb": [
+            0,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            255,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-1-1-SE",
+          "point": [
+            74,
+            70
+          ],
+          "rgb": [
+            255,
+            255,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-1-1",
+          "stored_rgb": [
+            0,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            255,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-2-1-NW",
+          "point": [
+            86,
+            82
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-2-1",
+          "stored_rgb": [
+            255,
+            255,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            0,
+            255
+          ],
+          "masked": false,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-2-1-NE",
+          "point": [
+            98,
+            82
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-2-1",
+          "stored_rgb": [
+            255,
+            255,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            0,
+            255
+          ],
+          "masked": false,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-2-1-SW",
+          "point": [
+            86,
+            70
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-2-1",
+          "stored_rgb": [
+            255,
+            255,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            0,
+            255
+          ],
+          "masked": false,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-2-1-SE",
+          "point": [
+            98,
+            70
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-2-1",
+          "stored_rgb": [
+            255,
+            255,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            0,
+            255
+          ],
+          "masked": false,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-0-2-NW",
+          "point": [
+            38,
+            58
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-0-2",
+          "stored_rgb": [
+            0,
+            255,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-0-2-NE",
+          "point": [
+            50,
+            58
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-0-2",
+          "stored_rgb": [
+            0,
+            255,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-0-2-SW",
+          "point": [
+            38,
+            46
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-0-2",
+          "stored_rgb": [
+            0,
+            255,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-0-2-SE",
+          "point": [
+            50,
+            46
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-0-2",
+          "stored_rgb": [
+            0,
+            255,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-1-2-NW",
+          "point": [
+            62,
+            58
+          ],
+          "rgb": [
+            0,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-1-2",
+          "stored_rgb": [
+            255,
+            0,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            255
+          ],
+          "masked": false,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-1-2-NE",
+          "point": [
+            74,
+            58
+          ],
+          "rgb": [
+            0,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-1-2",
+          "stored_rgb": [
+            255,
+            0,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            255
+          ],
+          "masked": false,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-1-2-SW",
+          "point": [
+            62,
+            46
+          ],
+          "rgb": [
+            0,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-1-2",
+          "stored_rgb": [
+            255,
+            0,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            255
+          ],
+          "masked": false,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-1-2-SE",
+          "point": [
+            74,
+            46
+          ],
+          "rgb": [
+            0,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-1-2",
+          "stored_rgb": [
+            255,
+            0,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            255
+          ],
+          "masked": false,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-2-2-NW",
+          "point": [
+            86,
+            58
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-2-2",
+          "stored_rgb": [
+            255,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-2-2-NE",
+          "point": [
+            98,
+            58
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-2-2",
+          "stored_rgb": [
+            255,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-2-2-SW",
+          "point": [
+            86,
+            46
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-2-2",
+          "stored_rgb": [
+            255,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-2-2-SE",
+          "point": [
+            98,
+            46
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-2-2",
+          "stored_rgb": [
+            255,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "paper",
+          "point": [
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_regions": [
+        {
+          "id": "cell-0-0-NW",
+          "rect": [
+            34,
+            102,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-0-NE",
+          "rect": [
+            46,
+            102,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-0-SW",
+          "rect": [
+            34,
+            90,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-0-SE",
+          "rect": [
+            46,
+            90,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-0-NW",
+          "rect": [
+            58,
+            102,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-0-NE",
+          "rect": [
+            70,
+            102,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-0-SW",
+          "rect": [
+            58,
+            90,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-0-SE",
+          "rect": [
+            70,
+            90,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-0-NW",
+          "rect": [
+            82,
+            102,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-0-NE",
+          "rect": [
+            94,
+            102,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-0-SW",
+          "rect": [
+            82,
+            90,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-0-SE",
+          "rect": [
+            94,
+            90,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-1-NW",
+          "rect": [
+            34,
+            78,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-1-NE",
+          "rect": [
+            46,
+            78,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-1-SW",
+          "rect": [
+            34,
+            66,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-1-SE",
+          "rect": [
+            46,
+            66,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-1-NW",
+          "rect": [
+            58,
+            78,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-1-NE",
+          "rect": [
+            70,
+            78,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-1-SW",
+          "rect": [
+            58,
+            66,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-1-SE",
+          "rect": [
+            70,
+            66,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-1-NW",
+          "rect": [
+            82,
+            78,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-1-NE",
+          "rect": [
+            94,
+            78,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-1-SW",
+          "rect": [
+            82,
+            66,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-1-SE",
+          "rect": [
+            94,
+            66,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-2-NW",
+          "rect": [
+            34,
+            54,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-2-NE",
+          "rect": [
+            46,
+            54,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-2-SW",
+          "rect": [
+            34,
+            42,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-2-SE",
+          "rect": [
+            46,
+            42,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-2-NW",
+          "rect": [
+            58,
+            54,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-2-NE",
+          "rect": [
+            70,
+            54,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-2-SW",
+          "rect": [
+            58,
+            42,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-2-SE",
+          "rect": [
+            70,
+            42,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-2-NW",
+          "rect": [
+            82,
+            54,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-2-NE",
+          "rect": [
+            94,
+            54,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-2-SW",
+          "rect": [
+            82,
+            42,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-2-SE",
+          "rect": [
+            94,
+            42,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "rect": [
+            4,
+            4,
+            16,
+            16
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "region_rule": "Each 12-point checker quadrant within each24-point source-image cell is inset2points to an8x8-point region; image/cell/checker edges are unscored.",
+      "association": {
+        "scope": "standard-contract-only",
+        "upstream_id": null,
+        "upstream_entry_validated": false,
+        "reason": "No exact upstream scene scope established."
+      }
+    },
+    {
+      "id": "img-colorkey-endpoint-stored-red",
+      "fixture_id": "img-colorkey-endpoint-stored-red",
+      "file": "inputs/img-colorkey-endpoint-stored-red.pdf",
+      "license": "MIT",
+      "contract": "Endpoint-only reversed RGB Decode; mask selection on stored components, before Decode over an opaque checkerboard.",
+      "scope": "Endpoint-only RGB8 components0/255; does not resolve non-endpoint quantization holds.",
+      "spec": "ISO 32000-1:2008",
+      "spec_clauses": [
+        "8.9.6.4 Colour Key Masking",
+        "8.9.5.2 Decode Arrays"
+      ],
+      "route": "page RGB8 image XObject, lossless Flate, reversed Decode and optional color-key array; opaque checkerboard page graphics",
+      "width": 240,
+      "height": 180,
+      "page": 0,
+      "page_count": 1,
+      "dpis": [
+        72,
+        144
+      ],
+      "rotation": 0,
+      "annotations": "none",
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "sha256": "9c5de24b5f5a24edbbebe22b6e439ed2816de3be0a0e8e4e1f70b83508c5c8bb",
+      "sha": "9c5de24b5f5a24edbbebe22b6e439ed2816de3be0a0e8e4e1f70b83508c5c8bb",
+      "image": {
+        "width": 3,
+        "height": 3,
+        "bpc": 8,
+        "color_space": "/DeviceRGB",
+        "filter": "FlateDecode",
+        "decode": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "mask": [
+          255,
+          255,
+          0,
+          0,
+          0,
+          0
+        ],
+        "ctm": [
+          72,
+          0,
+          0,
+          72,
+          32,
+          40
+        ],
+        "raw_sha256": "f268d294eeeb6c462b6d8a0600aa03fd2baea69a0d2fde303d17cf040b07ffc5",
+        "encoded_sha256": "80ecf277486568a538dbf7a56fd7d20a091bccfa45f1243ef8f41f6ca1b357da"
+      },
+      "cells": [
+        {
+          "id": "cell-0-0",
+          "color": "red",
+          "stored_rgb": [
+            255,
+            0,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            255
+          ],
+          "masked": true,
+          "decoded_key_match": false
+        },
+        {
+          "id": "cell-1-0",
+          "color": "cyan",
+          "stored_rgb": [
+            0,
+            255,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            0
+          ],
+          "masked": false,
+          "decoded_key_match": true
+        },
+        {
+          "id": "cell-2-0",
+          "color": "magenta",
+          "stored_rgb": [
+            255,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            0
+          ],
+          "masked": false,
+          "decoded_key_match": false
+        },
+        {
+          "id": "cell-0-1",
+          "color": "green",
+          "stored_rgb": [
+            0,
+            255,
+            0
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            255
+          ],
+          "masked": false,
+          "decoded_key_match": false
+        },
+        {
+          "id": "cell-1-1",
+          "color": "blue",
+          "stored_rgb": [
+            0,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            255,
+            0
+          ],
+          "masked": false,
+          "decoded_key_match": false
+        },
+        {
+          "id": "cell-2-1",
+          "color": "yellow",
+          "stored_rgb": [
+            255,
+            255,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            0,
+            255
+          ],
+          "masked": false,
+          "decoded_key_match": false
+        },
+        {
+          "id": "cell-0-2",
+          "color": "cyan",
+          "stored_rgb": [
+            0,
+            255,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            0
+          ],
+          "masked": false,
+          "decoded_key_match": true
+        },
+        {
+          "id": "cell-1-2",
+          "color": "red",
+          "stored_rgb": [
+            255,
+            0,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            255
+          ],
+          "masked": true,
+          "decoded_key_match": false
+        },
+        {
+          "id": "cell-2-2",
+          "color": "magenta",
+          "stored_rgb": [
+            255,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            0
+          ],
+          "masked": false,
+          "decoded_key_match": false
+        }
+      ],
+      "checkerboard": [
+        {
+          "top_row": 0,
+          "column": 0,
+          "gray": 0,
+          "rect": [
+            32,
+            100,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 0,
+          "column": 1,
+          "gray": 1,
+          "rect": [
+            44,
+            100,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 0,
+          "column": 2,
+          "gray": 0,
+          "rect": [
+            56,
+            100,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 0,
+          "column": 3,
+          "gray": 1,
+          "rect": [
+            68,
+            100,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 0,
+          "column": 4,
+          "gray": 0,
+          "rect": [
+            80,
+            100,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 0,
+          "column": 5,
+          "gray": 1,
+          "rect": [
+            92,
+            100,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 1,
+          "column": 0,
+          "gray": 1,
+          "rect": [
+            32,
+            88,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 1,
+          "column": 1,
+          "gray": 0,
+          "rect": [
+            44,
+            88,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 1,
+          "column": 2,
+          "gray": 1,
+          "rect": [
+            56,
+            88,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 1,
+          "column": 3,
+          "gray": 0,
+          "rect": [
+            68,
+            88,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 1,
+          "column": 4,
+          "gray": 1,
+          "rect": [
+            80,
+            88,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 1,
+          "column": 5,
+          "gray": 0,
+          "rect": [
+            92,
+            88,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 2,
+          "column": 0,
+          "gray": 0,
+          "rect": [
+            32,
+            76,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 2,
+          "column": 1,
+          "gray": 1,
+          "rect": [
+            44,
+            76,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 2,
+          "column": 2,
+          "gray": 0,
+          "rect": [
+            56,
+            76,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 2,
+          "column": 3,
+          "gray": 1,
+          "rect": [
+            68,
+            76,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 2,
+          "column": 4,
+          "gray": 0,
+          "rect": [
+            80,
+            76,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 2,
+          "column": 5,
+          "gray": 1,
+          "rect": [
+            92,
+            76,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 3,
+          "column": 0,
+          "gray": 1,
+          "rect": [
+            32,
+            64,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 3,
+          "column": 1,
+          "gray": 0,
+          "rect": [
+            44,
+            64,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 3,
+          "column": 2,
+          "gray": 1,
+          "rect": [
+            56,
+            64,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 3,
+          "column": 3,
+          "gray": 0,
+          "rect": [
+            68,
+            64,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 3,
+          "column": 4,
+          "gray": 1,
+          "rect": [
+            80,
+            64,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 3,
+          "column": 5,
+          "gray": 0,
+          "rect": [
+            92,
+            64,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 4,
+          "column": 0,
+          "gray": 0,
+          "rect": [
+            32,
+            52,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 4,
+          "column": 1,
+          "gray": 1,
+          "rect": [
+            44,
+            52,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 4,
+          "column": 2,
+          "gray": 0,
+          "rect": [
+            56,
+            52,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 4,
+          "column": 3,
+          "gray": 1,
+          "rect": [
+            68,
+            52,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 4,
+          "column": 4,
+          "gray": 0,
+          "rect": [
+            80,
+            52,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 4,
+          "column": 5,
+          "gray": 1,
+          "rect": [
+            92,
+            52,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 5,
+          "column": 0,
+          "gray": 1,
+          "rect": [
+            32,
+            40,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 5,
+          "column": 1,
+          "gray": 0,
+          "rect": [
+            44,
+            40,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 5,
+          "column": 2,
+          "gray": 1,
+          "rect": [
+            56,
+            40,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 5,
+          "column": 3,
+          "gray": 0,
+          "rect": [
+            68,
+            40,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 5,
+          "column": 4,
+          "gray": 1,
+          "rect": [
+            80,
+            40,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 5,
+          "column": 5,
+          "gray": 0,
+          "rect": [
+            92,
+            40,
+            12,
+            12
+          ]
+        }
+      ],
+      "expected_samples": [
+        {
+          "id": "cell-0-0-NW",
+          "point": [
+            38,
+            106
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-0-0",
+          "stored_rgb": [
+            255,
+            0,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            255
+          ],
+          "masked": true,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-0-0-NE",
+          "point": [
+            50,
+            106
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-0-0",
+          "stored_rgb": [
+            255,
+            0,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            255
+          ],
+          "masked": true,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-0-0-SW",
+          "point": [
+            38,
+            94
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-0-0",
+          "stored_rgb": [
+            255,
+            0,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            255
+          ],
+          "masked": true,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-0-0-SE",
+          "point": [
+            50,
+            94
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-0-0",
+          "stored_rgb": [
+            255,
+            0,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            255
+          ],
+          "masked": true,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-1-0-NW",
+          "point": [
+            62,
+            106
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-1-0",
+          "stored_rgb": [
+            0,
+            255,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-1-0-NE",
+          "point": [
+            74,
+            106
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-1-0",
+          "stored_rgb": [
+            0,
+            255,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-1-0-SW",
+          "point": [
+            62,
+            94
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-1-0",
+          "stored_rgb": [
+            0,
+            255,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-1-0-SE",
+          "point": [
+            74,
+            94
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-1-0",
+          "stored_rgb": [
+            0,
+            255,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-2-0-NW",
+          "point": [
+            86,
+            106
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-2-0",
+          "stored_rgb": [
+            255,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-2-0-NE",
+          "point": [
+            98,
+            106
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-2-0",
+          "stored_rgb": [
+            255,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-2-0-SW",
+          "point": [
+            86,
+            94
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-2-0",
+          "stored_rgb": [
+            255,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-2-0-SE",
+          "point": [
+            98,
+            94
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-2-0",
+          "stored_rgb": [
+            255,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-0-1-NW",
+          "point": [
+            38,
+            82
+          ],
+          "rgb": [
+            255,
+            0,
+            255
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-0-1",
+          "stored_rgb": [
+            0,
+            255,
+            0
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            255
+          ],
+          "masked": false,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-0-1-NE",
+          "point": [
+            50,
+            82
+          ],
+          "rgb": [
+            255,
+            0,
+            255
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-0-1",
+          "stored_rgb": [
+            0,
+            255,
+            0
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            255
+          ],
+          "masked": false,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-0-1-SW",
+          "point": [
+            38,
+            70
+          ],
+          "rgb": [
+            255,
+            0,
+            255
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-0-1",
+          "stored_rgb": [
+            0,
+            255,
+            0
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            255
+          ],
+          "masked": false,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-0-1-SE",
+          "point": [
+            50,
+            70
+          ],
+          "rgb": [
+            255,
+            0,
+            255
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-0-1",
+          "stored_rgb": [
+            0,
+            255,
+            0
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            255
+          ],
+          "masked": false,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-1-1-NW",
+          "point": [
+            62,
+            82
+          ],
+          "rgb": [
+            255,
+            255,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-1-1",
+          "stored_rgb": [
+            0,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            255,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-1-1-NE",
+          "point": [
+            74,
+            82
+          ],
+          "rgb": [
+            255,
+            255,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-1-1",
+          "stored_rgb": [
+            0,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            255,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-1-1-SW",
+          "point": [
+            62,
+            70
+          ],
+          "rgb": [
+            255,
+            255,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-1-1",
+          "stored_rgb": [
+            0,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            255,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-1-1-SE",
+          "point": [
+            74,
+            70
+          ],
+          "rgb": [
+            255,
+            255,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-1-1",
+          "stored_rgb": [
+            0,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            255,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-2-1-NW",
+          "point": [
+            86,
+            82
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-2-1",
+          "stored_rgb": [
+            255,
+            255,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            0,
+            255
+          ],
+          "masked": false,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-2-1-NE",
+          "point": [
+            98,
+            82
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-2-1",
+          "stored_rgb": [
+            255,
+            255,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            0,
+            255
+          ],
+          "masked": false,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-2-1-SW",
+          "point": [
+            86,
+            70
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-2-1",
+          "stored_rgb": [
+            255,
+            255,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            0,
+            255
+          ],
+          "masked": false,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-2-1-SE",
+          "point": [
+            98,
+            70
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-2-1",
+          "stored_rgb": [
+            255,
+            255,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            0,
+            255
+          ],
+          "masked": false,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-0-2-NW",
+          "point": [
+            38,
+            58
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-0-2",
+          "stored_rgb": [
+            0,
+            255,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-0-2-NE",
+          "point": [
+            50,
+            58
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-0-2",
+          "stored_rgb": [
+            0,
+            255,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-0-2-SW",
+          "point": [
+            38,
+            46
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-0-2",
+          "stored_rgb": [
+            0,
+            255,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-0-2-SE",
+          "point": [
+            50,
+            46
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-0-2",
+          "stored_rgb": [
+            0,
+            255,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-1-2-NW",
+          "point": [
+            62,
+            58
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-1-2",
+          "stored_rgb": [
+            255,
+            0,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            255
+          ],
+          "masked": true,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-1-2-NE",
+          "point": [
+            74,
+            58
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-1-2",
+          "stored_rgb": [
+            255,
+            0,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            255
+          ],
+          "masked": true,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-1-2-SW",
+          "point": [
+            62,
+            46
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-1-2",
+          "stored_rgb": [
+            255,
+            0,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            255
+          ],
+          "masked": true,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-1-2-SE",
+          "point": [
+            74,
+            46
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-1-2",
+          "stored_rgb": [
+            255,
+            0,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            255
+          ],
+          "masked": true,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-2-2-NW",
+          "point": [
+            86,
+            58
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-2-2",
+          "stored_rgb": [
+            255,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-2-2-NE",
+          "point": [
+            98,
+            58
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-2-2",
+          "stored_rgb": [
+            255,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-2-2-SW",
+          "point": [
+            86,
+            46
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-2-2",
+          "stored_rgb": [
+            255,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-2-2-SE",
+          "point": [
+            98,
+            46
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-2-2",
+          "stored_rgb": [
+            255,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "paper",
+          "point": [
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_regions": [
+        {
+          "id": "cell-0-0-NW",
+          "rect": [
+            34,
+            102,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-0-NE",
+          "rect": [
+            46,
+            102,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-0-SW",
+          "rect": [
+            34,
+            90,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-0-SE",
+          "rect": [
+            46,
+            90,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-0-NW",
+          "rect": [
+            58,
+            102,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-0-NE",
+          "rect": [
+            70,
+            102,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-0-SW",
+          "rect": [
+            58,
+            90,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-0-SE",
+          "rect": [
+            70,
+            90,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-0-NW",
+          "rect": [
+            82,
+            102,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-0-NE",
+          "rect": [
+            94,
+            102,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-0-SW",
+          "rect": [
+            82,
+            90,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-0-SE",
+          "rect": [
+            94,
+            90,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-1-NW",
+          "rect": [
+            34,
+            78,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-1-NE",
+          "rect": [
+            46,
+            78,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-1-SW",
+          "rect": [
+            34,
+            66,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-1-SE",
+          "rect": [
+            46,
+            66,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-1-NW",
+          "rect": [
+            58,
+            78,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-1-NE",
+          "rect": [
+            70,
+            78,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-1-SW",
+          "rect": [
+            58,
+            66,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-1-SE",
+          "rect": [
+            70,
+            66,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-1-NW",
+          "rect": [
+            82,
+            78,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-1-NE",
+          "rect": [
+            94,
+            78,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-1-SW",
+          "rect": [
+            82,
+            66,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-1-SE",
+          "rect": [
+            94,
+            66,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-2-NW",
+          "rect": [
+            34,
+            54,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-2-NE",
+          "rect": [
+            46,
+            54,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-2-SW",
+          "rect": [
+            34,
+            42,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-2-SE",
+          "rect": [
+            46,
+            42,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-2-NW",
+          "rect": [
+            58,
+            54,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-2-NE",
+          "rect": [
+            70,
+            54,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-2-SW",
+          "rect": [
+            58,
+            42,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-2-SE",
+          "rect": [
+            70,
+            42,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-2-NW",
+          "rect": [
+            82,
+            54,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-2-NE",
+          "rect": [
+            94,
+            54,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-2-SW",
+          "rect": [
+            82,
+            42,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-2-SE",
+          "rect": [
+            94,
+            42,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "rect": [
+            4,
+            4,
+            16,
+            16
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "region_rule": "Each 12-point checker quadrant within each24-point source-image cell is inset2points to an8x8-point region; image/cell/checker edges are unscored.",
+      "association": {
+        "scope": "standard-contract-only",
+        "upstream_id": null,
+        "upstream_entry_validated": false,
+        "reason": "No exact upstream scene scope established."
+      }
+    },
+    {
+      "id": "img-colorkey-endpoint-stored-red-magenta-range",
+      "fixture_id": "img-colorkey-endpoint-stored-red-magenta-range",
+      "file": "inputs/img-colorkey-endpoint-stored-red-magenta-range.pdf",
+      "license": "MIT",
+      "contract": "Endpoint-only reversed RGB Decode; mask selection on stored components, before Decode over an opaque checkerboard.",
+      "scope": "Endpoint-only RGB8 components0/255; does not resolve non-endpoint quantization holds.",
+      "spec": "ISO 32000-1:2008",
+      "spec_clauses": [
+        "8.9.6.4 Colour Key Masking",
+        "8.9.5.2 Decode Arrays"
+      ],
+      "route": "page RGB8 image XObject, lossless Flate, reversed Decode and optional color-key array; opaque checkerboard page graphics",
+      "width": 240,
+      "height": 180,
+      "page": 0,
+      "page_count": 1,
+      "dpis": [
+        72,
+        144
+      ],
+      "rotation": 0,
+      "annotations": "none",
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "sha256": "9baaefe9687c141dca46a86f842842d02b47f79f8c5c85fa064e992e9e71487d",
+      "sha": "9baaefe9687c141dca46a86f842842d02b47f79f8c5c85fa064e992e9e71487d",
+      "image": {
+        "width": 3,
+        "height": 3,
+        "bpc": 8,
+        "color_space": "/DeviceRGB",
+        "filter": "FlateDecode",
+        "decode": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "mask": [
+          255,
+          255,
+          0,
+          0,
+          0,
+          255
+        ],
+        "ctm": [
+          72,
+          0,
+          0,
+          72,
+          32,
+          40
+        ],
+        "raw_sha256": "f268d294eeeb6c462b6d8a0600aa03fd2baea69a0d2fde303d17cf040b07ffc5",
+        "encoded_sha256": "80ecf277486568a538dbf7a56fd7d20a091bccfa45f1243ef8f41f6ca1b357da"
+      },
+      "cells": [
+        {
+          "id": "cell-0-0",
+          "color": "red",
+          "stored_rgb": [
+            255,
+            0,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            255
+          ],
+          "masked": true,
+          "decoded_key_match": false
+        },
+        {
+          "id": "cell-1-0",
+          "color": "cyan",
+          "stored_rgb": [
+            0,
+            255,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            0
+          ],
+          "masked": false,
+          "decoded_key_match": true
+        },
+        {
+          "id": "cell-2-0",
+          "color": "magenta",
+          "stored_rgb": [
+            255,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            0
+          ],
+          "masked": true,
+          "decoded_key_match": false
+        },
+        {
+          "id": "cell-0-1",
+          "color": "green",
+          "stored_rgb": [
+            0,
+            255,
+            0
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            255
+          ],
+          "masked": false,
+          "decoded_key_match": true
+        },
+        {
+          "id": "cell-1-1",
+          "color": "blue",
+          "stored_rgb": [
+            0,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            255,
+            0
+          ],
+          "masked": false,
+          "decoded_key_match": false
+        },
+        {
+          "id": "cell-2-1",
+          "color": "yellow",
+          "stored_rgb": [
+            255,
+            255,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            0,
+            255
+          ],
+          "masked": false,
+          "decoded_key_match": false
+        },
+        {
+          "id": "cell-0-2",
+          "color": "cyan",
+          "stored_rgb": [
+            0,
+            255,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            0
+          ],
+          "masked": false,
+          "decoded_key_match": true
+        },
+        {
+          "id": "cell-1-2",
+          "color": "red",
+          "stored_rgb": [
+            255,
+            0,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            255
+          ],
+          "masked": true,
+          "decoded_key_match": false
+        },
+        {
+          "id": "cell-2-2",
+          "color": "magenta",
+          "stored_rgb": [
+            255,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            0
+          ],
+          "masked": true,
+          "decoded_key_match": false
+        }
+      ],
+      "checkerboard": [
+        {
+          "top_row": 0,
+          "column": 0,
+          "gray": 0,
+          "rect": [
+            32,
+            100,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 0,
+          "column": 1,
+          "gray": 1,
+          "rect": [
+            44,
+            100,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 0,
+          "column": 2,
+          "gray": 0,
+          "rect": [
+            56,
+            100,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 0,
+          "column": 3,
+          "gray": 1,
+          "rect": [
+            68,
+            100,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 0,
+          "column": 4,
+          "gray": 0,
+          "rect": [
+            80,
+            100,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 0,
+          "column": 5,
+          "gray": 1,
+          "rect": [
+            92,
+            100,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 1,
+          "column": 0,
+          "gray": 1,
+          "rect": [
+            32,
+            88,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 1,
+          "column": 1,
+          "gray": 0,
+          "rect": [
+            44,
+            88,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 1,
+          "column": 2,
+          "gray": 1,
+          "rect": [
+            56,
+            88,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 1,
+          "column": 3,
+          "gray": 0,
+          "rect": [
+            68,
+            88,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 1,
+          "column": 4,
+          "gray": 1,
+          "rect": [
+            80,
+            88,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 1,
+          "column": 5,
+          "gray": 0,
+          "rect": [
+            92,
+            88,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 2,
+          "column": 0,
+          "gray": 0,
+          "rect": [
+            32,
+            76,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 2,
+          "column": 1,
+          "gray": 1,
+          "rect": [
+            44,
+            76,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 2,
+          "column": 2,
+          "gray": 0,
+          "rect": [
+            56,
+            76,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 2,
+          "column": 3,
+          "gray": 1,
+          "rect": [
+            68,
+            76,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 2,
+          "column": 4,
+          "gray": 0,
+          "rect": [
+            80,
+            76,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 2,
+          "column": 5,
+          "gray": 1,
+          "rect": [
+            92,
+            76,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 3,
+          "column": 0,
+          "gray": 1,
+          "rect": [
+            32,
+            64,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 3,
+          "column": 1,
+          "gray": 0,
+          "rect": [
+            44,
+            64,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 3,
+          "column": 2,
+          "gray": 1,
+          "rect": [
+            56,
+            64,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 3,
+          "column": 3,
+          "gray": 0,
+          "rect": [
+            68,
+            64,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 3,
+          "column": 4,
+          "gray": 1,
+          "rect": [
+            80,
+            64,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 3,
+          "column": 5,
+          "gray": 0,
+          "rect": [
+            92,
+            64,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 4,
+          "column": 0,
+          "gray": 0,
+          "rect": [
+            32,
+            52,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 4,
+          "column": 1,
+          "gray": 1,
+          "rect": [
+            44,
+            52,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 4,
+          "column": 2,
+          "gray": 0,
+          "rect": [
+            56,
+            52,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 4,
+          "column": 3,
+          "gray": 1,
+          "rect": [
+            68,
+            52,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 4,
+          "column": 4,
+          "gray": 0,
+          "rect": [
+            80,
+            52,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 4,
+          "column": 5,
+          "gray": 1,
+          "rect": [
+            92,
+            52,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 5,
+          "column": 0,
+          "gray": 1,
+          "rect": [
+            32,
+            40,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 5,
+          "column": 1,
+          "gray": 0,
+          "rect": [
+            44,
+            40,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 5,
+          "column": 2,
+          "gray": 1,
+          "rect": [
+            56,
+            40,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 5,
+          "column": 3,
+          "gray": 0,
+          "rect": [
+            68,
+            40,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 5,
+          "column": 4,
+          "gray": 1,
+          "rect": [
+            80,
+            40,
+            12,
+            12
+          ]
+        },
+        {
+          "top_row": 5,
+          "column": 5,
+          "gray": 0,
+          "rect": [
+            92,
+            40,
+            12,
+            12
+          ]
+        }
+      ],
+      "expected_samples": [
+        {
+          "id": "cell-0-0-NW",
+          "point": [
+            38,
+            106
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-0-0",
+          "stored_rgb": [
+            255,
+            0,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            255
+          ],
+          "masked": true,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-0-0-NE",
+          "point": [
+            50,
+            106
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-0-0",
+          "stored_rgb": [
+            255,
+            0,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            255
+          ],
+          "masked": true,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-0-0-SW",
+          "point": [
+            38,
+            94
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-0-0",
+          "stored_rgb": [
+            255,
+            0,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            255
+          ],
+          "masked": true,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-0-0-SE",
+          "point": [
+            50,
+            94
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-0-0",
+          "stored_rgb": [
+            255,
+            0,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            255
+          ],
+          "masked": true,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-1-0-NW",
+          "point": [
+            62,
+            106
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-1-0",
+          "stored_rgb": [
+            0,
+            255,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-1-0-NE",
+          "point": [
+            74,
+            106
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-1-0",
+          "stored_rgb": [
+            0,
+            255,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-1-0-SW",
+          "point": [
+            62,
+            94
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-1-0",
+          "stored_rgb": [
+            0,
+            255,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-1-0-SE",
+          "point": [
+            74,
+            94
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-1-0",
+          "stored_rgb": [
+            0,
+            255,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-2-0-NW",
+          "point": [
+            86,
+            106
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-2-0",
+          "stored_rgb": [
+            255,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            0
+          ],
+          "masked": true,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-2-0-NE",
+          "point": [
+            98,
+            106
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-2-0",
+          "stored_rgb": [
+            255,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            0
+          ],
+          "masked": true,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-2-0-SW",
+          "point": [
+            86,
+            94
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-2-0",
+          "stored_rgb": [
+            255,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            0
+          ],
+          "masked": true,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-2-0-SE",
+          "point": [
+            98,
+            94
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-2-0",
+          "stored_rgb": [
+            255,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            0
+          ],
+          "masked": true,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-0-1-NW",
+          "point": [
+            38,
+            82
+          ],
+          "rgb": [
+            255,
+            0,
+            255
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-0-1",
+          "stored_rgb": [
+            0,
+            255,
+            0
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            255
+          ],
+          "masked": false,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-0-1-NE",
+          "point": [
+            50,
+            82
+          ],
+          "rgb": [
+            255,
+            0,
+            255
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-0-1",
+          "stored_rgb": [
+            0,
+            255,
+            0
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            255
+          ],
+          "masked": false,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-0-1-SW",
+          "point": [
+            38,
+            70
+          ],
+          "rgb": [
+            255,
+            0,
+            255
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-0-1",
+          "stored_rgb": [
+            0,
+            255,
+            0
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            255
+          ],
+          "masked": false,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-0-1-SE",
+          "point": [
+            50,
+            70
+          ],
+          "rgb": [
+            255,
+            0,
+            255
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-0-1",
+          "stored_rgb": [
+            0,
+            255,
+            0
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            255
+          ],
+          "masked": false,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-1-1-NW",
+          "point": [
+            62,
+            82
+          ],
+          "rgb": [
+            255,
+            255,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-1-1",
+          "stored_rgb": [
+            0,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            255,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-1-1-NE",
+          "point": [
+            74,
+            82
+          ],
+          "rgb": [
+            255,
+            255,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-1-1",
+          "stored_rgb": [
+            0,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            255,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-1-1-SW",
+          "point": [
+            62,
+            70
+          ],
+          "rgb": [
+            255,
+            255,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-1-1",
+          "stored_rgb": [
+            0,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            255,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-1-1-SE",
+          "point": [
+            74,
+            70
+          ],
+          "rgb": [
+            255,
+            255,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-1-1",
+          "stored_rgb": [
+            0,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            255,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-2-1-NW",
+          "point": [
+            86,
+            82
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-2-1",
+          "stored_rgb": [
+            255,
+            255,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            0,
+            255
+          ],
+          "masked": false,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-2-1-NE",
+          "point": [
+            98,
+            82
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-2-1",
+          "stored_rgb": [
+            255,
+            255,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            0,
+            255
+          ],
+          "masked": false,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-2-1-SW",
+          "point": [
+            86,
+            70
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-2-1",
+          "stored_rgb": [
+            255,
+            255,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            0,
+            255
+          ],
+          "masked": false,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-2-1-SE",
+          "point": [
+            98,
+            70
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-2-1",
+          "stored_rgb": [
+            255,
+            255,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            0,
+            255
+          ],
+          "masked": false,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-0-2-NW",
+          "point": [
+            38,
+            58
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-0-2",
+          "stored_rgb": [
+            0,
+            255,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-0-2-NE",
+          "point": [
+            50,
+            58
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-0-2",
+          "stored_rgb": [
+            0,
+            255,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-0-2-SW",
+          "point": [
+            38,
+            46
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-0-2",
+          "stored_rgb": [
+            0,
+            255,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-0-2-SE",
+          "point": [
+            50,
+            46
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-0-2",
+          "stored_rgb": [
+            0,
+            255,
+            255
+          ],
+          "decoded_rgb": [
+            255,
+            0,
+            0
+          ],
+          "masked": false,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-1-2-NW",
+          "point": [
+            62,
+            58
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-1-2",
+          "stored_rgb": [
+            255,
+            0,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            255
+          ],
+          "masked": true,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-1-2-NE",
+          "point": [
+            74,
+            58
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-1-2",
+          "stored_rgb": [
+            255,
+            0,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            255
+          ],
+          "masked": true,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-1-2-SW",
+          "point": [
+            62,
+            46
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-1-2",
+          "stored_rgb": [
+            255,
+            0,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            255
+          ],
+          "masked": true,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-1-2-SE",
+          "point": [
+            74,
+            46
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-1-2",
+          "stored_rgb": [
+            255,
+            0,
+            0
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            255
+          ],
+          "masked": true,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-2-2-NW",
+          "point": [
+            86,
+            58
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-2-2",
+          "stored_rgb": [
+            255,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            0
+          ],
+          "masked": true,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "cell-2-2-NE",
+          "point": [
+            98,
+            58
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-2-2",
+          "stored_rgb": [
+            255,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            0
+          ],
+          "masked": true,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-2-2-SW",
+          "point": [
+            86,
+            46
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-2-2",
+          "stored_rgb": [
+            255,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            0
+          ],
+          "masked": true,
+          "background_rgb": [
+            255,
+            255,
+            255
+          ]
+        },
+        {
+          "id": "cell-2-2-SE",
+          "point": [
+            98,
+            46
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0,
+          "cell_id": "cell-2-2",
+          "stored_rgb": [
+            255,
+            0,
+            255
+          ],
+          "decoded_rgb": [
+            0,
+            255,
+            0
+          ],
+          "masked": true,
+          "background_rgb": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "id": "paper",
+          "point": [
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_regions": [
+        {
+          "id": "cell-0-0-NW",
+          "rect": [
+            34,
+            102,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-0-NE",
+          "rect": [
+            46,
+            102,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-0-SW",
+          "rect": [
+            34,
+            90,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-0-SE",
+          "rect": [
+            46,
+            90,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-0-NW",
+          "rect": [
+            58,
+            102,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-0-NE",
+          "rect": [
+            70,
+            102,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-0-SW",
+          "rect": [
+            58,
+            90,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-0-SE",
+          "rect": [
+            70,
+            90,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-0-NW",
+          "rect": [
+            82,
+            102,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-0-NE",
+          "rect": [
+            94,
+            102,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-0-SW",
+          "rect": [
+            82,
+            90,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-0-SE",
+          "rect": [
+            94,
+            90,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-1-NW",
+          "rect": [
+            34,
+            78,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-1-NE",
+          "rect": [
+            46,
+            78,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-1-SW",
+          "rect": [
+            34,
+            66,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-1-SE",
+          "rect": [
+            46,
+            66,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-1-NW",
+          "rect": [
+            58,
+            78,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-1-NE",
+          "rect": [
+            70,
+            78,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-1-SW",
+          "rect": [
+            58,
+            66,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-1-SE",
+          "rect": [
+            70,
+            66,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-1-NW",
+          "rect": [
+            82,
+            78,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-1-NE",
+          "rect": [
+            94,
+            78,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-1-SW",
+          "rect": [
+            82,
+            66,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-1-SE",
+          "rect": [
+            94,
+            66,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-2-NW",
+          "rect": [
+            34,
+            54,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-2-NE",
+          "rect": [
+            46,
+            54,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-2-SW",
+          "rect": [
+            34,
+            42,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-2-SE",
+          "rect": [
+            46,
+            42,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-2-NW",
+          "rect": [
+            58,
+            54,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-2-NE",
+          "rect": [
+            70,
+            54,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-2-SW",
+          "rect": [
+            58,
+            42,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-2-SE",
+          "rect": [
+            70,
+            42,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-2-NW",
+          "rect": [
+            82,
+            54,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-2-NE",
+          "rect": [
+            94,
+            54,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-2-SW",
+          "rect": [
+            82,
+            42,
+            8,
+            8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-2-SE",
+          "rect": [
+            94,
+            42,
+            8,
+            8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "rect": [
+            4,
+            4,
+            16,
+            16
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "region_rule": "Each 12-point checker quadrant within each24-point source-image cell is inset2points to an8x8-point region; image/cell/checker edges are unscored.",
+      "association": {
+        "scope": "standard-contract-only",
+        "upstream_id": null,
+        "upstream_entry_validated": false,
+        "reason": "No exact upstream scene scope established."
+      }
+    }
+  ]
+}

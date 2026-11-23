@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "slice": "ISO-PAGE-ATTRIBUTE-INHERIT-01",
+  "owner": "mozilla_originals",
+  "state": "reference-and-structure-complete-awaiting-root-integration",
+  "fixture_ids": [
+    "mediabox-inheritance-root",
+    "mediabox-inheritance-explicit",
+    "mediabox-inheritance-siblings"
+  ],
+  "case_ids": [
+    "mediabox-inherit-root",
+    "mediabox-explicit-page",
+    "mediabox-sibling-root-before",
+    "mediabox-nearest-ancestor",
+    "mediabox-sibling-root-after"
+  ],
+  "upstream_ids": [],
+  "next_unclaimed": {
+    "slice": "ISO-PAGE-ATTRIBUTE-INHERIT-02",
+    "contract": "Ordinary inherited Rotate with explicit page and nearest Pages overrides plus sibling isolation",
+    "acceptance": "Valid90degree-multiple rotations; asymmetric original vectors; exact independent dimensions/positions; rawtree checks;3pinnedrefs72/144; no malformed or stress cases"
+  }
+}

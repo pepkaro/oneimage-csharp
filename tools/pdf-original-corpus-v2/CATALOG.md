@@ -110,6 +110,58 @@ Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.07
 
 Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
 
+## 07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes
+
+### mediabox-inherit-root
+
+Page inherits offset root MediaBox
+
+Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-root/original.pdf); [clause evidence](pageattributes/clause-index.json).
+
+Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-root/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-root/expected-144.png).
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
+### mediabox-explicit-page
+
+Explicit local MediaBox overrides inherited root dimensions and origin
+
+Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-explicit/original.pdf); [clause evidence](pageattributes/clause-index.json).
+
+Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-explicit/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-explicit/expected-144.png).
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
+### mediabox-sibling-root-before
+
+First sibling inherits root MediaBox
+
+Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-siblings/original.pdf); [clause evidence](pageattributes/clause-index.json).
+
+Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-siblings/page-0-mediabox-sibling-root-before/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-siblings/page-0-mediabox-sibling-root-before/expected-144.png).
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
+### mediabox-nearest-ancestor
+
+Nested page inherits the nearer Pages MediaBox
+
+Stage: **agreed**; page1,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-siblings/original.pdf); [clause evidence](pageattributes/clause-index.json).
+
+Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-siblings/page-1-mediabox-nearest-ancestor/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-siblings/page-1-mediabox-nearest-ancestor/expected-144.png).
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
+### mediabox-sibling-root-after
+
+Later sibling keeps root dimensions after the nested subtree
+
+Stage: **agreed**; page2,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-siblings/original.pdf); [clause evidence](pageattributes/clause-index.json).
+
+Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-siblings/page-2-mediabox-sibling-root-after/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-siblings/page-2-mediabox-sibling-root-after/expected-144.png).
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
 ## 07-Syntax/07.08-Content-streams-and-resources/07.08.03-Resource-dictionaries
 
 ### resource-page-form-isolation
@@ -512,6 +564,78 @@ Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.
 
 Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
 
+## 08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking
+
+### img-colorkey-decode-opaque
+
+Reversed Decode complements normalized RGB samples; ideal byte complements are the declared raster acceptance criterion.
+
+Stage: **generated**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-decode-opaque/original.pdf); [clause evidence](colorkeydecode/clause-index.json).
+
+Expected: withheld: reference disagreement.
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
+### img-colorkey-decode-stored-key
+
+An exact key masks the stored sample before reversed Decode; a sample whose ideal complemented bytes equal that key remains painted.
+
+Stage: **generated**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-decode-stored-key/original.pdf); [clause evidence](colorkeydecode/clause-index.json).
+
+Expected: withheld: reference disagreement.
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
+### img-colorkey-decode-decoded-key-control
+
+A key equal to the decoded colour of the first sample instead masks the different stored complement sample.
+
+Stage: **generated**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-decode-decoded-key-control/original.pdf); [clause evidence](colorkeydecode/clause-index.json).
+
+Expected: withheld: reference disagreement.
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
+### img-colorkey-decode-stored-range
+
+Inclusive stored-component ranges mask low/high/interior samples before reversed Decode; one-component-outside and decoded-only matches remain opaque.
+
+Stage: **generated**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-decode-stored-range/original.pdf); [clause evidence](colorkeydecode/clause-index.json).
+
+Expected: withheld: reference disagreement.
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
+### img-colorkey-endpoint-control
+
+Endpoint-only reversed RGB Decode; unmasked control over an opaque checkerboard.
+
+Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-endpoint-control/original.pdf); [clause evidence](colorkeyendpoints/clause-index.json).
+
+Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-endpoint-control/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-endpoint-control/expected-144.png).
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
+### img-colorkey-endpoint-stored-red
+
+Endpoint-only reversed RGB Decode; mask selection on stored components, before Decode over an opaque checkerboard.
+
+Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-endpoint-stored-red/original.pdf); [clause evidence](colorkeyendpoints/clause-index.json).
+
+Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-endpoint-stored-red/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-endpoint-stored-red/expected-144.png).
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
+### img-colorkey-endpoint-stored-red-magenta-range
+
+Endpoint-only reversed RGB Decode; mask selection on stored components, before Decode over an opaque checkerboard.
+
+Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-endpoint-stored-red-magenta-range/original.pdf); [clause evidence](colorkeyendpoints/clause-index.json).
+
+Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-endpoint-stored-red-magenta-range/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking/img-colorkey-endpoint-stored-red-magenta-range/expected-144.png).
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
 ## 09-Text/09.03-Text-state-parameters-and-operators
 
 ### text-tc-tw-spacing
@@ -637,6 +761,46 @@ TJ positive/negative adjustments subtract their thousandths-of-font-size displac
 Stage: **pass**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/text-tj-signed-adjustment/original.pdf); [clause evidence](text/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/text-tj-signed-adjustment/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/text-tj-signed-adjustment/expected-144.png).
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
+### textquote-single-equivalent
+
+Single quote matches explicit T* plus Tj and ignores prior current-matrix advancement.
+
+Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/textquote-single-equivalent/original.pdf); [clause evidence](textquote/clause-index.json).
+
+Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/textquote-single-equivalent/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/textquote-single-equivalent/expected-144.png).
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
+### textquote-double-equivalent
+
+Double quote sets Tw then Tc, advances one line, and matches explicit spacing/T*/Tj controls.
+
+Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/textquote-double-equivalent/original.pdf); [clause evidence](textquote/clause-index.json).
+
+Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/textquote-double-equivalent/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/textquote-double-equivalent/expected-144.png).
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
+### textquote-spacing-persists
+
+Double-quote spacing persists into a subsequent Tj and single quote; each quote uses the line origin.
+
+Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/textquote-spacing-persists/original.pdf); [clause evidence](textquote/clause-index.json).
+
+Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/textquote-spacing-persists/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/textquote-spacing-persists/expected-144.png).
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
+### textquote-shift-and-object-state
+
+Double quote follows a shifted line matrix; its spacing survives ET/BT while the matrices reset.
+
+Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/textquote-shift-and-object-state/original.pdf); [clause evidence](textquote/clause-index.json).
+
+Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/textquote-shift-and-object-state/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/09-Text/09.04-Text-objects/09.04.03-Text-showing-operators/textquote-shift-and-object-state/expected-144.png).
 
 Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
 

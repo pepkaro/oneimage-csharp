@@ -1,0 +1,395 @@
+{
+  "schema_version": 1,
+  "slice": "UPSTREAM-MATCH-05",
+  "owner": "upstream_match5",
+  "verified_on": "2026-11-23",
+  "scope": "Bounded official metadata/description review only; no upstream fixture, template, font, test-source or golden bytes read",
+  "source": {
+    "suite": "mozilla",
+    "revision": "d4da7f6542bfdf7f256db30f28fa7057c9006ca3",
+    "url": "https://raw.githubusercontent.com/mozilla/pdf.js/d4da7f6542bfdf7f256db30f28fa7057c9006ca3/test/test_manifest.json",
+    "git_blob_sha": "f78b1186f3da8dcd5bcfba2d00ce341e41084006",
+    "identity_url": "https://api.github.com/repos/mozilla/pdf.js/contents/test?ref=d4da7f6542bfdf7f256db30f28fa7057c9006ca3",
+    "metadata_rows_for_automated_description_search": 1505,
+    "local_inventory_sha256": "abb7a3678bfb3d98c93c9d68ab83da0db7e9faa181b512887b986d24516d9409"
+  },
+  "bounds": {
+    "maximum_manually_reviewed_entries": 8,
+    "manually_reviewed_entries": 8,
+    "maximum_public_lookups": 4,
+    "public_lookups_used": 3
+  },
+  "public_lookups": [
+    {
+      "url": "https://raw.githubusercontent.com/mozilla/pdf.js/d4da7f6542bfdf7f256db30f28fa7057c9006ca3/test/test_manifest.json",
+      "purpose": "Pinned official scene metadata",
+      "result": "1505 metadata rows; only about fields screened to select8 entries"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mozilla/pdf.js/d4da7f6542bfdf7f256db30f28fa7057c9006ca3/test/README.md",
+      "purpose": "Permitted route documentation",
+      "result": "404; no content read"
+    },
+    {
+      "url": "https://api.github.com/repos/mozilla/pdf.js/contents/test?ref=d4da7f6542bfdf7f256db30f28fa7057c9006ca3",
+      "purpose": "Locate route docs and verify manifest blob identity",
+      "result": "Directory metadata only; no README present. driver/test source contents not read."
+    }
+  ],
+  "reviews": [
+    {
+      "source_case_id": "mozilla:issue10717",
+      "source_revision": "d4da7f6542bfdf7f256db30f28fa7057c9006ca3",
+      "official_metadata_fields": {
+        "id": "issue10717",
+        "file": "pdfs/issue10717.pdf",
+        "md5": "6d2ed03db798cc6beb3c7bdf103f5c1a",
+        "link": true,
+        "rounds": 1,
+        "type": "eq",
+        "firstPage": 1,
+        "lastPage": 2
+      },
+      "description_summary": "A Type 3 scene uses image resources and requires testing both first and second pages.",
+      "qualification": "partial-described-interaction-not-covered",
+      "exact_known_scope": false,
+      "upstream_credit": false,
+      "associations": [],
+      "candidate_original_ids_reviewed": [
+        "resource-inheritance-siblings",
+        "resource-page-form-isolation"
+      ],
+      "not_credited_because": [
+        "No exact image-resource bindings, image samples, glyph programs, page geometry or pixel assertions are described.",
+        "The existing resource originals use explicit vector Forms, not Type3 image resources.",
+        "The description requires a two-page interaction; independent per-page CLI rendering does not prove persistent-document execution order."
+      ],
+      "route": "eq",
+      "source_pages": {
+        "firstPage": 1,
+        "lastPage": 2,
+        "interpretation": "Metadata values preserved; default selection and numbering semantics not inferred without permitted route documentation"
+      },
+      "source_settings": {
+        "dpi": null,
+        "background": null,
+        "annotations": null,
+        "browser_variants": null,
+        "reason": "Not specified in the selected manifest entry; route implementation/test-source bytes were not read"
+      }
+    },
+    {
+      "source_case_id": "mozilla:issue16127",
+      "source_revision": "d4da7f6542bfdf7f256db30f28fa7057c9006ca3",
+      "official_metadata_fields": {
+        "id": "issue16127",
+        "file": "pdfs/issue16127.pdf",
+        "md5": "42714567a818876f51ef960df21600f5",
+        "link": true,
+        "rounds": 1,
+        "type": "eq",
+        "firstPage": 1,
+        "lastPage": 2
+      },
+      "description_summary": "A Type 3 scene uses pattern resources and requires both first and second pages.",
+      "qualification": "partial-described-interaction-not-covered",
+      "exact_known_scope": false,
+      "upstream_credit": false,
+      "associations": [],
+      "candidate_original_ids_reviewed": [
+        "resource-inheritance-siblings"
+      ],
+      "not_credited_because": [
+        "No exact pattern-resource bindings, tile parameters, glyph programs or pixel assertions are described.",
+        "Existing resource originals do not exercise Type3 pattern resources or a persistent two-page interaction."
+      ],
+      "route": "eq",
+      "source_pages": {
+        "firstPage": 1,
+        "lastPage": 2,
+        "interpretation": "Metadata values preserved; default selection and numbering semantics not inferred without permitted route documentation"
+      },
+      "source_settings": {
+        "dpi": null,
+        "background": null,
+        "annotations": null,
+        "browser_variants": null,
+        "reason": "Not specified in the selected manifest entry; route implementation/test-source bytes were not read"
+      }
+    },
+    {
+      "source_case_id": "mozilla:issue7872",
+      "source_revision": "d4da7f6542bfdf7f256db30f28fa7057c9006ca3",
+      "official_metadata_fields": {
+        "id": "issue7872",
+        "file": "pdfs/issue7872.pdf",
+        "md5": "81781dfecfcb7e9cd9cc7e60f8b747b7",
+        "link": false,
+        "rounds": 1,
+        "type": "eq"
+      },
+      "description_summary": "The page MediaBox and CropBox values are indirect objects.",
+      "qualification": "promising-partial-intent-candidate-unclaimed",
+      "exact_known_scope": false,
+      "upstream_credit": false,
+      "associations": [],
+      "candidate_original_ids_reviewed": [
+        "ISO-PAGE-ATTRIBUTE-INHERIT-01",
+        "geometry-cropbox-offset"
+      ],
+      "not_credited_because": [
+        "No current original assertion for indirect objects in BOTH page boxes is recorded by this slice. Inheritance results alone do not test it.",
+        "Source indirection level, page selection, geometry and material rendering settings remain unknown; full source-scene qualification remains open."
+      ],
+      "route": "eq",
+      "source_pages": {
+        "firstPage": null,
+        "lastPage": null,
+        "interpretation": "Metadata values preserved; default selection and numbering semantics not inferred without permitted route documentation"
+      },
+      "source_settings": {
+        "dpi": null,
+        "background": null,
+        "annotations": null,
+        "browser_variants": null,
+        "reason": "Not specified in the selected manifest entry; route implementation/test-source bytes were not read"
+      },
+      "supported_behavior": "Resolution of indirect objects used by both MediaBox and CropBox",
+      "support_limit": "The description does not identify whole-array versus coordinate-element indirection, source layout or settings. Association must declare its tested variant and must not claim the unseen exact scene or full-case parity.",
+      "minimum_independent_original_assertions": [
+        "Direct-array control and original whole-array indirect references for both boxes; independently resolve authored arrays",
+        "Coordinate-element indirection for both boxes is an additional useful variant because source indirection level is unspecified",
+        "Exact independently computed visible CropBox dimensions/offset plus inset content controls",
+        "Three pinned references must agree on declared assertions before product grading"
+      ],
+      "current_association_status": "Not implemented or graded by this metadata-only slice; no credit yet",
+      "narrow_behavior_candidate_supported": true,
+      "needs_exact_scope_qualification": true
+    },
+    {
+      "source_case_id": "mozilla:issue4461-load",
+      "source_revision": "d4da7f6542bfdf7f256db30f28fa7057c9006ca3",
+      "official_metadata_fields": {
+        "id": "issue4461-load",
+        "file": "pdfs/issue4461.pdf",
+        "md5": "9df4ecaae429adb5dc93d9342a53159d",
+        "rounds": 1,
+        "type": "load"
+      },
+      "description_summary": "The page dictionary omits its Resources entry.",
+      "qualification": "different-route-and-inheritance-not-established",
+      "exact_known_scope": false,
+      "upstream_credit": false,
+      "associations": [],
+      "candidate_original_ids_reviewed": [
+        "ISO-PAGE-ATTRIBUTE-INHERIT-01",
+        "resource-inherit-root"
+      ],
+      "not_credited_because": [
+        "The route is load, not visual eq comparison.",
+        "No parent resource dictionary or valid inheritance path is established by the description.",
+        "No page-box inheritance or visual assertion is described."
+      ],
+      "route": "load",
+      "source_pages": {
+        "firstPage": null,
+        "lastPage": null,
+        "interpretation": "Metadata values preserved; default selection and numbering semantics not inferred without permitted route documentation"
+      },
+      "source_settings": {
+        "dpi": null,
+        "background": null,
+        "annotations": null,
+        "browser_variants": null,
+        "reason": "Not specified in the selected manifest entry; route implementation/test-source bytes were not read"
+      }
+    },
+    {
+      "source_case_id": "mozilla:clippath",
+      "source_revision": "d4da7f6542bfdf7f256db30f28fa7057c9006ca3",
+      "official_metadata_fields": {
+        "id": "clippath",
+        "file": "pdfs/clippath.pdf",
+        "md5": "7ab95c0f106dccd90d6569f241fe8771",
+        "link": false,
+        "rounds": 1,
+        "type": "eq"
+      },
+      "description_summary": "The clipping request precedes an existing path; a path and rectangle drawing occur afterward.",
+      "qualification": "different-operator-ordering",
+      "exact_known_scope": false,
+      "upstream_credit": false,
+      "associations": [],
+      "candidate_original_ids_reviewed": [
+        "geometry-clip-path-reset",
+        "geometry-clip-intersection"
+      ],
+      "not_credited_because": [
+        "The existing original applies W to a constructed path and then n; it does not request clipping before the path exists.",
+        "The entry does not establish a precise operator sequence, expected clip result or scored rectangle.",
+        "No association can be assigned to the existing path-reset or clip-intersection assertions."
+      ],
+      "route": "eq",
+      "source_pages": {
+        "firstPage": null,
+        "lastPage": null,
+        "interpretation": "Metadata values preserved; default selection and numbering semantics not inferred without permitted route documentation"
+      },
+      "source_settings": {
+        "dpi": null,
+        "background": null,
+        "annotations": null,
+        "browser_variants": null,
+        "reason": "Not specified in the selected manifest entry; route implementation/test-source bytes were not read"
+      }
+    },
+    {
+      "source_case_id": "mozilla:bug1011159",
+      "source_revision": "d4da7f6542bfdf7f256db30f28fa7057c9006ca3",
+      "official_metadata_fields": {
+        "id": "bug1011159",
+        "file": "pdfs/bug1011159.pdf",
+        "md5": "4532e22deb92d4cd2992d0cfe255582a",
+        "rounds": 1,
+        "type": "eq",
+        "lastPage": 1
+      },
+      "description_summary": "A Type 3 font is used with negative horizontal scale and negative font size.",
+      "qualification": "different-text-parameter-contract",
+      "exact_known_scope": false,
+      "upstream_credit": false,
+      "associations": [],
+      "candidate_original_ids_reviewed": [
+        "ISO-TEXT-QUOTE-01",
+        "textscale-tz-shape-advance"
+      ],
+      "not_credited_because": [
+        "The quote-operator slice and existing scale controls do not assert this pair of negative parameters.",
+        "Quote or double-quote text operators, Tw/Tc update ordering and line-origin behavior are not described."
+      ],
+      "route": "eq",
+      "source_pages": {
+        "firstPage": null,
+        "lastPage": 1,
+        "interpretation": "Metadata values preserved; default selection and numbering semantics not inferred without permitted route documentation"
+      },
+      "source_settings": {
+        "dpi": null,
+        "background": null,
+        "annotations": null,
+        "browser_variants": null,
+        "reason": "Not specified in the selected manifest entry; route implementation/test-source bytes were not read"
+      }
+    },
+    {
+      "source_case_id": "mozilla:issue2770",
+      "source_revision": "d4da7f6542bfdf7f256db30f28fa7057c9006ca3",
+      "official_metadata_fields": {
+        "id": "issue2770",
+        "file": "pdfs/issue2770.pdf",
+        "md5": "36070d756d06eaa35c2227efb069fb1b",
+        "link": true,
+        "rounds": 1,
+        "type": "eq"
+      },
+      "description_summary": "A four-bit component image combines a mask with a Decode array.",
+      "qualification": "partial-image-intent-mask-kind-and-order-unknown",
+      "exact_known_scope": false,
+      "upstream_credit": false,
+      "associations": [],
+      "candidate_original_ids_reviewed": [
+        "ISO-IMAGE-COLORKEY-DECODE-03",
+        "img-gray4-inverted-decode",
+        "img-indexed4-reversed-decode"
+      ],
+      "not_credited_because": [
+        "The description does not distinguish an explicit image mask, a soft mask or a color-key range array.",
+        "The Decode values, sample values and whether masking is asserted before Decode are not established.",
+        "The current color-key slice uses RGB8; a four-bit sample statement alone cannot validate that different contract."
+      ],
+      "route": "eq",
+      "source_pages": {
+        "firstPage": null,
+        "lastPage": null,
+        "interpretation": "Metadata values preserved; default selection and numbering semantics not inferred without permitted route documentation"
+      },
+      "source_settings": {
+        "dpi": null,
+        "background": null,
+        "annotations": null,
+        "browser_variants": null,
+        "reason": "Not specified in the selected manifest entry; route implementation/test-source bytes were not read"
+      }
+    },
+    {
+      "source_case_id": "mozilla:type3_advance",
+      "source_revision": "d4da7f6542bfdf7f256db30f28fa7057c9006ca3",
+      "official_metadata_fields": {
+        "id": "type3_advance",
+        "file": "pdfs/type3_advance.pdf",
+        "md5": "700b0da25aeb1b5d22e5c139d80e86db",
+        "rounds": 1,
+        "type": "eq"
+      },
+      "description_summary": "Type 3 advancement interacts with invisible text, character spacing at a negative font size, and FontMatrix translation.",
+      "qualification": "different-composite-text-contract",
+      "exact_known_scope": false,
+      "upstream_credit": false,
+      "associations": [],
+      "candidate_original_ids_reviewed": [
+        "ISO-TEXT-QUOTE-01",
+        "text-tc-tw-spacing"
+      ],
+      "not_credited_because": [
+        "Existing originals do not assert all three described interactions.",
+        "Quote/double-quote operators and their state-update ordering are not established by this description.",
+        "No complete scene geometry, values or pixel expectations are specified."
+      ],
+      "route": "eq",
+      "source_pages": {
+        "firstPage": null,
+        "lastPage": null,
+        "interpretation": "Metadata values preserved; default selection and numbering semantics not inferred without permitted route documentation"
+      },
+      "source_settings": {
+        "dpi": null,
+        "background": null,
+        "annotations": null,
+        "browser_variants": null,
+        "reason": "Not specified in the selected manifest entry; route implementation/test-source bytes were not read"
+      }
+    }
+  ],
+  "counts": {
+    "metadata_entries_reviewed": 8,
+    "exact_behavior_matches": 0,
+    "source_scene_fully_qualified": 0,
+    "associations_claimed": 0,
+    "upstream_credited": 0,
+    "upstream_inputs_executed": 0,
+    "upstream_fixture_bytes_read": 0,
+    "original_product_runs": 0,
+    "narrow_behavior_descriptions_sufficient_to_plan_original": 1
+  },
+  "decision": "Eight metadata entries reviewed; no exact current upstream match, executed association or credit. issue7872 is a promising partial-intent candidate for a separate unclaimed indirect-box behavior. The three current slices remain spec-derived.",
+  "precise_next_input_needed": "An official description or permitted route document establishing the same semantic assertion, page/settings and route. For current slices: omitted/overridden page-box inheritance; quote/double-quote text state ordering; color-key range masking before nondefault Decode.",
+  "next_bounded_candidate": {
+    "id": "mozilla:issue7872",
+    "status": "General indirect-box behavior is explicitly described; indirection level and full scene unknown",
+    "criteria_before_any_credit": "Implement/run an original resolving indirect objects for BOTH boxes with explicit tested indirection variants, independent dimensions/placement expectations and agreed references. Credit only that declared behavior association; source scene/page/settings remain unqualified and no upstream input is executed.",
+    "proposed_slice_id": "ISO-PAGE-BOX-INDIRECT-01",
+    "state": "unclaimed-proposal",
+    "authoring_performed": false,
+    "controls_proposed": [
+      "Original direct-array control for both MediaBox and CropBox",
+      "Whole-array indirect references for both boxes",
+      "Coordinate-element indirect references for both boxes"
+    ]
+  },
+  "limitations": [
+    "The public manifest was screened mechanically for descriptions; only eight selected entries received manual scope analysis.",
+    "Unseen source input validity/safety cannot be inferred from filenames or topic descriptions.",
+    "No fixture is derived from source bytes, and no malformed/security candidate is recreated.",
+    "No remote writes or global ledger edits."
+  ]
+}

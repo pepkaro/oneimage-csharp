@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "slice": "ISO-PAGE-ATTRIBUTE-INHERIT-01",
+  "license": "MIT",
+  "independently_authored": true,
+  "authored_inputs": "Numeric page tree, uncompressed vector rectangle content and independent box/translation expectations; no external PDF/font/image/test assets",
+  "upstream_fixture_bytes_read": 0,
+  "private_inputs_used": 0,
+  "upstream_mapping": "None; no official metadata establishes an exact upstream case contract for these originals",
+  "reuse": "Own prior MIT multipage capture/scoring scaffolding copied read-only to the new directory; no prior files changed",
+  "baseline": {
+    "parent_verified_pr94": "1cd8573",
+    "parent_verified_tree_prefix": "22257be8e",
+    "instruction_repository_head": "9b4b91126e54a9c9ba0ae79e57fe007e36274ee9",
+    "instruction_repository_tree": "22257be8ecf9bc14a30db43c721db374e0da7fd0"
+  },
+  "toolchain": {
+    "pdfium": "153.0.7999.0",
+    "pypdfium2": "5.13.0",
+    "mupdf": "1.26.11",
+    "pymupdf": "1.26.6",
+    "pdfjs": "6.5.438",
+    "pdfjs_build": "0a4153349",
+    "canvas": "@napi-rs/canvas1.1.1",
+    "node": "24.22.3",
+    "pypdf_structure_parser": "6.21.4",
+    "python": "3.12.14",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "pdfjs_root": "/workspace/scratch/ee1a2fb9052d/pdf-checkpoint-20261123/references/node_modules/pdfjs-dist"
+  },
+  "settings": {
+    "dpis": [
+      72,
+      144
+    ],
+    "background": "white",
+    "annotations": false,
+    "page_box": "CropBox defaults to effective MediaBox",
+    "rotation": 0,
+    "user_unit": 1
+  },
+  "counts": {
+    "unique_pdfs": 3,
+    "page_views": 5,
+    "fresh_reference_calls": 30,
+    "selected_reference_outputs": 30,
+    "png_byte_unique": 18,
+    "product_runs": 0
+  },
+  "fixtures": [
+    {
+      "id": "mediabox-inheritance-root",
+      "file": "inputs/mediabox-inheritance-root.pdf",
+      "sha256": "01566e8bf3b49202281569d9b3a3c6ed59341fa1e398b1b118fe31d994a41979",
+      "page_count": 1
+    },
+    {
+      "id": "mediabox-inheritance-explicit",
+      "file": "inputs/mediabox-inheritance-explicit.pdf",
+      "sha256": "33d17249bbe8621b1b28ae772c55c6d657dec671d8f51c297ee3d704ef8559eb",
+      "page_count": 1
+    },
+    {
+      "id": "mediabox-inheritance-siblings",
+      "file": "inputs/mediabox-inheritance-siblings.pdf",
+      "sha256": "f20dba8f25f4821db8fb0656ab6c39f3adabc5edd6a3f3807925e8d80d38fedc",
+      "page_count": 3
+    }
+  ]
+}

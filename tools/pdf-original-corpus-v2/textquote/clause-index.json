@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "batch": "ISO-TEXT-QUOTE-01",
+  "verified_date": "2026-11-23",
+  "fixture_pdf_version": "1.7",
+  "governing_edition": "ISO 32000-1:2008",
+  "governing_document_sha256": "9de0ca9e8570d6209e8bd48a355be8eb6ec376acfc3fc3ae97cd8730351417ff",
+  "governing_document_redistributed": false,
+  "clauses": {
+    "2008-show": {
+      "clause": "9.4.3",
+      "table": "109",
+      "heading": "Text-Showing Operators",
+      "verification": "full quote rows inspected directly in local document",
+      "scope": "Single quote equals next-line then show; double quote sets word/character spacing before the same movement/show."
+    },
+    "2008-position": {
+      "clause": "9.4.2",
+      "table": "108",
+      "heading": "Text-Positioning Operators",
+      "verification": "previous slice full local text inspected"
+    },
+    "2008-state": {
+      "clause": "9.3.1",
+      "heading": "General",
+      "verification": "previous slice full local text inspected",
+      "scope": "Text state persists across text objects in one stream."
+    },
+    "2008-object": {
+      "clause": "9.4.1",
+      "heading": "General",
+      "verification": "previous slice full local text inspected"
+    },
+    "2008-type3": {
+      "clause": "9.6.5",
+      "heading": "Type 3 Fonts",
+      "verification": "earlier original-font slice full local text inspected"
+    },
+    "2020-show": {
+      "clause": "9.4.3",
+      "heading": "Text-showing operators",
+      "verification": "official errata heading directly inspected; quote rows not exposed",
+      "url": "https://pdf-issues.pdfa.org/32000-2-2020/clause09.html"
+    },
+    "2020-position": {
+      "clause": "9.4.2",
+      "table": "106",
+      "heading": "Text-positioning operators",
+      "verification": "official corrected T* row directly inspected",
+      "url": "https://pdf-issues.pdfa.org/32000-2-2020/clause09.html",
+      "scope": "T* uses negative leading with Td."
+    },
+    "2020-state-coarse": {
+      "clause": "9.3",
+      "heading": "Text state parameters and operators",
+      "verification": "official coarse heading directly inspected",
+      "url": "https://pdf-issues.pdfa.org/32000-2-2020/clause09.html"
+    },
+    "2020-type3": {
+      "clause": "9.6.4",
+      "heading": "Type 3 fonts",
+      "verification": "official errata entries inspected in prior font slice",
+      "url": "https://pdf-issues.pdfa.org/32000-2-2020/clause09.html"
+    }
+  },
+  "cases": [
+    {
+      "fixture_id": "textquote-single-equivalent",
+      "primary_2008_clause_ids": [
+        "2008-show"
+      ],
+      "secondary_2008_clause_ids": [
+        "2008-position",
+        "2008-state",
+        "2008-object",
+        "2008-type3"
+      ],
+      "verified_2020_clause_ids": [
+        "2020-show",
+        "2020-position",
+        "2020-state-coarse",
+        "2020-type3"
+      ],
+      "upstream_id": null,
+      "finer_2020_status": "Full quote operator rows and retained-state wording pending; no claim official errata reproduces them."
+    },
+    {
+      "fixture_id": "textquote-double-equivalent",
+      "primary_2008_clause_ids": [
+        "2008-show"
+      ],
+      "secondary_2008_clause_ids": [
+        "2008-position",
+        "2008-state",
+        "2008-object",
+        "2008-type3"
+      ],
+      "verified_2020_clause_ids": [
+        "2020-show",
+        "2020-position",
+        "2020-state-coarse",
+        "2020-type3"
+      ],
+      "upstream_id": null,
+      "finer_2020_status": "Full quote operator rows and retained-state wording pending; no claim official errata reproduces them."
+    },
+    {
+      "fixture_id": "textquote-spacing-persists",
+      "primary_2008_clause_ids": [
+        "2008-show"
+      ],
+      "secondary_2008_clause_ids": [
+        "2008-position",
+        "2008-state",
+        "2008-object",
+        "2008-type3"
+      ],
+      "verified_2020_clause_ids": [
+        "2020-show",
+        "2020-position",
+        "2020-state-coarse",
+        "2020-type3"
+      ],
+      "upstream_id": null,
+      "finer_2020_status": "Full quote operator rows and retained-state wording pending; no claim official errata reproduces them."
+    },
+    {
+      "fixture_id": "textquote-shift-and-object-state",
+      "primary_2008_clause_ids": [
+        "2008-show"
+      ],
+      "secondary_2008_clause_ids": [
+        "2008-position",
+        "2008-state",
+        "2008-object",
+        "2008-type3"
+      ],
+      "verified_2020_clause_ids": [
+        "2020-show",
+        "2020-position",
+        "2020-state-coarse",
+        "2020-type3"
+      ],
+      "upstream_id": null,
+      "finer_2020_status": "Full quote operator rows and retained-state wording pending; no claim official errata reproduces them."
+    }
+  ],
+  "limitations": [
+    "No full2020 standard download or cart/form submission.",
+    "Exact visual assertions are declared interiors only; no renderer edge/native-font-weight claim.",
+    "Source cross-tags do not assign defects."
+  ],
+  "subsystem_tags": [
+    {
+      "repo": "pepkaro/onepdf-csharp",
+      "inspected_head": "2d1928d5ee67bf4526903d3d44ae37792b1f27b8",
+      "path": "src/OnePdf/Content/ContentInterpreter.Text.cs",
+      "symbols": [
+        "NextLineShow",
+        "SpacedNextLineShow",
+        "MoveText",
+        "ShowString"
+      ],
+      "scope": "Previously inspected quote dispatch, line movement and spacing advancement."
+    },
+    {
+      "repo": "pepkaro/onepdf-csharp",
+      "inspected_head": "2d1928d5ee67bf4526903d3d44ae37792b1f27b8",
+      "path": "src/OnePdf/Content/ContentInterpreter.Type3.cs",
+      "symbol": "ShowType3Glyphs",
+      "scope": "Previously inspected original glyph procedure placement."
+    }
+  ]
+}

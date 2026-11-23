@@ -41,3 +41,11 @@ The 2811 upstream rows are inventory: 0 upstream inputs executed and 0 IDs mappe
 No borrowed/private fixtures, goldens or fonts, known vulnerability/crash reproductions, private patches, production changes, merges, releases, workflow or settings changes. WebView speed, Windows, speech and full-suite parity remain untested here.
 
 Checkpoint attestation: Codex, 2026-11-23 UTC. New original sources and assets MIT. GitHub API commits are unsigned; Signed-off-by is an authorship attestation, not a cryptographic signature.
+
+## Fifth batch before product grading
+
+Adds14 unique original PDFs and16 page-view cases. Twelve views agree across the three references; four non-endpoint reversed-Decode cases are held because opaque RGB differs by one byte in PDFium. Separate endpoint-only controls agree without altering the held originals. The new96 reference renders have88 passes and8 registered disagreements; no skips. No new product result is claimed yet.
+
+The routing index now points to canonical family manifests instead of repeating them. `routing-manifest-proof.json` proves the resolved84 cases are identical; legacy inline routes remain supported. Full verification reports80 unique PDFs,84 views,71 agreed PDFs/75 agreed views,9 held views,504 captures with482 passes/22 known disagreements. All80 PDFs regenerate byte-identically.
+
+The bounded metadata review inspected8 selected entries with3 public lookups; no exact current match, association or upstream credit was established. The indirect-box description is a separate unclaimed proposal with explicit source-scope gaps.

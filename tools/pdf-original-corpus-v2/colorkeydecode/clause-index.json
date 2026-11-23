@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "slice": "ISO-IMAGE-COLORKEY-DECODE-03",
+  "verified_date": "2026-11-23",
+  "fixture_pdf_version": "1.7",
+  "governing_edition": "ISO 32000-1:2008",
+  "governing_document_sha256": "9de0ca9e8570d6209e8bd48a355be8eb6ec376acfc3fc3ae97cd8730351417ff",
+  "clauses_2008": {
+    "8.9.5.2": {
+      "title": "Decode Arrays",
+      "pdf_page_1based": 217,
+      "verification": "Governing official2008 full text inspected; no source redistributed"
+    },
+    "8.9.6.4": {
+      "title": "Colour Key Masking",
+      "pdf_page_1based": 222,
+      "verification": "Governing official2008 full text inspected; no source redistributed"
+    }
+  },
+  "primary_2020": {
+    "clause": "8.9.6.4",
+    "title": "Colour key masking",
+    "verification": "Official Table87 Mask entry explicitly names/cross-references this subclause; full2020 algorithm text pending",
+    "url": "https://pdf-issues.pdfa.org/32000-2-2020/clause08.html"
+  },
+  "index_source": "https://pdfa.org/resource/iso-32000-2",
+  "secondary_clauses": [
+    "2008 8.9.5.2 Decode Arrays",
+    "2008 8.9.3 Sample Representation"
+  ],
+  "semantic_rule": "Colour-key ranges intersect stored component values before Decode; matched samples leave existing background visible",
+  "raster_limit": "Exact8bit output rounding is an observed acceptance criterion, not a normative ISO byte rule",
+  "upstream_ids": []
+}

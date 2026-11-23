@@ -1,0 +1,459 @@
+{
+  "parser": "pypdf",
+  "parser_version": "6.21.4",
+  "unique_pdfs": 3,
+  "page_views": 5,
+  "passed": 5,
+  "failed": 0,
+  "fixtures": [
+    {
+      "fixture_id": "mediabox-inheritance-root",
+      "file": "inputs/mediabox-inheritance-root.pdf",
+      "page_count": 1,
+      "page_tree_nodes": [
+        {
+          "object": 2,
+          "count": 1,
+          "has_local_media_box": true
+        }
+      ],
+      "parsed_pages": [
+        {
+          "page": 0,
+          "page_object": 3,
+          "media_owner_object": 2,
+          "media_box": [
+            10.0,
+            20.0,
+            170.0,
+            120.0
+          ],
+          "visible_width": 160.0,
+          "visible_height": 100.0,
+          "has_explicit_page_media_box": false,
+          "transformed_rectangles": [
+            [
+              20.0,
+              20.0,
+              20.0,
+              15.0,
+              [
+                255,
+                0,
+                0
+              ]
+            ],
+            [
+              70.0,
+              40.0,
+              20.0,
+              15.0,
+              [
+                0,
+                0,
+                255
+              ]
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fixture_id": "mediabox-inheritance-explicit",
+      "file": "inputs/mediabox-inheritance-explicit.pdf",
+      "page_count": 1,
+      "page_tree_nodes": [
+        {
+          "object": 2,
+          "count": 1,
+          "has_local_media_box": true
+        }
+      ],
+      "parsed_pages": [
+        {
+          "page": 0,
+          "page_object": 3,
+          "media_owner_object": 3,
+          "media_box": [
+            0.0,
+            0.0,
+            120.0,
+            80.0
+          ],
+          "visible_width": 120.0,
+          "visible_height": 80.0,
+          "has_explicit_page_media_box": true,
+          "transformed_rectangles": [
+            [
+              30.0,
+              40.0,
+              20.0,
+              15.0,
+              [
+                255,
+                0,
+                0
+              ]
+            ],
+            [
+              80.0,
+              60.0,
+              20.0,
+              15.0,
+              [
+                0,
+                0,
+                255
+              ]
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "fixture_id": "mediabox-inheritance-siblings",
+      "file": "inputs/mediabox-inheritance-siblings.pdf",
+      "page_count": 3,
+      "page_tree_nodes": [
+        {
+          "object": 5,
+          "count": 1,
+          "has_local_media_box": true
+        },
+        {
+          "object": 2,
+          "count": 3,
+          "has_local_media_box": true
+        }
+      ],
+      "parsed_pages": [
+        {
+          "page": 0,
+          "page_object": 3,
+          "media_owner_object": 2,
+          "media_box": [
+            10.0,
+            20.0,
+            170.0,
+            120.0
+          ],
+          "visible_width": 160.0,
+          "visible_height": 100.0,
+          "has_explicit_page_media_box": false,
+          "transformed_rectangles": [
+            [
+              20.0,
+              20.0,
+              20.0,
+              15.0,
+              [
+                255,
+                0,
+                0
+              ]
+            ],
+            [
+              70.0,
+              40.0,
+              20.0,
+              15.0,
+              [
+                0,
+                0,
+                255
+              ]
+            ]
+          ]
+        },
+        {
+          "page": 1,
+          "page_object": 6,
+          "media_owner_object": 5,
+          "media_box": [
+            -10.0,
+            -10.0,
+            130.0,
+            80.0
+          ],
+          "visible_width": 140.0,
+          "visible_height": 90.0,
+          "has_explicit_page_media_box": false,
+          "transformed_rectangles": [
+            [
+              40.0,
+              50.0,
+              20.0,
+              15.0,
+              [
+                255,
+                0,
+                0
+              ]
+            ],
+            [
+              90.0,
+              70.0,
+              20.0,
+              15.0,
+              [
+                0,
+                0,
+                255
+              ]
+            ]
+          ]
+        },
+        {
+          "page": 2,
+          "page_object": 7,
+          "media_owner_object": 2,
+          "media_box": [
+            10.0,
+            20.0,
+            170.0,
+            120.0
+          ],
+          "visible_width": 160.0,
+          "visible_height": 100.0,
+          "has_explicit_page_media_box": false,
+          "transformed_rectangles": [
+            [
+              20.0,
+              20.0,
+              20.0,
+              15.0,
+              [
+                255,
+                0,
+                0
+              ]
+            ],
+            [
+              70.0,
+              40.0,
+              20.0,
+              15.0,
+              [
+                0,
+                0,
+                255
+              ]
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "id": "mediabox-inherit-root",
+      "fixture_id": "mediabox-inheritance-root",
+      "file": "inputs/mediabox-inheritance-root.pdf",
+      "page": 0,
+      "passed": true,
+      "page_object": 3,
+      "media_owner_object": 2,
+      "media_box": [
+        10.0,
+        20.0,
+        170.0,
+        120.0
+      ],
+      "visible_width": 160.0,
+      "visible_height": 100.0,
+      "has_explicit_page_media_box": false,
+      "transformed_rectangles": [
+        [
+          20.0,
+          20.0,
+          20.0,
+          15.0,
+          [
+            255,
+            0,
+            0
+          ]
+        ],
+        [
+          70.0,
+          40.0,
+          20.0,
+          15.0,
+          [
+            0,
+            0,
+            255
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "mediabox-explicit-page",
+      "fixture_id": "mediabox-inheritance-explicit",
+      "file": "inputs/mediabox-inheritance-explicit.pdf",
+      "page": 0,
+      "passed": true,
+      "page_object": 3,
+      "media_owner_object": 3,
+      "media_box": [
+        0.0,
+        0.0,
+        120.0,
+        80.0
+      ],
+      "visible_width": 120.0,
+      "visible_height": 80.0,
+      "has_explicit_page_media_box": true,
+      "transformed_rectangles": [
+        [
+          30.0,
+          40.0,
+          20.0,
+          15.0,
+          [
+            255,
+            0,
+            0
+          ]
+        ],
+        [
+          80.0,
+          60.0,
+          20.0,
+          15.0,
+          [
+            0,
+            0,
+            255
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "mediabox-sibling-root-before",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "file": "inputs/mediabox-inheritance-siblings.pdf",
+      "page": 0,
+      "passed": true,
+      "page_object": 3,
+      "media_owner_object": 2,
+      "media_box": [
+        10.0,
+        20.0,
+        170.0,
+        120.0
+      ],
+      "visible_width": 160.0,
+      "visible_height": 100.0,
+      "has_explicit_page_media_box": false,
+      "transformed_rectangles": [
+        [
+          20.0,
+          20.0,
+          20.0,
+          15.0,
+          [
+            255,
+            0,
+            0
+          ]
+        ],
+        [
+          70.0,
+          40.0,
+          20.0,
+          15.0,
+          [
+            0,
+            0,
+            255
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "mediabox-nearest-ancestor",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "file": "inputs/mediabox-inheritance-siblings.pdf",
+      "page": 1,
+      "passed": true,
+      "page_object": 6,
+      "media_owner_object": 5,
+      "media_box": [
+        -10.0,
+        -10.0,
+        130.0,
+        80.0
+      ],
+      "visible_width": 140.0,
+      "visible_height": 90.0,
+      "has_explicit_page_media_box": false,
+      "transformed_rectangles": [
+        [
+          40.0,
+          50.0,
+          20.0,
+          15.0,
+          [
+            255,
+            0,
+            0
+          ]
+        ],
+        [
+          90.0,
+          70.0,
+          20.0,
+          15.0,
+          [
+            0,
+            0,
+            255
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "mediabox-sibling-root-after",
+      "fixture_id": "mediabox-inheritance-siblings",
+      "file": "inputs/mediabox-inheritance-siblings.pdf",
+      "page": 2,
+      "passed": true,
+      "page_object": 7,
+      "media_owner_object": 2,
+      "media_box": [
+        10.0,
+        20.0,
+        170.0,
+        120.0
+      ],
+      "visible_width": 160.0,
+      "visible_height": 100.0,
+      "has_explicit_page_media_box": false,
+      "transformed_rectangles": [
+        [
+          20.0,
+          20.0,
+          20.0,
+          15.0,
+          [
+            255,
+            0,
+            0
+          ]
+        ],
+        [
+          70.0,
+          40.0,
+          20.0,
+          15.0,
+          [
+            0,
+            0,
+            255
+          ]
+        ]
+      ]
+    }
+  ]
+}

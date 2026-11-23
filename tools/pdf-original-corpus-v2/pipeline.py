@@ -14,6 +14,17 @@ dspec=importlib.util.spec_from_file_location('dash_score',T/'dash/score.py');das
 read=lambda p:json.loads(p.read_text())
 write=lambda p,d:p.write_text(json.dumps(d,indent=2)+'\n')
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+def load_routes():
+ # Manifests remain canonical in each source family; support older inline records too.
+ source=read(T/'routes.json');result=[];manifests={}
+ for item in source:
+  r=dict(item)
+  if 'manifest' not in r:
+   path=REPO/r['manifest_file']
+   if path not in manifests:manifests[path]={c['id']:c for c in read(path)['cases']}
+   r['manifest']=manifests[path][r.get('manifest_case_id',r['id'])]
+  result.append(r)
+ return result
 def fixture_path(r):return REPO/r.get('fixture_file',str(Path(r['canonical_dir'])/'original.pdf'))
 def rgb(p):return np.asarray(Image.open(p).convert('RGB'))
 def mask_for(r,dpi):
@@ -31,7 +42,7 @@ def compare(a,b,m):
  d=np.abs(a.astype(int)-b.astype(int)).max(axis=2)[m]
  return dict(passed=bool((d==0).all()),scored_pixels=int(m.sum()),different_pixels=int((d!=0).sum()),max_delta=int(d.max()))
 def verify():
- routes=read(T/'routes.json');ledger=read(T/'cases.json');assert len(routes)==len(ledger['cases'])
+ routes=load_routes();ledger=read(T/'cases.json');assert len(routes)==len(ledger['cases'])
  assert len(read(T/'inventory.json')['rows'])==2811
  assert len({r['id'] for r in routes})==len(routes)
  # Multiple page views may share one canonical original; identical PDF bytes must not be duplicated.
@@ -59,34 +70,34 @@ def verify():
  write(T/'reference-verification.json',result);return result
 
 def generate():
- for family in sorted({r['family'] for r in read(T/'routes.json')}):
+ for family in sorted({r['family'] for r in load_routes()}):
   with tempfile.TemporaryDirectory() as tmp:
    dest=Path(tmp);name=read(T/'family-routes.json')[family]['generator'];shutil.copy(T/family/name,dest/name);subprocess.run([sys.executable,str(dest/name)],check=True)
    produced=read(dest/'manifest.json')
-   for r in [r for r in read(T/'routes.json') if r['family']==family]:
+   for r in [r for r in load_routes() if r['family']==family]:
     c=next(c for c in produced['cases'] if c['id']==r['id']);assert sha(dest/c['file'])==sha(fixture_path(r))
- return {'regenerated_pdf_hash_matches':len({r['manifest']['sha256'] for r in read(T/'routes.json')}),'page_view_cases':len(read(T/'routes.json'))}
+ return {'regenerated_pdf_hash_matches':len({r['manifest']['sha256'] for r in load_routes()}),'page_view_cases':len(load_routes())}
 
 def references(out,pdfjs):
  # Rebuild the adapters' staging layout in the caller-selected output, never overwrite accepted assets.
  out=out.resolve();assert not out.exists(),'Choose a new output directory';out.mkdir(parents=True)
- for family in sorted({r['family'] for r in read(T/'routes.json')}):
+ for family in sorted({r['family'] for r in load_routes()}):
   d=out/family;shutil.copytree(T/family,d);(d/'inputs').mkdir(exist_ok=True)
-  for r in [r for r in read(T/'routes.json') if r['family']==family]:shutil.copy(fixture_path(r),d/r['manifest']['file'])
+  for r in [r for r in load_routes() if r['family']==family]:shutil.copy(fixture_path(r),d/r['manifest']['file'])
   env=dict(os.environ,PDFJS_ROOT=str(pdfjs.resolve()))
   commands=[[v.replace('{pdfjs}',str(pdfjs.resolve())) for v in step] for step in read(T/'family-routes.json')[family]['reference_steps']]
   for cmd in commands:subprocess.run([sys.executable,str(d/cmd[0]),*cmd[1:]],check=True,env=env)
- return {'captures':sum(len(r['manifest']['dpis'])*3 for r in read(T/'routes.json')),'output':str(out),'promotion':'manual review required; disagreement never auto-promotes'}
+ return {'captures':sum(len(r['manifest']['dpis'])*3 for r in load_routes()),'output':str(out),'promotion':'manual review required; disagreement never auto-promotes'}
 
 def grade(args):
  verify();commit=args.acceptance_commit
  # The accepted PDF+expected image must already be committed, before executing the product.
- for r in read(T/'routes.json'):
+ for r in load_routes():
   if r['accepted']:
    for file in [fixture_path(r),*[REPO/r['canonical_dir']/f'expected-{d}.png' for d in r['manifest']['dpis']]]:
     path=str(file.relative_to(REPO));saved=subprocess.check_output(['git','show',commit+':'+path],cwd=REPO);assert hashlib.sha256(saved).hexdigest()==sha(REPO/path),path
  out=args.output.resolve();out.mkdir(parents=True,exist_ok=True);rows=[]
- for r in read(T/'routes.json'):
+ for r in load_routes():
   if not r['accepted']:continue
   for dpi in r['manifest']['dpis']:
    folder=REPO/r['canonical_dir'];target=out/f"{r['id']}-{dpi}.png";cmd=[args.dotnet,str(args.renderer_dll.resolve()),'render',str(fixture_path(r)),str(target),str(dpi),str(r['manifest'].get('page',0))];p=subprocess.run(cmd,text=True,capture_output=True)
@@ -99,7 +110,7 @@ def grade(args):
     row['passed']=row['passed'] and all(v['passed'] for v in row['assertions'])
    else:row.update(passed=False,reason='renderer execution failed')
    rows.append(row)
- result=dict(acceptance_commit=commit,oneimage_source_head=args.source_head,onepdf_declared_package='RecursiveAI.OnePdf/Fonts1.18.0',executed=len(rows),passed=sum(r['passed'] for r in rows),failed=sum(not r['passed'] for r in rows),skipped=sum(len(r['manifest']['dpis']) for r in read(T/'routes.json') if not r['accepted']),skip_reason='Reference-disputed cases are not graded',held_cases=[r['id'] for r in read(T/'routes.json') if not r['accepted']],rows=rows)
+ result=dict(acceptance_commit=commit,oneimage_source_head=args.source_head,onepdf_declared_package='RecursiveAI.OnePdf/Fonts1.18.0',executed=len(rows),passed=sum(r['passed'] for r in rows),failed=sum(not r['passed'] for r in rows),skipped=sum(len(r['manifest']['dpis']) for r in load_routes() if not r['accepted']),skip_reason='Reference-disputed cases are not graded',held_cases=[r['id'] for r in load_routes() if not r['accepted']],rows=rows)
  write(out/'results.json',result);return result
 
 def catalog():

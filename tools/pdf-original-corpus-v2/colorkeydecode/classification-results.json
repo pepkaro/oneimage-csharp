@@ -1,0 +1,6529 @@
+{
+  "scope": "Reference-only component classification; no agreed full case, expected PNG or product pass",
+  "mask_selection_checks": 288,
+  "mask_selection_passed": 288,
+  "mask_selection_failed": 0,
+  "opaque_control_comparisons": 186,
+  "opaque_control_matches": 186,
+  "reference_executed": 24,
+  "reference_full_passed": 16,
+  "reference_full_failed": 8,
+  "reference_skipped": 0,
+  "full_cases_agreed": 0,
+  "full_cases_held": 4,
+  "new_goldens": 0,
+  "product_executed": 0,
+  "classification": "All engines choose stored-sample colour-key cells correctly; PDFium opaque reversed-Decode output differs by at most one RGB byte from ideal complement and the other engines, already visible in unmasked control",
+  "limits": [
+    "No changed expected samples or majority oracle",
+    "No source/binary root cause proven",
+    "Component mask checks do not validate held full cases",
+    "No OneImage/OnePDF ownership inferred; product not graded"
+  ],
+  "rows": [
+    {
+      "id": "img-colorkey-decode-opaque",
+      "dpi": 72,
+      "engine": "pdfium",
+      "cells": [
+        {
+          "id": "cell-0-0",
+          "stored": [
+            40,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            165,
+            114
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-1-0",
+          "stored": [
+            215,
+            165,
+            115
+          ],
+          "ideal_complement": [
+            40,
+            90,
+            140
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            39,
+            89,
+            139
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-2-0",
+          "stored": [
+            70,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            134,
+            84
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-3-0",
+          "stored": [
+            185,
+            135,
+            85
+          ],
+          "ideal_complement": [
+            70,
+            120,
+            170
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            69,
+            119,
+            169
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-0-1",
+          "stored": [
+            39,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            216,
+            165,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            216,
+            165,
+            114
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-1-1",
+          "stored": [
+            71,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            184,
+            135,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            183,
+            134,
+            84
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-2-1",
+          "stored": [
+            40,
+            89,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            166,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            165,
+            114
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-3-1",
+          "stored": [
+            70,
+            121,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            134,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            133,
+            84
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-0-2",
+          "stored": [
+            40,
+            90,
+            139
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            116
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            165,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-1-2",
+          "stored": [
+            70,
+            120,
+            171
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            84
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            134,
+            83
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-2-2",
+          "stored": [
+            55,
+            105,
+            155
+          ],
+          "ideal_complement": [
+            200,
+            150,
+            100
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            199,
+            149,
+            99
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-3-2",
+          "stored": [
+            200,
+            150,
+            100
+          ],
+          "ideal_complement": [
+            55,
+            105,
+            155
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            54,
+            104,
+            154
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 1
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-opaque",
+      "dpi": 72,
+      "engine": "pdfjs",
+      "cells": [
+        {
+          "id": "cell-0-0",
+          "stored": [
+            40,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            165,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-1-0",
+          "stored": [
+            215,
+            165,
+            115
+          ],
+          "ideal_complement": [
+            40,
+            90,
+            140
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            40,
+            90,
+            140
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-2-0",
+          "stored": [
+            70,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            135,
+            85
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-3-0",
+          "stored": [
+            185,
+            135,
+            85
+          ],
+          "ideal_complement": [
+            70,
+            120,
+            170
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            70,
+            120,
+            170
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-0-1",
+          "stored": [
+            39,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            216,
+            165,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            216,
+            165,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-1-1",
+          "stored": [
+            71,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            184,
+            135,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            184,
+            135,
+            85
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-2-1",
+          "stored": [
+            40,
+            89,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            166,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            166,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-3-1",
+          "stored": [
+            70,
+            121,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            134,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            134,
+            85
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-0-2",
+          "stored": [
+            40,
+            90,
+            139
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            116
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            165,
+            116
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-1-2",
+          "stored": [
+            70,
+            120,
+            171
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            84
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            135,
+            84
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-2-2",
+          "stored": [
+            55,
+            105,
+            155
+          ],
+          "ideal_complement": [
+            200,
+            150,
+            100
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            200,
+            150,
+            100
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-3-2",
+          "stored": [
+            200,
+            150,
+            100
+          ],
+          "ideal_complement": [
+            55,
+            105,
+            155
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            55,
+            105,
+            155
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-opaque",
+      "dpi": 72,
+      "engine": "mupdf",
+      "cells": [
+        {
+          "id": "cell-0-0",
+          "stored": [
+            40,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            165,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-1-0",
+          "stored": [
+            215,
+            165,
+            115
+          ],
+          "ideal_complement": [
+            40,
+            90,
+            140
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            40,
+            90,
+            140
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-2-0",
+          "stored": [
+            70,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            135,
+            85
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-3-0",
+          "stored": [
+            185,
+            135,
+            85
+          ],
+          "ideal_complement": [
+            70,
+            120,
+            170
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            70,
+            120,
+            170
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-0-1",
+          "stored": [
+            39,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            216,
+            165,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            216,
+            165,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-1-1",
+          "stored": [
+            71,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            184,
+            135,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            184,
+            135,
+            85
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-2-1",
+          "stored": [
+            40,
+            89,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            166,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            166,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-3-1",
+          "stored": [
+            70,
+            121,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            134,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            134,
+            85
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-0-2",
+          "stored": [
+            40,
+            90,
+            139
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            116
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            165,
+            116
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-1-2",
+          "stored": [
+            70,
+            120,
+            171
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            84
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            135,
+            84
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-2-2",
+          "stored": [
+            55,
+            105,
+            155
+          ],
+          "ideal_complement": [
+            200,
+            150,
+            100
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            200,
+            150,
+            100
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-3-2",
+          "stored": [
+            200,
+            150,
+            100
+          ],
+          "ideal_complement": [
+            55,
+            105,
+            155
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            55,
+            105,
+            155
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-opaque",
+      "dpi": 144,
+      "engine": "pdfium",
+      "cells": [
+        {
+          "id": "cell-0-0",
+          "stored": [
+            40,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            165,
+            114
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-1-0",
+          "stored": [
+            215,
+            165,
+            115
+          ],
+          "ideal_complement": [
+            40,
+            90,
+            140
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            39,
+            89,
+            139
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-2-0",
+          "stored": [
+            70,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            134,
+            84
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-3-0",
+          "stored": [
+            185,
+            135,
+            85
+          ],
+          "ideal_complement": [
+            70,
+            120,
+            170
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            69,
+            119,
+            169
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-0-1",
+          "stored": [
+            39,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            216,
+            165,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            216,
+            165,
+            114
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-1-1",
+          "stored": [
+            71,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            184,
+            135,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            183,
+            134,
+            84
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-2-1",
+          "stored": [
+            40,
+            89,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            166,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            165,
+            114
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-3-1",
+          "stored": [
+            70,
+            121,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            134,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            133,
+            84
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-0-2",
+          "stored": [
+            40,
+            90,
+            139
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            116
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            165,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-1-2",
+          "stored": [
+            70,
+            120,
+            171
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            84
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            134,
+            83
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-2-2",
+          "stored": [
+            55,
+            105,
+            155
+          ],
+          "ideal_complement": [
+            200,
+            150,
+            100
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            199,
+            149,
+            99
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-3-2",
+          "stored": [
+            200,
+            150,
+            100
+          ],
+          "ideal_complement": [
+            55,
+            105,
+            155
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            54,
+            104,
+            154
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 1
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-opaque",
+      "dpi": 144,
+      "engine": "pdfjs",
+      "cells": [
+        {
+          "id": "cell-0-0",
+          "stored": [
+            40,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            165,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-1-0",
+          "stored": [
+            215,
+            165,
+            115
+          ],
+          "ideal_complement": [
+            40,
+            90,
+            140
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            40,
+            90,
+            140
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-2-0",
+          "stored": [
+            70,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            135,
+            85
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-3-0",
+          "stored": [
+            185,
+            135,
+            85
+          ],
+          "ideal_complement": [
+            70,
+            120,
+            170
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            70,
+            120,
+            170
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-0-1",
+          "stored": [
+            39,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            216,
+            165,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            216,
+            165,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-1-1",
+          "stored": [
+            71,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            184,
+            135,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            184,
+            135,
+            85
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-2-1",
+          "stored": [
+            40,
+            89,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            166,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            166,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-3-1",
+          "stored": [
+            70,
+            121,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            134,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            134,
+            85
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-0-2",
+          "stored": [
+            40,
+            90,
+            139
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            116
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            165,
+            116
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-1-2",
+          "stored": [
+            70,
+            120,
+            171
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            84
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            135,
+            84
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-2-2",
+          "stored": [
+            55,
+            105,
+            155
+          ],
+          "ideal_complement": [
+            200,
+            150,
+            100
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            200,
+            150,
+            100
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-3-2",
+          "stored": [
+            200,
+            150,
+            100
+          ],
+          "ideal_complement": [
+            55,
+            105,
+            155
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            55,
+            105,
+            155
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-opaque",
+      "dpi": 144,
+      "engine": "mupdf",
+      "cells": [
+        {
+          "id": "cell-0-0",
+          "stored": [
+            40,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            165,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-1-0",
+          "stored": [
+            215,
+            165,
+            115
+          ],
+          "ideal_complement": [
+            40,
+            90,
+            140
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            40,
+            90,
+            140
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-2-0",
+          "stored": [
+            70,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            135,
+            85
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-3-0",
+          "stored": [
+            185,
+            135,
+            85
+          ],
+          "ideal_complement": [
+            70,
+            120,
+            170
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            70,
+            120,
+            170
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-0-1",
+          "stored": [
+            39,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            216,
+            165,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            216,
+            165,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-1-1",
+          "stored": [
+            71,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            184,
+            135,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            184,
+            135,
+            85
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-2-1",
+          "stored": [
+            40,
+            89,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            166,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            166,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-3-1",
+          "stored": [
+            70,
+            121,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            134,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            134,
+            85
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-0-2",
+          "stored": [
+            40,
+            90,
+            139
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            116
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            165,
+            116
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-1-2",
+          "stored": [
+            70,
+            120,
+            171
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            84
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            135,
+            84
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-2-2",
+          "stored": [
+            55,
+            105,
+            155
+          ],
+          "ideal_complement": [
+            200,
+            150,
+            100
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            200,
+            150,
+            100
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-3-2",
+          "stored": [
+            200,
+            150,
+            100
+          ],
+          "ideal_complement": [
+            55,
+            105,
+            155
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            55,
+            105,
+            155
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": 0
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-stored-key",
+      "dpi": 72,
+      "engine": "pdfium",
+      "cells": [
+        {
+          "id": "cell-0-0",
+          "stored": [
+            40,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            115
+          ],
+          "mask_expected": true,
+          "observed_rgb": [
+            0,
+            255,
+            0
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": null
+        },
+        {
+          "id": "cell-1-0",
+          "stored": [
+            215,
+            165,
+            115
+          ],
+          "ideal_complement": [
+            40,
+            90,
+            140
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            39,
+            89,
+            139
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-2-0",
+          "stored": [
+            70,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            134,
+            84
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-3-0",
+          "stored": [
+            185,
+            135,
+            85
+          ],
+          "ideal_complement": [
+            70,
+            120,
+            170
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            69,
+            119,
+            169
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-0-1",
+          "stored": [
+            39,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            216,
+            165,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            216,
+            165,
+            114
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-1-1",
+          "stored": [
+            71,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            184,
+            135,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            183,
+            134,
+            84
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-2-1",
+          "stored": [
+            40,
+            89,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            166,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            165,
+            114
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-3-1",
+          "stored": [
+            70,
+            121,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            134,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            133,
+            84
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-0-2",
+          "stored": [
+            40,
+            90,
+            139
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            116
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            165,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-1-2",
+          "stored": [
+            70,
+            120,
+            171
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            84
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            134,
+            83
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-2-2",
+          "stored": [
+            55,
+            105,
+            155
+          ],
+          "ideal_complement": [
+            200,
+            150,
+            100
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            199,
+            149,
+            99
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-3-2",
+          "stored": [
+            200,
+            150,
+            100
+          ],
+          "ideal_complement": [
+            55,
+            105,
+            155
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            54,
+            104,
+            154
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-stored-key",
+      "dpi": 72,
+      "engine": "pdfjs",
+      "cells": [
+        {
+          "id": "cell-0-0",
+          "stored": [
+            40,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            115
+          ],
+          "mask_expected": true,
+          "observed_rgb": [
+            0,
+            255,
+            0
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": null
+        },
+        {
+          "id": "cell-1-0",
+          "stored": [
+            215,
+            165,
+            115
+          ],
+          "ideal_complement": [
+            40,
+            90,
+            140
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            40,
+            90,
+            140
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-2-0",
+          "stored": [
+            70,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            135,
+            85
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-3-0",
+          "stored": [
+            185,
+            135,
+            85
+          ],
+          "ideal_complement": [
+            70,
+            120,
+            170
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            70,
+            120,
+            170
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-0-1",
+          "stored": [
+            39,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            216,
+            165,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            216,
+            165,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-1-1",
+          "stored": [
+            71,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            184,
+            135,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            184,
+            135,
+            85
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-2-1",
+          "stored": [
+            40,
+            89,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            166,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            166,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-3-1",
+          "stored": [
+            70,
+            121,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            134,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            134,
+            85
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-0-2",
+          "stored": [
+            40,
+            90,
+            139
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            116
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            165,
+            116
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-1-2",
+          "stored": [
+            70,
+            120,
+            171
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            84
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            135,
+            84
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-2-2",
+          "stored": [
+            55,
+            105,
+            155
+          ],
+          "ideal_complement": [
+            200,
+            150,
+            100
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            200,
+            150,
+            100
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-3-2",
+          "stored": [
+            200,
+            150,
+            100
+          ],
+          "ideal_complement": [
+            55,
+            105,
+            155
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            55,
+            105,
+            155
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-stored-key",
+      "dpi": 72,
+      "engine": "mupdf",
+      "cells": [
+        {
+          "id": "cell-0-0",
+          "stored": [
+            40,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            115
+          ],
+          "mask_expected": true,
+          "observed_rgb": [
+            0,
+            255,
+            0
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": null
+        },
+        {
+          "id": "cell-1-0",
+          "stored": [
+            215,
+            165,
+            115
+          ],
+          "ideal_complement": [
+            40,
+            90,
+            140
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            40,
+            90,
+            140
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-2-0",
+          "stored": [
+            70,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            135,
+            85
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-3-0",
+          "stored": [
+            185,
+            135,
+            85
+          ],
+          "ideal_complement": [
+            70,
+            120,
+            170
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            70,
+            120,
+            170
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-0-1",
+          "stored": [
+            39,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            216,
+            165,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            216,
+            165,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-1-1",
+          "stored": [
+            71,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            184,
+            135,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            184,
+            135,
+            85
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-2-1",
+          "stored": [
+            40,
+            89,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            166,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            166,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-3-1",
+          "stored": [
+            70,
+            121,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            134,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            134,
+            85
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-0-2",
+          "stored": [
+            40,
+            90,
+            139
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            116
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            165,
+            116
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-1-2",
+          "stored": [
+            70,
+            120,
+            171
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            84
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            135,
+            84
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-2-2",
+          "stored": [
+            55,
+            105,
+            155
+          ],
+          "ideal_complement": [
+            200,
+            150,
+            100
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            200,
+            150,
+            100
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-3-2",
+          "stored": [
+            200,
+            150,
+            100
+          ],
+          "ideal_complement": [
+            55,
+            105,
+            155
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            55,
+            105,
+            155
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-stored-key",
+      "dpi": 144,
+      "engine": "pdfium",
+      "cells": [
+        {
+          "id": "cell-0-0",
+          "stored": [
+            40,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            115
+          ],
+          "mask_expected": true,
+          "observed_rgb": [
+            0,
+            255,
+            0
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": null
+        },
+        {
+          "id": "cell-1-0",
+          "stored": [
+            215,
+            165,
+            115
+          ],
+          "ideal_complement": [
+            40,
+            90,
+            140
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            39,
+            89,
+            139
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-2-0",
+          "stored": [
+            70,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            134,
+            84
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-3-0",
+          "stored": [
+            185,
+            135,
+            85
+          ],
+          "ideal_complement": [
+            70,
+            120,
+            170
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            69,
+            119,
+            169
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-0-1",
+          "stored": [
+            39,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            216,
+            165,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            216,
+            165,
+            114
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-1-1",
+          "stored": [
+            71,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            184,
+            135,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            183,
+            134,
+            84
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-2-1",
+          "stored": [
+            40,
+            89,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            166,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            165,
+            114
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-3-1",
+          "stored": [
+            70,
+            121,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            134,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            133,
+            84
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-0-2",
+          "stored": [
+            40,
+            90,
+            139
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            116
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            165,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-1-2",
+          "stored": [
+            70,
+            120,
+            171
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            84
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            134,
+            83
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-2-2",
+          "stored": [
+            55,
+            105,
+            155
+          ],
+          "ideal_complement": [
+            200,
+            150,
+            100
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            199,
+            149,
+            99
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-3-2",
+          "stored": [
+            200,
+            150,
+            100
+          ],
+          "ideal_complement": [
+            55,
+            105,
+            155
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            54,
+            104,
+            154
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-stored-key",
+      "dpi": 144,
+      "engine": "pdfjs",
+      "cells": [
+        {
+          "id": "cell-0-0",
+          "stored": [
+            40,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            115
+          ],
+          "mask_expected": true,
+          "observed_rgb": [
+            0,
+            255,
+            0
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": null
+        },
+        {
+          "id": "cell-1-0",
+          "stored": [
+            215,
+            165,
+            115
+          ],
+          "ideal_complement": [
+            40,
+            90,
+            140
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            40,
+            90,
+            140
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-2-0",
+          "stored": [
+            70,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            135,
+            85
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-3-0",
+          "stored": [
+            185,
+            135,
+            85
+          ],
+          "ideal_complement": [
+            70,
+            120,
+            170
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            70,
+            120,
+            170
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-0-1",
+          "stored": [
+            39,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            216,
+            165,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            216,
+            165,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-1-1",
+          "stored": [
+            71,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            184,
+            135,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            184,
+            135,
+            85
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-2-1",
+          "stored": [
+            40,
+            89,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            166,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            166,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-3-1",
+          "stored": [
+            70,
+            121,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            134,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            134,
+            85
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-0-2",
+          "stored": [
+            40,
+            90,
+            139
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            116
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            165,
+            116
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-1-2",
+          "stored": [
+            70,
+            120,
+            171
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            84
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            135,
+            84
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-2-2",
+          "stored": [
+            55,
+            105,
+            155
+          ],
+          "ideal_complement": [
+            200,
+            150,
+            100
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            200,
+            150,
+            100
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-3-2",
+          "stored": [
+            200,
+            150,
+            100
+          ],
+          "ideal_complement": [
+            55,
+            105,
+            155
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            55,
+            105,
+            155
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-stored-key",
+      "dpi": 144,
+      "engine": "mupdf",
+      "cells": [
+        {
+          "id": "cell-0-0",
+          "stored": [
+            40,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            115
+          ],
+          "mask_expected": true,
+          "observed_rgb": [
+            0,
+            255,
+            0
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": null
+        },
+        {
+          "id": "cell-1-0",
+          "stored": [
+            215,
+            165,
+            115
+          ],
+          "ideal_complement": [
+            40,
+            90,
+            140
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            40,
+            90,
+            140
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-2-0",
+          "stored": [
+            70,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            135,
+            85
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-3-0",
+          "stored": [
+            185,
+            135,
+            85
+          ],
+          "ideal_complement": [
+            70,
+            120,
+            170
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            70,
+            120,
+            170
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-0-1",
+          "stored": [
+            39,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            216,
+            165,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            216,
+            165,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-1-1",
+          "stored": [
+            71,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            184,
+            135,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            184,
+            135,
+            85
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-2-1",
+          "stored": [
+            40,
+            89,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            166,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            166,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-3-1",
+          "stored": [
+            70,
+            121,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            134,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            134,
+            85
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-0-2",
+          "stored": [
+            40,
+            90,
+            139
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            116
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            165,
+            116
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-1-2",
+          "stored": [
+            70,
+            120,
+            171
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            84
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            135,
+            84
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-2-2",
+          "stored": [
+            55,
+            105,
+            155
+          ],
+          "ideal_complement": [
+            200,
+            150,
+            100
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            200,
+            150,
+            100
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-3-2",
+          "stored": [
+            200,
+            150,
+            100
+          ],
+          "ideal_complement": [
+            55,
+            105,
+            155
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            55,
+            105,
+            155
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-decoded-key-control",
+      "dpi": 72,
+      "engine": "pdfium",
+      "cells": [
+        {
+          "id": "cell-0-0",
+          "stored": [
+            40,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            165,
+            114
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-1-0",
+          "stored": [
+            215,
+            165,
+            115
+          ],
+          "ideal_complement": [
+            40,
+            90,
+            140
+          ],
+          "mask_expected": true,
+          "observed_rgb": [
+            0,
+            0,
+            255
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": null
+        },
+        {
+          "id": "cell-2-0",
+          "stored": [
+            70,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            134,
+            84
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-3-0",
+          "stored": [
+            185,
+            135,
+            85
+          ],
+          "ideal_complement": [
+            70,
+            120,
+            170
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            69,
+            119,
+            169
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-0-1",
+          "stored": [
+            39,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            216,
+            165,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            216,
+            165,
+            114
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-1-1",
+          "stored": [
+            71,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            184,
+            135,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            183,
+            134,
+            84
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-2-1",
+          "stored": [
+            40,
+            89,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            166,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            165,
+            114
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-3-1",
+          "stored": [
+            70,
+            121,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            134,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            133,
+            84
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-0-2",
+          "stored": [
+            40,
+            90,
+            139
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            116
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            165,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-1-2",
+          "stored": [
+            70,
+            120,
+            171
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            84
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            134,
+            83
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-2-2",
+          "stored": [
+            55,
+            105,
+            155
+          ],
+          "ideal_complement": [
+            200,
+            150,
+            100
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            199,
+            149,
+            99
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-3-2",
+          "stored": [
+            200,
+            150,
+            100
+          ],
+          "ideal_complement": [
+            55,
+            105,
+            155
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            54,
+            104,
+            154
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-decoded-key-control",
+      "dpi": 72,
+      "engine": "pdfjs",
+      "cells": [
+        {
+          "id": "cell-0-0",
+          "stored": [
+            40,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            165,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-1-0",
+          "stored": [
+            215,
+            165,
+            115
+          ],
+          "ideal_complement": [
+            40,
+            90,
+            140
+          ],
+          "mask_expected": true,
+          "observed_rgb": [
+            0,
+            0,
+            255
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": null
+        },
+        {
+          "id": "cell-2-0",
+          "stored": [
+            70,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            135,
+            85
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-3-0",
+          "stored": [
+            185,
+            135,
+            85
+          ],
+          "ideal_complement": [
+            70,
+            120,
+            170
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            70,
+            120,
+            170
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-0-1",
+          "stored": [
+            39,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            216,
+            165,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            216,
+            165,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-1-1",
+          "stored": [
+            71,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            184,
+            135,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            184,
+            135,
+            85
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-2-1",
+          "stored": [
+            40,
+            89,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            166,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            166,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-3-1",
+          "stored": [
+            70,
+            121,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            134,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            134,
+            85
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-0-2",
+          "stored": [
+            40,
+            90,
+            139
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            116
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            165,
+            116
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-1-2",
+          "stored": [
+            70,
+            120,
+            171
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            84
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            135,
+            84
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-2-2",
+          "stored": [
+            55,
+            105,
+            155
+          ],
+          "ideal_complement": [
+            200,
+            150,
+            100
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            200,
+            150,
+            100
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-3-2",
+          "stored": [
+            200,
+            150,
+            100
+          ],
+          "ideal_complement": [
+            55,
+            105,
+            155
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            55,
+            105,
+            155
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-decoded-key-control",
+      "dpi": 72,
+      "engine": "mupdf",
+      "cells": [
+        {
+          "id": "cell-0-0",
+          "stored": [
+            40,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            165,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-1-0",
+          "stored": [
+            215,
+            165,
+            115
+          ],
+          "ideal_complement": [
+            40,
+            90,
+            140
+          ],
+          "mask_expected": true,
+          "observed_rgb": [
+            0,
+            0,
+            255
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": null
+        },
+        {
+          "id": "cell-2-0",
+          "stored": [
+            70,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            135,
+            85
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-3-0",
+          "stored": [
+            185,
+            135,
+            85
+          ],
+          "ideal_complement": [
+            70,
+            120,
+            170
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            70,
+            120,
+            170
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-0-1",
+          "stored": [
+            39,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            216,
+            165,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            216,
+            165,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-1-1",
+          "stored": [
+            71,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            184,
+            135,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            184,
+            135,
+            85
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-2-1",
+          "stored": [
+            40,
+            89,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            166,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            166,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-3-1",
+          "stored": [
+            70,
+            121,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            134,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            134,
+            85
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-0-2",
+          "stored": [
+            40,
+            90,
+            139
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            116
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            165,
+            116
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-1-2",
+          "stored": [
+            70,
+            120,
+            171
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            84
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            135,
+            84
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-2-2",
+          "stored": [
+            55,
+            105,
+            155
+          ],
+          "ideal_complement": [
+            200,
+            150,
+            100
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            200,
+            150,
+            100
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-3-2",
+          "stored": [
+            200,
+            150,
+            100
+          ],
+          "ideal_complement": [
+            55,
+            105,
+            155
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            55,
+            105,
+            155
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-decoded-key-control",
+      "dpi": 144,
+      "engine": "pdfium",
+      "cells": [
+        {
+          "id": "cell-0-0",
+          "stored": [
+            40,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            165,
+            114
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-1-0",
+          "stored": [
+            215,
+            165,
+            115
+          ],
+          "ideal_complement": [
+            40,
+            90,
+            140
+          ],
+          "mask_expected": true,
+          "observed_rgb": [
+            0,
+            0,
+            255
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": null
+        },
+        {
+          "id": "cell-2-0",
+          "stored": [
+            70,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            134,
+            84
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-3-0",
+          "stored": [
+            185,
+            135,
+            85
+          ],
+          "ideal_complement": [
+            70,
+            120,
+            170
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            69,
+            119,
+            169
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-0-1",
+          "stored": [
+            39,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            216,
+            165,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            216,
+            165,
+            114
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-1-1",
+          "stored": [
+            71,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            184,
+            135,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            183,
+            134,
+            84
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-2-1",
+          "stored": [
+            40,
+            89,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            166,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            165,
+            114
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-3-1",
+          "stored": [
+            70,
+            121,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            134,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            133,
+            84
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-0-2",
+          "stored": [
+            40,
+            90,
+            139
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            116
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            165,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-1-2",
+          "stored": [
+            70,
+            120,
+            171
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            84
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            134,
+            83
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-2-2",
+          "stored": [
+            55,
+            105,
+            155
+          ],
+          "ideal_complement": [
+            200,
+            150,
+            100
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            199,
+            149,
+            99
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-3-2",
+          "stored": [
+            200,
+            150,
+            100
+          ],
+          "ideal_complement": [
+            55,
+            105,
+            155
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            54,
+            104,
+            154
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-decoded-key-control",
+      "dpi": 144,
+      "engine": "pdfjs",
+      "cells": [
+        {
+          "id": "cell-0-0",
+          "stored": [
+            40,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            165,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-1-0",
+          "stored": [
+            215,
+            165,
+            115
+          ],
+          "ideal_complement": [
+            40,
+            90,
+            140
+          ],
+          "mask_expected": true,
+          "observed_rgb": [
+            0,
+            0,
+            255
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": null
+        },
+        {
+          "id": "cell-2-0",
+          "stored": [
+            70,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            135,
+            85
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-3-0",
+          "stored": [
+            185,
+            135,
+            85
+          ],
+          "ideal_complement": [
+            70,
+            120,
+            170
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            70,
+            120,
+            170
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-0-1",
+          "stored": [
+            39,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            216,
+            165,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            216,
+            165,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-1-1",
+          "stored": [
+            71,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            184,
+            135,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            184,
+            135,
+            85
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-2-1",
+          "stored": [
+            40,
+            89,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            166,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            166,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-3-1",
+          "stored": [
+            70,
+            121,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            134,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            134,
+            85
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-0-2",
+          "stored": [
+            40,
+            90,
+            139
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            116
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            165,
+            116
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-1-2",
+          "stored": [
+            70,
+            120,
+            171
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            84
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            135,
+            84
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-2-2",
+          "stored": [
+            55,
+            105,
+            155
+          ],
+          "ideal_complement": [
+            200,
+            150,
+            100
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            200,
+            150,
+            100
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-3-2",
+          "stored": [
+            200,
+            150,
+            100
+          ],
+          "ideal_complement": [
+            55,
+            105,
+            155
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            55,
+            105,
+            155
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-decoded-key-control",
+      "dpi": 144,
+      "engine": "mupdf",
+      "cells": [
+        {
+          "id": "cell-0-0",
+          "stored": [
+            40,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            165,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-1-0",
+          "stored": [
+            215,
+            165,
+            115
+          ],
+          "ideal_complement": [
+            40,
+            90,
+            140
+          ],
+          "mask_expected": true,
+          "observed_rgb": [
+            0,
+            0,
+            255
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": null
+        },
+        {
+          "id": "cell-2-0",
+          "stored": [
+            70,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            135,
+            85
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-3-0",
+          "stored": [
+            185,
+            135,
+            85
+          ],
+          "ideal_complement": [
+            70,
+            120,
+            170
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            70,
+            120,
+            170
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-0-1",
+          "stored": [
+            39,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            216,
+            165,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            216,
+            165,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-1-1",
+          "stored": [
+            71,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            184,
+            135,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            184,
+            135,
+            85
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-2-1",
+          "stored": [
+            40,
+            89,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            166,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            166,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-3-1",
+          "stored": [
+            70,
+            121,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            134,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            134,
+            85
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-0-2",
+          "stored": [
+            40,
+            90,
+            139
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            116
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            165,
+            116
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-1-2",
+          "stored": [
+            70,
+            120,
+            171
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            84
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            135,
+            84
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-2-2",
+          "stored": [
+            55,
+            105,
+            155
+          ],
+          "ideal_complement": [
+            200,
+            150,
+            100
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            200,
+            150,
+            100
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-3-2",
+          "stored": [
+            200,
+            150,
+            100
+          ],
+          "ideal_complement": [
+            55,
+            105,
+            155
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            55,
+            105,
+            155
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-stored-range",
+      "dpi": 72,
+      "engine": "pdfium",
+      "cells": [
+        {
+          "id": "cell-0-0",
+          "stored": [
+            40,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            115
+          ],
+          "mask_expected": true,
+          "observed_rgb": [
+            0,
+            255,
+            0
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": null
+        },
+        {
+          "id": "cell-1-0",
+          "stored": [
+            215,
+            165,
+            115
+          ],
+          "ideal_complement": [
+            40,
+            90,
+            140
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            39,
+            89,
+            139
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-2-0",
+          "stored": [
+            70,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            85
+          ],
+          "mask_expected": true,
+          "observed_rgb": [
+            0,
+            255,
+            0
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": null
+        },
+        {
+          "id": "cell-3-0",
+          "stored": [
+            185,
+            135,
+            85
+          ],
+          "ideal_complement": [
+            70,
+            120,
+            170
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            69,
+            119,
+            169
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-0-1",
+          "stored": [
+            39,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            216,
+            165,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            216,
+            165,
+            114
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-1-1",
+          "stored": [
+            71,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            184,
+            135,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            183,
+            134,
+            84
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-2-1",
+          "stored": [
+            40,
+            89,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            166,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            165,
+            114
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-3-1",
+          "stored": [
+            70,
+            121,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            134,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            133,
+            84
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-0-2",
+          "stored": [
+            40,
+            90,
+            139
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            116
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            165,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-1-2",
+          "stored": [
+            70,
+            120,
+            171
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            84
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            134,
+            83
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-2-2",
+          "stored": [
+            55,
+            105,
+            155
+          ],
+          "ideal_complement": [
+            200,
+            150,
+            100
+          ],
+          "mask_expected": true,
+          "observed_rgb": [
+            0,
+            255,
+            0
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": null
+        },
+        {
+          "id": "cell-3-2",
+          "stored": [
+            200,
+            150,
+            100
+          ],
+          "ideal_complement": [
+            55,
+            105,
+            155
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            54,
+            104,
+            154
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-stored-range",
+      "dpi": 72,
+      "engine": "pdfjs",
+      "cells": [
+        {
+          "id": "cell-0-0",
+          "stored": [
+            40,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            115
+          ],
+          "mask_expected": true,
+          "observed_rgb": [
+            0,
+            255,
+            0
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": null
+        },
+        {
+          "id": "cell-1-0",
+          "stored": [
+            215,
+            165,
+            115
+          ],
+          "ideal_complement": [
+            40,
+            90,
+            140
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            40,
+            90,
+            140
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-2-0",
+          "stored": [
+            70,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            85
+          ],
+          "mask_expected": true,
+          "observed_rgb": [
+            0,
+            255,
+            0
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": null
+        },
+        {
+          "id": "cell-3-0",
+          "stored": [
+            185,
+            135,
+            85
+          ],
+          "ideal_complement": [
+            70,
+            120,
+            170
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            70,
+            120,
+            170
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-0-1",
+          "stored": [
+            39,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            216,
+            165,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            216,
+            165,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-1-1",
+          "stored": [
+            71,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            184,
+            135,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            184,
+            135,
+            85
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-2-1",
+          "stored": [
+            40,
+            89,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            166,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            166,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-3-1",
+          "stored": [
+            70,
+            121,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            134,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            134,
+            85
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-0-2",
+          "stored": [
+            40,
+            90,
+            139
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            116
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            165,
+            116
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-1-2",
+          "stored": [
+            70,
+            120,
+            171
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            84
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            135,
+            84
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-2-2",
+          "stored": [
+            55,
+            105,
+            155
+          ],
+          "ideal_complement": [
+            200,
+            150,
+            100
+          ],
+          "mask_expected": true,
+          "observed_rgb": [
+            0,
+            255,
+            0
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": null
+        },
+        {
+          "id": "cell-3-2",
+          "stored": [
+            200,
+            150,
+            100
+          ],
+          "ideal_complement": [
+            55,
+            105,
+            155
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            55,
+            105,
+            155
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-stored-range",
+      "dpi": 72,
+      "engine": "mupdf",
+      "cells": [
+        {
+          "id": "cell-0-0",
+          "stored": [
+            40,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            115
+          ],
+          "mask_expected": true,
+          "observed_rgb": [
+            0,
+            255,
+            0
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": null
+        },
+        {
+          "id": "cell-1-0",
+          "stored": [
+            215,
+            165,
+            115
+          ],
+          "ideal_complement": [
+            40,
+            90,
+            140
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            40,
+            90,
+            140
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-2-0",
+          "stored": [
+            70,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            85
+          ],
+          "mask_expected": true,
+          "observed_rgb": [
+            0,
+            255,
+            0
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": null
+        },
+        {
+          "id": "cell-3-0",
+          "stored": [
+            185,
+            135,
+            85
+          ],
+          "ideal_complement": [
+            70,
+            120,
+            170
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            70,
+            120,
+            170
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-0-1",
+          "stored": [
+            39,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            216,
+            165,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            216,
+            165,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-1-1",
+          "stored": [
+            71,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            184,
+            135,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            184,
+            135,
+            85
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-2-1",
+          "stored": [
+            40,
+            89,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            166,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            166,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-3-1",
+          "stored": [
+            70,
+            121,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            134,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            134,
+            85
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-0-2",
+          "stored": [
+            40,
+            90,
+            139
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            116
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            165,
+            116
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-1-2",
+          "stored": [
+            70,
+            120,
+            171
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            84
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            135,
+            84
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-2-2",
+          "stored": [
+            55,
+            105,
+            155
+          ],
+          "ideal_complement": [
+            200,
+            150,
+            100
+          ],
+          "mask_expected": true,
+          "observed_rgb": [
+            0,
+            255,
+            0
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": null
+        },
+        {
+          "id": "cell-3-2",
+          "stored": [
+            200,
+            150,
+            100
+          ],
+          "ideal_complement": [
+            55,
+            105,
+            155
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            55,
+            105,
+            155
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-stored-range",
+      "dpi": 144,
+      "engine": "pdfium",
+      "cells": [
+        {
+          "id": "cell-0-0",
+          "stored": [
+            40,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            115
+          ],
+          "mask_expected": true,
+          "observed_rgb": [
+            0,
+            255,
+            0
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": null
+        },
+        {
+          "id": "cell-1-0",
+          "stored": [
+            215,
+            165,
+            115
+          ],
+          "ideal_complement": [
+            40,
+            90,
+            140
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            39,
+            89,
+            139
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-2-0",
+          "stored": [
+            70,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            85
+          ],
+          "mask_expected": true,
+          "observed_rgb": [
+            0,
+            255,
+            0
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": null
+        },
+        {
+          "id": "cell-3-0",
+          "stored": [
+            185,
+            135,
+            85
+          ],
+          "ideal_complement": [
+            70,
+            120,
+            170
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            69,
+            119,
+            169
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-0-1",
+          "stored": [
+            39,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            216,
+            165,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            216,
+            165,
+            114
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-1-1",
+          "stored": [
+            71,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            184,
+            135,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            183,
+            134,
+            84
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-2-1",
+          "stored": [
+            40,
+            89,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            166,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            165,
+            114
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-3-1",
+          "stored": [
+            70,
+            121,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            134,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            133,
+            84
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-0-2",
+          "stored": [
+            40,
+            90,
+            139
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            116
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            165,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-1-2",
+          "stored": [
+            70,
+            120,
+            171
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            84
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            134,
+            83
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        },
+        {
+          "id": "cell-2-2",
+          "stored": [
+            55,
+            105,
+            155
+          ],
+          "ideal_complement": [
+            200,
+            150,
+            100
+          ],
+          "mask_expected": true,
+          "observed_rgb": [
+            0,
+            255,
+            0
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": null
+        },
+        {
+          "id": "cell-3-2",
+          "stored": [
+            200,
+            150,
+            100
+          ],
+          "ideal_complement": [
+            55,
+            105,
+            155
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            54,
+            104,
+            154
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 1
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-stored-range",
+      "dpi": 144,
+      "engine": "pdfjs",
+      "cells": [
+        {
+          "id": "cell-0-0",
+          "stored": [
+            40,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            115
+          ],
+          "mask_expected": true,
+          "observed_rgb": [
+            0,
+            255,
+            0
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": null
+        },
+        {
+          "id": "cell-1-0",
+          "stored": [
+            215,
+            165,
+            115
+          ],
+          "ideal_complement": [
+            40,
+            90,
+            140
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            40,
+            90,
+            140
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-2-0",
+          "stored": [
+            70,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            85
+          ],
+          "mask_expected": true,
+          "observed_rgb": [
+            0,
+            255,
+            0
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": null
+        },
+        {
+          "id": "cell-3-0",
+          "stored": [
+            185,
+            135,
+            85
+          ],
+          "ideal_complement": [
+            70,
+            120,
+            170
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            70,
+            120,
+            170
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-0-1",
+          "stored": [
+            39,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            216,
+            165,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            216,
+            165,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-1-1",
+          "stored": [
+            71,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            184,
+            135,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            184,
+            135,
+            85
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-2-1",
+          "stored": [
+            40,
+            89,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            166,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            166,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-3-1",
+          "stored": [
+            70,
+            121,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            134,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            134,
+            85
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-0-2",
+          "stored": [
+            40,
+            90,
+            139
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            116
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            165,
+            116
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-1-2",
+          "stored": [
+            70,
+            120,
+            171
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            84
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            135,
+            84
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-2-2",
+          "stored": [
+            55,
+            105,
+            155
+          ],
+          "ideal_complement": [
+            200,
+            150,
+            100
+          ],
+          "mask_expected": true,
+          "observed_rgb": [
+            0,
+            255,
+            0
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": null
+        },
+        {
+          "id": "cell-3-2",
+          "stored": [
+            200,
+            150,
+            100
+          ],
+          "ideal_complement": [
+            55,
+            105,
+            155
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            55,
+            105,
+            155
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        }
+      ]
+    },
+    {
+      "id": "img-colorkey-decode-stored-range",
+      "dpi": 144,
+      "engine": "mupdf",
+      "cells": [
+        {
+          "id": "cell-0-0",
+          "stored": [
+            40,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            115
+          ],
+          "mask_expected": true,
+          "observed_rgb": [
+            0,
+            255,
+            0
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": null
+        },
+        {
+          "id": "cell-1-0",
+          "stored": [
+            215,
+            165,
+            115
+          ],
+          "ideal_complement": [
+            40,
+            90,
+            140
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            40,
+            90,
+            140
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-2-0",
+          "stored": [
+            70,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            85
+          ],
+          "mask_expected": true,
+          "observed_rgb": [
+            0,
+            255,
+            0
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": null
+        },
+        {
+          "id": "cell-3-0",
+          "stored": [
+            185,
+            135,
+            85
+          ],
+          "ideal_complement": [
+            70,
+            120,
+            170
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            70,
+            120,
+            170
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-0-1",
+          "stored": [
+            39,
+            90,
+            140
+          ],
+          "ideal_complement": [
+            216,
+            165,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            216,
+            165,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-1-1",
+          "stored": [
+            71,
+            120,
+            170
+          ],
+          "ideal_complement": [
+            184,
+            135,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            184,
+            135,
+            85
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-2-1",
+          "stored": [
+            40,
+            89,
+            140
+          ],
+          "ideal_complement": [
+            215,
+            166,
+            115
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            166,
+            115
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-3-1",
+          "stored": [
+            70,
+            121,
+            170
+          ],
+          "ideal_complement": [
+            185,
+            134,
+            85
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            134,
+            85
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-0-2",
+          "stored": [
+            40,
+            90,
+            139
+          ],
+          "ideal_complement": [
+            215,
+            165,
+            116
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            215,
+            165,
+            116
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-1-2",
+          "stored": [
+            70,
+            120,
+            171
+          ],
+          "ideal_complement": [
+            185,
+            135,
+            84
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            185,
+            135,
+            84
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        },
+        {
+          "id": "cell-2-2",
+          "stored": [
+            55,
+            105,
+            155
+          ],
+          "ideal_complement": [
+            200,
+            150,
+            100
+          ],
+          "mask_expected": true,
+          "observed_rgb": [
+            0,
+            255,
+            0
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": null,
+          "ideal_rgb_delta": null
+        },
+        {
+          "id": "cell-3-2",
+          "stored": [
+            200,
+            150,
+            100
+          ],
+          "ideal_complement": [
+            55,
+            105,
+            155
+          ],
+          "mask_expected": false,
+          "observed_rgb": [
+            55,
+            105,
+            155
+          ],
+          "mask_selection_pass": true,
+          "opaque_control_equal": true,
+          "ideal_rgb_delta": 0
+        }
+      ]
+    }
+  ]
+}

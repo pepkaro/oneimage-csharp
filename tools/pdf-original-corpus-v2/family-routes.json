@@ -243,5 +243,73 @@
         "verify.py"
       ]
     ]
+  },
+  "pageattributes": {
+    "generator": "generator.py",
+    "reference_steps": [
+      [
+        "references.py"
+      ],
+      [
+        "score.py"
+      ],
+      [
+        "verify-regions.py"
+      ],
+      [
+        "verify-structure.py"
+      ],
+      [
+        "verify.py"
+      ]
+    ]
+  },
+  "textquote": {
+    "generator": "generate.py",
+    "reference_steps": [
+      [
+        "run-references.py",
+        "{pdfjs}"
+      ],
+      [
+        "verify-regions.py"
+      ],
+      [
+        "verify.py"
+      ]
+    ]
+  },
+  "colorkeydecode": {
+    "generator": "generate.py",
+    "reference_steps": [
+      [
+        "run-references.py",
+        "{pdfjs}"
+      ],
+      [
+        "verify-regions.py"
+      ],
+      [
+        "verify.py"
+      ],
+      [
+        "classify.py"
+      ]
+    ]
+  },
+  "colorkeyendpoints": {
+    "generator": "generate.py",
+    "reference_steps": [
+      [
+        "run-references.py",
+        "{pdfjs}"
+      ],
+      [
+        "verify-regions.py"
+      ],
+      [
+        "verify.py"
+      ]
+    ]
   }
 }

@@ -1,0 +1,2145 @@
+{
+  "schema_version": 1,
+  "slice": "ISO-IMAGE-COLORKEY-DECODE-03",
+  "owner": "root",
+  "unique_pdfs": 4,
+  "cases": [
+    {
+      "id": "img-colorkey-decode-opaque",
+      "fixture_id": "img-colorkey-decode-opaque",
+      "file": "inputs/img-colorkey-decode-opaque.pdf",
+      "sha256": "2c8ec63da97e5e5ff8be4e6331fc8b0cdcdcc75fc8978deffceaec0c993d8761",
+      "license": "MIT",
+      "fixture_version": "1.7",
+      "contract": "Reversed Decode complements normalized RGB samples; ideal byte complements are the declared raster acceptance criterion.",
+      "width": 180,
+      "height": 140,
+      "page": 0,
+      "page_count": 1,
+      "dpis": [
+        72,
+        144
+      ],
+      "rotation": 0,
+      "user_unit": 1,
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "annotations": "none",
+      "route": "Opaque checkerboard then FlateDecode RGB8 image with reversed Decode and optional colour-key array",
+      "spec": "ISO 32000-1:2008",
+      "spec_clauses": [
+        "8.9.6.4 Colour Key Masking",
+        "8.9.5.2 Decode Arrays",
+        "8.9.3 Sample Representation"
+      ],
+      "image": {
+        "width": 4,
+        "height": 3,
+        "bpc": 8,
+        "color_space": "DeviceRGB",
+        "decode": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "mask": null,
+        "raw_sha256": "9dd200356af411855209806452ae666716e4326e1c8d51026f10dcaf94a8a41a"
+      },
+      "raw_cells": [
+        [
+          [
+            40,
+            90,
+            140
+          ],
+          [
+            215,
+            165,
+            115
+          ],
+          [
+            70,
+            120,
+            170
+          ],
+          [
+            185,
+            135,
+            85
+          ]
+        ],
+        [
+          [
+            39,
+            90,
+            140
+          ],
+          [
+            71,
+            120,
+            170
+          ],
+          [
+            40,
+            89,
+            140
+          ],
+          [
+            70,
+            121,
+            170
+          ]
+        ],
+        [
+          [
+            40,
+            90,
+            139
+          ],
+          [
+            70,
+            120,
+            171
+          ],
+          [
+            55,
+            105,
+            155
+          ],
+          [
+            200,
+            150,
+            100
+          ]
+        ]
+      ],
+      "masked_cell_ids": [],
+      "decoded_only_match_ids": [],
+      "expected_samples": [
+        {
+          "id": "cell-0-0",
+          "point": [
+            44.0,
+            100.0
+          ],
+          "rgb": [
+            215,
+            165,
+            115
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-0",
+          "point": [
+            68.0,
+            100.0
+          ],
+          "rgb": [
+            40,
+            90,
+            140
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-0",
+          "point": [
+            92.0,
+            100.0
+          ],
+          "rgb": [
+            185,
+            135,
+            85
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-0",
+          "point": [
+            116.0,
+            100.0
+          ],
+          "rgb": [
+            70,
+            120,
+            170
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-1",
+          "point": [
+            44.0,
+            76.0
+          ],
+          "rgb": [
+            216,
+            165,
+            115
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-1",
+          "point": [
+            68.0,
+            76.0
+          ],
+          "rgb": [
+            184,
+            135,
+            85
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-1",
+          "point": [
+            92.0,
+            76.0
+          ],
+          "rgb": [
+            215,
+            166,
+            115
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-1",
+          "point": [
+            116.0,
+            76.0
+          ],
+          "rgb": [
+            185,
+            134,
+            85
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-2",
+          "point": [
+            44.0,
+            52.0
+          ],
+          "rgb": [
+            215,
+            165,
+            116
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-2",
+          "point": [
+            68.0,
+            52.0
+          ],
+          "rgb": [
+            185,
+            135,
+            84
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-2",
+          "point": [
+            92.0,
+            52.0
+          ],
+          "rgb": [
+            200,
+            150,
+            100
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-2",
+          "point": [
+            116.0,
+            52.0
+          ],
+          "rgb": [
+            55,
+            105,
+            155
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "frame",
+          "point": [
+            30.0,
+            38.0
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "point": [
+            10.0,
+            10.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_regions": [
+        {
+          "id": "cell-0-0",
+          "rect": [
+            34.0,
+            90.0,
+            20,
+            20
+          ],
+          "rgb": [
+            215,
+            165,
+            115
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-0",
+          "rect": [
+            58.0,
+            90.0,
+            20,
+            20
+          ],
+          "rgb": [
+            40,
+            90,
+            140
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-0",
+          "rect": [
+            82.0,
+            90.0,
+            20,
+            20
+          ],
+          "rgb": [
+            185,
+            135,
+            85
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-0",
+          "rect": [
+            106.0,
+            90.0,
+            20,
+            20
+          ],
+          "rgb": [
+            70,
+            120,
+            170
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-1",
+          "rect": [
+            34.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            216,
+            165,
+            115
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-1",
+          "rect": [
+            58.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            184,
+            135,
+            85
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-1",
+          "rect": [
+            82.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            215,
+            166,
+            115
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-1",
+          "rect": [
+            106.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            185,
+            134,
+            85
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-2",
+          "rect": [
+            34.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            215,
+            165,
+            116
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-2",
+          "rect": [
+            58.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            185,
+            135,
+            84
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-2",
+          "rect": [
+            82.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            200,
+            150,
+            100
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-2",
+          "rect": [
+            106.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            55,
+            105,
+            155
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "frame",
+          "rect": [
+            29,
+            37,
+            2,
+            2
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "rect": [
+            4,
+            4,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "scope_limits": [
+        "RGB8 and fully reversed component Decode only",
+        "No interpolation boundary assertion",
+        "Opaque endpoint checkerboard; no soft mask/fractional alpha",
+        "Not persistent document cache or performance testing"
+      ],
+      "association": {
+        "scope": "spec-derived-only",
+        "upstream_id": null,
+        "upstream_entry_validated": false
+      }
+    },
+    {
+      "id": "img-colorkey-decode-stored-key",
+      "fixture_id": "img-colorkey-decode-stored-key",
+      "file": "inputs/img-colorkey-decode-stored-key.pdf",
+      "sha256": "57f37df19a83c1afe9b51c01d6ffdba3c4a2a33c14e833c451f21c516db30396",
+      "license": "MIT",
+      "fixture_version": "1.7",
+      "contract": "An exact key masks the stored sample before reversed Decode; a sample whose ideal complemented bytes equal that key remains painted.",
+      "width": 180,
+      "height": 140,
+      "page": 0,
+      "page_count": 1,
+      "dpis": [
+        72,
+        144
+      ],
+      "rotation": 0,
+      "user_unit": 1,
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "annotations": "none",
+      "route": "Opaque checkerboard then FlateDecode RGB8 image with reversed Decode and optional colour-key array",
+      "spec": "ISO 32000-1:2008",
+      "spec_clauses": [
+        "8.9.6.4 Colour Key Masking",
+        "8.9.5.2 Decode Arrays",
+        "8.9.3 Sample Representation"
+      ],
+      "image": {
+        "width": 4,
+        "height": 3,
+        "bpc": 8,
+        "color_space": "DeviceRGB",
+        "decode": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "mask": [
+          40,
+          40,
+          90,
+          90,
+          140,
+          140
+        ],
+        "raw_sha256": "9dd200356af411855209806452ae666716e4326e1c8d51026f10dcaf94a8a41a"
+      },
+      "raw_cells": [
+        [
+          [
+            40,
+            90,
+            140
+          ],
+          [
+            215,
+            165,
+            115
+          ],
+          [
+            70,
+            120,
+            170
+          ],
+          [
+            185,
+            135,
+            85
+          ]
+        ],
+        [
+          [
+            39,
+            90,
+            140
+          ],
+          [
+            71,
+            120,
+            170
+          ],
+          [
+            40,
+            89,
+            140
+          ],
+          [
+            70,
+            121,
+            170
+          ]
+        ],
+        [
+          [
+            40,
+            90,
+            139
+          ],
+          [
+            70,
+            120,
+            171
+          ],
+          [
+            55,
+            105,
+            155
+          ],
+          [
+            200,
+            150,
+            100
+          ]
+        ]
+      ],
+      "masked_cell_ids": [
+        "cell-0-0"
+      ],
+      "decoded_only_match_ids": [
+        "cell-1-0"
+      ],
+      "expected_samples": [
+        {
+          "id": "cell-0-0",
+          "point": [
+            44.0,
+            100.0
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-0",
+          "point": [
+            68.0,
+            100.0
+          ],
+          "rgb": [
+            40,
+            90,
+            140
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-0",
+          "point": [
+            92.0,
+            100.0
+          ],
+          "rgb": [
+            185,
+            135,
+            85
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-0",
+          "point": [
+            116.0,
+            100.0
+          ],
+          "rgb": [
+            70,
+            120,
+            170
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-1",
+          "point": [
+            44.0,
+            76.0
+          ],
+          "rgb": [
+            216,
+            165,
+            115
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-1",
+          "point": [
+            68.0,
+            76.0
+          ],
+          "rgb": [
+            184,
+            135,
+            85
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-1",
+          "point": [
+            92.0,
+            76.0
+          ],
+          "rgb": [
+            215,
+            166,
+            115
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-1",
+          "point": [
+            116.0,
+            76.0
+          ],
+          "rgb": [
+            185,
+            134,
+            85
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-2",
+          "point": [
+            44.0,
+            52.0
+          ],
+          "rgb": [
+            215,
+            165,
+            116
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-2",
+          "point": [
+            68.0,
+            52.0
+          ],
+          "rgb": [
+            185,
+            135,
+            84
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-2",
+          "point": [
+            92.0,
+            52.0
+          ],
+          "rgb": [
+            200,
+            150,
+            100
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-2",
+          "point": [
+            116.0,
+            52.0
+          ],
+          "rgb": [
+            55,
+            105,
+            155
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "frame",
+          "point": [
+            30.0,
+            38.0
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "point": [
+            10.0,
+            10.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_regions": [
+        {
+          "id": "cell-0-0",
+          "rect": [
+            34.0,
+            90.0,
+            20,
+            20
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-0",
+          "rect": [
+            58.0,
+            90.0,
+            20,
+            20
+          ],
+          "rgb": [
+            40,
+            90,
+            140
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-0",
+          "rect": [
+            82.0,
+            90.0,
+            20,
+            20
+          ],
+          "rgb": [
+            185,
+            135,
+            85
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-0",
+          "rect": [
+            106.0,
+            90.0,
+            20,
+            20
+          ],
+          "rgb": [
+            70,
+            120,
+            170
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-1",
+          "rect": [
+            34.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            216,
+            165,
+            115
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-1",
+          "rect": [
+            58.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            184,
+            135,
+            85
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-1",
+          "rect": [
+            82.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            215,
+            166,
+            115
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-1",
+          "rect": [
+            106.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            185,
+            134,
+            85
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-2",
+          "rect": [
+            34.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            215,
+            165,
+            116
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-2",
+          "rect": [
+            58.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            185,
+            135,
+            84
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-2",
+          "rect": [
+            82.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            200,
+            150,
+            100
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-2",
+          "rect": [
+            106.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            55,
+            105,
+            155
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "frame",
+          "rect": [
+            29,
+            37,
+            2,
+            2
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "rect": [
+            4,
+            4,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "scope_limits": [
+        "RGB8 and fully reversed component Decode only",
+        "No interpolation boundary assertion",
+        "Opaque endpoint checkerboard; no soft mask/fractional alpha",
+        "Not persistent document cache or performance testing"
+      ],
+      "association": {
+        "scope": "spec-derived-only",
+        "upstream_id": null,
+        "upstream_entry_validated": false
+      }
+    },
+    {
+      "id": "img-colorkey-decode-decoded-key-control",
+      "fixture_id": "img-colorkey-decode-decoded-key-control",
+      "file": "inputs/img-colorkey-decode-decoded-key-control.pdf",
+      "sha256": "848ff79442ea79ab07c40f0ad350995fb20e33b758f9032f62b20536e7e2b3b0",
+      "license": "MIT",
+      "fixture_version": "1.7",
+      "contract": "A key equal to the decoded colour of the first sample instead masks the different stored complement sample.",
+      "width": 180,
+      "height": 140,
+      "page": 0,
+      "page_count": 1,
+      "dpis": [
+        72,
+        144
+      ],
+      "rotation": 0,
+      "user_unit": 1,
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "annotations": "none",
+      "route": "Opaque checkerboard then FlateDecode RGB8 image with reversed Decode and optional colour-key array",
+      "spec": "ISO 32000-1:2008",
+      "spec_clauses": [
+        "8.9.6.4 Colour Key Masking",
+        "8.9.5.2 Decode Arrays",
+        "8.9.3 Sample Representation"
+      ],
+      "image": {
+        "width": 4,
+        "height": 3,
+        "bpc": 8,
+        "color_space": "DeviceRGB",
+        "decode": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "mask": [
+          215,
+          215,
+          165,
+          165,
+          115,
+          115
+        ],
+        "raw_sha256": "9dd200356af411855209806452ae666716e4326e1c8d51026f10dcaf94a8a41a"
+      },
+      "raw_cells": [
+        [
+          [
+            40,
+            90,
+            140
+          ],
+          [
+            215,
+            165,
+            115
+          ],
+          [
+            70,
+            120,
+            170
+          ],
+          [
+            185,
+            135,
+            85
+          ]
+        ],
+        [
+          [
+            39,
+            90,
+            140
+          ],
+          [
+            71,
+            120,
+            170
+          ],
+          [
+            40,
+            89,
+            140
+          ],
+          [
+            70,
+            121,
+            170
+          ]
+        ],
+        [
+          [
+            40,
+            90,
+            139
+          ],
+          [
+            70,
+            120,
+            171
+          ],
+          [
+            55,
+            105,
+            155
+          ],
+          [
+            200,
+            150,
+            100
+          ]
+        ]
+      ],
+      "masked_cell_ids": [
+        "cell-1-0"
+      ],
+      "decoded_only_match_ids": [
+        "cell-0-0"
+      ],
+      "expected_samples": [
+        {
+          "id": "cell-0-0",
+          "point": [
+            44.0,
+            100.0
+          ],
+          "rgb": [
+            215,
+            165,
+            115
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-0",
+          "point": [
+            68.0,
+            100.0
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-0",
+          "point": [
+            92.0,
+            100.0
+          ],
+          "rgb": [
+            185,
+            135,
+            85
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-0",
+          "point": [
+            116.0,
+            100.0
+          ],
+          "rgb": [
+            70,
+            120,
+            170
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-1",
+          "point": [
+            44.0,
+            76.0
+          ],
+          "rgb": [
+            216,
+            165,
+            115
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-1",
+          "point": [
+            68.0,
+            76.0
+          ],
+          "rgb": [
+            184,
+            135,
+            85
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-1",
+          "point": [
+            92.0,
+            76.0
+          ],
+          "rgb": [
+            215,
+            166,
+            115
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-1",
+          "point": [
+            116.0,
+            76.0
+          ],
+          "rgb": [
+            185,
+            134,
+            85
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-2",
+          "point": [
+            44.0,
+            52.0
+          ],
+          "rgb": [
+            215,
+            165,
+            116
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-2",
+          "point": [
+            68.0,
+            52.0
+          ],
+          "rgb": [
+            185,
+            135,
+            84
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-2",
+          "point": [
+            92.0,
+            52.0
+          ],
+          "rgb": [
+            200,
+            150,
+            100
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-2",
+          "point": [
+            116.0,
+            52.0
+          ],
+          "rgb": [
+            55,
+            105,
+            155
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "frame",
+          "point": [
+            30.0,
+            38.0
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "point": [
+            10.0,
+            10.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_regions": [
+        {
+          "id": "cell-0-0",
+          "rect": [
+            34.0,
+            90.0,
+            20,
+            20
+          ],
+          "rgb": [
+            215,
+            165,
+            115
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-0",
+          "rect": [
+            58.0,
+            90.0,
+            20,
+            20
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-0",
+          "rect": [
+            82.0,
+            90.0,
+            20,
+            20
+          ],
+          "rgb": [
+            185,
+            135,
+            85
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-0",
+          "rect": [
+            106.0,
+            90.0,
+            20,
+            20
+          ],
+          "rgb": [
+            70,
+            120,
+            170
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-1",
+          "rect": [
+            34.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            216,
+            165,
+            115
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-1",
+          "rect": [
+            58.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            184,
+            135,
+            85
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-1",
+          "rect": [
+            82.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            215,
+            166,
+            115
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-1",
+          "rect": [
+            106.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            185,
+            134,
+            85
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-2",
+          "rect": [
+            34.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            215,
+            165,
+            116
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-2",
+          "rect": [
+            58.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            185,
+            135,
+            84
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-2",
+          "rect": [
+            82.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            200,
+            150,
+            100
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-2",
+          "rect": [
+            106.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            55,
+            105,
+            155
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "frame",
+          "rect": [
+            29,
+            37,
+            2,
+            2
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "rect": [
+            4,
+            4,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "scope_limits": [
+        "RGB8 and fully reversed component Decode only",
+        "No interpolation boundary assertion",
+        "Opaque endpoint checkerboard; no soft mask/fractional alpha",
+        "Not persistent document cache or performance testing"
+      ],
+      "association": {
+        "scope": "spec-derived-only",
+        "upstream_id": null,
+        "upstream_entry_validated": false
+      }
+    },
+    {
+      "id": "img-colorkey-decode-stored-range",
+      "fixture_id": "img-colorkey-decode-stored-range",
+      "file": "inputs/img-colorkey-decode-stored-range.pdf",
+      "sha256": "0f7523bbf8a697a7b83a14b4eef74d21a30c82309cbfc67ad38419b0a96bdb23",
+      "license": "MIT",
+      "fixture_version": "1.7",
+      "contract": "Inclusive stored-component ranges mask low/high/interior samples before reversed Decode; one-component-outside and decoded-only matches remain opaque.",
+      "width": 180,
+      "height": 140,
+      "page": 0,
+      "page_count": 1,
+      "dpis": [
+        72,
+        144
+      ],
+      "rotation": 0,
+      "user_unit": 1,
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "annotations": "none",
+      "route": "Opaque checkerboard then FlateDecode RGB8 image with reversed Decode and optional colour-key array",
+      "spec": "ISO 32000-1:2008",
+      "spec_clauses": [
+        "8.9.6.4 Colour Key Masking",
+        "8.9.5.2 Decode Arrays",
+        "8.9.3 Sample Representation"
+      ],
+      "image": {
+        "width": 4,
+        "height": 3,
+        "bpc": 8,
+        "color_space": "DeviceRGB",
+        "decode": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "mask": [
+          40,
+          70,
+          90,
+          120,
+          140,
+          170
+        ],
+        "raw_sha256": "9dd200356af411855209806452ae666716e4326e1c8d51026f10dcaf94a8a41a"
+      },
+      "raw_cells": [
+        [
+          [
+            40,
+            90,
+            140
+          ],
+          [
+            215,
+            165,
+            115
+          ],
+          [
+            70,
+            120,
+            170
+          ],
+          [
+            185,
+            135,
+            85
+          ]
+        ],
+        [
+          [
+            39,
+            90,
+            140
+          ],
+          [
+            71,
+            120,
+            170
+          ],
+          [
+            40,
+            89,
+            140
+          ],
+          [
+            70,
+            121,
+            170
+          ]
+        ],
+        [
+          [
+            40,
+            90,
+            139
+          ],
+          [
+            70,
+            120,
+            171
+          ],
+          [
+            55,
+            105,
+            155
+          ],
+          [
+            200,
+            150,
+            100
+          ]
+        ]
+      ],
+      "masked_cell_ids": [
+        "cell-0-0",
+        "cell-2-0",
+        "cell-2-2"
+      ],
+      "decoded_only_match_ids": [
+        "cell-1-0",
+        "cell-3-0",
+        "cell-3-2"
+      ],
+      "expected_samples": [
+        {
+          "id": "cell-0-0",
+          "point": [
+            44.0,
+            100.0
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-0",
+          "point": [
+            68.0,
+            100.0
+          ],
+          "rgb": [
+            40,
+            90,
+            140
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-0",
+          "point": [
+            92.0,
+            100.0
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-0",
+          "point": [
+            116.0,
+            100.0
+          ],
+          "rgb": [
+            70,
+            120,
+            170
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-1",
+          "point": [
+            44.0,
+            76.0
+          ],
+          "rgb": [
+            216,
+            165,
+            115
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-1",
+          "point": [
+            68.0,
+            76.0
+          ],
+          "rgb": [
+            184,
+            135,
+            85
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-1",
+          "point": [
+            92.0,
+            76.0
+          ],
+          "rgb": [
+            215,
+            166,
+            115
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-1",
+          "point": [
+            116.0,
+            76.0
+          ],
+          "rgb": [
+            185,
+            134,
+            85
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-2",
+          "point": [
+            44.0,
+            52.0
+          ],
+          "rgb": [
+            215,
+            165,
+            116
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-2",
+          "point": [
+            68.0,
+            52.0
+          ],
+          "rgb": [
+            185,
+            135,
+            84
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-2",
+          "point": [
+            92.0,
+            52.0
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-2",
+          "point": [
+            116.0,
+            52.0
+          ],
+          "rgb": [
+            55,
+            105,
+            155
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "frame",
+          "point": [
+            30.0,
+            38.0
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "point": [
+            10.0,
+            10.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_regions": [
+        {
+          "id": "cell-0-0",
+          "rect": [
+            34.0,
+            90.0,
+            20,
+            20
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-0",
+          "rect": [
+            58.0,
+            90.0,
+            20,
+            20
+          ],
+          "rgb": [
+            40,
+            90,
+            140
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-0",
+          "rect": [
+            82.0,
+            90.0,
+            20,
+            20
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-0",
+          "rect": [
+            106.0,
+            90.0,
+            20,
+            20
+          ],
+          "rgb": [
+            70,
+            120,
+            170
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-1",
+          "rect": [
+            34.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            216,
+            165,
+            115
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-1",
+          "rect": [
+            58.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            184,
+            135,
+            85
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-1",
+          "rect": [
+            82.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            215,
+            166,
+            115
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-1",
+          "rect": [
+            106.0,
+            66.0,
+            20,
+            20
+          ],
+          "rgb": [
+            185,
+            134,
+            85
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-0-2",
+          "rect": [
+            34.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            215,
+            165,
+            116
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-1-2",
+          "rect": [
+            58.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            185,
+            135,
+            84
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-2-2",
+          "rect": [
+            82.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            0,
+            255,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "cell-3-2",
+          "rect": [
+            106.0,
+            42.0,
+            20,
+            20
+          ],
+          "rgb": [
+            55,
+            105,
+            155
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "frame",
+          "rect": [
+            29,
+            37,
+            2,
+            2
+          ],
+          "rgb": [
+            255,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "rect": [
+            4,
+            4,
+            12,
+            12
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "scope_limits": [
+        "RGB8 and fully reversed component Decode only",
+        "No interpolation boundary assertion",
+        "Opaque endpoint checkerboard; no soft mask/fractional alpha",
+        "Not persistent document cache or performance testing"
+      ],
+      "association": {
+        "scope": "spec-derived-only",
+        "upstream_id": null,
+        "upstream_entry_validated": false
+      }
+    }
+  ]
+}
