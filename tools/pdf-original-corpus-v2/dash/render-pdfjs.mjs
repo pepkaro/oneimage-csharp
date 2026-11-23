@@ -9,6 +9,7 @@ const canvas=require("@napi-rs/canvas");
 if(require("@napi-rs/canvas/package.json").version!=="1.1.1")throw Error("Canvas version pin mismatch");
 globalThis.DOMMatrix=canvas.DOMMatrix;globalThis.ImageData=canvas.ImageData;globalThis.Path2D=canvas.Path2D;
 const pdfjs=await import(pathToFileURL(path.join(runtimeRoot,"legacy/build/pdf.mjs")));
+if (pdfjs.version !== '6.5.438' || pdfjs.build !== '0a4153349' || require('@napi-rs/canvas/package.json').version !== '1.1.1' || process.version !== 'v24.22.3') throw new Error('Reference PDF.js/build/Canvas/Node pin mismatch');
 if(pdfjs.version!=="6.5.438"||pdfjs.build!=="0a4153349")throw Error("PDF.js version pin mismatch");
 const load=pdfjs.getDocument({data:new Uint8Array(fs.readFileSync(input)),isEvalSupported:false,useSystemFonts:false,enableXfa:false,useWorkerFetch:false,standardFontDataUrl:path.join(runtimeRoot,"standard_fonts")+path.sep,cMapUrl:path.join(runtimeRoot,"cmaps")+path.sep,cMapPacked:true,wasmUrl:path.join(runtimeRoot,"wasm")+path.sep});
 const doc=await load.promise;if(doc.numPages!==1)throw Error("Original fixture page count changed");

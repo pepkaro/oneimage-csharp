@@ -17,6 +17,7 @@ const outputLog = console.log.bind(console);
 console.log = (...items) => { const text = items.map(String).join(' '); diagnostics.push(text); console.error(text); };
 console.warn = console.log;
 const pdfjs = await import(pathToFileURL(path.join(runtimeRoot, 'legacy/build/pdf.mjs')));
+if (pdfjs.version !== '6.5.438' || pdfjs.build !== '0a4153349' || require('@napi-rs/canvas/package.json').version !== '1.1.1' || process.version !== 'v24.22.3') throw new Error('Reference PDF.js/build/Canvas/Node pin mismatch');
 const bytes = fs.readFileSync(input);
 if (bytes.length > 1_048_576) throw new Error('Fixture exceeds the 1 MiB reference bound');
 const loading = pdfjs.getDocument({
