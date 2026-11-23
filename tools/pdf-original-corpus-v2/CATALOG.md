@@ -4,6 +4,38 @@ ISO32000-2:2020 index. Heading verification and full-text limitations are in the
 
 One canonical fixture root; no duplicated fixture copies. Boundaries outside declared masks are unscored. Every upstream mapping is currently empty; no source input was executed.
 
+## 07-Syntax/07.03-Objects/07.03.10-Indirect-objects
+
+### boxes-direct-control
+
+Direct numeric MediaBox and CropBox arrays establish the independently computed visible viewport.
+
+Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.03-Objects/07.03.10-Indirect-objects/boxes-direct-control/original.pdf); [clause evidence](indirectboxes/clause-index.json).
+
+Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.03-Objects/07.03.10-Indirect-objects/boxes-direct-control/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.03-Objects/07.03.10-Indirect-objects/boxes-direct-control/expected-144.png).
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
+### boxes-indirect-arrays
+
+Whole-array indirect references for BOTH MediaBox and CropBox resolve to the same boxes, crop origin and vectors as the direct control.
+
+Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.03-Objects/07.03.10-Indirect-objects/boxes-indirect-arrays/original.pdf); [clause evidence](indirectboxes/clause-index.json).
+
+Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.03-Objects/07.03.10-Indirect-objects/boxes-indirect-arrays/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.03-Objects/07.03.10-Indirect-objects/boxes-indirect-arrays/expected-144.png).
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
+### boxes-indirect-coordinates
+
+All four coordinate elements in EACH MediaBox and CropBox array are indirect numeric objects; resolution preserves both boxes and the visible viewport.
+
+Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.03-Objects/07.03.10-Indirect-objects/boxes-indirect-coordinates/original.pdf); [clause evidence](indirectboxes/clause-index.json).
+
+Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.03-Objects/07.03.10-Indirect-objects/boxes-indirect-coordinates/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.03-Objects/07.03.10-Indirect-objects/boxes-indirect-coordinates/expected-144.png).
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
 ## 07-Syntax/07.04-Filters/07.04.01-General
 
 ### img-filter-equivalence-raw
@@ -159,6 +191,56 @@ Later sibling keeps root dimensions after the nested subtree
 Stage: **pass**; page2,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-siblings/original.pdf); [clause evidence](pageattributes/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-siblings/page-2-mediabox-sibling-root-after/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/mediabox-inheritance-siblings/page-2-mediabox-sibling-root-after/expected-144.png).
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
+### rotate-inherit-root90
+
+Page inherits clockwise90degree root rotation
+
+Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/rotate-inheritance-root/original.pdf); [clause evidence](inheritedrotate/clause-index.json).
+
+Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/rotate-inheritance-root/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/rotate-inheritance-root/expected-144.png).
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
+### rotate-explicit-page0
+
+Explicit local Rotate0 overrides root90
+
+Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/rotate-inheritance-explicit/original.pdf); [clause evidence](inheritedrotate/clause-index.json).
+
+Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/rotate-inheritance-explicit/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/rotate-inheritance-explicit/expected-144.png).
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
+### rotate-sibling-root-before
+
+First root sibling inherits90degree rotation
+
+Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/rotate-inheritance-siblings/original.pdf); [clause evidence](inheritedrotate/clause-index.json).
+
+Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/rotate-inheritance-siblings/page-0-rotate-sibling-root-before/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/rotate-inheritance-siblings/page-0-rotate-sibling-root-before/expected-144.png).
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
+### rotate-nearest-ancestor270
+
+Nested page inherits nearer Pages270degree rotation
+
+Stage: **agreed**; page1,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/rotate-inheritance-siblings/original.pdf); [clause evidence](inheritedrotate/clause-index.json).
+
+Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/rotate-inheritance-siblings/page-1-rotate-nearest-ancestor270/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/rotate-inheritance-siblings/page-1-rotate-nearest-ancestor270/expected-144.png).
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
+### rotate-sibling-root-after
+
+Later root sibling keeps90degree rotation after nested270 subtree
+
+Stage: **agreed**; page2,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/rotate-inheritance-siblings/original.pdf); [clause evidence](inheritedrotate/clause-index.json).
+
+Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/rotate-inheritance-siblings/page-2-rotate-sibling-root-after/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/07-Syntax/07.07-Document-structure/07.07.03-Page-tree/07.07.03.04-Inheritance-of-page-attributes/rotate-inheritance-siblings/page-2-rotate-sibling-root-after/expected-144.png).
 
 Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
 
@@ -564,6 +646,68 @@ Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.
 
 Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
 
+## 08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.02-Stencil-masking
+
+### stencil-default-red
+
+Default Decode marks stored0 bits with current red; stored1 bits leave opaque backdrop unchanged.
+
+Stage: **generated**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.02-Stencil-masking/stencil-default-red/original.pdf); [clause evidence](stencil/clause-index.json).
+
+Expected: withheld: reference disagreement.
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
+### stencil-inverse-red
+
+Reversed Decode marks stored1 bits with current red; stored0 bits leave opaque backdrop unchanged.
+
+Stage: **generated**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.02-Stencil-masking/stencil-inverse-red/original.pdf); [clause evidence](stencil/clause-index.json).
+
+Expected: withheld: reference disagreement.
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
+### stencil-current-color-reuse
+
+One stencil XObject reused twice paints each mark in the current nonstroking colour, independently red then green.
+
+Stage: **generated**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.02-Stencil-masking/stencil-current-color-reuse/original.pdf); [clause evidence](stencil/clause-index.json).
+
+Expected: withheld: reference disagreement.
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
+### stencil-white-default-red
+
+WHITE-backed ordinary stencil default-red; default0 paints/inverse1 paints; reuse tint comes from each draw current color.
+
+Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.02-Stencil-masking/stencil-white-default-red/original.pdf); [clause evidence](stencilwhite/clause-index.json).
+
+Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.02-Stencil-masking/stencil-white-default-red/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.02-Stencil-masking/stencil-white-default-red/expected-144.png).
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
+### stencil-white-inverse-red
+
+WHITE-backed ordinary stencil inverse-red; default0 paints/inverse1 paints; reuse tint comes from each draw current color.
+
+Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.02-Stencil-masking/stencil-white-inverse-red/original.pdf); [clause evidence](stencilwhite/clause-index.json).
+
+Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.02-Stencil-masking/stencil-white-inverse-red/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.02-Stencil-masking/stencil-white-inverse-red/expected-144.png).
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
+### stencil-white-reuse-red-green
+
+WHITE-backed ordinary stencil reuse-red-green; default0 paints/inverse1 paints; reuse tint comes from each draw current color.
+
+Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.02-Stencil-masking/stencil-white-reuse-red-green/original.pdf); [clause evidence](stencilwhite/clause-index.json).
+
+Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.02-Stencil-masking/stencil-white-reuse-red-green/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.02-Stencil-masking/stencil-white-reuse-red-green/expected-144.png).
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
 ## 08-Graphics/08.09-Images/08.09.06-Masked-images/08.09.06.04-Colour-key-masking
 
 ### img-colorkey-decode-opaque
@@ -687,6 +831,48 @@ Tz scales signed TJ displacements and character spacing; Ts shifts painting inde
 Stage: **pass**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/09.03.04-Horizontal-scaling/textscale-tz-tj-rise/original.pdf); [clause evidence](textscale/clause-index.json).
 
 Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/09.03.04-Horizontal-scaling/textscale-tz-tj-rise/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/09.03.04-Horizontal-scaling/textscale-tz-tj-rise/expected-144.png).
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
+## 09-Text/09.03-Text-state-parameters-and-operators/09.03.06-Text-rendering-mode
+
+### text-invisible-advance
+
+Tr3 paints no ink but advances current text before later Tr0 glyphs.
+
+Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/09.03.06-Text-rendering-mode/text-invisible-advance/original.pdf); [clause evidence](invisibletext/clause-index.json).
+
+Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/09.03.06-Text-rendering-mode/text-invisible-advance/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/09.03.06-Text-rendering-mode/text-invisible-advance/expected-144.png).
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
+### text-invisible-spacing-tj
+
+Invisible Tj/TJ honors character/word spacing and signed TJ shifts before visible text.
+
+Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/09.03.06-Text-rendering-mode/text-invisible-spacing-tj/original.pdf); [clause evidence](invisibletext/clause-index.json).
+
+Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/09.03.06-Text-rendering-mode/text-invisible-spacing-tj/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/09.03.06-Text-rendering-mode/text-invisible-spacing-tj/expected-144.png).
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
+### text-invisible-object-state
+
+Tr3 persists across BT/ET while matrices reset; switching to Tr0 uses accumulated second-object advancement.
+
+Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/09.03.06-Text-rendering-mode/text-invisible-object-state/original.pdf); [clause evidence](invisibletext/clause-index.json).
+
+Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/09.03.06-Text-rendering-mode/text-invisible-object-state/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/09.03.06-Text-rendering-mode/text-invisible-object-state/expected-144.png).
+
+Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
+
+### text-invisible-no-clip
+
+Tr3 adds no glyph clipping: subsequent ordinary page graphics remain fully painted.
+
+Stage: **agreed**; page0,72/144DPI, white, annotations off. [Original](../../tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/09.03.06-Text-rendering-mode/text-invisible-no-clip/original.pdf); [clause evidence](invisibletext/clause-index.json).
+
+Expected: [expected-72.png](../../tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/09.03.06-Text-rendering-mode/text-invisible-no-clip/expected-72.png), [expected-144.png](../../tests/testdata/pdf-original-v2/09-Text/09.03-Text-state-parameters-and-operators/09.03.06-Text-rendering-mode/text-invisible-no-clip/expected-144.png).
 
 Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`. Upstream pinned IDs: none; standard-contract-only.
 

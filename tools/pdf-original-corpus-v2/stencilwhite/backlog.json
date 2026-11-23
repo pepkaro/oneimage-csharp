@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "owner": "pdfium_originals",
+  "slice": "ISO-IMAGE-STENCIL-01-WHITE-CONTROLS",
+  "path": "work/stencilwhite",
+  "state": "complete-local-reference-agreed-WHITE-only-awaiting-root-review",
+  "actual": {
+    "unique_pdfs": 3,
+    "case_dpi_views": 6,
+    "reference_runs": 18,
+    "passed": 18,
+    "failed": 0,
+    "skipped": 0,
+    "reference_agreed_white_cases": 3,
+    "white_cases_held": 0,
+    "parent_checkerboard_cases_closed": 0,
+    "actual_engine_invocations": 18,
+    "reruns": 0,
+    "golden_promotions": 0,
+    "product_runs": 0,
+    "remote_writes": 0
+  },
+  "next_unclaimed_slice": {
+    "id": "ISO-IMAGE-EXPLICIT-MASK-01",
+    "state": "proposed-unclaimed-not-started",
+    "scope": "Small ordinary endpoint RGB base image with an external1-bit ImageMask via Mask; matched dimensions and WHITE backdrop, no soft alpha.",
+    "governing_evidence": "Directly inspected 2008 8.9.6.3 Explicit Masking; full2020 algorithm remains pending.",
+    "acceptance_criteria": [
+      "Confirm disjoint ownership before assignment.",
+      "Create original unmasked/default/inverse external-mask controls with original raw bits and RGB endpoints.",
+      "Independently verify stream linkage/raw samples/Decode polarity and freeze2pt-inset regions before three fresh pinned72/144 captures.",
+      "Record actual invocations, hold genuine disagreements, and leave existing checkerboard cases/expectations unchanged."
+    ]
+  }
+}

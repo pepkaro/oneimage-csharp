@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "slice": "ISO-PAGE-ATTRIBUTE-INHERIT-02",
+  "total_engine_render_calls": 30,
+  "retained_capture_paths": 30,
+  "reference_driver_executions": 1,
+  "full_reference_reruns": 0,
+  "partial_reference_reruns": 0,
+  "by_engine": {
+    "pdfium": {
+      "library_render_calls": 10,
+      "subprocess_renders": 0
+    },
+    "mupdf": {
+      "library_render_calls": 10,
+      "subprocess_renders": 0
+    },
+    "pdfjs": {
+      "library_render_calls": 0,
+      "node_subprocess_renders": 10
+    }
+  },
+  "execution_command": "python pdf-corpus-sixth-20261123/work/inheritedrotate/references.py",
+  "evidence": "Single successful executed command from this worker,30completed records in reference-renders.json; later verification reads existing images/PDFs and does not render",
+  "scope": "Own authoring checkpoint only; exclude future root clean replay/product grading",
+  "expected_values_changed_after_captures": false
+}

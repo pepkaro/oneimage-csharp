@@ -1,0 +1,194 @@
+{
+  "passed": 3,
+  "failed": 0,
+  "rows": [
+    {
+      "id": "boxes-direct-control",
+      "fixture_id": "boxes-direct-control",
+      "page": 0,
+      "passed": true,
+      "resolved_boxes": {
+        "/MediaBox": [
+          0,
+          0,
+          220,
+          180
+        ],
+        "/CropBox": [
+          24,
+          18,
+          184,
+          138
+        ]
+      },
+      "raw_structure": {
+        "/MediaBox": {
+          "whole_array_indirect": false,
+          "element_indirect": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "whole_object_number": null,
+          "element_object_numbers": [
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "/CropBox": {
+          "whole_array_indirect": false,
+          "element_indirect": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "whole_object_number": null,
+          "element_object_numbers": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      },
+      "visible_origin": [
+        24,
+        18
+      ],
+      "visible_size": [
+        160,
+        120
+      ]
+    },
+    {
+      "id": "boxes-indirect-arrays",
+      "fixture_id": "boxes-indirect-arrays",
+      "page": 0,
+      "passed": true,
+      "resolved_boxes": {
+        "/MediaBox": [
+          0,
+          0,
+          220,
+          180
+        ],
+        "/CropBox": [
+          24,
+          18,
+          184,
+          138
+        ]
+      },
+      "raw_structure": {
+        "/MediaBox": {
+          "whole_array_indirect": true,
+          "element_indirect": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "whole_object_number": 5,
+          "element_object_numbers": [
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "/CropBox": {
+          "whole_array_indirect": true,
+          "element_indirect": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "whole_object_number": 6,
+          "element_object_numbers": [
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      },
+      "visible_origin": [
+        24,
+        18
+      ],
+      "visible_size": [
+        160,
+        120
+      ]
+    },
+    {
+      "id": "boxes-indirect-coordinates",
+      "fixture_id": "boxes-indirect-coordinates",
+      "page": 0,
+      "passed": true,
+      "resolved_boxes": {
+        "/MediaBox": [
+          0,
+          0,
+          220,
+          180
+        ],
+        "/CropBox": [
+          24,
+          18,
+          184,
+          138
+        ]
+      },
+      "raw_structure": {
+        "/MediaBox": {
+          "whole_array_indirect": false,
+          "element_indirect": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "whole_object_number": null,
+          "element_object_numbers": [
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        "/CropBox": {
+          "whole_array_indirect": false,
+          "element_indirect": [
+            true,
+            true,
+            true,
+            true
+          ],
+          "whole_object_number": null,
+          "element_object_numbers": [
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      },
+      "visible_origin": [
+        24,
+        18
+      ],
+      "visible_size": [
+        160,
+        120
+      ]
+    }
+  ],
+  "independent_parser": "pypdf6.21.4",
+  "claim": "Raw reference shape and independently resolved numeric boxes, not renderer ownership"
+}

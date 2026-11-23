@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "slice": "ISO-IMAGE-STENCIL-01",
+  "subslice": "opaque checkerboard",
+  "fixture_pdf_version": "1.7",
+  "governing_edition": "ISO 32000-1:2008",
+  "governing_document_sha256": "9de0ca9e8570d6209e8bd48a355be8eb6ec376acfc3fc3ae97cd8730351417ff",
+  "primary_2008": {
+    "clause": "8.9.6.2",
+    "title": "Stencil Masking",
+    "pdf_page_1based": 221,
+    "verification": "Full text inspected: noColorSpace,BPC1,default0marks/inverse1marks,currentcolour; no source redistributed"
+  },
+  "primary_2020": {
+    "clause": "8.9.6.2",
+    "title": "Stencil masking",
+    "verification": "Official errata heading verified; full fine algorithm access pending",
+    "url": "https://pdf-issues.pdfa.org/32000-2-2020/clause08.html"
+  },
+  "secondary": [
+    "2008 8.9.3 Sample Representation",
+    "2008 8.9.5.2 Decode Arrays",
+    "2008 8.6.8 Colour Operators"
+  ],
+  "raster_limit": "Exact8bit rounding is an observed acceptance criterion, not an asserted normative ISO byte rule",
+  "upstream_ids": []
+}

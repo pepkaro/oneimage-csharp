@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "sub_slice": "ISO-IMAGE-STENCIL-01-WHITE-CONTROLS",
+  "logical_parent_family": "ISO-IMAGE-STENCIL-01",
+  "background_domain": "Opaque WHITE only",
+  "source_domain": "9x3 ImageMask BPC1, six original row-packed bytes, default/inverse Decode and per-draw current color.",
+  "reference_agreed_white_cases": [
+    "stencil-white-default-red",
+    "stencil-white-inverse-red",
+    "stencil-white-reuse-red-green"
+  ],
+  "parent_checkerboard_cases_closed": 0,
+  "parent_state_context": {
+    "source": "Parent delegation; not rerun by this worker.",
+    "held_checkerboard_cases": 3,
+    "reported_disagreement": "MuPDF painted foreground over black is254 instead255 in some channels.",
+    "parent_expectations_read_or_modified": false,
+    "partial_results_promoted": false
+  },
+  "expected_golden_promotions": 0,
+  "limits": [
+    "All cell/frame/image boundaries unscored.",
+    "No nonwhite-background or general-stencil parity claim.",
+    "No product/global/remote actions."
+  ],
+  "upstream_mappings": []
+}

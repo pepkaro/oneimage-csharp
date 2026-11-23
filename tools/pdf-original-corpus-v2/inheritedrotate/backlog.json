@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "slice": "ISO-PAGE-ATTRIBUTE-INHERIT-02",
+  "owner": "mozilla_originals",
+  "state": "reference-and-structure-complete-awaiting-root-integration",
+  "fixture_ids": [
+    "rotate-inheritance-root",
+    "rotate-inheritance-explicit",
+    "rotate-inheritance-siblings"
+  ],
+  "case_ids": [
+    "rotate-inherit-root90",
+    "rotate-explicit-page0",
+    "rotate-sibling-root-before",
+    "rotate-nearest-ancestor270",
+    "rotate-sibling-root-after"
+  ],
+  "upstream_ids": [],
+  "next_unclaimed": {
+    "slice": "ISO-PAGE-ATTRIBUTE-INHERIT-03",
+    "contract": "Ordinary inherited CropBox with page override, nearest ancestor and sibling isolation",
+    "acceptance": "Valid bounds within explicit MediaBox; original asymmetric vectors; independent visible dimensions/positions; rawtree checks and3pinnedrefs72/144; no malformed/stress cases"
+  }
+}

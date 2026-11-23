@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "owner": "pdfium_originals",
+  "slice": "ISO-TEXT-INVISIBLE-01",
+  "path": "work/invisibletext",
+  "state": "complete-local-reference-qualified-awaiting-root-review",
+  "actual": {
+    "unique_pdfs": 4,
+    "case_dpi_views": 8,
+    "reference_runs": 24,
+    "passed": 24,
+    "failed": 0,
+    "skipped": 0,
+    "qualified_cases": 4,
+    "held_cases": 0,
+    "actual_engine_invocations": 24,
+    "reruns": 0,
+    "product_runs": 0,
+    "remote_writes": 0
+  },
+  "next_unclaimed_slice": {
+    "id": "ISO-TEXT-CTM-01",
+    "state": "proposed-unclaimed-not-started",
+    "scope": "Owned original Type3 font under ordinary outer page CTM scale/rotation/translation, independently distinguished from text matrix order.",
+    "acceptance_criteria": [
+      "Confirm disjoint ownership before assignment.",
+      "Inspect governing matrix composition and available official2020 text-space equation.",
+      "Freeze independent combined glyph matrices and ink/counter interiors before fresh pinned three-reference72/144 captures.",
+      "Record actual invocations, preserve disagreements and avoid native font-weight/extraction/upstream-parity claims."
+    ]
+  }
+}

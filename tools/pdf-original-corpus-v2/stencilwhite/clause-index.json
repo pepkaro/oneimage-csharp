@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "batch": "ISO-IMAGE-STENCIL-01-WHITE-CONTROLS",
+  "logical_parent_family": "ISO-IMAGE-STENCIL-01",
+  "scope": "WHITE-backed stencil cases only; no checkerboard hold closure.",
+  "verified_date": "2026-11-23",
+  "fixture_pdf_version": "1.7",
+  "governing_edition": "ISO 32000-1:2008",
+  "governing_document_sha256": "9de0ca9e8570d6209e8bd48a355be8eb6ec376acfc3fc3ae97cd8730351417ff",
+  "governing_document_redistributed": false,
+  "clauses": {
+    "2008-stencil": {
+      "clause": "8.9.6.2",
+      "heading": "Stencil Masking",
+      "printed_pages": [
+        213,
+        214
+      ],
+      "pdf_pages_one_based": [
+        221,
+        222
+      ],
+      "verification": "Full local text directly inspected.",
+      "scope": "ImageMask omits ColorSpace and uses1-bit samples; default0 paints/current color, inverse1 paints."
+    },
+    "2008-samples": {
+      "clause": "8.9.3",
+      "heading": "Sample Representation",
+      "verification": "Earlier image slice full local text inspected.",
+      "scope": "MSB-first, each row starts on a byte boundary."
+    },
+    "2020-stencil": {
+      "clause": "8.9.6.2",
+      "heading": "Stencil masking",
+      "verification": "Official errata heading directly inspected; full algorithm not exposed.",
+      "url": "https://pdf-issues.pdfa.org/32000-2-2020/clause08.html"
+    }
+  },
+  "cases": [
+    {
+      "fixture_id": "stencil-white-default-red",
+      "primary_2008_clause_ids": [
+        "2008-stencil"
+      ],
+      "secondary_2008_clause_ids": [
+        "2008-samples"
+      ],
+      "verified_2020_clause_ids": [
+        "2020-stencil"
+      ],
+      "upstream_id": null
+    },
+    {
+      "fixture_id": "stencil-white-inverse-red",
+      "primary_2008_clause_ids": [
+        "2008-stencil"
+      ],
+      "secondary_2008_clause_ids": [
+        "2008-samples"
+      ],
+      "verified_2020_clause_ids": [
+        "2020-stencil"
+      ],
+      "upstream_id": null
+    },
+    {
+      "fixture_id": "stencil-white-reuse-red-green",
+      "primary_2008_clause_ids": [
+        "2008-stencil"
+      ],
+      "secondary_2008_clause_ids": [
+        "2008-samples"
+      ],
+      "verified_2020_clause_ids": [
+        "2020-stencil"
+      ],
+      "upstream_id": null
+    }
+  ],
+  "next_proposal_evidence": {
+    "edition": "ISO 32000-1:2008",
+    "clause": "8.9.6.3",
+    "heading": "Explicit Masking",
+    "verification": "Full local text directly inspected.",
+    "scope": "An ordinary base image can reference a stencil through Mask; matched-resolution controls proposed only."
+  },
+  "limitations": [
+    "Full2020 stencil algorithm remains pending.",
+    "No black/colored-background parity or general compositing claim.",
+    "No standards redistribution or form/cart submission."
+  ],
+  "subsystem_tags": [
+    {
+      "repo": "pepkaro/onepdf-csharp",
+      "inspected_head": "2d1928d5ee67bf4526903d3d44ae37792b1f27b8",
+      "path": "src/OnePdf/Images/ImageLoader.cs",
+      "scope": "Previously inspected image semantics navigation; no product execution or defect ownership inferred."
+    },
+    {
+      "repo": "pepkaro/oneimage-csharp",
+      "inspected_head": "eb47d5a0155bdb38f6fc7b08a5fa7279fd004a12",
+      "path": "src/OneImage.Pdf/Render/CanvasDevice.Images.cs",
+      "symbol": "DrawImage",
+      "scope": "Previously inspected stencil current-fill tint application; navigation only."
+    }
+  ]
+}

@@ -4,8 +4,18 @@
   "completion_rule": "Every applicable scoped semanticrule has committed independentlyvalidatedfixture+assertion or explicitreviewedexception; inventory completion is not behavior completion",
   "scope_limit": "Initial manuallyscopedordinaryvisualrules only; fullstandard ruleenumeration incomplete pendingfull2020text and furthermanualqualification; no claim everyapplicablePDFbehaviorislisted",
   "recovery_rule": "ReadthisbacklogandGitHEAD; verifypriorcheckpoint;claimoneunclaimeddisjointslice; neverrerunblockedAOTIPC; checkpointblockedreasonandcontinueindependenteligible work; no newapprovalneededwithin authorizedscope",
-  "current_publication": "Verified draft94 acceptance b05c2197fc6a186699fcff3a94842b0b4c22c2cc; measured fifth-batch evidence follows",
+  "current_publication": "Continuation from draft94 head688d99e57791656b25b4d5a69f431f9adc60af22; sixth batch preproduct acceptance",
   "slices": [
+    {
+      "slice_id": "ISO-PAGE-BOX-INDIRECT-02",
+      "iso_2020_order": "07.03.10",
+      "verified_coarse_title": "Indirect objects",
+      "state": "unclaimed",
+      "owner": null,
+      "case_ids": [],
+      "upstream_ids": [],
+      "acceptance_criteria": "Own direct control versus both whole box arrays and their coordinates indirect; resolve small acyclic object graph, CropBox origin/dimensions and vector placement;3refs72/144; discovery source remains unqualified"
+    },
     {
       "slice_id": "ISO-FILTER-BASE-01",
       "iso_2020_order": "07.04.01",
@@ -45,13 +55,24 @@
       "slice_id": "ISO-PAGE-BOX-INDIRECT-01",
       "iso_2020_order": "07.07.03.03",
       "verified_coarse_title": "Page objects",
-      "state": "unclaimed",
-      "owner": null,
-      "case_ids": [],
+      "state": "reference-scored-awaiting-commit-and-product",
+      "owner": "upstream_match5",
+      "case_ids": [
+        "boxes-direct-control",
+        "boxes-indirect-arrays",
+        "boxes-indirect-coordinates"
+      ],
       "upstream_ids": [],
       "candidate_source_id": "mozilla:issue7872",
       "source_qualification": "Partial intent only; no association/credit. Indirection form, source pages/settings unknown.",
-      "acceptance_criteria": "Original direct control plus whole-array and coordinate-element indirect MediaBox/CropBox controls; independently resolve arrays, visible dimensions/origin and named inset geometry; three pinned refs before product; state tested variants and leave unseen source scene unqualified"
+      "acceptance_criteria": "Original direct control plus whole-array and coordinate-element indirect MediaBox/CropBox controls; independently resolve arrays, visible dimensions/origin and named inset geometry; three pinned refs before product; state tested variants and leave unseen source scene unqualified",
+      "reference_agreed_cases": [
+        "boxes-direct-control",
+        "boxes-indirect-arrays",
+        "boxes-indirect-coordinates"
+      ],
+      "held_cases": [],
+      "unique_pdfs": 3
     },
     {
       "slice_id": "ISO-PAGE-GEOMETRY-01",
@@ -101,11 +122,36 @@
       "slice_id": "ISO-PAGE-ATTRIBUTE-INHERIT-02",
       "iso_2020_order": "07.07.03.04",
       "verified_coarse_title": "Inheritance of page attributes",
+      "state": "reference-scored-awaiting-commit-and-product",
+      "owner": "mozilla_originals",
+      "case_ids": [
+        "rotate-inherit-root90",
+        "rotate-explicit-page0",
+        "rotate-sibling-root-before",
+        "rotate-nearest-ancestor270",
+        "rotate-sibling-root-after"
+      ],
+      "upstream_ids": [],
+      "acceptance_criteria": "Ordinary inherited Rotate with explicit page override and sibling scope; independently compute visible dimensions and transformed endpoint rectangles; verified clauses,72/144DPI and three refs",
+      "reference_agreed_cases": [
+        "rotate-inherit-root90",
+        "rotate-explicit-page0",
+        "rotate-sibling-root-before",
+        "rotate-nearest-ancestor270",
+        "rotate-sibling-root-after"
+      ],
+      "held_cases": [],
+      "unique_pdfs": 3
+    },
+    {
+      "slice_id": "ISO-PAGE-ATTRIBUTE-INHERIT-03",
+      "iso_2020_order": "07.07.03.04",
+      "verified_coarse_title": "Inheritance of page attributes",
       "state": "unclaimed",
       "owner": null,
       "case_ids": [],
       "upstream_ids": [],
-      "acceptance_criteria": "Ordinary inherited Rotate with explicit page override and sibling scope; independently compute visible dimensions and transformed endpoint rectangles; verified clauses,72/144DPI and three refs"
+      "acceptance_criteria": "Valid inherited CropBox inside explicit MediaBox, local override/nearest ancestor/sibling scope; independent viewport/origin and endpoint vectors; rawtree and3refs72/144"
     },
     {
       "slice_id": "ISO-PAGE-RESOURCE-01",
@@ -366,11 +412,39 @@
       "slice_id": "ISO-IMAGE-STENCIL-01",
       "iso_2020_order": "08.09.06.02",
       "verified_coarse_title": "Stencil masking",
+      "state": "reference-scored-awaiting-commit-and-product",
+      "owner": "root",
+      "case_ids": [
+        "stencil-default-red",
+        "stencil-inverse-red",
+        "stencil-current-color-reuse",
+        "stencil-white-default-red",
+        "stencil-white-inverse-red",
+        "stencil-white-reuse-red-green"
+      ],
+      "upstream_ids": [],
+      "acceptance_criteria": "Small valid original1bpc ImageMask grid, default versus reversed Decode, current nonstroking endpoint color and opaque backdrop; independently unpack authored bits/padding and assert paint/leave-background cells; no alpha/interpolation edge claims",
+      "reference_agreed_cases": [
+        "stencil-white-default-red",
+        "stencil-white-inverse-red",
+        "stencil-white-reuse-red-green"
+      ],
+      "held_cases": [
+        "stencil-default-red",
+        "stencil-inverse-red",
+        "stencil-current-color-reuse"
+      ],
+      "unique_pdfs": 6
+    },
+    {
+      "slice_id": "ISO-IMAGE-EXPLICIT-MASK-01",
+      "iso_2020_order": "08.09.06.03",
+      "verified_coarse_title": "Explicit masking; verify2020 heading before assignment",
       "state": "unclaimed",
       "owner": null,
       "case_ids": [],
       "upstream_ids": [],
-      "acceptance_criteria": "Small valid original1bpc ImageMask grid, default versus reversed Decode, current nonstroking endpoint color and opaque backdrop; independently unpack authored bits/padding and assert paint/leave-background cells; no alpha/interpolation edge claims"
+      "acceptance_criteria": "Small valid original endpoint RGB image and separate1bit ImageMask referenced through Mask; independent bits/opaque-white backdrop and exact decoded sample controls; verify polarity/governing clauses,3refs; no softalpha or boundary assertion"
     },
     {
       "slice_id": "ISO-IMAGE-COLORKEY-DECODE-03",
@@ -435,11 +509,24 @@
       "slice_id": "ISO-TEXT-INVISIBLE-01",
       "iso_2020_order": "09.03",
       "verified_coarse_title": "Text state parameters and operators; finer heading must be reverified",
-      "state": "unclaimed",
-      "owner": null,
-      "case_ids": [],
+      "state": "reference-scored-awaiting-commit-and-product",
+      "owner": "pdfium_originals",
+      "case_ids": [
+        "text-invisible-advance",
+        "text-invisible-spacing-tj",
+        "text-invisible-object-state",
+        "text-invisible-no-clip"
+      ],
       "upstream_ids": [],
-      "acceptance_criteria": "Own Type3 font: invisible text creates no ink but still advances text state; later visible glyphs and nontext controls independently located; predeclared RGB interiors/positions; no extraction/weight claim"
+      "acceptance_criteria": "Own Type3 font: invisible text creates no ink but still advances text state; later visible glyphs and nontext controls independently located; predeclared RGB interiors/positions; no extraction/weight claim",
+      "reference_agreed_cases": [
+        "text-invisible-advance",
+        "text-invisible-spacing-tj",
+        "text-invisible-object-state",
+        "text-invisible-no-clip"
+      ],
+      "held_cases": [],
+      "unique_pdfs": 4
     },
     {
       "slice_id": "ISO-TEXT-SCALE-RISE-01",
@@ -512,6 +599,16 @@
       "held_cases": [],
       "unique_pdfs": 4,
       "evidence": "product-batch5-strict-results.json"
+    },
+    {
+      "slice_id": "ISO-TEXT-CTM-01",
+      "iso_2020_order": "09.04.04",
+      "verified_coarse_title": "Text space details; verify exact fine citation before assignment",
+      "state": "unclaimed",
+      "owner": null,
+      "case_ids": [],
+      "upstream_ids": [],
+      "acceptance_criteria": "OwnType3 font under outer page CTM scale/rotation/translation; independently distinguish page CTM from text matrix order, glyph positions and named interiors; parsed matrices+3refs beforegrade"
     },
     {
       "slice_id": "ISO-TRANSPARENCY-01",

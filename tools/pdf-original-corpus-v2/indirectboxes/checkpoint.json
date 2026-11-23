@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "slice_id": "ISO-PAGE-BOX-INDIRECT-01",
+  "owner": "upstream_match5",
+  "state": "reference-agreed-awaiting-root-acceptance-and-product",
+  "unique_pdfs": 3,
+  "page_views": 3,
+  "aggregate_pdf_bytes": 2308,
+  "fixture_ids": [
+    "boxes-direct-control",
+    "boxes-indirect-arrays",
+    "boxes-indirect-coordinates"
+  ],
+  "reference_executed": 18,
+  "reference_passed": 18,
+  "reference_failed": 0,
+  "reference_skipped": 0,
+  "named_sample_checks": 144,
+  "named_sample_passes": 144,
+  "analytic_reference_variants": 18,
+  "region_checks": 144,
+  "region_passes": 144,
+  "analytic_scored_pixels": 127260,
+  "pairwise_comparisons": 18,
+  "pairwise_passes": 18,
+  "pairwise_scored_pixels": 127260,
+  "structural_unique_checks": 3,
+  "structural_passes": 3,
+  "actual_worker_invocations": {
+    "generator": 2,
+    "renderer_subprocesses": 18,
+    "pdfium": 6,
+    "mupdf": 6,
+    "pdfjs": 6,
+    "other_renderer": 0,
+    "product": 0,
+    "region_verifier": 1,
+    "structural_verifier": 3,
+    "structural_pdf_parse_calls": 9,
+    "combined_hash_summary_verifier": 2
+  },
+  "deterministic_regeneration_hash_matches": 3,
+  "accepted_fixture_ids": [
+    "boxes-direct-control",
+    "boxes-indirect-arrays",
+    "boxes-indirect-coordinates"
+  ],
+  "held_fixture_ids": [],
+  "upstream_mapped": 0,
+  "upstream_credited": 0,
+  "upstream_inputs_executed": 0,
+  "upstream_fixture_bytes_read": 0,
+  "product_executed": 0,
+  "selected_goldens": 0,
+  "visual_qa": {
+    "inspected": [
+      "references/boxes-indirect-coordinates-144-pdfium.png",
+      "references/boxes-direct-control-144-mupdf.png"
+    ],
+    "observed": "Expected offsetViewport, blue crop band, red/green markers and intentionally right-clipped yellow; no unexpected visible defect. Only declared interiors are scored."
+  },
+  "promotion_rule": "Root commits original plus agreed selected reference image before product grading",
+  "primary_iso": "ISO32000-2:2020 7.3.10 Indirect objects",
+  "limitations": "See clause-index.json, provenance.json and README.md; issue7872 discovery only"
+}

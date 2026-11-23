@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "slice": "ISO-PAGE-ATTRIBUTE-INHERIT-02",
+  "verified_on": "2026-11-23",
+  "primary": {
+    "standard": "ISO32000-2:2020",
+    "clause": "7.7.3.4 Inheritance of page attributes",
+    "verification": "Exact clause number/title cross-reference verified in public official7.8.3; full inheritance rule wording not reproduced",
+    "url": "https://pdf-issues.pdfa.org/32000-2-2020/clause07.html"
+  },
+  "secondary": [
+    {
+      "clause": "7.7.3.3/Table31 Page objects",
+      "verification": "Heading/table index verified; unchanged Rotate row not reproduced and remains pending"
+    },
+    {
+      "clause": "7.7.3.2/Table30 Page tree nodes",
+      "verification": "Public descendant-count correction verified"
+    }
+  ],
+  "governing_legacy": {
+    "standard": "ISO32000-1:2008",
+    "fixture_version": "1.7",
+    "verified_clauses": [
+      "7.7.3.3/Table30 Rotate: optional/inheritable, clockwise, multiple of90, default0",
+      "7.7.3.4 Inheritance of Page Attributes",
+      "8.3.2.3 User Space"
+    ],
+    "source": "Existing official PDF32000_2008.pdf inspected read-only; no standard bytes included"
+  },
+  "limit": "Full2020 standard not acquired. Fine complete inheritance/Rotate row remains pending, despite verified official heading/cross-reference. PDF1.7 contracts use verified2008 semantics. Independent exact raster values are route acceptance criteria, not ISO quantization requirements.",
+  "resource": "https://pdfa.org/resource/iso-32000-2",
+  "entries": [
+    {
+      "id": "rotate-inherit-root90",
+      "fixture_id": "rotate-inheritance-root",
+      "page": 0,
+      "contract": "Page inherits clockwise90degree root rotation",
+      "upstream_ids": []
+    },
+    {
+      "id": "rotate-explicit-page0",
+      "fixture_id": "rotate-inheritance-explicit",
+      "page": 0,
+      "contract": "Explicit local Rotate0 overrides root90",
+      "upstream_ids": []
+    },
+    {
+      "id": "rotate-sibling-root-before",
+      "fixture_id": "rotate-inheritance-siblings",
+      "page": 0,
+      "contract": "First root sibling inherits90degree rotation",
+      "upstream_ids": []
+    },
+    {
+      "id": "rotate-nearest-ancestor270",
+      "fixture_id": "rotate-inheritance-siblings",
+      "page": 1,
+      "contract": "Nested page inherits nearer Pages270degree rotation",
+      "upstream_ids": []
+    },
+    {
+      "id": "rotate-sibling-root-after",
+      "fixture_id": "rotate-inheritance-siblings",
+      "page": 2,
+      "contract": "Later root sibling keeps90degree rotation after nested270 subtree",
+      "upstream_ids": []
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "batch": "ISO-TEXT-INVISIBLE-01",
+  "verified_date": "2026-11-23",
+  "fixture_pdf_version": "1.7",
+  "governing_edition": "ISO 32000-1:2008",
+  "governing_document_sha256": "9de0ca9e8570d6209e8bd48a355be8eb6ec376acfc3fc3ae97cd8730351417ff",
+  "governing_document_redistributed": false,
+  "clauses": {
+    "2008-mode": {
+      "clause": "9.3.6",
+      "heading": "Text Rendering Mode",
+      "table": "106",
+      "printed_page": 246,
+      "pdf_page_one_based": 254,
+      "verification": "Full local text/Type3 exception/table directly inspected; parent independently confirmed same page.",
+      "scope": "Mode3 suppresses ink; only mode3 affects Type3 fonts. No assertion about Tr7 is made."
+    },
+    "2008-state": {
+      "clause": "9.3.1",
+      "heading": "General",
+      "verification": "previous slice full local text inspected",
+      "scope": "Text state persists across objects."
+    },
+    "2008-show": {
+      "clause": "9.4.3",
+      "heading": "Text-Showing Operators",
+      "verification": "previous slice full local text inspected"
+    },
+    "2008-space": {
+      "clause": "9.4.4",
+      "heading": "Text Space Details",
+      "verification": "previous slice full local text inspected"
+    },
+    "2008-type3": {
+      "clause": "9.6.5",
+      "heading": "Type 3 Fonts",
+      "verification": "prior font slice full local text inspected"
+    },
+    "2020-mode": {
+      "clause": "9.3.6",
+      "heading": "Text rendering mode",
+      "verification": "Official heading and matrix-update correction directly inspected",
+      "url": "https://pdf-issues.pdfa.org/32000-2-2020/clause09.html",
+      "scope": "Matrix translations update for each mode3 glyph as in other modes. The correction also names mode7, which is not exercised."
+    },
+    "2020-type3": {
+      "clause": "9.6.4",
+      "heading": "Type 3 fonts",
+      "verification": "Official errata entries inspected in prior font slice",
+      "url": "https://pdf-issues.pdfa.org/32000-2-2020/clause09.html"
+    }
+  },
+  "cases": [
+    {
+      "fixture_id": "text-invisible-advance",
+      "primary_2008_clause_ids": [
+        "2008-mode"
+      ],
+      "secondary_2008_clause_ids": [
+        "2008-state",
+        "2008-show",
+        "2008-space",
+        "2008-type3"
+      ],
+      "verified_2020_clause_ids": [
+        "2020-mode",
+        "2020-type3"
+      ],
+      "upstream_id": null
+    },
+    {
+      "fixture_id": "text-invisible-spacing-tj",
+      "primary_2008_clause_ids": [
+        "2008-mode"
+      ],
+      "secondary_2008_clause_ids": [
+        "2008-state",
+        "2008-show",
+        "2008-space",
+        "2008-type3"
+      ],
+      "verified_2020_clause_ids": [
+        "2020-mode",
+        "2020-type3"
+      ],
+      "upstream_id": null
+    },
+    {
+      "fixture_id": "text-invisible-object-state",
+      "primary_2008_clause_ids": [
+        "2008-mode"
+      ],
+      "secondary_2008_clause_ids": [
+        "2008-state",
+        "2008-show",
+        "2008-space",
+        "2008-type3"
+      ],
+      "verified_2020_clause_ids": [
+        "2020-mode",
+        "2020-type3"
+      ],
+      "upstream_id": null
+    },
+    {
+      "fixture_id": "text-invisible-no-clip",
+      "primary_2008_clause_ids": [
+        "2008-mode"
+      ],
+      "secondary_2008_clause_ids": [
+        "2008-state",
+        "2008-show",
+        "2008-space",
+        "2008-type3"
+      ],
+      "verified_2020_clause_ids": [
+        "2020-mode",
+        "2020-type3"
+      ],
+      "upstream_id": null
+    }
+  ],
+  "limitations": [
+    "Full2020 rendering-mode table and Type3-exception rows not exposed in the errata; remain pending.",
+    "Tr7 and other non-3 modes are outside all clipping assertions.",
+    "No standard download, cart/form submission or redistribution."
+  ],
+  "subsystem_tags": [
+    {
+      "repo": "pepkaro/onepdf-csharp",
+      "inspected_head": "2d1928d5ee67bf4526903d3d44ae37792b1f27b8",
+      "path": "src/OnePdf/Content/ContentInterpreter.Text.cs",
+      "symbols": [
+        "TextRender",
+        "ShowString",
+        "ShowArray"
+      ],
+      "scope": "Previously inspected rendering-mode state and text advancement; navigation only, no defect ownership."
+    },
+    {
+      "repo": "pepkaro/onepdf-csharp",
+      "inspected_head": "2d1928d5ee67bf4526903d3d44ae37792b1f27b8",
+      "path": "src/OnePdf/Content/ContentInterpreter.Type3.cs",
+      "symbol": "ShowType3Glyphs",
+      "scope": "Previously inspected original-glyph procedure bridge; no product execution."
+    }
+  ]
+}

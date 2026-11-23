@@ -1,0 +1,3142 @@
+{
+  "schema_version": 1,
+  "batch": "ISO-TEXT-INVISIBLE-01",
+  "fixture_count": 4,
+  "scope": "Tr3/Tr0 only; no Tr7 or clipping-mode parity claim.",
+  "cases": [
+    {
+      "id": "text-invisible-advance",
+      "fixture_id": "text-invisible-advance",
+      "file": "inputs/text-invisible-advance.pdf",
+      "license": "MIT",
+      "contract": "Tr3 paints no ink but advances current text before later Tr0 glyphs.",
+      "layout_math": [
+        "Invisible AB advances24+20 points; visible BA begins at x74,94.",
+        "Line matrix stays(30,90) through both strings."
+      ],
+      "spec": "ISO 32000-1:2008",
+      "spec_clauses": [
+        "9.3.6 Text Rendering Mode, Table 106, Type3 mode3 exception",
+        "9.3.1 Text-state retention",
+        "9.4.3 Text-Showing Operators",
+        "9.4.4 Text Space Details",
+        "9.6.5 Type 3 Fonts"
+      ],
+      "route": "page BT/ET original owned Type3 procedures, Tr3/Tr0 only; independent advancement/spacing/state/nontext controls",
+      "width": 240,
+      "height": 180,
+      "page": 0,
+      "page_count": 1,
+      "dpis": [
+        72,
+        144
+      ],
+      "rotation": 0,
+      "annotations": "none",
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "sha256": "9b7739e6c74e1916a24b3e599e2aa862b177351887aaf01abb79368fa6701a3f",
+      "sha": "9b7739e6c74e1916a24b3e599e2aa862b177351887aaf01abb79368fa6701a3f",
+      "font": {
+        "kind": "Type3",
+        "original_design_reused": true,
+        "external_font_bytes": 0,
+        "size": 40,
+        "font_matrix": [
+          0.001,
+          0,
+          0,
+          0.001,
+          0,
+          0
+        ],
+        "glyph_stream_sha256": {
+          "A": "4b73f4c8379a88f4ca7a2c9d79c08e29f74ad580115b3d9bf53c8f01b7938392",
+          "B": "d6a2fb8e0102dbfe8cd862334fc05442bfb45d1f63c17fcbd33eff4341927e48",
+          "space": "ab7650175034cf35fac613c21f726a2d4bf45ce5c3cc557c8623936875018536"
+        }
+      },
+      "expected_glyphs": [
+        {
+          "glyph": "A",
+          "text_matrix": [
+            1,
+            0,
+            0,
+            1,
+            30,
+            90
+          ],
+          "line_matrix": [
+            1,
+            0,
+            0,
+            1,
+            30,
+            90
+          ],
+          "glyph_matrix": [
+            1,
+            0,
+            0,
+            1,
+            30,
+            90
+          ],
+          "horizontal_scale": 1,
+          "text_rise": 0,
+          "leading": 45,
+          "character_spacing": 0,
+          "word_spacing": 0,
+          "render_mode": 3
+        },
+        {
+          "glyph": "B",
+          "text_matrix": [
+            1,
+            0,
+            0,
+            1,
+            54,
+            90
+          ],
+          "line_matrix": [
+            1,
+            0,
+            0,
+            1,
+            30,
+            90
+          ],
+          "glyph_matrix": [
+            1,
+            0,
+            0,
+            1,
+            54,
+            90
+          ],
+          "horizontal_scale": 1,
+          "text_rise": 0,
+          "leading": 45,
+          "character_spacing": 0,
+          "word_spacing": 0,
+          "render_mode": 3
+        },
+        {
+          "glyph": "B",
+          "text_matrix": [
+            1,
+            0,
+            0,
+            1,
+            74,
+            90
+          ],
+          "line_matrix": [
+            1,
+            0,
+            0,
+            1,
+            30,
+            90
+          ],
+          "glyph_matrix": [
+            1,
+            0,
+            0,
+            1,
+            74,
+            90
+          ],
+          "horizontal_scale": 1,
+          "text_rise": 0,
+          "leading": 45,
+          "character_spacing": 0,
+          "word_spacing": 0,
+          "render_mode": 0
+        },
+        {
+          "glyph": "A",
+          "text_matrix": [
+            1,
+            0,
+            0,
+            1,
+            94,
+            90
+          ],
+          "line_matrix": [
+            1,
+            0,
+            0,
+            1,
+            30,
+            90
+          ],
+          "glyph_matrix": [
+            1,
+            0,
+            0,
+            1,
+            94,
+            90
+          ],
+          "horizontal_scale": 1,
+          "text_rise": 0,
+          "leading": 45,
+          "character_spacing": 0,
+          "word_spacing": 0,
+          "render_mode": 0
+        }
+      ],
+      "expected_samples": [
+        {
+          "id": "glyph-0-A-ink-0-Tr3",
+          "point": [
+            32.4,
+            101.6
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-0-A-ink-1-Tr3",
+          "point": [
+            51.6,
+            101.6
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-0-A-ink-2-Tr3",
+          "point": [
+            42.0,
+            115.6
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-0-A-counter-0-Tr3",
+          "point": [
+            42.0,
+            101.6
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-0-Tr3",
+          "point": [
+            56.4,
+            104.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-1-Tr3",
+          "point": [
+            66.0,
+            92.4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-2-Tr3",
+          "point": [
+            66.0,
+            104.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-3-Tr3",
+          "point": [
+            66.0,
+            115.6
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-counter-0-Tr3",
+          "point": [
+            66.0,
+            98.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-counter-1-Tr3",
+          "point": [
+            66.0,
+            109.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-B-ink-0-Tr0",
+          "point": [
+            76.4,
+            104.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-B-ink-1-Tr0",
+          "point": [
+            86.0,
+            92.4
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-B-ink-2-Tr0",
+          "point": [
+            86.0,
+            104.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-B-ink-3-Tr0",
+          "point": [
+            86.0,
+            115.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-B-counter-0-Tr0",
+          "point": [
+            86.0,
+            98.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-B-counter-1-Tr0",
+          "point": [
+            86.0,
+            109.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-A-ink-0-Tr0",
+          "point": [
+            96.4,
+            101.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-A-ink-1-Tr0",
+          "point": [
+            115.6,
+            101.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-A-ink-2-Tr0",
+          "point": [
+            106.0,
+            115.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-A-counter-0-Tr0",
+          "point": [
+            106.0,
+            101.6
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "point": [
+            12.0,
+            12.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_regions": [
+        {
+          "id": "glyph-0-A-ink-0-Tr3",
+          "rect": [
+            31.0,
+            91.0,
+            2.8,
+            21.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-0-A-ink-1-Tr3",
+          "rect": [
+            50.2,
+            91.0,
+            2.8,
+            21.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-0-A-ink-2-Tr3",
+          "rect": [
+            31.0,
+            114.2,
+            22.0,
+            2.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-0-A-counter-0-Tr3",
+          "rect": [
+            35.8,
+            91.0,
+            12.4,
+            21.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-0-Tr3",
+          "rect": [
+            55.0,
+            91.0,
+            2.8,
+            26.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-1-Tr3",
+          "rect": [
+            59.8,
+            91.0,
+            12.4,
+            2.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-2-Tr3",
+          "rect": [
+            59.8,
+            102.6,
+            12.4,
+            2.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-3-Tr3",
+          "rect": [
+            59.8,
+            114.2,
+            12.4,
+            2.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-counter-0-Tr3",
+          "rect": [
+            59.8,
+            95.8,
+            12.4,
+            4.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-counter-1-Tr3",
+          "rect": [
+            59.8,
+            107.4,
+            12.4,
+            4.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-B-ink-0-Tr0",
+          "rect": [
+            75.0,
+            91.0,
+            2.8,
+            26.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-B-ink-1-Tr0",
+          "rect": [
+            79.8,
+            91.0,
+            12.4,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-B-ink-2-Tr0",
+          "rect": [
+            79.8,
+            102.6,
+            12.4,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-B-ink-3-Tr0",
+          "rect": [
+            79.8,
+            114.2,
+            12.4,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-B-counter-0-Tr0",
+          "rect": [
+            79.8,
+            95.8,
+            12.4,
+            4.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-B-counter-1-Tr0",
+          "rect": [
+            79.8,
+            107.4,
+            12.4,
+            4.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-A-ink-0-Tr0",
+          "rect": [
+            95.0,
+            91.0,
+            2.8,
+            21.2
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-A-ink-1-Tr0",
+          "rect": [
+            114.2,
+            91.0,
+            2.8,
+            21.2
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-A-ink-2-Tr0",
+          "rect": [
+            95.0,
+            114.2,
+            22.0,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-A-counter-0-Tr0",
+          "rect": [
+            99.8,
+            91.0,
+            12.4,
+            21.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "rect": [
+            4,
+            4,
+            16,
+            16
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "region_rule": "Original glyph ink/counter rectangles inset1point; invisible would-be ink is white. Later-paint case scores separate analytic rectangle interiors. All boundaries unscored.",
+      "association": {
+        "scope": "standard-contract-only",
+        "upstream_id": null,
+        "upstream_entry_validated": false,
+        "reason": "No exact upstream invisible-text scene assertion established."
+      }
+    },
+    {
+      "id": "text-invisible-spacing-tj",
+      "fixture_id": "text-invisible-spacing-tj",
+      "file": "inputs/text-invisible-spacing-tj.pdf",
+      "license": "MIT",
+      "contract": "Invisible Tj/TJ honors character/word spacing and signed TJ shifts before visible text.",
+      "layout_math": [
+        "A plus space advances27+20 to77; TJ100 subtracts4 to place invisible B at73.",
+        "B advances23, TJ-250 adds10: invisible A at106; its27-point advance places visible B at133.",
+        "A separate visible control is explicitly positioned at x133,y60."
+      ],
+      "spec": "ISO 32000-1:2008",
+      "spec_clauses": [
+        "9.3.6 Text Rendering Mode, Table 106, Type3 mode3 exception",
+        "9.3.1 Text-state retention",
+        "9.4.3 Text-Showing Operators",
+        "9.4.4 Text Space Details",
+        "9.6.5 Type 3 Fonts"
+      ],
+      "route": "page BT/ET original owned Type3 procedures, Tr3/Tr0 only; independent advancement/spacing/state/nontext controls",
+      "width": 240,
+      "height": 180,
+      "page": 0,
+      "page_count": 1,
+      "dpis": [
+        72,
+        144
+      ],
+      "rotation": 0,
+      "annotations": "none",
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "sha256": "581ddaeb9752404ccc1db8b7aff789b147d1851cdddba63ef3dca9b8417f74fa",
+      "sha": "581ddaeb9752404ccc1db8b7aff789b147d1851cdddba63ef3dca9b8417f74fa",
+      "font": {
+        "kind": "Type3",
+        "original_design_reused": true,
+        "external_font_bytes": 0,
+        "size": 40,
+        "font_matrix": [
+          0.001,
+          0,
+          0,
+          0.001,
+          0,
+          0
+        ],
+        "glyph_stream_sha256": {
+          "A": "4b73f4c8379a88f4ca7a2c9d79c08e29f74ad580115b3d9bf53c8f01b7938392",
+          "B": "d6a2fb8e0102dbfe8cd862334fc05442bfb45d1f63c17fcbd33eff4341927e48",
+          "space": "ab7650175034cf35fac613c21f726a2d4bf45ce5c3cc557c8623936875018536"
+        }
+      },
+      "expected_glyphs": [
+        {
+          "glyph": "A",
+          "text_matrix": [
+            1,
+            0,
+            0,
+            1,
+            30,
+            130
+          ],
+          "line_matrix": [
+            1,
+            0,
+            0,
+            1,
+            30,
+            130
+          ],
+          "glyph_matrix": [
+            1,
+            0,
+            0,
+            1,
+            30,
+            130
+          ],
+          "horizontal_scale": 1,
+          "text_rise": 0,
+          "leading": 45,
+          "character_spacing": 3,
+          "word_spacing": 7,
+          "render_mode": 3
+        },
+        {
+          "glyph": "B",
+          "text_matrix": [
+            1,
+            0,
+            0,
+            1,
+            73,
+            130
+          ],
+          "line_matrix": [
+            1,
+            0,
+            0,
+            1,
+            30,
+            130
+          ],
+          "glyph_matrix": [
+            1,
+            0,
+            0,
+            1,
+            73,
+            130
+          ],
+          "horizontal_scale": 1,
+          "text_rise": 0,
+          "leading": 45,
+          "character_spacing": 3,
+          "word_spacing": 7,
+          "render_mode": 3
+        },
+        {
+          "glyph": "A",
+          "text_matrix": [
+            1,
+            0,
+            0,
+            1,
+            106,
+            130
+          ],
+          "line_matrix": [
+            1,
+            0,
+            0,
+            1,
+            30,
+            130
+          ],
+          "glyph_matrix": [
+            1,
+            0,
+            0,
+            1,
+            106,
+            130
+          ],
+          "horizontal_scale": 1,
+          "text_rise": 0,
+          "leading": 45,
+          "character_spacing": 3,
+          "word_spacing": 7,
+          "render_mode": 3
+        },
+        {
+          "glyph": "B",
+          "text_matrix": [
+            1,
+            0,
+            0,
+            1,
+            133,
+            130
+          ],
+          "line_matrix": [
+            1,
+            0,
+            0,
+            1,
+            30,
+            130
+          ],
+          "glyph_matrix": [
+            1,
+            0,
+            0,
+            1,
+            133,
+            130
+          ],
+          "horizontal_scale": 1,
+          "text_rise": 0,
+          "leading": 45,
+          "character_spacing": 3,
+          "word_spacing": 7,
+          "render_mode": 0
+        },
+        {
+          "glyph": "B",
+          "text_matrix": [
+            1,
+            0,
+            0,
+            1,
+            133,
+            60
+          ],
+          "line_matrix": [
+            1,
+            0,
+            0,
+            1,
+            133,
+            60
+          ],
+          "glyph_matrix": [
+            1,
+            0,
+            0,
+            1,
+            133,
+            60
+          ],
+          "horizontal_scale": 1,
+          "text_rise": 0,
+          "leading": 45,
+          "character_spacing": 3,
+          "word_spacing": 7,
+          "render_mode": 0
+        }
+      ],
+      "expected_samples": [
+        {
+          "id": "glyph-0-A-ink-0-Tr3",
+          "point": [
+            32.4,
+            141.6
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-0-A-ink-1-Tr3",
+          "point": [
+            51.6,
+            141.6
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-0-A-ink-2-Tr3",
+          "point": [
+            42.0,
+            155.6
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-0-A-counter-0-Tr3",
+          "point": [
+            42.0,
+            141.6
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-0-Tr3",
+          "point": [
+            75.4,
+            144.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-1-Tr3",
+          "point": [
+            85.0,
+            132.4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-2-Tr3",
+          "point": [
+            85.0,
+            144.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-3-Tr3",
+          "point": [
+            85.0,
+            155.6
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-counter-0-Tr3",
+          "point": [
+            85.0,
+            138.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-counter-1-Tr3",
+          "point": [
+            85.0,
+            149.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-A-ink-0-Tr3",
+          "point": [
+            108.4,
+            141.6
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-A-ink-1-Tr3",
+          "point": [
+            127.6,
+            141.6
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-A-ink-2-Tr3",
+          "point": [
+            118.0,
+            155.6
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-A-counter-0-Tr3",
+          "point": [
+            118.0,
+            141.6
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-ink-0-Tr0",
+          "point": [
+            135.4,
+            144.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-ink-1-Tr0",
+          "point": [
+            145.0,
+            132.4
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-ink-2-Tr0",
+          "point": [
+            145.0,
+            144.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-ink-3-Tr0",
+          "point": [
+            145.0,
+            155.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-counter-0-Tr0",
+          "point": [
+            145.0,
+            138.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-counter-1-Tr0",
+          "point": [
+            145.0,
+            149.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-4-B-ink-0-Tr0",
+          "point": [
+            135.4,
+            74.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-4-B-ink-1-Tr0",
+          "point": [
+            145.0,
+            62.4
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-4-B-ink-2-Tr0",
+          "point": [
+            145.0,
+            74.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-4-B-ink-3-Tr0",
+          "point": [
+            145.0,
+            85.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-4-B-counter-0-Tr0",
+          "point": [
+            145.0,
+            68.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-4-B-counter-1-Tr0",
+          "point": [
+            145.0,
+            79.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "point": [
+            12.0,
+            12.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_regions": [
+        {
+          "id": "glyph-0-A-ink-0-Tr3",
+          "rect": [
+            31.0,
+            131.0,
+            2.8,
+            21.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-0-A-ink-1-Tr3",
+          "rect": [
+            50.2,
+            131.0,
+            2.8,
+            21.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-0-A-ink-2-Tr3",
+          "rect": [
+            31.0,
+            154.2,
+            22.0,
+            2.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-0-A-counter-0-Tr3",
+          "rect": [
+            35.8,
+            131.0,
+            12.4,
+            21.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-0-Tr3",
+          "rect": [
+            74.0,
+            131.0,
+            2.8,
+            26.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-1-Tr3",
+          "rect": [
+            78.8,
+            131.0,
+            12.4,
+            2.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-2-Tr3",
+          "rect": [
+            78.8,
+            142.6,
+            12.4,
+            2.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-3-Tr3",
+          "rect": [
+            78.8,
+            154.2,
+            12.4,
+            2.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-counter-0-Tr3",
+          "rect": [
+            78.8,
+            135.8,
+            12.4,
+            4.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-counter-1-Tr3",
+          "rect": [
+            78.8,
+            147.4,
+            12.4,
+            4.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-A-ink-0-Tr3",
+          "rect": [
+            107.0,
+            131.0,
+            2.8,
+            21.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-A-ink-1-Tr3",
+          "rect": [
+            126.2,
+            131.0,
+            2.8,
+            21.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-A-ink-2-Tr3",
+          "rect": [
+            107.0,
+            154.2,
+            22.0,
+            2.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-A-counter-0-Tr3",
+          "rect": [
+            111.8,
+            131.0,
+            12.4,
+            21.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-ink-0-Tr0",
+          "rect": [
+            134.0,
+            131.0,
+            2.8,
+            26.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-ink-1-Tr0",
+          "rect": [
+            138.8,
+            131.0,
+            12.4,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-ink-2-Tr0",
+          "rect": [
+            138.8,
+            142.6,
+            12.4,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-ink-3-Tr0",
+          "rect": [
+            138.8,
+            154.2,
+            12.4,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-counter-0-Tr0",
+          "rect": [
+            138.8,
+            135.8,
+            12.4,
+            4.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-B-counter-1-Tr0",
+          "rect": [
+            138.8,
+            147.4,
+            12.4,
+            4.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-4-B-ink-0-Tr0",
+          "rect": [
+            134.0,
+            61.0,
+            2.8,
+            26.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-4-B-ink-1-Tr0",
+          "rect": [
+            138.8,
+            61.0,
+            12.4,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-4-B-ink-2-Tr0",
+          "rect": [
+            138.8,
+            72.6,
+            12.4,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-4-B-ink-3-Tr0",
+          "rect": [
+            138.8,
+            84.2,
+            12.4,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-4-B-counter-0-Tr0",
+          "rect": [
+            138.8,
+            65.8,
+            12.4,
+            4.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-4-B-counter-1-Tr0",
+          "rect": [
+            138.8,
+            77.4,
+            12.4,
+            4.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "rect": [
+            4,
+            4,
+            16,
+            16
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "region_rule": "Original glyph ink/counter rectangles inset1point; invisible would-be ink is white. Later-paint case scores separate analytic rectangle interiors. All boundaries unscored.",
+      "association": {
+        "scope": "standard-contract-only",
+        "upstream_id": null,
+        "upstream_entry_validated": false,
+        "reason": "No exact upstream invisible-text scene assertion established."
+      }
+    },
+    {
+      "id": "text-invisible-object-state",
+      "fixture_id": "text-invisible-object-state",
+      "file": "inputs/text-invisible-object-state.pdf",
+      "license": "MIT",
+      "contract": "Tr3 persists across BT/ET while matrices reset; switching to Tr0 uses accumulated second-object advancement.",
+      "layout_math": [
+        "Second BT resets matrices to identity; Td90,80 positions invisible BA there while Tr3 persists.",
+        "Invisible BA advances20+24, so visible AB starts at x134,158."
+      ],
+      "spec": "ISO 32000-1:2008",
+      "spec_clauses": [
+        "9.3.6 Text Rendering Mode, Table 106, Type3 mode3 exception",
+        "9.3.1 Text-state retention",
+        "9.4.3 Text-Showing Operators",
+        "9.4.4 Text Space Details",
+        "9.6.5 Type 3 Fonts"
+      ],
+      "route": "page BT/ET original owned Type3 procedures, Tr3/Tr0 only; independent advancement/spacing/state/nontext controls",
+      "width": 240,
+      "height": 180,
+      "page": 0,
+      "page_count": 1,
+      "dpis": [
+        72,
+        144
+      ],
+      "rotation": 0,
+      "annotations": "none",
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "sha256": "afb67d31e3c0b6e67689485b6f81dd639baeec2e58dc321b10137b8e594db5cf",
+      "sha": "afb67d31e3c0b6e67689485b6f81dd639baeec2e58dc321b10137b8e594db5cf",
+      "font": {
+        "kind": "Type3",
+        "original_design_reused": true,
+        "external_font_bytes": 0,
+        "size": 40,
+        "font_matrix": [
+          0.001,
+          0,
+          0,
+          0.001,
+          0,
+          0
+        ],
+        "glyph_stream_sha256": {
+          "A": "4b73f4c8379a88f4ca7a2c9d79c08e29f74ad580115b3d9bf53c8f01b7938392",
+          "B": "d6a2fb8e0102dbfe8cd862334fc05442bfb45d1f63c17fcbd33eff4341927e48",
+          "space": "ab7650175034cf35fac613c21f726a2d4bf45ce5c3cc557c8623936875018536"
+        }
+      },
+      "expected_glyphs": [
+        {
+          "glyph": "A",
+          "text_matrix": [
+            1,
+            0,
+            0,
+            1,
+            30,
+            130
+          ],
+          "line_matrix": [
+            1,
+            0,
+            0,
+            1,
+            30,
+            130
+          ],
+          "glyph_matrix": [
+            1,
+            0,
+            0,
+            1,
+            30,
+            130
+          ],
+          "horizontal_scale": 1,
+          "text_rise": 0,
+          "leading": 45,
+          "character_spacing": 0,
+          "word_spacing": 0,
+          "render_mode": 3
+        },
+        {
+          "glyph": "B",
+          "text_matrix": [
+            1,
+            0,
+            0,
+            1,
+            54,
+            130
+          ],
+          "line_matrix": [
+            1,
+            0,
+            0,
+            1,
+            30,
+            130
+          ],
+          "glyph_matrix": [
+            1,
+            0,
+            0,
+            1,
+            54,
+            130
+          ],
+          "horizontal_scale": 1,
+          "text_rise": 0,
+          "leading": 45,
+          "character_spacing": 0,
+          "word_spacing": 0,
+          "render_mode": 3
+        },
+        {
+          "glyph": "B",
+          "text_matrix": [
+            1,
+            0,
+            0,
+            1,
+            90,
+            80
+          ],
+          "line_matrix": [
+            1,
+            0,
+            0,
+            1,
+            90,
+            80
+          ],
+          "glyph_matrix": [
+            1,
+            0,
+            0,
+            1,
+            90,
+            80
+          ],
+          "horizontal_scale": 1,
+          "text_rise": 0,
+          "leading": 45,
+          "character_spacing": 0,
+          "word_spacing": 0,
+          "render_mode": 3
+        },
+        {
+          "glyph": "A",
+          "text_matrix": [
+            1,
+            0,
+            0,
+            1,
+            110,
+            80
+          ],
+          "line_matrix": [
+            1,
+            0,
+            0,
+            1,
+            90,
+            80
+          ],
+          "glyph_matrix": [
+            1,
+            0,
+            0,
+            1,
+            110,
+            80
+          ],
+          "horizontal_scale": 1,
+          "text_rise": 0,
+          "leading": 45,
+          "character_spacing": 0,
+          "word_spacing": 0,
+          "render_mode": 3
+        },
+        {
+          "glyph": "A",
+          "text_matrix": [
+            1,
+            0,
+            0,
+            1,
+            134,
+            80
+          ],
+          "line_matrix": [
+            1,
+            0,
+            0,
+            1,
+            90,
+            80
+          ],
+          "glyph_matrix": [
+            1,
+            0,
+            0,
+            1,
+            134,
+            80
+          ],
+          "horizontal_scale": 1,
+          "text_rise": 0,
+          "leading": 45,
+          "character_spacing": 0,
+          "word_spacing": 0,
+          "render_mode": 0
+        },
+        {
+          "glyph": "B",
+          "text_matrix": [
+            1,
+            0,
+            0,
+            1,
+            158,
+            80
+          ],
+          "line_matrix": [
+            1,
+            0,
+            0,
+            1,
+            90,
+            80
+          ],
+          "glyph_matrix": [
+            1,
+            0,
+            0,
+            1,
+            158,
+            80
+          ],
+          "horizontal_scale": 1,
+          "text_rise": 0,
+          "leading": 45,
+          "character_spacing": 0,
+          "word_spacing": 0,
+          "render_mode": 0
+        }
+      ],
+      "expected_samples": [
+        {
+          "id": "glyph-0-A-ink-0-Tr3",
+          "point": [
+            32.4,
+            141.6
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-0-A-ink-1-Tr3",
+          "point": [
+            51.6,
+            141.6
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-0-A-ink-2-Tr3",
+          "point": [
+            42.0,
+            155.6
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-0-A-counter-0-Tr3",
+          "point": [
+            42.0,
+            141.6
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-0-Tr3",
+          "point": [
+            56.4,
+            144.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-1-Tr3",
+          "point": [
+            66.0,
+            132.4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-2-Tr3",
+          "point": [
+            66.0,
+            144.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-3-Tr3",
+          "point": [
+            66.0,
+            155.6
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-counter-0-Tr3",
+          "point": [
+            66.0,
+            138.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-counter-1-Tr3",
+          "point": [
+            66.0,
+            149.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-B-ink-0-Tr3",
+          "point": [
+            92.4,
+            94.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-B-ink-1-Tr3",
+          "point": [
+            102.0,
+            82.4
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-B-ink-2-Tr3",
+          "point": [
+            102.0,
+            94.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-B-ink-3-Tr3",
+          "point": [
+            102.0,
+            105.6
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-B-counter-0-Tr3",
+          "point": [
+            102.0,
+            88.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-B-counter-1-Tr3",
+          "point": [
+            102.0,
+            99.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-A-ink-0-Tr3",
+          "point": [
+            112.4,
+            91.6
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-A-ink-1-Tr3",
+          "point": [
+            131.6,
+            91.6
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-A-ink-2-Tr3",
+          "point": [
+            122.0,
+            105.6
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-A-counter-0-Tr3",
+          "point": [
+            122.0,
+            91.6
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-4-A-ink-0-Tr0",
+          "point": [
+            136.4,
+            91.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-4-A-ink-1-Tr0",
+          "point": [
+            155.6,
+            91.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-4-A-ink-2-Tr0",
+          "point": [
+            146.0,
+            105.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-4-A-counter-0-Tr0",
+          "point": [
+            146.0,
+            91.6
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-5-B-ink-0-Tr0",
+          "point": [
+            160.4,
+            94.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-5-B-ink-1-Tr0",
+          "point": [
+            170.0,
+            82.4
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-5-B-ink-2-Tr0",
+          "point": [
+            170.0,
+            94.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-5-B-ink-3-Tr0",
+          "point": [
+            170.0,
+            105.6
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-5-B-counter-0-Tr0",
+          "point": [
+            170.0,
+            88.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-5-B-counter-1-Tr0",
+          "point": [
+            170.0,
+            99.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "point": [
+            12.0,
+            12.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_regions": [
+        {
+          "id": "glyph-0-A-ink-0-Tr3",
+          "rect": [
+            31.0,
+            131.0,
+            2.8,
+            21.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-0-A-ink-1-Tr3",
+          "rect": [
+            50.2,
+            131.0,
+            2.8,
+            21.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-0-A-ink-2-Tr3",
+          "rect": [
+            31.0,
+            154.2,
+            22.0,
+            2.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-0-A-counter-0-Tr3",
+          "rect": [
+            35.8,
+            131.0,
+            12.4,
+            21.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-0-Tr3",
+          "rect": [
+            55.0,
+            131.0,
+            2.8,
+            26.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-1-Tr3",
+          "rect": [
+            59.8,
+            131.0,
+            12.4,
+            2.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-2-Tr3",
+          "rect": [
+            59.8,
+            142.6,
+            12.4,
+            2.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-ink-3-Tr3",
+          "rect": [
+            59.8,
+            154.2,
+            12.4,
+            2.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-counter-0-Tr3",
+          "rect": [
+            59.8,
+            135.8,
+            12.4,
+            4.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-1-B-counter-1-Tr3",
+          "rect": [
+            59.8,
+            147.4,
+            12.4,
+            4.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-B-ink-0-Tr3",
+          "rect": [
+            91.0,
+            81.0,
+            2.8,
+            26.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-B-ink-1-Tr3",
+          "rect": [
+            95.8,
+            81.0,
+            12.4,
+            2.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-B-ink-2-Tr3",
+          "rect": [
+            95.8,
+            92.6,
+            12.4,
+            2.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-B-ink-3-Tr3",
+          "rect": [
+            95.8,
+            104.2,
+            12.4,
+            2.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-B-counter-0-Tr3",
+          "rect": [
+            95.8,
+            85.8,
+            12.4,
+            4.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-2-B-counter-1-Tr3",
+          "rect": [
+            95.8,
+            97.4,
+            12.4,
+            4.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-A-ink-0-Tr3",
+          "rect": [
+            111.0,
+            81.0,
+            2.8,
+            21.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-A-ink-1-Tr3",
+          "rect": [
+            130.2,
+            81.0,
+            2.8,
+            21.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-A-ink-2-Tr3",
+          "rect": [
+            111.0,
+            104.2,
+            22.0,
+            2.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-3-A-counter-0-Tr3",
+          "rect": [
+            115.8,
+            81.0,
+            12.4,
+            21.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-4-A-ink-0-Tr0",
+          "rect": [
+            135.0,
+            81.0,
+            2.8,
+            21.2
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-4-A-ink-1-Tr0",
+          "rect": [
+            154.2,
+            81.0,
+            2.8,
+            21.2
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-4-A-ink-2-Tr0",
+          "rect": [
+            135.0,
+            104.2,
+            22.0,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-4-A-counter-0-Tr0",
+          "rect": [
+            139.8,
+            81.0,
+            12.4,
+            21.2
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-5-B-ink-0-Tr0",
+          "rect": [
+            159.0,
+            81.0,
+            2.8,
+            26.0
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-5-B-ink-1-Tr0",
+          "rect": [
+            163.8,
+            81.0,
+            12.4,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-5-B-ink-2-Tr0",
+          "rect": [
+            163.8,
+            92.6,
+            12.4,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-5-B-ink-3-Tr0",
+          "rect": [
+            163.8,
+            104.2,
+            12.4,
+            2.8
+          ],
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-5-B-counter-0-Tr0",
+          "rect": [
+            163.8,
+            85.8,
+            12.4,
+            4.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "glyph-5-B-counter-1-Tr0",
+          "rect": [
+            163.8,
+            97.4,
+            12.4,
+            4.8
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "rect": [
+            4,
+            4,
+            16,
+            16
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "region_rule": "Original glyph ink/counter rectangles inset1point; invisible would-be ink is white. Later-paint case scores separate analytic rectangle interiors. All boundaries unscored.",
+      "association": {
+        "scope": "standard-contract-only",
+        "upstream_id": null,
+        "upstream_entry_validated": false,
+        "reason": "No exact upstream invisible-text scene assertion established."
+      }
+    },
+    {
+      "id": "text-invisible-no-clip",
+      "fixture_id": "text-invisible-no-clip",
+      "file": "inputs/text-invisible-no-clip.pdf",
+      "license": "MIT",
+      "contract": "Tr3 adds no glyph clipping: subsequent ordinary page graphics remain fully painted.",
+      "layout_math": [
+        "The subsequent blue rectangle remains visible throughout its declared interior, including areas outside every glyph.",
+        "This case tests later nontext painting, not invisibility beneath the overpainted rectangle. No Tr7 is used."
+      ],
+      "spec": "ISO 32000-1:2008",
+      "spec_clauses": [
+        "9.3.6 Text Rendering Mode, Table 106, Type3 mode3 exception",
+        "9.3.1 Text-state retention",
+        "9.4.3 Text-Showing Operators",
+        "9.4.4 Text Space Details",
+        "9.6.5 Type 3 Fonts"
+      ],
+      "route": "page BT/ET original owned Type3 procedures, Tr3/Tr0 only; independent advancement/spacing/state/nontext controls",
+      "width": 240,
+      "height": 180,
+      "page": 0,
+      "page_count": 1,
+      "dpis": [
+        72,
+        144
+      ],
+      "rotation": 0,
+      "annotations": "none",
+      "background": [
+        255,
+        255,
+        255
+      ],
+      "sha256": "a5127b29ae3506012856640daae09393edf1a8f73390d377fb13502ff9721ddd",
+      "sha": "a5127b29ae3506012856640daae09393edf1a8f73390d377fb13502ff9721ddd",
+      "font": {
+        "kind": "Type3",
+        "original_design_reused": true,
+        "external_font_bytes": 0,
+        "size": 40,
+        "font_matrix": [
+          0.001,
+          0,
+          0,
+          0.001,
+          0,
+          0
+        ],
+        "glyph_stream_sha256": {
+          "A": "4b73f4c8379a88f4ca7a2c9d79c08e29f74ad580115b3d9bf53c8f01b7938392",
+          "B": "d6a2fb8e0102dbfe8cd862334fc05442bfb45d1f63c17fcbd33eff4341927e48",
+          "space": "ab7650175034cf35fac613c21f726a2d4bf45ce5c3cc557c8623936875018536"
+        }
+      },
+      "expected_glyphs": [
+        {
+          "glyph": "A",
+          "text_matrix": [
+            1,
+            0,
+            0,
+            1,
+            30,
+            80
+          ],
+          "line_matrix": [
+            1,
+            0,
+            0,
+            1,
+            30,
+            80
+          ],
+          "glyph_matrix": [
+            1,
+            0,
+            0,
+            1,
+            30,
+            80
+          ],
+          "horizontal_scale": 1,
+          "text_rise": 0,
+          "leading": 45,
+          "character_spacing": 0,
+          "word_spacing": 0,
+          "render_mode": 3
+        },
+        {
+          "glyph": "B",
+          "text_matrix": [
+            1,
+            0,
+            0,
+            1,
+            54,
+            80
+          ],
+          "line_matrix": [
+            1,
+            0,
+            0,
+            1,
+            30,
+            80
+          ],
+          "glyph_matrix": [
+            1,
+            0,
+            0,
+            1,
+            54,
+            80
+          ],
+          "horizontal_scale": 1,
+          "text_rise": 0,
+          "leading": 45,
+          "character_spacing": 0,
+          "word_spacing": 0,
+          "render_mode": 3
+        }
+      ],
+      "expected_samples": [
+        {
+          "id": "later-blue-paint-interior",
+          "point": [
+            70.0,
+            100.0
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "outside-blue-left",
+          "point": [
+            15.0,
+            100.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "point": [
+            12.0,
+            12.0
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "expected_regions": [
+        {
+          "id": "later-blue-paint-interior",
+          "rect": [
+            22,
+            72,
+            96,
+            56
+          ],
+          "rgb": [
+            0,
+            0,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "outside-blue-left",
+          "rect": [
+            12,
+            80,
+            6,
+            40
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        },
+        {
+          "id": "paper",
+          "rect": [
+            4,
+            4,
+            16,
+            16
+          ],
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "tolerance": 0
+        }
+      ],
+      "region_rule": "Original glyph ink/counter rectangles inset1point; invisible would-be ink is white. Later-paint case scores separate analytic rectangle interiors. All boundaries unscored.",
+      "association": {
+        "scope": "standard-contract-only",
+        "upstream_id": null,
+        "upstream_entry_validated": false,
+        "reason": "No exact upstream invisible-text scene assertion established."
+      }
+    }
+  ]
+}

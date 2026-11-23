@@ -45,3 +45,9 @@ The bounded metadata review manually inspected 8 entries using 3 public lookups.
 Storage uses verified 2020 headings/cross-references with fine-text access limits recorded. PDF 1.7 originals retain verified 2008 governing clauses. Our reused Type 3 font has no external font bytes and tests positioning, not native weight. No borrowed/private fixtures or goldens, known vulnerability/crash reproductions, private patches, production changes, merges, releases, workflow or settings changes. No Windows, WebView-speed, native-font-weight, speech or full-suite parity claim.
 
 Checkpoint attestation: Codex, 2026-11-23 UTC. New original sources/assets MIT. GitHub API commits are unsigned; Signed-off-by is an authorship attestation, not a cryptographic signature.
+
+## Sixth batch before product grading
+
+Adds16 independently authored original MIT PDFs and18 page views across indirect page boxes, inherited Rotate, invisible text and image stencils. Fifteen views agree; three checkerboard stencil views remain held because MuPDF differs one RGB level on marked cells over black. Separate white-backed controls agree and close none of those holds. New108 reference renders:102 passes,6 registered disagreements,0 skips. No new product result is claimed yet.
+
+Current reference verification:96 unique PDFs,102 views,84 agreed PDFs/90 agreed views,12 held views;612 captures,584 passes/28 known disagreements/0 skips. All96 PDFs regenerate byte-identically. issue7872 remains discovery only: exact source observable/settings and scene are unestablished; no association or upstream credit.

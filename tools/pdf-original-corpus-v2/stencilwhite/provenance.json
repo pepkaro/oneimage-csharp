@@ -1,0 +1,38 @@
+{
+  "license": "MIT",
+  "authoring": "New numeric9x3 bits, own raw six-byte stream and PDF/white-frame geometry; no external assets or held parent fixtures read.",
+  "raw_hex": "65003a809700",
+  "raw_sha256": "05ff35ec8e99e686491d5b817a6b2db6099888c417c0d94bbbdd47fd6849bc8e",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "pypdf": "6.21.4",
+  "references": {
+    "pdfium": "153.0.7999.0",
+    "pypdfium2": "5.13.0",
+    "mupdf": "1.26.11",
+    "pymupdf": "1.26.6",
+    "pdfjs": "6.5.438",
+    "pdfjs_build": "0a4153349",
+    "node": "24.22.3",
+    "node_canvas": "1.1.1"
+  },
+  "adapter_origin": "Owned MIT prior reference adapters; earlier headers retained.",
+  "oracle": "Independent bit-shift extraction, Decode polarity/current-color interpretation and source-defined cell/frame/paper interiors; renderer output is not the oracle.",
+  "actual_engine_invocations": {
+    "pdfium": 6,
+    "mupdf": 6,
+    "pdfjs": 6
+  },
+  "actual_total_engine_invocations": 18,
+  "runner_invocations": 1,
+  "reruns": 0,
+  "upstream_fixture_fetches": 0,
+  "upstream_inputs_executed": 0,
+  "upstream_entry_passes": 0,
+  "product_tests": 0,
+  "expected_goldens_promoted": 0,
+  "global_writes": 0,
+  "remote_writes": 0,
+  "old_paths_modified": false,
+  "parent_held_fixtures_read_or_modified": false,
+  "net_new_global_behavior_count": null
+}

@@ -1,0 +1,12 @@
+{
+  "source_case_id": "mozilla:issue7872",
+  "source_revision": "d4da7f6542bfdf7f256db30f28fa7057c9006ca3",
+  "prior_review": "upstreammatch5/metadata-review.json",
+  "status": "discovery-only",
+  "source_observable": "Metadata describes indirectMediaBox/CropBox objects but not exact indirection form, source pages or render settings",
+  "current_assertions": "Own direct-array/whole-array/coordinate-element controls for both boxes, with independently declared dimensions/origin and rectangles",
+  "upstream_inputs_executed": 0,
+  "associations_claimed": 0,
+  "upstream_credited": 0,
+  "reason": "Current local observable/settings are explicit; corresponding actual source observable/settings remain unestablished. No original or golden bytes retrieved."
+}

@@ -1,0 +1,36 @@
+{
+  "license": "MIT",
+  "authorship": "Original PDF source, vector geometry, analytic regions and expected samples authored for this slice by Codex",
+  "prior_checkpoint": {
+    "remote": "688d99e57791656b25b4d5a69f431f9adc60af22",
+    "local": "f4a7fe39f28e232654c8ca81c20dd47e9fdd34e5",
+    "tree": "a3b4932d73af4e3eee35b7d2cea1be11db5585a9",
+    "status": "Parent-provided verified starting checkpoint"
+  },
+  "original_features": [
+    "MediaBox[0,0,220,180]",
+    "CropBox[24,18,184,138]",
+    "Five newly authored vector rectangles; no fonts/images/annotations"
+  ],
+  "analytic_basis": "Subtract CropBox lower-left(24,18) from absolute content coordinates; clip to160x120. Example red[32,28,28,20] becomes[8,10,28,20]; blue y8..28 clips to display y0..10; right yellow x170..200 clips to display x146..160. Regions inset2points or more avoid boundaries.",
+  "upstream_assets_read": 0,
+  "private_assets_read": 0,
+  "external_font_bytes": 0,
+  "discovery_only": {
+    "source_case_id": "mozilla:issue7872",
+    "revision": "d4da7f6542bfdf7f256db30f28fa7057c9006ca3",
+    "manifest_git_blob": "f78b1186f3da8dcd5bcfba2d00ce341e41084006",
+    "scope": "Discovery metadata from the prior bounded review only; whole-array versus coordinate-element form, source pages and settings remain unknown",
+    "association_claimed": false,
+    "credited": false
+  },
+  "reference_policy": "Fresh pinnedPDFium/PDF.js/MuPDF renders; exact dimensions plus analytic and pairwise RGB on predeclared regions. No majority vote, upstream golden, product output or one-engine oracle.",
+  "golden_promotion": "Not performed by this worker; root must commit original and agreed selected expected images before product grading",
+  "subsystem_participation": [
+    "OnePDF/object-xref-streams",
+    "OnePDF/page-resources",
+    "OneImage.Pdf/bridge-integration",
+    "OneImage/paths-clipping"
+  ],
+  "root_cause_owner": null
+}
