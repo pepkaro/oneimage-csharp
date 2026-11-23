@@ -52,3 +52,9 @@ No borrowed/private fixtures, fonts, goldens, test sources, known vulnerability/
 Checkpoint attestation: Codex, 2026-11-23 UTC. New original sources and assets are MIT. GitHub API commits are unsigned; Signed-off-by is an authorship attestation, not a cryptographic signature.
 
 The third-batch acceptance is published at `30c3fce95e2a6c62b9b39fef8914423c5cb9e849`, with tree `2b66282c0eb3fcc6efcb62713ea23c77786099fe`, identical to local acceptance `8d2ebc949af9e86ff7a3ac46aff604643ff02f8b` committed before product grading.
+
+## Fourth batch
+
+Adds 10 byte-unique originals and12 separately scored page views: resource inheritance (3PDFs/5views), text leading (4/4), and color-key masking over opaque graphics (3/3). All72 new independent renders agree on predeclared analytic interiors;24 selected expected PNG paths are paired with their originals before product grading. The three-page sibling PDF is stored once. Harness routing and capture provenance carry actual page indices, and verification rejects duplicated canonical PDF bytes.
+
+Cumulative:66 uniquePDFs/68page views;61uniquePDFs/63page views reference-agreed;5held;126 expected-image paths;408 reference captures,394pass/14known disagreements/0skip. These are original semantic cases, not upstream executed inputs or credited parity. The strict stroke-cap boundary result and all fractional alpha holds are unchanged.

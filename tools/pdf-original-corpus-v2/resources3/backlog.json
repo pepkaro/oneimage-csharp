@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "slice": "ISO-PAGE-RESOURCE-03",
+  "owner": "mozilla_originals",
+  "state": "reference-and-structure-complete-awaiting-root-product-grading",
+  "case_ids": [
+    "resource-inherit-root",
+    "resource-explicit-page",
+    "resource-sibling-root-before",
+    "resource-nearest-ancestor",
+    "resource-sibling-root-after"
+  ],
+  "fixture_ids": [
+    "resource-inheritance-root",
+    "resource-inheritance-explicit",
+    "resource-inheritance-siblings"
+  ],
+  "upstream_ids": [],
+  "upstream_mapping_review": "Prior backlog and available metadata show no exact upstream association for these authored scenes; no filenames or unrelated cases credited",
+  "next_unclaimed": {
+    "slice": "ISO-PAGE-ATTRIBUTE-INHERIT-01",
+    "contract": "Ordinary inherited MediaBox, nearest ancestor and explicit page dimensions",
+    "acceptance": "Small valid originals with analytic dimensions/positions; parsed hierarchy;3pinnedrefs72/144; no malformed/default-recovery inputs"
+  }
+}

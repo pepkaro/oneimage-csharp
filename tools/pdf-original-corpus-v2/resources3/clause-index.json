@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "slice": "ISO-PAGE-RESOURCE-03",
+  "verified_on": "2026-11-23",
+  "primary": {
+    "standard": "ISO32000-2:2020",
+    "clause": "7.8.3 Resource dictionaries",
+    "verified_scope": "Official public amended page-content bullet permits Resources through the page or inheritance and cross-references7.7.3.4; recommends writers avoid inheritance complexity.",
+    "url": "https://pdf-issues.pdfa.org/32000-2-2020/clause07.html"
+  },
+  "secondary": [
+    {
+      "clause": "7.7.3.4 Inheritance of page attributes",
+      "status": "Referenced by verified2020 7.8.3; complete nearest-ancestor/base text not reproduced and remains pending full2020 access"
+    },
+    {
+      "clause": "7.7.3.2/Table30 Page tree nodes",
+      "status": "Official public Count correction verified: descendant count agrees with actual children traversal",
+      "url": "https://pdf-issues.pdfa.org/32000-2-2020/clause07.html"
+    }
+  ],
+  "governing_legacy": {
+    "standard": "ISO32000-1:2008",
+    "fixture_version": "1.7",
+    "verified_clauses": [
+      "7.7.3.3/Table30 Resources inheritable",
+      "7.7.3.4 Inheritance of Page Attributes",
+      "7.8.3 Resource Dictionaries"
+    ],
+    "verified_scope": "Existing official text inspected: inheritable omitted page attributes come from ancestors; local page attributes may override inherited values; page content Resources may be inherited."
+  },
+  "limit": "Full2020 standard not acquired. Fine complete inheritance wording remains pending; no recommendation to omit resources from Forms. Every Form is explicit and self-contained. Exact pixels are analytic acceptance criteria, not ISO antialiasing requirements.",
+  "source": "https://pdfa.org/resource/iso-32000-2",
+  "entries": [
+    {
+      "id": "resource-inherit-root",
+      "fixture_id": "resource-inheritance-root",
+      "page": 0,
+      "contract": "Page without Resources inherits root binding",
+      "upstream_ids": []
+    },
+    {
+      "id": "resource-explicit-page",
+      "fixture_id": "resource-inheritance-explicit",
+      "page": 0,
+      "contract": "Complete explicit page Resources overrides root binding",
+      "upstream_ids": []
+    },
+    {
+      "id": "resource-sibling-root-before",
+      "fixture_id": "resource-inheritance-siblings",
+      "page": 0,
+      "contract": "First root sibling inherits root binding",
+      "upstream_ids": []
+    },
+    {
+      "id": "resource-nearest-ancestor",
+      "fixture_id": "resource-inheritance-siblings",
+      "page": 1,
+      "contract": "Nested page inherits nearer intermediate Pages binding",
+      "upstream_ids": []
+    },
+    {
+      "id": "resource-sibling-root-after",
+      "fixture_id": "resource-inheritance-siblings",
+      "page": 2,
+      "contract": "Later root sibling retains root binding after nested subtree",
+      "upstream_ids": []
+    }
+  ]
+}

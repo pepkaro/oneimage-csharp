@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "slice": "ISO-IMAGE-COLORKEY-COMPOSITE-02",
+  "verified_date": "2026-11-23",
+  "fixture_pdf_version": "1.7",
+  "governing_edition": "ISO32000-1:2008",
+  "governing_document_sha256": "9de0ca9e8570d6209e8bd48a355be8eb6ec376acfc3fc3ae97cd8730351417ff",
+  "governing_document_redistributed": false,
+  "clauses": {
+    "2008-colorkey": {
+      "clause": "8.9.6.4",
+      "heading": "Colour Key Masking",
+      "verification": "Prior official full-text inspection recorded in existing colorkey clause record",
+      "scope": "Inclusive component-range intersection masks encoded samples before Decode; background shows through"
+    },
+    "2020-mask": {
+      "clause": "8.9.5.1",
+      "table": "87",
+      "entry": "Mask",
+      "verification": "Official public errata inspected; explicit8.9.6.4 Colour key masking cross-reference; full2020 algorithm wording pending",
+      "url": "https://pdf-issues.pdfa.org/32000-2-2020/clause08.html"
+    }
+  },
+  "cases": [
+    {
+      "fixture_id": "img-colorkey-bg-control",
+      "tested": "An unmasked opaque RGB image covers its previously painted green/blue checkerboard.",
+      "upstream_ids": [],
+      "secondary_clauses": [
+        "2008 8.9.3 Sample Representation",
+        "2008 8.9.5.2 Decode Arrays (default only)"
+      ]
+    },
+    {
+      "fixture_id": "img-colorkey-bg-exact",
+      "tested": "An exact RGB color key leaves its matched pixel unpainted, revealing the existing green backdrop.",
+      "upstream_ids": [],
+      "secondary_clauses": [
+        "2008 8.9.3 Sample Representation",
+        "2008 8.9.5.2 Decode Arrays (default only)"
+      ]
+    },
+    {
+      "fixture_id": "img-colorkey-bg-range",
+      "tested": "Inclusive RGB component ranges reveal the prior green/blue cells; one-value-outside controls remain opaque.",
+      "upstream_ids": [],
+      "secondary_clauses": [
+        "2008 8.9.3 Sample Representation",
+        "2008 8.9.5.2 Decode Arrays (default only)"
+      ]
+    }
+  ],
+  "limits": [
+    "RGB8/default Decode only",
+    "All sampling edges unscored",
+    "No soft mask or fractional alpha",
+    "Full2020 fine algorithm text unavailable"
+  ]
+}

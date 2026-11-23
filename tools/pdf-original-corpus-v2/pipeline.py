@@ -14,6 +14,7 @@ dspec=importlib.util.spec_from_file_location('dash_score',T/'dash/score.py');das
 read=lambda p:json.loads(p.read_text())
 write=lambda p,d:p.write_text(json.dumps(d,indent=2)+'\n')
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+def fixture_path(r):return REPO/r.get('fixture_file',str(Path(r['canonical_dir'])/'original.pdf'))
 def rgb(p):return np.asarray(Image.open(p).convert('RGB'))
 def mask_for(r,dpi):
  c=r['manifest']
@@ -31,13 +32,20 @@ def compare(a,b,m):
  return dict(passed=bool((d==0).all()),scored_pixels=int(m.sum()),different_pixels=int((d!=0).sum()),max_delta=int(d.max()))
 def verify():
  routes=read(T/'routes.json');ledger=read(T/'cases.json');assert len(routes)==len(ledger['cases'])
- assert len(read(T/'inventory.json')['rows'])==2811;assert len({r['manifest']['sha256'] for r in routes})==len(routes)
+ assert len(read(T/'inventory.json')['rows'])==2811
+ assert len({r['id'] for r in routes})==len(routes)
+ # Multiple page views may share one canonical original; identical PDF bytes must not be duplicated.
+ fixture_paths={r['manifest']['sha256']:str(fixture_path(r)) for r in routes}
+ assert all(fixture_paths[r['manifest']['sha256']]==str(fixture_path(r)) for r in routes)
+ assert len(set(fixture_paths.values()))==len(fixture_paths)
+ assert len(list((REPO/'tests/testdata/pdf-original-v2').rglob('original.pdf')))==len(fixture_paths)
+ for r in routes:assert 0<=r['manifest'].get('page',0)<r['manifest'].get('page_count',1)
  captures=read(T/'captures.json')['captures'];assert len(captures)==sum(len(r['manifest']['dpis'])*3 for r in routes)
  for capture in captures:
-  assert sha(REPO/capture['path'])==capture['sha256'];assert any(r['id']==capture['use_case_id'] and r['manifest']['sha256']==capture['input_sha256'] for r in routes)
+  assert sha(REPO/capture['path'])==capture['sha256'];assert any(r['id']==capture['use_case_id'] and r['manifest']['sha256']==capture['input_sha256'] and r['manifest'].get('page',0)==capture['page'] for r in routes)
  rows=[]
  for r in routes:
-  folder=REPO/r['canonical_dir'];assert sha(folder/'original.pdf')==r['manifest']['sha256']
+  folder=REPO/r['canonical_dir'];assert sha(fixture_path(r))==r['manifest']['sha256']
   for dpi in r['manifest']['dpis']:
    analytic,mask=mask_for(r,dpi);arrays={e:rgb(folder/f'references/{e}-{dpi}.png') for e in ['pdfium','pdfjs','mupdf']}
    checks={e:compare(a,analytic,mask) for e,a in arrays.items()};pairs={a+'-'+b:compare(arrays[a],arrays[b],mask) for a,b in [('pdfium','pdfjs'),('pdfium','mupdf'),('pdfjs','mupdf')]}
@@ -47,7 +55,7 @@ def verify():
     assert target.exists();assert any(sha(target)==sha(folder/f'references/{e}-{dpi}.png') for e in arrays);assert compare(rgb(target),analytic,mask)['passed']
    else:assert not target.exists()
    rows.append(dict(id=r['id'],dpi=dpi,accepted=agreed,analytic=checks,pairwise=pairs))
- result=dict(originals=len(routes),agreed=sum(r['accepted'] for r in routes),held=sum(not r['accepted'] for r in routes),reference_runs=len(rows)*3,passed=sum(c['passed'] for r in rows for c in r['analytic'].values()),failed=sum(not c['passed'] for r in rows for c in r['analytic'].values()),skipped=0,upstream_executed=0,upstream_credited=0,rows=rows)
+ result=dict(originals=len(fixture_paths),page_view_cases=len(routes),agreed_originals=len({r['manifest']['sha256'] for r in routes if r['accepted']}),agreed=sum(r['accepted'] for r in routes),held=sum(not r['accepted'] for r in routes),reference_runs=len(rows)*3,passed=sum(c['passed'] for r in rows for c in r['analytic'].values()),failed=sum(not c['passed'] for r in rows for c in r['analytic'].values()),skipped=0,upstream_executed=0,upstream_credited=0,rows=rows)
  write(T/'reference-verification.json',result);return result
 
 def generate():
@@ -56,15 +64,15 @@ def generate():
    dest=Path(tmp);name=read(T/'family-routes.json')[family]['generator'];shutil.copy(T/family/name,dest/name);subprocess.run([sys.executable,str(dest/name)],check=True)
    produced=read(dest/'manifest.json')
    for r in [r for r in read(T/'routes.json') if r['family']==family]:
-    c=next(c for c in produced['cases'] if c['id']==r['id']);assert sha(dest/c['file'])==sha(REPO/r['canonical_dir']/'original.pdf')
- return {'regenerated_pdf_hash_matches':len(read(T/'routes.json'))}
+    c=next(c for c in produced['cases'] if c['id']==r['id']);assert sha(dest/c['file'])==sha(fixture_path(r))
+ return {'regenerated_pdf_hash_matches':len({r['manifest']['sha256'] for r in read(T/'routes.json')}),'page_view_cases':len(read(T/'routes.json'))}
 
 def references(out,pdfjs):
  # Rebuild the adapters' staging layout in the caller-selected output, never overwrite accepted assets.
  out=out.resolve();assert not out.exists(),'Choose a new output directory';out.mkdir(parents=True)
  for family in sorted({r['family'] for r in read(T/'routes.json')}):
   d=out/family;shutil.copytree(T/family,d);(d/'inputs').mkdir(exist_ok=True)
-  for r in [r for r in read(T/'routes.json') if r['family']==family]:shutil.copy(REPO/r['canonical_dir']/'original.pdf',d/r['manifest']['file'])
+  for r in [r for r in read(T/'routes.json') if r['family']==family]:shutil.copy(fixture_path(r),d/r['manifest']['file'])
   env=dict(os.environ,PDFJS_ROOT=str(pdfjs.resolve()))
   commands=[[v.replace('{pdfjs}',str(pdfjs.resolve())) for v in step] for step in read(T/'family-routes.json')[family]['reference_steps']]
   for cmd in commands:subprocess.run([sys.executable,str(d/cmd[0]),*cmd[1:]],check=True,env=env)
@@ -75,14 +83,14 @@ def grade(args):
  # The accepted PDF+expected image must already be committed, before executing the product.
  for r in read(T/'routes.json'):
   if r['accepted']:
-   for name in ['original.pdf',*[f'expected-{d}.png' for d in r['manifest']['dpis']]]:
-    path=str(Path(r['canonical_dir'])/name);saved=subprocess.check_output(['git','show',commit+':'+path],cwd=REPO);assert hashlib.sha256(saved).hexdigest()==sha(REPO/path),path
+   for file in [fixture_path(r),*[REPO/r['canonical_dir']/f'expected-{d}.png' for d in r['manifest']['dpis']]]:
+    path=str(file.relative_to(REPO));saved=subprocess.check_output(['git','show',commit+':'+path],cwd=REPO);assert hashlib.sha256(saved).hexdigest()==sha(REPO/path),path
  out=args.output.resolve();out.mkdir(parents=True,exist_ok=True);rows=[]
  for r in read(T/'routes.json'):
   if not r['accepted']:continue
   for dpi in r['manifest']['dpis']:
-   folder=REPO/r['canonical_dir'];target=out/f"{r['id']}-{dpi}.png";cmd=[args.dotnet,str(args.renderer_dll.resolve()),'render',str(folder/'original.pdf'),str(target),str(dpi),'0'];p=subprocess.run(cmd,text=True,capture_output=True)
-   row=dict(id=r['id'],dpi=dpi,command=cmd,exit_code=p.returncode,stderr=p.stderr,expected_sha256=sha(folder/f'expected-{dpi}.png'))
+   folder=REPO/r['canonical_dir'];target=out/f"{r['id']}-{dpi}.png";cmd=[args.dotnet,str(args.renderer_dll.resolve()),'render',str(fixture_path(r)),str(target),str(dpi),str(r['manifest'].get('page',0))];p=subprocess.run(cmd,text=True,capture_output=True)
+   row=dict(id=r['id'],fixture_sha256=r['manifest']['sha256'],page=r['manifest'].get('page',0),dpi=dpi,command=cmd,exit_code=p.returncode,stderr=p.stderr,expected_sha256=sha(folder/f'expected-{dpi}.png'))
    if p.returncode==0 and target.exists():
     _,mask=mask_for(r,dpi);row.update(compare(rgb(target),rgb(folder/f'expected-{dpi}.png'),mask));row['output_sha256']=sha(target)
     a=rgb(target);c=r['manifest'];height=c.get('display_height_points',c.get('height'));samples=c.get('samples',c.get('expected_samples',[]));row['assertions']=[]
@@ -99,7 +107,7 @@ def catalog():
  for clause in sorted({c['primary_iso_2020_directory'] for c in cases}):
   lines+=['## '+clause,'']
   for c in [c for c in cases if c['primary_iso_2020_directory']==clause]:
-   rel='../../'+c['fixture'];lines+=['### '+c['use_case_id'],'',c['expected_behavior'],'',f"Stage: **{c['stage']}**; page0,72/144DPI, white, annotations off. [Original]({rel}); [clause evidence]({c['family']}/clause-index.json).",'','Expected: '+(', '.join(f'[{Path(p).name}](../../{p})' for p in c['expected_images']) or 'withheld: reference disagreement')+'.','', 'Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`'+'. Upstream pinned IDs: none; standard-contract-only.','']
+   rel='../../'+c['fixture'];lines+=['### '+c['use_case_id'],'',c['expected_behavior'],'',f"Stage: **{c['stage']}**; page{c.get('page',0)},72/144DPI, white, annotations off. [Original]({rel}); [clause evidence]({c['family']}/clause-index.json).",'','Expected: '+(', '.join(f'[{Path(p).name}](../../{p})' for p in c['expected_images']) or 'withheld: reference disagreement')+'.','', 'Executable: `python tools/pdf-original-corpus-v2/pipeline.py verify`'+'. Upstream pinned IDs: none; standard-contract-only.','']
  (T/'CATALOG.md').write_text('\n'.join(lines).rstrip()+'\n')
  lines=['# Subsystem view','','Cross-tags describe pipeline participation, not proven root-cause ownership. Cases and assets remain canonical in the ISO view.','']
  groups=['OnePDF/object-xref-streams','OnePDF/page-resources','OnePDF/font-text-interpretation','OnePDF/content-interpretation','OnePDF/image-color-decoding','OneImage/paths-clipping','OneImage/glyph-rasterization','OneImage/image-sampling','OneImage/color-conversion','OneImage/transparency-compositing','OneImage.Pdf/bridge-integration']

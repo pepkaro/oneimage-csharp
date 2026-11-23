@@ -1,0 +1,3318 @@
+{
+  "unique_original_pdfs": 3,
+  "page_view_count": 5,
+  "executed": 30,
+  "passed": 30,
+  "failed": 0,
+  "skipped": 0,
+  "sample_checks": 180,
+  "sample_passes": 180,
+  "pairwise_passes": 30,
+  "pairwise_failures": 0,
+  "upstream_inputs_executed": 0,
+  "upstream_entries_validated": 0,
+  "rows": [
+    {
+      "id": "resource-inherit-root",
+      "fixture_id": "resource-inheritance-root",
+      "page": 0,
+      "engine": "pdfium",
+      "dpi": 72,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 15560,
+      "unscored_boundary_pixels": 440,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "left-binding",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-binding",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "resource-inherit-root",
+      "fixture_id": "resource-inheritance-root",
+      "page": 0,
+      "engine": "mupdf",
+      "dpi": 72,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 15560,
+      "unscored_boundary_pixels": 440,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "left-binding",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-binding",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "resource-inherit-root",
+      "fixture_id": "resource-inheritance-root",
+      "page": 0,
+      "engine": "pdfjs",
+      "dpi": 72,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 15560,
+      "unscored_boundary_pixels": 440,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "left-binding",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-binding",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "resource-inherit-root",
+      "fixture_id": "resource-inheritance-root",
+      "page": 0,
+      "engine": "pdfium",
+      "dpi": 144,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 63120,
+      "unscored_boundary_pixels": 880,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "left-binding",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-binding",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "resource-inherit-root",
+      "fixture_id": "resource-inheritance-root",
+      "page": 0,
+      "engine": "mupdf",
+      "dpi": 144,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 63120,
+      "unscored_boundary_pixels": 880,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "left-binding",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-binding",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "resource-inherit-root",
+      "fixture_id": "resource-inheritance-root",
+      "page": 0,
+      "engine": "pdfjs",
+      "dpi": 144,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 63120,
+      "unscored_boundary_pixels": 880,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "left-binding",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-binding",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "resource-explicit-page",
+      "fixture_id": "resource-inheritance-explicit",
+      "page": 0,
+      "engine": "pdfium",
+      "dpi": 72,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 15560,
+      "unscored_boundary_pixels": 440,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "left-binding",
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-binding",
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "resource-explicit-page",
+      "fixture_id": "resource-inheritance-explicit",
+      "page": 0,
+      "engine": "mupdf",
+      "dpi": 72,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 15560,
+      "unscored_boundary_pixels": 440,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "left-binding",
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-binding",
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "resource-explicit-page",
+      "fixture_id": "resource-inheritance-explicit",
+      "page": 0,
+      "engine": "pdfjs",
+      "dpi": 72,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 15560,
+      "unscored_boundary_pixels": 440,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "left-binding",
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-binding",
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "resource-explicit-page",
+      "fixture_id": "resource-inheritance-explicit",
+      "page": 0,
+      "engine": "pdfium",
+      "dpi": 144,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 63120,
+      "unscored_boundary_pixels": 880,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "left-binding",
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-binding",
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "resource-explicit-page",
+      "fixture_id": "resource-inheritance-explicit",
+      "page": 0,
+      "engine": "mupdf",
+      "dpi": 144,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 63120,
+      "unscored_boundary_pixels": 880,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "left-binding",
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-binding",
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "resource-explicit-page",
+      "fixture_id": "resource-inheritance-explicit",
+      "page": 0,
+      "engine": "pdfjs",
+      "dpi": 144,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 63120,
+      "unscored_boundary_pixels": 880,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "left-binding",
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-binding",
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "resource-sibling-root-before",
+      "fixture_id": "resource-inheritance-siblings",
+      "page": 0,
+      "engine": "pdfium",
+      "dpi": 72,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 15560,
+      "unscored_boundary_pixels": 440,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "left-binding",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-binding",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "resource-sibling-root-before",
+      "fixture_id": "resource-inheritance-siblings",
+      "page": 0,
+      "engine": "mupdf",
+      "dpi": 72,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 15560,
+      "unscored_boundary_pixels": 440,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "left-binding",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-binding",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "resource-sibling-root-before",
+      "fixture_id": "resource-inheritance-siblings",
+      "page": 0,
+      "engine": "pdfjs",
+      "dpi": 72,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 15560,
+      "unscored_boundary_pixels": 440,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "left-binding",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-binding",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "resource-sibling-root-before",
+      "fixture_id": "resource-inheritance-siblings",
+      "page": 0,
+      "engine": "pdfium",
+      "dpi": 144,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 63120,
+      "unscored_boundary_pixels": 880,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "left-binding",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-binding",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "resource-sibling-root-before",
+      "fixture_id": "resource-inheritance-siblings",
+      "page": 0,
+      "engine": "mupdf",
+      "dpi": 144,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 63120,
+      "unscored_boundary_pixels": 880,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "left-binding",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-binding",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "resource-sibling-root-before",
+      "fixture_id": "resource-inheritance-siblings",
+      "page": 0,
+      "engine": "pdfjs",
+      "dpi": 144,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 63120,
+      "unscored_boundary_pixels": 880,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "left-binding",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-binding",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "resource-nearest-ancestor",
+      "fixture_id": "resource-inheritance-siblings",
+      "page": 1,
+      "engine": "pdfium",
+      "dpi": 72,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 15560,
+      "unscored_boundary_pixels": 440,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "left-binding",
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-binding",
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "resource-nearest-ancestor",
+      "fixture_id": "resource-inheritance-siblings",
+      "page": 1,
+      "engine": "mupdf",
+      "dpi": 72,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 15560,
+      "unscored_boundary_pixels": 440,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "left-binding",
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-binding",
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "resource-nearest-ancestor",
+      "fixture_id": "resource-inheritance-siblings",
+      "page": 1,
+      "engine": "pdfjs",
+      "dpi": 72,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 15560,
+      "unscored_boundary_pixels": 440,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "left-binding",
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-binding",
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "resource-nearest-ancestor",
+      "fixture_id": "resource-inheritance-siblings",
+      "page": 1,
+      "engine": "pdfium",
+      "dpi": 144,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 63120,
+      "unscored_boundary_pixels": 880,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "left-binding",
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-binding",
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "resource-nearest-ancestor",
+      "fixture_id": "resource-inheritance-siblings",
+      "page": 1,
+      "engine": "mupdf",
+      "dpi": 144,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 63120,
+      "unscored_boundary_pixels": 880,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "left-binding",
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-binding",
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "resource-nearest-ancestor",
+      "fixture_id": "resource-inheritance-siblings",
+      "page": 1,
+      "engine": "pdfjs",
+      "dpi": 144,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 63120,
+      "unscored_boundary_pixels": 880,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "left-binding",
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-binding",
+          "actual": [
+            0,
+            0,
+            255
+          ],
+          "expected": [
+            0,
+            0,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "resource-sibling-root-after",
+      "fixture_id": "resource-inheritance-siblings",
+      "page": 2,
+      "engine": "pdfium",
+      "dpi": 72,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 15560,
+      "unscored_boundary_pixels": 440,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "left-binding",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-binding",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "resource-sibling-root-after",
+      "fixture_id": "resource-inheritance-siblings",
+      "page": 2,
+      "engine": "mupdf",
+      "dpi": 72,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 15560,
+      "unscored_boundary_pixels": 440,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "left-binding",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-binding",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "resource-sibling-root-after",
+      "fixture_id": "resource-inheritance-siblings",
+      "page": 2,
+      "engine": "pdfjs",
+      "dpi": 72,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 15560,
+      "unscored_boundary_pixels": 440,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "left-binding",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-binding",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "resource-sibling-root-after",
+      "fixture_id": "resource-inheritance-siblings",
+      "page": 2,
+      "engine": "pdfium",
+      "dpi": 144,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 63120,
+      "unscored_boundary_pixels": 880,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "left-binding",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-binding",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "resource-sibling-root-after",
+      "fixture_id": "resource-inheritance-siblings",
+      "page": 2,
+      "engine": "mupdf",
+      "dpi": 144,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 63120,
+      "unscored_boundary_pixels": 880,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "left-binding",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-binding",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "resource-sibling-root-after",
+      "fixture_id": "resource-inheritance-siblings",
+      "page": 2,
+      "engine": "pdfjs",
+      "dpi": 144,
+      "dimensions_match": true,
+      "status": "passed",
+      "scored_pixels": 63120,
+      "unscored_boundary_pixels": 880,
+      "wrong_scored_pixels": 0,
+      "samples": [
+        {
+          "id": "left-binding",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "right-binding",
+          "actual": [
+            255,
+            0,
+            0
+          ],
+          "expected": [
+            255,
+            0,
+            0
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-0",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-1",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-2",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        },
+        {
+          "id": "paper-3",
+          "actual": [
+            255,
+            255,
+            255
+          ],
+          "expected": [
+            255,
+            255,
+            255
+          ],
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "pairwise": [
+    {
+      "id": "resource-inherit-root",
+      "fixture_id": "resource-inheritance-root",
+      "page": 0,
+      "dpi": 72,
+      "engines": [
+        "pdfium",
+        "mupdf"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "resource-inherit-root",
+      "fixture_id": "resource-inheritance-root",
+      "page": 0,
+      "dpi": 72,
+      "engines": [
+        "pdfium",
+        "pdfjs"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "resource-inherit-root",
+      "fixture_id": "resource-inheritance-root",
+      "page": 0,
+      "dpi": 72,
+      "engines": [
+        "mupdf",
+        "pdfjs"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "resource-inherit-root",
+      "fixture_id": "resource-inheritance-root",
+      "page": 0,
+      "dpi": 144,
+      "engines": [
+        "pdfium",
+        "mupdf"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "resource-inherit-root",
+      "fixture_id": "resource-inheritance-root",
+      "page": 0,
+      "dpi": 144,
+      "engines": [
+        "pdfium",
+        "pdfjs"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "resource-inherit-root",
+      "fixture_id": "resource-inheritance-root",
+      "page": 0,
+      "dpi": 144,
+      "engines": [
+        "mupdf",
+        "pdfjs"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "resource-explicit-page",
+      "fixture_id": "resource-inheritance-explicit",
+      "page": 0,
+      "dpi": 72,
+      "engines": [
+        "pdfium",
+        "mupdf"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "resource-explicit-page",
+      "fixture_id": "resource-inheritance-explicit",
+      "page": 0,
+      "dpi": 72,
+      "engines": [
+        "pdfium",
+        "pdfjs"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "resource-explicit-page",
+      "fixture_id": "resource-inheritance-explicit",
+      "page": 0,
+      "dpi": 72,
+      "engines": [
+        "mupdf",
+        "pdfjs"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "resource-explicit-page",
+      "fixture_id": "resource-inheritance-explicit",
+      "page": 0,
+      "dpi": 144,
+      "engines": [
+        "pdfium",
+        "mupdf"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "resource-explicit-page",
+      "fixture_id": "resource-inheritance-explicit",
+      "page": 0,
+      "dpi": 144,
+      "engines": [
+        "pdfium",
+        "pdfjs"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "resource-explicit-page",
+      "fixture_id": "resource-inheritance-explicit",
+      "page": 0,
+      "dpi": 144,
+      "engines": [
+        "mupdf",
+        "pdfjs"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "resource-sibling-root-before",
+      "fixture_id": "resource-inheritance-siblings",
+      "page": 0,
+      "dpi": 72,
+      "engines": [
+        "pdfium",
+        "mupdf"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "resource-sibling-root-before",
+      "fixture_id": "resource-inheritance-siblings",
+      "page": 0,
+      "dpi": 72,
+      "engines": [
+        "pdfium",
+        "pdfjs"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "resource-sibling-root-before",
+      "fixture_id": "resource-inheritance-siblings",
+      "page": 0,
+      "dpi": 72,
+      "engines": [
+        "mupdf",
+        "pdfjs"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "resource-sibling-root-before",
+      "fixture_id": "resource-inheritance-siblings",
+      "page": 0,
+      "dpi": 144,
+      "engines": [
+        "pdfium",
+        "mupdf"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "resource-sibling-root-before",
+      "fixture_id": "resource-inheritance-siblings",
+      "page": 0,
+      "dpi": 144,
+      "engines": [
+        "pdfium",
+        "pdfjs"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "resource-sibling-root-before",
+      "fixture_id": "resource-inheritance-siblings",
+      "page": 0,
+      "dpi": 144,
+      "engines": [
+        "mupdf",
+        "pdfjs"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "resource-nearest-ancestor",
+      "fixture_id": "resource-inheritance-siblings",
+      "page": 1,
+      "dpi": 72,
+      "engines": [
+        "pdfium",
+        "mupdf"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "resource-nearest-ancestor",
+      "fixture_id": "resource-inheritance-siblings",
+      "page": 1,
+      "dpi": 72,
+      "engines": [
+        "pdfium",
+        "pdfjs"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "resource-nearest-ancestor",
+      "fixture_id": "resource-inheritance-siblings",
+      "page": 1,
+      "dpi": 72,
+      "engines": [
+        "mupdf",
+        "pdfjs"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "resource-nearest-ancestor",
+      "fixture_id": "resource-inheritance-siblings",
+      "page": 1,
+      "dpi": 144,
+      "engines": [
+        "pdfium",
+        "mupdf"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "resource-nearest-ancestor",
+      "fixture_id": "resource-inheritance-siblings",
+      "page": 1,
+      "dpi": 144,
+      "engines": [
+        "pdfium",
+        "pdfjs"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "resource-nearest-ancestor",
+      "fixture_id": "resource-inheritance-siblings",
+      "page": 1,
+      "dpi": 144,
+      "engines": [
+        "mupdf",
+        "pdfjs"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "resource-sibling-root-after",
+      "fixture_id": "resource-inheritance-siblings",
+      "page": 2,
+      "dpi": 72,
+      "engines": [
+        "pdfium",
+        "mupdf"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "resource-sibling-root-after",
+      "fixture_id": "resource-inheritance-siblings",
+      "page": 2,
+      "dpi": 72,
+      "engines": [
+        "pdfium",
+        "pdfjs"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "resource-sibling-root-after",
+      "fixture_id": "resource-inheritance-siblings",
+      "page": 2,
+      "dpi": 72,
+      "engines": [
+        "mupdf",
+        "pdfjs"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "resource-sibling-root-after",
+      "fixture_id": "resource-inheritance-siblings",
+      "page": 2,
+      "dpi": 144,
+      "engines": [
+        "pdfium",
+        "mupdf"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "resource-sibling-root-after",
+      "fixture_id": "resource-inheritance-siblings",
+      "page": 2,
+      "dpi": 144,
+      "engines": [
+        "pdfium",
+        "pdfjs"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    },
+    {
+      "id": "resource-sibling-root-after",
+      "fixture_id": "resource-inheritance-siblings",
+      "page": 2,
+      "dpi": 144,
+      "engines": [
+        "mupdf",
+        "pdfjs"
+      ],
+      "disagreeing_scored_pixels": 0,
+      "status": "passed"
+    }
+  ]
+}

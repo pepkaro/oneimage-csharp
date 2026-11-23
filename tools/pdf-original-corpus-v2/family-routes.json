@@ -193,5 +193,55 @@
         "verify.py"
       ]
     ]
+  },
+  "resources3": {
+    "generator": "generator.py",
+    "reference_steps": [
+      [
+        "references.py"
+      ],
+      [
+        "score.py"
+      ],
+      [
+        "verify-regions.py"
+      ],
+      [
+        "verify-structure.py"
+      ],
+      [
+        "verify.py"
+      ]
+    ]
+  },
+  "textleading": {
+    "generator": "generate.py",
+    "reference_steps": [
+      [
+        "run-references.py",
+        "{pdfjs}"
+      ],
+      [
+        "verify-regions.py"
+      ],
+      [
+        "verify.py"
+      ]
+    ]
+  },
+  "colorkeybackground": {
+    "generator": "generate.py",
+    "reference_steps": [
+      [
+        "run-references.py",
+        "{pdfjs}"
+      ],
+      [
+        "verify-regions.py"
+      ],
+      [
+        "verify.py"
+      ]
+    ]
   }
 }
